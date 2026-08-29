@@ -190,10 +190,10 @@
     "5cceee269bf3c7cd8e48331bf26c7342",
     "fcf9bc3c8daba1e333206b05e2280f3a",
     "1fca998eb54586e3b2201caf3094b3c7",
-    "e9bf55c76e751894f224c2aa4f988280"
+    "e9bf55c76e751894f224c2aa4f988280",
+    "63c5d40c274aa1c7ea4a1529f3aba02c"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
@@ -222,7 +222,8 @@
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
     "winners_losers|Nigerian music|Reaction Round-up",
@@ -297,6 +298,7 @@
     "story_progression|P-Square|Reaction Round-up",
     "policy_gap|Nollywood|Profile Beat",
     "next_48_hours|BBNaija|Hard News Lead",
-    "myth_vs_fact|Nollywood|Explainer"
+    "myth_vs_fact|Nollywood|Explainer",
+    "money_follow|Nathaniel Bassey|Trend Take"
   ]
 }
