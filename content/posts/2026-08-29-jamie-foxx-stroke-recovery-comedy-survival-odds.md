@@ -1,21 +1,20 @@
 ---
-title: "Jamie Foxx Reveals Stroke Recovery: Humor Aided Survival Miracle
+title: "'Jamie Foxx Reveals Stroke Recovery: Humor Aided Survival Miracle"
 slug: "jamie-foxx-stroke-recovery-comedy-survival-odds"
-description: "Jamie Foxx opens up about his critical 2023 stroke recovery, revealing how comedy was vital after a nurse gave him less than 3% survival odds. Learn more about his inspiring journey."
+description: "'Jamie Foxx Reveals Stroke Recovery: Humor Aided Survival Miracle: Jamie Foxx opens up about his critical 2023 stroke recovery, revealing how comedy was vital"
+excerpt: "Jamie Foxx's Remarkable Comeback: The Unlikely Power of Laughter in Recovery Actor Jamie Foxx is redefining what it means to recover from a"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/tPnbsHYL/4f0a195ed8d5.jpg"
-og_title: "Jamie Foxx on Stroke Recovery: Comedy & 3% Survival Odds"
-og_description: "Jamie Foxx shares his incredible journey to recovery after a near-fatal 2023 stroke. He reveals how humor and a <3% survival rate shaped his inspiring return."
-focus_keyword: "jamie foxx stroke recovery"
 category: "Entertainment"
 tags: ["jamie foxx", "stroke recovery", "netflix special", "celebrity health", "entertainment news", "kenyan news"]
+canonical: "https://zandani.co.ke/article/jamie-foxx-stroke-recovery-comedy-survival-odds"
 date: "2026-08-29T03:51:15Z"
 dateModified: "2026-08-29T03:51:15Z"
+focusKeyword: "'Jamie Foxx Reveals Stroke Recovery: Humor Aided Survival Miracle"
 schema: "NewsArticle"
 ---
 
-## Jamie Foxx's Remarkable Comeback: The Unlikely Power of Laughter in Recovery
+## Jamie Foxx's Remarkable Comeback: The Unlikely Power of Laughter in Recovery "Jamie Foxx Reveals Stroke Recovery: Humor Aided Survival Miracle is the central subject of the update.
 
 Actor Jamie Foxx is redefining what it means to recover from a life-threatening illness. His recent, unvarnished accounts of his 2023 stroke recovery are profoundly shifting public perception. Foxx openly revealed that doctors gave him a dire prognosis, a survival chance of less than 3%, making his successful journey back to health-fueled significantly by humor-a truly astonishing narrative.
 
