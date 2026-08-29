@@ -462,10 +462,10 @@
     "772fd72b0b837d21a20fe786b4d51e3d",
     "87bcc0b6271c4d45bc3427771a560d9a",
     "1b285f68417bcaaf59d14b4e0c803f6a",
-    "5da67a147e743b963ebed5941e53e53d"
+    "5da67a147e743b963ebed5941e53e53d",
+    "03682f49d0569e45ef9726c2f9692314"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
@@ -494,10 +494,10 @@
     "Reaction & Voices",
     "Hard News Lead",
     "Explainer",
-    "Power Accountability"
+    "Power Accountability",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "policy_gap|road accident|Power Accountability",
     "money_follow|International Seabed Authority|Hard News Lead",
     "timeline_shift|DCI|Explainer",
     "winners_losers|Kenya|Reaction & Voices",
@@ -576,6 +576,7 @@
     "myth_vs_fact|LPG|Reaction & Voices",
     "timeline_shift|Jubilee Party|Hard News Lead",
     "money_follow|Kenya|Explainer",
-    "accountability|Kenya|Power Accountability"
+    "accountability|Kenya|Power Accountability",
+    "money_follow|Affordable Housing Levy|Reaction & Voices"
   ]
 }
