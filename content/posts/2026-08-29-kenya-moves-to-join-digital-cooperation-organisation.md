@@ -1,18 +1,20 @@
 ---
 title: "Kenya Moves to Join Digital Cooperation Organisation"
 slug: "kenya-moves-to-join-digital-cooperation-organisation"
-description: "Kenya has formally applied to join the Digital Cooperation Organisation as part of a strategic effort to influence global digital policy and growth."
+description: "Kenya Moves to Join Digital Cooperation Organisation: Kenya has formally applied to join the Digital Cooperation Organisation as part of a strategic effort to"
+excerpt: "The Digital Sovereignty Price Tag Nairobi has formally signaled its intent to join the Digital Cooperation Organisation, a Riyadh backed blo"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/yBh7yZXL/0615246471a6.jpg"
 category: "Business"
 tags: ["kenya", "digital economy", "dco", "technology policy", "global trade", "innovation"]
+canonical: "https://zandani.co.ke/article/kenya-moves-to-join-digital-cooperation-organisation"
 date: "2026-08-29T11:37:51Z"
 dateModified: "2026-08-29T11:37:51Z"
+focusKeyword: "Kenya Moves to Join Digital Cooperation Organisation"
 schema: "NewsArticle"
 ---
 
-## The Digital Sovereignty Price Tag
+## The Digital Sovereignty Price Tag Kenya Moves to Join Digital Cooperation Organisation is the central subject of the update.
 
 Nairobi has formally signaled its intent to join the Digital Cooperation Organisation, a Riyadh-backed bloc that promises digital inclusion but masks a shift toward centralized, cross-border regulatory compliance. As Kenya chases a seat at a table governed by giants, local tech policy risks becoming an offshore extension of foreign administrative mandates.
 
