@@ -404,10 +404,10 @@
     "a99dac3f4f667c6f17e63036580414f1",
     "7e6f5b44f3f38889bf9f79a51235ca27",
     "b505027742c3e4ca21dcc263db4be646",
-    "d427e34d29879ed5f1a2eca329555e8e"
+    "d427e34d29879ed5f1a2eca329555e8e",
+    "49d18055db6562fe5b7719567e71556f"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
@@ -436,10 +436,10 @@
     "Trend Take",
     "Profile Beat",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "story_progression|na|Reaction Round-up",
     "winners_losers|Wet Hot American Summer|Profile Beat",
     "timeline_shift|Arlene Smith|Hard News Lead",
     "accountability|Childhood abuse|Explainer",
@@ -518,6 +518,7 @@
     "winners_losers|Happy Gilmore 2|Trend Take",
     "money_follow|Dolly Parton|Profile Beat",
     "story_progression|Jodie Sweetin|Hard News Lead",
-    "myth_vs_fact|na|Explainer"
+    "myth_vs_fact|na|Explainer",
+    "story_progression|Prison Break|Trend Take"
   ]
 }
