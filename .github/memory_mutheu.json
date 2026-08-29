@@ -405,10 +405,10 @@
     "7e6f5b44f3f38889bf9f79a51235ca27",
     "b505027742c3e4ca21dcc263db4be646",
     "d427e34d29879ed5f1a2eca329555e8e",
-    "49d18055db6562fe5b7719567e71556f"
+    "49d18055db6562fe5b7719567e71556f",
+    "88e8545ab19b3b1c8618af9e00e2b4ae"
   ],
   "style_history": [
-    "Profile Beat",
     "Hard News Lead",
     "Explainer",
     "Trend Take",
@@ -437,10 +437,10 @@
     "Profile Beat",
     "Hard News Lead",
     "Explainer",
-    "Trend Take"
+    "Trend Take",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "winners_losers|Wet Hot American Summer|Profile Beat",
     "timeline_shift|Arlene Smith|Hard News Lead",
     "accountability|Childhood abuse|Explainer",
     "money_follow|Netflix|Reaction Round-up",
@@ -519,6 +519,7 @@
     "money_follow|Dolly Parton|Profile Beat",
     "story_progression|Jodie Sweetin|Hard News Lead",
     "myth_vs_fact|na|Explainer",
-    "story_progression|Prison Break|Trend Take"
+    "story_progression|Prison Break|Trend Take",
+    "winners_losers|Country music star|Reaction Round-up"
   ]
 }
