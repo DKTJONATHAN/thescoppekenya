@@ -223,10 +223,10 @@
     "f3615ed61ce7c71def357ac0ea049120",
     "4c80c890e604144b4283966771d24fe1",
     "1bf51843d306b61cea07cc7ed28eef94",
-    "579bf0fcf280a52cd76da2c89518538d"
+    "579bf0fcf280a52cd76da2c89518538d",
+    "d5ef6c7890be32728eee16dc8257ec93"
   ],
   "style_history": [
-    "Power Accountability",
     "Markets Report",
     "Explainer",
     "Backgrounder",
@@ -255,10 +255,10 @@
     "Power Accountability",
     "Markets Report",
     "Explainer",
-    "SME Angle"
+    "SME Angle",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|HELB|Backgrounder",
     "winners_losers|Access Bank Kenya|Markets Report",
     "money_follow|energy policy|SME Angle",
     "impact_on_citizens|Simbisa Brands|Explainer",
@@ -337,6 +337,7 @@
     "accountability|Food4Education|Power Accountability",
     "next_48_hours|Kenya|Markets Report",
     "timeline_shift|I&M Group|Explainer",
-    "money_follow|Kenya Pipeline Company|SME Angle"
+    "money_follow|Kenya Pipeline Company|SME Angle",
+    "accountability|Kenya|Power Accountability"
   ]
 }
