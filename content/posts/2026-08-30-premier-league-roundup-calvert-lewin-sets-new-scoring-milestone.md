@@ -1,18 +1,20 @@
 ---
 title: "Premier League Roundup: Calvert-Lewin Sets New Scoring Milestone"
 slug: "premier-league-roundup-calvert-lewin-sets-new-scoring-milestone"
-description: "Dominic Calvert-Lewin makes history as the first player to score in 11 straight Premier League seasons during a weekend of intense football action."
+description: "Premier League Roundup: Calvert-Lewin Sets New Scoring Milestone: Dominic Calvert-Lewin makes history as the first player to score in 11 straight Premier"
+excerpt: "The Persistent Presence of Dominic Calvert Lewin Dominic Calvert Lewin achieved a notable statistical feat at Elland Road this Sunday. By fi"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/TqcZsgrt/77ff1f0959e5.jpg"
 category: "Sports"
 tags: ["premier league", "football news", "calvert-lewin", "european football", "sports update", "kenya football fans"]
+canonical: "https://zandani.co.ke/article/premier-league-roundup-calvert-lewin-sets-new-scoring-milestone"
 date: "2026-08-30T14:55:11Z"
 dateModified: "2026-08-30T14:55:11Z"
+focusKeyword: "Premier League Roundup: Calvert-Lewin Sets New Scoring Milestone"
 schema: "NewsArticle"
 ---
 
-## The Persistent Presence of Dominic Calvert-Lewin
+## The Persistent Presence of Dominic Calvert-Lewin Premier League Roundup: Calvert-Lewin Sets New Scoring Milestone is the central subject of the update.
 
 Dominic Calvert-Lewin achieved a notable statistical feat at Elland Road this Sunday. By finding the net against Brentford, he became the only active participant in the Premier League to score in eleven consecutive campaigns. This longevity stands as a defiant statement against the prevailing culture of transient squad construction.
 
