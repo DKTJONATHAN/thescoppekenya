@@ -1,18 +1,20 @@
 ---
 title: "Kenya Urged to Enact Laws Against Enforced Disappearances"
 slug: "kenya-urged-to-enact-laws-against-enforced-disappearances"
-description: "Communications expert Joseph Kariuki calls for legal reform in Kenya to criminalize enforced disappearances and end institutional impunity for state actors."
+description: "Kenya Urged to Enact Laws Against Enforced Disappearances: Communications expert Joseph Kariuki calls for legal reform in Kenya to criminalize enforced"
+excerpt: "The Unfinished Ledger of Missing Citizens The specters of the 2007 post election violence continue to haunt the machinery of Kenyan justice,"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/1G6VXCkc/978ddaa7bdd3.webp"
 category: "Opinions"
 tags: ["human rights", "police brutality", "kenya law", "justice", "legal reform", "kenyan politics"]
+canonical: "https://zandani.co.ke/article/kenya-urged-to-enact-laws-against-enforced-disappearances"
 date: "2026-08-30T14:25:55Z"
 dateModified: "2026-08-30T14:25:55Z"
+focusKeyword: "Kenya Urged to Enact Laws Against Enforced Disappearances"
 schema: "NewsArticle"
 ---
 
-## The Unfinished Ledger of Missing Citizens
+## The Unfinished Ledger of Missing Citizens Kenya Urged to Enact Laws Against Enforced Disappearances is the central subject of the update.
 
 The specters of the 2007 post-election violence continue to haunt the machinery of Kenyan justice, embodied by the chilling, unresolved disappearance of Dan Baru Nyamohanga from a Kehancha police cell. Nearly twenty years later, the nation remains trapped in a recurring pattern of state-sponsored erasure that demands immediate legislative intervention.
 
