@@ -1,18 +1,20 @@
 ---
 title: "Siaya Governor James Orengo declares interest in presidential race"
 slug: "siaya-governor-james-orengo-declares-presidential-bid"
-description: "Siaya Governor James Orengo has officially launched his 2027 presidential bid, sparking discussions on potential shifts within opposition politics."
+description: "Siaya Governor James Orengo declares interest in presidential rac: Siaya Governor James Orengo has officially launched his 2027 presidential bid, sparking"
+excerpt: "The 2027 Presidential Race Heats Up Homa Bay County is currently at the center of a brewing political storm. Governor James Orengo has offic"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/xq2nmhbS/9a85bf5a5673.jpg"
 category: "Gossip"
 tags: ["kenya politics", "james orengo", "2027 elections", "linda mwananchi", "kenyan news"]
+canonical: "https://zandani.co.ke/article/siaya-governor-james-orengo-declares-presidential-bid"
 date: "2026-08-30T11:50:56Z"
 dateModified: "2026-08-30T11:50:56Z"
+focusKeyword: "Siaya Governor James Orengo declares interest in presidential rac"
 schema: "NewsArticle"
 ---
 
-## The 2027 Presidential Race Heats Up
+## The 2027 Presidential Race Heats Up Siaya Governor James Orengo declares interest in presidential rac is the central subject of the update.
 
 Homa Bay County is currently at the center of a brewing political storm. Governor James Orengo has officially signaled his ambition for the presidency, turning the region into a focal point for the future of the Linda Mwananchi movement. This declaration has sparked an intense power struggle, drawing clear lines between established political veterans and a new, vocal generation of leaders.
 
