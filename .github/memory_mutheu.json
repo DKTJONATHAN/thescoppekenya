@@ -406,10 +406,10 @@
     "b505027742c3e4ca21dcc263db4be646",
     "d427e34d29879ed5f1a2eca329555e8e",
     "49d18055db6562fe5b7719567e71556f",
-    "88e8545ab19b3b1c8618af9e00e2b4ae"
+    "88e8545ab19b3b1c8618af9e00e2b4ae",
+    "194a3701b50e1a1d5667e228b344ae73"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
@@ -438,10 +438,10 @@
     "Hard News Lead",
     "Explainer",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "timeline_shift|Arlene Smith|Hard News Lead",
     "accountability|Childhood abuse|Explainer",
     "money_follow|Netflix|Reaction Round-up",
     "policy_gap|Police stop|Trend Take",
@@ -520,6 +520,7 @@
     "story_progression|Jodie Sweetin|Hard News Lead",
     "myth_vs_fact|na|Explainer",
     "story_progression|Prison Break|Trend Take",
-    "winners_losers|Country music star|Reaction Round-up"
+    "winners_losers|Country music star|Reaction Round-up",
+    "timeline_shift|Donna Mills|Profile Beat"
   ]
 }
