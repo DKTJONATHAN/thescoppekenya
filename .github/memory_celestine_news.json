@@ -464,10 +464,10 @@
     "1b285f68417bcaaf59d14b4e0c803f6a",
     "5da67a147e743b963ebed5941e53e53d",
     "03682f49d0569e45ef9726c2f9692314",
-    "6d514df13da31fe4f738e71071c852e7"
+    "6d514df13da31fe4f738e71071c852e7",
+    "8e9fa2533bb8ec3e480fcb2b7862402b"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
@@ -496,10 +496,10 @@
     "Explainer",
     "Power Accountability",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "timeline_shift|DCI|Explainer",
     "winners_losers|Kenya|Reaction & Voices",
     "timeline_shift|Vision 2030|Context Backgrounder",
     "myth_vs_fact|Marriage Act 2014|Hard News Lead",
@@ -578,6 +578,7 @@
     "money_follow|Kenya|Explainer",
     "accountability|Kenya|Power Accountability",
     "money_follow|Affordable Housing Levy|Reaction & Voices",
-    "winners_losers|infrastructure|Hard News Lead"
+    "winners_losers|infrastructure|Hard News Lead",
+    "money_follow|Nairobi|Context Backgrounder"
   ]
 }
