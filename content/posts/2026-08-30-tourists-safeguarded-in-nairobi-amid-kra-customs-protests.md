@@ -1,18 +1,20 @@
 ---
 title: "Tourists moved to safety in Nairobi amid trader protests at KRA"
 slug: "tourists-safeguarded-in-nairobi-amid-kra-customs-protests"
-description: "Foreign tourists were guided to safety in Nairobi CBD as traders protested against new Kenya Revenue Authority customs valuation regulations today."
+description: "Tourists moved to safety in Nairobi amid trader protests at KRA: Foreign tourists were guided to safety in Nairobi CBD as traders protested against new Kenya"
+excerpt: "The Customs Wall and the CBD Siege Foreign tourists navigating the central business district were escorted to secure locations today as mask"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/MDL8s7RC/7027aa985785.webp"
 category: "News"
 tags: ["nairobi", "kra", "kenya news", "tourism safety", "customs valuation", "business protests"]
+canonical: "https://zandani.co.ke/article/tourists-safeguarded-in-nairobi-amid-kra-customs-protests"
 date: "2026-08-30T10:24:40Z"
 dateModified: "2026-08-30T10:24:40Z"
+focusKeyword: "Tourists moved to safety in Nairobi amid trader protests at KRA"
 schema: "NewsArticle"
 ---
 
-## The Customs Wall and the CBD Siege
+## The Customs Wall and the CBD Siege Tourists moved to safety in Nairobi amid trader protests at KRA is the central subject of the update.
 
 Foreign tourists navigating the central business district were escorted to secure locations today as masked individuals shadowed their movements near the city center, a stark reminder that the widening rift between small-scale traders and the state now threatens the heartbeat of the capital.
 
