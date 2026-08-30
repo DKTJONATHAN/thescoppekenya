@@ -14,7 +14,7 @@ focusKeyword: "'Superman 1978 Cast: What Happened to the Iconic Stars?"
 schema: "NewsArticle"
 ---
 
-## Beyond the Cape: The Lasting Effect on the Superman 1978 Cast "Superman 1978 Cast: What Happened to the Iconic Stars? is the central subject of the update.
+## Beyond the Cape: The Lasting Effect on the Superman 1978 Cast "Superman 1978 Cast: What Happened to the Iconic Stars? is the central subject of the update. 'Superman 1978 Cast: What Happened to the Iconic Stars? is the central subject of the update.
 
 Even decades after its release, the question of how the 1978 *Superman* film affected its cast still captures public interest. Taking on such iconic roles deeply influenced their lives and careers. For many, the fame and demands of playing these legendary characters became closely tied to their personal achievements and challenges, often in surprising ways.
 
