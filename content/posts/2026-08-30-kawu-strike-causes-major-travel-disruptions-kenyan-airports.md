@@ -1,18 +1,20 @@
 ---
 title: "KAWU strike causes major travel disruptions at Kenyan airports"
 slug: "kawu-strike-causes-major-travel-disruptions-kenyan-airports"
-description: "Thousands of passengers face travel delays as KAWU industrial action halts aviation services following failed labor negotiations over contract terms."
+description: "KAWU strike causes major travel disruptions at Kenyan airports: Thousands of passengers face travel delays as KAWU industrial action halts aviation services"
+excerpt: "The Grounded Flights of Sovereignty The Kenya Aviation Workers Union walked off the job this morning, leaving thousands of passengers strand"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jZ3hjQgg/30dae9419bc8.webp"
 category: "News"
 tags: ["kawu", "aviation strike", "kenya airports", "kaa", "labour relations", "travel news"]
+canonical: "https://zandani.co.ke/article/kawu-strike-causes-major-travel-disruptions-kenyan-airports"
 date: "2026-08-30T15:17:17Z"
 dateModified: "2026-08-30T15:17:17Z"
+focusKeyword: "KAWU strike causes major travel disruptions at Kenyan airports"
 schema: "NewsArticle"
 ---
 
-## The Grounded Flights of Sovereignty
+## The Grounded Flights of Sovereignty KAWU strike causes major travel disruptions at Kenyan airports is the central subject of the update.
 
 The Kenya Aviation Workers Union walked off the job this morning, leaving thousands of passengers stranded in terminals across the country. Official statements blame the disruption on stalled salary negotiations, but the timing reveals a deeper, more calculated resistance against the systematic handover of national assets.
 
