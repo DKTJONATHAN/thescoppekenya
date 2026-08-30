@@ -1,21 +1,20 @@
 ---
-title: "Brad Paisley Gets Emotional Honoring Dolly Parton After Her Death
+title: "'Brad Paisley Gets Emotional Honoring Dolly Parton After Her Death"
 slug: "brad-paisley-dolly-parton-emotional-tribute-performance"
-description: "Brad Paisley honored Dolly Parton with an emotional solo performance of their duet after her passing. Learn how the song gained new, personal meaning and his wife's tribute."
+description: "'Brad Paisley Gets Emotional Honoring Dolly Parton After Her Deat: Brad Paisley honored Dolly Parton with an emotional solo performance of their duet after her"
+excerpt: "Brad Paisley's Emotional Tribute to Dolly Parton Recontextualizes Iconic Duet Country music star Brad Paisley honored the late Dolly Parton"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/nshcXk6m/bf8f511aebfe.jpg"
-og_title: "Brad Paisley's Emotional Tribute to Dolly Parton"
-og_description: "Brad Paisley delivered an emotional solo performance of his duet with Dolly Parton after her death. The song took on a new, personal meaning."
-focus_keyword: "Brad Paisley Dolly Parton"
 category: "Entertainment"
 tags: ["brad paisley", "dolly parton", "country music", "celebrity news", "tribute", "kimberly williams-paisley"]
+canonical: "https://zandani.co.ke/article/brad-paisley-dolly-parton-emotional-tribute-performance"
 date: "2026-08-30T18:11:45Z"
 dateModified: "2026-08-30T18:11:45Z"
+focusKeyword: "'Brad Paisley Gets Emotional Honoring Dolly Parton After Her Deat"
 schema: "NewsArticle"
 ---
 
-## Brad Paisley's Emotional Tribute to Dolly Parton Recontextualizes Iconic Duet
+## Brad Paisley's Emotional Tribute to Dolly Parton Recontextualizes Iconic Duet "Brad Paisley Gets Emotional Honoring Dolly Parton After Her Deat is the central subject of the update.
 
 Country music star Brad Paisley honored the late Dolly Parton with a poignant solo performance in Bridgeport, Connecticut, this week. His rendition of their 2005 duet, "When I Get Where I’m Going," resonated with new, personal meaning following Parton's recent passing.
 
