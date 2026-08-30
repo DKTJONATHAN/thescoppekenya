@@ -1,18 +1,20 @@
 ---
 title: "Google sets new memory standards for Android apps to boost performance"
 slug: "google-new-android-memory-standards-performance"
-description: "Google is enforcing stricter Android app memory standards to improve device efficiency, potentially extending the lifespan of affordable phones in Kenya."
+description: "Google sets new memory standards for Android apps to boost perfor: Google is enforcing stricter Android app memory standards to improve device efficiency,"
+excerpt: "Software rules to save our phones Nairobi phone repair technicians are cheering after Google announced a 2027 policy requiring app developer"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/TBf6QY2m/d63f1958c2af.webp"
 category: "News"
 tags: ["android", "google", "smartphone technology", "software efficiency", "kenya tech news", "mobile performance"]
+canonical: "https://zandani.co.ke/article/google-new-android-memory-standards-performance"
 date: "2026-08-30T19:41:40Z"
 dateModified: "2026-08-30T19:41:40Z"
+focusKeyword: "Google sets new memory standards for Android apps to boost perfor"
 schema: "NewsArticle"
 ---
 
-## Software rules to save our phones
+## Software rules to save our phones Google sets new memory standards for Android apps to boost perfor is the central subject of the update.
 
 Nairobi phone repair technicians are cheering after Google announced a 2027 policy requiring app developers to cap memory usage. This shift aims to stop bloated software from choking low-cost devices, effectively forcing apps to run smoothly on modest hardware.
 

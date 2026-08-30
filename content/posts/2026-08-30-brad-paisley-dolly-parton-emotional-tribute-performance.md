@@ -14,7 +14,7 @@ focusKeyword: "'Brad Paisley Gets Emotional Honoring Dolly Parton After Her Deat
 schema: "NewsArticle"
 ---
 
-## Brad Paisley's Emotional Tribute to Dolly Parton Recontextualizes Iconic Duet "Brad Paisley Gets Emotional Honoring Dolly Parton After Her Deat is the central subject of the update.
+## Brad Paisley's Emotional Tribute to Dolly Parton Recontextualizes Iconic Duet "Brad Paisley Gets Emotional Honoring Dolly Parton After Her Deat is the central subject of the update. 'Brad Paisley Gets Emotional Honoring Dolly Parton After Her Deat is the central subject of the update.
 
 Country music star Brad Paisley honored the late Dolly Parton with a poignant solo performance in Bridgeport, Connecticut, this week. His rendition of their 2005 duet, "When I Get Where I’m Going," resonated with new, personal meaning following Parton's recent passing.
 
