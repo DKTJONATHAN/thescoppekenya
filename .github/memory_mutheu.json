@@ -408,10 +408,10 @@
     "49d18055db6562fe5b7719567e71556f",
     "88e8545ab19b3b1c8618af9e00e2b4ae",
     "194a3701b50e1a1d5667e228b344ae73",
-    "e711eaac8c2c31f92aec7e79ea46116f"
+    "e711eaac8c2c31f92aec7e79ea46116f",
+    "7339f80202dad553679b3b596730f686"
   ],
   "style_history": [
-    "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
     "Explainer",
@@ -440,10 +440,10 @@
     "Trend Take",
     "Reaction Round-up",
     "Profile Beat",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|Netflix|Reaction Round-up",
     "policy_gap|Police stop|Trend Take",
     "story_progression|na|Profile Beat",
     "accountability|Happy Days|Hard News Lead",
@@ -522,6 +522,7 @@
     "story_progression|Prison Break|Trend Take",
     "winners_losers|Country music star|Reaction Round-up",
     "timeline_shift|Donna Mills|Profile Beat",
-    "story_progression|na|Explainer"
+    "story_progression|na|Explainer",
+    "timeline_shift|na|Hard News Lead"
   ]
 }
