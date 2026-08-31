@@ -410,10 +410,10 @@
     "194a3701b50e1a1d5667e228b344ae73",
     "e711eaac8c2c31f92aec7e79ea46116f",
     "7339f80202dad553679b3b596730f686",
-    "418c83ef261648a6aa7711b7af3369fe"
+    "418c83ef261648a6aa7711b7af3369fe",
+    "46d0fa128982b133e59a6666b1df2e18"
   ],
   "style_history": [
-    "Profile Beat",
     "Explainer",
     "Trend Take",
     "Hard News Lead",
@@ -442,10 +442,10 @@
     "Profile Beat",
     "Explainer",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "story_progression|na|Profile Beat",
     "accountability|Happy Days|Hard News Lead",
     "story_progression|Practical Magic|Explainer",
     "accountability|Aaron Rodgers|Reaction Round-up",
@@ -524,6 +524,7 @@
     "timeline_shift|Donna Mills|Profile Beat",
     "story_progression|na|Explainer",
     "timeline_shift|na|Hard News Lead",
-    "accountability|FCC|Reaction Round-up"
+    "accountability|FCC|Reaction Round-up",
+    "story_progression|Ebenezer|Profile Beat"
   ]
 }
