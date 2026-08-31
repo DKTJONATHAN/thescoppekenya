@@ -1,18 +1,20 @@
 ---
 title: "KRA Integrates eTIMS with IFMIS to Automate Supplier Invoices"
 slug: "kra-integrates-etims-with-ifmis-to-automate-supplier-invoices"
-description: "The Kenya Revenue Authority has linked eTIMS with IFMIS to enable real-time verification of government supplier invoices for tax compliance."
+description: "KRA Integrates eTIMS with IFMIS to Automate Supplier Invoices: The Kenya Revenue Authority has linked eTIMS with IFMIS to enable real-time verification of"
+excerpt: "The Digital Shield: Transforming State Procurement Oversight The National Treasury has finalized the integration of the Electronic Tax Invoi"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/r26JhBqW/9b07dfc33e05.webp"
 category: "Technology"
 tags: ["kra", "etims", "ifmis", "kenya government", "tax compliance", "public procurement"]
+canonical: "https://zandani.co.ke/article/kra-integrates-etims-with-ifmis-to-automate-supplier-invoices"
 date: "2026-08-31T18:01:40Z"
 dateModified: "2026-08-31T18:01:40Z"
+focusKeyword: "KRA Integrates eTIMS with IFMIS to Automate Supplier Invoices"
 schema: "NewsArticle"
 ---
 
-## The Digital Shield: Transforming State Procurement Oversight
+## The Digital Shield: Transforming State Procurement Oversight KRA Integrates eTIMS with IFMIS to Automate Supplier Invoices is the central subject of the update.
 
 The National Treasury has finalized the integration of the Electronic Tax Invoice Management System (eTIMS) with the Integrated Financial Management Information System (IFMIS). This technological alignment creates a robust digital checkpoint for all public expenditures. By requiring that every supplier claim undergoes an automated audit against tax records prior to disbursement, the government has essentially installed a digital gatekeeper over the national purse.
 
