@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /search
+Disallow: /search?
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://zandani.co.ke/sitemap.xml
+Sitemap: https://zandani.co.ke/news-sitemap.xml
