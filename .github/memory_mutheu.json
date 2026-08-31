@@ -409,10 +409,10 @@
     "88e8545ab19b3b1c8618af9e00e2b4ae",
     "194a3701b50e1a1d5667e228b344ae73",
     "e711eaac8c2c31f92aec7e79ea46116f",
-    "7339f80202dad553679b3b596730f686"
+    "7339f80202dad553679b3b596730f686",
+    "418c83ef261648a6aa7711b7af3369fe"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Profile Beat",
     "Explainer",
     "Trend Take",
@@ -441,10 +441,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Explainer",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "policy_gap|Police stop|Trend Take",
     "story_progression|na|Profile Beat",
     "accountability|Happy Days|Hard News Lead",
     "story_progression|Practical Magic|Explainer",
@@ -523,6 +523,7 @@
     "winners_losers|Country music star|Reaction Round-up",
     "timeline_shift|Donna Mills|Profile Beat",
     "story_progression|na|Explainer",
-    "timeline_shift|na|Hard News Lead"
+    "timeline_shift|na|Hard News Lead",
+    "accountability|FCC|Reaction Round-up"
   ]
 }
