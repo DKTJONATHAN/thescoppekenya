@@ -228,10 +228,10 @@
     "0df8d21eaf5403472e51bec7808ad4c4",
     "41f988159c0f24155c848c532b702136",
     "c2431fb1e9fd6a7004278ce13da4f715",
-    "5bfe0a6aaf3b4df5ae0e648dc4bef8bc"
+    "5bfe0a6aaf3b4df5ae0e648dc4bef8bc",
+    "f34901ae98a414912776577689d96610"
   ],
   "style_history": [
-    "Historical Lens",
     "Sharp Column",
     "Counterpoint",
     "Letter Form",
@@ -260,10 +260,10 @@
     "Personal Reflection",
     "Counterpoint",
     "Letter Form",
-    "Historical Lens"
+    "Historical Lens",
+    "Sharp Column"
   ],
   "angle_history": [
-    "story_progression|China-Kenya relations|Sharp Column",
     "policy_gap|school unrest|Personal Reflection",
     "timeline_shift|Law Society of Kenya|Historical Lens",
     "accountability|Kenya|Letter Form",
@@ -342,6 +342,7 @@
     "next_48_hours|Katiba|Personal Reflection",
     "myth_vs_fact|conservation|Counterpoint",
     "story_progression|Dolly Parton|Letter Form",
-    "timeline_shift|enforced disappearance|Historical Lens"
+    "timeline_shift|enforced disappearance|Historical Lens",
+    "money_follow|Postbank|Sharp Column"
   ]
 }
