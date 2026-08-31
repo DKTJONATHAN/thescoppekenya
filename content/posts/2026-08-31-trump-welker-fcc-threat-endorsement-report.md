@@ -14,7 +14,7 @@ focusKeyword: "'Trump threatens NBC's Kristen Welker with FCC action over endors
 schema: "NewsArticle"
 ---
 
-## Kenya Watches as Trump Welker FCC Clash Ignites Media Accountability Debate "Trump threatens NBC's Kristen Welker with FCC action over endors is the central subject of the update.
+## Kenya Watches as Trump Welker FCC Clash Ignites Media Accountability Debate "Trump threatens NBC's Kristen Welker with FCC action over endors is the central subject of the update. 'Trump threatens NBC's Kristen Welker with FCC action over endors is the central subject of the update.
 
 Donald Trump’s recent threat to report NBC News journalist Kristen Welker to the Federal Communications Commission has ignited a firestorm of global debate, with Kenyan observers keenly weighing in on the implications for media freedom and political accountability. This dramatic escalation stems from Welker's on-air assessment of Trump's endorsement success, sparking intense scrutiny on the **Trump Welker FCC** saga.
 
