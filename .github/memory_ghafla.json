@@ -299,10 +299,10 @@
     "fe3e2dfad581ca26e41a2cb10a94c035",
     "138de65ba6d9df61e6bbf4299623565f",
     "d5506279602fddbeab3a22c0fe2fae41",
-    "f289a93bbe168472a9785d007c5c2563"
+    "f289a93bbe168472a9785d007c5c2563",
+    "c9440d403f6ec03958f174211dc6b9cf"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
@@ -331,10 +331,10 @@
     "Hard News Lead",
     "Receipts Piece",
     "Trend Take",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|Kenyan Politics|Reaction Round-up",
     "policy_gap|transgender|Receipts Piece",
     "policy_gap|Kenya Power|Profile Beat",
     "story_progression|gospel singer|Trend Take",
@@ -413,6 +413,7 @@
     "story_progression|Arbantone|Hard News Lead",
     "timeline_shift|Murugi Munyi|Receipts Piece",
     "timeline_shift|Kenya politics|Trend Take",
-    "story_progression|Kenya politics|Reaction Round-up"
+    "story_progression|Kenya politics|Reaction Round-up",
+    "policy_gap|Kenya|Hard News Lead"
   ]
 }
