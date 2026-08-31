@@ -1,11 +1,17 @@
 {
   "$schema": "https://unpkg.com/wrangler@4/config-schema.json",
-  "name": "zandani",
+  "name": "thescoppekenya",
   "compatibility_date": "2026-08-31",
+  "main": "./worker.js",
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
-    "html_handling": "auto-trailing-slash",
-    "not_found_handling": "none"
+    "html_handling": "none",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": [
+      "/google4a7d26b466f41330.html",
+      "/google4a7d26b466f41330",
+      "/968a6d115d3240a3acbc3448c398978d.txt"
+    ]
   }
 }
