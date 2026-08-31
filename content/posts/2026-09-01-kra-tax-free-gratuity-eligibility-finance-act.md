@@ -1,18 +1,20 @@
 ---
 title: "KRA Outlines New Tax Rules for Employee Gratuity Payments"
 slug: "kra-tax-free-gratuity-eligibility-finance-act"
-description: "The Kenya Revenue Authority has released guidelines for tax-free gratuity under the Finance Act requiring three years of service and a 31 percent cap."
+description: "KRA Outlines New Tax Rules for Employee Gratuity Payments: The Kenya Revenue Authority has released guidelines for tax-free gratuity under the Finance Act"
+excerpt: "Will Your Final Gratuity Payout Face a Tax Penalty? The Kenya Revenue Authority has released specific guidelines under the Finance Act 2026"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/wrYHmT0s/29212c4c1abc.webp"
 category: "News"
 tags: ["kra", "kenya", "taxation", "gratuity", "employment", "finance act"]
+canonical: "https://zandani.co.ke/article/kra-tax-free-gratuity-eligibility-finance-act"
 date: "2026-08-31T21:50:30Z"
 dateModified: "2026-08-31T21:50:30Z"
+focusKeyword: "KRA Outlines New Tax Rules for Employee Gratuity Payments"
 schema: "NewsArticle"
 ---
 
-## Will Your Final Gratuity Payout Face a Tax Penalty?
+## Will Your Final Gratuity Payout Face a Tax Penalty? KRA Outlines New Tax Rules for Employee Gratuity Payments is the central subject of the update.
 
 The Kenya Revenue Authority has released specific guidelines under the Finance Act 2026 that change how long-term employees collect their end-of-contract bonuses. These rules shift the tax-free status of your payout based strictly on your tenure and the total percentage of your earnings.
 
