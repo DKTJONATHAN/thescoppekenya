@@ -1,21 +1,20 @@
 ---
-title: "Trump threatens NBC's Kristen Welker with FCC action over endorsements
+title: "'Trump threatens NBC's Kristen Welker with FCC action over endorsements"
 slug: "trump-welker-fcc-threat-endorsement-report"
-description: "Donald Trump threatened NBC journalist Kristen Welker with an FCC report after she commented on his political endorsements' mixed results. Discover the escalating media dispute."
+description: "'Trump threatens NBC's Kristen Welker with FCC action over endors: Donald Trump threatened NBC journalist Kristen Welker with an FCC report after she commented"
+excerpt: "Kenya Watches as Trump Welker FCC Clash Ignites Media Accountability Debate Donald Trump’s recent threat to report NBC News journalist Krist"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/ZRPMNN2y/62cb04922046.jpg"
-og_title: "Trump Threatens Kristen Welker with FCC Action"
-og_description: "Donald Trump vows to report NBC's Kristen Welker to the FCC over her reporting on his political endorsements. Tensions rise between the former President and the media."
-focus_keyword: "Trump Welker FCC"
 category: "Entertainment"
 tags: ["donald trump", "kristen welker", "fcc", "journalism", "political endorsements", "media criticism", "truth social"]
+canonical: "https://zandani.co.ke/article/trump-welker-fcc-threat-endorsement-report"
 date: "2026-08-31T00:49:02Z"
 dateModified: "2026-08-31T00:49:02Z"
+focusKeyword: "'Trump threatens NBC's Kristen Welker with FCC action over endors"
 schema: "NewsArticle"
 ---
 
-## Kenya Watches as Trump Welker FCC Clash Ignites Media Accountability Debate
+## Kenya Watches as Trump Welker FCC Clash Ignites Media Accountability Debate "Trump threatens NBC's Kristen Welker with FCC action over endors is the central subject of the update.
 
 Donald Trump’s recent threat to report NBC News journalist Kristen Welker to the Federal Communications Commission has ignited a firestorm of global debate, with Kenyan observers keenly weighing in on the implications for media freedom and political accountability. This dramatic escalation stems from Welker's on-air assessment of Trump's endorsement success, sparking intense scrutiny on the **Trump Welker FCC** saga.
 
