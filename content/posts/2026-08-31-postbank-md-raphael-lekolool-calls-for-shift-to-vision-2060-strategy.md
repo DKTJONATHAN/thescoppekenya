@@ -1,18 +1,20 @@
 ---
 title: "Postbank MD Raphael Lekolool Calls for Shift to Vision 2060 Strategy"
 slug: "postbank-md-raphael-lekolool-calls-for-shift-to-vision-2060-strategy"
-description: "Postbank Managing Director Raphael Lekolool urges Kenya to boost domestic savings to reduce foreign debt and achieve sustainable economic growth."
+description: "Postbank MD Raphael Lekolool Calls for Shift to Vision 2060 Strat: Postbank Managing Director Raphael Lekolool urges Kenya to boost domestic savings to reduce"
+excerpt: "The National Savings Void Kenya will remain a beggar nation until we stop consuming our own capital and start locking it into domestic inves"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/dqQzKSp/502b008fc51d.webp"
 category: "Opinions"
 tags: ["kenya economy", "vision 2060", "postbank", "financial inclusion", "domestic savings", "economic development"]
+canonical: "https://zandani.co.ke/article/postbank-md-raphael-lekolool-calls-for-shift-to-vision-2060-strategy"
 date: "2026-08-31T17:04:37Z"
 dateModified: "2026-08-31T17:04:37Z"
+focusKeyword: "Postbank MD Raphael Lekolool Calls for Shift to Vision 2060 Strat"
 schema: "NewsArticle"
 ---
 
-## The National Savings Void
+## The National Savings Void Postbank MD Raphael Lekolool Calls for Shift to Vision 2060 Strat is the central subject of the update.
 
 **Kenya will remain a beggar nation until we stop consuming our own capital and start locking it into domestic investment.**
 
