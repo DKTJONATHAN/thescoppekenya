@@ -1,0 +1,89 @@
+name: After writers quality gate
+
+on:
+  workflow_run:
+    workflows:
+      - Celestine Nzioka - News Scraper
+      - Mutheu Ann - Entertainment Scraper
+      - Jona Munyi - Sports Scraper
+      - Grace Mkamburi - Business Scraper
+      - Jonathan Mwaniki - Opinions Scraper
+      - Martin Kihara - Showbiz Scraper
+      - Wanjiku Kuria - Gossip Scraper
+      - Amara Ndlovu - Pan-Africa Entertainment Scraper
+      - Jona Munyi - Lifestyle Scraper
+      - Elizabeth Muthoni - Technology Scraper
+      - Timothy Muli - Agriculture Scraper
+      - Manual Article Scraper
+      - Multi-Source Research Article Generator
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  polish:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Polish latest posts
+        run: python scripts/polish_new_posts.py
+
+      - name: Lint latest posts
+        id: lint
+        continue-on-error: true
+        run: python scripts/seo_lint_posts.py | tee /tmp/seo-lint.txt
+
+      - name: Commit polish fixes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Za Ndani <bot@zandani.co.ke>"
+          commit_message: "seo: polish articles after writer run"
+          branch: main
+          file_pattern: "content/posts/*.md"
+
+      - name: Flag SEO failures
+        if: steps.lint.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let report = '';
+            try { report = fs.readFileSync('/tmp/seo-lint.txt', 'utf8'); } catch (e) { report = 'lint failed with no report'; }
+            const title = 'SEO audit: latest articles failed lint';
+            const body = 'Writer quality gate found problems.\n\n```\n' + report.slice(0, 6000) + '\n```';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 30
+            });
+            const existing = issues.find(i => i.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              });
+            }

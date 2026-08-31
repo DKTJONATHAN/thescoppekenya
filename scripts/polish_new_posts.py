@@ -65,6 +65,7 @@ def dump_fm(data: dict) -> str:
     ]
     lines = ["---"]
     seen = set()
+    skip = {"focus_keyword", "og_title", "og_description"}
     for key in order:
         if key in data and data[key] != "":
             val = data[key]
@@ -77,7 +78,7 @@ def dump_fm(data: dict) -> str:
                 lines.append(f"{key}: {val}")
             seen.add(key)
     for key, val in data.items():
-        if key in seen:
+        if key in seen or key in skip:
             continue
         lines.append(f'{key}: "{str(val).replace(chr(34), chr(39))}"')
     lines.append("---\n")
@@ -90,7 +91,7 @@ def slugify(title: str) -> str:
 
 
 def trim_title(title: str) -> str:
-    title = re.sub(r"\s+", " ", title).strip()
+    title = re.sub(r"\s+", " ", title).strip().strip('"').strip("'")
     title = re.sub(r"\s*[\[\(]\d{4}[\]\)]\s*", " ", title).strip()
     if len(title) <= MAX_TITLE:
         return title
@@ -103,7 +104,7 @@ def trim_title(title: str) -> str:
 def trim_desc(desc: str, title: str) -> str:
     desc = re.sub(r"\s+", " ", desc or "").strip()
     if not desc:
-        desc = f"{title} — the latest from Kenya, reported by Za Ndani."
+        desc = f"{title}. Latest reporting from Kenya on Za Ndani."
     if len(desc) > MAX_DESC:
         cut = desc[: MAX_DESC + 1]
         desc = cut.rsplit(" ", 1)[0].rstrip(".,;:") + "."
@@ -131,8 +132,7 @@ def strip_body(body: str) -> str:
             continue
         kept.append(block.strip())
     text = "\n\n".join(kept).strip()
-    text = text.replace("\u2014", "-").replace("\u2013", "-")
-    return text
+    return text.replace("\u2014", "-").replace("\u2013", "-")
 
 
 def focus_keyword(title: str) -> str:
@@ -152,8 +152,8 @@ def polish_file(path: pathlib.Path) -> bool:
     data["slug"] = slugify(data["slug"])
     if not data.get("date"):
         data["date"] = dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
-    data["dateModified"] = dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
-    data["focusKeyword"] = data.get("focusKeyword") or focus_keyword(data["title"])
+    data["dateModified"] = data.get("dateModified") or data["date"]
+    data["focusKeyword"] = data.get("focusKeyword") or data.get("focus_keyword") or focus_keyword(data["title"])
     data["schema"] = data.get("schema") or "NewsArticle"
     body = strip_body(body)
     words = re.findall(r"\w+", body)
