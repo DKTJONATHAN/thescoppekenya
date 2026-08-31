@@ -7,9 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/hooks/useTheme";
 import { Button } from "@/components/ui/button";
 
-// Homepage loaded eagerly for fastest FCP/LCP
 import Index from "./pages/Index";
-// Code Splitting: Lazy load all other pages
 const ArticlePage = lazy(() => import("./pages/ArticlePage"));
 const CategoryPage = lazy(() => import("./pages/CategoryPage"));
 const Trending = lazy(() => import("./pages/Trending"));
@@ -30,6 +28,7 @@ const EntertainmentPage = lazy(() => import("./pages/EntertainmentPage"));
 const BusinessPage = lazy(() => import("./pages/BusinessPage"));
 const LifestylePage = lazy(() => import("./pages/LifestylePage"));
 const LiveScoresPage = lazy(() => import("./pages/LiveScoresPage"));
+const LiveWirePage = lazy(() => import("./pages/LiveWirePage"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const SitemapHtmlPage = lazy(() => import("./pages/SitemapHtmlPage"));
 const AuthorsPage = lazy(() => import("./pages/AuthorsPage"));
@@ -39,43 +38,33 @@ const AuthorProfilePage = lazy(() => import("./pages/AuthorProfilePage"));
 const HubPage = lazy(() => import("./pages/HubPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-// Optimized Query Client with caching
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 5 * 60 * 1000, // 5 minutes
-      gcTime: 30 * 60 * 1000, // 30 minutes
+      staleTime: 5 * 60 * 1000,
+      gcTime: 30 * 60 * 1000,
       refetchOnWindowFocus: false,
       retry: 1,
     },
   },
 });
 
-// Loading fallback for lazy loaded routes
 const PageLoader = () => (
   <div className="min-h-screen flex items-center justify-center bg-background">
     <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
   </div>
 );
 
-// Error fallback component
 const ErrorFallback = ({ onRetry }: { onRetry: () => void }) => (
   <div className="min-h-screen flex items-center justify-center bg-background">
     <div className="text-center max-w-md mx-auto px-4">
-      <h1 className="text-2xl font-serif font-bold text-foreground mb-4">
-        Something went wrong
-      </h1>
-      <p className="text-muted-foreground mb-6">
-        We encountered an error loading this page. Please try again.
-      </p>
-      <Button onClick={onRetry} className="gradient-primary text-primary-foreground">
-        Try Again
-      </Button>
+      <h1 className="text-2xl font-serif font-bold text-foreground mb-4">Something went wrong</h1>
+      <p className="text-muted-foreground mb-6">We encountered an error loading this page. Please try again.</p>
+      <Button onClick={onRetry} className="gradient-primary text-primary-foreground">Try Again</Button>
     </div>
   </div>
 );
 
-// Error Boundary Component
 interface ErrorBoundaryProps {
   children: ReactNode;
   fallback?: ReactNode;
@@ -96,7 +85,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error('Page error:', error, errorInfo);
+    console.error("Page error:", error, errorInfo);
   }
 
   handleRetry = () => {
@@ -112,22 +101,17 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 }
 
-// Global error handler component
 const GlobalErrorHandler = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const handleUnhandledRejection = (event: PromiseRejectionEvent) => {
-      console.error('Unhandled promise rejection:', event.reason);
-
-      if (event.reason?.message?.includes('Failed to fetch dynamically imported module')) {
-        console.warn('Dynamic import failed, reloading page...');
+      console.error("Unhandled promise rejection:", event.reason);
+      if (event.reason?.message?.includes("Failed to fetch dynamically imported module")) {
         window.location.reload();
       }
     };
-
-    window.addEventListener('unhandledrejection', handleUnhandledRejection);
-    return () => window.removeEventListener('unhandledrejection', handleUnhandledRejection);
+    window.addEventListener("unhandledrejection", handleUnhandledRejection);
+    return () => window.removeEventListener("unhandledrejection", handleUnhandledRejection);
   }, []);
-
   return <>{children}</>;
 };
 
@@ -145,6 +129,7 @@ const App = () => (
                 <Route path="/article/:slug" element={<ArticlePage />} />
                 <Route path="/category/:slug" element={<CategoryPage />} />
                 <Route path="/trending" element={<Trending />} />
+                <Route path="/live" element={<LiveWirePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/privacy" element={<PrivacyPage />} />
