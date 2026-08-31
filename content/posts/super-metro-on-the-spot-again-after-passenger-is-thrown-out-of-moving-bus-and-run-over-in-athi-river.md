@@ -1,7 +1,7 @@
 ---
 title: "Super Metro On The Spot Again After Passenger Is Thrown Out Of"
-slug: "super-metro-on-the-spot-again-after-passenger-is-thrown-out-of-moving-"
-description: "Super Metro On The Spot Again After Passenger Is Thrown Out: The death of 25 year old Joseph Mureithi has sent shockwaves through communities in Athi River."
+slug: "super-metro-on-the-spot-again-after-passenger-is-thrown-out-of-moving"
+description: "Super Metro On The Spot Again After Passenger Is Thrown Out: The death of 25 year old Joseph Mureithi has sent shockwaves through communities in Athi."
 excerpt: "The death of 25 year old Joseph Mureithi has sent shockwaves through communities in Athi River and beyond. This young petrol attendant lost his life late on Tuesday night after he was allegedly pushed from a moving Super Metro bus and then run over by the same vehicle."
 author: "Jonathan Mwaniki"
 image: "https://i.postimg.cc/xTFGDB5G/images.jpg"
