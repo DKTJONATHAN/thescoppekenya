@@ -1,18 +1,20 @@
 ---
 title: "NSE Market Capitalization Hits Record Sh4.17 Trillion"
 slug: "nse-market-capitalization-hits-record-sh4-17-trillion"
-description: "The Nairobi Securities Exchange reached a record valuation of Sh4.17 trillion driven by Safaricom gains despite a decline in total trading turnover."
+description: "NSE Market Capitalization Hits Record Sh4.17 Trillion: The Nairobi Securities Exchange reached a record valuation of Sh4.17 trillion driven by Safaricom gains"
+excerpt: "The Illusion of Wealth at the Nairobi Securities Exchange The Nairobi Securities Exchange reached an unprecedented valuation of KSh 4.17 tri"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/sJDBrBN2/e7a7116e51a2.png"
 category: "Business"
 tags: ["nse", "nairobi securities exchange", "safaricom", "kenya economy", "stocks", "investing"]
+canonical: "https://zandani.co.ke/article/nse-market-capitalization-hits-record-sh4-17-trillion"
 date: "2026-08-31T11:34:18Z"
 dateModified: "2026-08-31T11:34:18Z"
+focusKeyword: "NSE Market Capitalization Hits Record Sh4.17 Trillion"
 schema: "NewsArticle"
 ---
 
-## The Illusion of Wealth at the Nairobi Securities Exchange
+## The Illusion of Wealth at the Nairobi Securities Exchange NSE Market Capitalization Hits Record Sh4.17 Trillion is the central subject of the update.
 
 The Nairobi Securities Exchange reached an unprecedented valuation of KSh 4.17 trillion this morning, a figure inflated by a singular corporate titan rather than broad market momentum. While headline numbers suggest a thriving bourse, the reality beneath the surface reveals a stagnating trading floor.
 
