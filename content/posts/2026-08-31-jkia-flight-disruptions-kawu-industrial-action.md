@@ -1,18 +1,20 @@
 ---
 title: "JKIA Flight Disruptions Continue Following KAWU Industrial Action"
 slug: "jkia-flight-disruptions-kawu-industrial-action"
-description: "Ongoing industrial action by airport workers at Jomo Kenyatta International Airport causes significant flight delays and financial losses for travelers."
+description: "JKIA Flight Disruptions Continue Following KAWU Industrial Action: Ongoing industrial action by airport workers at Jomo Kenyatta International Airport causes"
+excerpt: "Stalled Skies: The Economic Toll of the JKIA Shutdown Persistent industrial action by the Kenya Aviation Workers Union has paralyzed operati"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/pjqSZ0nS/ba5bfa581c5a.webp"
 category: "News"
 tags: ["kawu", "jkia", "kenya news", "aviation strike", "nairobi", "travel updates"]
+canonical: "https://zandani.co.ke/article/jkia-flight-disruptions-kawu-industrial-action"
 date: "2026-08-31T11:29:18Z"
 dateModified: "2026-08-31T11:29:18Z"
+focusKeyword: "JKIA Flight Disruptions Continue Following KAWU Industrial Action"
 schema: "NewsArticle"
 ---
 
-## Stalled Skies: The Economic Toll of the JKIA Shutdown
+## Stalled Skies: The Economic Toll of the JKIA Shutdown JKIA Flight Disruptions Continue Following KAWU Industrial Action is the central subject of the update.
 
 Persistent industrial action by the Kenya Aviation Workers Union has paralyzed operations at Jomo Kenyatta International Airport for a second consecutive day, triggering a cascading financial crisis that threatens to compromise Kenya’s standing as a regional logistics hub.
 
