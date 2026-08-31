@@ -1,18 +1,20 @@
 ---
 title: "Mikel Arteta reaches 250 matches as Arsenal face Aston Villa"
 slug: "mikel-arteta-reaches-250-matches-as-arsenal-face-aston-villa"
-description: "Arsenal manager Mikel Arteta marks his 250th Premier League game as the Gunners travel to Villa Park to take on Unai Emery and Aston Villa."
+description: "Mikel Arteta reaches 250 matches as Arsenal face Aston Villa: Arsenal manager Mikel Arteta marks his 250th Premier League game as the Gunners travel to Villa"
+excerpt: "A Tactical Pivot at Villa Park Ezri Konsa returns to Villa Park today wearing Arsenal colors. His recent £51m transfer represents more than"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/b5VhGXs2/b68ad3908644.jpg"
 category: "Sports"
 tags: ["premier league", "arsenal", "aston villa", "mikel arteta", "football news", "kenya sports"]
+canonical: "https://zandani.co.ke/article/mikel-arteta-reaches-250-matches-as-arsenal-face-aston-villa"
 date: "2026-08-31T17:40:02Z"
 dateModified: "2026-08-31T17:40:02Z"
+focusKeyword: "Mikel Arteta reaches 250 matches as Arsenal face Aston Villa"
 schema: "NewsArticle"
 ---
 
-## A Tactical Pivot at Villa Park
+## A Tactical Pivot at Villa Park Mikel Arteta reaches 250 matches as Arsenal face Aston Villa is the central subject of the update.
 
 Ezri Konsa returns to Villa Park today wearing Arsenal colors. His recent £51m transfer represents more than a change of club. It signifies a significant tactical shift for both sides as Mikel Arteta marks his 250th match in charge of the North London outfit. While the focus naturally drifts toward the atmosphere, the underlying narrative involves two managers recalibrating their squads to manage the fallout of a major market move.
 
