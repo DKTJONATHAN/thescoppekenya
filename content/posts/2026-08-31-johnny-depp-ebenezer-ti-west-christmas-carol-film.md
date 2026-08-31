@@ -1,21 +1,20 @@
 ---
-title: "Johnny Depp Stars as Scrooge in Ti West's Dark Ebenezer Adaptation
+title: "'Johnny Depp Stars as Scrooge in Ti West's Dark Ebenezer Adaptation"
 slug: "johnny-depp-ebenezer-ti-west-christmas-carol-film"
-description: "Johnny Depp returns to Hollywood in Ti West's Ebenezer, a dark adaptation of A Christmas Carol. This film explores supernatural horror and complex morality. Discover more about this intriguing adaptation."
+description: "'Johnny Depp Stars as Scrooge in Ti West's Dark Ebenezer Adaptati: Johnny Depp returns to Hollywood in Ti West's Ebenezer, a dark adaptation of A Christmas"
+excerpt: "The Unfolding Chapter: Johnny Depp's Ebenezer Gambit Actor Johnny Depp is poised to embark on a significant new chapter, taking on the iconi"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/7JvWJQBx/61314f14b8a7.jpg"
-og_title: "Johnny Depp Stars in Ti West's Dark Ebenezer Film"
-og_description: "Johnny Depp makes his major Hollywood return as Ebenezer Scrooge in Ti West's supernatural horror adaptation, Ebenezer. Out November 13."
-focus_keyword: "Johnny Depp Ebenezer"
 category: "Entertainment"
 tags: ["johnny depp", "ebenezer", "ti west", "film news", "horror adaptation", "ian mckellen", "rupert grint"]
+canonical: "https://zandani.co.ke/article/johnny-depp-ebenezer-ti-west-christmas-carol-film"
 date: "2026-08-31T14:22:10Z"
 dateModified: "2026-08-31T14:22:10Z"
+focusKeyword: "'Johnny Depp Stars as Scrooge in Ti West's Dark Ebenezer Adaptati"
 schema: "NewsArticle"
 ---
 
-## The Unfolding Chapter: Johnny Depp's Ebenezer Gambit
+## The Unfolding Chapter: Johnny Depp's Ebenezer Gambit "Johnny Depp Stars as Scrooge in Ti West's Dark Ebenezer Adaptati is the central subject of the update.
 
 Actor Johnny Depp is poised to embark on a significant new chapter, taking on the iconic role of Ebenezer Scrooge in Ti West's highly anticipated adaptation, *Ebenezer*. This marks his first major Hollywood release since his well-publicized 2022 defamation trial, placing a keen spotlight on his professional return and the path ahead.
 
