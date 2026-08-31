@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/wrangler@4/config-schema.json",
-  "name": "thescoppekenya",
+  "name": "zandani",
   "compatibility_date": "2026-08-31",
   "main": "./worker.js",
   "assets": {

@@ -1,7 +1,6 @@
 import { marked } from 'marked';
 import { staticSitePages } from './site-links';
 
-// Browser-compatible frontmatter parser
 function parseFrontmatter(content: string): { data: Record<string, unknown>; content: string } {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const match = content.match(frontmatterRegex);
@@ -38,7 +37,6 @@ function parseFrontmatter(content: string): { data: Record<string, unknown>; con
   return { data, content: bodyContent };
 }
 
-// ─── POST TYPES ──────────────────────────────────────────────────────────────
 export interface PostMetadata {
   title: string;
   slug: string;
@@ -63,30 +61,12 @@ export interface Post extends PostMetadata {
   imageAlt: string;
 }
 
-// ─── FILE LOADING (LAZY) ─────────────────────────────────────────────────────
-// We use eager: false (and no query: '?raw' here) because we'll load content 
-// dynamically via getPostBySlug.
-const postFiles = import.meta.glob('/content/posts/*.md', { 
-  query: '?raw',
-  import: 'default',
-  eager: false 
-});
-
-// ─── MANIFEST LOADING ────────────────────────────────────────────────────────
-// The manifest is generated at build time by scripts/generate-post-manifest.js
-// It's a small JSON with metadata only for fast listings.
 import manifestPosts from '../../public/posts-manifest.json';
 
 const ALL_POSTS: PostMetadata[] = (manifestPosts as unknown as PostMetadata[]).map(p => ({
   ...p,
   category: normalizeCategory(p.category)
 }));
-
-function calculateReadTime(content: string): number {
-  const wordsPerMinute = 200;
-  const wordCount = content.split(/\s+/).length;
-  return Math.ceil(wordCount / wordsPerMinute);
-}
 
 function normalizeCategory(rawCategory: string): string {
   const lower = rawCategory.toLowerCase().trim();
@@ -114,7 +94,6 @@ function getSafeTime(dateStr: string): number {
   if (!dateStr) return 0;
   let time = new Date(dateStr).getTime();
   if (!isNaN(time)) return time;
-  // Fallback for non-ISO strings like "2024-03-22 10:30"
   time = new Date(dateStr.replace(/-/g, '/').replace('T', ' ')).getTime();
   return isNaN(time) ? 0 : time;
 }
@@ -127,18 +106,20 @@ export async function getPostBySlug(slug: string): Promise<Post | undefined> {
   const metadata = ALL_POSTS.find(post => post.slug === slug);
   if (!metadata) return undefined;
 
-  const sourcePath = metadata.sourceFile
-    ? `/content/posts/${metadata.sourceFile}`
-    : Object.keys(postFiles).find(p => p.includes(slug));
-  if (!sourcePath || !(sourcePath in postFiles)) return undefined;
+  const fileName = metadata.sourceFile || `${slug}.md`;
 
   try {
-    const rawContent = await postFiles[sourcePath]() as string;
+    const res = await fetch(`/raw-posts/${encodeURIComponent(fileName)}`);
+    if (!res.ok) {
+      console.error(`Error loading post content for ${slug}: ${res.status}`);
+      return undefined;
+    }
+    const rawContent = await res.text();
     const { content } = parseFrontmatter(rawContent);
-    
+
     return {
       ...metadata,
-      content: content,
+      content,
       htmlContent: marked(content) as string,
       imageAlt: metadata.title,
     };
@@ -157,7 +138,6 @@ export function getLatestPosts(limit?: number): PostMetadata[] {
   return limit ? posts.slice(0, limit) : posts;
 }
 
-// ─── PODCAST EPISODE TYPES & LOADING ─────────────────────────────────────────
 export interface PodcastEpisode {
   slug: string;
   title: string;
@@ -166,17 +146,17 @@ export interface PodcastEpisode {
   audio_url: string;
 }
 
-const podcastFiles = import.meta.glob('/content/briefings/*.md', { 
+const podcastFiles = import.meta.glob('/content/briefings/*.md', {
   query: '?raw',
   import: 'default',
-  eager: true 
+  eager: true
 }) as Record<string, string>;
 
 export function getAllPodcastEpisodes(): PodcastEpisode[] {
   const episodes = Object.entries(podcastFiles).map(([path, rawContent]) => {
     const { data } = parseFrontmatter(rawContent);
     const slug = path.split('/').pop()?.replace('.md', '') || '';
-    
+
     return {
       slug: data.slug as string || slug,
       title: data.title as string,
@@ -186,14 +166,11 @@ export function getAllPodcastEpisodes(): PodcastEpisode[] {
     };
   });
 
-  // Sort by date, descending
   return episodes.sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
 }
 
-// Alias used by AudioBriefingsPage
 export const getAllBriefings = getAllPodcastEpisodes;
 
-// ─── ADDED: Returns all slugs for pre-rendering at build time ─────────────────
 export function getAllPostSlugs(): string[] {
   return getAllPosts().map(post => post.slug);
 }
@@ -223,7 +200,7 @@ export function getPostsByCategory(category: string): PostMetadata[] {
 export function searchPosts(query: string): PostMetadata[] {
   const searchTerm = query.toLowerCase().trim();
   if (!searchTerm) return [];
-  return getAllPosts().filter(post => 
+  return getAllPosts().filter(post =>
     post.title.toLowerCase().includes(searchTerm) ||
     post.excerpt.toLowerCase().includes(searchTerm) ||
     post.tags.some(tag => tag.toLowerCase().includes(searchTerm)) ||
@@ -233,7 +210,7 @@ export function searchPosts(query: string): PostMetadata[] {
 
 export function getPostsByTag(tag: string): PostMetadata[] {
   const normalizedTag = tag.toLowerCase().trim();
-  return getAllPosts().filter(post => 
+  return getAllPosts().filter(post =>
     post.tags.some(t => t.toLowerCase() === normalizedTag)
   );
 }
@@ -255,9 +232,7 @@ export function generateSitemap(): string {
     changefreq: 'weekly'
   }));
 
-  const allUrls: SitemapUrl[] = [...postUrls];
-
-  const urlElements = allUrls.map(url => `
+  const urlElements = postUrls.map(url => `
   <url>
     <loc>${baseUrl}${url.loc}</loc>
     ${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ''}

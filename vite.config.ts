@@ -24,9 +24,6 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id: string) => {
-          if (id.includes("/content/posts/") || id.includes("\\content\\posts\\")) {
-            return "posts";
-          }
           if (id.includes("node_modules")) {
             if (id.includes("@supabase")) return "supabase";
             if (id.includes("@radix-ui")) return "ui";
@@ -40,5 +37,4 @@ export default defineConfig({
     },
     chunkSizeWarningLimit: 600,
   },
-  assetsInclude: ["**/*.md"],
 });

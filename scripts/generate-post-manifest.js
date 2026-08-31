@@ -3,13 +3,11 @@ import path from 'path';
 
 const POSTS_DIR = path.join(process.cwd(), 'content/posts');
 const OUTPUT_FILE = path.join(process.cwd(), 'public/posts-manifest.json');
+const RAW_POSTS_DIR = path.join(process.cwd(), 'public/raw-posts');
 
 function extractFrontmatter(content) {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const match = content.match(frontmatterRegex);
-
-  // BUG FIX 1: Early return was using key 'content' but caller destructures 'bodyContent'
-  // Unified to always return 'bodyContent'
   if (!match) return { data: {}, bodyContent: content };
 
   const yamlContent = match[1];
@@ -88,7 +86,6 @@ function buildSnippet(data, bodyContent) {
   return truncateSnippet(paragraphs[0] || bodyContent || '');
 }
 
-// BUG FIX 4: Safe date parser for sort â€” NaN-safe, same logic as markdowns.ts getSafeTime
 function getSafeTime(dateStr) {
   if (!dateStr) return 0;
   let time = new Date(dateStr).getTime();
@@ -110,12 +107,14 @@ if (files.length === 0) {
   process.exit(0);
 }
 
+fs.mkdirSync(RAW_POSTS_DIR, { recursive: true });
+
 const manifest = files.map(file => {
-  const content = fs.readFileSync(path.join(POSTS_DIR, file), 'utf-8');
+  const src = path.join(POSTS_DIR, file);
+  const content = fs.readFileSync(src, 'utf-8');
+  fs.copyFileSync(src, path.join(RAW_POSTS_DIR, file));
   const { data, bodyContent } = extractFrontmatter(content);
 
-  // BUG FIX 2: featured field was missing â€” getFeaturedPosts() always returned []
-  // BUG FIX 3: authorImage field was missing from manifest output
   return {
     title: data.title || 'Untitled',
     slug: data.slug || file.replace('.md', ''),
@@ -134,8 +133,7 @@ const manifest = files.map(file => {
     focusKeyword: data.focusKeyword || data.focus_keyword || '',
     wordCount: stripMarkdown(bodyContent).split(/\s+/).filter(Boolean).length,
   };
-// BUG FIX 4: Use NaN-safe getSafeTime instead of raw new Date() subtraction
 }).sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
 
 fs.writeFileSync(OUTPUT_FILE, JSON.stringify(manifest, null, 2));
-console.log(`âœ… Processed ${manifest.length} posts into manifest.`);
+console.log(`Processed ${manifest.length} posts into manifest and public/raw-posts.`);
