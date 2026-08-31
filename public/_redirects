@@ -1,10 +1,6 @@
-# Keep Search Console / webmaster files on their exact URLs.
-# Cloudflare Pages Pretty URLs otherwise 307 /file.html -> /file
-# and Google rejects the verification file.
-/google4a7d26b466f41330.html  /google4a7d26b466f41330.html  200
-/google4a7d26b466f41330       /google4a7d26b466f41330.html  200
-/968a6d115d3240a3acbc3448c398978d.txt  /968a6d115d3240a3acbc3448c398978d.txt  200
-
-# SPA fallback only when no prerendered file exists.
-# Static files and /article/*/index.html win over this rewrite.
-/*  /index.html  200
+# SPA fallback is handled in wrangler.jsonc:
+# assets.not_found_handling = single-page-application
+# Do not add /* /index.html 200 here — Workers rejects it as an infinite loop
+# when Pretty URLs strip .html / index.
+#
+# GSC verification files are served by worker.js (run_worker_first).
