@@ -468,10 +468,10 @@
     "8e9fa2533bb8ec3e480fcb2b7862402b",
     "188317423ccc4f36adb99ba02281caf9",
     "60a3c3ef2d686c7752e107ac75a4a58e",
-    "c728293010e8b99e1258d8af84ad3a51"
+    "c728293010e8b99e1258d8af84ad3a51",
+    "b3b215a915986e06d4f2f5cae76159c9"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
@@ -500,10 +500,10 @@
     "Context Backgrounder",
     "Power Accountability",
     "Reaction & Voices",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Explainer"
   ],
   "angle_history": [
-    "winners_losers|High Court of Kenya|Explainer",
     "policy_gap|DCI|Power Accountability",
     "next_48_hours|Kenya politics|Reaction & Voices",
     "money_follow|Kenya|Hard News Lead",
@@ -582,6 +582,7 @@
     "money_follow|Nairobi|Context Backgrounder",
     "money_follow|KAWU|Power Accountability",
     "story_progression|Android|Reaction & Voices",
-    "money_follow|KAWU|Hard News Lead"
+    "money_follow|KAWU|Hard News Lead",
+    "winners_losers|KRA|Explainer"
   ]
 }
