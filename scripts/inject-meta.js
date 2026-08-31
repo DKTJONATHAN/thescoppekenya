@@ -69,8 +69,8 @@ function truncateSnippet(text, maxLength = 155) {
   return `${sliced.slice(0, lastSpace > 80 ? lastSpace : maxLength).trim()}...`;
 }
 
-// 1. Collect all posts
 const postFiles = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
+console.log(`inject-meta: reading ${postFiles.length} markdown files`);
 const posts = postFiles.map(file => {
   const content = fs.readFileSync(path.join(postsDir, file), 'utf-8');
   const titleMatch = content.match(/^title:\s*(.+)$/im);
@@ -105,15 +105,14 @@ const posts = postFiles.map(file => {
   return { title, image, slug, category, author, dateStr, tags, desc };
 });
 
-// 2. Generate Article Pages
-posts.forEach(p => {
-  console.log(`Processing article: ${p.title} with date: ${p.dateStr}`);
+posts.forEach((p, i) => {
+  if (i > 0 && i % 500 === 0) console.log(`inject-meta: wrote ${i}/${posts.length} article pages`);
   const pTitle = p.title.replace(/"/g, '&quot;');
   const pDesc = p.desc.replace(/"/g, '&quot;');
   const pImage = p.image.startsWith('/') ? `${SITE_URL}${p.image}` : p.image;
   const date = new Date(p.dateStr);
-  const isoDate = !isNaN(date.getTime()) 
-    ? date.toISOString() 
+  const isoDate = !isNaN(date.getTime())
+    ? date.toISOString()
     : new Date().toISOString();
 
   const newsArticleSchema = {
@@ -126,24 +125,10 @@ posts.forEach(p => {
     "dateModified": isoDate,
     "author": { "@type": "Person", "name": p.author, "url": `${SITE_URL}/author/${p.author.toLowerCase().replace(/\s+/g, '-')}` },
     "publisher": {
-      "@type": "NewsMediaOrganization",
+      "@type": "Organization",
       "name": "Za Ndani",
       "url": SITE_URL,
-      "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png`, "width": 600, "height": 60 },
-      "ethicsPolicy": `${SITE_URL}/ethics`,
-      "correctionsPolicy": `${SITE_URL}/corrections`,
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "newsroom",
-        "email": "contact@zandani.co.ke",
-        "telephone": "+254706396305"
-      },
-      "sameAs": [
-        "https://twitter.com/zandani_ke",
-        "https://facebook.com/zandanike",
-        "https://instagram.com/zandani_ke",
-        "https://youtube.com/@zandanike"
-      ]
+      "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png`, "width": 600, "height": 60 }
     },
     "mainEntityOfPage": { "@type": "WebPage", "@id": `${SITE_URL}/article/${p.slug}` }
   };
@@ -179,7 +164,6 @@ posts.forEach(p => {
   writePage(`article/${p.slug}`, html);
 });
 
-// 3. Generate Category Hubs
 const uniqueCategories = Array.from(new Set(posts.map(p => p.category)));
 uniqueCategories.forEach(cat => {
   const catSlug = cat.toLowerCase();
@@ -223,14 +207,12 @@ uniqueCategories.forEach(cat => {
   const html = cleanMeta(baseHtml).replace(/<head>/i, `<head>\n${catMeta}`);
   writePage(`category/${catSlug}`, html);
 
-  // Also write to logical root hubs if they exist (e.g., /sports, /news)
   const commonHubs = ['news', 'sports', 'entertainment', 'business', 'lifestyle', 'politics'];
   if (commonHubs.includes(catSlug)) {
     writePage(catSlug, html.replace(new RegExp(catUrl, 'g'), `${SITE_URL}/${catSlug}`));
   }
 });
 
-// 4. Special Hubs (Trending, etc.)
 const specialHubs = [
   { slug: 'trending', title: 'Trending News | Za Ndani', desc: 'The most talked-about stories and viral news in Kenya right now.' },
   { slug: 'news', title: 'Kenya Breaking News | Za Ndani', desc: 'Get the latest breaking news and headlines from across Kenya.' },
