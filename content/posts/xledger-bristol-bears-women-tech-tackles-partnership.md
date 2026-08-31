@@ -8,7 +8,7 @@ image: "https://xledger.com/uk/wp-content/uploads/sites/22/2025/08/20250620_xled
 category: "Global News"
 tags: ["Xledger", "Bristol Bears Women", "Rugby", "Sponsorship", "Women's Sport", "Tech", "Bear in Mind"]
 date: "2026-02-23"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Xledger Bristol Bears Women Tech Meets Tackles for a Winning"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/xledger-bristol-bears-women-tech-tackles-partnership"

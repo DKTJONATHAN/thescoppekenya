@@ -8,7 +8,7 @@ image: "https://i.ibb.co/Fkd2L59y/42fb89d891d5.png"
 category: "Entertainment"
 tags: ["women s money empower your future", "entertainment", "kenya news"]
 date: "2026-03-06"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Womens Money Empower Your Future"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/women-s-money-empower-your-future"

@@ -8,7 +8,7 @@ image: "https://i.ibb.co/xt5n6SBD/971bde9d9655.jpg"
 category: "Entertainment"
 tags: ["Viola Davis", "Michael B. Jordan", "2026 Actor Awards", "Timothée Chalamet", "Sinners", "Mary Supreme", "Hollywood", "entertainment news"]
 date: "2026-03-02"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Viola Davis Shocked as Michael B Jordan Upsets at 2026 Actor"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/viola-davis-shocked-michael-b-jordan-upsets-2026-actor-awards"

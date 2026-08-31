@@ -8,7 +8,7 @@ image: "https://i.ibb.co/27fY1FZg/d6ee9787e34f.jpg"
 category: "Entertainment"
 tags: ["Wakadinali", "Kenyan hip hop", "2026 music", "East African rap", "Rong Rende", "music trends"]
 date: "2026-03-14T13:21:52Z"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Wakadinali 2026 Dominance or Fading Echo"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/wakadinali-2026-dominance"

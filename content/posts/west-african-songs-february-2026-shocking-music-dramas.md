@@ -8,7 +8,7 @@ image: "https://image.okayafrica.com/1424152.jpg?imageId=1424152&x=0&y=0&cropw=1
 category: "Entertainment"
 tags: ["west african music", "february 2026", "ghana music", "nigeria music", "côte d'ivoire music", "afropop", "amapiano", "music gossip"]
 date: "2026-02-27"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "West African Songs February 2026s Shocking Music Dramas Unco"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/west-african-songs-february-2026-shocking-music-dramas"

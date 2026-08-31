@@ -8,7 +8,7 @@ image: "https://i.ibb.co/XrXCdw6c/7a56f897fb97.jpg"
 category: "News"
 tags: ["TSC", "teacher", "Ksh200", "000", "unlawful withdrawal", "health insurance", "Kenya", "employment law"]
 date: "2026-03-03"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "TSC Ordered to Pay Teacher Ksh200000 for Unlawful Withdrawal"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/tsc-ordered-to-pay-teacher-ksh200000-unlawful-withdrawal-health-insurance"

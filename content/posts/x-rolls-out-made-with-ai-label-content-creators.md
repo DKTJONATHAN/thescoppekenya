@@ -8,7 +8,7 @@ image: "https://i.ibb.co/jZVhssXC/f0b4a9aef6ee.jpg"
 category: "Technology"
 tags: ["x", "twitter", "ai", "artificial intelligence", "content creators", "digital policy", "tech news", "za ndani", "kenya"]
 date: "2026-03-02"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "X Rolls Out Made with AI Label for Content Creators Unpac"
 schema: "NewsArticle"
 ---

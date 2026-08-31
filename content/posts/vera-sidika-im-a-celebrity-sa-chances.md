@@ -8,7 +8,7 @@ image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 category: "Gossip"
 tags: ["Vera Sidika", "I'm A Celebrity South Africa", "reality TV", "Kenyan socialite", "controversies", "celebrity gossip"]
 date: "2026-03-09"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Vera Sidika in the Jungle Im A Celebrity SA Gold or Chaos"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/vera-sidika-im-a-celebrity-sa-chances"

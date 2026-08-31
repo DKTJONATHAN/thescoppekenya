@@ -8,7 +8,7 @@ image: "https://ew.com/thmb/BYM2n6OAwKO-DYd-OpJkdN0snFA=/1500x0/filters:no_upsca
 category: "Entertainment"
 tags: ["Elisabeth Hasselbeck", "The View", "Survivor", "frat hazing", "college campuses", "celebrity news", "entertainment", "Joy Behar"]
 date: "2026-02-28"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "The View and Survivor Alum Elisabeth Hasselbeck Slams Frat H"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/the-view-survivor-alum-elisabeth-hasselbeck-slams-frat-hazing"

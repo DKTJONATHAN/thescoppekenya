@@ -8,7 +8,7 @@ image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 category: "News"
 tags: ["Kenyan celebrities", "I'm A Celebrity South Africa", "international reality TV", "Kenyan talent", "entertainment industry", "media barriers"]
 date: "2026-03-05"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Why Arent Kenyan Stars in Im A Celebrity South Africa"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/why-arent-kenyan-stars-im-a-celebrity-south-africa"

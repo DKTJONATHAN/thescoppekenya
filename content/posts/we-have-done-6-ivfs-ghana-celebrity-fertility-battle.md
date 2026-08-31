@@ -8,7 +8,7 @@ image: "https://i.ibb.co/S7Xg07BB/535290b72c8a.jpg"
 category: "Entertainment"
 tags: ["Ghana entertainment", "IVF", "Oheneni Adazoa", "Clement Abrefa Yeboah", "celebrity marriage", "fertility challenges", "Delay Show", "Za Ndani"]
 date: "2026-03-02"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "We Have Done 6 IVFs The Unveiling of Ghanas Celebrity Fertil"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/we-have-done-6-ivfs-ghana-celebrity-fertility-battle"

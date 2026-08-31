@@ -8,7 +8,7 @@ image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
 category: "Gossip"
 tags: ["Vera Sidika", "Kenyan socialite", "I'm A Celebrity South Africa", "controversies", "reality TV", "entertainment", "gossip", "Za Ndani"]
 date: "2026-03-12"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Vera Sidika Controversies Must-Watch TV on Im A Celebrity So"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/vera-sidika-controversies"

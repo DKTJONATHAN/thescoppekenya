@@ -8,7 +8,7 @@ image: "https://i.ibb.co/pBHRJKQQ/741be1cb7b42.jpg"
 category: "Entertainment"
 tags: ["university", "harassment", "campus", "students", "academic", "abuse", "discrimination", "bullying"]
 date: "2026-03-07T20:39:07Z"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Beyond the Lecture Hall Understanding the Many Forms of Univ"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/university-harassment"

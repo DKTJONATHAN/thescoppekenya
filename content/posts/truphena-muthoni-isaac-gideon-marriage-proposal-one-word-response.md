@@ -8,7 +8,7 @@ image: "https://i.ibb.co/V09sRJ0c/0d7e2bcef36b.jpg"
 category: "Entertainment"
 tags: ["Truphena Muthoni", "Isaac Gideon", "Marriage Proposal", "One-Word Response", "climate action", "activism", "Kenya", "celebrity", "entertainment news", "social media", "Guinness World Record", "relationship", "public figure"]
 date: "2026-03-02"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Truphena Muthonis One-Word Response to Isaac Gideons Marri"
 schema: "NewsArticle"
 ---

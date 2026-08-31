@@ -8,7 +8,7 @@ image: "https://techweez.com/wp-content/uploads/2026/03/Claude-used-in-Middle-Ea
 category: "Technology"
 tags: ["US military", "Claude AI", "Middle East operations", "artificial intelligence", "military technology", "combat AI", "Anthropic", "OpenAI"]
 date: "2026-03-01"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "US Military Deploys Claude AI in Middle East Operations Comm"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/us-military-deploys-claude-ai-middle-east-operations"

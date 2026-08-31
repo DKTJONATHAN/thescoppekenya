@@ -8,7 +8,7 @@ image: "/images/placeholder.jpg"
 category: "News"
 tags: ["tsc data update urgent how unemployed teachers must act to secure jobs", "news", "kenya news"]
 date: "2026-03-04"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "TSC Data Update Urgent How Unemployed Teachers Must Act to S"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/tsc-data-update-urgent-how-unemployed-teachers-must-act-to-secure-jobs"

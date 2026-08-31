@@ -8,7 +8,7 @@ image: "https://i.postimg.cc/ZR7sQyh5/image-870x-6799ef5291a61.jpg"
 category: "Entertainment"
 tags: ["tiktokers plan emotional visit to khalif kairo after mum s lonely burial", "entertainment", "kenya news"]
 date: "2026-02-26"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "TikTokers Plan Emotional Visit to Khalif Kairo After Mums Lo"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/tiktokers-plan-emotional-visit-to-khalif-kairo-after-mum-s-lonely-burial"

@@ -8,7 +8,7 @@ image: "https://www.musicinafrica.net/sites/default/files/images/article/202602/
 category: "Entertainment"
 tags: ["Tiwa Savage", "Berklee College", "Music Foundation", "African Music", "Afrobeats", "Music Education", "Nigeria", "Entertainment Gossip"]
 date: "2026-02-26"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Tiwa Savages Berklee Music Foundation The Hidden Costs for A"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/tiwa-savage-berklee-music-foundation-hidden-costs-african-music-pros"

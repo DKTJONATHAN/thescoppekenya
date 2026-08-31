@@ -8,7 +8,7 @@ image: "https://i.ibb.co/0RswC4hG/a4c3eec62a4e.jpg"
 category: "Entertainment"
 tags: ["videographer", "guru buvati", "johana ng'eno", "emurua dikirr", "helicopter crash", "funeral", "viral", "kenyan news"]
 date: "2026-03-06"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Videographer Broke Down Emurua Dikirrs Public Spectacle"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/videographer-broke-down-emurua-dikirr"

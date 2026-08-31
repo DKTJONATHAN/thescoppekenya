@@ -8,7 +8,7 @@ image: "https://i.ibb.co/d0sNfGPC/304cc4060ddc.png"
 category: "Business"
 tags: ["investment strategies", "wealthy investors", "middle class", "financial planning", "Kenya", "capital markets"]
 date: "2026-03-02"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Wealthy Invest Differently Than Middle Class Investment Stra"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/wealthy-invest-differently-middle-class-investment-strategies"

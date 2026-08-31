@@ -8,7 +8,7 @@ image: "https://i.ibb.co/Rnhh8Pb/8da2fa87e515.jpg"
 category: "Entertainment"
 tags: ["Thee Pluto", "automated trading", "BMM Pips and Profits", "Nairobi", "forex", "celebrity", "investment", "scams"]
 date: "2026-03-02"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Thee Pluto Highlights Automated Trading at BMM Nairobi Launc"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/thee-pluto-highlights-automated-trading-bmm-nairobi-launch"

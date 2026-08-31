@@ -8,7 +8,7 @@ image: "https://i.ibb.co/Kphjrxhv/2d5d2d7d191d.jpg"
 category: "Entertainment"
 tags: ["Vybz Kartel", "Kenya", "East Africa", "tour", "scam", "Talanta Festival", "music", "entertainment"]
 date: "2026-03-06"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Vybz Kartel Denies Scam Tour Fans Warned"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/vybz-kartel-kenya-east-africa-tour"

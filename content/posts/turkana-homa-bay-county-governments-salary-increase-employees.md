@@ -8,7 +8,7 @@ image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media
 category: "Politics"
 tags: ["Kenya", "Turkana County", "Homa Bay County", "salary increase", "county government", "employees", "SRC", "public service"]
 date: "2026-02-25"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Turkana Homa Bay County Governments Announce Salary Increase"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/turkana-homa-bay-county-governments-salary-increase-employees"

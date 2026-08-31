@@ -1,14 +1,14 @@
 ---
 title: "Toxic Lyrikali: Real Name, Age, and His Journey from Kayole to"
 slug: "toxic-lyrikali-real-name-age-kayole-to-stardom"
-description: "Toxic Lyrikali Real Name Age and His Journey from Kayole to: Uncover Toxic Lyrikali's Real Name, Age, and his incredible journey from the streets of Kayole."
+description: "Toxic Lyrikali Real Name Age and His Journey from Kayole to: Uncover Toxic Lyrikali's Real Name, Age, and his incredible journey from the streets of."
 excerpt: "Uncover Toxic Lyrikali's Real Name, Age, and his incredible journey from the streets of Kayole to Stardom, stirring up the Kenyan music scene!"
 author: "Za Ndani"
 image: "https://cdn.radioafrica.digital/image/2026/02/c3772837-d057-40b8-96ed-275431420c43.jpg?1771937101602"
 category: "Entertainment"
 tags: ["toxic lyrikali", "real name", "age", "Kayole", "stardom", "kenyan music", "hip hop", "celebrity news"]
 date: "2026-02-24"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Toxic Lyrikali Real Name Age and His Journey from Kayole to"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/toxic-lyrikali-real-name-age-kayole-to-stardom"

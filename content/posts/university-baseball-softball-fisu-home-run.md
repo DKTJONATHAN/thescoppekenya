@@ -8,7 +8,7 @@ image: "https://www.fisu.net/app/uploads/2023/10/organiser-2.jpg"
 category: "Global News"
 tags: ["FISU", "university sports", "baseball", "softball", "World University Games", "student-athletes", "North Carolina 2029"]
 date: "2026-02-24"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "University Baseball Softball A Proper Home Run for FISU"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/university-baseball-softball-fisu-home-run"

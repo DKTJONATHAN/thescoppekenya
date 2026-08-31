@@ -8,7 +8,7 @@ image: "https://techweez.com/wp-content/uploads/2026/02/vivo-y31d-kenya-launch.w
 category: "Technology"
 tags: ["vivo Y31d", "Kenya tech", "smartphone launch", "7200mAh battery", "long-lasting phone", "OriginOS 6.0", "Snapdragon 6s Gen 2", "fast charging"]
 date: "2026-02-24"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "vivo Y31d Launches in Kenya With Massive 7200mAh Battery A D"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/vivo-y31d-launches-in-kenya-7200mah-battery"

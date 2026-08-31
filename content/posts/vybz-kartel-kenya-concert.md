@@ -8,7 +8,7 @@ image: "https://i.ibb.co/DfsBjJxC/1858fa407f89.png"
 category: "Entertainment"
 tags: ["Vybz Kartel", "Kenya", "concert", "Nairobi", "dancehall", "Talanta East Afrika Festival", "entertainment", "music"]
 date: "2026-03-04"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Vybz Kartel Kenya Concert More Than Just Music"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/vybz-kartel-kenya-concert"

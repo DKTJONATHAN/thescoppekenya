@@ -8,7 +8,7 @@ image: "https://i.guim.co.uk/img/media/5366cacfd2081e5a4af259318238b3f82610d32e/
 category: "Global News"
 tags: ["Turkish football", "seagull CPR", "moral goodness", "Gani Catan", "Istanbul Yurdum Spor", "football scandal", "sportsmanship"]
 date: "2026-02-25"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Turkish Football Seagull CPR Restores Moral Goodness"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/turkish-football-seagull-cpr-moral-goodness"

@@ -8,7 +8,7 @@ image: "https://techweez.com/wp-content/uploads/2026/02/Trump-balcklists-Anthrop
 category: "Technology"
 tags: ["Artificial intelligence", "AI policy", "US government", "Anthropic", "OpenAI", "national security", "tech industry", "digital policy"]
 date: "2026-03-01"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "White House Pulls the Plug on Anthropic Hands the Keys to Op"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/white-house-pulls-the-plug-on-anthropic-hands-the-keys-to-openai"

@@ -8,7 +8,7 @@ image: "https://i.ibb.co/XfQYh4xf/47336784eb1c.png"
 category: "Entertainment"
 tags: ["Wizkid", "ChartMasters", "best-selling African artist", "Afrobeats", "music industry", "streaming", "legacy", "Prince Nico Mbarga"]
 date: "2026-03-02"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Wizkid Ranked Best Unpacking ChartMasters Metrics and Africa"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/wizkid-ranked-best-chartmasters-metrics-africa-music-legacy"

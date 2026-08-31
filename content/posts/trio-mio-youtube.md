@@ -8,7 +8,7 @@ image: "https://i.ibb.co/M4srxtg/1d45be6c1a0a.jpg"
 category: "Entertainment"
 tags: ["Trio Mio", "Kenyan music", "YouTube", "entertainment", "celebrity", "rap", "music career"]
 date: "2026-03-14T11:19:42Z"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Trio Mio YouTube Is The Hype Fading"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/trio-mio-youtube"

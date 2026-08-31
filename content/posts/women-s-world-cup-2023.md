@@ -8,7 +8,7 @@ image: "https://cdn.pulsesports.co.ke/ee5e4bef-908a-48a4-967c-26ea1f38084e/theme
 category: "Sports"
 tags: ["Women's World Cup", "2023", "football", "soccer", "Spain", "England", "champions", "global sport"]
 date: "2026-02-24"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Womens World Cup 2023 Spains Historic Triumph and the Global"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/women-s-world-cup-2023"

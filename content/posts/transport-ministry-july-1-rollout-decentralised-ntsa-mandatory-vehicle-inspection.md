@@ -8,7 +8,7 @@ image: "https://i.ibb.co/MyYBP6Mh/f0b7879e7f10.jpg"
 category: "News"
 tags: ["Kenya", "Transport Ministry", "NTSA", "vehicle inspection", "July 1", "decentralised", "mandatory", "PPP"]
 date: "2026-03-03"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Transport Ministry Sets July 1 Rollout for Decentralised NTS"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/transport-ministry-july-1-rollout-decentralised-ntsa-mandatory-vehicle-inspection"

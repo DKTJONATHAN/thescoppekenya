@@ -8,7 +8,7 @@ image: "https://i.ibb.co/d0wKRdjZ/67e56d70c354.jpg"
 category: "Technology"
 tags: ["X", "AI", "Made with AI Label", "content disclosure", "creators", "tech policy", "digital ethics"]
 date: "2026-03-02"
-dateModified: "2026-08-31T17:03:56Z"
+dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "X Rolls Out Made with AI Label Puts Disclosure Pressure on C"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/x-rolls-out-made-with-ai-label-disclosure-pressure-creators"
