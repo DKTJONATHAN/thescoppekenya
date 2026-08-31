@@ -1,18 +1,20 @@
 ---
 title: "Boni Khalwale faces scrutiny over viral video with Pauline Njoroge"
 slug: "boni-khalwale-faces-scrutiny-over-viral-video-with-pauline-njoroge"
-description: "Senator Boni Khalwale is at the center of a social media debate following the circulation of a video featuring suggestive comments toward Pauline Njoroge."
+description: "Boni Khalwale faces scrutiny over viral video with Pauline Njorog: Senator Boni Khalwale is at the center of a social media debate following the circulation of"
+excerpt: "The Rhetoric of the Bullfighter Senator Boni Khalwale is currently at the center of a digital firestorm after a video featuring Pauline Njor"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/Fk2LsgHD/5378b825c3cb.webp"
 category: "Gossip"
 tags: ["kenyan politics", "boni khalwale", "pauline njoroge", "social media controversy", "kenyan news"]
+canonical: "https://zandani.co.ke/article/boni-khalwale-faces-scrutiny-over-viral-video-with-pauline-njoroge"
 date: "2026-08-31T16:11:25Z"
 dateModified: "2026-08-31T16:11:25Z"
+focusKeyword: "Boni Khalwale faces scrutiny over viral video with Pauline Njorog"
 schema: "NewsArticle"
 ---
 
-## The Rhetoric of the Bullfighter
+## The Rhetoric of the Bullfighter Boni Khalwale faces scrutiny over viral video with Pauline Njorog is the central subject of the update.
 
 Senator Boni Khalwale is currently at the center of a digital firestorm after a video featuring Pauline Njoroge surfaced online, prompting a public conversation about the thin line between casual political banter and the professional responsibilities held by elected leaders in Kenya.
 

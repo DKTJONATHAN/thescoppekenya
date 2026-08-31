@@ -7,12 +7,13 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/MyYBP6Mh/f0b7879e7f10.jpg"
 category: "News"
 tags: ["Kenya", "Transport Ministry", "NTSA", "vehicle inspection", "July 1", "decentralised", "mandatory", "PPP"]
+canonical: "https://zandani.co.ke/article/transport-ministry-july-1-rollout-decentralised-ntsa-mandatory-vehicle"
 date: "2026-03-03"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Transport Ministry Sets July 1 Rollout for Decentralised NTS"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/transport-ministry-july-1-rollout-decentralised-ntsa-mandatory-vehicle-inspection"
 ---
+
 Transport Ministry Sets July 1 Rollout for Decentralised NTS is central to this update for Kenyan readers.
 
 ### The July 1 Rollout for Decentralised NTSA Mandatory Vehicle Inspection: A Costly Deception? The Transport Ministry's affirmation of a July 1 rollout for the decentralised NTSA mandatory vehicle inspection programme, alongside the deployment of 1,000 smart cameras, signals a significant shift in Kenya's road safety strategy. This initiative, championed by Transport Cabinet Secretary Davis Chirchir and President William Ruto, aims to leverage a Public-Private Partnership (PPP) model to establish inspection centres across all counties and enhance traffic enforcement. While touted for efficiency and revenue generation, a closer examination reveals potential hidden implications and systemic vulnerabilities that could disproportionately burden Kenyan motorists and open new avenues for malfeasance.

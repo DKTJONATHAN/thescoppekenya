@@ -14,7 +14,7 @@ focusKeyword: "'Johnny Depp Stars as Scrooge in Ti West's Dark Ebenezer Adaptati
 schema: "NewsArticle"
 ---
 
-## The Unfolding Chapter: Johnny Depp's Ebenezer Gambit "Johnny Depp Stars as Scrooge in Ti West's Dark Ebenezer Adaptati is the central subject of the update.
+## The Unfolding Chapter: Johnny Depp's Ebenezer Gambit "Johnny Depp Stars as Scrooge in Ti West's Dark Ebenezer Adaptati is the central subject of the update. 'Johnny Depp Stars as Scrooge in Ti West's Dark Ebenezer Adaptati is the central subject of the update.
 
 Actor Johnny Depp is poised to embark on a significant new chapter, taking on the iconic role of Ebenezer Scrooge in Ti West's highly anticipated adaptation, *Ebenezer*. This marks his first major Hollywood release since his well-publicized 2022 defamation trial, placing a keen spotlight on his professional return and the path ahead.
 

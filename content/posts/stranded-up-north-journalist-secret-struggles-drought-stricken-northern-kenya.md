@@ -7,12 +7,13 @@ author: "Za Ndani"
 image: "https://www.standardmedia.co.ke/assets/images/homepg.jpg"
 category: "Kenya News"
 tags: ["journalist", "Northern Kenya", "drought", "stranded", "gossip", "celebrity", "Kenya", "travel"]
+canonical: "https://zandani.co.ke/article/stranded-up-north-journalist-secret-struggles-drought-stricken-norther"
 date: "2026-02-23"
 dateModified: "2026-02-23"
 focusKeyword: "Stranded Up North Our Journalists Secret Struggles in Drough"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/stranded-up-north-journalist-secret-struggles-drought-stricken-northern-kenya"
 ---
+
 Stranded Up North Our Journalists Secret Struggles in Drough is central to this update for Kenyan readers.
 
 ## Stranded Up North: The Unseen Dramas of Our Journalist in Drought-Stricken Northern Kenya A journalist covering the severe drought in Northern Kenya likely faced numerous personal challenges, from navigating remote, arid landscapes and extreme weather to managing limited resources and ensuring their safety in isolated regions, all while trying to report accurately on the crisis. Well, honestly, you’d think being a hotshot journalist covering a serious story like the drought in Northern Kenya would be all about the facts, wouldn't you? But, mate, our sources are buzzing about what *really* went down when one poor soul found themselves "Stranded Up North." Was it truly just about reporting, or was there a whole heap of personal drama unfolding in the scorching heat? (What a nightmare!). We hear tales of daring adventures, yes, but also whispers of unexpected hardships that go way beyond a missed deadline.
