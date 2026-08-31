@@ -1,18 +1,20 @@
 ---
 title: "KCB Executive Spouse Files Suit to Stop Wife Burial in Kericho"
 slug: "kcb-executive-spouse-files-suit-to-stop-wife-burial-in-kericho"
-description: "Kevin Migwe Kimwatu has moved to court to block the burial of his wife Rosemary Koech, demanding she be interred in Kajiado instead of Kericho."
+description: "KCB Executive Spouse Files Suit to Stop Wife Burial in Kericho: Kevin Migwe Kimwatu has moved to court to block the burial of his wife Rosemary Koech,"
+excerpt: "Legal Conflict Stalls Burial of KCB Executive’s Wife A KCB executive has launched a legal challenge at the Milimani Chief Magistrate's Court"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/bgWmvxGM/a3cf8461f2fe.png"
 category: "Gossip"
 tags: ["kenya news", "za ndani", "legal dispute", "burial rites", "kcb executive", "kericho", "kajiado"]
+canonical: "https://zandani.co.ke/article/kcb-executive-spouse-files-suit-to-stop-wife-burial-in-kericho"
 date: "2026-08-31T13:36:50Z"
 dateModified: "2026-08-31T13:36:50Z"
+focusKeyword: "KCB Executive Spouse Files Suit to Stop Wife Burial in Kericho"
 schema: "NewsArticle"
 ---
 
-# Legal Conflict Stalls Burial of KCB Executive’s Wife
+# Legal Conflict Stalls Burial of KCB Executive’s Wife KCB Executive Spouse Files Suit to Stop Wife Burial in Kericho is the central subject of the update.
 
 A KCB executive has launched a legal challenge at the Milimani Chief Magistrate's Court to assert his right to bury his wife, Rosemary Koech. The application, filed by Kevin Migwe Kimwatu on August 26, successfully halted the funeral ceremony that was scheduled for August 29. The case highlights the recurring friction between statutory marriage rights and customary traditions, as both parties remain deadlocked over whether the deceased should be laid to rest in Kajiado or Kericho County.
 
