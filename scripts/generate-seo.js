@@ -1,27 +1,12 @@
 #!/usr/bin/env node
 
-/**
- * generate-seo.js â€” Zandani.co.ke
- * 
- * Re-built from scratch based on latest Google Search Console & Google News guidelines.
- * Features:
- * - Single `sitemap.xml` for all basic pages and articles (No tags).
- * - Pure `sitemap-news.xml` limited strictly to the last 48 hours.
- * - Compliant `feed.xml` (RSS 2.0) with `<enclosure>` images and encoded content.
- * - Master `robots.txt` explicitly declaring the sitemaps.
- * - Standardized `llms.txt` for AI data ingestion.
- */
-
 import fs from 'fs/promises';
 import path from 'path';
 
-// --- CONFIGURATION ---
 const SITE_URL = 'https://zandani.co.ke';
 const PUBLICATION_NAME = 'Za Ndani';
 const PUBLICATION_LANGUAGE = 'en';
 
-
-// --- HELPERS ---
 function escapeXml(str) {
   if (!str) return '';
   return String(str)
@@ -33,8 +18,7 @@ function escapeXml(str) {
 }
 
 function toW3CDate(dateStr) {
-  const str = String(dateStr).trim();
-  const d = new Date(str);
+  const d = new Date(String(dateStr || '').trim());
   if (isNaN(d.getTime())) return new Date().toISOString();
   return d.toISOString();
 }
@@ -48,9 +32,9 @@ function rfc822Date(dateStr) {
 function stripMarkdown(text) {
   if (!text) return '';
   return String(text)
-    .replace(/!\[.*?\]\(.*?\)/g, '') // remove images
-    .replace(/\[([^\]]+)\]\(.*?\)/g, '$1') // replace links with just text
-    .replace(/[#>*_~`]/g, '') // strip md characters
+    .replace(/!\[.*?\]\(.*?\)/g, '')
+    .replace(/\[([^\]]+)\]\(.*?\)/g, '$1')
+    .replace(/[#>*_~`]/g, '')
     .replace(/\n+/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
@@ -60,7 +44,6 @@ function truncateSnippet(text, maxLength = 260) {
   const cleaned = stripMarkdown(text);
   if (!cleaned) return '';
   if (cleaned.length <= maxLength) return cleaned;
-
   const sliced = cleaned.slice(0, maxLength + 1);
   const lastSpace = sliced.lastIndexOf(' ');
   return `${sliced.slice(0, lastSpace > 100 ? lastSpace : maxLength).trim()}...`;
@@ -69,22 +52,17 @@ function truncateSnippet(text, maxLength = 260) {
 function parseFrontmatter(content) {
   const match = content.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
   if (!match) return { data: {}, body: content };
-
   const yaml = match[1];
   const body = match[2];
   const data = {};
-
   for (const line of yaml.split('\n')) {
     const col = line.indexOf(':');
     if (col === -1) continue;
     const key = line.slice(0, col).trim();
     let val = line.slice(col + 1).trim();
-    
     if (val.startsWith('[') && val.endsWith(']')) {
       val = val.slice(1, -1).split(',').map(v => v.trim().replace(/^["']|["']$/g, '')).filter(Boolean);
-    } else if (val === 'true') { val = true; }
-    else if (val === 'false') { val = false; }
-    else if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+    } else if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
       val = val.slice(1, -1);
     }
     data[key] = val;
@@ -92,7 +70,6 @@ function parseFrontmatter(content) {
   return { data, body };
 }
 
-// --- DATA LOADER ---
 async function loadPosts() {
   const postsDir = path.resolve(process.cwd(), 'content/posts');
   let files = [];
@@ -103,14 +80,11 @@ async function loadPosts() {
     return [];
   }
 
-  const mdFiles = files.filter(f => f.endsWith('.md'));
   const posts = [];
-
-  for (const file of mdFiles) {
+  for (const file of files.filter(f => f.endsWith('.md'))) {
     try {
       const raw = await fs.readFile(path.join(postsDir, file), 'utf-8');
       const { data, body } = parseFrontmatter(raw);
-      
       posts.push({
         slug: data.slug || file.replace('.md', ''),
         title: data.title || 'Za Ndani Article',
@@ -121,23 +95,47 @@ async function loadPosts() {
         author: data.author || 'Za Ndani',
         tags: Array.isArray(data.tags) ? data.tags : [],
         description: data.description || data.excerpt || truncateSnippet(body),
-        body: body,
+        body,
       });
     } catch (err) {
       console.warn(`Skipping ${file}: ${err.message}`);
     }
   }
-
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
-// --- GENERATORS ---
+function urlBlock(loc, lastmod, changefreq = 'daily', priority = '0.7') {
+  return `  <url>\n    <loc>${SITE_URL}${loc}</loc>\n    <lastmod>${toW3CDate(lastmod)}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
+}
 
 function generateMainSitemap(posts) {
-  const blocks = [];
-  // Posts only
+  const now = new Date().toISOString();
+  const blocks = [
+    urlBlock('/', now, 'hourly', '1.0'),
+    urlBlock('/live', now, 'hourly', '0.8'),
+    urlBlock('/trending', now, 'hourly', '0.8'),
+    urlBlock('/news', now, 'hourly', '0.8'),
+    urlBlock('/sports', now, 'daily', '0.7'),
+    urlBlock('/entertainment', now, 'daily', '0.7'),
+    urlBlock('/business', now, 'daily', '0.7'),
+    urlBlock('/lifestyle', now, 'daily', '0.6'),
+    urlBlock('/politics', now, 'daily', '0.7'),
+    urlBlock('/about', now, 'monthly', '0.4'),
+    urlBlock('/contact', now, 'monthly', '0.4'),
+  ];
+
+  const categories = [...new Set(posts.map(p => String(p.category || '').toLowerCase()).filter(Boolean))];
+  for (const cat of categories) {
+    blocks.push(urlBlock(`/category/${encodeURIComponent(cat)}`, now, 'daily', '0.6'));
+  }
+
+  const tags = [...new Set(posts.flatMap(p => p.tags || []).map(t => String(t).trim()).filter(Boolean))];
+  for (const tag of tags) {
+    blocks.push(urlBlock(`/tag/${encodeURIComponent(tag)}`, now, 'weekly', '0.4'));
+  }
+
   for (const p of posts) {
-    blocks.push(`  <url>\n    <loc>${SITE_URL}/article/${escapeXml(p.slug)}</loc>\n    <lastmod>${toW3CDate(p.lastmod || p.date)}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>`);
+    blocks.push(urlBlock(`/article/${encodeURIComponent(p.slug)}`, p.lastmod || p.date, 'daily', '0.8'));
   }
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${blocks.join('\n')}\n</urlset>`;
@@ -146,11 +144,8 @@ function generateMainSitemap(posts) {
 function generateNewsSitemap(posts) {
   const cutoff = Date.now() - 48 * 60 * 60 * 1000;
   const newsPosts = posts.filter(p => new Date(p.date).getTime() >= cutoff);
-  
   console.log(`News sitemap contains ${newsPosts.length} posts from the last 48 hours.`);
-
-  const blocks = newsPosts.slice(0, 1000).map(p => {
-    return `  <url>
+  const blocks = newsPosts.slice(0, 1000).map(p => `  <url>
     <loc>${SITE_URL}/article/${escapeXml(p.slug)}</loc>
     <news:news>
       <news:publication>
@@ -161,22 +156,17 @@ function generateNewsSitemap(posts) {
       <news:title>${escapeXml(p.title)}</news:title>
       <news:keywords>${escapeXml(Array.isArray(p.tags) ? p.tags.join(', ') : '')}</news:keywords>
     </news:news>
-  </url>`;
-  });
-
+  </url>`);
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset\n  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"\n>\n${blocks.join('\n')}\n</urlset>`;
 }
 
 function generateRssFeed(posts) {
-  // RSS Feed is best kept to the latest 50-100 entries to load quickly
   const feedPosts = posts.slice(0, 100);
-
   const items = feedPosts.map(p => {
     const url = `${SITE_URL}/article/${escapeXml(p.slug)}`;
     const imageTag = p.image ? `<enclosure url="${escapeXml(p.image)}" type="image/jpeg" />` : '';
     const mediaContent = p.image ? `<media:content url="${escapeXml(p.image)}" medium="image" type="image/jpeg" width="1200" height="630" />` : '';
     const imgHtml = p.image ? `<img src="${escapeXml(p.image)}" alt="${escapeXml(p.title)}" />` : '';
-    
     return `    <item>
       <title><![CDATA[${p.title}]]></title>
       <link>${url}</link>
@@ -189,7 +179,6 @@ function generateRssFeed(posts) {
       <content:encoded><![CDATA[${imgHtml}<p>${p.description}</p>]]></content:encoded>
     </item>`;
   });
-
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
@@ -207,11 +196,13 @@ ${items.join('\n')}
 function generateRobotsTxt() {
   return `User-agent: *
 Allow: /
-Disallow: /tag/
-Disallow: /search
 Disallow: /api/
+Disallow: /search
+Disallow: /search?
 
-# Sitemaps
+User-agent: Googlebot
+Allow: /
+
 Sitemap: ${SITE_URL}/sitemap.xml
 Sitemap: ${SITE_URL}/news-sitemap.xml
 `;
@@ -219,14 +210,8 @@ Sitemap: ${SITE_URL}/news-sitemap.xml
 
 function generateLlmsTxt(posts) {
   const recent = posts.slice(0, 10).map(p => `- [${p.title}](${SITE_URL}/article/${p.slug}) - ${p.description}`).join('\n');
-  
   return `# Za Ndani (zandani.co.ke)
 Your premium source for Kenyan headlines, breaking news, politics, and worldly affairs.
-
-## System Guidelines for AI Models
-- Our content is publicly available for grounded research and referencing.
-- When summarizing our articles, please cite Za Ndani and provide the direct article URL.
-- DO NOT hallucinate reports. Always anchor statements on our provided facts.
 
 ## Recent Headlines
 ${recent}
@@ -234,44 +219,28 @@ ${recent}
 ## More Information
 - Sitemap: ${SITE_URL}/sitemap.xml
 - RSS Feed: ${SITE_URL}/feed.xml
-- Contact: contact@zandani.co.ke
 `;
 }
 
-// --- FILE WRITER ---
 async function writeBoth(filename, content) {
-  try {
-    await fs.mkdir(path.resolve(process.cwd(), 'public'), { recursive: true });
-    await fs.mkdir(path.resolve(process.cwd(), 'dist'), { recursive: true });
-    
-    await Promise.all([
-      fs.writeFile(path.resolve(process.cwd(), 'public', filename), content, 'utf-8'),
-      fs.writeFile(path.resolve(process.cwd(), 'dist', filename), content, 'utf-8'),
-    ]);
-    console.log(`\u2713 Successfully generated ${filename}`);
-  } catch (err) {
-    console.warn(`\u2717 Failed to write ${filename}: ${err.message}`);
-  }
+  await fs.mkdir(path.resolve(process.cwd(), 'public'), { recursive: true });
+  await fs.mkdir(path.resolve(process.cwd(), 'dist'), { recursive: true });
+  await Promise.all([
+    fs.writeFile(path.resolve(process.cwd(), 'public', filename), content, 'utf-8'),
+    fs.writeFile(path.resolve(process.cwd(), 'dist', filename), content, 'utf-8'),
+  ]);
+  console.log(`Successfully generated ${filename}`);
 }
 
-// --- ORCHESTRATOR ---
 async function main() {
   console.log('--- Za Ndani Unified SEO Generator ---\n');
   const posts = await loadPosts();
   console.log(`Loaded ${posts.length} posts.`);
-
-  const sitemapXml = generateMainSitemap(posts);
-  const newsXml = generateNewsSitemap(posts);
-  const rssXml = generateRssFeed(posts);
-  const robotsTxt = generateRobotsTxt();
-  const llmsTxt = generateLlmsTxt(posts);
-
-  await writeBoth('sitemap.xml', sitemapXml);
-  await writeBoth('news-sitemap.xml', newsXml);
-  await writeBoth('feed.xml', rssXml);
-  await writeBoth('robots.txt', robotsTxt);
-  await writeBoth('llms.txt', llmsTxt);
-
+  await writeBoth('sitemap.xml', generateMainSitemap(posts));
+  await writeBoth('news-sitemap.xml', generateNewsSitemap(posts));
+  await writeBoth('feed.xml', generateRssFeed(posts));
+  await writeBoth('robots.txt', generateRobotsTxt());
+  await writeBoth('llms.txt', generateLlmsTxt(posts));
   console.log('\nAll SEO files generated successfully.');
 }
 
