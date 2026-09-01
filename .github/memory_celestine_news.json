@@ -473,10 +473,10 @@
     "09119309c4e7fd126736ac3351f2bbf7",
     "b6d9e44596ff7ed78bb919493a15bc0c",
     "5a19213f26facf9c1ec034e540b6a741",
-    "dd7bd68e7b6b713393440b847214e610"
+    "dd7bd68e7b6b713393440b847214e610",
+    "96198c2a063fe1bbf475f508c5ed4e85"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
     "Power Accountability",
@@ -505,10 +505,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "policy_gap|National Treasury|Context Backgrounder",
     "winners_losers|HELB|Reaction & Voices",
     "policy_gap|Kenya|Power Accountability",
     "winners_losers|KeNHA|Explainer",
@@ -587,6 +587,7 @@
     "story_progression|IPOA|Context Backgrounder",
     "next_48_hours|ODM|Reaction & Voices",
     "myth_vs_fact|ODM|Hard News Lead",
-    "policy_gap|Kenya Dairy Board|Explainer"
+    "policy_gap|Kenya Dairy Board|Explainer",
+    "policy_gap|EACC|Context Backgrounder"
   ]
 }
