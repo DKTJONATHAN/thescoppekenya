@@ -1,28 +1,78 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ExternalLink, Radio } from "lucide-react";
 import { Link } from "react-router-dom";
 import { KENYA_WIRE_OUTLETS, type KenyaWireOutlet } from "@/lib/kenya-wire";
+
+declare global {
+  interface Window {
+    twttr?: {
+      ready: (cb: () => void) => void;
+      widgets: { load: (el?: HTMLElement) => Promise<unknown> };
+    };
+  }
+}
 
 function avatarUrl(handle: string) {
   return `https://unavatar.io/twitter/${encodeURIComponent(handle)}?fallback=https://zandani.co.ke/logo.png`;
 }
 
-function embedSrc(handle: string, theme: "light" | "dark") {
-  const params = new URLSearchParams({
-    dnt: "true",
-    embedId: `kenya-wire-${handle}`,
-    showReplies: "false",
-    lang: "en",
-    theme,
+function loadXWidgets(): Promise<void> {
+  if (window.twttr?.widgets) return Promise.resolve();
+  return new Promise((resolve) => {
+    const existing = document.querySelector<HTMLScriptElement>("script[data-kenya-wire-widgets]");
+    if (existing) {
+      existing.addEventListener("load", () => resolve(), { once: true });
+      if (window.twttr?.widgets) resolve();
+      setTimeout(() => resolve(), 2500);
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "https://platform.twitter.com/widgets.js";
+    script.async = true;
+    script.charset = "utf-8";
+    script.dataset.kenyaWireWidgets = "1";
+    script.onload = () => resolve();
+    script.onerror = () => resolve();
+    document.body.appendChild(script);
   });
-  return `https://syndication.twitter.com/srv/timeline-profile/screen-name/${encodeURIComponent(handle)}?${params.toString()}`;
 }
 
 export function XTimeline({ outlet, height = 720 }: { outlet: KenyaWireOutlet; height?: number }) {
-  const theme = useMemo(() => {
-    if (typeof document === "undefined") return "dark" as const;
-    return document.documentElement.classList.contains("dark") ? "dark" : "light";
-  }, [outlet.handle]);
+  const ref = useRef<HTMLDivElement>(null);
+  const [embedFailed, setEmbedFailed] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    setEmbedFailed(false);
+
+    const timer = window.setTimeout(() => {
+      const hasIframe = !!ref.current?.querySelector("iframe");
+      if (!cancelled && !hasIframe) setEmbedFailed(true);
+    }, 5000);
+
+    loadXWidgets().then(() => {
+      if (cancelled || !ref.current) return;
+      ref.current.innerHTML = "";
+      const anchor = document.createElement("a");
+      anchor.className = "twitter-timeline";
+      anchor.href = `https://x.com/${outlet.handle}?ref_src=twsrc%5Etfw`;
+      anchor.setAttribute("data-height", String(height));
+      anchor.setAttribute("data-theme", "dark");
+      anchor.setAttribute("data-chrome", "nofooter noborders transparent");
+      anchor.setAttribute("data-dnt", "true");
+      anchor.textContent = `Posts from @${outlet.handle}`;
+      ref.current.appendChild(anchor);
+
+      const load = () => window.twttr?.widgets?.load(ref.current || undefined);
+      if (window.twttr?.ready) window.twttr.ready(load);
+      else load();
+    });
+
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+    };
+  }, [outlet.handle, height]);
 
   return (
     <div className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl">
@@ -43,16 +93,25 @@ export function XTimeline({ outlet, height = 720 }: { outlet: KenyaWireOutlet; h
           Open X <ExternalLink className="w-3 h-3" />
         </a>
       </div>
-      <iframe
-        key={`${outlet.handle}-${theme}`}
-        title={`${outlet.name} live posts on X`}
-        src={embedSrc(outlet.handle, theme)}
-        height={height}
-        className="w-full bg-black"
-        loading="eager"
-        referrerPolicy="no-referrer-when-downgrade"
-        allow="encrypted-media; fullscreen"
-      />
+
+      {embedFailed && (
+        <div className="px-5 py-8 text-center border-b border-zinc-800">
+          <p className="text-white font-bold mb-2">X is blocking the in-page timeline right now.</p>
+          <p className="text-sm text-zinc-400 mb-4">
+            Their embed servers rate-limit or refuse the iframe. The official profile still works.
+          </p>
+          <a
+            href={`https://x.com/${outlet.handle}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-sky-500 text-black font-black text-sm px-5 py-2.5"
+          >
+            View @{outlet.handle} on X <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
+      )}
+
+      <div ref={ref} className="min-h-[240px] bg-black" />
     </div>
   );
 }
@@ -60,11 +119,6 @@ export function XTimeline({ outlet, height = 720 }: { outlet: KenyaWireOutlet; h
 export function KenyaWireBoard({ compact = false }: { compact?: boolean }) {
   const [active, setActive] = useState(KENYA_WIRE_OUTLETS[0].handle);
   const outlet = KENYA_WIRE_OUTLETS.find((item) => item.handle === active) || KENYA_WIRE_OUTLETS[0];
-
-  useEffect(() => {
-    const id = window.setTimeout(() => setActive((current) => current), 0);
-    return () => window.clearTimeout(id);
-  }, []);
 
   return (
     <div className="grid lg:grid-cols-[280px_minmax(0,1fr)] gap-4 lg:gap-6">
@@ -105,10 +159,6 @@ export function KenyaWireStrip() {
       <div className="container max-w-7xl mx-auto px-3 sm:px-4">
         <div className="flex items-center justify-between gap-3 mb-4">
           <div className="flex items-center gap-2 text-white">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500" />
-            </span>
             <Radio className="w-4 h-4 text-red-400" />
             <h2 className="text-sm font-black uppercase tracking-wide">Kenya Wire</h2>
           </div>
