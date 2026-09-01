@@ -2,9 +2,26 @@ name: Facebook Auto-Post with AI
 
 on:
   push:
+    branches: [main]
     paths:
       - 'content/posts/**.md'
   workflow_dispatch:
+    inputs:
+      force_latest:
+        description: 'Post the newest article even if already blasted'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+concurrency:
+  group: facebook-blast-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   post-to-facebook:
@@ -13,7 +30,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 20
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -25,168 +43,272 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests google-genai
 
-      - name: Wait for Zandani to deploy
+      - name: Wait for deploy
         run: |
-          echo "Waiting 30 seconds for Zandani to deploy..."
-          sleep 30
+          echo "Waiting 45s for deploy..."
+          sleep 45
 
-      - name: Detect posts & publish to Facebook via AI
+      - name: Detect posts and publish to Facebook
         env:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          FORCE_LATEST: ${{ github.event.inputs.force_latest || 'false' }}
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
         run: |
+          set -e
           if [ -z "$FACEBOOK_PAGE_ID" ] || [ -z "$FACEBOOK_PAGE_TOKEN" ]; then
-            echo "⚠️ Facebook credentials not set, skipping"
+            echo "Facebook credentials not set, skipping"
             exit 0
           fi
-          
-          if [ -z "$GEMINI_API_KEY" ]; then
-            echo "⚠️ GEMINI_API_KEY not set, skipping. Please ensure it is in your secrets."
+          if [ -z "$GEMINI_API_KEY" ] && [ -z "$GEMINI_WRITE_KEY" ] && [ -z "$GEMINI_API_KEY1" ]; then
+            echo "No Gemini keys set, skipping"
             exit 0
           fi
 
-          # Get changed .md files in content/posts/
-          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+          CHANGED=""
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            CHANGED=$(ls -1t content/posts/*.md 2>/dev/null | head -3 || true)
+          else
+            if [ -n "$BEFORE_SHA" ] && [ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ]; then
+              CHANGED=$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA" -- 'content/posts/' | grep '\.md$' || true)
+            fi
+            if [ -z "$CHANGED" ]; then
+              CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' 2>/dev/null | grep '\.md$' || true)
+            fi
+            if [ -z "$CHANGED" ]; then
+              CHANGED=$(git log -1 --name-only --pretty=format: -- 'content/posts/' | grep '\.md$' || true)
+            fi
+          fi
 
           if [ -z "$CHANGED" ]; then
-            echo "📝 No post changes detected"
+            echo "No post changes detected"
             exit 0
           fi
 
-          # Export the list of files to be read by Python
           export CHANGED_FILES="$CHANGED"
+          echo "Candidates:"
+          echo "$CHANGED_FILES"
 
-          python3 << 'EOF'
-          import os, re, requests, time
+          python3 << 'PY'
+          import hashlib, json, os, re, time
+          from pathlib import Path
+          import requests
           from google import genai
           from google.genai import types
 
-          changed_files = os.environ.get('CHANGED_FILES', '').strip().split('\n')
-          fb_page_id = os.environ.get('FACEBOOK_PAGE_ID')
-          fb_token = os.environ.get('FACEBOOK_PAGE_TOKEN')
-          gemini_key = os.environ.get('GEMINI_API_KEY')
-          site_url = "https://zandani.co.ke"
+          SITE = "https://zandani.co.ke"
+          MEM = Path(".github/memory_facebook_blast.json")
+          IMG = Path("temp_fb_post_image.jpg")
+          MODELS = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-3-flash-preview", "gemini-1.5-flash"]
+          MAX_N = 3
 
-          client = genai.Client(api_key=gemini_key)
+          page_id = os.environ["FACEBOOK_PAGE_ID"]
+          token = os.environ["FACEBOOK_PAGE_TOKEN"]
+          force = os.environ.get("FORCE_LATEST", "false").lower() == "true"
+          keys = [k for k in (os.environ.get("GEMINI_WRITE_KEY"), os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY1")) if k]
+          key_i = 0
+          client = genai.Client(api_key=keys[key_i])
 
-          for file_path in changed_files:
-              if not file_path or not os.path.exists(file_path):
-                  continue
-              
-              print(f"🚀 Processing File: {file_path}")
-              with open(file_path, 'r', encoding='utf-8') as f:
-                  content = f.read()
+          def rotate():
+              global key_i, client
+              key_i = (key_i + 1) % len(keys)
+              client = genai.Client(api_key=keys[key_i])
 
-              slug_match = re.search(r'^slug:\s*["\']?(.*?)["\']?\s*$', content, re.MULTILINE)
-              slug = slug_match.group(1) if slug_match else os.path.basename(file_path).replace('.md', '')
-              article_url = f"{site_url}/article/{slug}"
-
-              # Extract metadata using regex
-              title_match = re.search(r'^title:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-              author_match = re.search(r'^author:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-              excerpt_match = re.search(r'^excerpt:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-              image_match = re.search(r'^image:\s*["\']?(.*?)["\']?$', content, re.MULTILINE)
-
-              title = title_match.group(1) if title_match else "Latest Update"
-              author = author_match.group(1) if author_match else "Za Ndani"
-              excerpt = excerpt_match.group(1) if excerpt_match else ""
-              image_url = image_match.group(1) if image_match else ""
-
-              print(f"📝 Asking Gemini to write caption for: {title}")
-
-              prompt = f"""
-              You are the expert Social Media Manager for 'Za Ndani', a top Kenyan news platform. 
-              Write a highly engaging, conversational Facebook post caption to drive traffic to this new article.
-
-              Article Title: {title}
-              Author: {author}
-              Excerpt: {excerpt}
-
-              Rules:
-              - Make it catchy and designed to provoke curiosity and comments.
-              - You MUST explicitly tell the reader to check the comments for the full story/link (e.g., "Catch the full juice in the comments below! 👇" or "Link in the comments!"). This is mandatory.
-              - Use 2 to 3 relevant emojis.
-              - Include 2 or 3 relevant hashtags at the bottom.
-              - Do NOT include the article link or URL in the text.
-              - Keep it under 3 short, punchy paragraphs.
-              - Write in clear, appealing Kenyan English.
-              - NEVER use em dashes or en dashes. Only use regular single hyphens (-).
-              """
-
-              try:
-                  for attempt in range(3):
-                      try:
-                          response = client.models.generate_content(
-                              model='gemini-2.5-flash',
-                              contents=prompt,
-                              config=types.GenerateContentConfig(temperature=0.8)
-                          )
-                          ai_caption = response.text.strip()
-                          break
-                      except Exception as e:
-                          if "429" in str(e) and attempt < 2:
-                              print(f"⚠️ Rate limited. Waiting 45s... (attempt {attempt+1})")
-                              import time
-                              time.sleep(45)
-                          else:
-                              raise
-              except Exception as e:
-                  print(f"⚠️ AI Generation failed: {e}")
-                  ai_caption = f"📰 {title}\n\n{excerpt}\n\n👇 Catch the full juice in the comments below!" 
-
-              # Scrub dashes just in case
-              ai_caption = ai_caption.replace('\u2014', '-').replace('\u2013', '-')
-
-              img_path = "temp_post_image.jpg"
-              has_image = False
-              
-              if image_url and image_url.startswith("http"):
-                  print(f"📥 Downloading image: {image_url}")
+          def load_mem():
+              if MEM.exists():
                   try:
-                      img_data = requests.get(image_url, timeout=15).content
-                      with open(img_path, 'wb') as img_file:
-                          img_file.write(img_data)
-                      has_image = True
+                      d = json.loads(MEM.read_text(encoding="utf-8"))
+                      return {"posted": d if isinstance(d, list) else d.get("posted", [])}
+                  except Exception:
+                      pass
+              return {"posted": []}
+
+          def save_mem(m):
+              MEM.parent.mkdir(parents=True, exist_ok=True)
+              m["posted"] = list(m.get("posted", []))[-400:]
+              MEM.write_text(json.dumps(m, indent=2), encoding="utf-8")
+
+          def field(content, name, default=""):
+              m = re.search(rf'^{name}:\s*["\']?(.*?)["\']?\s*$', content, re.M)
+              return (m.group(1).strip() if m else default).strip()
+
+          def snippet(content, n=400):
+              parts = re.split(r"^---\s*$", content, maxsplit=2, flags=re.M)
+              body = parts[-1] if len(parts) >= 3 else content
+              body = re.sub(r"[#>*_`\[\]()]", " ", body)
+              body = re.sub(r"\s+", " ", body).strip()
+              return body[:n]
+
+          def gen_caption(title, author, excerpt, category, snip):
+              prompt = (
+                  "You are the social media manager for Za Ndani (zandani.co.ke), a Kenyan news site.\n"
+                  "Write ONE Facebook post caption.\n\n"
+                  f"Title: {title}\nAuthor: {author}\nCategory: {category}\nExcerpt: {excerpt}\nSnippet: {snip}\n\n"
+                  "Rules:\n"
+                  "- Strong hook first (question or clear news angle). No generic Breaking news.\n"
+                  "- Max 2 short paragraphs, then CTA that full story link is in the comments.\n"
+                  "- 2-3 emojis only. 2-4 hashtags at end including #Kenya.\n"
+                  "- No URLs. No em/en dashes. No spill the tea / juice / popcorn spam.\n"
+                  "- Clear Kenyan English. Output ONLY the caption."
+              )
+              for model in MODELS:
+                  for _ in range(len(keys)):
+                      try:
+                          r = client.models.generate_content(
+                              model=model,
+                              contents=prompt,
+                              config=types.GenerateContentConfig(temperature=0.85),
+                          )
+                          t = (r.text or "").strip()
+                          if t:
+                              print(f"Gemini OK [{model}]")
+                              return t
+                      except Exception as e:
+                          print(f"Gemini error [{model}]: {e}")
+                          rotate()
+                          if any(x in str(e).lower() for x in ("429", "quota", "rate", "exhausted", "unavailable", "overloaded", "timeout")):
+                              time.sleep(10)
+                              continue
+                          break
+              return None
+
+          def clean(t):
+              t = (t or "").replace("\u2014", "-").replace("\u2013", "-")
+              t = re.sub(r"https?://\S+", "", t)
+              return t.strip()
+
+          def phash(slug, title):
+              return hashlib.md5(f"{slug}|{title}".encode()).hexdigest()
+
+          def live_ok(url):
+              for i in range(6):
+                  try:
+                      r = requests.get(url, timeout=12, allow_redirects=True)
+                      if r.status_code == 200 and len(r.text) > 500:
+                          return True
                   except Exception as e:
-                      print(f"⚠️ Failed to download image: {e}")
+                      print(f"live check {i+1}: {e}")
+                  time.sleep(8)
+              return False
 
+          def fb_post(caption, image_url):
+              has_img = False
+              if image_url.startswith("http"):
+                  try:
+                      r = requests.get(image_url, timeout=20)
+                      r.raise_for_status()
+                      IMG.write_bytes(r.content)
+                      has_img = True
+                  except Exception as e:
+                      print(f"img fail: {e}")
+              result = {}
               post_id = None
-              
-              if has_image:
-                  print("📸 Uploading image and AI text to Facebook...")
-                  url = f"https://graph.facebook.com/v24.0/{fb_page_id}/photos"
-                  payload = {'message': ai_caption, 'access_token': fb_token}
-                  with open(img_path, 'rb') as img_file:
-                      files = {'source': img_file}
-                      res = requests.post(url, data=payload, files=files).json()
-                  post_id = res.get('post_id') or res.get('id')
+              if has_img:
+                  with IMG.open("rb") as fh:
+                      result = requests.post(
+                          f"https://graph.facebook.com/v21.0/{page_id}/photos",
+                          data={"message": caption, "access_token": token},
+                          files={"source": fh},
+                          timeout=60,
+                      ).json()
+                  post_id = result.get("post_id") or result.get("id")
+                  if post_id and "_" not in str(post_id):
+                      post_id = f"{page_id}_{post_id}"
               else:
-                  print("📝 No image found. Posting AI text to Facebook Feed...")
-                  url = f"https://graph.facebook.com/v24.0/{fb_page_id}/feed"
-                  payload = {'message': ai_caption, 'access_token': fb_token}
-                  res = requests.post(url, data=payload).json()
-                  post_id = res.get('id')
+                  result = requests.post(
+                      f"https://graph.facebook.com/v21.0/{page_id}/feed",
+                      data={"message": caption, "access_token": token},
+                      timeout=40,
+                  ).json()
+                  post_id = result.get("id")
+              if IMG.exists():
+                  IMG.unlink(missing_ok=True)
+              return post_id, result
 
-              print(f"Facebook API Response: {res}")
+          def comment(post_id, msg):
+              return requests.post(
+                  f"https://graph.facebook.com/v21.0/{post_id}/comments",
+                  data={"message": msg, "access_token": token},
+                  timeout=30,
+              ).json()
 
-              if post_id:
-                  print("✅ Main post successful. Waiting 10 seconds for sync...")
-                  time.sleep(10)
-                  
-                  print("💬 Adding link to the comment section...")
-                  comment_url = f"https://graph.facebook.com/v24.0/{post_id}/comments"
-                  comment_msg = f"Read the full story by {author} here: {article_url}"
-                  comment_payload = {'message': comment_msg, 'access_token': fb_token}
-                  comment_res = requests.post(comment_url, data=comment_payload).json()
-                  
-                  if 'error' in comment_res:
-                      print(f"❌ Failed to add comment: {comment_res}")
+          mem = load_mem()
+          done = set(mem.get("posted", []))
+          paths = [p.strip() for p in os.environ.get("CHANGED_FILES", "").splitlines() if p.strip().endswith(".md") and Path(p.strip()).exists()]
+          paths = sorted(paths, key=lambda p: Path(p).stat().st_mtime, reverse=True)
+
+          n = 0
+          for path in paths:
+              if n >= MAX_N:
+                  break
+              content = Path(path).read_text(encoding="utf-8")
+              slug = field(content, "slug") or Path(path).stem
+              if re.match(r"^\d{4}-\d{2}-\d{2}-", slug) and not field(content, "slug"):
+                  slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", slug)
+              title = field(content, "title", "Latest from Za Ndani")
+              author = field(content, "author", "Za Ndani")
+              excerpt = field(content, "excerpt") or field(content, "description") or "Read the full story on Za Ndani."
+              category = field(content, "category", "News")
+              image_url = field(content, "image")
+              url = f"{SITE}/article/{slug}"
+              h = phash(slug, title)
+              if h in done and not force:
+                  print(f"Skip already blasted: {slug}")
+                  continue
+              print(f"Processing: {title} -> {url}")
+              if not live_ok(url):
+                  print(f"Not live yet, posting anyway: {url}")
+              cap = gen_caption(title, author, excerpt, category, snippet(content))
+              if not cap:
+                  cap = f"{title}\n\n{excerpt}\n\nFull story is in the comments. #Kenya #News"
+              cap = clean(cap)
+              post_id, api = fb_post(cap, image_url)
+              print(f"FB: {api}")
+              if not post_id:
+                  print(f"FAILED {slug}")
+                  continue
+              time.sleep(8)
+              msg = f"Full story by {author}:\n{url}"
+              cres = comment(post_id, msg)
+              print(f"Comment: {cres}")
+              if "error" in cres:
+                  alts = []
+                  if "_" in str(post_id):
+                      alts.append(str(post_id).split("_", 1)[-1])
                   else:
-                      print(f"✅ Successfully published AI post and link comment for {slug}!")
-              else:
-                  print(f"❌ Failed to post {slug} to Facebook.")
+                      alts.append(f"{page_id}_{post_id}")
+                  for alt in alts:
+                      time.sleep(3)
+                      cres = comment(alt, msg)
+                      print(f"Comment retry {alt}: {cres}")
+                      if "error" not in cres:
+                          break
+              done.add(h)
+              mem["posted"] = list(done)
+              n += 1
+              print(f"Published {slug}")
+              time.sleep(5)
 
-              if os.path.exists(img_path):
-                  os.remove(img_path)
-          EOF
+          save_mem(mem)
+          print(f"Done. Published {n} post(s).")
+          PY
+
+      - name: Persist Facebook blast memory
+        if: always()
+        run: |
+          if [ ! -f .github/memory_facebook_blast.json ]; then
+            echo "No memory file"
+            exit 0
+          fi
+          git config user.name "Za Ndani"
+          git config user.email "bot@zandani.co.ke"
+          git add .github/memory_facebook_blast.json
+          git diff --staged --quiet && echo "No memory changes" && exit 0
+          git commit -m "chore(facebook): update blast memory [skip ci]" || true
+          git pull --rebase origin main || true
+          git push origin HEAD:main || true
