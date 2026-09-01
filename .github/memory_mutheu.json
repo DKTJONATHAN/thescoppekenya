@@ -414,10 +414,10 @@
     "46d0fa128982b133e59a6666b1df2e18",
     "a8cad0b687b29a3f17de4ac23025e14e",
     "89b7da4ec45ce9a8272d3246066a0eb8",
-    "53c254750736e58464ce768f37731bea"
+    "53c254750736e58464ce768f37731bea",
+    "9c04c445a41ccc84ce25f88928327a27"
   ],
   "style_history": [
-    "Profile Beat",
     "Explainer",
     "Trend Take",
     "Reaction Round-up",
@@ -446,10 +446,10 @@
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Profile Beat"
   ],
   "angle_history": [
-    "myth_vs_fact|Sean Astin|Profile Beat",
     "story_progression|The Princess Diaries|Hard News Lead",
     "timeline_shift|na|Trend Take",
     "story_progression|na|Explainer",
@@ -528,6 +528,7 @@
     "story_progression|Ebenezer|Profile Beat",
     "myth_vs_fact|na|Trend Take",
     "winners_losers|Dancing With the Stars: The Next Pro|Hard News Lead",
-    "timeline_shift|Marriage|Reaction Round-up"
+    "timeline_shift|Marriage|Reaction Round-up",
+    "winners_losers|Kenan Thompson|Profile Beat"
   ]
 }
