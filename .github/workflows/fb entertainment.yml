@@ -1,10 +1,27 @@
-name: Facebook Article-Blast (Entertainment - First 3 Paragraphs)
+name: Facebook Article-Blast (Entertainment)
 
 on:
   push:
+    branches: [main]
     paths:
       - 'content/posts/**.md'
   workflow_dispatch:
+    inputs:
+      force_latest:
+        description: 'Post newest entertainment article even if already blasted'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+concurrency:
+  group: facebook-article-blast-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   post-to-facebook:
@@ -13,7 +30,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 20
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -25,183 +43,309 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Wait for Zandani to deploy
+      - name: Wait for deploy
         run: |
-          echo "Waiting 30 seconds for Zandani to deploy..."
-          sleep 30
+          echo "Waiting 45s for deploy..."
+          sleep 45
 
-      - name: Detect posts & publish full article preview to Facebook
+      - name: Detect entertainment posts and publish article preview
         env:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          FORCE_LATEST: ${{ github.event.inputs.force_latest || 'false' }}
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
         run: |
+          set -e
           if [ -z "$FACEBOOK_PAGE_ID" ] || [ -z "$FACEBOOK_PAGE_TOKEN" ]; then
-            echo "⚠️ Facebook credentials not set, skipping"
+            echo "Facebook credentials not set, skipping"
             exit 0
           fi
 
-          # Get changed .md files in content/posts/
-          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' | grep '\.md$' || true)
+          CHANGED=""
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            CHANGED=$(ls -1t content/posts/*.md 2>/dev/null | head -8 || true)
+          else
+            if [ -n "$BEFORE_SHA" ] && [ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ]; then
+              CHANGED=$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA" -- 'content/posts/' | grep '\.md$' || true)
+            fi
+            if [ -z "$CHANGED" ]; then
+              CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'content/posts/' 2>/dev/null | grep '\.md$' || true)
+            fi
+            if [ -z "$CHANGED" ]; then
+              CHANGED=$(git log -1 --name-only --pretty=format: -- 'content/posts/' | grep '\.md$' || true)
+            fi
+          fi
 
           if [ -z "$CHANGED" ]; then
-            echo "📝 No post changes detected"
+            echo "No post changes detected"
             exit 0
           fi
 
           export CHANGED_FILES="$CHANGED"
+          echo "Candidates:"
+          echo "$CHANGED_FILES"
 
-          python3 << 'EOF'
-          import os, re, requests, time
+          python3 << 'PY'
+          import hashlib, json, os, re, time
+          from pathlib import Path
+          import requests
 
-          changed_files = os.environ.get('CHANGED_FILES', '').strip().split('\n')
-          fb_page_id    = os.environ.get('FACEBOOK_PAGE_ID')
-          fb_token      = os.environ.get('FACEBOOK_PAGE_TOKEN')
-          site_url      = "https://zandani.co.ke"
+          SITE = "https://zandani.co.ke"
+          MEM = Path(".github/memory_facebook_article_blast.json")
+          IMG = Path("temp_fb_article_image.jpg")
+          MAX_N = 2
+          MAX_MSG = 2200
+          ENT_CATS = {
+              "entertainment", "music", "gossip", "celebrity", "celebrities",
+              "africa entertainment", "showbiz", "lifestyle entertainment",
+          }
 
-          def strip_frontmatter(text):
-              """Remove YAML frontmatter (--- ... ---) and return the body."""
+          page_id = os.environ["FACEBOOK_PAGE_ID"]
+          token = os.environ["FACEBOOK_PAGE_TOKEN"]
+          force = os.environ.get("FORCE_LATEST", "false").lower() == "true"
+
+          def load_mem():
+              if MEM.exists():
+                  try:
+                      d = json.loads(MEM.read_text(encoding="utf-8"))
+                      return {"posted": d if isinstance(d, list) else d.get("posted", [])}
+                  except Exception:
+                      pass
+              return {"posted": []}
+
+          def save_mem(m):
+              MEM.parent.mkdir(parents=True, exist_ok=True)
+              m["posted"] = list(m.get("posted", []))[-400:]
+              MEM.write_text(json.dumps(m, indent=2), encoding="utf-8")
+
+          def field(content, name, default=""):
+              m = re.search(rf'^{name}:\s*["\']?(.*?)["\']?\s*$', content, re.M)
+              return (m.group(1).strip() if m else default).strip()
+
+          def strip_fm(text):
               text = text.strip()
-              if text.startswith('---'):
-                  end = text.find('---', 3)
+              if text.startswith("---"):
+                  end = text.find("---", 3)
                   if end != -1:
                       return text[end + 3:].strip()
               return text
 
           def extract_paragraphs(body, count=3):
-              """
-              Extract the first `count` non-empty, non-heading paragraphs
-              from markdown body text.
-              """
-              # Remove markdown images  ![...](...) 
-              body = re.sub(r'!\[.*?\]\(.*?\)', '', body)
-              # Remove markdown links but keep text  [text](url) -> text
-              body = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', body)
-              # Remove HTML tags
-              body = re.sub(r'<[^>]+>', '', body)
-              # Remove horizontal rules
-              body = re.sub(r'^[-*_]{3,}\s*$', '', body, flags=re.MULTILINE)
+              body = re.sub(r"!\[.*?\]\(.*?\)", "", body)
+              body = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", body)
+              body = re.sub(r"<[^>]+>", "", body)
+              body = re.sub(r"^[-*_]{3,}\s*$", "", body, flags=re.M)
 
+              # Prefer blank-line separated blocks, then fall back line by line
+              blocks = re.split(r"\n\s*\n", body)
               paragraphs = []
-              for line in body.split('\n'):
-                  line = line.strip()
-                  # Skip blank lines, headings, blockquotes, list items, code fences
-                  if not line:
+              for block in blocks:
+                  lines = []
+                  for line in block.split("\n"):
+                      line = line.strip()
+                      if not line:
+                          continue
+                      if line.startswith(("#", ">", "-", "*", "+", "`", "|")):
+                          continue
+                      if re.match(r"^\d+\.", line):
+                          continue
+                      lines.append(line)
+                  if not lines:
                       continue
-                  if line.startswith(('#', '>', '-', '*', '+', '`', '|')):
+                  para = " ".join(lines)
+                  para = re.sub(r"\s+", " ", para).strip()
+                  if len(para) < 40:
                       continue
-                  if re.match(r'^\d+\.', line):   # numbered list
-                      continue
-                  paragraphs.append(line)
-                  if len(paragraphs) == count:
+                  paragraphs.append(para)
+                  if len(paragraphs) >= count:
                       break
 
-              return '\n\n'.join(paragraphs)
+              if len(paragraphs) < count:
+                  for line in body.split("\n"):
+                      line = line.strip()
+                      if not line or line.startswith(("#", ">", "-", "*", "+", "`", "|")):
+                          continue
+                      if re.match(r"^\d+\.", line):
+                          continue
+                      if len(line) < 40:
+                          continue
+                      if line not in paragraphs:
+                          paragraphs.append(line)
+                      if len(paragraphs) >= count:
+                          break
 
-          for file_path in changed_files:
-              if not file_path or not os.path.exists(file_path):
-                  continue
+              return "\n\n".join(paragraphs[:count])
 
-              print(f"🚀 Processing: {file_path}")
-              with open(file_path, 'r', encoding='utf-8') as f:
-                  raw = f.read()
+          def is_entertainment(category, tags_raw=""):
+              cat = (category or "").strip().lower()
+              if cat in ENT_CATS:
+                  return True
+              if "entertainment" in cat or "gossip" in cat or "celebrity" in cat:
+                  return True
+              tags = re.findall(r"[A-Za-z][\w\s-]*", tags_raw or "")
+              tag_l = {t.strip().lower() for t in tags}
+              return bool(tag_l & {"entertainment", "gossip", "celebrity", "celebrities", "music", "showbiz"})
 
-              slug_match  = re.search(r'^slug:\s*["\']?(.*?)["\']?\s*$', raw, re.MULTILINE)
-              slug        = slug_match.group(1) if slug_match else os.path.basename(file_path).replace('.md', '')
-              article_url = f"{site_url}/article/{slug}"
+          def phash(slug, title):
+              return hashlib.md5(f"article|{slug}|{title}".encode()).hexdigest()
 
-              # ── Extract frontmatter metadata ──────────────────────────────
-              title_match    = re.search(r'^title:\s*["\']?(.*?)["\']?$',    raw, re.MULTILINE)
-              author_match   = re.search(r'^author:\s*["\']?(.*?)["\']?$',   raw, re.MULTILINE)
-              image_match    = re.search(r'^image:\s*["\']?(.*?)["\']?$',    raw, re.MULTILINE)
-              category_match = re.search(r'^category:\s*["\']?(.*?)["\']?$', raw, re.MULTILINE)
-
-              title     = title_match.group(1).strip()    if title_match    else "Latest Update"
-              author    = author_match.group(1).strip()   if author_match   else "Za Ndani"
-              image_url = image_match.group(1).strip()    if image_match    else ""
-              category  = category_match.group(1).strip() if category_match else ""
-
-              # ── Skip non-entertainment articles ───────────────────────────
-              # Handles both raw ('entertainment', 'music') and normalized ('Entertainment') values.
-              # Mirrors the normalizeCategory() map in markdown.ts:
-              # music -> Entertainment, everything else checked directly.
-              ENTERTAINMENT_VALUES = {'entertainment', 'music'}
-              if category.lower() not in ENTERTAINMENT_VALUES:
-                  print(f"Skipping '{title}' (category: '{category}' is not entertainment)")
-                  continue
-
-              # ── Extract first 3 paragraphs from article body ──────────────
-              body      = strip_frontmatter(raw)
-              preview   = extract_paragraphs(body, count=3)
-
-              if not preview:
-                  print("⚠️  Could not extract paragraphs, falling back to title only.")
-                  preview = title
-
-              # ── Build the Facebook post message ───────────────────────────
-              # Format: Title (bold via caps/emoji header) + preview paragraphs
-              # + teaser line pointing to comments
-              post_message = (
-                  f"📰 {title}\n\n"
-                  f"{preview}\n\n"
-                  f"👇 Full story in the comments - don't miss it!"
-              )
-
-              # Replace any em/en dashes just in case they sneak in from content
-              post_message = post_message.replace('\u2014', '-').replace('\u2013', '-')
-
-              # ── Download article image ────────────────────────────────────
-              img_path  = "temp_post_image.jpg"
-              has_image = False
-
-              if image_url and image_url.startswith("http"):
-                  print(f"📥 Downloading image: {image_url}")
+          def live_ok(url):
+              for i in range(6):
                   try:
-                      img_data = requests.get(image_url, timeout=15).content
-                      with open(img_path, 'wb') as img_file:
-                          img_file.write(img_data)
-                      has_image = True
+                      r = requests.get(url, timeout=12, allow_redirects=True)
+                      if r.status_code == 200 and len(r.text) > 500:
+                          return True
                   except Exception as e:
-                      print(f"⚠️ Failed to download image: {e}")
+                      print(f"live check {i+1}: {e}")
+                  time.sleep(8)
+              return False
 
-              # ── Post to Facebook ──────────────────────────────────────────
+          def build_message(title, preview):
+              msg = (
+                  f"{title}\n\n"
+                  f"{preview}\n\n"
+                  f"Full story is in the comments.\n"
+                  f"#Kenya #Entertainment #ZaNdani"
+              )
+              msg = msg.replace("\u2014", "-").replace("\u2013", "-")
+              if len(msg) > MAX_MSG:
+                  # Keep title + truncated preview + CTA
+                  budget = MAX_MSG - len(title) - 80
+                  cut = preview[: max(200, budget)]
+                  cut = cut.rsplit(" ", 1)[0] + "..."
+                  msg = (
+                      f"{title}\n\n"
+                      f"{cut}\n\n"
+                      f"Full story is in the comments.\n"
+                      f"#Kenya #Entertainment #ZaNdani"
+                  )
+              return msg
+
+          def fb_post(caption, image_url):
+              has_img = False
+              if image_url.startswith("http"):
+                  try:
+                      r = requests.get(image_url, timeout=20)
+                      r.raise_for_status()
+                      IMG.write_bytes(r.content)
+                      has_img = True
+                  except Exception as e:
+                      print(f"img fail: {e}")
+              result = {}
               post_id = None
-
-              if has_image:
-                  print("📸 Uploading image + article preview to Facebook...")
-                  url     = f"https://graph.facebook.com/v24.0/{fb_page_id}/photos"
-                  payload = {'message': post_message, 'access_token': fb_token}
-                  with open(img_path, 'rb') as img_file:
-                      res = requests.post(url, data=payload, files={'source': img_file}).json()
-                  post_id = res.get('post_id') or res.get('id')
+              if has_img:
+                  with IMG.open("rb") as fh:
+                      result = requests.post(
+                          f"https://graph.facebook.com/v21.0/{page_id}/photos",
+                          data={"message": caption, "access_token": token},
+                          files={"source": fh},
+                          timeout=60,
+                      ).json()
+                  post_id = result.get("post_id") or result.get("id")
+                  if post_id and "_" not in str(post_id):
+                      post_id = f"{page_id}_{post_id}"
               else:
-                  print("📝 No image. Posting article preview as text to Facebook Feed...")
-                  url     = f"https://graph.facebook.com/v24.0/{fb_page_id}/feed"
-                  payload = {'message': post_message, 'access_token': fb_token}
-                  res     = requests.post(url, data=payload).json()
-                  post_id = res.get('id')
+                  result = requests.post(
+                      f"https://graph.facebook.com/v21.0/{page_id}/feed",
+                      data={"message": caption, "access_token": token},
+                      timeout=40,
+                  ).json()
+                  post_id = result.get("id")
+              if IMG.exists():
+                  IMG.unlink(missing_ok=True)
+              return post_id, result
 
-              print(f"Facebook API Response: {res}")
+          def comment(post_id, msg):
+              return requests.post(
+                  f"https://graph.facebook.com/v21.0/{post_id}/comments",
+                  data={"message": msg, "access_token": token},
+                  timeout=30,
+              ).json()
 
-              # ── Drop the link in the first comment ───────────────────────
-              if post_id:
-                  print("✅ Main post successful. Waiting 10 seconds for sync...")
-                  time.sleep(10)
+          mem = load_mem()
+          done = set(mem.get("posted", []))
+          paths = [p.strip() for p in os.environ.get("CHANGED_FILES", "").splitlines() if p.strip().endswith(".md") and Path(p.strip()).exists()]
+          paths = sorted(paths, key=lambda p: Path(p).stat().st_mtime, reverse=True)
 
-                  print("💬 Adding full article link in comments...")
-                  comment_url     = f"https://graph.facebook.com/v24.0/{post_id}/comments"
-                  comment_msg     = f"Read the full story by {author} here 👉 {article_url}"
-                  comment_payload = {'message': comment_msg, 'access_token': fb_token}
-                  comment_res     = requests.post(comment_url, data=comment_payload).json()
+          n = 0
+          for path in paths:
+              if n >= MAX_N:
+                  break
+              raw = Path(path).read_text(encoding="utf-8")
+              slug = field(raw, "slug") or Path(path).stem
+              if re.match(r"^\d{4}-\d{2}-\d{2}-", slug) and not field(raw, "slug"):
+                  slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", slug)
+              title = field(raw, "title", "Latest from Za Ndani")
+              author = field(raw, "author", "Za Ndani")
+              image_url = field(raw, "image")
+              category = field(raw, "category")
+              tags = field(raw, "tags")
+              if not is_entertainment(category, tags):
+                  print(f"Skip non-entertainment: {title} ({category})")
+                  continue
 
-                  if 'error' in comment_res:
-                      print(f"❌ Failed to add comment: {comment_res}")
+              url = f"{SITE}/article/{slug}"
+              h = phash(slug, title)
+              if h in done and not force:
+                  print(f"Skip already blasted: {slug}")
+                  continue
+
+              print(f"Processing: {title} -> {url}")
+              if not live_ok(url):
+                  print(f"Not live yet, posting anyway: {url}")
+
+              preview = extract_paragraphs(strip_fm(raw), count=3)
+              if not preview:
+                  excerpt = field(raw, "excerpt") or field(raw, "description") or title
+                  preview = excerpt
+
+              message = build_message(title, preview)
+              post_id, api = fb_post(message, image_url)
+              print(f"FB: {api}")
+              if not post_id:
+                  print(f"FAILED {slug}")
+                  continue
+
+              time.sleep(8)
+              cmsg = f"Full story by {author}:\n{url}"
+              cres = comment(post_id, cmsg)
+              print(f"Comment: {cres}")
+              if "error" in cres:
+                  alts = []
+                  if "_" in str(post_id):
+                      alts.append(str(post_id).split("_", 1)[-1])
                   else:
-                      print(f"✅ Published article preview + link comment for: {slug}")
-              else:
-                  print(f"❌ Failed to post {slug} to Facebook. Response: {res}")
+                      alts.append(f"{page_id}_{post_id}")
+                  for alt in alts:
+                      time.sleep(3)
+                      cres = comment(alt, cmsg)
+                      print(f"Comment retry {alt}: {cres}")
+                      if "error" not in cres:
+                          break
 
-              # ── Cleanup ───────────────────────────────────────────────────
-              if os.path.exists(img_path):
-                  os.remove(img_path)
+              done.add(h)
+              mem["posted"] = list(done)
+              n += 1
+              print(f"Published article blast for {slug}")
+              time.sleep(5)
 
-          EOF
+          save_mem(mem)
+          print(f"Done. Published {n} entertainment preview(s).")
+          PY
+
+      - name: Persist article blast memory
+        if: always()
+        run: |
+          if [ ! -f .github/memory_facebook_article_blast.json ]; then
+            echo "No memory file"
+            exit 0
+          fi
+          git config user.name "Za Ndani"
+          git config user.email "bot@zandani.co.ke"
+          git add .github/memory_facebook_article_blast.json
+          git diff --staged --quiet && echo "No memory changes" && exit 0
+          git commit -m "chore(facebook): update article blast memory [skip ci]" || true
+          git pull --rebase origin main || true
+          git push origin HEAD:main || true
