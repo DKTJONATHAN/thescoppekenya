@@ -1,18 +1,20 @@
 ---
 title: "Esther Passaris Debunks Claims Linking Contraceptives to Endometriosis"
 slug: "esther-passaris-debunks-contraceptive-endometriosis-claims"
-description: "Nairobi Woman Rep Esther Passaris has refuted claims linking emergency contraceptives to endometriosis following a viral podcast debate on health."
+description: "Esther Passaris Debunks Claims Linking Contraceptives to Endometr: Nairobi Woman Rep Esther Passaris has refuted claims linking emergency contraceptives to"
+excerpt: "When the Mic Outweighs the Lab Coat Nairobi Women Representative Esther Passaris has shifted her focus from the legislative floor to a brewi"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/Fbf3TGzD/8263389e291f.jpg"
 category: "Gossip"
 tags: ["esther passaris", "reproductive health", "kenya health news", "endometriosis", "public health", "za ndani"]
+canonical: "https://zandani.co.ke/article/esther-passaris-debunks-contraceptive-endometriosis-claims"
 date: "2026-09-01T11:35:12Z"
 dateModified: "2026-09-01T11:35:12Z"
+focusKeyword: "Esther Passaris Debunks Claims Linking Contraceptives to Endometr"
 schema: "NewsArticle"
 ---
 
-## When the Mic Outweighs the Lab Coat
+## When the Mic Outweighs the Lab Coat Esther Passaris Debunks Claims Linking Contraceptives to Endometr is the central subject of the update.
 
 Nairobi Women Representative Esther Passaris has shifted her focus from the legislative floor to a brewing digital crisis. Across the city, casual remarks made by content creators are increasingly being treated as gospel, often carrying more weight in the minds of young women than verified medical research. 
 
