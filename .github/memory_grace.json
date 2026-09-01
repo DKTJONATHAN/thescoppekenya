@@ -225,10 +225,10 @@
     "1bf51843d306b61cea07cc7ed28eef94",
     "579bf0fcf280a52cd76da2c89518538d",
     "d5ef6c7890be32728eee16dc8257ec93",
-    "085ac8c58656c3ecf7ce2bc59bd17e2e"
+    "085ac8c58656c3ecf7ce2bc59bd17e2e",
+    "0925cc4985eda761f415e745898edb2f"
   ],
   "style_history": [
-    "Explainer",
     "Backgrounder",
     "SME Angle",
     "Markets Report",
@@ -257,10 +257,10 @@
     "Explainer",
     "SME Angle",
     "Power Accountability",
-    "Markets Report"
+    "Markets Report",
+    "Explainer"
   ],
   "angle_history": [
-    "money_follow|energy policy|SME Angle",
     "impact_on_citizens|Simbisa Brands|Explainer",
     "accountability|climate finance|Power Accountability",
     "money_follow|Shadow AI|Markets Report",
@@ -339,6 +339,7 @@
     "timeline_shift|I&M Group|Explainer",
     "money_follow|Kenya Pipeline Company|SME Angle",
     "accountability|Kenya|Power Accountability",
-    "myth_vs_fact|NSE|Markets Report"
+    "myth_vs_fact|NSE|Markets Report",
+    "money_follow|KRA|Explainer"
   ]
 }
