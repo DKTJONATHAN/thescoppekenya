@@ -1,21 +1,20 @@
 ---
-title: "Kenan Thompson nearly quit acting over D2: The Mighty Ducks camp
+title: "'Kenan Thompson nearly quit acting over D2: The Mighty Ducks camp"
 slug: "kenan-thompson-nearly-quit-acting-d2-mighty-ducks-camp"
-description: "Kenan Thompson almost ended his acting career at 15 due to the intense hockey camp for D2: The Mighty Ducks. Discover how his mom saved his career."
+description: "'Kenan Thompson nearly quit acting over D2: The Mighty Ducks camp: Kenan Thompson almost ended his acting career at 15 due to the intense hockey camp for D2:"
+excerpt: "The Icy Road to Stardom: How a Near Quit Defined Kenan Thompson's Acting Career It's hard to imagine Hollywood without Kenan Thompson's infe"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/GB7Mx8x/36b3d550ddd7.jpg"
-og_title: "Kenan Thompson almost quit acting for D2: The Mighty Ducks"
-og_description: "Discover how Kenan Thompson nearly ended his acting career at 15 over a tough hockey camp for D2: The Mighty Ducks. His mother's encouragement changed everything."
-focus_keyword: "Kenan Thompson acting career"
 category: "Entertainment"
 tags: ["kenan thompson", "mighty ducks", "saturday night live", "acting career", "ice skating", "amy poehler", "entertainment"]
+canonical: "https://zandani.co.ke/article/kenan-thompson-nearly-quit-acting-d2-mighty-ducks-camp"
 date: "2026-09-01T17:57:03Z"
 dateModified: "2026-09-01T17:57:03Z"
+focusKeyword: "'Kenan Thompson nearly quit acting over D2: The Mighty Ducks camp"
 schema: "NewsArticle"
 ---
 
-## The Icy Road to Stardom: How a Near-Quit Defined Kenan Thompson's Acting Career
+## The Icy Road to Stardom: How a Near-Quit Defined Kenan Thompson's Acting Career "Kenan Thompson nearly quit acting over D2: The Mighty Ducks camp is the central subject of the update.
 
 It's hard to imagine Hollywood without Kenan Thompson's infectious humour, yet at just 15, the comedic legend almost walked away from acting entirely. His early struggle to master ice skating for *D2: The Mighty Ducks* presented a challenge that nearly derailed his promising journey, a pivotal moment in his Kenan Thompson acting career. This nearly unseen internal battle highlights the grit behind the glamour.
 
