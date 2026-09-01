@@ -2,8 +2,8 @@ name: Celestine Nzioka - News Scraper
 
 on:
   schedule:
-    # Run four times daily to prioritize stronger, fresher stories over volume.
-    - cron: '5 5,11,17,23 * * *'
+    # Run 7 times daily (EAT): 06:05, 09:05, 12:05, 15:05, 18:05, 21:05, 00:05
+    - cron: '5 3,6,9,12,15,18,21 * * *'
   workflow_dispatch: {}
 
 concurrency:
