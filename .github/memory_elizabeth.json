@@ -182,10 +182,10 @@
     "757123c0988843904df3d0d26c692540",
     "bc36f120f9377804f3c888899556a88e",
     "0ce263c4db534bbf2abbddeef25a6dcf",
-    "9854b5ca0effeec6559458145c014cdd"
+    "9854b5ca0effeec6559458145c014cdd",
+    "0761d3ff192bc650b2fa517494610eba"
   ],
   "style_history": [
-    "Hard News Lead",
     "Backgrounder",
     "Africa Angle",
     "Explainer",
@@ -214,10 +214,10 @@
     "Africa Angle",
     "Explainer",
     "Hard News Lead",
-    "Backgrounder"
+    "Backgrounder",
+    "Critical Take"
   ],
   "angle_history": [
-    "impact_on_citizens|Infinix Smart 20|Africa Angle",
     "winners_losers|Googlebook|Explainer",
     "impact_on_citizens|Finance Bill 2026|Critical Take",
     "accountability|Adani Group|Hard News Lead",
@@ -296,6 +296,7 @@
     "policy_gap|AliExpress|Africa Angle",
     "money_follow|StartupEast|Explainer",
     "accountability|Meta|Hard News Lead",
-    "story_progression|KRA|Backgrounder"
+    "story_progression|KRA|Backgrounder",
+    "accountability|TikTok|Critical Take"
   ]
 }
