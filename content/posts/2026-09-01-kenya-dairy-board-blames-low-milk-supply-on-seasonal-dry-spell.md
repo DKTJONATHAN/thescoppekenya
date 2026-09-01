@@ -1,18 +1,20 @@
 ---
 title: "Kenya Dairy Board Blames Low Milk Supply on Seasonal Dry Spell"
 slug: "kenya-dairy-board-blames-low-milk-supply-on-seasonal-dry-spell"
-description: "The Kenya Dairy Board confirms a decline in milk deliveries due to dry weather but expects supply to stabilize as fodder availability improves later."
+description: "Kenya Dairy Board Blames Low Milk Supply on Seasonal Dry Spell: The Kenya Dairy Board confirms a decline in milk deliveries due to dry weather but expects"
+excerpt: "The Breakfast Economics: How Climate Cycles Translate to Your Milk Carton Retail shelves across the country are seeing intermittent gaps in"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/JWw8Frwm/e961f756beac.webp"
 category: "News"
 tags: ["kenya dairy board", "milk prices", "agriculture", "food security", "dairy farming", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-dairy-board-blames-low-milk-supply-on-seasonal-dry-spell"
 date: "2026-09-01T16:27:29Z"
 dateModified: "2026-09-01T16:27:29Z"
+focusKeyword: "Kenya Dairy Board Blames Low Milk Supply on Seasonal Dry Spell"
 schema: "NewsArticle"
 ---
 
-## The Breakfast Economics: How Climate Cycles Translate to Your Milk Carton
+## The Breakfast Economics: How Climate Cycles Translate to Your Milk Carton Kenya Dairy Board Blames Low Milk Supply on Seasonal Dry Spell is the central subject of the update.
 
 Retail shelves across the country are seeing intermittent gaps in milk supplies as the Kenya Dairy Board reports a notable dip in production. While weather patterns often take the blame, the current shortage highlights a deeper vulnerability in how the nation manages its dairy resources.
 
