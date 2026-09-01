@@ -1,21 +1,20 @@
 ---
-title: "Jake Reiner Marries Maria Gilfillan Amid Family Tragedy
+title: "'Jake Reiner Marries Maria Gilfillan Amid Family Tragedy"
 slug: "jake-reiner-marries-family-tragedy-brother-indicted"
-description: "Jake Reiner weds Maria Gilfillan eight months after his parents' deaths. His brother, Nick Reiner, is indicted for murder. Discover the family's story."
+description: "'Jake Reiner Marries Maria Gilfillan Amid Family Tragedy: Jake Reiner weds Maria Gilfillan eight months after his parents' deaths. His brother, Nick Reiner, is"
+excerpt: "Love Amidst Loss: Kenyans React to Jake Reiner's Shocking Timeline Shift Jake Reiner's recent marriage to Maria Gilfillan just eight months"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/S7ssbQXw/73938a171618.jpg"
-og_title: "Jake Reiner Marries Amidst Family Murder Indictment"
-og_description: "Jake Reiner marries Maria Gilfillan after losing his parents. His brother, Nick Reiner, faces murder charges."
-focus_keyword: "Reiner family tragedy"
 category: "Entertainment"
 tags: ["jake reiner", "reiner family", "murder indictment", "celebrity news", "family tragedy", "grief", "entertainment"]
+canonical: "https://zandani.co.ke/article/jake-reiner-marries-family-tragedy-brother-indicted"
 date: "2026-09-01T11:59:09Z"
 dateModified: "2026-09-01T11:59:09Z"
+focusKeyword: "'Jake Reiner Marries Maria Gilfillan Amid Family Tragedy"
 schema: "NewsArticle"
 ---
 
-## Love Amidst Loss: Kenyans React to Jake Reiner's Shocking Timeline Shift
+## Love Amidst Loss: Kenyans React to Jake Reiner's Shocking Timeline Shift "Jake Reiner Marries Maria Gilfillan Amid Family Tragedy is the central subject of the update.
 
 Jake Reiner's recent marriage to Maria Gilfillan just eight months after the tragic deaths of his parents, Rob and Michele Reiner, and amidst his brother Nick's murder indictment, has sparked a whirlwind of reactions across Kenyan social media, with many questioning the timing of joy in the face of such profound **Reiner family tragedy**.
 
