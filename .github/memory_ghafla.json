@@ -300,10 +300,10 @@
     "138de65ba6d9df61e6bbf4299623565f",
     "d5506279602fddbeab3a22c0fe2fae41",
     "f289a93bbe168472a9785d007c5c2563",
-    "c9440d403f6ec03958f174211dc6b9cf"
+    "c9440d403f6ec03958f174211dc6b9cf",
+    "23cbc3209674f5fcf4b2dc9d1ebf7d9f"
   ],
   "style_history": [
-    "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
     "Trend Take",
@@ -332,10 +332,10 @@
     "Receipts Piece",
     "Trend Take",
     "Reaction Round-up",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Profile Beat"
   ],
   "angle_history": [
-    "policy_gap|transgender|Receipts Piece",
     "policy_gap|Kenya Power|Profile Beat",
     "story_progression|gospel singer|Trend Take",
     "story_progression|Kenya|Hard News Lead",
@@ -414,6 +414,7 @@
     "timeline_shift|Murugi Munyi|Receipts Piece",
     "timeline_shift|Kenya politics|Trend Take",
     "story_progression|Kenya politics|Reaction Round-up",
-    "policy_gap|Kenya|Hard News Lead"
+    "policy_gap|Kenya|Hard News Lead",
+    "accountability|endometriosis|Profile Beat"
   ]
 }
