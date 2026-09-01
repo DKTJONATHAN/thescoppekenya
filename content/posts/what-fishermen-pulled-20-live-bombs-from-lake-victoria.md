@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/Nd67cT9q/c386c784db43.jpg"
 category: "News"
 tags: ["what fishermen pulled 20 live bombs from lake victoria", "news", "kenya news"]
-canonical: "https://zandani.co.ke/article/what-fishermen-pulled-20-live-bombs-from-lake-victoria"
 date: "2026-03-04"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "What Fishermen Pulled 20 Live Bombs from Lake Victoria"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/what-fishermen-pulled-20-live-bombs-from-lake-victoria"
 ---
-
 What Fishermen Pulled 20 Live Bombs from Lake Victoria is central to this update for Kenyan readers.
 
 ## Multiple Live Bombs Recovered from Lake Victoria Fear has intensified among residents in the Lake Victoria basin, Nyanza region, following the discovery of multiple live bombs by fishermen in two separate incidents over the past few days. The first recovery occurred on Sunday, March 1, in Mbita, with a subsequent discovery of 14 additional explosives made a day later at Koguna beach. All devices have been secured by police and are awaiting safe disposal by specialised units.
