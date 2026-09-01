@@ -1,18 +1,20 @@
 ---
 title: "TikTok rolls out voice comment feature with automated transcription"
 slug: "tiktok-introduces-voice-comment-feature-with-automated-transcription"
-description: "TikTok is introducing a new voice comment feature that allows users to post audio replies alongside automated text transcriptions."
+description: "TikTok rolls out voice comment feature with automated transcripti: TikTok is introducing a new voice comment feature that allows users to post audio replies"
+excerpt: "The Automated Blind Spot in TikTok Voice Comments TikTok is integrating 60 second audio snippets into public comment sections, marketing the"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/whPFzFTW/bf6363c49f98.webp"
 category: "Technology"
 tags: ["tiktok", "social media", "tech news", "digital trends", "kenya tech", "content creation"]
+canonical: "https://zandani.co.ke/article/tiktok-introduces-voice-comment-feature-with-automated-transcription"
 date: "2026-09-01T15:29:52Z"
 dateModified: "2026-09-01T15:29:52Z"
+focusKeyword: "TikTok rolls out voice comment feature with automated transcripti"
 schema: "NewsArticle"
 ---
 
-## The Automated Blind Spot in TikTok Voice Comments
+## The Automated Blind Spot in TikTok Voice Comments TikTok rolls out voice comment feature with automated transcripti is the central subject of the update.
 
 TikTok is integrating 60-second audio snippets into public comment sections, marketing the feature as an accessibility milestone. Yet, the company offers little clarity on how its moderation infrastructure handles the shift from standardized English to the fluid, high-context vernacular of Nairobi’s youth. By deploying this feature without transparent safeguards, the platform risks prioritizing engagement over the actual digital safety of its users.
 
