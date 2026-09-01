@@ -471,10 +471,10 @@
     "c728293010e8b99e1258d8af84ad3a51",
     "b3b215a915986e06d4f2f5cae76159c9",
     "09119309c4e7fd126736ac3351f2bbf7",
-    "b6d9e44596ff7ed78bb919493a15bc0c"
+    "b6d9e44596ff7ed78bb919493a15bc0c",
+    "5a19213f26facf9c1ec034e540b6a741"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
@@ -503,10 +503,10 @@
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "money_follow|Kenya|Hard News Lead",
     "winners_losers|KNEC|Explainer",
     "policy_gap|National Treasury|Context Backgrounder",
     "winners_losers|HELB|Reaction & Voices",
@@ -585,6 +585,7 @@
     "money_follow|KAWU|Hard News Lead",
     "winners_losers|KRA|Explainer",
     "story_progression|IPOA|Context Backgrounder",
-    "next_48_hours|ODM|Reaction & Voices"
+    "next_48_hours|ODM|Reaction & Voices",
+    "myth_vs_fact|ODM|Hard News Lead"
   ]
 }
