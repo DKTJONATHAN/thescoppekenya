@@ -22,7 +22,7 @@ export const staticSitePages = [
   { path: "/business", label: "Business" },
   { path: "/lifestyle", label: "Lifestyle" },
   { path: "/trending", label: "Trending" },
-  { path: "/live", label: "Kenya Wire" },
+  { path: "/live", label: "Live Desk" },
   { path: "/sports/live", label: "Live Scores" },
   { path: "/authors", label: "Authors" },
   { path: "/podcast", label: "Podcast" },
