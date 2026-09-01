@@ -229,10 +229,10 @@
     "41f988159c0f24155c848c532b702136",
     "c2431fb1e9fd6a7004278ce13da4f715",
     "5bfe0a6aaf3b4df5ae0e648dc4bef8bc",
-    "f34901ae98a414912776577689d96610"
+    "f34901ae98a414912776577689d96610",
+    "662d5afcfe932abaccbf00478dde40fa"
   ],
   "style_history": [
-    "Sharp Column",
     "Counterpoint",
     "Letter Form",
     "Personal Reflection",
@@ -261,10 +261,10 @@
     "Counterpoint",
     "Letter Form",
     "Historical Lens",
-    "Sharp Column"
+    "Sharp Column",
+    "Personal Reflection"
   ],
   "angle_history": [
-    "policy_gap|school unrest|Personal Reflection",
     "timeline_shift|Law Society of Kenya|Historical Lens",
     "accountability|Kenya|Letter Form",
     "myth_vs_fact|rangelands|Counterpoint",
@@ -343,6 +343,7 @@
     "myth_vs_fact|conservation|Counterpoint",
     "story_progression|Dolly Parton|Letter Form",
     "timeline_shift|enforced disappearance|Historical Lens",
-    "money_follow|Postbank|Sharp Column"
+    "money_follow|Postbank|Sharp Column",
+    "story_progression|El Ni\u00f1o|Personal Reflection"
   ]
 }
