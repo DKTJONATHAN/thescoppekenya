@@ -14,7 +14,7 @@ focusKeyword: "'Jake Reiner Marries Maria Gilfillan Amid Family Tragedy"
 schema: "NewsArticle"
 ---
 
-## Love Amidst Loss: Kenyans React to Jake Reiner's Shocking Timeline Shift "Jake Reiner Marries Maria Gilfillan Amid Family Tragedy is the central subject of the update.
+## Love Amidst Loss: Kenyans React to Jake Reiner's Shocking Timeline Shift "Jake Reiner Marries Maria Gilfillan Amid Family Tragedy is the central subject of the update. 'Jake Reiner Marries Maria Gilfillan Amid Family Tragedy is the central subject of the update.
 
 Jake Reiner's recent marriage to Maria Gilfillan just eight months after the tragic deaths of his parents, Rob and Michele Reiner, and amidst his brother Nick's murder indictment, has sparked a whirlwind of reactions across Kenyan social media, with many questioning the timing of joy in the face of such profound **Reiner family tragedy**.
 
