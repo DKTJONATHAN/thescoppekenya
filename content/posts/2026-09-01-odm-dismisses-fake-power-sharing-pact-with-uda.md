@@ -1,18 +1,20 @@
 ---
 title: "ODM dismisses fake power sharing pact with UDA for Coast region"
 slug: "odm-dismisses-fake-power-sharing-pact-with-uda"
-description: "The Orange Democratic Movement has officially rejected a forged document detailing a seat sharing deal with UDA for the upcoming regional elections."
+description: "ODM dismisses fake power sharing pact with UDA for Coast region: The Orange Democratic Movement has officially rejected a forged document detailing a seat"
+excerpt: "Digital Deception Targets Coast Political Alliances The Orange Democratic Movement (ODM) officially repudiated a viral document on Tuesday t"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/xrDDRjZ/5aaa0a6e2d32.webp"
 category: "News"
 tags: ["odm", "uda", "kenya politics", "coast politics", "elections", "fake news"]
+canonical: "https://zandani.co.ke/article/odm-dismisses-fake-power-sharing-pact-with-uda"
 date: "2026-09-01T13:28:52Z"
 dateModified: "2026-09-01T13:28:52Z"
+focusKeyword: "ODM dismisses fake power sharing pact with UDA for Coast region"
 schema: "NewsArticle"
 ---
 
-## Digital Deception Targets Coast Political Alliances
+## Digital Deception Targets Coast Political Alliances ODM dismisses fake power sharing pact with UDA for Coast region is the central subject of the update.
 
 The Orange Democratic Movement (ODM) officially repudiated a viral document on Tuesday that falsely outlined a seat-sharing arrangement with the United Democratic Alliance (UDA) for the upcoming 2027 general elections across the Coast region.
 

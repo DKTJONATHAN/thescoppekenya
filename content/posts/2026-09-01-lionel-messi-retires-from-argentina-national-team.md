@@ -1,18 +1,20 @@
 ---
 title: "Lionel Messi Announces Retirement from Argentina National Team"
 slug: "lionel-messi-retires-from-argentina-national-team"
-description: "Lionel Messi has officially retired from international football at age 39, ending a legendary 21-year career following the World Cup final."
+description: "Lionel Messi Announces Retirement from Argentina National Team: Lionel Messi has officially retired from international football at age 39, ending a legendary"
+excerpt: "The Sun Sets on the Messi Era Lionel Messi has officially closed his international career at thirty nine, leaving millions of Kenyan fans to"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/VcTWTtxp/87818aba1ca5.webp"
 category: "Gossip"
 tags: ["lionel messi", "argentina", "football", "international sports", "world cup", "sports news"]
+canonical: "https://zandani.co.ke/article/lionel-messi-retires-from-argentina-national-team"
 date: "2026-09-01T13:31:26Z"
 dateModified: "2026-09-01T13:31:26Z"
+focusKeyword: "Lionel Messi Announces Retirement from Argentina National Team"
 schema: "NewsArticle"
 ---
 
-## The Sun Sets on the Messi Era
+## The Sun Sets on the Messi Era Lionel Messi Announces Retirement from Argentina National Team is the central subject of the update.
 
 Lionel Messi has officially closed his international career at thirty-nine, leaving millions of Kenyan fans to confront the end of a twenty-one-year emotional attachment that defined their weekends, bar conversations, and digital discourse since the mid-two-thousands.
 
