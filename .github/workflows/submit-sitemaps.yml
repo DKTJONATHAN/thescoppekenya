@@ -1,0 +1,89 @@
+name: Auto-submit sitemaps
+
+on:
+  push:
+    paths:
+      - "content/posts/**.md"
+      - "scripts/generate-seo.js"
+      - "public/sitemap.xml"
+      - "public/news-sitemap.xml"
+  schedule:
+    - cron: "20 */6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: submit-sitemaps
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Wait for Cloudflare build to publish the new sitemap
+        if: github.event_name == 'push'
+        run: |
+          echo "Waiting 3 minutes so the Cloudflare deploy can finish."
+          sleep 180
+
+      - name: Confirm live sitemaps
+        id: live
+        run: |
+          set -e
+          for url in https://zandani.co.ke/sitemap.xml https://zandani.co.ke/news-sitemap.xml; do
+            code=$(curl -s -o /tmp/sm.xml -w "%{http_code}" "$url")
+            echo "$url -> $code"
+            if [ "$code" != "200" ]; then
+              echo "Sitemap not live yet: $url"
+              exit 1
+            fi
+          done
+          urls=$(grep -o '<loc>[^<]*</loc>' /tmp/sm.xml | wc -l)
+          echo "news-sitemap loc tags: $urls"
+
+      - name: Ping Google and Bing sitemap endpoints
+        run: |
+          set +e
+          for sm in https://zandani.co.ke/sitemap.xml https://zandani.co.ke/news-sitemap.xml; do
+            echo "Google ping $sm"
+            curl -sS -o /tmp/g.txt -w "google %{http_code}\n" "https://www.google.com/ping?sitemap=${sm}"
+            echo "Bing ping $sm"
+            curl -sS -o /tmp/b.txt -w "bing %{http_code}\n" "https://www.bing.com/indexnow?url=${sm}"
+            curl -sS -o /tmp/b2.txt -w "bing-ping %{http_code}\n" "https://www.bing.com/ping?sitemap=${sm}"
+          done
+          exit 0
+
+      - name: Submit sitemaps through Search Console API
+        env:
+          GSC_KEY_RAW: ${{ secrets.GSC_JSON_KEY }}
+        run: |
+          if [ -z "$GSC_KEY_RAW" ]; then
+            echo "GSC_JSON_KEY not set. Ping endpoints already ran."
+            exit 0
+          fi
+          npm install googleapis --no-save
+          node << 'NODE'
+          const { google } = require('googleapis');
+          async function run() {
+            const keys = JSON.parse(process.env.GSC_KEY_RAW);
+            keys.private_key = keys.private_key.replace(/\\n/g, '\n');
+            const auth = new google.auth.GoogleAuth({
+              credentials: keys,
+              scopes: ['https://www.googleapis.com/auth/webmasters']
+            });
+            const searchconsole = google.searchconsole({ version: 'v1', auth });
+            const siteUrl = 'https://zandani.co.ke/';
+            const feeds = [
+              'https://zandani.co.ke/sitemap.xml',
+              'https://zandani.co.ke/news-sitemap.xml'
+            ];
+            for (const feedpath of feeds) {
+              try {
+                await searchconsole.sitemaps.submit({ siteUrl, feedpath });
+                console.log('GSC accepted', feedpath);
+              } catch (err) {
+                console.log('GSC submit failed for', feedpath, err.message);
+              }
+            }
+          }
+          run();
+          NODE
