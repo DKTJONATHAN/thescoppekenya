@@ -14,7 +14,7 @@ focusKeyword: "'Kenan Thompson nearly quit acting over D2: The Mighty Ducks camp
 schema: "NewsArticle"
 ---
 
-## The Icy Road to Stardom: How a Near-Quit Defined Kenan Thompson's Acting Career "Kenan Thompson nearly quit acting over D2: The Mighty Ducks camp is the central subject of the update.
+## The Icy Road to Stardom: How a Near-Quit Defined Kenan Thompson's Acting Career "Kenan Thompson nearly quit acting over D2: The Mighty Ducks camp is the central subject of the update. 'Kenan Thompson nearly quit acting over D2: The Mighty Ducks camp is the central subject of the update.
 
 It's hard to imagine Hollywood without Kenan Thompson's infectious humour, yet at just 15, the comedic legend almost walked away from acting entirely. His early struggle to master ice skating for *D2: The Mighty Ducks* presented a challenge that nearly derailed his promising journey, a pivotal moment in his Kenan Thompson acting career. This nearly unseen internal battle highlights the grit behind the glamour.
 

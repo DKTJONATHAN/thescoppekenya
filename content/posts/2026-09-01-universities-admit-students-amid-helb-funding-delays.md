@@ -1,18 +1,20 @@
 ---
 title: "Universities Directed To Admit First Year Students Amid HELB Delays"
 slug: "universities-admit-students-amid-helb-funding-delays"
-description: "The Ministry of Education has ordered universities to admit new students as the government processes loan disbursements and reviews the new funding bill."
+description: "Universities Directed To Admit First Year Students Amid HELB Dela: The Ministry of Education has ordered universities to admit new students as the government"
+excerpt: "Empty Wallets at the Admission Gate Parents are showing up to university registration desks with nothing but copies of their children’s admi"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/LBGKyGt/69c8b0c4ae5d.webp"
 category: "News"
 tags: ["helb", "higher education", "kenyan universities", "education news", "beatrice inyangala", "kenya"]
+canonical: "https://zandani.co.ke/article/universities-admit-students-amid-helb-funding-delays"
 date: "2026-09-01T20:59:26Z"
 dateModified: "2026-09-01T20:59:26Z"
+focusKeyword: "Universities Directed To Admit First Year Students Amid HELB Dela"
 schema: "NewsArticle"
 ---
 
-## Empty Wallets at the Admission Gate
+## Empty Wallets at the Admission Gate Universities Directed To Admit First Year Students Amid HELB Dela is the central subject of the update.
 
 Parents are showing up to university registration desks with nothing but copies of their children’s admission letters and a desperate hope that a verbal promise from the ministry will keep their sons and daughters from being turned away. While the government insists that universities must allow students to settle in despite delayed loans, the reality on the ground is a tense standoff between administrative policy and the harsh financial math of feeding and housing a student on an empty pocket.
 
