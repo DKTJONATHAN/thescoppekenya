@@ -1,18 +1,20 @@
 ---
 title: "Former Machakos Official Charged Over Forged Academic Credentials"
 slug: "former-machakos-official-charged-over-forged-academic-credentials"
-description: "The EACC has charged a former Machakos County official for using fake university documents to secure employment and earn over 1.5 million shillings."
+description: "Former Machakos Official Charged Over Forged Academic Credentials: The EACC has charged a former Machakos County official for using fake university documents"
+excerpt: "The Paper Trail Trap: Why Kenya’s Fake Degree Epidemic is Failing the Integrity Test A former Machakos County Chief Officer stands accused o"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/7txfY079/abe6e7f64be7.webp"
 category: "News"
 tags: ["machakos county", "eacc", "kenya news", "academic fraud", "corruption", "za ndani"]
+canonical: "https://zandani.co.ke/article/former-machakos-official-charged-over-forged-academic-credentials"
 date: "2026-09-01T17:49:15Z"
 dateModified: "2026-09-01T17:49:15Z"
+focusKeyword: "Former Machakos Official Charged Over Forged Academic Credentials"
 schema: "NewsArticle"
 ---
 
-## The Paper Trail Trap: Why Kenya’s Fake Degree Epidemic is Failing the Integrity Test
+## The Paper Trail Trap: Why Kenya’s Fake Degree Epidemic is Failing the Integrity Test Former Machakos Official Charged Over Forged Academic Credentials is the central subject of the update.
 
 A former Machakos County Chief Officer stands accused of forgery and the fraudulent acquisition of public property today, marking a predictable chapter in a saga where academic legitimacy is repeatedly bypassed to secure lucrative government positions within our devolved units.
 
