@@ -1,18 +1,20 @@
 ---
 title: "President Ruto Announces New Appointments to Public Institutions"
 slug: "president-ruto-announces-new-public-institution-appointments"
-description: "President William Ruto has appointed new leadership for IPOA, the Teachers Service Commission, the Public Service Commission, and military veterans board."
+description: "President Ruto Announces New Appointments to Public Institutions: President William Ruto has appointed new leadership for IPOA, the Teachers Service"
+excerpt: "Institutional capture and the new regulatory guard President William Ruto has moved to cement executive influence over the country's indepen"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5X3kr4m0/2e65cfef2e80.webp"
 category: "News"
 tags: ["kenya", "william ruto", "ipoa", "tsc", "government appointments", "kenyan news"]
+canonical: "https://zandani.co.ke/article/president-ruto-announces-new-public-institution-appointments"
 date: "2026-09-01T07:48:13Z"
 dateModified: "2026-09-01T07:48:13Z"
+focusKeyword: "President Ruto Announces New Appointments to Public Institutions"
 schema: "NewsArticle"
 ---
 
-## Institutional capture and the new regulatory guard
+## Institutional capture and the new regulatory guard President Ruto Announces New Appointments to Public Institutions is the central subject of the update.
 
 President William Ruto has moved to cement executive influence over the country's independent regulatory bodies, issuing a fresh set of appointments that prioritize long-term oversight control. By securing six-year terms for key board members across the policing, education, and civil service sectors, the administration is effectively bypassing the volatility of current political cycles to entrench its influence within the state's functional core.
 
