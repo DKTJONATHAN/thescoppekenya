@@ -1,18 +1,20 @@
 ---
 title: "Arsenal face transfer struggles in pursuit of new forward"
 slug: "arsenal-face-transfer-struggles-in-pursuit-of-new-forward"
-description: "Arsenal are racing against the transfer deadline to sign a new forward despite recent league wins. Key targets remain difficult to secure."
+description: "Arsenal face transfer struggles in pursuit of new forward: Arsenal are racing against the transfer deadline to sign a new forward despite recent league wins."
+excerpt: "The North London Mirage Arsenal is trapped in a cycle of austerity masquerading as tactical patience, leaving their title aspirations to wit"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/zHJBpPRP/0c8793b08e7e.jpg"
 category: "Sports"
 tags: ["arsenal", "premier league", "football transfers", "sports news", "kenya football"]
+canonical: "https://zandani.co.ke/article/arsenal-face-transfer-struggles-in-pursuit-of-new-forward"
 date: "2026-09-01T14:59:15Z"
 dateModified: "2026-09-01T14:59:15Z"
+focusKeyword: "Arsenal face transfer struggles in pursuit of new forward"
 schema: "NewsArticle"
 ---
 
-## The North London Mirage
+## The North London Mirage Arsenal face transfer struggles in pursuit of new forward is the central subject of the update.
 
 Arsenal is trapped in a cycle of austerity masquerading as tactical patience, leaving their title aspirations to wither. A narrow 1-0 win against Aston Villa is not a statement of intent. It is merely a shroud draped over a squad whose depth is dangerously thin.
 
