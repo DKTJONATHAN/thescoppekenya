@@ -1,18 +1,20 @@
 ---
 title: "Siaya Senator Oburu Odinga Dismisses Reports of Serious Illness"
 slug: "oburu-odinga-dismisses-reports-of-serious-illness"
-description: "Siaya Senator Oburu Odinga has clarified his recent hospital visit was a routine checkup and confirms he is recovering at his Kitisuru home."
+description: "Siaya Senator Oburu Odinga Dismisses Reports of Serious Illness: Siaya Senator Oburu Odinga has clarified his recent hospital visit was a routine checkup and"
+excerpt: "The Digital Hunger for Obituaries A wave of relief washed over Siaya this morning, but not before a frantic forty eight hour cycle of digita"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/tTfFcK89/a6c98a8a2db1.webp"
 category: "News"
 tags: ["oburu odinga", "kenyan politics", "siaya senator", "odm party", "kenya news"]
+canonical: "https://zandani.co.ke/article/oburu-odinga-dismisses-reports-of-serious-illness"
 date: "2026-09-01T11:18:46Z"
 dateModified: "2026-09-01T11:18:46Z"
+focusKeyword: "Siaya Senator Oburu Odinga Dismisses Reports of Serious Illness"
 schema: "NewsArticle"
 ---
 
-## The Digital Hunger for Obituaries
+## The Digital Hunger for Obituaries Siaya Senator Oburu Odinga Dismisses Reports of Serious Illness is the central subject of the update.
 
 A wave of relief washed over Siaya this morning, but not before a frantic forty-eight-hour cycle of digital panic exposed the morbid speed at which misinformation travels across Kenyan social platforms. When keyboard warriors decided to assign a terminal status to Senator Oburu Odinga’s routine medical visit, the result was a chaotic scramble for truth that forced his inner circle to pivot from private care to public relations warfare.
 
