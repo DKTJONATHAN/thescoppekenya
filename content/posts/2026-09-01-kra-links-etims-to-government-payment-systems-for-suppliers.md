@@ -1,18 +1,20 @@
 ---
 title: "KRA Links eTIMS to Government Payment Systems for Suppliers"
 slug: "kra-links-etims-to-government-payment-systems-for-suppliers"
-description: "The Kenya Revenue Authority has integrated eTIMS with government payment platforms to ensure all public procurement payments meet tax requirements."
+description: "KRA Links eTIMS to Government Payment Systems for Suppliers: The Kenya Revenue Authority has integrated eTIMS with government payment platforms to ensure all"
+excerpt: "Bridging the Gap: Navigating the New eTIMS Payment Protocols The Kenya Revenue Authority has integrated its electronic tax invoicing system"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/jZkh8QCv/b42414006a18.jpg"
 category: "Business"
 tags: ["kra", "etims", "tax compliance", "kenya government", "public procurement", "business news"]
+canonical: "https://zandani.co.ke/article/kra-links-etims-to-government-payment-systems-for-suppliers"
 date: "2026-09-01T10:00:09Z"
 dateModified: "2026-09-01T10:00:09Z"
+focusKeyword: "KRA Links eTIMS to Government Payment Systems for Suppliers"
 schema: "NewsArticle"
 ---
 
-## Bridging the Gap: Navigating the New eTIMS Payment Protocols
+## Bridging the Gap: Navigating the New eTIMS Payment Protocols KRA Links eTIMS to Government Payment Systems for Suppliers is the central subject of the update.
 
 The Kenya Revenue Authority has integrated its electronic tax invoicing system with state payment portals. This update transforms tax validation into a fundamental prerequisite for receiving government funds. Suppliers now encounter an automated audit process that halts disbursements until every invoice is confirmed against official tax records.
 
