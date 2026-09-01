@@ -1,18 +1,20 @@
 ---
 title: "Kenya Activates Health Sector Contingency Plan for El Nino Floods"
 slug: "kenya-activates-health-sector-contingency-plan-for-el-nino-floods"
-description: "The Ministry of Health has launched a national contingency plan to prevent disease outbreaks and manage medical supply chains during El Nino."
+description: "Kenya Activates Health Sector Contingency Plan for El Nino Floods: The Ministry of Health has launched a national contingency plan to prevent disease outbreaks"
+excerpt: "Watching the Clouds for More Than Rain The Ministry of Health has officially activated its national contingency strategy. As El Niño rains l"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/tMXJBcfB/dea353c3d95d.webp"
 category: "Opinions"
 tags: ["kenya news", "el nino", "public health", "flood preparedness", "ministry of health", "kenya weather"]
+canonical: "https://zandani.co.ke/article/kenya-activates-health-sector-contingency-plan-for-el-nino-floods"
 date: "2026-09-01T14:09:36Z"
 dateModified: "2026-09-01T14:09:36Z"
+focusKeyword: "Kenya Activates Health Sector Contingency Plan for El Nino Floods"
 schema: "NewsArticle"
 ---
 
-Watching the Clouds for More Than Rain
+Watching the Clouds for More Than Rain Kenya Activates Health Sector Contingency Plan for El Nino Floods is the central subject of the update.
 
 The Ministry of Health has officially activated its national contingency strategy. As El Niño rains loom, medical supplies and diagnostic kits are being moved into high-risk zones. This development signals a departure from historical crisis management, replacing reactive measures with a model rooted in predictive public health.
 
