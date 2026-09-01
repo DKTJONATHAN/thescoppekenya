@@ -412,10 +412,10 @@
     "7339f80202dad553679b3b596730f686",
     "418c83ef261648a6aa7711b7af3369fe",
     "46d0fa128982b133e59a6666b1df2e18",
-    "a8cad0b687b29a3f17de4ac23025e14e"
+    "a8cad0b687b29a3f17de4ac23025e14e",
+    "89b7da4ec45ce9a8272d3246066a0eb8"
   ],
   "style_history": [
-    "Trend Take",
     "Hard News Lead",
     "Profile Beat",
     "Explainer",
@@ -444,10 +444,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "story_progression|Practical Magic|Explainer",
     "accountability|Aaron Rodgers|Reaction Round-up",
     "myth_vs_fact|Sean Astin|Profile Beat",
     "story_progression|The Princess Diaries|Hard News Lead",
@@ -526,6 +526,7 @@
     "timeline_shift|na|Hard News Lead",
     "accountability|FCC|Reaction Round-up",
     "story_progression|Ebenezer|Profile Beat",
-    "myth_vs_fact|na|Trend Take"
+    "myth_vs_fact|na|Trend Take",
+    "winners_losers|Dancing With the Stars: The Next Pro|Hard News Lead"
   ]
 }
