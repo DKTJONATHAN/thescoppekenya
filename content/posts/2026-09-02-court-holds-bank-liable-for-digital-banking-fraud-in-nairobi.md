@@ -1,18 +1,20 @@
 ---
 title: "Court holds bank liable for digital fraud in security failure case"
 slug: "court-holds-bank-liable-for-digital-banking-fraud-in-nairobi"
-description: "The Milimani Small Claims Court has ordered a bank to refund a client after fraudsters used stolen documents to activate digital banking services."
+description: "Court holds bank liable for digital fraud in security failure cas: The Milimani Small Claims Court has ordered a bank to refund a client after fraudsters used"
+excerpt: "The Illusion of Digital Security Banks peddle a myth of iron clad digital safety while actively building doors that open for the first perso"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/zHs3yjsg/9a0bde324e35.webp"
 category: "News"
 tags: ["kenya", "banking fraud", "milimani court", "consumer protection", "kyc compliance", "nairobi news"]
+canonical: "https://zandani.co.ke/article/court-holds-bank-liable-for-digital-banking-fraud-in-nairobi"
 date: "2026-09-02T14:22:24Z"
 dateModified: "2026-09-02T14:22:24Z"
+focusKeyword: "Court holds bank liable for digital fraud in security failure cas"
 schema: "NewsArticle"
 ---
 
-## The Illusion of Digital Security
+## The Illusion of Digital Security Court holds bank liable for digital fraud in security failure cas is the central subject of the update.
 
 Banks peddle a myth of iron-clad digital safety while actively building doors that open for the first person to hold a stolen ID card. The Milimani Small Claims Court just shredded this facade, ruling that financial institutions cannot simply point at 'customer negligence' to escape the bill for their own rapid-activation protocols.
 
