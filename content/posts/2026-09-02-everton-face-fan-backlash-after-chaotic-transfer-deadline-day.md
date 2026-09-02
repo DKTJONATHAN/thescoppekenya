@@ -1,18 +1,20 @@
 ---
 title: "Everton facing fan backlash after chaotic transfer deadline day"
 slug: "everton-face-fan-backlash-after-chaotic-transfer-deadline-day"
-description: "Everton supporters have launched protests following a failed move for Folarin Balogun and significant squad changes on a turbulent deadline day."
+description: "Everton facing fan backlash after chaotic transfer deadline day: Everton supporters have launched protests following a failed move for Folarin Balogun and"
+excerpt: "The £77.5m Disconnect at Finch Farm Everton has effectively offloaded £80.5 million worth of attacking talent while authorizing a mere £3 mi"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/7dSWkv8D/c683f318b15c.jpg"
 category: "Sports"
 tags: ["everton", "premier league", "transfer news", "football", "za ndani", "sports news"]
+canonical: "https://zandani.co.ke/article/everton-face-fan-backlash-after-chaotic-transfer-deadline-day"
 date: "2026-09-02T14:34:14Z"
 dateModified: "2026-09-02T14:34:14Z"
+focusKeyword: "Everton facing fan backlash after chaotic transfer deadline day"
 schema: "NewsArticle"
 ---
 
-## The £77.5m Disconnect at Finch Farm
+## The £77.5m Disconnect at Finch Farm Everton facing fan backlash after chaotic transfer deadline day is the central subject of the update.
 
 Everton has effectively offloaded £80.5 million worth of attacking talent while authorizing a mere £3 million in permanent squad investment. The failure to secure Folarin Balogun on deadline day has exposed a fiscal chasm between the club ownership and its disillusioned supporter base.
 
