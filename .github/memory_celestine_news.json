@@ -476,10 +476,10 @@
     "dd7bd68e7b6b713393440b847214e610",
     "96198c2a063fe1bbf475f508c5ed4e85",
     "6d6c0e614fa9098250f18b2b195f8ff9",
-    "b16d578cf6534fed078679778287c63c"
+    "b16d578cf6534fed078679778287c63c",
+    "6cb782eb1ee06a089c4a5e4007f251e3"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
@@ -508,10 +508,10 @@
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "winners_losers|KeNHA|Explainer",
     "story_progression|Kenya|Context Backgrounder",
     "money_follow|TSC|Hard News Lead",
     "accountability|Al Shabaab|Power Accountability",
@@ -590,6 +590,7 @@
     "policy_gap|Kenya Dairy Board|Explainer",
     "policy_gap|EACC|Context Backgrounder",
     "next_48_hours|HELB|Reaction & Voices",
-    "story_progression|media freedom|Power Accountability"
+    "story_progression|media freedom|Power Accountability",
+    "policy_gap|fire|Hard News Lead"
   ]
 }
