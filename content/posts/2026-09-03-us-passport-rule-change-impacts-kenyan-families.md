@@ -1,18 +1,20 @@
 ---
 title: "New US Passport Rules May Affect Kenyan Families and Birth Tourism"
 slug: "us-passport-rule-change-impacts-kenyan-families"
-description: "New draft US guidance requires parents to verify citizenship for child passports, impacting Kenyan families and those traveling for childbirth."
+description: "New US Passport Rules May Affect Kenyan Families and Birth Touris: New draft US guidance requires parents to verify citizenship for child passports, impacting"
+excerpt: "The Sunset of Citizenship Tourism For years, the Kenyan middle class has viewed the American delivery room as a golden ticket for generation"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/VFkzxK1/f05e2e30965c.webp"
 category: "News"
 tags: ["kenya", "us immigration", "birth tourism", "us passport", "kenyan diaspora"]
+canonical: "https://zandani.co.ke/article/us-passport-rule-change-impacts-kenyan-families"
 date: "2026-09-02T21:46:15Z"
 dateModified: "2026-09-02T21:46:15Z"
+focusKeyword: "New US Passport Rules May Affect Kenyan Families and Birth Touris"
 schema: "NewsArticle"
 ---
 
-## The Sunset of Citizenship Tourism
+## The Sunset of Citizenship Tourism New US Passport Rules May Affect Kenyan Families and Birth Touris is the central subject of the update.
 
 For years, the Kenyan middle class has viewed the American delivery room as a golden ticket for generational mobility. That era is effectively closing, as new State Department draft guidance demands rigorous proof of parental status, signaling a definitive end to the birth tourism dream.
 

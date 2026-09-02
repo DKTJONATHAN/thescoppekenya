@@ -7,12 +7,13 @@ author: "Za Ndani"
 image: "https://xledger.com/uk/wp-content/uploads/sites/22/2025/08/20250620_xledgerbearswomen_wc002.jpg"
 category: "Global News"
 tags: ["Xledger", "Bristol Bears Women", "Rugby", "Sponsorship", "Women's Sport", "Tech", "Bear in Mind"]
+canonical: "https://zandani.co.ke/article/xledger-bristol-bears-women-tech-tackles-partnership"
 date: "2026-02-23"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Xledger Bristol Bears Women Tech Meets Tackles for a Winning"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/xledger-bristol-bears-women-tech-tackles-partnership"
 ---
+
 Xledger Bristol Bears Women Tech Meets Tackles for a Winning is central to this update for Kenyan readers.
 
 ## Xledger Bristol Bears Women Partnership Kicks Off Right, so while the Bath Rugby U18s managed to pip Bristol Bears U18s in an absolute thriller recently (36-38, talk about a nail-biter!), the real buzz around Bristol rugby, especially for the 2025/26 season, has to be the expanded partnership between Xledger UK and the Bristol Bears Women. This isn't just another logo on a shirt, mate; it’s a proper commitment to powering women’s sport and the community. Xledger, a leader in cloud finance software, has stepped up as Principal Partner and front-of-shirt sponsor, extending a relationship that's been building since 2019.
