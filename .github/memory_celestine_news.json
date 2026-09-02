@@ -480,10 +480,10 @@
     "6cb782eb1ee06a089c4a5e4007f251e3",
     "d4d0c0c3fc9ff7439ca6e8a24ccc996b",
     "cd4584c4e82baf7e4319dc67173dde1a",
-    "bbc844c1ec143142f4abb649965ac1a4"
+    "bbc844c1ec143142f4abb649965ac1a4",
+    "534e67433254d2674cf67165788c151a"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
@@ -512,10 +512,10 @@
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Explainer"
   ],
   "angle_history": [
-    "accountability|DCI|Reaction & Voices",
     "policy_gap|Kenya Power|Context Backgrounder",
     "story_progression|Mike Sonko|Hard News Lead",
     "policy_gap|TUM|Explainer",
@@ -594,6 +594,7 @@
     "policy_gap|fire|Hard News Lead",
     "timeline_shift|journalism|Context Backgrounder",
     "accountability|National Heroes Council|Reaction & Voices",
-    "policy_gap|Kenya|Power Accountability"
+    "policy_gap|Kenya|Power Accountability",
+    "story_progression|Kenya|Explainer"
   ]
 }
