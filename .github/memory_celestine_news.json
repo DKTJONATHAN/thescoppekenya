@@ -475,10 +475,10 @@
     "5a19213f26facf9c1ec034e540b6a741",
     "dd7bd68e7b6b713393440b847214e610",
     "96198c2a063fe1bbf475f508c5ed4e85",
-    "6d6c0e614fa9098250f18b2b195f8ff9"
+    "6d6c0e614fa9098250f18b2b195f8ff9",
+    "b16d578cf6534fed078679778287c63c"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
@@ -507,10 +507,10 @@
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "policy_gap|Kenya|Power Accountability",
     "winners_losers|KeNHA|Explainer",
     "story_progression|Kenya|Context Backgrounder",
     "money_follow|TSC|Hard News Lead",
@@ -589,6 +589,7 @@
     "myth_vs_fact|ODM|Hard News Lead",
     "policy_gap|Kenya Dairy Board|Explainer",
     "policy_gap|EACC|Context Backgrounder",
-    "next_48_hours|HELB|Reaction & Voices"
+    "next_48_hours|HELB|Reaction & Voices",
+    "story_progression|media freedom|Power Accountability"
   ]
 }
