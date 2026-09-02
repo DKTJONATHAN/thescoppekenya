@@ -479,10 +479,10 @@
     "b16d578cf6534fed078679778287c63c",
     "6cb782eb1ee06a089c4a5e4007f251e3",
     "d4d0c0c3fc9ff7439ca6e8a24ccc996b",
-    "cd4584c4e82baf7e4319dc67173dde1a"
+    "cd4584c4e82baf7e4319dc67173dde1a",
+    "bbc844c1ec143142f4abb649965ac1a4"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
@@ -511,10 +511,10 @@
     "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "accountability|Al Shabaab|Power Accountability",
     "accountability|DCI|Reaction & Voices",
     "policy_gap|Kenya Power|Context Backgrounder",
     "story_progression|Mike Sonko|Hard News Lead",
@@ -593,6 +593,7 @@
     "story_progression|media freedom|Power Accountability",
     "policy_gap|fire|Hard News Lead",
     "timeline_shift|journalism|Context Backgrounder",
-    "accountability|National Heroes Council|Reaction & Voices"
+    "accountability|National Heroes Council|Reaction & Voices",
+    "policy_gap|Kenya|Power Accountability"
   ]
 }
