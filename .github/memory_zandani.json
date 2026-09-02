@@ -367,10 +367,10 @@
     "ffca3a62704c93921142fddbde6c02fa",
     "e72510da4c7828e82d9c841a2f33be89",
     "24825e9855502057ea788a24ffcf4316",
-    "17fa25090aea6e6bf937ed3229110592"
+    "17fa25090aea6e6bf937ed3229110592",
+    "0cac65c902f57349018c137727d3e9c2"
   ],
   "style_history": [
-    "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
@@ -399,10 +399,10 @@
     "Receipts Piece",
     "Reaction Round-up",
     "Profile Beat",
-    "Trend Take"
+    "Trend Take",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "timeline_shift|FIFA World Cup|Reaction Round-up",
     "money_follow|Otile Brown|Receipts Piece",
     "story_progression|Kenya|Trend Take",
     "accountability|Radio Maisha|Profile Beat",
@@ -481,6 +481,7 @@
     "story_progression|Kenya|Receipts Piece",
     "winners_losers|Denri Africa|Reaction Round-up",
     "accountability|Kenyan politics|Profile Beat",
-    "timeline_shift|Lionel Messi|Trend Take"
+    "timeline_shift|Lionel Messi|Trend Take",
+    "myth_vs_fact|postpartum|Hard News Lead"
   ]
 }
