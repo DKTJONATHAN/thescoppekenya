@@ -1,18 +1,20 @@
 ---
 title: "Why abnormal uterine bleeding is a critical public health issue"
 slug: "abnormal-uterine-bleeding-kenya-public-health-crisis"
-description: "Felix Otieno examines the impact of abnormal uterine bleeding on Kenyan women and calls for urgent institutional reforms and better care."
+description: "Why abnormal uterine bleeding is a critical public health issue: Felix Otieno examines the impact of abnormal uterine bleeding on Kenyan women and calls for"
+excerpt: "The Misplaced Blame of the Period Taboo The prevailing narrative concerning women’s health in Kenya suggests that the primary barrier to car"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/mCWJGx9s/da9498410792.webp"
 category: "Opinions"
 tags: ["menstrual health", "public health", "kenyan women", "anaemia", "universal health coverage", "ministry of health"]
+canonical: "https://zandani.co.ke/article/abnormal-uterine-bleeding-kenya-public-health-crisis"
 date: "2026-09-02T13:39:18Z"
 dateModified: "2026-09-02T13:39:18Z"
+focusKeyword: "Why abnormal uterine bleeding is a critical public health issue"
 schema: "NewsArticle"
 ---
 
-## The Misplaced Blame of the Period Taboo
+## The Misplaced Blame of the Period Taboo Why abnormal uterine bleeding is a critical public health issue is the central subject of the update.
 
 The prevailing narrative concerning women’s health in Kenya suggests that the primary barrier to care is a cultural stigma surrounding menstruation. This explanation is far too convenient. By pinning the blame on intangible social taboos, the health sector dodges accountability for a much more dangerous issue: the institutional refusal to treat pathological bleeding as a medical concern. We are failing to distinguish between standard biological cycles and systemic illness, opting to hide behind cultural excuses rather than address the negligence occurring within our clinical walls.
 
