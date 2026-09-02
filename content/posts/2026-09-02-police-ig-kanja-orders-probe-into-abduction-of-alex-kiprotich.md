@@ -1,18 +1,20 @@
 ---
 title: "Police IG Douglas Kanja Orders Probe Into Alex Kiprotich Abduction"
 slug: "police-ig-kanja-orders-probe-into-abduction-of-alex-kiprotich"
-description: "Inspector General Douglas Kanja has launched an investigation into the abduction of Standard Group editor Alex Kiprotich who was taken from Gilgil."
+description: "Police IG Douglas Kanja Orders Probe Into Alex Kiprotich Abductio: Inspector General Douglas Kanja has launched an investigation into the abduction of Standard"
+excerpt: "The Silent Return: Why Abductions Now Follow a Predictable Script Inspector General of Police Douglas Kanja has formally tasked the Anti Abd"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/jkjtTMSy/5cf970701810.webp"
 category: "News"
 tags: ["kenya", "alex kiprotich", "standard group", "national police service", "douglas kanja", "media freedom"]
+canonical: "https://zandani.co.ke/article/police-ig-kanja-orders-probe-into-abduction-of-alex-kiprotich"
 date: "2026-09-02T18:36:33Z"
 dateModified: "2026-09-02T18:36:33Z"
+focusKeyword: "Police IG Douglas Kanja Orders Probe Into Alex Kiprotich Abductio"
 schema: "NewsArticle"
 ---
 
-## The Silent Return: Why Abductions Now Follow a Predictable Script
+## The Silent Return: Why Abductions Now Follow a Predictable Script Police IG Douglas Kanja Orders Probe Into Alex Kiprotich Abductio is the central subject of the update.
 
 Inspector General of Police Douglas Kanja has formally tasked the Anti-Abduction Unit with probing the disappearance of Standard Group editor Alex Kiprotich. This investigation follows a harrowing 200-kilometer transit that highlights a growing trend of extra-legal detainment targeting critical voices.
 
