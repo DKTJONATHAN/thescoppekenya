@@ -183,10 +183,10 @@
     "bc36f120f9377804f3c888899556a88e",
     "0ce263c4db534bbf2abbddeef25a6dcf",
     "9854b5ca0effeec6559458145c014cdd",
-    "0761d3ff192bc650b2fa517494610eba"
+    "0761d3ff192bc650b2fa517494610eba",
+    "5cc6f8157516c6742fc7043596e80b3e"
   ],
   "style_history": [
-    "Backgrounder",
     "Africa Angle",
     "Explainer",
     "Hard News Lead",
@@ -215,10 +215,10 @@
     "Explainer",
     "Hard News Lead",
     "Backgrounder",
-    "Critical Take"
+    "Critical Take",
+    "Africa Angle"
   ],
   "angle_history": [
-    "winners_losers|Googlebook|Explainer",
     "impact_on_citizens|Finance Bill 2026|Critical Take",
     "accountability|Adani Group|Hard News Lead",
     "impact_on_citizens|WhatsApp|Backgrounder",
@@ -297,6 +297,7 @@
     "money_follow|StartupEast|Explainer",
     "accountability|Meta|Hard News Lead",
     "story_progression|KRA|Backgrounder",
-    "accountability|TikTok|Critical Take"
+    "accountability|TikTok|Critical Take",
+    "money_follow|DStv|Africa Angle"
   ]
 }
