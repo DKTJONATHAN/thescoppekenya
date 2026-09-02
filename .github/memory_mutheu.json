@@ -415,10 +415,10 @@
     "a8cad0b687b29a3f17de4ac23025e14e",
     "89b7da4ec45ce9a8272d3246066a0eb8",
     "53c254750736e58464ce768f37731bea",
-    "9c04c445a41ccc84ce25f88928327a27"
+    "9c04c445a41ccc84ce25f88928327a27",
+    "d06e3996940c6b2379ffed19175b4f35"
   ],
   "style_history": [
-    "Explainer",
     "Trend Take",
     "Reaction Round-up",
     "Hard News Lead",
@@ -447,10 +447,10 @@
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "story_progression|The Princess Diaries|Hard News Lead",
     "timeline_shift|na|Trend Take",
     "story_progression|na|Explainer",
     "myth_vs_fact|Television careers|Reaction Round-up",
@@ -529,6 +529,7 @@
     "myth_vs_fact|na|Trend Take",
     "winners_losers|Dancing With the Stars: The Next Pro|Hard News Lead",
     "timeline_shift|Marriage|Reaction Round-up",
-    "winners_losers|Kenan Thompson|Profile Beat"
+    "winners_losers|Kenan Thompson|Profile Beat",
+    "timeline_shift|na|Trend Take"
   ]
 }
