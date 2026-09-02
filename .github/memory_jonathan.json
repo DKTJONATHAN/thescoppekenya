@@ -230,10 +230,10 @@
     "c2431fb1e9fd6a7004278ce13da4f715",
     "5bfe0a6aaf3b4df5ae0e648dc4bef8bc",
     "f34901ae98a414912776577689d96610",
-    "662d5afcfe932abaccbf00478dde40fa"
+    "662d5afcfe932abaccbf00478dde40fa",
+    "dc2b20f7d17605de7a89808a71158937"
   ],
   "style_history": [
-    "Counterpoint",
     "Letter Form",
     "Personal Reflection",
     "Sharp Column",
@@ -262,10 +262,10 @@
     "Letter Form",
     "Historical Lens",
     "Sharp Column",
-    "Personal Reflection"
+    "Personal Reflection",
+    "Counterpoint"
   ],
   "angle_history": [
-    "timeline_shift|Law Society of Kenya|Historical Lens",
     "accountability|Kenya|Letter Form",
     "myth_vs_fact|rangelands|Counterpoint",
     "accountability|Journalism|Sharp Column",
@@ -344,6 +344,7 @@
     "story_progression|Dolly Parton|Letter Form",
     "timeline_shift|enforced disappearance|Historical Lens",
     "money_follow|Postbank|Sharp Column",
-    "story_progression|El Ni\u00f1o|Personal Reflection"
+    "story_progression|El Ni\u00f1o|Personal Reflection",
+    "myth_vs_fact|Abnormal Uterine Bleeding|Counterpoint"
   ]
 }
