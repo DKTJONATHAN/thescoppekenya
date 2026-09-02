@@ -1,21 +1,20 @@
 ---
-title: "Joe Amabile Brain Tumor Recovery: Alum Credits Serena Pitt
+title: "'Joe Amabile Brain Tumor Recovery: Alum Credits Serena Pitt"
 slug: "joe-amabile-brain-tumor-recovery-serena-pitt-support"
-description: "Joe Amabile, a Bachelor alum, is recovering from malignant brain tumor surgery. He credits his wife, Serena Pitt, for unwavering support during his healing journey. Learn more about his recovery."
+description: "'Joe Amabile Brain Tumor Recovery: Alum Credits Serena Pitt: Joe Amabile, a Bachelor alum, is recovering from malignant brain tumor surgery. He credits his"
+excerpt: "Beyond the Script: Joe Amabile's Health Challenge Redefines Reality TV Romance In an age dominated by curated online personas and fleeting p"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/gbg36hzH/3f9b9f771ee9.jpg"
-og_title: "Joe Amabile's Brave Brain Tumor Recovery with Wife's Support"
-og_description: "Bachelor alum Joe Amabile is 90% recovered from brain tumor surgery. He praises wife Serena Pitt for her crucial support."
-focus_keyword: "Joe Amabile brain tumor"
 category: "Entertainment"
 tags: ["joe amabile", "serena pitt", "brain tumor", "bachelor in paradise", "celebrity health", "entertainment"]
+canonical: "https://zandani.co.ke/article/joe-amabile-brain-tumor-recovery-serena-pitt-support"
 date: "2026-09-02T18:01:56Z"
 dateModified: "2026-09-02T18:01:56Z"
+focusKeyword: "'Joe Amabile Brain Tumor Recovery: Alum Credits Serena Pitt"
 schema: "NewsArticle"
 ---
 
-## Beyond the Script: Joe Amabile's Health Challenge Redefines Reality TV Romance
+## Beyond the Script: Joe Amabile's Health Challenge Redefines Reality TV Romance "Joe Amabile Brain Tumor Recovery: Alum Credits Serena Pitt is the central subject of the update.
 
 In an age dominated by curated online personas and fleeting public relationships, the story of Joe Amabile and Serena Pitt stands out. Their connection, initially forged under the bright lights of reality television, has been profoundly tested and reshaped by a private health crisis, altering what audiences expect from lasting love in the public eye.
 
