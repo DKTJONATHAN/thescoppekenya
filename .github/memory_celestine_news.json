@@ -477,10 +477,10 @@
     "96198c2a063fe1bbf475f508c5ed4e85",
     "6d6c0e614fa9098250f18b2b195f8ff9",
     "b16d578cf6534fed078679778287c63c",
-    "6cb782eb1ee06a089c4a5e4007f251e3"
+    "6cb782eb1ee06a089c4a5e4007f251e3",
+    "d4d0c0c3fc9ff7439ca6e8a24ccc996b"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Reaction & Voices",
     "Power Accountability",
@@ -509,10 +509,10 @@
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "story_progression|Kenya|Context Backgrounder",
     "money_follow|TSC|Hard News Lead",
     "accountability|Al Shabaab|Power Accountability",
     "accountability|DCI|Reaction & Voices",
@@ -591,6 +591,7 @@
     "policy_gap|EACC|Context Backgrounder",
     "next_48_hours|HELB|Reaction & Voices",
     "story_progression|media freedom|Power Accountability",
-    "policy_gap|fire|Hard News Lead"
+    "policy_gap|fire|Hard News Lead",
+    "timeline_shift|journalism|Context Backgrounder"
   ]
 }
