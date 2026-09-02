@@ -1,18 +1,20 @@
 ---
 title: "Kenya Overtakes Nigeria in Merger and Acquisition Deal Value"
 slug: "kenya-overtakes-nigeria-in-merger-and-acquisition-deal-value"
-description: "Kenya has become the leading market for high-value mergers and acquisitions in Africa, shifting investment trends away from West Africa."
+description: "Kenya Overtakes Nigeria in Merger and Acquisition Deal Value: Kenya has become the leading market for high-value mergers and acquisitions in Africa, shifting"
+excerpt: "Why Kenya's Big Money Shift Matters for Your Small Business Kenya is setting a new pace for African investment, overtaking Nigeria in total"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/BMc8ftm/445008d20194.png"
 category: "Business"
 tags: ["business news", "kenya economy", "private equity", "mergers and acquisitions", "investment", "dealmakers africa"]
+canonical: "https://zandani.co.ke/article/kenya-overtakes-nigeria-in-merger-and-acquisition-deal-value"
 date: "2026-09-02T09:31:56Z"
 dateModified: "2026-09-02T09:31:56Z"
+focusKeyword: "Kenya Overtakes Nigeria in Merger and Acquisition Deal Value"
 schema: "NewsArticle"
 ---
 
-## Why Kenya's Big-Money Shift Matters for Your Small Business
+## Why Kenya's Big-Money Shift Matters for Your Small Business Kenya Overtakes Nigeria in Merger and Acquisition Deal Value is the central subject of the update.
 
 Kenya is setting a new pace for African investment, overtaking Nigeria in total deal value. While the financial press fixates on the nine-figure headlines, there is a practical takeaway for the local entrepreneur: the market is maturing. This transition toward larger, professionalized investments is not just for the corporate elite. It is changing the rules of the game for how your business can access credit and scale operations.
 

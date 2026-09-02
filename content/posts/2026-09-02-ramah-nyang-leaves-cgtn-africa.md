@@ -1,18 +1,20 @@
 ---
 title: "Renowned Business Journalist Ramah Nyang Leaves CGTN Africa"
 slug: "ramah-nyang-leaves-cgtn-africa"
-description: "Prominent Kenyan journalist Ramah Nyang has concluded his fourteen year tenure at CGTN Africa after serving as a presenter for the Global Business program."
+description: "Renowned Business Journalist Ramah Nyang Leaves CGTN Africa: Prominent Kenyan journalist Ramah Nyang has concluded his fourteen year tenure at CGTN Africa"
+excerpt: "The Professional Ascent of the Kenyan Anchor Ramah Nyang concluded his fourteen year tenure at China Global Television Network Africa on Sep"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/vvqwkJ37/e637ae06ebff.webp"
 category: "News"
 tags: ["ramah nyang", "cgtn africa", "kenyan media", "journalism", "business news", "kenya"]
+canonical: "https://zandani.co.ke/article/ramah-nyang-leaves-cgtn-africa"
 date: "2026-09-02T09:32:02Z"
 dateModified: "2026-09-02T09:32:02Z"
+focusKeyword: "Renowned Business Journalist Ramah Nyang Leaves CGTN Africa"
 schema: "NewsArticle"
 ---
 
-## The Professional Ascent of the Kenyan Anchor
+## The Professional Ascent of the Kenyan Anchor Renowned Business Journalist Ramah Nyang Leaves CGTN Africa is the central subject of the update.
 
 Ramah Nyang concluded his fourteen-year tenure at China Global Television Network Africa on September 1, 2026, marking the end of a career phase that defined the shift of local broadcast talent toward international media houses seeking a foothold on the continent.
 
