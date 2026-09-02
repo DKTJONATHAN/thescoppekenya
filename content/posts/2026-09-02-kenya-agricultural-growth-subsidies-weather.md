@@ -1,18 +1,20 @@
 ---
 title: "Kenya agricultural growth driven by subsidies and weather"
 slug: "kenya-agricultural-growth-subsidies-weather"
-description: "Kenya's recent agricultural recovery stems from a combination of government fertiliser subsidies, expanded acreage, and favourable weather conditions."
+description: "Kenya agricultural growth driven by subsidies and weather: Kenya's recent agricultural recovery stems from a combination of government fertiliser subsidies,"
+excerpt: "The Harvest Ledger: Beyond the Fertilizer Hype President William Ruto’s administration wants us to believe their multi billion shilling fert"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/2YMq3RS1/d436d3d9f919.png"
 category: "Gossip"
 tags: ["agriculture", "fertiliser subsidy", "maize production", "food security", "william ruto", "kenya economy"]
+canonical: "https://zandani.co.ke/article/kenya-agricultural-growth-subsidies-weather"
 date: "2026-09-02T11:12:36Z"
 dateModified: "2026-09-02T11:12:36Z"
+focusKeyword: "Kenya agricultural growth driven by subsidies and weather"
 schema: "NewsArticle"
 ---
 
-## The Harvest Ledger: Beyond the Fertilizer Hype
+## The Harvest Ledger: Beyond the Fertilizer Hype Kenya agricultural growth driven by subsidies and weather is the central subject of the update.
 
 President William Ruto’s administration wants us to believe their multi-billion shilling fertilizer subsidy is the sole engine powering Kenya's agricultural revival. If you listen to the press releases, policy is the primary architect of every full grain silo. But beneath the polished political narrative, the data suggests that record harvests owe more to favorable weather patterns and expanded planting space than to any single government handout.
 
