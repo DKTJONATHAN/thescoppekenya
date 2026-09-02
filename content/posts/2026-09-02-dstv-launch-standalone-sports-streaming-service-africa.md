@@ -1,18 +1,20 @@
 ---
 title: "DStv to launch standalone sports streaming service in Africa"
 slug: "dstv-launch-standalone-sports-streaming-service-africa"
-description: "MultiChoice and Canal+ are introducing simplified streaming tiers to boost profitability, with a potential sports-focused pilot for Kenya."
+description: "DStv to launch standalone sports streaming service in Africa: MultiChoice and Canal+ are introducing simplified streaming tiers to boost profitability, with a"
+excerpt: "DStv pivots to asset light streaming Canal+ is undertaking a radical restructuring of MultiChoice to address a ZAR 0.8 billion trading loss,"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/WWcNKty7/56d169f533d2.webp"
 category: "Technology"
 tags: ["dstv", "multichoice", "streaming services", "kenya technology", "canal plus", "sports broadcasting"]
+canonical: "https://zandani.co.ke/article/dstv-launch-standalone-sports-streaming-service-africa"
 date: "2026-09-02T15:07:36Z"
 dateModified: "2026-09-02T15:07:36Z"
+focusKeyword: "DStv to launch standalone sports streaming service in Africa"
 schema: "NewsArticle"
 ---
 
-## DStv pivots to asset-light streaming
+## DStv pivots to asset-light streaming DStv to launch standalone sports streaming service in Africa is the central subject of the update.
 
 Canal+ is undertaking a radical restructuring of MultiChoice to address a ZAR 0.8 billion trading loss, positioning the future of African sports broadcasting on a standalone streaming model. By bypassing the hardware-heavy satellite infrastructure that has defined the company for decades, the group is betting on a lean, platform-centric architecture to secure its place in the mobile-first African market.
 
