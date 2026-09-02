@@ -1,18 +1,20 @@
 ---
 title: "National Heroes Council Unveils 242 Nominees for Hero Status"
 slug: "national-heroes-council-unveils-242-nominees-for-hero-status"
-description: "The National Heroes Council has released a list of 242 nominees for national recognition with the public invited to submit objections before September 15."
+description: "National Heroes Council Unveils 242 Nominees for Hero Status: The National Heroes Council has released a list of 242 nominees for national recognition with the"
+excerpt: "The Great National Hero Selection Scrutiny Social media platforms have erupted with skepticism following the National Heroes Council release"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/4ns7wHXR/ffc6d6a11879.webp"
 category: "News"
 tags: ["mashujaa day", "national heroes council", "kenya news", "public honors", "kenya politics", "governance"]
+canonical: "https://zandani.co.ke/article/national-heroes-council-unveils-242-nominees-for-hero-status"
 date: "2026-09-02T13:31:52Z"
 dateModified: "2026-09-02T13:31:52Z"
+focusKeyword: "National Heroes Council Unveils 242 Nominees for Hero Status"
 schema: "NewsArticle"
 ---
 
-## The Great National Hero Selection Scrutiny
+## The Great National Hero Selection Scrutiny National Heroes Council Unveils 242 Nominees for Hero Status is the central subject of the update.
 
 Social media platforms have erupted with skepticism following the National Heroes Council release of 242 names for the 2026 roll, as citizens question whether the nomination list serves as a genuine tribute to legacy or merely a curated political rewards scheme.
 
