@@ -231,10 +231,10 @@
     "5bfe0a6aaf3b4df5ae0e648dc4bef8bc",
     "f34901ae98a414912776577689d96610",
     "662d5afcfe932abaccbf00478dde40fa",
-    "dc2b20f7d17605de7a89808a71158937"
+    "dc2b20f7d17605de7a89808a71158937",
+    "519206be74d38f7d8e9fc3fd27af263b"
   ],
   "style_history": [
-    "Letter Form",
     "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
@@ -263,10 +263,10 @@
     "Historical Lens",
     "Sharp Column",
     "Personal Reflection",
-    "Counterpoint"
+    "Counterpoint",
+    "Historical Lens"
   ],
   "angle_history": [
-    "accountability|Kenya|Letter Form",
     "myth_vs_fact|rangelands|Counterpoint",
     "accountability|Journalism|Sharp Column",
     "money_follow|Reproductive Health|Historical Lens",
@@ -345,6 +345,7 @@
     "timeline_shift|enforced disappearance|Historical Lens",
     "money_follow|Postbank|Sharp Column",
     "story_progression|El Ni\u00f1o|Personal Reflection",
-    "myth_vs_fact|Abnormal Uterine Bleeding|Counterpoint"
+    "myth_vs_fact|Abnormal Uterine Bleeding|Counterpoint",
+    "winners_losers|Kenyan politics|Historical Lens"
   ]
 }
