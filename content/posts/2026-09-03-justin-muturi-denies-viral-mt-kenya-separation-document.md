@@ -1,18 +1,20 @@
 ---
 title: "Justin Muturi Denies Signing Viral Mt Kenya Separation Document"
 slug: "justin-muturi-denies-viral-mt-kenya-separation-document"
-description: "Democratic Party leader Justin Muturi has disowned a viral document claiming a political rift between Mt Kenya East and West, calling it a forgery."
+description: "Justin Muturi Denies Signing Viral Mt Kenya Separation Document: Democratic Party leader Justin Muturi has disowned a viral document claiming a political rift"
+excerpt: "The Digital Balkanization of Mt. Kenya A document purportedly signed by Democratic Party leader Justin Muturi, calling for the formal politi"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Lq0Q0YF/b5038dd1112a.webp"
 category: "News"
 tags: ["kenyan politics", "justin muturi", "mt kenya politics", "democratic party", "political forgery"]
+canonical: "https://zandani.co.ke/article/justin-muturi-denies-viral-mt-kenya-separation-document"
 date: "2026-09-03T14:25:39Z"
 dateModified: "2026-09-03T14:25:39Z"
+focusKeyword: "Justin Muturi Denies Signing Viral Mt Kenya Separation Document"
 schema: "NewsArticle"
 ---
 
-## The Digital Balkanization of Mt. Kenya
+## The Digital Balkanization of Mt. Kenya Justin Muturi Denies Signing Viral Mt Kenya Separation Document is the central subject of the update.
 
 A document purportedly signed by Democratic Party leader Justin Muturi, calling for the formal political separation of Mt. Kenya East and West, has been exposed as a complete forgery. This attempt to manipulate regional identity signals a shift toward coordinated disinformation tactics ahead of the 2027 election cycle.
 
