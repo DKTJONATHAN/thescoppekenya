@@ -1,18 +1,20 @@
 ---
 title: "KUPPET Nyamira threatens strike over school principal harassment"
 slug: "kuppet-nyamira-threatens-strike-principal-harassment"
-description: "KUPPET Nyamira branch threatens a countywide strike following claims that local clergy and school management are forcing out a newly deployed principal."
+description: "KUPPET Nyamira threatens strike over school principal harassment: KUPPET Nyamira branch threatens a countywide strike following claims that local clergy and"
+excerpt: "The Church and the Chalkboard The escalating standoff between the Teachers Service Commission and religious sponsors at St. Peter's Nyakemin"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/SDPGyr9j/8d30ce865cf3.webp"
 category: "News"
 tags: ["kuppet", "nyamira", "education news", "tsc", "kenya schools", "teachers union"]
+canonical: "https://zandani.co.ke/article/kuppet-nyamira-threatens-strike-principal-harassment"
 date: "2026-09-03T18:33:44Z"
 dateModified: "2026-09-03T18:33:44Z"
+focusKeyword: "KUPPET Nyamira threatens strike over school principal harassment"
 schema: "NewsArticle"
 ---
 
-## The Church and the Chalkboard
+## The Church and the Chalkboard KUPPET Nyamira threatens strike over school principal harassment is the central subject of the update.
 
 The escalating standoff between the Teachers Service Commission and religious sponsors at St. Peter's Nyakemincha Senior School points to a structural failure in the Basic Education Act. This recurring conflict pits constitutional administrative authority against the informal but deeply entrenched influence of diocesan gatekeepers.
 

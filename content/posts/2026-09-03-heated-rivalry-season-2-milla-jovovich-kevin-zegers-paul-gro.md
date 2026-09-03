@@ -14,7 +14,7 @@ focusKeyword: "'Heated Rivalry Season 2 Adds Milla Jovovich, Kevin Zegers, Paul"
 schema: "NewsArticle"
 ---
 
-## Hollywood Talent Joins Heated Rivalry Season 2 Cast, Promises Deeper Thematic Exploration "Heated Rivalry Season 2 Adds Milla Jovovich, Kevin Zegers, Paul  is the central subject of the update.
+## Hollywood Talent Joins Heated Rivalry Season 2 Cast, Promises Deeper Thematic Exploration "Heated Rivalry Season 2 Adds Milla Jovovich, Kevin Zegers, Paul  is the central subject of the update. 'Heated Rivalry Season 2 Adds Milla Jovovich, Kevin Zegers, Paul is the central subject of the update.
 
 The highly anticipated second season of the popular hockey romance drama, "Heated Rivalry," has significantly expanded its cast with the addition of acclaimed actors Milla Jovovich, Kevin Zegers, and Paul Gross, currently filming in Canada for a scheduled Spring 2027 release on Crave and HBO Max. These prominent new faces are poised to elevate the series' exploration of complex social and psychological themes within professional sports.
 
