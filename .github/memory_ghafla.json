@@ -302,10 +302,10 @@
     "f289a93bbe168472a9785d007c5c2563",
     "c9440d403f6ec03958f174211dc6b9cf",
     "23cbc3209674f5fcf4b2dc9d1ebf7d9f",
-    "3f27ffe3b3d9dbd863eac1cfb5071840"
+    "3f27ffe3b3d9dbd863eac1cfb5071840",
+    "0d8f7da3d13b091f27346f1e13baa974"
   ],
   "style_history": [
-    "Hard News Lead",
     "Trend Take",
     "Profile Beat",
     "Receipts Piece",
@@ -334,10 +334,10 @@
     "Reaction Round-up",
     "Hard News Lead",
     "Profile Beat",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "story_progression|gospel singer|Trend Take",
     "story_progression|Kenya|Hard News Lead",
     "accountability|Kenya|Receipts Piece",
     "next_48_hours|Kenya Power|Reaction Round-up",
@@ -416,6 +416,7 @@
     "story_progression|Kenya politics|Reaction Round-up",
     "policy_gap|Kenya|Hard News Lead",
     "accountability|endometriosis|Profile Beat",
-    "myth_vs_fact|fertiliser subsidy|Receipts Piece"
+    "myth_vs_fact|fertiliser subsidy|Receipts Piece",
+    "accountability|Nairobi|Reaction Round-up"
   ]
 }
