@@ -7,12 +7,13 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/treasury_3.jpg?itok=rSx9NRYt"
 category: "Politics"
 tags: ["Kenya", "Treasury", "PAYE", "VAT", "Income Tax", "Tax Reduction", "Chris Kiptoo", "KRA"]
+canonical: "https://zandani.co.ke/article/treasury-tax-reduction-conditions-paye-vat-income-tax-reduction"
 date: "2026-02-25"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Treasury Tax Reduction Conditions Set for PAYE VAT and Incom"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/treasury-tax-reduction-conditions-paye-vat-income-tax-reduction"
 ---
+
 Treasury Tax Reduction Conditions Set for PAYE VAT and Incom is central to this update for Kenyan readers.
 
 ***

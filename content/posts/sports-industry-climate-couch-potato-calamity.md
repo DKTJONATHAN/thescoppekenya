@@ -7,12 +7,13 @@ author: "Za Ndani"
 image: "https://earth.org/wp-content/uploads/2026/02/1024-x-683-px-5.jpg"
 category: "Global News"
 tags: ["sports industry", "climate change", "physical inactivity", "World Economic Forum", "Oliver Wyman", "revenue decline", "future of sport"]
+canonical: "https://zandani.co.ke/article/sports-industry-climate-couch-potato-calamity"
 date: "2026-02-26"
 dateModified: "2026-02-26"
 focusKeyword: "Sports Industry Faces Climate Crunch and Couch Potato Calami"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/sports-industry-climate-couch-potato-calamity"
 ---
+
 Sports Industry Faces Climate Crunch and Couch Potato Calami is central to this update for Kenyan readers.
 
 ## The Sports Industry's Climate Crisis and Couch Potato Problem Right, mate, have you seen the latest? The World Economic Forum, in collaboration with Oliver Wyman, has dropped a report that's got the sports world in a right tizz. They're warning that the glorious, £2.3 trillion global sports industry could see its annual revenue slashed by a whopping 18% by 2050, equating to a staggering $1.6 trillion loss. It’s all down to a rather unfortunate combo of escalating climate impacts and, frankly, too many of us turning into certified couch potatoes.
