@@ -227,10 +227,10 @@
     "d5ef6c7890be32728eee16dc8257ec93",
     "085ac8c58656c3ecf7ce2bc59bd17e2e",
     "0925cc4985eda761f415e745898edb2f",
-    "d3bb6db3d06b0dbc2f8fd6e978449317"
+    "d3bb6db3d06b0dbc2f8fd6e978449317",
+    "39da6b425afbbcf0a8d7d326b7b54cb8"
   ],
   "style_history": [
-    "SME Angle",
     "Markets Report",
     "Power Accountability",
     "Backgrounder",
@@ -259,10 +259,10 @@
     "Power Accountability",
     "Markets Report",
     "Explainer",
-    "SME Angle"
+    "SME Angle",
+    "Power Accountability"
   ],
   "angle_history": [
-    "accountability|climate finance|Power Accountability",
     "money_follow|Shadow AI|Markets Report",
     "money_follow|Nairobi Securities Exchange|SME Angle",
     "timeline_shift|Finance Bill 2026|Backgrounder",
@@ -341,6 +341,7 @@
     "accountability|Kenya|Power Accountability",
     "myth_vs_fact|NSE|Markets Report",
     "money_follow|KRA|Explainer",
-    "story_progression|mergers and acquisitions|SME Angle"
+    "story_progression|mergers and acquisitions|SME Angle",
+    "accountability|Nedbank|Power Accountability"
   ]
 }
