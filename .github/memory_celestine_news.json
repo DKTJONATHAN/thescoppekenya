@@ -486,10 +486,10 @@
     "91f5dc4506ad524fdbf81c46aab3c545",
     "5b999df8fc2f598b577d11fd6f9a2ddd",
     "f43a8f6088e42d7d3a5e9e001e6ba938",
-    "ba17dc7e1f737bf937e48c995b4d0522"
+    "ba17dc7e1f737bf937e48c995b4d0522",
+    "be14131d2db9a59e3b536a0f62817cac"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
@@ -518,10 +518,10 @@
     "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "timeline_shift|Mau Mau|Context Backgrounder",
     "accountability|KCAA|Hard News Lead",
     "money_follow|Assets Recovery Agency|Reaction & Voices",
     "policy_gap|El Ni\u00f1o|Power Accountability",
@@ -600,6 +600,7 @@
     "story_progression|WMO|Reaction & Voices",
     "accountability|Sudan conflict|Power Accountability",
     "accountability|Kajiado|Hard News Lead",
-    "myth_vs_fact|Kenyan Politics|Explainer"
+    "myth_vs_fact|Kenyan Politics|Explainer",
+    "policy_gap|KUPPET|Context Backgrounder"
   ]
 }
