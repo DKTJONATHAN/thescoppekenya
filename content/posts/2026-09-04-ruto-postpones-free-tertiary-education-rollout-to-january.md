@@ -1,18 +1,20 @@
 ---
 title: "Ruto Postpones Free Tertiary Education Rollout to January"
 slug: "ruto-postpones-free-tertiary-education-rollout-to-january"
-description: "President William Ruto has delayed the implementation of the free tertiary education program to January 2027 pending parliamentary legislation review."
+description: "Ruto Postpones Free Tertiary Education Rollout to January: President William Ruto has delayed the implementation of the free tertiary education program to"
+excerpt: "A Broken Promise Keeps Students Stranded Kenyan households are waking up to a harsh reality today as the much anticipated rollout of free te"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Fb9BHhPy/de5752e494f6.webp"
 category: "News"
 tags: ["kenya", "higher education", "william ruto", "helb", "ministry of education", "government funding"]
+canonical: "https://zandani.co.ke/article/ruto-postpones-free-tertiary-education-rollout-to-january"
 date: "2026-09-03T21:41:28Z"
 dateModified: "2026-09-03T21:41:28Z"
+focusKeyword: "Ruto Postpones Free Tertiary Education Rollout to January"
 schema: "NewsArticle"
 ---
 
-## A Broken Promise Keeps Students Stranded
+## A Broken Promise Keeps Students Stranded Ruto Postpones Free Tertiary Education Rollout to January is the central subject of the update.
 
 Kenyan households are waking up to a harsh reality today as the much-anticipated rollout of free tertiary education has been shelved until the start of 2027. This four-month delay leaves thousands of families trapped between expired budgets and rising costs.
 
