@@ -1,18 +1,20 @@
 ---
 title: "WMO Warns El Nino Conditions Likely to Persist Until Next Year"
 slug: "wmo-warns-el-nino-conditions-likely-to-persist"
-description: "Global weather authorities report that El Nino is expected to last until early next year due to rising ocean temperatures in the tropical Pacific region."
+description: "WMO Warns El Nino Conditions Likely to Persist Until Next Year: Global weather authorities report that El Nino is expected to last until early next year due to"
+excerpt: "Farmers brace for a three year climate grind The news that the Pacific Ocean is locked into a pattern that will keep weather volatile until"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/FkkJ66Bm/467e191d4962.webp"
 category: "News"
 tags: ["kenya weather", "el nino", "wmo", "climate change", "environment", "global warming"]
+canonical: "https://zandani.co.ke/article/wmo-warns-el-nino-conditions-likely-to-persist"
 date: "2026-09-03T07:58:18Z"
 dateModified: "2026-09-03T07:58:18Z"
+focusKeyword: "WMO Warns El Nino Conditions Likely to Persist Until Next Year"
 schema: "NewsArticle"
 ---
 
-## Farmers brace for a three-year climate grind
+## Farmers brace for a three-year climate grind WMO Warns El Nino Conditions Likely to Persist Until Next Year is the central subject of the update.
 
 The news that the Pacific Ocean is locked into a pattern that will keep weather volatile until February 2027 has turned from a meteorological statistic into a cold reality for households already reeling from rising food prices. While the focus remains on the Narok Governor, whose disappearance following a tragic river incident continues to highlight our fragile infrastructure, the quiet threat of a multi-year drought and deluge cycle has pushed many to abandon traditional planting calendars entirely.
 
