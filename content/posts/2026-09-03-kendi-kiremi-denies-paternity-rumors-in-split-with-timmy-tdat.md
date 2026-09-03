@@ -1,18 +1,20 @@
 ---
 title: "Kendi Kiremi Denies Paternity Rumors in Split With Timmy Tdat"
 slug: "kendi-kiremi-denies-paternity-rumors-in-split-with-timmy-tdat"
-description: "Singer Kendi Kiremi has dismissed claims that paternity issues caused her split from rapper Timmy Tdat, confirming he is the father."
+description: "Kendi Kiremi Denies Paternity Rumors in Split With Timmy Tdat: Singer Kendi Kiremi has dismissed claims that paternity issues caused her split from rapper"
+excerpt: "The Paternity Clout Trap Is Turning Toxic Kenyans are growing weary of the default reaction to celebrity breakups. Every time a high profile"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/1fjTYJ31/6684bb4763ae.webp"
 category: "Gossip"
 tags: ["kendi kiremi", "timmy tdat", "kenyan entertainment", "celebrity news", "kenyan musicians"]
+canonical: "https://zandani.co.ke/article/kendi-kiremi-denies-paternity-rumors-in-split-with-timmy-tdat"
 date: "2026-09-03T12:51:00Z"
 dateModified: "2026-09-03T12:51:00Z"
+focusKeyword: "Kendi Kiremi Denies Paternity Rumors in Split With Timmy Tdat"
 schema: "NewsArticle"
 ---
 
-## The Paternity Clout Trap Is Turning Toxic
+## The Paternity Clout Trap Is Turning Toxic Kendi Kiremi Denies Paternity Rumors in Split With Timmy Tdat is the central subject of the update.
 
 Kenyans are growing weary of the default reaction to celebrity breakups. Every time a high-profile relationship ends, the public immediately launches an aggressive, invasive interrogation into the paternity of the couple’s children. This digital pile-on, most recently aimed at Kendi Kiremi, has sparked a necessary conversation about the boundaries of fan engagement and the dehumanizing nature of online speculation.
 
