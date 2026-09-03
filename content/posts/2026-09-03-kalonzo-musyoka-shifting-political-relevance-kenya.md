@@ -1,18 +1,20 @@
 ---
 title: "Kalonzo Musyoka and the changing dynamics of Kenyan political power"
 slug: "kalonzo-musyoka-shifting-political-relevance-kenya"
-description: "Kalonzo Musyoka faces shifting political relevance as younger leaders rise, highlighted by his recent reception at the LSK gala."
+description: "Kalonzo Musyoka and the changing dynamics of Kenyan political pow: Kalonzo Musyoka faces shifting political relevance as younger leaders rise, highlighted by"
+excerpt: "The Protocol Shift: How the LSK Gala Reflects a Changing Political Guard The Law Society of Kenya gala dinner recently functioned as more th"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/CKrVCYBM/61e7ec0a2f1c.webp"
 category: "Opinions"
 tags: ["kalonzo musyoka", "kenyan politics", "wiper party", "lsk", "edwin sifuna", "kenya news"]
+canonical: "https://zandani.co.ke/article/kalonzo-musyoka-shifting-political-relevance-kenya"
 date: "2026-09-03T13:35:11Z"
 dateModified: "2026-09-03T13:35:11Z"
+focusKeyword: "Kalonzo Musyoka and the changing dynamics of Kenyan political pow"
 schema: "NewsArticle"
 ---
 
-## The Protocol Shift: How the LSK Gala Reflects a Changing Political Guard
+## The Protocol Shift: How the LSK Gala Reflects a Changing Political Guard Kalonzo Musyoka and the changing dynamics of Kenyan political pow is the central subject of the update.
 
 The Law Society of Kenya gala dinner recently functioned as more than a simple social gathering for the legal fraternity. By positioning Edwin Sifuna as the keynote speaker ahead of Kalonzo Musyoka, the event organizers inadvertently highlighted a shifting landscape regarding political hierarchy and influence.
 
