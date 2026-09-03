@@ -482,10 +482,10 @@
     "cd4584c4e82baf7e4319dc67173dde1a",
     "bbc844c1ec143142f4abb649965ac1a4",
     "534e67433254d2674cf67165788c151a",
-    "3093cd20bd512ee3f9dd7e8f870fbc87"
+    "3093cd20bd512ee3f9dd7e8f870fbc87",
+    "91f5dc4506ad524fdbf81c46aab3c545"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
@@ -514,10 +514,10 @@
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "story_progression|Mike Sonko|Hard News Lead",
     "policy_gap|TUM|Explainer",
     "accountability|Dr. Victoria Mutiso|Reaction & Voices",
     "accountability|Kenya politics|Power Accountability",
@@ -596,6 +596,7 @@
     "accountability|National Heroes Council|Reaction & Voices",
     "policy_gap|Kenya|Power Accountability",
     "story_progression|Kenya|Explainer",
-    "timeline_shift|Kenya|Context Backgrounder"
+    "timeline_shift|Kenya|Context Backgrounder",
+    "story_progression|WMO|Reaction & Voices"
   ]
 }
