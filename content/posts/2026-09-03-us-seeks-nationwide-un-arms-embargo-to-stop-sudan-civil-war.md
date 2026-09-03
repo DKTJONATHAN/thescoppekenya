@@ -1,18 +1,20 @@
 ---
 title: "US Seeks Nationwide UN Arms Embargo to Stop Sudan Civil War"
 slug: "us-seeks-nationwide-un-arms-embargo-to-stop-sudan-civil-war"
-description: "A US official reports that twelve nations are fueling the Sudan conflict. Washington is pushing for an expanded UN arms embargo to restore regional peace."
+description: "US Seeks Nationwide UN Arms Embargo to Stop Sudan Civil War: A US official reports that twelve nations are fueling the Sudan conflict. Washington is pushing"
+excerpt: "Washington Plays Hide and Seek with the Sudan Conflict The United States is suddenly demanding a nationwide arms embargo for Sudan, citing t"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/d0S6HLgF/486bbf61e1d1.webp"
 category: "News"
 tags: ["sudan conflict", "kenya news", "igad", "african union", "regional security", "horn of africa"]
+canonical: "https://zandani.co.ke/article/us-seeks-nationwide-un-arms-embargo-to-stop-sudan-civil-war"
 date: "2026-09-03T09:39:56Z"
 dateModified: "2026-09-03T09:39:56Z"
+focusKeyword: "US Seeks Nationwide UN Arms Embargo to Stop Sudan Civil War"
 schema: "NewsArticle"
 ---
 
-## Washington Plays Hide and Seek with the Sudan Conflict
+## Washington Plays Hide and Seek with the Sudan Conflict US Seeks Nationwide UN Arms Embargo to Stop Sudan Civil War is the central subject of the update.
 
 The United States is suddenly demanding a nationwide arms embargo for Sudan, citing the involvement of 12 unnamed nations. Yet, by withholding the identities of these suppliers, Washington is effectively sanitizing its own geopolitical interests while leaving regional security-including our own-in the dark.
 
