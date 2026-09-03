@@ -1,18 +1,20 @@
 ---
 title: "Ole Lenku heckled at Ruto rally as NCIC summons Governor"
 slug: "ole-lenku-heckled-at-ruto-rally-faces-ncic-summons"
-description: "Kajiado Governor Joseph Ole Lenku faced public hostility during a presidential rally in Loitokitok while also facing an NCIC summons over hate speech."
+description: "Ole Lenku heckled at Ruto rally as NCIC summons Governor: Kajiado Governor Joseph Ole Lenku faced public hostility during a presidential rally in Loitokitok"
+excerpt: "Kajiado Governor Faces Dual Crisis Amid Hostile Reception Kajiado Governor Joseph Ole Lenku faced intense public resistance during a preside"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/BVXcWf1b/4bcf2ba70172.webp"
 category: "News"
 tags: ["kajiado", "joseph ole lenku", "william ruto", "ncic", "loitokitok", "kenya politics"]
+canonical: "https://zandani.co.ke/article/ole-lenku-heckled-at-ruto-rally-faces-ncic-summons"
 date: "2026-09-03T13:30:29Z"
 dateModified: "2026-09-03T13:30:29Z"
+focusKeyword: "Ole Lenku heckled at Ruto rally as NCIC summons Governor"
 schema: "NewsArticle"
 ---
 
-## Kajiado Governor Faces Dual Crisis Amid Hostile Reception
+## Kajiado Governor Faces Dual Crisis Amid Hostile Reception Ole Lenku heckled at Ruto rally as NCIC summons Governor is the central subject of the update.
 
 Kajiado Governor Joseph Ole Lenku faced intense public resistance during a presidential event in Loitokitok today, an incident that precedes his scheduled appearance before the National Cohesion and Integration Commission for alleged ethnic incitement.
 
