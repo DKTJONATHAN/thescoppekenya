@@ -7,13 +7,12 @@ author: "Grace Mkamburi"
 image: "https://i.ibb.co/5hMpFfK2/cb18f12be101.jpg"
 category: "Business"
 tags: ["Kenya", "Wallstreet", "economy", "finance", "debt", "inflation", "Nairobi Securities Exchange", "banking"]
-canonical: "https://zandani.co.ke/article/the-kenyan-wallstreet-debt-inflation-purchasing-power"
 date: "2026-03-03"
 dateModified: "2026-03-03"
 focusKeyword: "The Kenyan Wallstreet A Precarious Rally Amidst Deepening Fi"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/the-kenyan-wallstreet-debt-inflation-purchasing-power"
 ---
-
 The Kenyan Wallstreet A Precarious Rally Amidst Deepening Fi is central to this update for Kenyan readers.
 
 ## The Kenyan Wallstreet: A Precarious Rally Amidst Deepening Fiscal Strain The Nairobi Securities Exchange (NSE) experienced a robust February, adding KSh 326.99 billion in market capitalization to close the month at KSh 3.41 trillion, driven largely by banking stocks. This rally unfolded despite sustained foreign selling, underpinned by strong domestic demand, signaling a resurgence in market sentiment. However, a closer inspection reveals underlying economic vulnerabilities that cast a long shadow over this apparent stability, raising questions about the sustainability of such gains on the Kenyan Wallstreet.
