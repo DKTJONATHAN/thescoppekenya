@@ -484,10 +484,10 @@
     "534e67433254d2674cf67165788c151a",
     "3093cd20bd512ee3f9dd7e8f870fbc87",
     "91f5dc4506ad524fdbf81c46aab3c545",
-    "5b999df8fc2f598b577d11fd6f9a2ddd"
+    "5b999df8fc2f598b577d11fd6f9a2ddd",
+    "f43a8f6088e42d7d3a5e9e001e6ba938"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Explainer",
     "Context Backgrounder",
@@ -516,10 +516,10 @@
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
-    "Power Accountability"
+    "Power Accountability",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|Dr. Victoria Mutiso|Reaction & Voices",
     "accountability|Kenya politics|Power Accountability",
     "timeline_shift|Mau Mau|Context Backgrounder",
     "accountability|KCAA|Hard News Lead",
@@ -598,6 +598,7 @@
     "story_progression|Kenya|Explainer",
     "timeline_shift|Kenya|Context Backgrounder",
     "story_progression|WMO|Reaction & Voices",
-    "accountability|Sudan conflict|Power Accountability"
+    "accountability|Sudan conflict|Power Accountability",
+    "accountability|Kajiado|Hard News Lead"
   ]
 }
