@@ -488,10 +488,10 @@
     "f43a8f6088e42d7d3a5e9e001e6ba938",
     "ba17dc7e1f737bf937e48c995b4d0522",
     "be14131d2db9a59e3b536a0f62817cac",
-    "84a5b924e14ed760bd05dde3ed3a9ed8"
+    "84a5b924e14ed760bd05dde3ed3a9ed8",
+    "b7229f0706910b06e8ef964f417e3fff"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Hard News Lead",
     "Explainer",
     "Power Accountability",
@@ -520,10 +520,10 @@
     "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Power Accountability"
   ],
   "angle_history": [
-    "money_follow|Assets Recovery Agency|Reaction & Voices",
     "policy_gap|El Ni\u00f1o|Power Accountability",
     "money_follow|Kenya Kwanza|Explainer",
     "accountability|ODPP|Hard News Lead",
@@ -602,6 +602,7 @@
     "accountability|Kajiado|Hard News Lead",
     "myth_vs_fact|Kenyan Politics|Explainer",
     "policy_gap|KUPPET|Context Backgrounder",
-    "winners_losers|Kenya|Reaction & Voices"
+    "winners_losers|Kenya|Reaction & Voices",
+    "money_follow|Kenya|Power Accountability"
   ]
 }
