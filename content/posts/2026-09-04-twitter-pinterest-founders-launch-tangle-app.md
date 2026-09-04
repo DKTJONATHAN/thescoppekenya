@@ -1,18 +1,20 @@
 ---
 title: "Twitter and Pinterest Founders Launch New Privacy App Tangle"
 slug: "twitter-pinterest-founders-launch-tangle-app"
-description: "Former executives from Twitter and Pinterest have launched Tangle, a new app designed to promote real-time interaction and privacy through ephemeral messaging."
+description: "Twitter and Pinterest Founders Launch New Privacy App Tangle: Former executives from Twitter and Pinterest have launched Tangle, a new app designed to promote"
+excerpt: "Beyond the Digital Archive The launch of Tangle by Biz Stone and Evan Sharp marks a shift toward intentional, ephemeral communication, chall"
 author: "Elizabeth Muthoni"
-authorUrl: "https://zandani.co.ke/author/elizabeth-muthoni"
 image: "https://i.ibb.co/fzbj7g0h/f2e7802a149b.webp"
 category: "Technology"
 tags: ["technology", "social media", "tangle", "digital privacy", "mobile apps", "kenya tech"]
+canonical: "https://zandani.co.ke/article/twitter-pinterest-founders-launch-tangle-app"
 date: "2026-09-04T14:58:55Z"
 dateModified: "2026-09-04T14:58:55Z"
+focusKeyword: "Twitter and Pinterest Founders Launch New Privacy App Tangle"
 schema: "NewsArticle"
 ---
 
-## Beyond the Digital Archive
+## Beyond the Digital Archive Twitter and Pinterest Founders Launch New Privacy App Tangle is the central subject of the update.
 
 The launch of Tangle by Biz Stone and Evan Sharp marks a shift toward intentional, ephemeral communication, challenging the assumption that our digital histories must be preserved forever. This platform prioritizes immediate connection while ensuring that every conversation vanishes once the participants move on.
 
