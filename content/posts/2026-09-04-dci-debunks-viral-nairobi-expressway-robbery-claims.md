@@ -1,18 +1,20 @@
 ---
 title: "DCI Debunks Viral Nairobi Expressway Robbery Claims"
 slug: "dci-debunks-viral-nairobi-expressway-robbery-claims"
-description: "Authorities and MP Ronald Karauri have refuted claims of a robbery on the Nairobi Expressway, stating footage showed a faulty vehicle door repair."
+description: "DCI Debunks Viral Nairobi Expressway Robbery Claims: Authorities and MP Ronald Karauri have refuted claims of a robbery on the Nairobi Expressway, stating"
+excerpt: "DCI Closes Case on Expressway Panic The Directorate of Criminal Investigations has officially dismissed social media claims of a robbery on"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/RkjQ0jQR/827a90f84e0a.webp"
 category: "News"
 tags: ["nairobi expressway", "ronald karauri", "dci", "kasarani", "kenya news", "misinformation"]
+canonical: "https://zandani.co.ke/article/dci-debunks-viral-nairobi-expressway-robbery-claims"
 date: "2026-09-04T18:19:48Z"
 dateModified: "2026-09-04T18:19:48Z"
+focusKeyword: "DCI Debunks Viral Nairobi Expressway Robbery Claims"
 schema: "NewsArticle"
 ---
 
-## DCI Closes Case on Expressway Panic
+## DCI Closes Case on Expressway Panic DCI Debunks Viral Nairobi Expressway Robbery Claims is the central subject of the update.
 
 The Directorate of Criminal Investigations has officially dismissed social media claims of a robbery on the Nairobi Expressway, confirming that an incident involving Kasarani MP Ronald Karauri was merely a routine roadside mechanical repair rather than a criminal assault.
 
