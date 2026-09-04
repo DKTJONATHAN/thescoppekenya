@@ -1,18 +1,20 @@
 ---
 title: "Students protest in Kiminini after principal allegedly assaults pupil"
 slug: "students-protest-kiminini-after-alleged-assault-by-principal"
-description: "Students held a demonstration in Kiminini Market following claims that a school principal physically assaulted a pupil for expressing political views."
+description: "Students protest in Kiminini after principal allegedly assaults p: Students held a demonstration in Kiminini Market following claims that a school principal"
+excerpt: "The Fractured Authority in Trans Nzoia Students marched through Kiminini Market this morning to protest the alleged assault of a classmate b"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gZW68dK2/f28f67608fad.webp"
 category: "News"
 tags: ["kiminini", "trans-nzoia", "kenya education", "student unrest", "corporal punishment", "za ndani"]
+canonical: "https://zandani.co.ke/article/students-protest-kiminini-after-alleged-assault-by-principal"
 date: "2026-09-04T13:24:58Z"
 dateModified: "2026-09-04T13:24:58Z"
+focusKeyword: "Students protest in Kiminini after principal allegedly assaults p"
 schema: "NewsArticle"
 ---
 
-## The Fractured Authority in Trans-Nzoia
+## The Fractured Authority in Trans-Nzoia Students protest in Kiminini after principal allegedly assaults p is the central subject of the update.
 
 Students marched through Kiminini Market this morning to protest the alleged assault of a classmate by their school principal, a confrontation reportedly sparked by the student sharing political opinions. This incident highlights the growing friction between institutional discipline and the fundamental rights of minors within the Kenyan education system.
 
