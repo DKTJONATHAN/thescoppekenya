@@ -185,10 +185,10 @@
     "9854b5ca0effeec6559458145c014cdd",
     "0761d3ff192bc650b2fa517494610eba",
     "5cc6f8157516c6742fc7043596e80b3e",
-    "b8d5467272ad34e0e6256bac1c64bf47"
+    "b8d5467272ad34e0e6256bac1c64bf47",
+    "1f2d74cf793128beae3f83a8b575f014"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Backgrounder",
     "Critical Take",
@@ -217,10 +217,10 @@
     "Backgrounder",
     "Critical Take",
     "Africa Angle",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Backgrounder"
   ],
   "angle_history": [
-    "accountability|Adani Group|Hard News Lead",
     "impact_on_citizens|WhatsApp|Backgrounder",
     "winners_losers|Safaricom|Explainer",
     "money_follow|Matatu|Critical Take",
@@ -299,6 +299,7 @@
     "story_progression|KRA|Backgrounder",
     "accountability|TikTok|Critical Take",
     "money_follow|DStv|Africa Angle",
-    "accountability|artificial intelligence|Hard News Lead"
+    "accountability|artificial intelligence|Hard News Lead",
+    "myth_vs_fact|social media|Backgrounder"
   ]
 }
