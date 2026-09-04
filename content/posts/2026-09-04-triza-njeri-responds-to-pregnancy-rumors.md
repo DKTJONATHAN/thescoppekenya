@@ -1,18 +1,20 @@
 ---
 title: "Triza Njeri responds to pregnancy rumors following fashion video"
 slug: "triza-njeri-responds-to-pregnancy-rumors"
-description: "Influencer Triza Njeri has addressed online speculation about a potential pregnancy after fans questioned her appearance in a recent fashion video."
+description: "Triza Njeri responds to pregnancy rumors following fashion video: Influencer Triza Njeri has addressed online speculation about a potential pregnancy after"
+excerpt: "Triza Njeri Deflects Personal Inquiries with Strategic Digital Silence Influencer Triza Njeri has bypassed conventional crisis communication"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/Z1K3nmcX/a95bb2c95700.png"
 category: "Gossip"
 tags: ["triza njeri", "kenyan influencers", "celebrity news", "social media", "karangu muraya"]
+canonical: "https://zandani.co.ke/article/triza-njeri-responds-to-pregnancy-rumors"
 date: "2026-09-04T11:11:37Z"
 dateModified: "2026-09-04T11:11:37Z"
+focusKeyword: "Triza Njeri responds to pregnancy rumors following fashion video"
 schema: "NewsArticle"
 ---
 
-## Triza Njeri Deflects Personal Inquiries with Strategic Digital Silence
+## Triza Njeri Deflects Personal Inquiries with Strategic Digital Silence Triza Njeri responds to pregnancy rumors following fashion video is the central subject of the update.
 
 Influencer Triza Njeri has bypassed conventional crisis communication tactics, opting for minimal, non-verbal engagement to address mounting public speculation regarding her personal life. The shift follows a recent fashion-focused video that inadvertently sparked intense scrutiny of her health and family status.
 
