@@ -417,10 +417,10 @@
     "53c254750736e58464ce768f37731bea",
     "9c04c445a41ccc84ce25f88928327a27",
     "d06e3996940c6b2379ffed19175b4f35",
-    "3066a172127fe98dbba23f54fd672138"
+    "3066a172127fe98dbba23f54fd672138",
+    "7b126d1b1dcf1fabd22153976b113bfc"
   ],
   "style_history": [
-    "Reaction Round-up",
     "Hard News Lead",
     "Profile Beat",
     "Trend Take",
@@ -449,10 +449,10 @@
     "Reaction Round-up",
     "Profile Beat",
     "Trend Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Reaction Round-up"
   ],
   "angle_history": [
-    "story_progression|na|Explainer",
     "myth_vs_fact|Television careers|Reaction Round-up",
     "policy_gap|na|Hard News Lead",
     "timeline_shift|The Varnell Hill Show|Trend Take",
@@ -531,6 +531,7 @@
     "timeline_shift|Marriage|Reaction Round-up",
     "winners_losers|Kenan Thompson|Profile Beat",
     "timeline_shift|na|Trend Take",
-    "story_progression|Heated Rivalry|Hard News Lead"
+    "story_progression|Heated Rivalry|Hard News Lead",
+    "winners_losers|Adria Arjona|Reaction Round-up"
   ]
 }
