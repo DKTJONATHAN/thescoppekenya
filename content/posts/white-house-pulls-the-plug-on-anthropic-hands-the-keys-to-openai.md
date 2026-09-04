@@ -7,12 +7,13 @@ author: "Elizabeth Muthoni"
 image: "https://techweez.com/wp-content/uploads/2026/02/Trump-balcklists-Anthropic.webp"
 category: "Technology"
 tags: ["Artificial intelligence", "AI policy", "US government", "Anthropic", "OpenAI", "national security", "tech industry", "digital policy"]
+canonical: "https://zandani.co.ke/article/white-house-pulls-the-plug-on-anthropic-hands-the-keys-to-openai"
 date: "2026-03-01"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "White House Pulls the Plug on Anthropic Hands the Keys to Op"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/white-house-pulls-the-plug-on-anthropic-hands-the-keys-to-openai"
 ---
+
 White House Pulls the Plug on Anthropic Hands the Keys to Op is central to this update for Kenyan readers.
 
 ## White House Pulls the Plug on Anthropic, Reshaping US AI Landscape The United States government has dramatically altered its stance on artificial intelligence partnerships, effectively banning Anthropic from federal contracts while simultaneously bolstering rival firm OpenAI. This decision, announced by the Trump administration, marks a significant moment for the American AI industry, sparking debate over innovation, national security, and ethical AI deployment.
