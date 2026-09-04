@@ -232,10 +232,10 @@
     "f34901ae98a414912776577689d96610",
     "662d5afcfe932abaccbf00478dde40fa",
     "dc2b20f7d17605de7a89808a71158937",
-    "519206be74d38f7d8e9fc3fd27af263b"
+    "519206be74d38f7d8e9fc3fd27af263b",
+    "61959426a3740888cc5bbe1ca4d64f0a"
   ],
   "style_history": [
-    "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
     "Letter Form",
@@ -264,10 +264,10 @@
     "Sharp Column",
     "Personal Reflection",
     "Counterpoint",
-    "Historical Lens"
+    "Historical Lens",
+    "Sharp Column"
   ],
   "angle_history": [
-    "myth_vs_fact|rangelands|Counterpoint",
     "accountability|Journalism|Sharp Column",
     "money_follow|Reproductive Health|Historical Lens",
     "next_48_hours|fatherhood|Letter Form",
@@ -346,6 +346,7 @@
     "money_follow|Postbank|Sharp Column",
     "story_progression|El Ni\u00f1o|Personal Reflection",
     "myth_vs_fact|Abnormal Uterine Bleeding|Counterpoint",
-    "winners_losers|Kenyan politics|Historical Lens"
+    "winners_losers|Kenyan politics|Historical Lens",
+    "policy_gap|KICP|Sharp Column"
   ]
 }
