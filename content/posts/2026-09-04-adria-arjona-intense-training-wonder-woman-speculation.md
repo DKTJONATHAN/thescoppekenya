@@ -1,21 +1,20 @@
 ---
-title: "Adria Arjona's Intense Training Fuels Wonder Woman Role Speculation
+title: "'Adria Arjona's Intense Training Fuels Wonder Woman Role Speculation"
 slug: "adria-arjona-intense-training-wonder-woman-speculation"
-description: "Adria Arjona's rigorous fitness routine for 'Man of Tomorrow' intensifies speculation she will portray Wonder Woman in James Gunn's DC Universe. Learn more about her demanding prep."
+description: "'Adria Arjona's Intense Training Fuels Wonder Woman Role Speculat: Adria Arjona's rigorous fitness routine for 'Man of Tomorrow' intensifies speculation she"
+excerpt: "DC Universe Divided: Adria Arjona's Intense Training Fuels Wonder Woman Casting Frenzy Kenyan DC fans are locked in a fierce debate as Adria"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/RkmvPtdZ/7913d54fc5db.jpg"
-og_title: "Adria Arjona's 'Wonder Woman' Training Fuels DC Speculation"
-og_description: "Adria Arjona details her intense fitness routine for 'Man of Tomorrow.' Is she the new Wonder Woman in James Gunn's DC Universe?"
-focus_keyword: "Adria Arjona Wonder Woman"
 category: "Entertainment"
 tags: ["adria arjona", "wonder woman", "man tomorrow", "dc universe", "james gunn", "superhero film", "entertainment"]
+canonical: "https://zandani.co.ke/article/adria-arjona-intense-training-wonder-woman-speculation"
 date: "2026-09-04T17:46:28Z"
 dateModified: "2026-09-04T17:46:28Z"
+focusKeyword: "'Adria Arjona's Intense Training Fuels Wonder Woman Role Speculat"
 schema: "NewsArticle"
 ---
 
-## DC Universe Divided: Adria Arjona's Intense Training Fuels Wonder Woman Casting Frenzy
+## DC Universe Divided: Adria Arjona's Intense Training Fuels Wonder Woman Casting Frenzy "Adria Arjona's Intense Training Fuels Wonder Woman Role Speculat is the central subject of the update.
 
 Kenyan DC fans are locked in a fierce debate as Adria Arjona’s rigorous fitness regimen for her "Man of Tomorrow" role intensifies speculation she’ll be the new Wonder Woman. The superhero realm is buzzing with anticipation and strong opinions on who should wield the Lasso of Truth next.
 
