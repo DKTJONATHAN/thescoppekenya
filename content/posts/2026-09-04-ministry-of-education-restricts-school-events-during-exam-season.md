@@ -1,18 +1,20 @@
 ---
 title: "Ministry of Education Restricts School Events During Exam Season"
 slug: "ministry-of-education-restricts-school-events-during-exam-season"
-description: "The Ministry of Education has banned non-academic events during national exams to prevent distractions for candidates. Annual leave for officers is frozen."
+description: "Ministry of Education Restricts School Events During Exam Season: The Ministry of Education has banned non-academic events during national exams to prevent"
+excerpt: "Tightening the Exam Calendar: New Ministry Directives The Ministry of Education has mandated an immediate suspension of all non academic sch"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/RkVSrwPC/822b46d0c0f7.webp"
 category: "News"
 tags: ["education", "knec", "kcse", "kpsea", "kenyan schools", "national exams"]
+canonical: "https://zandani.co.ke/article/ministry-of-education-restricts-school-events-during-exam-season"
 date: "2026-09-04T07:54:12Z"
 dateModified: "2026-09-04T07:54:12Z"
+focusKeyword: "Ministry of Education Restricts School Events During Exam Season"
 schema: "NewsArticle"
 ---
 
-## Tightening the Exam Calendar: New Ministry Directives
+## Tightening the Exam Calendar: New Ministry Directives Ministry of Education Restricts School Events During Exam Season is the central subject of the update.
 
 The Ministry of Education has mandated an immediate suspension of all non-academic school events, including prayer days and annual general meetings, during the third term to ensure a high-security environment for the 2026 national examinations.
 
