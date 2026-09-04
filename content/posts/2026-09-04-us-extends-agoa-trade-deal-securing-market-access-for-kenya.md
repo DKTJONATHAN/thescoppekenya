@@ -1,18 +1,20 @@
 ---
 title: "US Extends AGOA Trade Deal Securing Market Access for Kenya"
 slug: "us-extends-agoa-trade-deal-securing-market-access-for-kenya"
-description: "President Trump has extended the African Growth and Opportunity Act until 2028, ensuring duty-free trade access for Kenyan exporters and manufacturers."
+description: "US Extends AGOA Trade Deal Securing Market Access for Kenya: President Trump has extended the African Growth and Opportunity Act until 2028, ensuring duty-free"
+excerpt: "Beyond the Thread: How Kenyan Small Scale Exporters View the 2028 AGOA Lifeline While the government celebrates the extension of the African"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gMd6VRs9/562b2e3ff079.webp"
 category: "News"
 tags: ["agoa", "trade policy", "kenya-us relations", "exports", "textile industry", "economy"]
+canonical: "https://zandani.co.ke/article/us-extends-agoa-trade-deal-securing-market-access-for-kenya"
 date: "2026-09-04T14:14:54Z"
 dateModified: "2026-09-04T14:14:54Z"
+focusKeyword: "US Extends AGOA Trade Deal Securing Market Access for Kenya"
 schema: "NewsArticle"
 ---
 
-## Beyond the Thread: How Kenyan Small-Scale Exporters View the 2028 AGOA Lifeline
+## Beyond the Thread: How Kenyan Small-Scale Exporters View the 2028 AGOA Lifeline US Extends AGOA Trade Deal Securing Market Access for Kenya is the central subject of the update.
 
 While the government celebrates the extension of the African Growth and Opportunity Act until 2028, the mood on the ground among local entrepreneurs is less about victory and more about the crushing reality of infrastructure costs.
 
