@@ -1,18 +1,20 @@
 ---
 title: "Aden Duale clarifies new pharmacy standards for diploma holders"
 slug: "aden-duale-clarifies-new-pharmacy-standards-for-diploma-holders"
-description: "Health CS Aden Duale reassures pharmaceutical technologists that new regulations do not bar diploma holders from practice amid ongoing KPA concerns."
+description: "Aden Duale clarifies new pharmacy standards for diploma holders: Health CS Aden Duale reassures pharmaceutical technologists that new regulations do not bar"
+excerpt: "The Phantom Practitioners of Kenyan Pharmacy Health Cabinet Secretary Aden Duale claims the new pharmacy standards protect patients, yet the"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/fYn3XgzW/bd4677710781.webp"
 category: "News"
 tags: ["kenya", "health ministry", "pharmacy", "aden duale", "kpa", "medical regulation"]
+canonical: "https://zandani.co.ke/article/aden-duale-clarifies-new-pharmacy-standards-for-diploma-holders"
 date: "2026-09-04T04:20:33Z"
 dateModified: "2026-09-04T04:20:33Z"
+focusKeyword: "Aden Duale clarifies new pharmacy standards for diploma holders"
 schema: "NewsArticle"
 ---
 
-## The Phantom Practitioners of Kenyan Pharmacy
+## The Phantom Practitioners of Kenyan Pharmacy Aden Duale clarifies new pharmacy standards for diploma holders is the central subject of the update.
 
 Health Cabinet Secretary Aden Duale claims the new pharmacy standards protect patients, yet the professional uproar masks a multi-billion shilling shadow economy where licenses are rented out like cheap real estate while qualified personnel remain sidelined.
 
