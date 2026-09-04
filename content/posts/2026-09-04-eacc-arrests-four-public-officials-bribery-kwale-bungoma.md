@@ -1,18 +1,20 @@
 ---
 title: "EACC arrests four public officials over bribery in Kwale and Bungoma"
 slug: "eacc-arrests-four-public-officials-bribery-kwale-bungoma"
-description: "EACC detectives have arrested two Kenya Power staff in Diani and two Bungoma County enforcement officers for allegedly soliciting bribes from the public."
+description: "EACC arrests four public officials over bribery in Kwale and Bung: EACC detectives have arrested two Kenya Power staff in Diani and two Bungoma County"
+excerpt: "The Hidden Tax Killing Small Businesses Detectives from the Ethics and Anti Corruption Commission apprehended four public officials this wee"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/zWB3F3Zh/89830108e2d4.webp"
 category: "News"
 tags: ["eacc", "corruption", "kenya power", "bungoma county", "kwale", "bribery"]
+canonical: "https://zandani.co.ke/article/eacc-arrests-four-public-officials-bribery-kwale-bungoma"
 date: "2026-09-04T09:32:18Z"
 dateModified: "2026-09-04T09:32:18Z"
+focusKeyword: "EACC arrests four public officials over bribery in Kwale and Bung"
 schema: "NewsArticle"
 ---
 
-## The Hidden Tax Killing Small Businesses
+## The Hidden Tax Killing Small Businesses EACC arrests four public officials over bribery in Kwale and Bung is the central subject of the update.
 
 Detectives from the Ethics and Anti-Corruption Commission apprehended four public officials this week in Kwale and Bungoma counties. These arrests highlight a recurring cycle where minor bureaucratic hurdles are weaponized to extract cash from struggling local entrepreneurs across the country.
 
