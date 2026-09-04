@@ -491,10 +491,10 @@
     "84a5b924e14ed760bd05dde3ed3a9ed8",
     "b7229f0706910b06e8ef964f417e3fff",
     "5389c3b5135c9eafd093f4000fe3b8c8",
-    "a2523b3aaff0d95dd241d6098e8eb2eb"
+    "a2523b3aaff0d95dd241d6098e8eb2eb",
+    "e8d2115510be05abe94c1af96730f51b"
   ],
   "style_history": [
-    "Power Accountability",
     "Reaction & Voices",
     "Hard News Lead",
     "Context Backgrounder",
@@ -523,10 +523,10 @@
     "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
-    "Explainer"
+    "Explainer",
+    "Context Backgrounder"
   ],
   "angle_history": [
-    "accountability|ODPP|Hard News Lead",
     "winners_losers|National Treasury|Reaction & Voices",
     "myth_vs_fact|Kenyan politics|Context Backgrounder",
     "accountability|NTSA|Power Accountability",
@@ -605,6 +605,7 @@
     "winners_losers|Kenya|Reaction & Voices",
     "money_follow|Kenya|Power Accountability",
     "policy_gap|Ministry of Education|Hard News Lead",
-    "money_follow|EACC|Explainer"
+    "money_follow|EACC|Explainer",
+    "policy_gap|Kenya|Context Backgrounder"
   ]
 }
