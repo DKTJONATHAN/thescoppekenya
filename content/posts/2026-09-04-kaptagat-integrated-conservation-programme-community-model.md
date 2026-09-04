@@ -1,18 +1,20 @@
 ---
 title: "Kaptagat Integrated Conservation Programme Adopts Community Model"
 slug: "kaptagat-integrated-conservation-programme-community-model"
-description: "The Kaptagat Integrated Conservation Programme is shifting towards community-owned landscape restoration to boost ecological and economic synergy."
+description: "Kaptagat Integrated Conservation Programme Adopts Community Model: The Kaptagat Integrated Conservation Programme is shifting towards community-owned landscape"
+excerpt: "Turning Kaptagat From A Protected Forest Into A Productive Asset Conservation fails when we cast the local farmer as a security threat rathe"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/Lh6SXmLg/03b4af73062c.webp"
 category: "Opinions"
 tags: ["kaptagat forest", "forest restoration", "kenya environment", "community development", "sustainable agriculture", "conservation"]
+canonical: "https://zandani.co.ke/article/kaptagat-integrated-conservation-programme-community-model"
 date: "2026-09-04T13:32:23Z"
 dateModified: "2026-09-04T13:32:23Z"
+focusKeyword: "Kaptagat Integrated Conservation Programme Adopts Community Model"
 schema: "NewsArticle"
 ---
 
-## Turning Kaptagat From A Protected Forest Into A Productive Asset
+## Turning Kaptagat From A Protected Forest Into A Productive Asset Kaptagat Integrated Conservation Programme Adopts Community Model is the central subject of the update.
 
 Conservation fails when we cast the local farmer as a security threat rather than a stakeholder. 
 
