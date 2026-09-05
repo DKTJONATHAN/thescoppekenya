@@ -498,10 +498,10 @@
     "47fde462aac3345c95637e6f0e34eed1",
     "0c6b205a61e0dcce7b3592e86b482676",
     "ae48800098beb098ce8f486d5ce1d076",
-    "545034288f13ed2ea808089e88fc2c73"
+    "545034288f13ed2ea808089e88fc2c73",
+    "9843f3b45aca99e459ffdd11fc3e2f98"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
@@ -530,10 +530,10 @@
     "Explainer",
     "Power Accountability",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Explainer"
   ],
   "angle_history": [
-    "winners_losers|AGOA|Reaction & Voices",
     "policy_gap|weather forecast|Power Accountability",
     "winners_losers|AGOA|Explainer",
     "winners_losers|Kenya|Hard News Lead",
@@ -612,6 +612,7 @@
     "policy_gap|road safety|Explainer",
     "money_follow|Kenya Railways|Power Accountability",
     "story_progression|US-Kenya relations|Context Backgrounder",
-    "myth_vs_fact|Najib Balala|Reaction & Voices"
+    "myth_vs_fact|Najib Balala|Reaction & Voices",
+    "money_follow|Kenya|Explainer"
   ]
 }
