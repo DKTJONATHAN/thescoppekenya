@@ -7,13 +7,12 @@ author: "Elizabeth Muthoni"
 image: "https://techweez.com/wp-content/uploads/2026/02/vivo-y31d-kenya-launch.webp"
 category: "Technology"
 tags: ["vivo Y31d", "Kenya tech", "smartphone launch", "7200mAh battery", "long-lasting phone", "OriginOS 6.0", "Snapdragon 6s Gen 2", "fast charging"]
-canonical: "https://zandani.co.ke/article/vivo-y31d-launches-in-kenya-7200mah-battery"
 date: "2026-02-24"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "vivo Y31d Launches in Kenya With Massive 7200mAh Battery A D"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/vivo-y31d-launches-in-kenya-7200mah-battery"
 ---
-
 vivo Y31d Launches in Kenya With Massive 7200mAh Battery A D is central to this update for Kenyan readers.
 
 ## vivo Y31d Launches in Kenya: Unpacking the 7200mAh Battery Powerhouse The vivo Y31d has officially arrived in Kenya, targeting users who prioritize exceptional battery life above all else. This new smartphone, available from KES 26,999, stands out with its groundbreaking 7200mAh battery, marking the largest capacity vivo has integrated into a smartphone to date. The device is a strategic offering for the Kenyan market, emphasizing endurance and resilience for daily use.
