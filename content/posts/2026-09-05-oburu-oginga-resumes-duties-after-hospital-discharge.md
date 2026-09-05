@@ -1,18 +1,20 @@
 ---
 title: "Oburu Oginga resumes duties after hospital discharge"
 slug: "oburu-oginga-resumes-duties-after-hospital-discharge"
-description: "Siaya Senator Oburu Oginga has returned to work from his Kitisuru home after a routine medical check-up, meeting with various government officials."
+description: "Oburu Oginga resumes duties after hospital discharge: Siaya Senator Oburu Oginga has returned to work from his Kitisuru home after a routine medical check-up,"
+excerpt: "The Kitisuru Command Center In the quiet neighborhood of Kitisuru, the sudden increase in traffic and the presence of darkened SUVs parked a"
 author: "Wanjiku Kuria"
-authorUrl: "https://zandani.co.ke/author/wanjiku-kuria"
 image: "https://i.ibb.co/q3397GNj/6908422e5640.png"
 category: "Gossip"
 tags: ["oburu oginga", "kenyan politics", "siaya county", "odm party", "nairobi news"]
+canonical: "https://zandani.co.ke/article/oburu-oginga-resumes-duties-after-hospital-discharge"
 date: "2026-09-05T10:30:39Z"
 dateModified: "2026-09-05T10:30:39Z"
+focusKeyword: "Oburu Oginga resumes duties after hospital discharge"
 schema: "NewsArticle"
 ---
 
-## The Kitisuru Command Center
+## The Kitisuru Command Center Oburu Oginga resumes duties after hospital discharge is the central subject of the update.
 
 In the quiet neighborhood of Kitisuru, the sudden increase in traffic and the presence of darkened SUVs parked along residential lanes signal a notable shift in the local political landscape. While observers initially focused on the health status of the Siaya Senator following his recent hospital discharge, the reality on the ground points toward an immediate return to high-level networking. Rather than an extended period of rest, the Senator’s home has transitioned into an active hub for political coordination.
 
