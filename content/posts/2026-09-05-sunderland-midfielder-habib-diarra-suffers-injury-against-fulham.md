@@ -1,18 +1,20 @@
 ---
 title: "Sunderland midfielder Habib Diarra suffers injury against Fulham"
 slug: "sunderland-midfielder-habib-diarra-suffers-injury-against-fulham"
-description: "Sunderland midfielder Habib Diarra has picked up an injury following a brief appearance against Fulham, disrupting his campaign momentum."
+description: "Sunderland midfielder Habib Diarra suffers injury against Fulham: Sunderland midfielder Habib Diarra has picked up an injury following a brief appearance"
+excerpt: "The Heavy Cost of European Ambitions Sunderland finds its tactical flexibility compromised after Habib Diarra sustained a fresh injury short"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/zWk86V90/f6e0074f962f.jpg"
 category: "Sports"
 tags: ["football", "premier league", "sunderland", "habib diarra", "sports news", "injury report"]
+canonical: "https://zandani.co.ke/article/sunderland-midfielder-habib-diarra-suffers-injury-against-fulham"
 date: "2026-09-05T13:29:47Z"
 dateModified: "2026-09-05T13:29:47Z"
+focusKeyword: "Sunderland midfielder Habib Diarra suffers injury against Fulham"
 schema: "NewsArticle"
 ---
 
-## The Heavy Cost of European Ambitions
+## The Heavy Cost of European Ambitions Sunderland midfielder Habib Diarra suffers injury against Fulham is the central subject of the update.
 
 Sunderland finds its tactical flexibility compromised after Habib Diarra sustained a fresh injury shortly after stepping onto the pitch against Fulham. This development forces the manager to rethink his rotational strategies just as the club faces a congested September schedule.
 
