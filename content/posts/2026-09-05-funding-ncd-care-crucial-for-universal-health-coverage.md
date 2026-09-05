@@ -1,18 +1,20 @@
 ---
 title: "Why Funding NCD Care Is Crucial for Universal Health Coverage"
 slug: "funding-ncd-care-crucial-for-universal-health-coverage"
-description: "Kenya must prioritize financing for diabetes, cancer and hypertension to achieve Universal Health Coverage and reduce rising economic losses."
+description: "Why Funding NCD Care Is Crucial for Universal Health Coverage: Kenya must prioritize financing for diabetes, cancer and hypertension to achieve Universal"
+excerpt: "The Cost of Looking Away I remember sitting in a Murang'a community hall last Tuesday, watching a grandmother clutch a prescription she fina"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/bjF9HMk2/bb16a66c7ec3.webp"
 category: "Opinions"
 tags: ["universal health coverage", "ncds", "kenya health", "social health authority", "public health", "healthcare reform"]
+canonical: "https://zandani.co.ke/article/funding-ncd-care-crucial-for-universal-health-coverage"
 date: "2026-09-05T12:42:11Z"
 dateModified: "2026-09-05T12:42:11Z"
+focusKeyword: "Why Funding NCD Care Is Crucial for Universal Health Coverage"
 schema: "NewsArticle"
 ---
 
-## The Cost of Looking Away
+## The Cost of Looking Away Why Funding NCD Care Is Crucial for Universal Health Coverage is the central subject of the update.
 
 I remember sitting in a Murang'a community hall last Tuesday, watching a grandmother clutch a prescription she finally felt she could afford. For years, her hypertension had been a silent, ticking clock. Seeing the relief in her eyes was a poignant moment, but it also served as a painful nudge regarding our national priorities. We often lose billions by prioritizing emergency interventions over the quiet, steady work of prevention.
 
