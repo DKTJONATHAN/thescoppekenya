@@ -7,13 +7,12 @@ author: "Za Ndani"
 image: "https://i.ibb.co/DfsBjJxC/1858fa407f89.png"
 category: "Entertainment"
 tags: ["Vybz Kartel", "Kenya", "concert", "Nairobi", "dancehall", "Talanta East Afrika Festival", "entertainment", "music"]
-canonical: "https://zandani.co.ke/article/vybz-kartel-kenya-concert"
 date: "2026-03-04"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Vybz Kartel Kenya Concert More Than Just Music"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/vybz-kartel-kenya-concert"
 ---
-
 Vybz Kartel Kenya Concert More Than Just Music is central to this update for Kenyan readers.
 
 ## Vybz Kartel's Kenyan Invasion: Is it Culture or Just Cash? Dancehall heavyweight Vybz Kartel is officially set to headline the inaugural Talanta East Afrika Festival, a new regional cultural showcase. The Jamaican star will lead the lineup as the festival makes stops in Kampala, Kigali, and finally Nairobi, Kenya, on May 8, 2026, at Laureate Gardens. The announcement was made in Nairobi on Tuesday, March 3, 2026, positioning the festival as a cross-border platform to celebrate East Africa's music, fashion, cuisine, and artistic expression.
