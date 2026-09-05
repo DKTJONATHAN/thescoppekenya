@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/XrXCdw6c/7a56f897fb97.jpg"
 category: "News"
 tags: ["TSC", "teacher", "Ksh200", "000", "unlawful withdrawal", "health insurance", "Kenya", "employment law"]
-canonical: "https://zandani.co.ke/article/tsc-ordered-to-pay-teacher-ksh200000-unlawful-withdrawal-health-insura"
 date: "2026-03-03"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "TSC Ordered to Pay Teacher Ksh200000 for Unlawful Withdrawal"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/tsc-ordered-to-pay-teacher-ksh200000-unlawful-withdrawal-health-insura"
 ---
-
 TSC Ordered to Pay Teacher Ksh200000 for Unlawful Withdrawal is central to this update for Kenyan readers.
 
 ## TSC Ordered to Pay Teacher Ksh200,000 for Unlawful Withdrawal of Health Insurance The Employment and Labour Relations Court (ELRC) in Kisumu has ordered the Teachers Service Commission (TSC) to pay a teacher Ksh200,000 in general damages for the unlawful withdrawal of his health insurance during a flawed disciplinary process. The ruling underscores significant procedural irregularities within the Commission's disciplinary framework.
