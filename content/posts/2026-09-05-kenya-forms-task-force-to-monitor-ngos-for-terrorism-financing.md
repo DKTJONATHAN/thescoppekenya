@@ -1,18 +1,20 @@
 ---
 title: "Kenya Establishes Task Force to Monitor NGOs for Terrorism Risks"
 slug: "kenya-forms-task-force-to-monitor-ngos-for-terrorism-financing"
-description: "The Interior Ministry has formed a new multi-agency task force to audit non-profit organizations in Kenya to meet global anti-terrorism financing standards."
+description: "Kenya Establishes Task Force to Monitor NGOs for Terrorism Risks: The Interior Ministry has formed a new multi-agency task force to audit non-profit"
+excerpt: "Tougher Scrutiny for Kenyan Charities Interior Cabinet Secretary Kipchumba Murkomen has officially gazetted a new multi agency task force to"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/cXyyhDf5/b41d9e49710d.webp"
 category: "News"
 tags: ["kenya", "ngos", "kipchumba murkomen", "terrorism financing", "fatf", "interior ministry"]
+canonical: "https://zandani.co.ke/article/kenya-forms-task-force-to-monitor-ngos-for-terrorism-financing"
 date: "2026-09-05T17:16:04Z"
 dateModified: "2026-09-05T17:16:04Z"
+focusKeyword: "Kenya Establishes Task Force to Monitor NGOs for Terrorism Risks"
 schema: "NewsArticle"
 ---
 
-## Tougher Scrutiny for Kenyan Charities
+## Tougher Scrutiny for Kenyan Charities Kenya Establishes Task Force to Monitor NGOs for Terrorism Risks is the central subject of the update.
 
 Interior Cabinet Secretary Kipchumba Murkomen has officially gazetted a new multi-agency task force to oversee how non-profit organizations handle their finances. This push is driven by global pressure to block illegal cash flows, but it leaves thousands of local community groups wondering how they will afford the mandatory oversight.
 
