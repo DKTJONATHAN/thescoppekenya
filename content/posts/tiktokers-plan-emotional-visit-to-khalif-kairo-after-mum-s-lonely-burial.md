@@ -7,12 +7,13 @@ author: "The Scoop KE"
 image: "https://i.postimg.cc/ZR7sQyh5/image-870x-6799ef5291a61.jpg"
 category: "Entertainment"
 tags: ["tiktokers plan emotional visit to khalif kairo after mum s lonely burial", "entertainment", "kenya news"]
+canonical: "https://zandani.co.ke/article/tiktokers-plan-emotional-visit-to-khalif-kairo-after-mum-s-lonely-buri"
 date: "2026-02-26"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "TikTokers Plan Emotional Visit to Khalif Kairo After Mums Lo"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/tiktokers-plan-emotional-visit-to-khalif-kairo-after-mum-s-lonely-buri"
 ---
+
 TikTokers Plan Emotional Visit to Khalif Kairo After Mums Lo is central to this update for Kenyan readers.
 
 ## TikTokers Rally for Khalif Kairo Kenyan TikTok influencers launched a grassroots campaign for a group visit to businessman Khalif Kairo's home on March 15. This follows the recent burial of his mother, Lucy Wambui Kairo, which drew criticism for low attendance from celebrity circles.

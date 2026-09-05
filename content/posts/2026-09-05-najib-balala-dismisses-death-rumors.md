@@ -1,18 +1,20 @@
 ---
 title: "Former Tourism CS Najib Balala Dismisses Death Rumors"
 slug: "najib-balala-dismisses-death-rumors"
-description: "Former Tourism Cabinet Secretary Najib Balala has officially debunked false social media reports claiming he passed away, confirming he is in good health."
+description: "Former Tourism CS Najib Balala Dismisses Death Rumors: Former Tourism Cabinet Secretary Najib Balala has officially debunked false social media reports"
+excerpt: "The Digital Gallows: Why Kenyans Love To Bury People Who Are Alive 'Someone needs to tell these bloggers that my life is not a commodity for"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/gMDRhZQV/736f6e089155.webp"
 category: "News"
 tags: ["najib balala", "kenya news", "za ndani", "tourism ministry", "fake news"]
+canonical: "https://zandani.co.ke/article/najib-balala-dismisses-death-rumors"
 date: "2026-09-05T15:58:37Z"
 dateModified: "2026-09-05T15:58:37Z"
+focusKeyword: "Former Tourism CS Najib Balala Dismisses Death Rumors"
 schema: "NewsArticle"
 ---
 
-## The Digital Gallows: Why Kenyans Love To Bury People Who Are Alive
+## The Digital Gallows: Why Kenyans Love To Bury People Who Are Alive Former Tourism CS Najib Balala Dismisses Death Rumors is the central subject of the update.
 
 "Someone needs to tell these bloggers that my life is not a commodity for their likes," is the sentiment echoing through digital corridors today. The internet is buzzing with frustration, not because of the death itself, but because of the callous greed behind the content that fabricated it. Kenyans are increasingly exhausted by a culture where a person's existence is treated as a gambling chip for engagement metrics.
 
