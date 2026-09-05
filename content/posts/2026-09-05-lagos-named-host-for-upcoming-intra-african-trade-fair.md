@@ -1,18 +1,20 @@
 ---
 title: "Lagos Named Host for Upcoming Intra-African Trade Fair Edition"
 slug: "lagos-named-host-for-upcoming-intra-african-trade-fair"
-description: "Lagos will host the 2027 Intra-African Trade Fair as Afreximbank reports significant growth in continental trade and massive deal generation."
+description: "Lagos Named Host for Upcoming Intra-African Trade Fair Edition: Lagos will host the 2027 Intra-African Trade Fair as Afreximbank reports significant growth in"
+excerpt: "Nigeria to host the next Intra African Trade Fair Lagos will serve as the host city for the 2027 Intra African Trade Fair. This selection cr"
 author: "Grace Mkamburi"
-authorUrl: "https://zandani.co.ke/author/grace-mkamburi"
 image: "https://i.ibb.co/qLyR9CMc/5fbfb6055834.jpg"
 category: "Business"
 tags: ["trade", "afcfta", "africa business", "economy", "afreximbank", "iatf"]
+canonical: "https://zandani.co.ke/article/lagos-named-host-for-upcoming-intra-african-trade-fair"
 date: "2026-09-05T09:00:36Z"
 dateModified: "2026-09-05T09:00:36Z"
+focusKeyword: "Lagos Named Host for Upcoming Intra-African Trade Fair Edition"
 schema: "NewsArticle"
 ---
 
-## Nigeria to host the next Intra-African Trade Fair
+## Nigeria to host the next Intra-African Trade Fair Lagos Named Host for Upcoming Intra-African Trade Fair Edition is the central subject of the update.
 
 Lagos will serve as the host city for the 2027 Intra-African Trade Fair. This selection creates a significant opening for manufacturers across the continent to access a market valued at more than 200 billion dollars. 
 

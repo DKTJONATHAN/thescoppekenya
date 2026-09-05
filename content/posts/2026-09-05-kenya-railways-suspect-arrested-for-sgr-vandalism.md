@@ -1,18 +1,20 @@
 ---
 title: "Kenya Railways suspect arrested for SGR infrastructure vandalism"
 slug: "kenya-railways-suspect-arrested-for-sgr-vandalism"
-description: "Kenya Railways security teams have arrested a suspect for tampering with copper earthing wires between Sultan Hamud and Lesonkoyo stations on the SGR."
+description: "Kenya Railways suspect arrested for SGR infrastructure vandalism: Kenya Railways security teams have arrested a suspect for tampering with copper earthing"
+excerpt: "The Illusion of Surveillance at Sultan Hamud A suspect was apprehended this morning near the Sultan Hamud and Lesonkoyo stations for dismant"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/6746R1qN/d783c591d93b.webp"
 category: "News"
 tags: ["kenya railways", "sgr", "vandalism", "infrastructure", "sultan hamud", "security"]
+canonical: "https://zandani.co.ke/article/kenya-railways-suspect-arrested-for-sgr-vandalism"
 date: "2026-09-05T08:59:30Z"
 dateModified: "2026-09-05T08:59:30Z"
+focusKeyword: "Kenya Railways suspect arrested for SGR infrastructure vandalism"
 schema: "NewsArticle"
 ---
 
-## The Illusion of Surveillance at Sultan Hamud
+## The Illusion of Surveillance at Sultan Hamud Kenya Railways suspect arrested for SGR infrastructure vandalism is the central subject of the update.
 
 A suspect was apprehended this morning near the Sultan Hamud and Lesonkoyo stations for dismantling copper earthing wires, marking another routine breach of Kenya Railways infrastructure. Despite the fanfare over high-tech monitoring, the ease of this theft exposes a glaring reality.
 
