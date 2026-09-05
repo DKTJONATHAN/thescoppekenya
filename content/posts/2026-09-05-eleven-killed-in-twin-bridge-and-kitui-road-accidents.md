@@ -1,18 +1,20 @@
 ---
 title: "11 Killed in Twin Bridge and Kitui Road Accidents"
 slug: "eleven-killed-in-twin-bridge-and-kitui-road-accidents"
-description: "Two separate road accidents in Mau Summit and Kitui County have claimed 11 lives, prompting urgent government calls for stricter road safety regulations."
+description: "11 Killed in Twin Bridge and Kitui Road Accidents: Two separate road accidents in Mau Summit and Kitui County have claimed 11 lives, prompting urgent"
+excerpt: "Why Are Kenya's Roads Turning Into Death Traps? Eleven lives were extinguished within twenty four hours in two separate road incidents, expo"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/C32GNn4n/5c653f072445.webp"
 category: "News"
 tags: ["kenya news", "road safety", "ntsa", "traffic accidents", "kenya transport", "kitui", "mau summit"]
+canonical: "https://zandani.co.ke/article/eleven-killed-in-twin-bridge-and-kitui-road-accidents"
 date: "2026-09-05T07:35:27Z"
 dateModified: "2026-09-05T07:35:27Z"
+focusKeyword: "11 Killed in Twin Bridge and Kitui Road Accidents"
 schema: "NewsArticle"
 ---
 
-## Why Are Kenya's Roads Turning Into Death Traps?
+## Why Are Kenya's Roads Turning Into Death Traps? 11 Killed in Twin Bridge and Kitui Road Accidents is the central subject of the update.
 
 Eleven lives were extinguished within twenty-four hours in two separate road incidents, exposing a systemic failure in the country's transport infrastructure. As national fatality counts climb, the focus shifts from individual driver mistakes to the persistent negligence of safety design in high-risk zones.
 
