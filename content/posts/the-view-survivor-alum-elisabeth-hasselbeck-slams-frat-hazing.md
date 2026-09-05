@@ -7,12 +7,13 @@ author: "Mutheu Ann"
 image: "https://ew.com/thmb/BYM2n6OAwKO-DYd-OpJkdN0snFA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Elisabeth-Hasselbeck-The-View-022726-e2a271723402458d958fd2d3d3ddf715.jpg"
 category: "Entertainment"
 tags: ["Elisabeth Hasselbeck", "The View", "Survivor", "frat hazing", "college campuses", "celebrity news", "entertainment", "Joy Behar"]
+canonical: "https://zandani.co.ke/article/the-view-survivor-alum-elisabeth-hasselbeck-slams-frat-hazing"
 date: "2026-02-28"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "The View and Survivor Alum Elisabeth Hasselbeck Slams Frat H"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/the-view-survivor-alum-elisabeth-hasselbeck-slams-frat-hazing"
 ---
+
 The View and Survivor Alum Elisabeth Hasselbeck Slams Frat H is central to this update for Kenyan readers.
 
 ## Elisabeth Hasselbeck Slams Frat Hazing Elisabeth Hasselbeck, known for her time on "The View" and "Survivor," has passionately spoken out against college fraternity hazing, urging society to protect its youth from harmful practices. Her strong comments come as she prepares for a guest co-hosting stint on the popular talk show. The former "Survivor" contestant and conservative commentator recently took to her Instagram Story, sharing a report on alleged hazing incidents across U.S. college campuses. Hasselbeck questioned the societal acceptance of hazing, writing, "Y’all. Why are we okay with hazing as a society? Why are we torturing our youth? To belong? For friends?". She continued with a powerful plea, stating, "Stop the madness. Now. We are to raise leaders not terrorists". Her outspoken stance highlights a critical conversation on youth safety and the pressures of belonging.

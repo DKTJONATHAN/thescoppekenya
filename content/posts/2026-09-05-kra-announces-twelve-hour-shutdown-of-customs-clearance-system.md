@@ -1,18 +1,20 @@
 ---
 title: "KRA Announces Twelve Hour Shutdown of Customs Clearance System"
 slug: "kra-announces-twelve-hour-shutdown-of-customs-clearance-system"
-description: "The Kenya Revenue Authority has scheduled a twelve hour maintenance window for its iCMS platform on September 6, impacting cargo clearance operations."
+description: "KRA Announces Twelve Hour Shutdown of Customs Clearance System: The Kenya Revenue Authority has scheduled a twelve hour maintenance window for its iCMS"
+excerpt: "Customs Logjam by Design The Kenya Revenue Authority has ordered a complete operational blackout of the Integrated Customs Management System"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/5hzjj56M/12d0b05ae8c7.webp"
 category: "News"
 tags: ["kra", "customs", "kenya trade", "etims", "business news", "port of mombasa"]
+canonical: "https://zandani.co.ke/article/kra-announces-twelve-hour-shutdown-of-customs-clearance-system"
 date: "2026-09-05T18:10:41Z"
 dateModified: "2026-09-05T18:10:41Z"
+focusKeyword: "KRA Announces Twelve Hour Shutdown of Customs Clearance System"
 schema: "NewsArticle"
 ---
 
-## Customs Logjam by Design
+## Customs Logjam by Design KRA Announces Twelve Hour Shutdown of Customs Clearance System is the central subject of the update.
 
 The Kenya Revenue Authority has ordered a complete operational blackout of the Integrated Customs Management System for twelve hours this Sunday. While tax authorities frame this as routine maintenance, the move effectively freezes the nation's primary economic artery during a period of high volume.
 
