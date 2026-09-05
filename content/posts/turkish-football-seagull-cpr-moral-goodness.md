@@ -7,13 +7,12 @@ author: "Za Ndani"
 image: "https://i.guim.co.uk/img/media/5366cacfd2081e5a4af259318238b3f82610d32e/0_0_1000_525/1000.png?quality=85&s=966978166c0983aef68828559ede40d8"
 category: "Global News"
 tags: ["Turkish football", "seagull CPR", "moral goodness", "Gani Catan", "Istanbul Yurdum Spor", "football scandal", "sportsmanship"]
-canonical: "https://zandani.co.ke/article/turkish-football-seagull-cpr-moral-goodness"
 date: "2026-02-25"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Turkish Football Seagull CPR Restores Moral Goodness"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/turkish-football-seagull-cpr-moral-goodness"
 ---
-
 Turkish Football Seagull CPR Restores Moral Goodness is central to this update for Kenyan readers.
 
 ## Turkish Football: The Seagull CPR Miracle? Right, you won't believe this one, mate. In a truly remarkable turn of events in Turkish amateur football, Istanbul Yurdum Spor's captain, Gani Catan, became an unexpected hero when he performed CPR on a seagull. The low-flying bird was unfortunately struck by a clearance kick during a playoff match against Mevlanakapi Guzelhisar, collapsing onto the pitch. Catan's quick thinking saw him race over and administer rudimentary chest compressions, ultimately reviving the bird before it was taken off for medical attention.
