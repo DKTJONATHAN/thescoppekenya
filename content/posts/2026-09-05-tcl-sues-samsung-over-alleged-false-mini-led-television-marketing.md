@@ -1,18 +1,20 @@
 ---
 title: "TCL sues Samsung over alleged false Mini LED television marketing"
 slug: "tcl-sues-samsung-over-alleged-false-mini-led-television-marketing"
-description: "TCL has filed a lawsuit in a Los Angeles court accusing Samsung of misleading customers by branding standard LED televisions as premium Mini LED models."
+description: "TCL sues Samsung over alleged false Mini LED television marketing: TCL has filed a lawsuit in a Los Angeles court accusing Samsung of misleading customers by"
+excerpt: "The Premium Price Tag Mirage: Decoding the Tech Giant War for the Kenyan Living Room Samsung markets its high end television range as the pi"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/dsX0RyCx/35de8bc3d694.webp"
 category: "Gossip"
 tags: ["tcl", "samsung", "television", "tech news", "lawsuit", "consumer rights"]
+canonical: "https://zandani.co.ke/article/tcl-sues-samsung-over-alleged-false-mini-led-television-marketing"
 date: "2026-09-05T11:51:33Z"
 dateModified: "2026-09-05T11:51:33Z"
+focusKeyword: "TCL sues Samsung over alleged false Mini LED television marketing"
 schema: "NewsArticle"
 ---
 
-## The Premium Price Tag Mirage: Decoding the Tech Giant War for the Kenyan Living Room
+## The Premium Price Tag Mirage: Decoding the Tech Giant War for the Kenyan Living Room TCL sues Samsung over alleged false Mini LED television marketing is the central subject of the update.
 
 Samsung markets its high end television range as the pinnacle of display innovation, yet new court filings suggest those sleek panels might be built on a technical fallacy. While Nairobi showrooms push these devices as Mini LED royalty, the reality behind the glass is currently under heavy fire in a Los Angeles federal courtroom.
 
