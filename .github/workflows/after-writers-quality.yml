@@ -39,6 +39,14 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Quarantine spam / keyword-stuffed posts
+        id: quarantine
+        run: |
+          python scripts/quarantine_spam_posts.py | tee /tmp/quarantine.txt
+          echo "quarantine_log<<EOF" >> "$GITHUB_OUTPUT"
+          cat /tmp/quarantine.txt >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
       - name: Polish latest posts
         run: python scripts/polish_new_posts.py
 
@@ -47,15 +55,17 @@ jobs:
         continue-on-error: true
         run: python scripts/seo_lint_posts.py | tee /tmp/seo-lint.txt
 
-      - name: Commit polish fixes
+      - name: Commit polish + quarantine moves
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Za Ndani <bot@zandani.co.ke>"
-          commit_message: "seo: polish articles after writer run"
+          commit_message: "seo: quarantine spam + polish articles after writer run"
           branch: main
-          file_pattern: "content/posts/*.md"
+          file_pattern: |
+            content/posts/*.md
+            content/archive-spam/*.md
 
-      - name: Flag SEO failures
+      - name: Flag SEO / spam failures
         if: steps.lint.outcome == 'failure'
         uses: actions/github-script@v7
         with:
@@ -63,8 +73,12 @@ jobs:
             const fs = require('fs');
             let report = '';
             try { report = fs.readFileSync('/tmp/seo-lint.txt', 'utf8'); } catch (e) { report = 'lint failed with no report'; }
+            let qlog = '';
+            try { qlog = fs.readFileSync('/tmp/quarantine.txt', 'utf8'); } catch (e) {}
             const title = 'SEO audit: latest articles failed lint';
-            const body = 'Writer quality gate found problems.\n\n```\n' + report.slice(0, 6000) + '\n```';
+            const body = 'Writer quality gate found problems.\n\n### Quarantine\n```\n' +
+              (qlog || 'none').slice(0, 2000) +
+              '\n```\n\n### Lint\n```\n' + report.slice(0, 5000) + '\n```';
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
