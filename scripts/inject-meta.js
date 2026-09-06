@@ -19,6 +19,17 @@ if (!fs.existsSync(indexHtmlPath)) {
 
 const baseHtml = fs.readFileSync(indexHtmlPath, 'utf-8');
 
+function slugify(value) {
+  return String(value || '')
+    .toLowerCase()
+    .trim()
+    .replace(/[%]/g, ' ')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 function cleanMeta(html) {
   return html
     .replace(/<title>.*?<\/title>/ig, '')
@@ -105,15 +116,19 @@ const posts = postFiles.map(file => {
   return { title, image, slug, category, author, dateStr, tags, desc };
 });
 
+// Article pages: inject title/canonical/OG/schema into static HTML shells only.
+// Do NOT prerender full article body content.
 posts.forEach((p, i) => {
   if (i > 0 && i % 500 === 0) console.log(`inject-meta: wrote ${i}/${posts.length} article pages`);
-  const pTitle = p.title.replace(/"/g, '&quot;');
-  const pDesc = p.desc.replace(/"/g, '&quot;');
+  const pTitle = p.title.replace(/"/g, '"');
+  const pDesc = p.desc.replace(/"/g, '"');
   const pImage = p.image.startsWith('/') ? `${SITE_URL}${p.image}` : p.image;
   const date = new Date(p.dateStr);
   const isoDate = !isNaN(date.getTime())
     ? date.toISOString()
     : new Date().toISOString();
+  const catSlug = slugify(p.category) || 'news';
+  const authorSlug = slugify(p.author) || 'za-ndani';
 
   const newsArticleSchema = {
     "@context": "https://schema.org",
@@ -123,7 +138,7 @@ posts.forEach((p, i) => {
     "image": [pImage],
     "datePublished": isoDate,
     "dateModified": isoDate,
-    "author": { "@type": "Person", "name": p.author, "url": `${SITE_URL}/author/${p.author.toLowerCase().replace(/\s+/g, '-')}` },
+    "author": { "@type": "Person", "name": p.author, "url": `${SITE_URL}/author/${authorSlug}` },
     "publisher": {
       "@type": "Organization",
       "name": "Za Ndani",
@@ -138,7 +153,7 @@ posts.forEach((p, i) => {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL },
-      { "@type": "ListItem", "position": 2, "name": p.category, "item": `${SITE_URL}/category/${p.category.toLowerCase()}` },
+      { "@type": "ListItem", "position": 2, "name": p.category, "item": `${SITE_URL}/category/${catSlug}` },
       { "@type": "ListItem", "position": 3, "name": p.title, "item": `${SITE_URL}/article/${p.slug}` }
     ]
   };
@@ -166,7 +181,7 @@ posts.forEach((p, i) => {
 
 const uniqueCategories = Array.from(new Set(posts.map(p => p.category)));
 uniqueCategories.forEach(cat => {
-  const catSlug = cat.toLowerCase();
+  const catSlug = slugify(cat) || 'news';
   const catTitle = `${cat} News | Za Ndani`;
   const catDesc = `Latest ${cat} news, breaking stories, and updates from Kenya and around the world on Za Ndani.`;
   const catUrl = `${SITE_URL}/category/${catSlug}`;
@@ -209,13 +224,17 @@ uniqueCategories.forEach(cat => {
 
   const commonHubs = ['news', 'sports', 'entertainment', 'business', 'lifestyle', 'politics'];
   if (commonHubs.includes(catSlug)) {
-    writePage(catSlug, html.replace(new RegExp(catUrl, 'g'), `${SITE_URL}/${catSlug}`));
+    writePage(catSlug, html.replace(new RegExp(catUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), `${SITE_URL}/${catSlug}`));
   }
 });
 
 const specialHubs = [
   { slug: 'trending', title: 'Trending News | Za Ndani', desc: 'The most talked-about stories and viral news in Kenya right now.' },
   { slug: 'news', title: 'Kenya Breaking News | Za Ndani', desc: 'Get the latest breaking news and headlines from across Kenya.' },
+  { slug: 'about', title: 'About Za Ndani | Kenya News & Entertainment', desc: 'Learn about Za Ndani — Kenya\'s digital publisher for news, entertainment, politics and sports.' },
+  { slug: 'contact', title: 'Contact Za Ndani', desc: 'Get in touch with the Za Ndani newsroom and editorial team.' },
+  { slug: 'ethics', title: 'Editorial Ethics | Za Ndani', desc: 'Our editorial standards, ethics policy and commitment to accurate reporting.' },
+  { slug: 'corrections', title: 'Corrections Policy | Za Ndani', desc: 'How Za Ndani handles corrections and updates to published stories.' },
 ];
 
 specialHubs.forEach(hub => {
@@ -241,4 +260,4 @@ specialHubs.forEach(hub => {
   writePage(hub.slug, html);
 });
 
-console.log(`Successfully generated SEO meta tags for ${posts.length} articles and hubs!`);
+console.log(`Successfully generated SEO meta tags for ${posts.length} articles and hubs (meta shells only, no article body prerender)!`);
