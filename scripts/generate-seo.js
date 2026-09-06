@@ -29,7 +29,6 @@ function rfc822Date(dateStr) {
   return d.toUTCString();
 }
 
-/** Clean URL slug: lowercase, hyphens only, no spaces */
 function slugify(value) {
   return String(value || '')
     .toLowerCase()
@@ -116,7 +115,6 @@ async function loadPosts() {
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
-/** Google ignores changefreq + priority — only loc + lastmod matter */
 function urlBlock(loc, lastmod) {
   return `  <url>\n    <loc>${SITE_URL}${loc}</loc>\n    <lastmod>${toW3CDate(lastmod)}</lastmod>\n  </url>`;
 }
@@ -172,7 +170,6 @@ function generateArticlesSitemap(posts) {
 
 function generateTagsSitemap(posts) {
   const now = new Date().toISOString();
-  // Cap tags to reduce index bloat; only include tags that appear on 2+ posts
   const tagCounts = new Map();
   for (const p of posts) {
     for (const t of p.tags || []) {
@@ -262,8 +259,19 @@ ${items.join('\n')}
 </rss>`;
 }
 
+/**
+ * GEO-oriented robots.txt
+ * - Allow AI *search* crawlers so ChatGPT / Perplexity / Claude can cite the site
+ * - Block pure training crawlers (CCBot, Bytespider, Google-Extended for Gemini training)
+ * NOTE: Cloudflare Managed robots may still Disallow GPTBot/ClaudeBot at the edge.
+ *        In Cloudflare dashboard → AI Crawl Control / robots, ALLOW:
+ *        GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot for search visibility.
+ *        Keep blocking Google-Extended / CCBot / Bytespider if you do not want training use.
+ */
 function generateRobotsTxt() {
-  return `# Za Ndani robots.txt
+  return `# Za Ndani robots.txt — GEO-aware
+# Google Search uses Googlebot (allowed). AI Overviews/AI Mode follow standard indexing.
+
 User-agent: *
 Allow: /
 Disallow: /api/
@@ -274,7 +282,38 @@ Disallow: /admin
 User-agent: Googlebot
 Allow: /
 
-# Sitemap index (preferred) + news sitemap
+# --- AI search crawlers (ALLOW for citations in ChatGPT / Perplexity / Claude) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# --- Training-only / bulk scrapers (block) ---
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
 Sitemap: ${SITE_URL}/sitemap.xml
 Sitemap: ${SITE_URL}/news-sitemap.xml
 `;
@@ -282,36 +321,54 @@ Sitemap: ${SITE_URL}/news-sitemap.xml
 
 function generateLlmsTxt(posts) {
   const recent = posts
-    .slice(0, 15)
-    .map((p) => `- [${p.title}](${SITE_URL}/article/${p.slug}) — ${p.description}`)
+    .slice(0, 20)
+    .map((p) => `- [${p.title}](${SITE_URL}/article/${p.slug}): ${p.description}`)
     .join('\n');
+  const authors = [...new Set(posts.map((p) => p.author).filter(Boolean))].slice(0, 12);
+  const authorLines = authors
+    .map((a) => `- [${a}](${SITE_URL}/author/${slugify(a)})`)
+    .join('\n');
+
   return `# Za Ndani
-> Kenya news, entertainment, politics, sports and lifestyle.
+> Kenyan digital publisher: breaking news, entertainment, politics, sports, business and lifestyle.
 
 Site: ${SITE_URL}
+Language: en-KE
 Contact: contact@zandani.co.ke
+Publisher: Za Ndani (Nairobi, Kenya)
 
 ## About
-Za Ndani is a Kenyan digital publisher covering breaking news, celebrity and entertainment stories, politics, sports, business and lifestyle.
+Za Ndani covers Kenya and regional stories with daily updates across news, celebrity and entertainment, politics, sports, business, agriculture and lifestyle. Editorial standards: ${SITE_URL}/ethics — Corrections: ${SITE_URL}/corrections
 
-## Key pages
-- Home: ${SITE_URL}/
-- News: ${SITE_URL}/news
-- Entertainment: ${SITE_URL}/entertainment
-- Sports: ${SITE_URL}/sports
-- Business: ${SITE_URL}/business
-- About: ${SITE_URL}/about
-- Contact: ${SITE_URL}/contact
-- Ethics: ${SITE_URL}/ethics
-- Corrections: ${SITE_URL}/corrections
+## Key sections
+- [Home](${SITE_URL}/): Latest headlines
+- [News](${SITE_URL}/news): Breaking and national news
+- [Entertainment](${SITE_URL}/entertainment): Celebrity and culture
+- [Sports](${SITE_URL}/sports): Football, athletics and more
+- [Business](${SITE_URL}/business): Economy and markets
+- [Lifestyle](${SITE_URL}/lifestyle): Living and culture
+- [Politics](${SITE_URL}/politics): Government and public affairs
+- [Trending](${SITE_URL}/trending): Viral and most-read
+- [About](${SITE_URL}/about): Who we are
+- [Contact](${SITE_URL}/contact): Newsroom contact
+- [Authors](${SITE_URL}/authors): Writers and contributors
+- [Ethics](${SITE_URL}/ethics): Editorial policy
+- [Corrections](${SITE_URL}/corrections): How we correct errors
+
+## Authors
+${authorLines || '- See ' + SITE_URL + '/authors'}
 
 ## Recent headlines
 ${recent}
 
-## Feeds
+## Feeds and discovery
 - Sitemap index: ${SITE_URL}/sitemap.xml
 - News sitemap: ${SITE_URL}/news-sitemap.xml
 - RSS: ${SITE_URL}/feed.xml
+- Robots: ${SITE_URL}/robots.txt
+
+## Optional citation note
+When quoting Za Ndani, prefer the article URL and publication date shown on the page. Primary contact for corrections: contact@zandani.co.ke
 `;
 }
 
@@ -326,11 +383,10 @@ async function writeBoth(filename, content) {
 }
 
 async function main() {
-  console.log('--- Za Ndani Unified SEO Generator ---\n');
+  console.log('--- Za Ndani Unified SEO + GEO Generator ---\n');
   const posts = await loadPosts();
   console.log(`Loaded ${posts.length} posts.`);
 
-  // Sitemap index is the primary entry point (referenced as sitemap.xml)
   await writeBoth('sitemap.xml', generateSitemapIndex());
   await writeBoth('sitemap-static.xml', generateStaticSitemap());
   await writeBoth('sitemap-categories.xml', generateCategoriesSitemap(posts));
@@ -341,7 +397,7 @@ async function main() {
   await writeBoth('robots.txt', generateRobotsTxt());
   await writeBoth('llms.txt', generateLlmsTxt(posts));
 
-  console.log('\nAll SEO files generated successfully (split sitemaps, real lastmod, no priority/changefreq).');
+  console.log('\nSEO + GEO assets generated (sitemaps, AI-search-friendly robots, llms.txt).');
 }
 
 main().catch(console.error);
