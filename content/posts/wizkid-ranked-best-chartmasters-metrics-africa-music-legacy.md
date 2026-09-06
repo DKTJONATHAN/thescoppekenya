@@ -7,13 +7,12 @@ author: "Amara Ndlovu"
 image: "https://i.ibb.co/XfQYh4xf/47336784eb1c.png"
 category: "Entertainment"
 tags: ["Wizkid", "ChartMasters", "best-selling African artist", "Afrobeats", "music industry", "streaming", "legacy", "Prince Nico Mbarga"]
-canonical: "https://zandani.co.ke/article/wizkid-ranked-best-chartmasters-metrics-africa-music-legacy"
 date: "2026-03-02"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Wizkid Ranked Best Unpacking ChartMasters Metrics and Africa"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/wizkid-ranked-best-chartmasters-metrics-africa-music-legacy"
 ---
-
 Wizkid Ranked Best Unpacking ChartMasters Metrics and Africa is central to this update for Kenyan readers.
 
 ## Wizkid Ranked Best: A Digital Crown or a Historical Blind Spot? Wizkid has recently been ranked the highest-selling African artist on ChartMasters’ global all-time best-selling artists list, with a reported 13.18 million equivalent album sales worldwide. This places him at No. 545 out of 641 artists globally, making him the top African act, closely followed by Burna Boy at No. 548. ChartMasters calculates these figures using its CSPC (Comprehensive Sales Plus Consumption) methodology, which aggregates commercial performance across physical sales, digital downloads, and various streaming equivalents. While the headlines scream "Wizkid Ranked Best," it is imperative we pause and critically examine what these modern metrics truly represent. In an era obsessed with real-time data and digital footprints, the definition of "best-selling" often overlooks the colossal commercial impact of African music legends whose careers predate the streaming revolution. This isn't to diminish Wizkid's undeniable success; his recent collaboration with Asake, ‘Jogodo,’ has dominated the Spotify Nigeria Daily Top Songs chart for 46 days and was February 2026's most-streamed Nigerian song. Their joint EP, ‘REAL,’ has also surpassed 80 million streams on Spotify, and Wizkid himself became the first African artist to exceed 10 billion streams on Spotify in January 2026. He was even featured on Billboard’s list of the 100 greatest pop songs of the streaming era. These are monumental achievements for any artist, let alone one from our continent.
