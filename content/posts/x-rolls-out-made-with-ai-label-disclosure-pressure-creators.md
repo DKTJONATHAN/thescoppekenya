@@ -7,13 +7,12 @@ author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/d0wKRdjZ/67e56d70c354.jpg"
 category: "Technology"
 tags: ["X", "AI", "Made with AI Label", "content disclosure", "creators", "tech policy", "digital ethics"]
-canonical: "https://zandani.co.ke/article/x-rolls-out-made-with-ai-label-disclosure-pressure-creators"
 date: "2026-03-02"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "X Rolls Out Made with AI Label Puts Disclosure Pressure on C"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/x-rolls-out-made-with-ai-label-disclosure-pressure-creators"
 ---
-
 X Rolls Out Made with AI Label Puts Disclosure Pressure on C is central to this update for Kenyan readers.
 
 ## X Rolls Out "Made with AI" Label, Shifting Disclosure Pressure to Creators X, formerly Twitter, has introduced a "Made with AI" label for posts, compelling content creators to disclose their use of artificial intelligence in generating or manipulating content. This new feature, initially a user-activated toggle, aims to enhance transparency as synthetically generated media becomes increasingly prevalent online.
