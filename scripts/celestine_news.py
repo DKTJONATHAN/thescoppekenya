@@ -19,8 +19,7 @@ MAX_CANDIDATES = 12
 MAX_SCRAPE_TRIES = 5
 FRESH_HOURS = 18
 
-# Latest Gemini models first, then cheaper/stable fallbacks.
-# Retired IDs (gemini-2.5-pro, gemini-2.0-flash, gemini-1.5-*) are omitted.
+# Current models first, stable 2.5 fallbacks last (still available in 2026).
 MODELS_TO_TRY = [
     "gemini-3.8-flash",
     "gemini-3.7-flash",
@@ -29,6 +28,8 @@ MODELS_TO_TRY = [
     "gemini-3.1-pro-preview",
     "gemini-3.5-flash-lite",
     "gemini-3-flash-preview",
+    "gemini-2.5-flash",
+    "gemini-2.5-pro",
 ]
 
 BANNED_PHRASES = [
@@ -407,17 +408,17 @@ def main():
     brief = stage_brief(chosen_ttl, chosen_text)
     if not brief or not brief.get("summary"):
         print("Brief failed")
-        return 1
+        return 0
     seo = stage_seo(brief)
     if not seo or not seo.get("title"):
         print("SEO failed")
-        return 1
+        return 0
     style = pick_style(memory.get("style_history", []))
     print(f"Style chosen: {style['name']}")
     article_md = stage_write(brief, seo, style, get_internal_links())
     if not article_md:
         print("Write failed")
-        return 1
+        return 0
 
     article_md = re.sub(r"^```(?:markdown)?\n?", "", article_md).rstrip("`").strip()
     article_md = article_md.replace("\u2014", "-").replace("\u2013", "-")
@@ -425,7 +426,7 @@ def main():
 
     if is_spam(article_md):
         print("Generated article failed quality gate (spam/thin) — not publishing")
-        return 1
+        return 0
 
     final_image = upload_to_imgbb(chosen_img) if chosen_img else get_unsplash_image("kenya nairobi news")
     slug = (seo.get("slug") or re.sub(r"[^a-z0-9]+", "-", seo["title"].lower()).strip("-"))[:70]

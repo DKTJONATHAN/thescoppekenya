@@ -16,17 +16,18 @@ NEW_LIST = [
     "gemini-3.1-pro-preview",
     "gemini-3.5-flash-lite",
     "gemini-3-flash-preview",
+    "gemini-2.5-flash",
+    "gemini-2.5-pro",
 ]
-NEW_INLINE = "[" + ", ".join(f'"{m}"' for m in NEW_LIST) + "]"
-NEW_SINGLE = "gemini-3.8-flash"
+NEW_INLINE = "[" + ", ".join(f'\"{m}\"' for m in NEW_LIST) + "]"
 
 REPLACEMENTS = [
     ("gemini-1.5-pro", "gemini-3.1-pro-preview"),
     ("gemini-1.5-flash", "gemini-3.5-flash-lite"),
     ("gemini-2.0-flash-lite", "gemini-3.5-flash-lite"),
     ("gemini-2.0-flash", "gemini-3.6-flash"),
-    ("gemini-2.5-pro", "gemini-3.1-pro-preview"),
-    ("gemini-2.5-flash", "gemini-3.8-flash"),
+    ("gemini-2.5-pro", "gemini-2.5-pro"),
+    ("gemini-2.5-flash", "gemini-2.5-flash"),
     ("gemini-3-pro-preview", "gemini-3.1-pro-preview"),
     ("gemini-3.1-flash-lite-preview", "gemini-3.5-flash-lite"),
     ("google/gemini-3-flash-preview", "google/gemini-3.8-flash"),
@@ -62,7 +63,8 @@ def rewrite(text: str) -> str:
     original = text
     text = LIST_RE.sub(lambda m: m.group(1) + NEW_INLINE, text)
     for old, new in REPLACEMENTS:
-        text = text.replace(old, new)
+        if old != new:
+            text = text.replace(old, new)
     return text if text != original else original
 
 
