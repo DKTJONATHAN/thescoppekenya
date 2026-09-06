@@ -1,18 +1,20 @@
 ---
 title: "Esther Passaris Advocates For Adoption At WaJesus Business Launch"
 slug: "esther-passaris-advocates-for-adoption-at-wajesus-business-launch"
-description: "Esther Passaris encouraged Kabi and Milly WaJesus to consider adoption during the opening of a baby shop on Biashara Street in Nairobi."
+description: "esther passaris advocates for adoption wajesus: Esther Passaris encouraged Kabi and Milly WaJesus to consider adoption during the opening of a baby shop on"
+excerpt: "Beyond the Influence: Adoption as Policy and Practice Esther Passaris took the stage at the ESMANDA Baby Shop opening to pivot away from the"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/Tqh79KV4/1cf04bd742ee.webp"
 category: "Gossip"
 tags: ["esther passaris", "wajesus family", "kenyan news", "adoption", "nairobi business", "celebrity news"]
+canonical: "https://zandani.co.ke/article/esther-passaris-advocates-for-adoption-at-wajesus-business-launch"
 date: "2026-09-06T22:30:40Z"
 dateModified: "2026-09-06T22:30:40Z"
 focusKeyword: "esther passaris advocates for adoption wajesus"
 schema: "NewsArticle"
 ---
-## Beyond the Influence: Adoption as Policy and Practice
+
+## Beyond the Influence: Adoption as Policy and Practice esther passaris advocates for adoption wajesus is the central subject of the update.
 
 Esther Passaris took the stage at the ESMANDA Baby Shop opening to pivot away from the typical influencer family planning narrative. By championing adoption, she highlighted the jarring disconnect between the glamorous aesthetic of parenting and the grueling reality of Kenyan bureaucratic procedures.
 
