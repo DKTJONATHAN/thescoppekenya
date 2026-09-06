@@ -2,6 +2,9 @@ name: Harden all writer workflows
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - scripts/harden_all_writers.py
 
 permissions:
   contents: write
@@ -19,13 +22,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Harden embedded AI pipelines
+      - name: Retune embedded AI pipelines
         run: python scripts/harden_all_writers.py | tee /tmp/harden.txt
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Za Ndani <bot@zandani.co.ke>"
-          commit_message: "fix(writers): hard-fail spam, stronger prompts, expanded bans"
+          commit_message: "fix(writers): short reporting tone, minimal commentary"
           branch: main
           file_pattern: ".github/workflows/*.yml"
 
@@ -33,7 +36,7 @@ jobs:
         if: always()
         run: |
           {
-            echo "## Writer harden"
+            echo "## Writer voice retune"
             echo '```'
             cat /tmp/harden.txt || true
             echo '```'
