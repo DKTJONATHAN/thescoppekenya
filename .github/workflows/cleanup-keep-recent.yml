@@ -1,0 +1,43 @@
+name: Cleanup keep last 24h posts
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Keep/fix last 24h, delete older posts
+        run: python scripts/cleanup_keep_recent.py | tee /tmp/cleanup.txt
+
+      - name: Commit result
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Za Ndani <bot@zandani.co.ke>"
+          commit_message: "content: keep last-24h posts only; delete older articles"
+          branch: main
+          file_pattern: |
+            content/posts/*.md
+            content/posts/**
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Cleanup keep last 24h"
+            echo '```'
+            cat /tmp/cleanup.txt || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
