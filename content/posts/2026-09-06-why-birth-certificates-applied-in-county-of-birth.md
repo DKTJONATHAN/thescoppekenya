@@ -1,18 +1,20 @@
 ---
 title: "Why Birth Certificates Must Be Applied in County of Birth"
 slug: "why-birth-certificates-applied-in-county-of-birth"
-description: "Huduma Kenya explains why birth certificate applications must be processed in the child's county of birth, detailing the local records system and fees."
+description: "why birth certificates must applied county: Huduma Kenya explains why birth certificate applications must be processed in the child's county of birth,"
+excerpt: "Why Birth Certificates Must Be Applied in County of Birth Huduma Kenya clarified on Sunday that parents across Kenya must submit birth certi"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/CKKb5t1v/7fa9b227e3fa.webp"
 category: "News"
 tags: ["Huduma Kenya", "Birth Certificate", "Civil Registration", "County of Birth", "Public Services"]
+canonical: "https://zandani.co.ke/article/why-birth-certificates-applied-in-county-of-birth"
 date: "2026-09-06T19:33:56Z"
 dateModified: "2026-09-06T19:33:56Z"
 focusKeyword: "why birth certificates must applied county"
 schema: "NewsArticle"
 ---
-## Why Birth Certificates Must Be Applied in County of Birth Huduma Kenya clarified on Sunday that parents across Kenya must submit birth certificate applications in the specific county where a child was delivered because vital statistics records remain domiciled within local civil registration registries.
+
+## Why Birth Certificates Must Be Applied in County of Birth Huduma Kenya clarified on Sunday that parents across Kenya must submit birth certificate applications in the specific county where a child was delivered because vital statistics records remain domiciled within local civil registration registries. why birth certificates must applied county is the central subject of the update.
 
 The agency stated that even when families relocate to different towns or administrative regions, cross-referencing and verification must occur against physical entry books retained in the original station of birth.
 
