@@ -7,13 +7,12 @@ author: "Za Ndani"
 image: "https://cdn.radioafrica.digital/image/2026/02/c3772837-d057-40b8-96ed-275431420c43.jpg?1771937101602"
 category: "Entertainment"
 tags: ["toxic lyrikali", "real name", "age", "Kayole", "stardom", "kenyan music", "hip hop", "celebrity news"]
-canonical: "https://zandani.co.ke/article/toxic-lyrikali-real-name-age-kayole-to-stardom"
 date: "2026-02-24"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Toxic Lyrikali Real Name Age and His Journey from Kayole to"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/toxic-lyrikali-real-name-age-kayole-to-stardom"
 ---
-
 Toxic Lyrikali Real Name Age and His Journey from Kayole to is central to this update for Kenyan readers.
 
 ## Toxic Lyrikali: Unmasking the Man Behind the Music!`nDirect answer: Toxic Lyrikali's real name is Timothy Omondi, and he was born on November 23, 1995.`n Right, prepare yourselves, darlings, because we're diving headfirst into the sensational world of Toxic Lyrikali! For those of you who've been living under a rock (bless your hearts!), he's the Kenyan rapper who's absolutely set the music scene ablaze, capturing hearts and headlines with his raw talent and undeniable charm. After scooping up the coveted Male Artist of the Year award at the 2025 UnKut Awards, his streaming figures have shot up by over 1,400% - astonishing, isn't it? But who *is* this elusive artist? Let's peel back the layers, shall we?
