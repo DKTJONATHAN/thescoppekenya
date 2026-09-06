@@ -1,18 +1,20 @@
 ---
 title: "Karen Nyamu shares personal connection after meeting Sinach"
 slug: "karen-nyamu-meets-sinach-at-rhema-feast"
-description: "Nominated Senator Karen Nyamu met gospel singer Sinach during the five day Rhema Feast held at Uhuru Park in Nairobi this week."
+description: "Karen Nyamu shares personal connection after meeting Sinach: Nominated Senator Karen Nyamu met gospel singer Sinach during the five day Rhema Feast held at"
+excerpt: "When the Political Mask Drops at Uhuru Park Senator Karen Nyamu stepped away from her usual headline grabbing theatrics this week, trading s"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/wNJyv90K/1cef44fbdf5e.webp"
 category: "Gossip"
 tags: ["karen nyamu", "sinach", "rhema feast", "kenya politics", "nairobi news", "gospel music"]
+canonical: "https://zandani.co.ke/article/karen-nyamu-meets-sinach-at-rhema-feast"
 date: "2026-09-06T19:51:49Z"
 dateModified: "2026-09-06T19:51:49Z"
+focusKeyword: "Karen Nyamu shares personal connection after meeting Sinach"
 schema: "NewsArticle"
 ---
 
-## When the Political Mask Drops at Uhuru Park
+## When the Political Mask Drops at Uhuru Park Karen Nyamu shares personal connection after meeting Sinach is the central subject of the update.
 
 Senator Karen Nyamu stepped away from her usual headline-grabbing theatrics this week, trading sharp political rebuttals for a quieter, more personal encounter with Nigerian gospel icon Sinach. The Rhema Feast 2026 proved that the most powerful currency in Kenyan corridors of power is no longer just policy, but the public performance of spiritual vulnerability.
 
