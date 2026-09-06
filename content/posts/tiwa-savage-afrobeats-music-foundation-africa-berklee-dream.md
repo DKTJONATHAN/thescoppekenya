@@ -7,13 +7,12 @@ author: "Okwonko Ben"
 image: "https://cms.forbesafrica.com/wp-content/uploads/2026/02/Tiwa-Savage-image-by-Deven-Sukhdeo-scaled.png"
 category: "Entertainment"
 tags: ["Tiwa Savage", "Afrobeats", "Music Foundation", "Africa", "Berklee", "music school", "Nigerian music", "music industry"]
-canonical: "https://zandani.co.ke/article/tiwa-savage-afrobeats-music-foundation-africa-berklee-dream"
 date: "2026-02-26"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Tiwa Savages Afrobeats Music Foundation in Africa Unpacking"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/tiwa-savage-afrobeats-music-foundation-africa-berklee-dream"
 ---
-
 Tiwa Savages Afrobeats Music Foundation in Africa Unpacking is central to this update for Kenyan readers.
 
 ## Tiwa Savage's Afrobeats Music Foundation: Behind the Headlines Nigerian superstar Tiwa Savage has officially launched her eponymous music foundation, an exciting initiative in partnership with her alma mater, the prestigious Berklee College of Music, based in Boston. This collaboration is set to bring a flagship intensive music program to Lagos, Nigeria, in late April. The foundation aims to discover and nurture the next generation of African music creatives, promising world-class training and mentorship for selected participants, all without any tuition fees.

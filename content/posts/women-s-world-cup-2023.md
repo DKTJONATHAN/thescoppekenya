@@ -7,13 +7,12 @@ author: "Martin Mutwiri"
 image: "https://cdn.pulsesports.co.ke/ee5e4bef-908a-48a4-967c-26ea1f38084e/theme/pske/assets/landscape-logo-D47piXCY.png"
 category: "Sports"
 tags: ["Women's World Cup", "2023", "football", "soccer", "Spain", "England", "champions", "global sport"]
-canonical: "https://zandani.co.ke/article/women-s-world-cup-2023"
 date: "2026-02-24"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Womens World Cup 2023 Spains Historic Triumph and the Global"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/women-s-world-cup-2023"
 ---
-
 Womens World Cup 2023 Spains Historic Triumph and the Global is central to this update for Kenyan readers.
 
 ## The Women's World Cup 2023: A Milestone Tournament The 2023 FIFA Women's World Cup, jointly hosted by Australia and New Zealand, was a groundbreaking football spectacle that saw Spain clinch their first-ever title, defeating England 1-0 in a fiercely contested final. The tournament, which ran from July 20 to August 20, 2023, broke numerous records for attendance and viewership, solidifying women's football's escalating global appeal.
