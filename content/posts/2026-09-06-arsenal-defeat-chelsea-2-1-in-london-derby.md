@@ -1,18 +1,20 @@
 ---
 title: "Arsenal Come From Behind To Defeat Chelsea In London Derby"
 slug: "arsenal-defeat-chelsea-2-1-in-london-derby"
-description: "Arsenal maintained their perfect Premier League start with a 2-1 victory over Chelsea at the Emirates Stadium following goals from Havertz and Odegaard."
+description: "Arsenal Come From Behind To Defeat Chelsea In London Derby: Arsenal maintained their perfect Premier League start with a 2-1 victory over Chelsea at the"
+excerpt: "Evaluating Strategic Output in the London Derby Arsenal defeated Chelsea 2 1 at the Emirates Stadium, securing a victory that maintained the"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/xS525ttJ/a6f3e8d4b0b8.png"
 category: "Sports"
 tags: ["arsenal", "chelsea", "premier league", "football", "london derby", "kenyan football news"]
+canonical: "https://zandani.co.ke/article/arsenal-defeat-chelsea-2-1-in-london-derby"
 date: "2026-09-06T17:59:50Z"
 dateModified: "2026-09-06T17:59:50Z"
+focusKeyword: "Arsenal Come From Behind To Defeat Chelsea In London Derby"
 schema: "NewsArticle"
 ---
 
-## Evaluating Strategic Output in the London Derby
+## Evaluating Strategic Output in the London Derby Arsenal Come From Behind To Defeat Chelsea In London Derby is the central subject of the update.
 
 Arsenal defeated Chelsea 2-1 at the Emirates Stadium, securing a victory that maintained their perfect record through the first three matches of the Premier League season. The match serves as a performance metric for Mikel Arteta’s squad management compared to Chelsea’s recent recruitment strategy.
 
