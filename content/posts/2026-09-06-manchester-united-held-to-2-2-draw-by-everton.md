@@ -14,7 +14,7 @@ focusKeyword: "Manchester United held to 2-2 draw by Everton in Premier League"
 schema: "NewsArticle"
 ---
 
-Manchester United’s 2-2 draw with Everton at the Hill Dickinson stadium underscored an uncomfortable reality for manager Michael Carrick. Manchester United held to 2-2 draw by Everton in Premier League is the central subject of the update.
+Manchester United’s 2-2 draw with Everton at the Hill Dickinson stadium underscored an uncomfortable reality for manager Michael Carrick. Manchester United held to 2-2 draw by Everton in Premier League is the central subject of the update. Manchester United held to 2-2 draw by Everton in Premier League is the central subject of the update.
 
 Despite holding the advantage on two separate occasions, the visitors repeatedly surrendered their grip on the match, exposing defensive vulnerabilities that have plagued the team since the opening weekend.
 

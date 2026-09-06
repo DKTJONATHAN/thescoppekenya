@@ -1,18 +1,20 @@
 ---
 title: "Huduma Kenya Explains Birth Certificate County Rule"
 slug: "huduma-kenya-birth-certificate-county-of-birth-rule"
-description: "Huduma Kenya clarifies why parents must process birth certificates in the child's birth county, as primary records remain domiciled locally."
+description: "Huduma Kenya Explains Birth Certificate County Rule: Huduma Kenya clarifies why parents must process birth certificates in the child's birth county, as primary"
+excerpt: "Why Kenyan Parents Must Apply for Birth Certificates in the County of Birth Huduma Kenya has clarified that parents seeking birth certificat"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/tPLnfFx1/82a862bffd4f.webp"
 category: "News"
 tags: ["Huduma Kenya", "Birth Certificate", "Civil Registration", "Kenya Governance", "Public Services"]
+canonical: "https://zandani.co.ke/article/huduma-kenya-birth-certificate-county-of-birth-rule"
 date: "2026-09-06T21:17:00Z"
 dateModified: "2026-09-06T21:17:00Z"
+focusKeyword: "Huduma Kenya Explains Birth Certificate County Rule"
 schema: "NewsArticle"
 ---
 
-## Why Kenyan Parents Must Apply for Birth Certificates in the County of Birth
+## Why Kenyan Parents Must Apply for Birth Certificates in the County of Birth Huduma Kenya Explains Birth Certificate County Rule is the central subject of the update.
 
 Huduma Kenya has clarified that parents seeking birth certificates for their children must submit their applications within the county where delivery occurred, explaining that primary birth records remain domiciled in decentralized civil registries. The agency issued the advisory on Monday following persistent inquiries from citizens who moved across county lines and attempted to file paperwork in their current areas of residence.
 
