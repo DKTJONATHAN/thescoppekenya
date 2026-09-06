@@ -7,13 +7,14 @@ author: "Jonathan Mwaniki"
 image: "https://i.ibb.co/svfjvMN8/740c67f94df0.webp"
 category: "Opinions"
 tags: ["soda ash", "manufacturing", "william ruto", "kenya economy", "trade policy", "industrialization"]
+canonical: "https://zandani.co.ke/article/kenya-pushes-for-local-manufacturing-and-value-addition"
 date: "2026-09-06T19:35:17Z"
 dateModified: "2026-09-06T19:35:17Z"
 focusKeyword: "Kenya Moves to End Raw Soda Ash Exports for Industrial Processing"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/kenya-pushes-for-local-manufacturing-and-value-addition"
 ---
-When Nairobi and New Delhi formalized their bilateral trade agreement in 1981, the ink seemed to promise a new era of diplomatic and economic cooperation.
+
+When Nairobi and New Delhi formalized their bilateral trade agreement in 1981, the ink seemed to promise a new era of diplomatic and economic cooperation. Kenya Moves to End Raw Soda Ash Exports for Industrial Processing is the central subject of the update.
 
 Four decades later, that document is viewed with a more critical eye.
 
