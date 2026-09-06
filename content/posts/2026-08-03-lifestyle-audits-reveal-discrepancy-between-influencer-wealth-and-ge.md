@@ -4,16 +4,17 @@ slug: "lifestyle-audits-reveal-discrepancy-between-influencer-wealth-and-ge"
 description: "Lifestyle Audits Reveal Discrepancy Between Influencer Wealth and: Kenyan citizens are demanding lifestyle audits for influencers after 2026 protests"
 excerpt: "Following the widespread civil unrest sparked by the 2026 Anti Finance Bill protests in Kenya, citizens are increasingly scrutinizing the su"
 author: "Zed Mogaka"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["kenyan-influencers", "social-media-economy", "influencer-lifestyle-audits", "digital-content-monetization", "influencer-culture-kenya"]
+canonical: "https://zandani.co.ke/article/lifestyle-audits-reveal-discrepancy-between-influencer-wealth-and-ge"
 date: "2026-08-03T15:14:44Z"
 dateModified: "2026-08-03T15:14:44Z"
 focusKeyword: "Lifestyle Audits Reveal Discrepancy Between Influencer Wealth and"
 schema: "NewsArticle"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
-canonical: "https://zandani.co.ke/article/lifestyle-audits-reveal-discrepancy-between-influencer-wealth-and-ge"
 ---
+
 Following the widespread civil unrest sparked by the 2026 Anti-Finance Bill protests in Kenya, citizens are increasingly scrutinizing the sudden, unexplained fortunes of prominent young public figures.
 
 This national shift has triggered a wave of investigations into the disconnect between documented earnings and extravagant lifestyles.

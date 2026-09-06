@@ -1,17 +1,20 @@
 ---
 title: "Samsung Galaxy S26 Hits Ireland: What’s the Craic with All That"
 slug: "samsung-galaxy-s26-ireland-ai-details"
-description: "Right, Samsung's new S26 series is here, promising AI for days. But what's the real story for us in Ireland? Coverage from Nairobi and across Kenya."
+description: "Samsung Galaxy S26 Hits Ireland Whats the Craic with All Th: Right, Samsung's new S26 series is here, promising AI for days. But what's the real story for us"
 excerpt: "Right, Samsung's new S26 series is here, promising AI for days. But what's the real story for us in Ireland?"
+author: "Za Ndani"
 image: "https://images.unsplash.com/photo-1724323172791-f02955b6fb3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NjY1ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIxMzU0ODd8&ixlib=rb-4.1.0&q=80&w=1080"
 category: "Global News"
 tags: ["Samsung", "Galaxy S26", "Ireland", "AI Phone", "Smartphone", "Tech", "Mobile", "Gadgets"]
+canonical: "https://zandani.co.ke/article/samsung-galaxy-s26-ireland-ai-details"
 date: "2026-02-26"
 dateModified: "2026-02-26"
 focusKeyword: "Samsung Galaxy S26 Hits Ireland Whats the Craic with All Th"
 schema: "NewsArticle"
 ---
-## Samsung Galaxy S26: The AI Revolution Lands on Irish Shores Right, so Samsung’s gone and dropped their latest flagship, the Galaxy S26 series, and it's all about artificial intelligence, isn't it?
+
+## Samsung Galaxy S26: The AI Revolution Lands on Irish Shores Right, so Samsung’s gone and dropped their latest flagship, the Galaxy S26 series, and it's all about artificial intelligence, isn't it? Samsung Galaxy S26 Hits Ireland Whats the Craic with All Th is the central subject of the update.
 
 This new line-up - the S26, S26+, and the top-tier S26 Ultra - is touted to make your daily phone tasks a doddle, handling complex bits in the background so you can just get on with things.
 

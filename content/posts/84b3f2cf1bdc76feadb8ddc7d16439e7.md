@@ -1,16 +1,20 @@
 ---
 title: "KALRO launches digital soil fertility mapping in Murang’a ahead"
 slug: "agri-news-84b3f2cf"
-description: "KALRO launches digital soil fertility mapping in Murang’a ahead. Latest reporting from Kenya on Za Ndani Coverage from Nairobi and across Kenya."
+description: "KALRO launches digital soil fertility mapping in Muranga ah: KALRO launches digital soil fertility mapping in Murang’a ahead. Latest reporting from Kenya on Za"
+excerpt: "Murang’a County, KALRO Initiate Digital Soil Fertility Mapping Training for Countywide Rollout By Timothy Muli Nairobi, Kenya The Kenya Agri"
 author: "Timothy Muli"
 image: "https://i.ibb.co/1YpjqrLf/fef4ede5de43.png"
 category: "Agriculture"
+tags: ["agri news 84b3f2cf", "agriculture", "kenya news"]
+canonical: "https://zandani.co.ke/article/agri-news-84b3f2cf"
 date: "2026-03-01"
 dateModified: "2026-03-01"
 focusKeyword: "KALRO launches digital soil fertility mapping in Muranga ah"
 schema: "NewsArticle"
 ---
-**Murang’a County, KALRO Initiate Digital Soil Fertility Mapping Training for Countywide Rollout** **By Timothy Muli** **Nairobi, Kenya** The Kenya Agricultural and Livestock Research Organization (KALRO), in close partnership with the Murang’a County Government, has officially launched a comprehensive training programme designed to equip local agricultural extension officers, IT specialists, and agripreneurs.
+
+**Murang’a County, KALRO Initiate Digital Soil Fertility Mapping Training for Countywide Rollout** **By Timothy Muli** **Nairobi, Kenya** The Kenya Agricultural and Livestock Research Organization (KALRO), in close partnership with the Murang’a County Government, has officially launched a comprehensive training programme designed to equip local agricultural extension officers, IT specialists, and agripreneurs. KALRO launches digital soil fertility mapping in Muranga ah is the central subject of the update.
 
 This critical preparatory phase precedes a countywide Digital Soil Fertility Mapping Exercise, which commenced on February 23, 2026.
 

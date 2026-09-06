@@ -1,18 +1,20 @@
 ---
 title: "Olive Nwosu’s “Lady” is a Film That Deserves to be Seen - But"
 slug: "olive-nwosus-lady-film-that-deserves-to-be-seen-africa"
-description: "Olive Nwosu’s “Lady” is a Film That Deserves to be Seen, garnering Sundance 2026 acclaim. Amara Ndlovu questions if its critical success will translate to."
+description: "Olive Nwosus Lady is a Film That Deserves to be Seen - B: Olive Nwosu’s “Lady” is a Film That Deserves to be Seen, garnering Sundance 2026 acclaim. Amara"
 excerpt: "Olive Nwosu’s “Lady” is a Film That Deserves to be Seen, garnering Sundance 2026 acclaim. Amara Ndlovu questions if its critical success will translate to a Pan-African audience."
 author: "Amara Ndlovu"
 image: "https://i.ibb.co/vx3H2VRW/809beaebb562.png"
 category: "Entertainment"
 tags: ["Olive Nwosu", "Lady film", "Nigerian cinema", "Sundance 2026", "Pan-Africa entertainment", "film review", "Amara Ndlovu", "African film industry"]
+canonical: "https://zandani.co.ke/article/olive-nwosus-lady-film-that-deserves-to-be-seen-africa"
 date: "2026-03-03"
 dateModified: "2026-03-03"
 focusKeyword: "Olive Nwosus Lady is a Film That Deserves to be Seen - B"
 schema: "NewsArticle"
 ---
-<h2>Olive Nwosu’s “Lady” and the Global Gaze on African Cinema</h2> Olive Nwosu’s “Lady” is a British Nigerian feature debut that premiered at the 2026 Sundance Film Festival, where it earned the World Cinema Dramatic Special Jury Award for Acting Ensemble.
+
+<h2>Olive Nwosu’s “Lady” and the Global Gaze on African Cinema</h2> Olive Nwosu’s “Lady” is a British Nigerian feature debut that premiered at the 2026 Sundance Film Festival, where it earned the World Cinema Dramatic Special Jury Award for Acting Ensemble. Olive Nwosus Lady is a Film That Deserves to be Seen - B is the central subject of the update.
 
 The film, set and shot in Lagos, explores themes of gender politics, government corruption, and economic survival through the story of its eponymous protagonist, a female cab driver.
 

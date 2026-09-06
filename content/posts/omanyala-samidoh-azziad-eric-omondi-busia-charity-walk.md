@@ -1,18 +1,20 @@
 ---
 title: "Omanyala, Samidoh, Azziad Flag Off Eric Omondi’s 466km Busia"
 slug: "omanyala-samidoh-azziad-eric-omondi-busia-charity-walk"
-description: "Omanyala, Samidoh, and Azziad joined Eric Omondi for his 466km Busia Charity Walk, sparking debate: is this a genuine humanitarian effort or another."
+description: "Omanyala Samidoh Azziad Flag Off Eric Omondis 466km Busia C: Omanyala, Samidoh, and Azziad joined Eric Omondi for his 466km Busia Charity Walk, sparking"
 excerpt: "Omanyala, Samidoh, and Azziad joined Eric Omondi for his 466km Busia Charity Walk, sparking debate: is this a genuine humanitarian effort or another calculated celebrity spectacle?"
 author: "Za Ndani"
 image: "https://i.ibb.co/x8dRXZzj/439ff3ff35bb.jpg"
 category: "Entertainment"
-tags: ["kenyan celebrities", "eric omondi", "omanyala", "samidoh", "azziad nasenya", "charity walk", "busia", "sisi kwa sisi", "entertainment news"]
+tags: ["kenyan celebrities", "eric omondi", "omanyala", "samidoh", "azziad nasenya", "charity walk", "busia", "sisi kwa sisi"]
+canonical: "https://zandani.co.ke/article/omanyala-samidoh-azziad-eric-omondi-busia-charity-walk"
 date: "2026-03-03"
 dateModified: "2026-03-03"
 focusKeyword: "Omanyala Samidoh Azziad Flag Off Eric Omondis 466km Busia C"
 schema: "NewsArticle"
 ---
-## Omanyala, Samidoh, Azziad, and Eric Omondi’s Busia Charity Walk: The Usual Suspects Nairobi witnessed its usual Monday morning gridlock compounded by a celebrity spectacle as Ferdinand Omanyala, Samidoh, and Azziad Nasenya flagged off Eric Omondi’s 466km Busia Charity Walk.
+
+## Omanyala, Samidoh, Azziad, and Eric Omondi’s Busia Charity Walk: The Usual Suspects Nairobi witnessed its usual Monday morning gridlock compounded by a celebrity spectacle as Ferdinand Omanyala, Samidoh, and Azziad Nasenya flagged off Eric Omondi’s 466km Busia Charity Walk. Omanyala Samidoh Azziad Flag Off Eric Omondis 466km Busia C is the central subject of the update.
 
 The walk aims to raise funds for the Sisi Kwa Sisi Help and Rescue Centre.
 

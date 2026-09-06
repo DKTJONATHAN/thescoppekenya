@@ -1,18 +1,20 @@
 ---
 title: "Johanna Ng’eno to Be Buried on Friday: Requiem and Vigil Dates"
 slug: "johanna-ng-eno-buried-on-friday-requiem-vigil-dates-confirmed"
-description: "Family confirms Johanna Ng’eno to be Buried on Friday, with Requiem and Vigil Dates Confirmed, prompting critical questions on aviation safety and."
+description: "Johanna Ngeno to Be Buried on Friday Requiem and Vigil Date: Family confirms Johanna Ng’eno to be Buried on Friday, with Requiem and Vigil Dates Confirmed,"
 excerpt: "Family confirms Johanna Ng’eno to be Buried on Friday, with Requiem and Vigil Dates Confirmed, prompting critical questions on aviation safety and political decorum."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/60C2wvNk/1a2a67d47b5f.jpg"
 category: "News"
-tags: ["Johanna Ng'eno", "Emurua Dikirr MP", "helicopter crash", "burial", "requiem", "vigil", "Kenya politics", "aviation safety", "Affordable Housing Programme", "Kipsigis traditions", "Za Ndani news"]
+tags: ["Johanna Ng'eno", "Emurua Dikirr MP", "helicopter crash", "burial", "requiem", "vigil", "Kenya politics", "aviation safety"]
+canonical: "https://zandani.co.ke/article/johanna-ng-eno-buried-on-friday-requiem-vigil-dates-confirmed"
 date: "2026-03-03"
 dateModified: "2026-03-03"
 focusKeyword: "Johanna Ngeno to Be Buried on Friday Requiem and Vigil Date"
 schema: "NewsArticle"
 ---
-## Johanna Ng’eno to Be Buried on Friday: Requiem and Vigil Dates Confirmed for Fallen MP The family of the late Emurua Dikirr MP Johanna Ng’eno has confirmed his burial will take place on Friday, March 6, following a tragic helicopter crash that claimed six lives.
+
+## Johanna Ng’eno to Be Buried on Friday: Requiem and Vigil Dates Confirmed for Fallen MP The family of the late Emurua Dikirr MP Johanna Ng’eno has confirmed his burial will take place on Friday, March 6, following a tragic helicopter crash that claimed six lives. Johanna Ngeno to Be Buried on Friday Requiem and Vigil Date is the central subject of the update.
 
 A requiem mass is scheduled for Wednesday, March 4, at Nairobi Baptist Church, with a night vigil set for Thursday, March 5, in accordance with Kipsigis traditions.
 

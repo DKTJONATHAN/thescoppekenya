@@ -1,16 +1,20 @@
 ---
 title: "Gachagua: [The real reason] I skipped MP Johana Ng'eno’s burial"
 slug: "gachagua-the-real-reason-i-skipped-mp-johana-ng-eno-s-burial"
-description: "Gachagua: [The real reason] I skipped MP Johana Ng'eno’s burial. Latest reporting from Kenya on Za Ndani Coverage from Nairobi and across Kenya."
+description: "Gachagua The real reason I skipped MP Johana Ngenos burial: Gachagua: [The real reason] I skipped MP Johana Ng'eno’s burial. Latest reporting from Kenya on Za"
+excerpt: "Gachagua Cites Principles for Absence at Ng'eno's Burial Former Deputy President Rigathi Gachagua did not attend the burial of Emurua Dikirr"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/Cs0nM8Wb/703b47440966.jpg"
 category: "News"
+tags: ["gachagua the real reason i skipped mp johana ng eno s burial", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/gachagua-the-real-reason-i-skipped-mp-johana-ng-eno-s-burial"
 date: "2026-03-06"
 dateModified: "2026-03-06"
 focusKeyword: "Gachagua The real reason I skipped MP Johana Ngenos burial"
 schema: "NewsArticle"
 ---
-## Gachagua Cites Principles for Absence at Ng'eno's Burial Former Deputy President Rigathi Gachagua did not attend the burial of Emurua Dikirr Member of Parliament Johana Ng'eno, stating that his principles prevented him from sharing a platform with individuals he accuses of tormenting the late lawmaker during his lifetime.
+
+## Gachagua Cites Principles for Absence at Ng'eno's Burial Former Deputy President Rigathi Gachagua did not attend the burial of Emurua Dikirr Member of Parliament Johana Ng'eno, stating that his principles prevented him from sharing a platform with individuals he accuses of tormenting the late lawmaker during his lifetime. Gachagua The real reason I skipped MP Johana Ngenos burial is the central subject of the update.
 
 The funeral service, held in Emurua Dikirr, saw the attendance of several senior national leaders, including President William Ruto and Deputy President Kithure Kindiki.
 

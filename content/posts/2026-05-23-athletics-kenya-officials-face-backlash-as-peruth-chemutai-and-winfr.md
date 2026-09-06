@@ -4,16 +4,17 @@ slug: "athletics-kenya-officials-face-backlash-as-peruth-chemutai-and-winfr"
 description: "Athletics Kenya Officials Face Backlash as Peruth Chemutai and Wi: Athletics Kenya faces public backlash after stars Peruth Chemutai and Winfred Yavi"
 excerpt: "In May 2026, Ugandan star Peruth Chemutai and Bahraini representative Winfred Yavi dominated global track events, leaving Kenyan athletes be"
 author: "Zed Mogaka"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://pbs.twimg.com/media/HJBERsSXsAANrAp.jpg"
 category: "Entertainment"
 tags: ["athletics-kenya", "peruth-chemutai", "winfred-yavi", "kenyan-athletics", "sports-controversy"]
+canonical: "https://zandani.co.ke/article/athletics-kenya-officials-face-backlash-as-peruth-chemutai-and-winfr"
 date: "2026-05-23T17:14:41Z"
 dateModified: "2026-05-23T17:14:41Z"
 focusKeyword: "Athletics Kenya Officials Face Backlash as Peruth Chemutai and Wi"
 schema: "NewsArticle"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
-canonical: "https://zandani.co.ke/article/athletics-kenya-officials-face-backlash-as-peruth-chemutai-and-winfr"
 ---
+
 In May 2026, Ugandan star Peruth Chemutai and Bahraini representative Winfred Yavi dominated global track events, leaving Kenyan athletes behind.
 
 This performance has sparked widespread public criticism regarding the administrative failures of Athletics Kenya and the systemic financial inequities within the federation.

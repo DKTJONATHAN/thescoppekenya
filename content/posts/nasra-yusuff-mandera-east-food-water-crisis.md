@@ -1,18 +1,20 @@
 ---
 title: "Nasra Yusuff’s Emotional Appeal: Mandera East Faces Severe Food"
 slug: "nasra-yusuff-mandera-east-food-water-crisis"
-description: "Kenyan comedian Nasra Yusuff makes a desperate plea as Mandera East grapples with a severe food and water crisis, but is anyone truly listening?"
+description: "Nasra Yusuffs Emotional Appeal Mandera East Faces Severe Fo: Kenyan comedian Nasra Yusuff makes a desperate plea as Mandera East grapples with a severe food"
 excerpt: "Kenyan comedian Nasra Yusuff makes a desperate plea as Mandera East grapples with a severe food and water crisis, but is anyone truly listening?"
 author: "Za Ndani"
 image: "https://i.ibb.co/dsRq13Zg/c67dcbfe9a52.jpg"
 category: "Entertainment"
-tags: [Nasra Yusuff, Mandera East, food crisis, water scarcity, Kenyan celebrities, humanitarian crisis, entertainment news, Kenya]
+tags: ["Nasra Yusuff", "Mandera East", "food crisis", "water scarcity", "Kenyan celebrities", "humanitarian crisis", "entertainment news", "Kenya"]
+canonical: "https://zandani.co.ke/article/nasra-yusuff-mandera-east-food-water-crisis"
 date: "2026-03-07T08:43:30Z"
 dateModified: "2026-03-07T08:43:30Z"
 focusKeyword: "Nasra Yusuffs Emotional Appeal Mandera East Faces Severe Fo"
 schema: "NewsArticle"
 ---
-## Nasra Yusuff's Heartbreak Over Mandera East Crisis Kenyan comedian Nasra Yusuff has issued a desperate and emotional appeal for urgent intervention as Mandera East faces a severe and worsening food and water crisis, with recent reports indicating extreme malnutrition levels.
+
+## Nasra Yusuff's Heartbreak Over Mandera East Crisis Kenyan comedian Nasra Yusuff has issued a desperate and emotional appeal for urgent intervention as Mandera East faces a severe and worsening food and water crisis, with recent reports indicating extreme malnutrition levels. Nasra Yusuffs Emotional Appeal Mandera East Faces Severe Fo is the central subject of the update.
 
 Her tearful plea on social media, shared on March 6, 2026, highlighted the dire situation where communities lack basic necessities.
 

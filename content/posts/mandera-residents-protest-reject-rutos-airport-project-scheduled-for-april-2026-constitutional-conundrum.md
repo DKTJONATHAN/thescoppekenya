@@ -1,18 +1,20 @@
 ---
 title: "Mandera Residents Protest, Reject Ruto’s Airport Project"
 slug: "mandera-residents-protest-reject-rutos-airport-project-scheduled-for-a"
-description: "Mandera residents protest and reject Ruto's airport project scheduled for April 2026, citing constitutional violations and lack of consultation over vital."
+description: "Mandera Residents Protest Reject Rutos Airport Project Sche: Mandera residents protest and reject Ruto's airport project scheduled for April 2026, citing"
 excerpt: "Mandera residents protest and reject Ruto's airport project scheduled for April 2026, citing constitutional violations and lack of consultation over vital communal grazing lands."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/CKMCWBC1/e83788e23ec8.jpg"
 category: "News"
-tags: ["Mandera", "airport project", "President Ruto", "KDF", "community land", "constitutional rights", "pastoralism", "Kenya", "infrastructure", "development"]
+tags: ["Mandera", "airport project", "President Ruto", "KDF", "community land", "constitutional rights", "pastoralism", "Kenya"]
+canonical: "https://zandani.co.ke/article/mandera-residents-protest-reject-rutos-airport-project-scheduled-for-a"
 date: "2026-03-02"
 dateModified: "2026-03-02"
 focusKeyword: "Mandera Residents Protest Reject Rutos Airport Project Sche"
 schema: "NewsArticle"
 ---
-## Mandera Residents Protest Ruto’s Airport Project Scheduled for April 2026 Mandera residents have vehemently opposed the planned construction of a new airport in Mandera East, a project President William Ruto unveiled and scheduled to commence in April 2026.
+
+## Mandera Residents Protest Ruto’s Airport Project Scheduled for April 2026 Mandera residents have vehemently opposed the planned construction of a new airport in Mandera East, a project President William Ruto unveiled and scheduled to commence in April 2026. Mandera Residents Protest Reject Rutos Airport Project Sche is the central subject of the update.
 
 Residents argue that the development infringes upon their constitutional rights by failing to conduct adequate consultations and threatening vital communal grazing lands.
 

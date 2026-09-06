@@ -1,18 +1,20 @@
 ---
 title: "Congestion, Accidents on Eldoret–Shamahoho Highway: MP Demands"
 slug: "congestion-accidents-eldoret-shamahoho-highway"
-description: "Nandi Hills MP Bernard Kitur raises alarm over severe congestion and rising accidents on the Eldoret–Shamahoho Highway, pressing the Ministry of Transport."
+description: "Congestion Accidents on EldoretShamahoho Highway MP Demands: Nandi Hills MP Bernard Kitur raises alarm over severe congestion and rising accidents on the"
 excerpt: "Nandi Hills MP Bernard Kitur raises alarm over severe congestion and rising accidents on the Eldoret–Shamahoho Highway, pressing the Ministry of Transport for immediate solutions."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/a%20vehicle%20engulfed%20with%20flames%20along%20the%20kisumu-%20kakamega%20road%20on%20thursday%2C%20september%2018..jpg?itok=_QMXsLoE"
 category: "News"
-tags: ["Kenya", "road safety", "infrastructure", "Eldoret", "Shamahoho Highway", "accidents", "congestion", "Ministry of Transport", "Bernard Kitur", "transport committee"]
+tags: ["Kenya", "road safety", "infrastructure", "Eldoret", "Shamahoho Highway", "accidents", "congestion", "Ministry of Transport"]
+canonical: "https://zandani.co.ke/article/congestion-accidents-eldoret-shamahoho-highway"
 date: "2026-02-25"
 dateModified: "2026-02-25"
 focusKeyword: "Congestion Accidents on EldoretShamahoho Highway MP Demands"
 schema: "NewsArticle"
 ---
-## Addressing Congestion and Accidents on Eldoret-Shamahoho Highway Nandi Hills Member of Parliament Bernard Kitur has formally pressed the Ministry of Transport over the escalating number of road accidents and severe congestion plaguing the Eldoret-Shamahoho Highway.
+
+## Addressing Congestion and Accidents on Eldoret-Shamahoho Highway Nandi Hills Member of Parliament Bernard Kitur has formally pressed the Ministry of Transport over the escalating number of road accidents and severe congestion plaguing the Eldoret-Shamahoho Highway. Congestion Accidents on EldoretShamahoho Highway MP Demands is the central subject of the update.
 
 The lawmaker's intervention underscores urgent calls for the government to expedite expansion plans for this critical but overstretched corridor, which has become a major concern for commuters and stakeholders alike.
 

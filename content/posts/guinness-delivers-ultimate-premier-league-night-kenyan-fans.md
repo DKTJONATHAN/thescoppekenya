@@ -7,12 +7,13 @@ author: "Za Ndani"
 image: "https://i.ibb.co/XkGb583n/de5fb0d372d3.png"
 category: "Entertainment"
 tags: ["Guinness", "Premier League", "Kenyan Football", "Entertainment", "Celebrities", "Nairobi Events", "Football Fans", "After-Party"]
+canonical: "https://zandani.co.ke/article/guinness-delivers-ultimate-premier-league-night-kenyan-fans"
 date: "2026-03-03"
 dateModified: "2026-03-03"
 focusKeyword: "Guinness Delivers Ultimate Premier League Night for Kenyan F"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/guinness-delivers-ultimate-premier-league-night-kenyan-fans"
 ---
+
 ## Guinness Delivers Ultimate Premier League Night for Kenyan Fans: The Real Score Guinness recently hosted a dual-venue Premier League viewing experience for Kenyan fans in Nairobi, featuring live match screenings, punditry from sports personalities Carol Radull and Lotan Salapei, and celebrity after-parties with acts like Khaligraph Jones, MC Gogo, Charisma, and DJ Grauchi.
 
 Nairobi’s football fanatics descended upon Kiambu Road and Ruaka this past Sunday, March 1, for what Guinness, the "official beer partner of the Premier League," grandly billed as the "ultimate" football experience.

@@ -7,12 +7,13 @@ author: "Wanjiku Kuria"
 image: "https://www.ghafla.co.ke/ke/wp-content/uploads/sites/4/2025/05/JUose-Chameleon-May-2025.jpg"
 category: "Gossip"
 tags: ["jose chameleone", "daniella atim", "ugandan news", "child support", "east african celebrities", "divorce"]
+canonical: "https://zandani.co.ke/article/jose-chameleone-and-daniella-atim-settle-child-support-case"
 date: "2026-05-22T19:03:37Z"
 dateModified: "2026-05-22T19:03:37Z"
 focusKeyword: "Jose Chameleone and Daniella Atim Settle Child Support Case"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/jose-chameleone-and-daniella-atim-settle-child-support-case"
 ---
+
 ## The Financial Blueprint: Jose Chameleone and Daniella Atim Settle Child Support Case East African music icon Jose Chameleone and his estranged wife, Daniella Atim, have reached a formal mediated settlement regarding the custody and financial maintenance of their five children, effectively concluding a protracted chapter of their long-standing divorce proceedings in the Uganda High Court.
 
 The agreement brings a level of fiscal certainty to a separation that has occupied public interest since the couple initially drifted apart.

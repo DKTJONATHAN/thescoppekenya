@@ -1,18 +1,20 @@
 ---
 title: "Johana Ng’eno, Emurua Dikirr MP: Unpacking the Fatal Mosop"
 slug: "johana-ngeno-emurua-dikirr-mp-fatal-mosop-helicopter-crash"
-description: "The nation mourns Johana Ng’eno, the Emurua Dikirr MP, following a fatal Mosop helicopter crash that claimed six lives. Investigations are underway."
+description: "Johana Ngeno Emurua Dikirr MP Unpacking the Fatal Mosop Hel: The nation mourns Johana Ng’eno, the Emurua Dikirr MP, following a fatal Mosop helicopter crash"
 excerpt: "The nation mourns Johana Ng’eno, the Emurua Dikirr MP, following a fatal Mosop helicopter crash that claimed six lives. Investigations are underway."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/ngeno_0.jpg?itok=IpuXZEVx"
 category: "News"
-tags: ["Kenya", "politics", "accident", "Johana Ng'eno", "Emurua Dikirr MP", "Mosop", "helicopter crash", "Nandi", "investigation", "tragedy"]
+tags: ["Kenya", "politics", "accident", "Johana Ng'eno", "Emurua Dikirr MP", "Mosop", "helicopter crash", "Nandi"]
+canonical: "https://zandani.co.ke/article/johana-ngeno-emurua-dikirr-mp-fatal-mosop-helicopter-crash"
 date: "2026-03-01"
 dateModified: "2026-03-01"
 focusKeyword: "Johana Ngeno Emurua Dikirr MP Unpacking the Fatal Mosop Hel"
 schema: "NewsArticle"
 ---
-## Johana Ng’eno, Emurua Dikirr MP: Final Hours Before Fatal Mosop Helicopter Crash The nation is grappling with the profound loss of Johana Ng’eno, the Emurua Dikirr MP, who tragically perished alongside five other individuals in a helicopter crash in Mosop, Nandi County, on the evening of Saturday, February 28, 2026.
+
+## Johana Ng’eno, Emurua Dikirr MP: Final Hours Before Fatal Mosop Helicopter Crash The nation is grappling with the profound loss of Johana Ng’eno, the Emurua Dikirr MP, who tragically perished alongside five other individuals in a helicopter crash in Mosop, Nandi County, on the evening of Saturday, February 28, 2026. Johana Ngeno Emurua Dikirr MP Unpacking the Fatal Mosop Hel is the central subject of the update.
 
 This incident has prompted immediate investigations by the Kenya Civil Aviation Authority (KCAA) and the Aircraft Accident Investigation Department (AAID) to ascertain its precise cause.
 

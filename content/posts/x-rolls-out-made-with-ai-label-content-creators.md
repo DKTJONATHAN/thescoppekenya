@@ -7,13 +7,14 @@ author: "Elizabeth Muthoni"
 image: "https://i.ibb.co/jZVhssXC/f0b4a9aef6ee.jpg"
 category: "Technology"
 tags: ["x", "twitter", "ai", "artificial intelligence", "content creators", "digital policy", "tech news", "za ndani"]
+canonical: "https://zandani.co.ke/article/x-rolls-out-made-with-ai-label-content-creators"
 date: "2026-03-02"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "X Rolls Out Made with AI Label for Content Creators Unpac"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/x-rolls-out-made-with-ai-label-content-creators"
 ---
-<h2>X Rolls Out “Made with AI” Label: A Double-Edged Sword for Content Creators</h2> X has introduced a "Made with AI" label for content, requiring creators to disclose the use of artificial intelligence in their posts.
+
+<h2>X Rolls Out “Made with AI” Label: A Double-Edged Sword for Content Creators</h2> X has introduced a "Made with AI" label for content, requiring creators to disclose the use of artificial intelligence in their posts. X Rolls Out Made with AI Label for Content Creators Unpac is the central subject of the update.
 
 This feature aims to enhance transparency but raises concerns regarding voluntary compliance, future enforcement, and the potential impact on creators' autonomy and economic viability.
 

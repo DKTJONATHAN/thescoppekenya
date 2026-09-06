@@ -4,16 +4,17 @@ slug: "governor-joseph-ole-lenku-pays-ksh-16-million-to-free-journalist-jos"
 description: "Governor Joseph Ole Lenku pays KSh 16 million to free journalist : Governor Joseph Ole Lenku paid KSh 16 million to release journalist Joshua Mungai from"
 excerpt: "Kajiado Governor Joseph Ole Lenku successfully secured the release of journalist Joshua Mungai from Kamiti Maximum Prison this May after lea"
 author: "Zed Mogaka"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://pbs.twimg.com/media/HJS9VlXXkAI2bkR.jpg"
 category: "Entertainment"
 tags: ["joseph-ole-lenku", "joshua-mungai", "katoo-ole-metito", "defamation-case", "kamiti-prison"]
+canonical: "https://zandani.co.ke/article/governor-joseph-ole-lenku-pays-ksh-16-million-to-free-journalist-jos"
 date: "2026-05-27T04:45:06Z"
 dateModified: "2026-05-27T04:45:06Z"
 focusKeyword: "Governor Joseph Ole Lenku pays KSh 16 million to free journalist"
 schema: "NewsArticle"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
-canonical: "https://zandani.co.ke/article/governor-joseph-ole-lenku-pays-ksh-16-million-to-free-journalist-jos"
 ---
+
 Kajiado Governor Joseph Ole Lenku successfully secured the release of journalist Joshua Mungai from Kamiti Maximum Prison this May after leading a public fundraiser.
 
 The governor paid KSh 16 million in defamation damages owed to State House Comptroller Katoo Ole Metito.

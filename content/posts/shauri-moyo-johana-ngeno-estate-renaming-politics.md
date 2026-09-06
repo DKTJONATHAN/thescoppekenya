@@ -1,18 +1,20 @@
 ---
 title: "Shauri Moyo [Renamed Johana Ng’eno Estate]"
 slug: "shauri-moyo-johana-ngeno-estate-renaming-politics"
-description: "Ruto renames historic Shauri Moyo estate to Johana Ng'eno Boma Yangu, sparking debate on political expediency Coverage from Nairobi and across Kenya."
+description: "Shauri Moyo Renamed Johana Ngeno Estate: Ruto renames historic Shauri Moyo estate to Johana Ng'eno Boma Yangu, sparking debate on political expediency Coverage"
 excerpt: "Ruto renames historic Shauri Moyo estate to Johana Ng'eno Boma Yangu, sparking debate on political expediency."
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/3y8p4N8p/f1070ab64b91.jpg"
 category: "Politics"
 tags: ["Kenya politics", "William Ruto", "Johana Ng'eno", "Shauri Moyo", "affordable housing", "Nairobi estates", "political legacy"]
+canonical: "https://zandani.co.ke/article/shauri-moyo-johana-ngeno-estate-renaming-politics"
 date: "2026-03-06"
 dateModified: "2026-03-06"
 focusKeyword: "Shauri Moyo Renamed Johana Ngeno Estate"
 schema: "NewsArticle"
 ---
-<h2>Ruto's Shauri Moyo Renaming: A Tribute or Calculated Political Gambit?</h2> President William Ruto’s directive to rename Nairobi’s historic Shauri Moyo Estate to Johana Ng’eno Boma Yangu Estate has ignited debate, raising questions about political opportunism amidst a solemn national mourning.
+
+<h2>Ruto's Shauri Moyo Renaming: A Tribute or Calculated Political Gambit?</h2> President William Ruto’s directive to rename Nairobi’s historic Shauri Moyo Estate to Johana Ng’eno Boma Yangu Estate has ignited debate, raising questions about political opportunism amidst a solemn national mourning. Shauri Moyo Renamed Johana Ngeno Estate is the central subject of the update.
 
 This swift move, announced at the late MP's funeral, strategically intertwines a personal tribute with the government’s contentious affordable housing agenda.
 

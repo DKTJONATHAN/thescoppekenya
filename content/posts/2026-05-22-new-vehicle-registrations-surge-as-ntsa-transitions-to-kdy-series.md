@@ -4,16 +4,17 @@ slug: "new-vehicle-registrations-surge-as-ntsa-transitions-to-kdy-series"
 description: "New vehicle registrations surge as NTSA transitions to KDY series: New vehicle registrations in Kenya surge as the NTSA officially transitions from the KDX."
 excerpt: "The National Transport and Safety Authority officially transitioned from the KDX to the KDY license plate series this month, revealing a sha"
 author: "Zed Mogaka"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["ntsa-kenya", "kdy-series", "vehicle-registration", "kenyan-automotive-industry", "transport-authority"]
+canonical: "https://zandani.co.ke/article/new-vehicle-registrations-surge-as-ntsa-transitions-to-kdy-series"
 date: "2026-05-22T04:25:06Z"
 dateModified: "2026-05-22T04:25:06Z"
 focusKeyword: "New vehicle registrations surge as NTSA transitions to KDY series"
 schema: "NewsArticle"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
-canonical: "https://zandani.co.ke/article/new-vehicle-registrations-surge-as-ntsa-transitions-to-kdy-series"
 ---
+
 The National Transport and Safety Authority officially transitioned from the KDX to the KDY license plate series this month, revealing a sharp increase in new vehicle registrations across Kenya despite public discourse centered on rising costs of living and economic stagnation.
 
 ## New vehicle registrations surge as NTSA transitions to KDY series ### The mystery of the invisible hunger While public conversations frequently focus on rising food prices and heavy taxation, the latest data from the National Transport and Safety Authority presents a starkly different reality.

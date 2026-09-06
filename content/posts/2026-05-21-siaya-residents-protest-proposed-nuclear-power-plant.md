@@ -7,12 +7,13 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/siaya-protests.jpg?itok=-UDITQNr"
 category: "News"
 tags: ["siaya county", "nupea", "nuclear energy", "kenya news", "za ndani", "public participation"]
+canonical: "https://zandani.co.ke/article/siaya-residents-protest-proposed-nuclear-power-plant"
 date: "2026-05-21T20:13:23Z"
 dateModified: "2026-05-21T20:13:23Z"
 focusKeyword: "Siaya residents protest against proposed nuclear power plant"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/siaya-residents-protest-proposed-nuclear-power-plant"
 ---
+
 ## Siaya Residents Protest Against Proposed Nuclear Power Plant Angry residents in Sakwa village, Bondo sub-county, disrupted a public participation forum on Thursday to reject the government's plans to host a massive nuclear power facility that has been relocated from the coast after intense local opposition.
 
 The Nuclear Power and Energy Agency (NuPEA) is pushing to establish a project valued at 500 billion shillings, aiming to generate between 1,000 and 3,000 megawatts of electricity.

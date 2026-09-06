@@ -4,16 +4,17 @@ slug: "seven-utumishi-academy-students-arrested-over-alleged-dormitory-arso"
 description: "Seven Utumishi Academy Students Arrested Over Alleged Dormitory A: Seven Utumishi Academy students in Gilgil were arrested this week for allegedly."
 excerpt: "Seven female students from Utumishi Academy in Gilgil were taken into police custody this week after allegedly attempting to set fire to the"
 author: "Zed Mogaka"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/XfV4rp0p/313160a9a202.webp"
 category: "Entertainment"
 tags: ["utumishi-academy", "school-arson", "student-arrests", "high-school-unrest", "nyandarua-county"]
+canonical: "https://zandani.co.ke/article/seven-utumishi-academy-students-arrested-over-alleged-dormitory-arso"
 date: "2026-06-01T18:15:26Z"
 dateModified: "2026-06-01T18:15:26Z"
 focusKeyword: "Seven Utumishi Academy Students Arrested Over Alleged Dormitory A"
 schema: "NewsArticle"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
-canonical: "https://zandani.co.ke/article/seven-utumishi-academy-students-arrested-over-alleged-dormitory-arso"
 ---
+
 Seven female students from Utumishi Academy in Gilgil were taken into police custody this week after allegedly attempting to set fire to their dormitory.
 
 The incident has caused significant concern within the community, raising urgent questions regarding student discipline in national schools.

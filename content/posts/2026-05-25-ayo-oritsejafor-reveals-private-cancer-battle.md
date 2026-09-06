@@ -7,12 +7,13 @@ author: "Amara Ndlovu"
 image: "https://sportal365images.com/process/smp-images-production/pulse.ng/25052026/1b201744-12e1-490d-bf59-cc05758f9636.webp?operations=autocrop(1200:630)"
 category: "Africa Entertainment"
 tags: ["ayo oritsejafor", "cancer", "nigeria", "health news", "religious leaders", "international news"]
+canonical: "https://zandani.co.ke/article/ayo-oritsejafor-reveals-private-cancer-battle"
 date: "2026-05-25T12:00:15Z"
 dateModified: "2026-05-25T12:00:15Z"
 focusKeyword: "Former CAN President Ayo Oritsejafor Reveals Secret Cancer Battle"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/ayo-oritsejafor-reveals-private-cancer-battle"
 ---
+
 ## Former CAN President Ayo Oritsejafor Reveals Secret Cancer Battle Former Christian Association of Nigeria president Ayo Oritsejafor has disclosed a private four-month battle with cancer.
 
 The prominent cleric revealed he sought treatment in the United States, incurring costs exceeding $120,000 while continuing to oversee his home congregation.

@@ -1,15 +1,20 @@
 ---
 title: "JKIA Modernisation: [REVEALED] How KAA’s New Airport City and SEZ"
 slug: "jkia-modernisation-revealed-how-kaa-s-new-airport-city-and-sez-will-tr"
-description: "JKIA Modernisation: [REVEALED] How KAA’s New Airport City and SEZ. Latest reporting from Kenya on Za Ndani Coverage from Nairobi and across Kenya."
+description: "JKIA Modernisation REVEALED How KAAs New Airport City and S: JKIA Modernisation: [REVEALED] How KAA’s New Airport City and SEZ. Latest reporting from Kenya on"
+excerpt: "By Celestine Nzioka The landscape of regional aviation is shifting as the Kenyan government moves to solidify the dominance of Jomo Kenyatta"
 author: "Celestine Nzioka"
+image: "/images/placeholder.jpg"
 category: "News"
+tags: ["jkia modernisation revealed how kaa s new airport city and sez will tr", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/jkia-modernisation-revealed-how-kaa-s-new-airport-city-and-sez-will-tr"
 date: "2026-03-04"
 dateModified: "2026-03-04"
 focusKeyword: "JKIA Modernisation REVEALED How KAAs New Airport City and S"
 schema: "NewsArticle"
 ---
-**By Celestine Nzioka** The landscape of regional aviation is shifting as the Kenyan government moves to solidify the dominance of Jomo Kenyatta International Airport through a massive infrastructural overhaul.
+
+**By Celestine Nzioka** The landscape of regional aviation is shifting as the Kenyan government moves to solidify the dominance of Jomo Kenyatta International Airport through a massive infrastructural overhaul. JKIA Modernisation REVEALED How KAAs New Airport City and S is the central subject of the update.
 
 Just hours after Transport Cabinet Secretary Davis Chirchir concluded a high level press briefing on Tuesday evening, the finer details of a transformative blueprint have emerged.
 

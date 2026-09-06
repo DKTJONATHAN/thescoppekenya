@@ -1,17 +1,20 @@
 ---
 title: "BAFTAs 2026: Prince William's Emotional Speech – But What Was All"
 slug: "baftas-2026-prince-william-emotional-speech-shouting-explained"
-description: "BAFTAs 2026 drama! Prince William's emotional speech was just one highlight. We've got the real scoop on *that* shouting and royal whispers!"
+description: "BAFTAs 2026 Prince Williams Emotional Speech  But What Was: BAFTAs 2026 drama! Prince William's emotional speech was just one highlight. We've got the real"
 excerpt: "BAFTAs 2026 drama! Prince William's emotional speech was just one highlight. We've got the real scoop on *that* shouting and royal whispers!"
+author: "Za Ndani"
 image: "https://i2-prod.mirror.co.uk/incoming/article36764303.ece/ALTERNATES/s1200/0_EE-BAFTA-Film-Awards-2026-Show.jpg"
 category: "Kenya News"
 tags: ["BAFTAs 2026", "Prince William", "emotional speech", "royal family", "celebrity gossip", "film awards"]
+canonical: "https://zandani.co.ke/article/baftas-2026-prince-william-emotional-speech-shouting-explained"
 date: "2026-02-23"
 dateModified: "2026-02-23"
 focusKeyword: "BAFTAs 2026 Prince Williams Emotional Speech  But What Was"
 schema: "NewsArticle"
 ---
-## BAFTAs 2026: Prince William's Emotional Speech & The Real Story Behind the Shouts!
+
+## BAFTAs 2026: Prince William's Emotional Speech & The Real Story Behind the Shouts! BAFTAs 2026 Prince Williams Emotional Speech  But What Was is the central subject of the update.
 
 The "shouting" at the BAFTAs 2026 actually refers to a couple of things, mate!
 

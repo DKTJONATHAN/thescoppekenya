@@ -1,18 +1,20 @@
 ---
 title: "Obasanjo's Attendance at Omotola’s Latest Movie Premiere Sparks"
 slug: "obasanjo-attendance-omotola-latest-movie-premiere-sparks-reaction-noll"
-description: "Obasanjo's Attendance at Omotola’s Latest Movie Premiere Sparks Reaction, igniting debate across Pan-African social media about Nollywood's evolving."
+description: "Obasanjos Attendance at Omotolas Latest Movie Premiere Spar: Obasanjo's Attendance at Omotola’s Latest Movie Premiere Sparks Reaction, igniting debate across"
 excerpt: "Obasanjo's Attendance at Omotola’s Latest Movie Premiere Sparks Reaction, igniting debate across Pan-African social media about Nollywood's evolving marketing tactics and high-profile PR stunts."
 author: "Amara Ndlovu"
 image: "https://i.ibb.co/5xGj8xj7/a46f1f2e102d.png"
 category: "Entertainment"
-tags: ["Obasanjo", "Omotola Jalade-Ekeinde", "Nollywood", "Mother's Love", "movie premiere", "film promotion", "celebrity", "Nigeria", "entertainment", "Za Ndani", "PR stunt"]
+tags: ["Obasanjo", "Omotola Jalade-Ekeinde", "Nollywood", "Mother's Love", "movie premiere", "film promotion", "celebrity", "Nigeria"]
+canonical: "https://zandani.co.ke/article/obasanjo-attendance-omotola-latest-movie-premiere-sparks-reaction-noll"
 date: "2026-03-03"
 dateModified: "2026-03-03"
 focusKeyword: "Obasanjos Attendance at Omotolas Latest Movie Premiere Spar"
 schema: "NewsArticle"
 ---
-## Obasanjo's Attendance at Omotola’s Latest Movie Premiere Sparks Reaction Former President Olusegun Obasanjo’s unexpected presence at Omotola Jalade-Ekeinde’s directorial debut, 'Mother’s Love', has generated significant buzz of discussion across the continent, with many questioning the true motivations behind such a high-profile appearance.
+
+## Obasanjo's Attendance at Omotola’s Latest Movie Premiere Sparks Reaction Former President Olusegun Obasanjo’s unexpected presence at Omotola Jalade-Ekeinde’s directorial debut, 'Mother’s Love', has generated significant buzz of discussion across the continent, with many questioning the true motivations behind such a high-profile appearance. Obasanjos Attendance at Omotolas Latest Movie Premiere Spar is the central subject of the update.
 
 The event, held on Sunday, March 1, 2026, at Alliance Française de Lagos, has redirected public attention from the film itself to the strategic optics of its promotion.
 

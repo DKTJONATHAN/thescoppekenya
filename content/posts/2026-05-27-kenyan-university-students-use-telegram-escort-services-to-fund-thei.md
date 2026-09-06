@@ -4,16 +4,17 @@ slug: "kenyan-university-students-use-telegram-escort-services-to-fund-thei"
 description: "Kenyan university students use Telegram escort services to fund t: Kenyan university students are turning to Telegram escort services to fund their."
 excerpt: "In 2026, Kenyan university students are increasingly turning to Telegram escort services to pay for their tuition and daily expenses. This t"
 author: "Zed Mogaka"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["telegram-escort-services", "kenyan-university-students", "youth-unemployment-crisis", "higher-education-funding", "digital-sex-work"]
+canonical: "https://zandani.co.ke/article/kenyan-university-students-use-telegram-escort-services-to-fund-thei"
 date: "2026-05-27T23:36:24Z"
 dateModified: "2026-05-27T23:36:24Z"
 focusKeyword: "Kenyan university students use Telegram escort services to fund t"
 schema: "NewsArticle"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
-canonical: "https://zandani.co.ke/article/kenyan-university-students-use-telegram-escort-services-to-fund-thei"
 ---
+
 In 2026, Kenyan university students are increasingly turning to Telegram escort services to pay for their tuition and daily expenses.
 
 This trend highlights a growing national economic crisis where a lack of formal employment opportunities forces the youth into sex work.

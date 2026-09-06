@@ -4,16 +4,17 @@ slug: "kenyan-graduates-seek-ksh-260-000-monthly-salary-for-professional-ma"
 description: "Kenyan Graduates Seek KSh 260,000 Monthly Salary For Professional: Kenyan graduates apply for a KSh 260,000 monthly Masturbation Researcher role at."
 excerpt: "Kenyan Graduates Seek KSh 260,000 Monthly Salary For Professional Masturbation Researcher Position A sexual wellness platform named Bedbible"
 author: "Zed Mogaka"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["professional-masturbation-researcher", "unusual-jobs-kenya", "high-paying-jobs-kenya", "graduate-employment-kenya"]
+canonical: "https://zandani.co.ke/article/kenyan-graduates-seek-ksh-260-000-monthly-salary-for-professional-ma"
 date: "2026-05-26T21:57:02Z"
 dateModified: "2026-05-26T21:57:02Z"
 focusKeyword: "Kenyan Graduates Seek KSh 260,000 Monthly Salary For Professional"
 schema: "NewsArticle"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
-canonical: "https://zandani.co.ke/article/kenyan-graduates-seek-ksh-260-000-monthly-salary-for-professional-ma"
 ---
+
 Kenyan Graduates Seek KSh 260,000 Monthly Salary For Professional Masturbation Researcher Position A sexual wellness platform named Bedbible has triggered intense interest among unemployed Kenyan graduates this May 2026 by advertising a remote Masturbation Researcher role.
 
 The position offers a KSh 260,000 monthly salary to document stress reduction and sleep benefits.

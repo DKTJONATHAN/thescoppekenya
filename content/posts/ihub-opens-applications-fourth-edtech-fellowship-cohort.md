@@ -7,12 +7,13 @@ author: "Elizabeth Muthoni"
 image: "https://techweez.com/wp-content/uploads/2026/02/iHub-announces-chort-4.webp"
 category: "Technology"
 tags: ["iHUB", "EdTech", "Fellowship", "Mastercard Foundation", "Kenya", "Startups", "Education Technology", "Inclusive Learning"]
+canonical: "https://zandani.co.ke/article/ihub-opens-applications-fourth-edtech-fellowship-cohort"
 date: "2026-03-01"
 dateModified: "2026-03-01"
 focusKeyword: "iHUB Opens Applications for Fourth EdTech Fellowship Cohort"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/ihub-opens-applications-fourth-edtech-fellowship-cohort"
 ---
+
 ## iHUB Opens Applications for Fourth EdTech Fellowship Cohort iHUB has initiated the application process for the Cohort 4 of the Mastercard Foundation EdTech Fellowship, an initiative designed to fund and support early-stage education technology startups.
 
 This 12-month program targets twelve Kenyan startups, each set to receive $100,000 in equity-free funding, alongside comprehensive mentorship, technical assistance, and access to crucial ecosystem partners.

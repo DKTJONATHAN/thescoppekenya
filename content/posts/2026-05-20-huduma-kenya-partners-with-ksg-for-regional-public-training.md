@@ -7,12 +7,13 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/N44xChZ/9f211f15f917.jpg"
 category: "News"
 tags: ["huduma kenya", "kenya school of government", "public service", "digital transformation", "kenya news", "government services"]
+canonical: "https://zandani.co.ke/article/huduma-kenya-partners-with-ksg-for-regional-public-training"
 date: "2026-05-20T17:35:04Z"
 dateModified: "2026-05-20T17:35:04Z"
 focusKeyword: "Huduma Kenya Partners with KSG to Decentralize Public Training"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/huduma-kenya-partners-with-ksg-for-regional-public-training"
 ---
+
 ## Huduma Kenya Partners with KSG to Decentralize Public Training The government promises a revolution in professional development, yet the integration of Kenya School of Government programs into Huduma centers disguises a deeper operational fragility.
 
 While leadership touts access, the reality risks turning essential public service hubs into congested gatekeeping bottlenecks.

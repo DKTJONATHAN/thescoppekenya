@@ -1,17 +1,20 @@
 ---
 title: "Magical Kenya Open: Junior Players 'Inspired' – But Where's the"
 slug: "magical-kenya-open-junior-players-inspired-real-cash-karen"
-description: "The Magical Kenya Open saw junior players 'inspired' after battling world beaters in Karen, but sources whisper about the missing prize money for our young."
+description: "Magical Kenya Open Junior Players Inspired  But Wheres the: The Magical Kenya Open saw junior players 'inspired' after battling world beaters in Karen, but"
 excerpt: "The Magical Kenya Open saw junior players 'inspired' after battling world beaters in Karen, but sources whisper about the missing prize money for our young stars. Where's the cash?"
+author: "Za Ndani"
 image: "https://cdn.standardmedia.co.ke/images/articles/thumbnails/vb5NmjVgD2OgBhapTodWVG9MgOTCMBV4DRKXJ90i.jpg"
 category: "Kenya News"
-tags: ["Magical Kenya Open", "junior players", "golf", "Kenya", "Karen Country Club", "world beaters", "prize money", "gossip", "sport", "Absa", "Njoroge Kibugu", "Casey Jarvis"]
+tags: ["Magical Kenya Open", "junior players", "golf", "Kenya", "Karen Country Club", "world beaters", "prize money", "gossip"]
+canonical: "https://zandani.co.ke/article/magical-kenya-open-junior-players-inspired-real-cash-karen"
 date: "2026-02-24"
 dateModified: "2026-02-24"
 focusKeyword: "Magical Kenya Open Junior Players Inspired  But Wheres the"
 schema: "NewsArticle"
 ---
-<h2>Magical Kenya Open: The Shocking Truth About Junior Players Battling World Beaters in Karen!</h2> Well, darlings, the 57th Magical Kenya Open wrapped up with South Africa's Casey Jarvis bagging a whopping Sh60 million - yes, Sh60 million!
+
+<h2>Magical Kenya Open: The Shocking Truth About Junior Players Battling World Beaters in Karen!</h2> Well, darlings, the 57th Magical Kenya Open wrapped up with South Africa's Casey Jarvis bagging a whopping Sh60 million - yes, Sh60 million! Magical Kenya Open Junior Players Inspired  But Wheres the is the central subject of the update.
 
 - and Kenya’s own Njoroge Kibugu picking up a cool Sh7 million.
 
