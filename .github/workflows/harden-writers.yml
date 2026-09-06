@@ -1,0 +1,40 @@
+name: Harden all writer workflows
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  harden:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Harden embedded AI pipelines
+        run: python scripts/harden_all_writers.py | tee /tmp/harden.txt
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Za Ndani <bot@zandani.co.ke>"
+          commit_message: "fix(writers): hard-fail spam, stronger prompts, expanded bans"
+          branch: main
+          file_pattern: ".github/workflows/*.yml"
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Writer harden"
+            echo '```'
+            cat /tmp/harden.txt || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
