@@ -373,10 +373,10 @@
     "4f1f481c3109e2099c1222d5a651ab1f",
     "2f882e0b576628028af36645d7d32a1e",
     "1f206f15ec873ba32cb260f8a357a489",
-    "388ff301a0c4fccdb7459b29491fe46e"
+    "388ff301a0c4fccdb7459b29491fe46e",
+    "12df3c15476d5346a20a0f161ebb5aee"
   ],
   "style_history": [
-    "Hard News Lead",
     "Receipts Piece",
     "Reaction Round-up",
     "Profile Beat",
@@ -405,10 +405,10 @@
     "Profile Beat",
     "Receipts Piece",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Trend Take"
   ],
   "angle_history": [
-    "accountability|Marya Prude|Trend Take",
     "money_follow|celebrity boxing|Receipts Piece",
     "timeline_shift|social-media|Profile Beat",
     "story_progression|celebrity boxing|Hard News Lead",
@@ -487,6 +487,7 @@
     "money_follow|Fally Ipupa|Profile Beat",
     "myth_vs_fact|TCL|Receipts Piece",
     "money_follow|Stevo Simple Boy|Hard News Lead",
-    "policy_gap|Amber Ray|Reaction Round-up"
+    "policy_gap|Amber Ray|Reaction Round-up",
+    "next_48_hours|Kenya|Trend Take"
   ]
 }
