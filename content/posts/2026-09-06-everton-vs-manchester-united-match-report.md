@@ -1,18 +1,20 @@
 ---
 title: "Everton and Manchester United play out Premier League stalemate"
 slug: "everton-vs-manchester-united-match-report"
-description: "Everton and Manchester United struggled for momentum in a quiet Premier League encounter at Hill Dickinson Stadium as both teams sought points."
+description: "Everton and Manchester United play out Premier League stalemate: Everton and Manchester United struggled for momentum in a quiet Premier League encounter at"
+excerpt: "The Sterile Cathedral of Modern Football The Premier League sold us a global spectacle of passion and intensity, but the Everton versus Manc"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/XrVdQ4LH/e9476ad933cb.jpg"
 category: "Sports"
 tags: ["premier league", "everton", "manchester united", "football news", "kenyan sports"]
+canonical: "https://zandani.co.ke/article/everton-vs-manchester-united-match-report"
 date: "2026-09-06T13:45:38Z"
 dateModified: "2026-09-06T13:45:38Z"
+focusKeyword: "Everton and Manchester United play out Premier League stalemate"
 schema: "NewsArticle"
 ---
 
-## The Sterile Cathedral of Modern Football
+## The Sterile Cathedral of Modern Football Everton and Manchester United play out Premier League stalemate is the central subject of the update.
 
 The Premier League sold us a global spectacle of passion and intensity, but the Everton versus Manchester United clash at Hill Dickinson Stadium was nothing more than a hollow, sanitized product designed for television executives rather than the supporters.
 

@@ -1,18 +1,20 @@
 ---
 title: "Kenya Turns to Uganda for Milk Imports to Ease Supply Shortage"
 slug: "kenya-uganda-milk-imports-supply-shortage"
-description: "Kenya will increase milk imports from Uganda to address domestic supply gaps caused by dry weather conditions and stabilize regional food security."
+description: "Kenya Turns to Uganda for Milk Imports to Ease Supply Shortage: Kenya will increase milk imports from Uganda to address domestic supply gaps caused by dry"
+excerpt: "The Milk Cartel’s Convenient Border Crossings Cabinet Secretary Lee Kinyanjui claims Kenya is importing Ugandan milk to fill a drought induc"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/wr8N6Y49/44590c917390.webp"
 category: "News"
 tags: ["kenya news", "milk imports", "uganda trade", "food security", "comesa", "agriculture", "za ndani"]
+canonical: "https://zandani.co.ke/article/kenya-uganda-milk-imports-supply-shortage"
 date: "2026-09-06T12:49:20Z"
 dateModified: "2026-09-06T12:49:20Z"
+focusKeyword: "Kenya Turns to Uganda for Milk Imports to Ease Supply Shortage"
 schema: "NewsArticle"
 ---
 
-## The Milk Cartel’s Convenient Border Crossings
+## The Milk Cartel’s Convenient Border Crossings Kenya Turns to Uganda for Milk Imports to Ease Supply Shortage is the central subject of the update.
 
 Cabinet Secretary Lee Kinyanjui claims Kenya is importing Ugandan milk to fill a drought-induced deficit, yet the bureaucratic speed of these imports masks a calculated shift that prioritizes corporate distributors over the survival of the Kenyan smallholder dairy farmer.
 
