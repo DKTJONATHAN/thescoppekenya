@@ -10,7 +10,7 @@ current_year = current_utc.strftime("%Y")
 publish_timestamp = current_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
 today_str = current_utc.strftime("%Y-%m-%d")
 full_date_str = current_utc.strftime("%A, %B %d, %Y")
-MODELS_TO_TRY = ["gemini-3-flash-preview", "gemini-2.5-flash"]
+MODELS_TO_TRY = ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.1-pro-preview", "gemini-3.5-flash-lite", "gemini-3-flash-preview"]
 MAX_AGE_HOURS = 10
 SITE_URL = "https://ew.com/"
 SITE_DOMAIN = "ew.com"
@@ -137,7 +137,10 @@ def gemini_generate(prompt, use_search=False):
                 config = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]) if use_search else None
                 return client.models.generate_content(model=model, contents=prompt, config=config).text.strip()
             except Exception as e:
-                if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                err = str(e).lower()
+                if any(x in err for x in ["404", "not_found", "not found", "no longer available", "deprecated"]):
+                    break
+                if "429" in str(e) or "quota" in err or "rate" in err:
                     time.sleep(random.uniform(20, 35)); current_key = next(key_cycle); client = genai.Client(api_key=current_key); continue
                 break
     return None
