@@ -19,10 +19,16 @@ MAX_CANDIDATES = 12
 MAX_SCRAPE_TRIES = 5
 FRESH_HOURS = 18
 
+# Latest Gemini models first, then cheaper/stable fallbacks.
+# Retired IDs (gemini-2.5-pro, gemini-2.0-flash, gemini-1.5-*) are omitted.
 MODELS_TO_TRY = [
-    "gemini-2.5-flash",
-    "gemini-2.5-pro",
-    "gemini-2.0-flash",
+    "gemini-3.8-flash",
+    "gemini-3.7-flash",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash",
+    "gemini-3.1-pro-preview",
+    "gemini-3.5-flash-lite",
+    "gemini-3-flash-preview",
 ]
 
 BANNED_PHRASES = [
@@ -244,7 +250,6 @@ LEGACY_BOILERPLATE = [
 def strip_article_boilerplate(text):
     if not text:
         return text
-    # Kill known spam leads first
     text = re.sub(r"[^.\n]*is central to this update for Kenyan readers[.\s]*", "", text, flags=re.I)
     text = re.sub(r"[^.\n]*is the central subject of the update[.\s]*", "", text, flags=re.I)
     blocks = re.split(r"\n\s*\n+", text.strip())
@@ -280,6 +285,9 @@ def gemini_call(prompt, label="", json_mode=False):
                     return out
             except Exception as e:
                 msg = str(e).lower()
+                if any(x in msg for x in ["404", "not_found", "not found", "no longer available", "deprecated"]):
+                    print(f"Gemini model unavailable [{model}] {label}: falling back")
+                    break
                 if any(x in msg for x in ["429", "quota", "rate", "503", "unavailable", "500", "overloaded"]):
                     time.sleep(8)
                     current_key = next(key_cycle)
