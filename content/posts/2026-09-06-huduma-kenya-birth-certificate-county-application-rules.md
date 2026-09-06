@@ -7,13 +7,14 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/C3GXkVX1/9a5d513ad73e.webp"
 category: "News"
 tags: ["Huduma Kenya", "Birth Certificates", "Civil Registration Department", "Kenya Government Services", "Civil Registration"]
+canonical: "https://zandani.co.ke/article/huduma-kenya-birth-certificate-county-application-rules"
 date: "2026-09-06T19:52:46Z"
 dateModified: "2026-09-06T19:52:46Z"
 focusKeyword: "Huduma Kenya Explains Birth Certificate County Rules"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/huduma-kenya-birth-certificate-county-application-rules"
 ---
-Huduma Kenya clarified on Sunday, September 6, 2026, that parents must submit birth certificate applications within the county where their child was born because primary physical records remain domiciled exclusively in local civil registries.The public advisory addresses recurring inquiries from citizens who encounter hurdles when attempting to process documents in administrative centers outside their children's places of delivery.
+
+Huduma Kenya clarified on Sunday, September 6, 2026, that parents must submit birth certificate applications within the county where their child was born because primary physical records remain domiciled exclusively in local civil registries.The public advisory addresses recurring inquiries from citizens who encounter hurdles when attempting to process documents in administrative centers outside their children's places of delivery. Huduma Kenya Explains Birth Certificate County Rules is the central subject of the update.
 
 Many families residing in Nairobi, Nakuru, and other urban centers frequently find themselves redirected to regional offices located in other parts of the country when seeking identity records.
 

@@ -7,13 +7,14 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/tPLnfFx1/82a862bffd4f.webp"
 category: "News"
 tags: ["Huduma Kenya", "Birth Certificate", "Civil Registration", "Kenya Governance", "Public Services"]
+canonical: "https://zandani.co.ke/article/huduma-kenya-birth-certificate-county-of-birth-rule"
 date: "2026-09-06T21:17:00Z"
 dateModified: "2026-09-06T21:17:00Z"
 focusKeyword: "Huduma Kenya Explains Birth Certificate County Rule"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/huduma-kenya-birth-certificate-county-of-birth-rule"
 ---
-Huduma Kenya has clarified that parents seeking birth certificates for their children must submit their applications within the county where delivery occurred, explaining that primary birth records remain domiciled in decentralized civil registries. The agency issued the advisory on Monday following persistent inquiries from citizens who moved across county lines and attempted to file paperwork in their current areas of residence.
+
+Huduma Kenya has clarified that parents seeking birth certificates for their children must submit their applications within the county where delivery occurred, explaining that primary birth records remain domiciled in decentralized civil registries. The agency issued the advisory on Monday following persistent inquiries from citizens who moved across county lines and attempted to file paperwork in their current areas of residence. Huduma Kenya Explains Birth Certificate County Rule is the central subject of the update.
 
 Under the framework managed by the Civil Registration Department, the physical documentation generated at birth stays tied to the jurisdiction of the delivering health facility. When an infant is born, the hospital or attending clinic issues an official birth notification slip. That slip corresponds to physical logbooks maintained at the sub-county or county civil registration office where the birth took place.
 
