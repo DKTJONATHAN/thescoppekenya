@@ -1,17 +1,19 @@
 ---
 title: "Why You Must Apply for Birth Certificate in County of Birth"
 slug: "why-birth-certificate-applications-done-in-county-of-birth"
-description: "Huduma Kenya explains why birth certificate processing must be done in the county of birth, detailing required documents and archiving rules."
+description: "why you must apply for birth: Huduma Kenya explains why birth certificate processing must be done in the county of birth, detailing required documents and"
+excerpt: "Why You Must Apply for Birth Certificate in County of Birth Huduma Kenya on Sunday, September 06, 2026, clarified that parents must process"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/p65MD59m/35352d2b4608.webp"
 category: "News"
 tags: ["Huduma Kenya", "Birth Certificate", "Civil Registration", "Kenya Government", "Public Services"]
+canonical: "https://zandani.co.ke/article/why-birth-certificate-applications-done-in-county-of-birth"
 date: "2026-09-06T19:20:49Z"
 dateModified: "2026-09-06T19:20:49Z"
 focusKeyword: "why you must apply for birth"
 schema: "NewsArticle"
 ---
+
 ## Why You Must Apply for Birth Certificate in County of Birth Huduma Kenya on Sunday, September 06, 2026, clarified that parents must process initial birth certificate applications within the specific county where a child was delivered because primary physical records remain archived in local registries.
 
 The clarification, issued in Nairobi, addresses widespread inquiries from citizens who face turned-away requests after trying to lodge paperwork in their current towns of residence rather than where the delivery occurred.
