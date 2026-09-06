@@ -4,11 +4,13 @@ on:
   schedule:
     # Hourly News 06:00–23:00 EAT (03:00–20:00 UTC) at :05
     - cron: '5 3-20 * * *'
+    # Extra daily safety fire at 07:20 EAT in case hourly slots were skipped
+    - cron: '20 4 * * *'
   workflow_dispatch: {}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -65,22 +67,15 @@ jobs:
             exit 0
           fi
 
-      - name: Git safety pull
+      - name: Commit history and new posts
         run: |
-          git config --global user.name  "Za Ndani"
-          git config --global user.email "bot@zandani.co.ke"
-          git add -A
-          git stash -u || true
-          git fetch origin "${DEFAULT_BRANCH}"
-          git pull origin "${DEFAULT_BRANCH}" --rebase
-          git stash pop || echo "Nothing to pop"
-
-      - name: Commit and push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_author: "Za Ndani <bot@zandani.co.ke>"
-          commit_message: "content: Celestine Nzioka news report"
-          branch: ${{ env.DEFAULT_BRANCH }}
-          file_pattern: |
-            content/posts/*.md
-            .github/memory_celestine_news.json
+          git config user.name  "Za Ndani"
+          git config user.email "bot@zandani.co.ke"
+          git add "${MEMORY_FILE}" content/posts/*.md || true
+          if git diff --cached --quiet; then
+            echo "No article or memory changes to commit"
+            exit 0
+          fi
+          git commit -m "content: Celestine Nzioka news report"
+          git pull --rebase origin "${DEFAULT_BRANCH}" || git pull origin "${DEFAULT_BRANCH}" --no-rebase || true
+          git push origin HEAD:"${DEFAULT_BRANCH}"

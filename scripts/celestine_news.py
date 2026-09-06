@@ -15,11 +15,10 @@ SOURCE_URL = "https://www.kenyans.co.ke/news"
 SOURCE_DOMAIN = "kenyans.co.ke"
 POSTS_DIR = os.environ.get("POSTS_DIR", "content/posts")
 MEMORY_FILE = os.environ.get("MEMORY_FILE", ".github/memory_celestine_news.json")
-MAX_CANDIDATES = 12
-MAX_SCRAPE_TRIES = 5
+MAX_CANDIDATES = 20
+MAX_SCRAPE_TRIES = 8
 FRESH_HOURS = 18
 
-# Gemini 3.x ONLY — nothing below 3.0
 MODELS_TO_TRY = [
     "gemini-3.8-flash",
     "gemini-3.7-flash",
@@ -59,6 +58,13 @@ STYLE_PRESETS = [
      "sentence_mix": "Conversational rhythm", "closing": "One-line takeaway"},
 ]
 
+STOPWORDS = {
+    "the", "a", "an", "of", "to", "in", "on", "for", "and", "or", "with", "from",
+    "by", "at", "is", "as", "new", "kenya", "kenyan", "kenyans", "after", "says",
+    "said", "over", "into", "about", "how", "why", "what", "who", "this", "that",
+    "has", "have", "will", "not", "its", "their", "his", "her", "rule", "rules",
+}
+
 now_utc = datetime.datetime.utcnow()
 now_eat = now_utc + datetime.timedelta(hours=3)
 publish_ts = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -66,30 +72,116 @@ today_str = now_eat.strftime("%Y-%m-%d")
 full_date_str = now_eat.strftime("%A, %B %d, %Y")
 
 
+def canonicalize_url(url):
+    if not url:
+        return ""
+    parsed = urllib.parse.urlparse(url.strip())
+    path = re.sub(r"/+", "/", parsed.path).rstrip("/")
+    return urllib.parse.urlunparse((parsed.scheme or "https", parsed.netloc.lower().replace("www.", ""), path, "", "", ""))
+
+
+def norm_title(text):
+    words = re.findall(r"[a-z0-9]+", (text or "").lower())
+    return " ".join(w for w in words if w not in STOPWORDS and len(w) > 2)
+
+
+def topic_key(text):
+    words = list(dict.fromkeys(norm_title(text).split()))[:10]
+    return " ".join(sorted(words))
+
+
+def token_overlap(a, b):
+    sa, sb = set(a.split()), set(b.split())
+    if not sa or not sb:
+        return 0.0
+    return len(sa & sb) / max(1, min(len(sa), len(sb)))
+
+
 def load_memory():
+    empty = {
+        "published_hashes": [],
+        "published_urls": [],
+        "published_slugs": [],
+        "published_titles": [],
+        "topic_keys": [],
+        "style_history": [],
+        "angle_history": [],
+    }
     if not os.path.exists(MEMORY_FILE):
-        return {"published_hashes": [], "style_history": [], "angle_history": []}
+        return empty
     try:
         with open(MEMORY_FILE, "r", encoding="utf-8") as f:
             raw = json.load(f)
         if isinstance(raw, list):
-            return {"published_hashes": raw[-500:], "style_history": [], "angle_history": []}
-        raw.setdefault("published_hashes", [])
-        raw.setdefault("style_history", [])
-        raw.setdefault("angle_history", [])
+            empty["published_hashes"] = raw[-800:]
+            return empty
+        for key, val in empty.items():
+            raw.setdefault(key, val)
         return raw
     except Exception as e:
         print(f"Memory load error: {e}")
-        return {"published_hashes": [], "style_history": [], "angle_history": []}
+        return empty
 
 
 def save_memory(mem):
     os.makedirs(os.path.dirname(MEMORY_FILE) or ".", exist_ok=True)
-    mem["published_hashes"] = mem.get("published_hashes", [])[-500:]
+    mem["published_hashes"] = mem.get("published_hashes", [])[-800:]
+    mem["published_urls"] = mem.get("published_urls", [])[-800:]
+    mem["published_slugs"] = mem.get("published_slugs", [])[-800:]
+    mem["published_titles"] = mem.get("published_titles", [])[-800:]
+    mem["topic_keys"] = mem.get("topic_keys", [])[-800:]
     mem["style_history"] = mem.get("style_history", [])[-30:]
     mem["angle_history"] = mem.get("angle_history", [])[-80:]
     with open(MEMORY_FILE, "w", encoding="utf-8") as f:
         json.dump(mem, f, indent=2)
+    print(f"Memory saved to {MEMORY_FILE}")
+
+
+def index_existing_posts():
+    slugs, titles, topics = set(), set(), set()
+    if not os.path.isdir(POSTS_DIR):
+        return slugs, titles, topics
+    for name in os.listdir(POSTS_DIR):
+        if not name.endswith(".md"):
+            continue
+        m = re.match(r"\d{4}-\d{2}-\d{2}-(.+)\.md$", name)
+        if m:
+            slugs.add(m.group(1).lower())
+        try:
+            with open(os.path.join(POSTS_DIR, name), "r", encoding="utf-8") as h:
+                head = h.read(3000)
+        except Exception:
+            continue
+        sl = re.search(r'slug:\s*"([^"]+)"', head)
+        ttl = re.search(r'title:\s*"([^"]+)"', head)
+        if sl:
+            slugs.add(sl.group(1).lower())
+        if ttl:
+            titles.add(norm_title(ttl.group(1)))
+            topics.add(topic_key(ttl.group(1)))
+    return slugs, titles, topics
+
+
+def already_covered(title, slug, memory, post_slugs, post_titles, post_topics):
+    ntitle = norm_title(title)
+    tkey = topic_key(title)
+    slug_l = (slug or "").lower()
+    if slug_l and slug_l in post_slugs:
+        return f"existing slug {slug_l}"
+    if slug_l and slug_l in set(x.lower() for x in memory.get("published_slugs", [])):
+        return f"memory slug {slug_l}"
+    if ntitle and ntitle in post_titles:
+        return "existing title"
+    if ntitle and ntitle in set(memory.get("published_titles", [])):
+        return "memory title"
+    if tkey and tkey in post_topics:
+        return f"existing topic {tkey}"
+    if tkey and tkey in set(memory.get("topic_keys", [])):
+        return f"memory topic {tkey}"
+    for prev in list(post_titles) + list(memory.get("published_titles", [])):
+        if ntitle and token_overlap(ntitle, prev) >= 0.72:
+            return f"title overlap with {prev}"
+    return None
 
 
 def pick_style(history):
@@ -153,7 +245,8 @@ def get_target_urls():
             if any(x in href for x in ["#", "?page=", "/category/", "/tag/"]):
                 continue
             full = href if href.startswith("http") else "https://www.kenyans.co.ke" + href
-            if full not in urls:
+            full = canonicalize_url(full)
+            if full and full not in urls:
                 urls.append(full)
     except Exception as e:
         print(f"List scrape error: {e}")
@@ -378,40 +471,91 @@ def is_spam(text):
     return False
 
 
+def remember_source(memory, url, title=None, slug=None):
+    h = hashlib.md5(url.encode()).hexdigest()
+    if h not in memory["published_hashes"]:
+        memory["published_hashes"].append(h)
+    if url and url not in memory["published_urls"]:
+        memory["published_urls"].append(url)
+    if title:
+        nt = norm_title(title)
+        if nt and nt not in memory["published_titles"]:
+            memory["published_titles"].append(nt)
+        tk = topic_key(title)
+        if tk and tk not in memory["topic_keys"]:
+            memory["topic_keys"].append(tk)
+    if slug and slug not in memory["published_slugs"]:
+        memory["published_slugs"].append(slug)
+
+
 def main():
     memory = load_memory()
+    post_slugs, post_titles, post_topics = index_existing_posts()
+    print(
+        f"History: hashes={len(memory.get('published_hashes', []))} "
+        f"urls={len(memory.get('published_urls', []))} "
+        f"posts={len(post_slugs)}"
+    )
     links = get_target_urls()
     if not links:
         print("No links found")
+        save_memory(memory)
         return 0
 
     published_hashes = set(memory.get("published_hashes", []))
-    chosen_text = chosen_img = chosen_ttl = chosen_hash = None
+    published_urls = set(canonicalize_url(u) for u in memory.get("published_urls", []))
+    chosen_text = chosen_img = chosen_ttl = chosen_hash = chosen_url = None
     tries = 0
+    dirty = False
     for link in links:
         if tries >= MAX_SCRAPE_TRIES:
             break
-        h = hashlib.md5(link.encode()).hexdigest()
-        if h in published_hashes:
+        canon = canonicalize_url(link)
+        h = hashlib.md5(canon.encode()).hexdigest()
+        if h in published_hashes or canon in published_urls:
+            print(f"Skip already-seen URL {canon}")
             continue
         tries += 1
         text, img, ttl = scrape_article(link)
-        if text and len(text) > 500:
-            chosen_text, chosen_img, chosen_ttl, chosen_hash = text, img, ttl or "Latest News", h
-            break
+        if not text or len(text) <= 500:
+            remember_source(memory, canon, ttl)
+            dirty = True
+            continue
+        reason = already_covered(ttl, None, memory, post_slugs, post_titles, post_topics)
+        if reason:
+            print(f"Skip duplicate story ({reason}): {ttl}")
+            remember_source(memory, canon, ttl)
+            dirty = True
+            continue
+        chosen_text, chosen_img, chosen_ttl, chosen_hash, chosen_url = text, img, ttl or "Latest News", h, canon
+        break
 
     if not chosen_text:
         print("Nothing usable to write")
+        if dirty:
+            save_memory(memory)
         return 0
 
     brief = stage_brief(chosen_ttl, chosen_text)
     if not brief or not brief.get("summary"):
         print("Brief failed")
+        remember_source(memory, chosen_url, chosen_ttl)
+        save_memory(memory)
         return 0
     seo = stage_seo(brief)
     if not seo or not seo.get("title"):
         print("SEO failed")
+        remember_source(memory, chosen_url, chosen_ttl)
+        save_memory(memory)
         return 0
+
+    reason = already_covered(seo.get("title"), seo.get("slug"), memory, post_slugs, post_titles, post_topics)
+    if reason:
+        print(f"SEO collided with existing coverage ({reason}) — not rewriting")
+        remember_source(memory, chosen_url, seo.get("title"), seo.get("slug"))
+        save_memory(memory)
+        return 0
+
     style = pick_style(memory.get("style_history", []))
     print(f"Style chosen: {style['name']}")
     article_md = stage_write(brief, seo, style, get_internal_links())
@@ -434,6 +578,13 @@ def main():
     desc = (seo.get("description") or brief.get("summary", "")).strip().replace('"', "'")
 
     os.makedirs(POSTS_DIR, exist_ok=True)
+    path = os.path.join(POSTS_DIR, f"{today_str}-{slug}.md")
+    if os.path.exists(path):
+        print(f"File already exists, not rewriting: {path}")
+        remember_source(memory, chosen_url, seo.get("title"), slug)
+        save_memory(memory)
+        return 0
+
     frontmatter = (
         "---\n"
         f'title: "{seo["title"].replace(chr(34), chr(39))}"\n'
@@ -449,14 +600,12 @@ def main():
         f'schema: "NewsArticle"\n'
         "---\n\n"
     )
-    path = os.path.join(POSTS_DIR, f"{today_str}-{slug}.md")
     with open(path, "w", encoding="utf-8") as f:
         f.write(frontmatter + article_md.strip() + "\n")
     print(f"Saved {path}")
-    memory.setdefault("published_hashes", []).append(chosen_hash)
+    remember_source(memory, chosen_url, seo.get("title") or chosen_ttl, slug)
     memory.setdefault("style_history", []).append(style["name"])
     save_memory(memory)
-    print("Memory updated")
     return 0
 
 
