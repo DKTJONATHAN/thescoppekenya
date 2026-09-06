@@ -1,18 +1,20 @@
 ---
 title: "Manchester United held to 2-2 draw by Everton in Premier League"
 slug: "manchester-united-held-to-2-2-draw-by-everton"
-description: "Manchester United were held to a 2-2 draw by Everton in a tight Premier League clash, increasing the pressure on manager Michael Carrick."
+description: "Manchester United held to 2-2 draw by Everton in Premier League: Manchester United were held to a 2-2 draw by Everton in a tight Premier League clash,"
+excerpt: "Carrick’s United Stumble in Merseyside Stalemate Manchester United’s 2 2 draw with Everton at the Hill Dickinson stadium underscored an unco"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/vrGwmYG/586343b2815d.jpg"
 category: "Sports"
 tags: ["manchester united", "everton", "premier league", "football news", "michael carrick", "english premier league"]
+canonical: "https://zandani.co.ke/article/manchester-united-held-to-2-2-draw-by-everton"
 date: "2026-09-06T19:35:28Z"
 dateModified: "2026-09-06T19:35:28Z"
+focusKeyword: "Manchester United held to 2-2 draw by Everton in Premier League"
 schema: "NewsArticle"
 ---
 
-## Carrick’s United Stumble in Merseyside Stalemate
+## Carrick’s United Stumble in Merseyside Stalemate Manchester United held to 2-2 draw by Everton in Premier League is the central subject of the update.
 
 Manchester United’s 2-2 draw with Everton at the Hill Dickinson stadium underscored an uncomfortable reality for manager Michael Carrick. Despite holding the advantage on two separate occasions, the visitors repeatedly surrendered their grip on the match, exposing defensive vulnerabilities that have plagued the team since the opening weekend. While individual flashes of brilliance provided early hope, the result leaves United searching for a cohesive identity as they approach a pivotal derby clash.
 

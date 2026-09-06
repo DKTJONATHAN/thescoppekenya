@@ -1,18 +1,20 @@
 ---
 title: "Kenya Moves to End Raw Soda Ash Exports for Industrial Processing"
 slug: "kenya-pushes-for-local-manufacturing-and-value-addition"
-description: "President William Ruto is pushing for local manufacturing at Lake Magadi to replace raw commodity exports and balance trade relations with India."
+description: "Kenya Moves to End Raw Soda Ash Exports for Industrial Processing: President William Ruto is pushing for local manufacturing at Lake Magadi to replace raw"
+excerpt: "The End of the Colonial Trade Ledger When Nairobi and New Delhi formalized their bilateral trade agreement in 1981, the ink seemed to promis"
 author: "Jonathan Mwaniki"
-authorUrl: "https://zandani.co.ke/author/jonathan-mwaniki"
 image: "https://i.ibb.co/svfjvMN8/740c67f94df0.webp"
 category: "Opinions"
 tags: ["soda ash", "manufacturing", "william ruto", "kenya economy", "trade policy", "industrialization"]
+canonical: "https://zandani.co.ke/article/kenya-pushes-for-local-manufacturing-and-value-addition"
 date: "2026-09-06T19:35:17Z"
 dateModified: "2026-09-06T19:35:17Z"
+focusKeyword: "Kenya Moves to End Raw Soda Ash Exports for Industrial Processing"
 schema: "NewsArticle"
 ---
 
-## The End of the Colonial Trade Ledger
+## The End of the Colonial Trade Ledger Kenya Moves to End Raw Soda Ash Exports for Industrial Processing is the central subject of the update.
 
 When Nairobi and New Delhi formalized their bilateral trade agreement in 1981, the ink seemed to promise a new era of diplomatic and economic cooperation. Four decades later, that document is viewed with a more critical eye. It is increasingly clear that the framework did not foster mutual growth; instead, it entrenched a lopsided arrangement that relegated Kenya to the role of a primary resource extractor. The economic architecture established forty-four years ago has functioned as a quiet mechanism for industrial underdevelopment, locking the nation into a cycle of exporting potential rather than products.
 
