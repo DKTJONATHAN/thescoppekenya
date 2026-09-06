@@ -5,6 +5,7 @@ from __future__ import annotations
 import pathlib
 import re
 import sys
+from collections import Counter
 
 POSTS_DIR = pathlib.Path("content/posts")
 MAX_TITLE = 70
@@ -22,7 +23,12 @@ BANNED = [
     "navigating the landscape",
     "what this means for kenyans",
     "search-ready summary",
+    "is central to this update for kenyan readers",
+    "is the central subject of the update",
 ]
+
+SPAM_LEAD_RE = re.compile(r"is central to this update for Kenyan readers", re.I)
+SPAM_SUBJECT_RE = re.compile(r"is the central subject of the update", re.I)
 
 
 def split_fm(text: str):
@@ -38,6 +44,22 @@ def split_fm(text: str):
         key, val = line.split(":", 1)
         data[key.strip()] = val.strip().strip('"').strip("'")
     return data, parts[2]
+
+
+def has_high_repetition(body: str) -> bool:
+    text = re.sub(r"\s+", " ", body).strip().lower()
+    words = text.split()
+    if len(words) < 40:
+        return False
+    for n in (8, 10, 12):
+        if len(words) < n * 8:
+            continue
+        phrases = [" ".join(words[i : i + n]) for i in range(len(words) - n)]
+        counts = Counter(phrases)
+        most = counts.most_common(1)
+        if most and most[0][1] >= 8:
+            return True
+    return False
 
 
 def lint(path: pathlib.Path):
@@ -71,6 +93,15 @@ def lint(path: pathlib.Path):
         ERRORS.append(f"{name}: missing date")
     if words < MIN_WORDS:
         ERRORS.append(f"{name}: thin content ({words} words)")
+
+    # Hard spam signals -> ERROR (fail the gate)
+    if SPAM_LEAD_RE.search(body):
+        ERRORS.append(f"{name}: spam lead 'is central to this update...'")
+    if SPAM_SUBJECT_RE.search(body):
+        ERRORS.append(f"{name}: spam phrase 'is the central subject of the update'")
+    if has_high_repetition(body):
+        ERRORS.append(f"{name}: high phrase repetition (keyword stuffing)")
+
     if not re.search(r"^##\s+", body, re.M):
         WARNS.append(f"{name}: no H2 heading")
     if not data.get("focusKeyword"):
@@ -85,7 +116,7 @@ def lint(path: pathlib.Path):
 
 
 def main():
-    files = sorted(POSTS_DIR.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True)[:25]
+    files = sorted(POSTS_DIR.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True)[:40]
     slugs = {}
     titles = {}
     for path in files:
@@ -104,7 +135,7 @@ def main():
         if len(names) > 1:
             WARNS.append(f"duplicate title '{title}': {', '.join(names)}")
 
-    print("SEO lint (latest 25 posts)")
+    print("SEO lint (latest 40 posts)")
     for w in WARNS:
         print("WARN", w)
     for e in ERRORS:
