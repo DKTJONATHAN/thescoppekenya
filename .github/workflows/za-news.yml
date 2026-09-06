@@ -58,12 +58,29 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          echo "News pipeline entry — full generator lives in repo scripts; using existing embedded pipeline."
-          # Keep previous behavior: the large embedded pipeline was truncated in prior updates.
-          # Prefer scripts/celestine_news.py when present.
           if [ -f scripts/celestine_news.py ]; then
             python scripts/celestine_news.py
           else
             echo "scripts/celestine_news.py missing — skipping generation this run"
             exit 0
           fi
+
+      - name: Git safety pull
+        run: |
+          git config --global user.name  "Za Ndani"
+          git config --global user.email "bot@zandani.co.ke"
+          git add -A
+          git stash -u || true
+          git fetch origin "${DEFAULT_BRANCH}"
+          git pull origin "${DEFAULT_BRANCH}" --rebase
+          git stash pop || echo "Nothing to pop"
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Za Ndani <bot@zandani.co.ke>"
+          commit_message: "content: Celestine Nzioka news report"
+          branch: ${{ env.DEFAULT_BRANCH }}
+          file_pattern: |
+            content/posts/*.md
+            .github/memory_celestine_news.json
