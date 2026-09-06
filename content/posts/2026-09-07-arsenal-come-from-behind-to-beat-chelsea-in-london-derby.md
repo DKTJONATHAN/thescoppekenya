@@ -1,18 +1,20 @@
 ---
 title: "Arsenal Come From Behind to Beat Chelsea in London Derby"
 slug: "arsenal-come-from-behind-to-beat-chelsea-in-london-derby"
-description: "Arsenal maintained their perfect Premier League start after Kai Havertz and Martin Odegaard secured a comeback victory against rivals Chelsea."
+description: "Arsenal Come From Behind to Beat Chelsea in London Derby: Arsenal maintained their perfect Premier League start after Kai Havertz and Martin Odegaard secured a"
+excerpt: "Arsenal Outsmarts Chelsea in Tactical London Derby The Emirates Stadium hosted a tactical masterclass as Arsenal dismantled Chelsea 2 1. By"
 author: "Jona Munyi"
-authorUrl: "https://zandani.co.ke/author/jona-munyi"
 image: "https://i.ibb.co/cKpDG08Z/e8cee350bec0.png"
 category: "Sports"
 tags: ["arsenal", "chelsea", "premier league", "football", "london derby", "kenya sports"]
+canonical: "https://zandani.co.ke/article/arsenal-come-from-behind-to-beat-chelsea-in-london-derby"
 date: "2026-09-06T22:22:24Z"
 dateModified: "2026-09-06T22:22:24Z"
+focusKeyword: "Arsenal Come From Behind to Beat Chelsea in London Derby"
 schema: "NewsArticle"
 ---
 
-## Arsenal Outsmarts Chelsea in Tactical London Derby
+## Arsenal Outsmarts Chelsea in Tactical London Derby Arsenal Come From Behind to Beat Chelsea in London Derby is the central subject of the update.
 
 The Emirates Stadium hosted a tactical masterclass as Arsenal dismantled Chelsea 2-1. By valuing structural harmony over aggressive market spending, the hosts demonstrated that strategic stability often outweighs a massive transfer budget.
 
