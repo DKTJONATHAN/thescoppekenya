@@ -4,17 +4,16 @@ slug: "kenyan-lawmakers-prioritize-arsenal-and-manchester-united-football-d"
 description: "Kenyan lawmakers prioritize Arsenal and Manchester United footbal: Kenyan lawmakers paused official business to debate Arsenal and Manchester United."
 excerpt: "Kenyan lawmakers prioritize Arsenal and Manchester United football debate over official legislative business during parliamentary session Me"
 author: "Zed Mogaka"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["arsenal-vs-manchester-united", "kenyan-lawmakers", "parliamentary-football-debate", "legislative-priorities", "football-rivalry"]
-canonical: "https://zandani.co.ke/article/kenyan-lawmakers-prioritize-arsenal-and-manchester-united-football-d"
 date: "2026-05-26T23:20:03Z"
 dateModified: "2026-05-26T23:20:03Z"
 focusKeyword: "Kenyan lawmakers prioritize Arsenal and Manchester United footbal"
 schema: "NewsArticle"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+canonical: "https://zandani.co.ke/article/kenyan-lawmakers-prioritize-arsenal-and-manchester-united-football-d"
 ---
-
 Kenyan lawmakers prioritize Arsenal and Manchester United football debate over official legislative business during parliamentary session Members of the Kenyan National Assembly recently diverted a formal legislative session in Nairobi to debate English Premier League football results.
 
 Instead of addressing national policies, lawmakers spent significant time bantering about a match between foreign clubs Arsenal and Manchester United.

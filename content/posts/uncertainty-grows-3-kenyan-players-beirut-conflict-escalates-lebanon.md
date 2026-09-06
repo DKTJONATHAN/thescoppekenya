@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/XxDDksWr/6501fe8a57cf.jpg"
 category: "News"
 tags: ["kenyan football players", "beirut conflict", "lebanon", "middle east crisis", "player safety", "kenyan diaspora", "michael olunga"]
-canonical: "https://zandani.co.ke/article/uncertainty-grows-3-kenyan-players-beirut-conflict-escalates-lebanon"
 date: "2026-03-03"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Uncertainty Grows for 3 Kenyan Players in Beirut as Conflict"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/uncertainty-grows-3-kenyan-players-beirut-conflict-escalates-lebanon"
 ---
-
 ## Uncertainty Grows for 3 Kenyan Players in Beirut as Conflict Escalates in Lebanon The safety of three prominent Kenyan footballers, Austine Odhiambo, Anthony Akumu, and Masoud Juma, has become a national concern as Israel intensifies airstrikes on Beirut and other parts of Lebanon, prompting the indefinite suspension of the local football league.
 
 This escalating conflict places a harsh spotlight on the precarious circumstances faced by Kenyan professionals abroad.

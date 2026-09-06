@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/supreme%20court%20of%20kenya%20judges_1.jpg?itok=PwWPLMbl"
 category: "News"
 tags: ["Justice Isaac Lenaola", "Residual Special Court for Sierra Leone", "Kenyan Judiciary", "international justice", "Supreme Court", "Celestine Nzioka", "Za Ndani", "The Hague"]
-canonical: "https://zandani.co.ke/article/justice-isaac-lenaola-elected-president-residual-special-court-for-sie"
 date: "2026-03-01"
 dateModified: "2026-03-01"
 focusKeyword: "Justice Isaac Lenaola Elected President of Residual Special"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/justice-isaac-lenaola-elected-president-residual-special-court-for-sie"
 ---
-
 ## Justice Isaac Lenaola Elected President of Residual Special Court for Sierra Leone Supreme Court Judge Isaac Lenaola has been elected President of the Residual Special Court for Sierra Leone (RSCSL) for a renewable two-year term, marking a significant elevation for Kenyan representation in global judicial institutions.
 
 This appointment underscores Kenya's growing influence and expertise within the international legal framework.

@@ -7,13 +7,12 @@ author: "Za Ndani"
 image: "https://cdn.radioafrica.digital/image/2026/02/4c1a2f78-517c-4e28-b571-5b8e405e23a9.jpg?1771978846094"
 category: "Entertainment"
 tags: ["MP Peter Salasya", "daughter", "medicine", "hospital", "Kenya", "celebrity", "gossip", "family plans"]
-canonical: "https://zandani.co.ke/article/mp-peter-salasya-blesses-daughter-study-medicine-own-hospital"
 date: "2026-02-25"
 dateModified: "2026-02-25"
 focusKeyword: "MP Peter Salasya Blesses Daughter to Study Medicine and Own"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/mp-peter-salasya-blesses-daughter-study-medicine-own-hospital"
 ---
-
 ## MP Peter Salasya Blesses Daughter to Study Medicine and Own a Hospital Mumias East Member of Parliament, Peter Salasya, has recently captured attention by publicly sharing his ambitious desires for his young daughter's future.
 
 He expressed his profound wish for her to pursue a career in medicine, aiming for a higher education than his own, and ultimately establish her own healthcare facility.

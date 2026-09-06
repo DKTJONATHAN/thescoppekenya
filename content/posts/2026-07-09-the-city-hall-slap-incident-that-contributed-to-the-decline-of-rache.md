@@ -4,17 +4,16 @@ slug: "the-city-hall-slap-incident-that-contributed-to-the-decline-of-rache"
 description: "The City Hall Slap Incident That Contributed to the Decline of Ra: The 2014 City Hall altercation between Mike Sonko and Rachel Shebesh resulted in a"
 excerpt: "In 2014, Nairobi politics reached a boiling point when then Senator Mike Sonko and then Woman Representative Rachel Shebesh engaged in a vio"
 author: "Zed Mogaka"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/hFG3TQGf/be87efce8893.webp"
 category: "Entertainment"
 tags: ["rachel-shebesh", "city-hall-slap", "nairobi-politics", "kenyan-political-scandals", "sonko-shebesh-incident"]
-canonical: "https://zandani.co.ke/article/the-city-hall-slap-incident-that-contributed-to-the-decline-of-rache"
 date: "2026-07-09T15:32:55Z"
 dateModified: "2026-07-09T15:32:55Z"
 focusKeyword: "The City Hall Slap Incident That Contributed to the Decline of Ra"
 schema: "NewsArticle"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+canonical: "https://zandani.co.ke/article/the-city-hall-slap-incident-that-contributed-to-the-decline-of-rache"
 ---
-
 In 2014, Nairobi politics reached a boiling point when then-Senator Mike Sonko and then-Woman Representative Rachel Shebesh engaged in a violent physical altercation at City Hall.
 
 The incident, which featured Sonko slapping Shebesh, permanently altered the political trajectory of both prominent figures.

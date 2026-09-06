@@ -4,17 +4,16 @@ slug: "the-financial-challenges-facing-retired-football-legend-dennis-oliec"
 description: "The Financial Challenges Facing Retired Football Legend Dennis Ol: Former Harambee Stars striker Dennis Oliech faces significant financial challenges in."
 excerpt: "Former Harambee Stars striker Dennis Oliech faces mounting public concern this May 2026 as details emerge regarding his post retirement fina"
 author: "Zed Mogaka"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://pbs.twimg.com/media/HI2855RWkAEQd8H.jpg"
 category: "Entertainment"
 tags: ["dennis-oliech", "kenyan-football", "harambee-stars", "kenyan-sports-personalities", "football-retirement-challenges"]
-canonical: "https://zandani.co.ke/article/the-financial-challenges-facing-retired-football-legend-dennis-oliec"
 date: "2026-05-21T23:14:54Z"
 dateModified: "2026-05-21T23:14:54Z"
 focusKeyword: "The Financial Challenges Facing Retired Football Legend Dennis Ol"
 schema: "NewsArticle"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+canonical: "https://zandani.co.ke/article/the-financial-challenges-facing-retired-football-legend-dennis-oliec"
 ---
-
 Former Harambee Stars striker Dennis Oliech faces mounting public concern this May 2026 as details emerge regarding his post-retirement financial difficulties.
 
 The legendary footballer, once a top earner in European leagues, now faces a stark reality that highlights the fragility of professional sports careers.

@@ -4,17 +4,16 @@ slug: "mpenzi-chokuu-details-her-transformation-from-a-manual-laborer-in-ki"
 description: "Mpenzi Chokuu details her transformation from a manual laborer in Kisumu to a high-end socialite in Germany to escape Kenya's harsh economic climate."
 excerpt: "Mpenzi Chokuu, a Kenyan transgender personality residing in Germany, recently detailed her radical evolution from a manual laborer in Kisumu"
 author: "Zed Mogaka"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://pbs.twimg.com/media/HJLtBDVWwAAMDkn.jpg"
 category: "Entertainment"
 tags: ["mpenzi-chokuu", "kenyan-socialites", "chokuu-life-story", "kisumu-to-germany", "celebrity-transformation"]
-canonical: "https://zandani.co.ke/article/mpenzi-chokuu-details-her-transformation-from-a-manual-laborer-in-ki"
 date: "2026-05-25T17:51:43Z"
 dateModified: "2026-05-25T17:51:43Z"
 focusKeyword: "Mpenzi Chokuu details her transformation from a manual laborer in"
 schema: "NewsArticle"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+canonical: "https://zandani.co.ke/article/mpenzi-chokuu-details-her-transformation-from-a-manual-laborer-in-ki"
 ---
-
 Mpenzi Chokuu, a Kenyan transgender personality residing in Germany, recently detailed her radical evolution from a manual laborer in Kisumu to a high-end socialite.
 
 Her journey highlights the extreme measures individuals take to escape the current harsh economic climate in Kenya.

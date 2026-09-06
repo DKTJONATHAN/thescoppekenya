@@ -7,13 +7,12 @@ author: "Jona Munyi"
 image: "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/eb7a/live/5c0f70d0-6139-11ee-ac8c-9d18dbc280ea.png"
 category: "Sports"
 tags: ["england football", "thomas tuchel", "world cup", "international football", "sports news"]
-canonical: "https://zandani.co.ke/article/thomas-tuchel-excludes-key-stars-from-england-world-cup-squad"
 date: "2026-05-21T17:08:06Z"
 dateModified: "2026-05-21T17:08:06Z"
 focusKeyword: "Thomas Tuchel Excludes Key Stars From England World Cup Squad"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/thomas-tuchel-excludes-key-stars-from-england-world-cup-squad"
 ---
-
 ## Thomas Tuchel Excludes Key Stars From England World Cup Squad Thomas Tuchel has finalized his 26-man England roster for the June World Cup, delivering a ruthless cull of the Southgate-era stalwarts.
 
 The selection prioritizes tactical fluidity and defensive discipline over the established reputations of several prominent national team figures.

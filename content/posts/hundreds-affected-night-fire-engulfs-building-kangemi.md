@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/tassia-fire-15.jpg?itok=gokR4ehw"
 category: "News"
 tags: ["Kangemi fire", "residential building", "Marega Road", "Kenya Red Cross", "gas explosion", "Nairobi fires", "property damage", "national news"]
-canonical: "https://zandani.co.ke/article/hundreds-affected-night-fire-engulfs-building-kangemi"
 date: "2026-02-26"
 dateModified: "2026-02-26"
 focusKeyword: "Hundreds Affected as Night Fire Engulfs Building in Kangemi"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/hundreds-affected-night-fire-engulfs-building-kangemi"
 ---
-
 ## Hundreds Affected as Night Fire Engulfs Building in Kangemi A fierce night fire that engulfed a residential building in Kangemi, Nairobi, on Wednesday, February 25, 2026, has left an estimated 300 residents counting losses worth millions of shillings.
 
 Emergency responders, including the Kenya Red Cross, were deployed to the scene along Marega Road, Bata area, to contain the inferno and assist those displaced.

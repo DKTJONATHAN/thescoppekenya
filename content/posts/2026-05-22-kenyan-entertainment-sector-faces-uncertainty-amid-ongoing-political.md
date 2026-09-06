@@ -4,17 +4,16 @@ slug: "kenyan-entertainment-sector-faces-uncertainty-amid-ongoing-political"
 description: "Kenyan Entertainment Sector Faces Uncertainty Amid Ongoing Politi: Kenya’s entertainment sector faces a downturn as political instability and protests."
 excerpt: "Kenya’s creative industry faces a sharp downturn as persistent anti government protests, ongoing impeachment proceedings, and severe economi"
 author: "Zed Mogaka"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["kenyan-entertainment", "political-instability", "kenyan-creative-economy", "arts-and-culture-kenya", "kenya-media-industry"]
-canonical: "https://zandani.co.ke/article/kenyan-entertainment-sector-faces-uncertainty-amid-ongoing-political"
 date: "2026-05-22T23:16:23Z"
 dateModified: "2026-05-22T23:16:23Z"
 focusKeyword: "Kenyan Entertainment Sector Faces Uncertainty Amid Ongoing Politi"
 schema: "NewsArticle"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+canonical: "https://zandani.co.ke/article/kenyan-entertainment-sector-faces-uncertainty-amid-ongoing-political"
 ---
-
 Kenya’s creative industry faces a sharp downturn as persistent anti-government protests, ongoing impeachment proceedings, and severe economic instability force a quiet period across the country.
 
 Promoters are canceling major events, venues remain empty, and artists are choosing silence over performance throughout May 2026.

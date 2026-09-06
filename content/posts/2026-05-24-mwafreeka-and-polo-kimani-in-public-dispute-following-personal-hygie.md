@@ -4,17 +4,16 @@ slug: "mwafreeka-and-polo-kimani-in-public-dispute-following-personal-hygie"
 description: "Mwafreeka and Polo Kimani in Public Dispute Following Personal Hy: Mwafreeka and Polo Kimani are engaged in a public dispute after personal hygiene."
 excerpt: "During a recent episode of the Iko Nini podcast recorded this month, Mwafreeka openly critiqued Polo Kimani regarding his personal hygiene."
 author: "Zed Mogaka"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://pbs.twimg.com/media/HJE9ykNXYAAC99y.jpg"
 category: "Entertainment"
 tags: ["mwafreeka", "polo-kimani", "kenyan-entertainment", "kenyan-celebrity-feud", "mwafreeka-polo-kimani-beef"]
-canonical: "https://zandani.co.ke/article/mwafreeka-and-polo-kimani-in-public-dispute-following-personal-hygie"
 date: "2026-05-24T11:37:42Z"
 dateModified: "2026-05-24T11:37:42Z"
 focusKeyword: "Mwafreeka and Polo Kimani in Public Dispute Following Personal Hy"
 schema: "NewsArticle"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+canonical: "https://zandani.co.ke/article/mwafreeka-and-polo-kimani-in-public-dispute-following-personal-hygie"
 ---
-
 During a recent episode of the Iko Nini podcast recorded this month, Mwafreeka openly critiqued Polo Kimani regarding his personal hygiene.
 
 The remarks triggered a tense public confrontation between the two, raising broader questions about professional conduct and boundaries within the Kenyan podcasting industry.

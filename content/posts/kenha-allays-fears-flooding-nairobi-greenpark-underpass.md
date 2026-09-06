@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/greenpark-underpass.jpg?itok=wM-Cr6-v"
 category: "News"
 tags: ["kenha", "greenpark underpass", "nairobi", "flooding", "AI", "misinformation", "infrastructure", "kenyan news"]
-canonical: "https://zandani.co.ke/article/kenha-allays-fears-flooding-nairobi-greenpark-underpass"
 date: "2026-02-27"
 dateModified: "2026-02-27"
 focusKeyword: "KeNHA Allays Fears of Flooding at Nairobi Greenpark Underpas"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/kenha-allays-fears-flooding-nairobi-greenpark-underpass"
 ---
-
 ## KeNHA Allays Fears of Flooding at Nairobi Greenpark Underpass The Kenya National Highways Authority (KeNHA) has definitively dismissed widely circulated images purporting to show severe flooding at the Greenpark Pedestrian Underpass in Nairobi.
 
 The Authority confirmed on Thursday, February 26, 2026, that these viral images were artificially generated using Artificial Intelligence and do not represent the actual condition of the recently constructed facility.

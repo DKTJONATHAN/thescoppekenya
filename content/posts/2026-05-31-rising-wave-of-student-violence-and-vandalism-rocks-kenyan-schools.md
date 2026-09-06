@@ -4,17 +4,16 @@ slug: "rising-wave-of-student-violence-and-vandalism-rocks-kenyan-schools"
 description: "Rising Wave of Student Violence and Vandalism Rocks Kenyan School: A surge of student violence, arson, and assaults on staff in 2026 Kenyan schools has"
 excerpt: "In 2026, a disturbing wave of student violence has emerged across Kenyan schools. Recent reports confirm numerous incidents of arson, the de"
 author: "Zed Mogaka"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["student-unrest", "kenyan-schools", "school-vandalism", "education-crisis", "academic-discipline"]
-canonical: "https://zandani.co.ke/article/rising-wave-of-student-violence-and-vandalism-rocks-kenyan-schools"
 date: "2026-05-31T21:13:06Z"
 dateModified: "2026-05-31T21:13:06Z"
 focusKeyword: "Rising Wave of Student Violence and Vandalism Rocks Kenyan School"
 schema: "NewsArticle"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+canonical: "https://zandani.co.ke/article/rising-wave-of-student-violence-and-vandalism-rocks-kenyan-schools"
 ---
-
 In 2026, a disturbing wave of student violence has emerged across Kenyan schools.
 
 Recent reports confirm numerous incidents of arson, the destruction of school property, and direct physical assaults on teaching staff, prompting urgent national concern regarding the safety of academic institutions.

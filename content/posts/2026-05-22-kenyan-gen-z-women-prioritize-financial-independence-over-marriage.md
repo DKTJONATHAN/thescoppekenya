@@ -7,13 +7,12 @@ author: "Martin Kihara"
 image: "https://cdn.radioafrica.digital/image/2026/05/df174046-80c9-4dd7-addc-1d334efdd7c7.jpg?1779467123265"
 category: "Gossip"
 tags: ["kenya", "gen z", "financial independence", "marriage", "wealth accumulation", "social trends"]
-canonical: "https://zandani.co.ke/article/kenyan-gen-z-women-prioritize-financial-independence-over-marriage"
 date: "2026-05-22T16:38:55Z"
 dateModified: "2026-05-22T16:38:55Z"
 focusKeyword: "Kenyan Gen Z Women Prioritize Financial Independence Over Marriag"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/kenyan-gen-z-women-prioritize-financial-independence-over-marriage"
 ---
-
 ## Kenyan Gen Z Women Prioritize Financial Independence Over Marriage The romantic landscape in Kenya is experiencing a profound transformation as Gen Z women move away from traditional matrimonial expectations, opting instead to prioritize the accumulation of personal assets.
 
 Driven by broader economic instability, these women are abandoning the outdated model of patriarchal reliance in favor of a self-determined financial future.

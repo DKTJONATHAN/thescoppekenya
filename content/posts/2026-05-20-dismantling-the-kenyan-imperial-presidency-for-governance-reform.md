@@ -7,13 +7,12 @@ author: "Jonathan Mwaniki"
 image: "https://i.ibb.co/PZh2tss8/7187f87f5e93.png"
 category: "Opinions"
 tags: ["kenya politics", "constitutional reform", "governance", "executive power", "kenyan history", "public policy"]
-canonical: "https://zandani.co.ke/article/dismantling-the-kenyan-imperial-presidency-for-governance-reform"
 date: "2026-05-20T13:47:04Z"
 dateModified: "2026-05-20T13:47:04Z"
 focusKeyword: "Dismantling the Imperial Presidency for Constitutional Reform"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/dismantling-the-kenyan-imperial-presidency-for-governance-reform"
 ---
-
 ## Dismantling the Imperial Presidency for Constitutional Reform The transition from the 1963 Westminster model was never intended to produce an absolute monarch.
 
 A review of the historical record reveals that our current executive structure is not a timeless Kenyan tradition but rather a six-decade-old administrative mistake.

@@ -4,17 +4,16 @@ slug: "political-connections-and-patronage-define-latest-cabinet-appointmen"
 description: "Political Connections and Patronage Define Latest Cabinet Appoint: Kenya's new cabinet appointments face public backlash as critics claim political."
 excerpt: "Kenya’s political leadership unveiled a series of controversial cabinet appointments this Tuesday in Nairobi. The selection process has trig"
 author: "Zed Mogaka"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "https://i.ibb.co/N6H8rD6T/dfcdda1497be.webp"
 category: "Entertainment"
 tags: ["kenyan-politics", "cabinet-appointments", "political-patronage", "government-reshuffle", "kenya-leadership"]
-canonical: "https://zandani.co.ke/article/political-connections-and-patronage-define-latest-cabinet-appointmen"
 date: "2026-07-21T14:20:36Z"
 dateModified: "2026-07-21T14:20:36Z"
 focusKeyword: "Political Connections and Patronage Define Latest Cabinet Appoint"
 schema: "NewsArticle"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+canonical: "https://zandani.co.ke/article/political-connections-and-patronage-define-latest-cabinet-appointmen"
 ---
-
 Kenya’s political leadership unveiled a series of controversial cabinet appointments this Tuesday in Nairobi.
 
 The selection process has triggered widespread public criticism, as observers argue that influential government positions are being distributed based on familial ties and personal connections rather than professional merit.

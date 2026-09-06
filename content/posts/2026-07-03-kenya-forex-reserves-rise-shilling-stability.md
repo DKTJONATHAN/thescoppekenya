@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/gFSq6dn6/689152a17853.jpg"
 category: "News"
 tags: ["kenyan economy", "central bank of kenya", "kenyan shilling", "inflation", "world bank", "business news"]
-canonical: "https://zandani.co.ke/article/kenya-forex-reserves-rise-shilling-stability"
 date: "2026-07-03T18:16:36Z"
 dateModified: "2026-07-03T18:16:36Z"
 focusKeyword: "Kenya Forex Reserves Hit Ksh1.82 Trillion Bolstering Shilling"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/kenya-forex-reserves-rise-shilling-stability"
 ---
-
 ## Kenya Forex Reserves Hit Ksh1.82 Trillion Bolstering Shilling Kenya’s foreign exchange reserves have climbed to an unprecedented USD 14.05 billion, providing the Central Bank with a record six months of import cover as the shilling strengthens against the dollar.
 
 This accumulation of reserves, valued at Ksh1.82 trillion as of July 2, has injected a measure of predictability into the Nairobi Securities Exchange.

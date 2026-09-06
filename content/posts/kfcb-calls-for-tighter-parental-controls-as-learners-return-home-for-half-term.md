@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/secondary_school_students_0_0.jpg?itok=cCNP-__D"
 category: "News"
 tags: ["KFCB", "parental controls", "child online safety", "half-term break", "Kenya", "media regulation"]
-canonical: "https://zandani.co.ke/article/kfcb-calls-for-tighter-parental-controls-as-learners-return-home-for-h"
 date: "2026-02-28"
 dateModified: "2026-02-28"
 focusKeyword: "KFCB Calls for Tighter Parental Controls as Learners Return"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/kfcb-calls-for-tighter-parental-controls-as-learners-return-home-for-h"
 ---
-
 ## KFCB Calls for Tighter Parental Controls as Learners Return Home For Half-Term The Kenya Film Classification Board (KFCB) has intensified its call for tighter parental controls, urging parents and guardians to actively monitor and filter the content children consume during the current half-term break, a period when learners return home for at least a week.
 
 This advisory underscores the critical role families play in safeguarding minors from potentially harmful audio-visual content.

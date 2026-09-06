@@ -4,17 +4,16 @@ slug: "whatsapp-sticker-collections-serve-as-indicators-of-infidelity-in-re"
 description: "WhatsApp sticker collections serve as indicators of infidelity in: WhatsApp sticker collections are becoming primary indicators of infidelity in Kenya, as"
 excerpt: "Couples across Kenya are currently navigating a significant rise in domestic conflict as mobile messaging privacy diminishes. In 2026, partn"
 author: "Zed Mogaka"
-author_url: "https://zandani.co.ke/author/zed-mogaka"
 image: "/images/placeholder.jpg"
 category: "Entertainment"
 tags: ["whatsapp-infidelity", "kenyan-relationships", "digital-cheating", "social-media-trust", "whatsapp-stickers"]
-canonical: "https://zandani.co.ke/article/whatsapp-sticker-collections-serve-as-indicators-of-infidelity-in-re"
 date: "2026-06-26T14:47:24Z"
 dateModified: "2026-06-26T14:47:24Z"
 focusKeyword: "WhatsApp sticker collections serve as indicators of infidelity in"
 schema: "NewsArticle"
+author_url: "https://zandani.co.ke/author/zed-mogaka"
+canonical: "https://zandani.co.ke/article/whatsapp-sticker-collections-serve-as-indicators-of-infidelity-in-re"
 ---
-
 Couples across Kenya are currently navigating a significant rise in domestic conflict as mobile messaging privacy diminishes.
 
 In 2026, partners are uncovering evidence of infidelity through unexpected digital clues, revealing that the most damning indicators of betrayal are often hidden in plain sight.
