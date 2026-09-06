@@ -499,10 +499,13 @@
     "ba21d762723bacb59ccb51f5e7895d86",
     "1abc0e5a1b2dc1d135f86826edfc952c",
     "8ecb8d65c7094ec4ba05d5e5c7120442",
-    "0665b15a50dbd580530979e321ffba7a"
+    "0665b15a50dbd580530979e321ffba7a",
+    "73e143685da15c96cb8c92d8d74e4176",
+    "11ef9c0d39e857d943130984028faa12",
+    "0d1d83ff71217efe6f27e730740e5066",
+    "5474ba2dbcd84a0a56b89264c0a32dcd"
   ],
   "style_history": [
-    "Power Accountability",
     "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -531,7 +534,8 @@
     "Reaction & Voices",
     "Hard News Lead",
     "Power Accountability",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Explainer"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -614,5 +618,24 @@
     "next_48_hours|Kwale County|Hard News Lead",
     "money_follow|Kenya|Power Accountability",
     "story_progression|ODM|Context Backgrounder"
+  ],
+  "published_urls": [
+    "https://kenyans.co.ke/news/tracker",
+    "https://kenyans.co.ke/news/118692-top-100-kenyans-2025-full-list",
+    "https://kenyans.co.ke/news/126839-huduma-kenya-explains-why-birth-certificates-must-be-applied-county-birth",
+    "https://kenyans.co.ke/news/126841-explained-what-sidewall-bulges-car-tyres-mean-and-why-they-are-dangerous"
+  ],
+  "published_slugs": [
+    "tyre-sidewall-bulges-causes-blowout-risks"
+  ],
+  "published_titles": [
+    "news tracker",
+    "huduma explains birth certificates must applied county birth",
+    "tyre sidewall bulges hidden dangers blowout risks"
+  ],
+  "topic_keys": [
+    "news tracker",
+    "applied birth certificates county explains huduma must",
+    "blowout bulges dangers hidden risks sidewall tyre"
   ]
 }
