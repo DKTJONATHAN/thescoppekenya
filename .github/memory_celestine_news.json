@@ -1,6 +1,5 @@
 {
   "published_hashes": [
-    "4faad757a3cf1a342bc405a60ec6b859",
     "330a86261f7d5fc6780b07d5451d0a77",
     "87884405f156308305245d4078e18f1f",
     "4bbe3ab972ddaa6e2cdf0ed9fa514e38",
@@ -499,10 +498,10 @@
     "9843f3b45aca99e459ffdd11fc3e2f98",
     "a7f3fe1f5d6cf4bbe7cc5235ed42cf6d",
     "74d791bc7ab7933657d7fdca57e0128b",
-    "ba21d762723bacb59ccb51f5e7895d86"
+    "ba21d762723bacb59ccb51f5e7895d86",
+    "1abc0e5a1b2dc1d135f86826edfc952c"
   ],
   "style_history": [
-    "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
@@ -531,10 +530,10 @@
     "Explainer",
     "Power Accountability",
     "Context Backgrounder",
-    "Reaction & Voices"
+    "Reaction & Voices",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "accountability|Judicial Service Commission|Reaction & Voices",
     "policy_gap|Kenya|Power Accountability",
     "story_progression|Kenya politics|Context Backgrounder",
     "story_progression|aviation|Hard News Lead",
@@ -613,6 +612,7 @@
     "money_follow|Kenya|Explainer",
     "money_follow|KRA|Power Accountability",
     "policy_gap|Kenyan Embassy|Context Backgrounder",
-    "winners_losers|Land Acquisition|Reaction & Voices"
+    "winners_losers|Land Acquisition|Reaction & Voices",
+    "next_48_hours|Kwale County|Hard News Lead"
   ]
 }
