@@ -1,0 +1,49 @@
+name: Purge all posts and archives
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  purge:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Delete posts and archives
+        run: |
+          set -e
+          echo "Before:"
+          find content -type f -name '*.md' 2>/dev/null | wc -l || true
+          ls -la content || true
+
+          mkdir -p content/posts
+          # Remove every markdown post and the entire archive-spam tree
+          rm -rf content/archive-spam
+          find content/posts -type f -name '*.md' -delete 2>/dev/null || true
+          # Catch any other article dumps under content/
+          find content -type f -name '*.md' ! -path 'content/posts/.gitkeep' -delete 2>/dev/null || true
+
+          # Keep empty posts dir so writers have a target
+          mkdir -p content/posts
+          touch content/posts/.gitkeep
+          # Recreate empty archive folder (optional, for future quarantine)
+          mkdir -p content/archive-spam
+          touch content/archive-spam/.gitkeep
+
+          echo "After:"
+          find content -type f -name '*.md' 2>/dev/null | wc -l || true
+          ls -la content/posts content/archive-spam || true
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "Za Ndani <bot@zandani.co.ke>"
+          commit_message: "content: purge all posts and archived spam (clean slate)"
+          branch: main
+          file_pattern: |
+            content/**
