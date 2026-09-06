@@ -33,7 +33,7 @@ function slugify(value) {
   return String(value || '')
     .toLowerCase()
     .trim()
-    .replace(/[%]/g, ' ')
+    .replace(/[%']/g, ' ')
     .replace(/[^a-z0-9\s-]/g, '')
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-')
@@ -259,15 +259,6 @@ ${items.join('\n')}
 </rss>`;
 }
 
-/**
- * GEO-oriented robots.txt
- * - Allow AI *search* crawlers so ChatGPT / Perplexity / Claude can cite the site
- * - Block pure training crawlers (CCBot, Bytespider, Google-Extended for Gemini training)
- * NOTE: Cloudflare Managed robots may still Disallow GPTBot/ClaudeBot at the edge.
- *        In Cloudflare dashboard → AI Crawl Control / robots, ALLOW:
- *        GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot for search visibility.
- *        Keep blocking Google-Extended / CCBot / Bytespider if you do not want training use.
- */
 function generateRobotsTxt() {
   return `# Za Ndani robots.txt — GEO-aware
 # Google Search uses Googlebot (allowed). AI Overviews/AI Mode follow standard indexing.
@@ -387,17 +378,22 @@ async function main() {
   const posts = await loadPosts();
   console.log(`Loaded ${posts.length} posts.`);
 
-  await writeBoth('sitemap.xml', generateSitemapIndex());
+  // Order matters: write child sitemaps first, then index that points to them
   await writeBoth('sitemap-static.xml', generateStaticSitemap());
   await writeBoth('sitemap-categories.xml', generateCategoriesSitemap(posts));
   await writeBoth('sitemap-articles.xml', generateArticlesSitemap(posts));
   await writeBoth('sitemap-tags.xml', generateTagsSitemap(posts));
   await writeBoth('news-sitemap.xml', generateNewsSitemap(posts));
+  await writeBoth('sitemap.xml', generateSitemapIndex());
   await writeBoth('feed.xml', generateRssFeed(posts));
   await writeBoth('robots.txt', generateRobotsTxt());
   await writeBoth('llms.txt', generateLlmsTxt(posts));
 
-  console.log('\nSEO + GEO assets generated (sitemaps, AI-search-friendly robots, llms.txt).');
+  console.log('\nSEO + GEO assets generated (split sitemaps, robots, llms.txt).');
+  console.log('Expect on deploy: /sitemap.xml (index) + /sitemap-static.xml + /sitemap-categories.xml + /sitemap-articles.xml + /sitemap-tags.xml + /news-sitemap.xml');
 }
 
-main().catch(console.error);
+main().catch((err) => {
+  console.error('generate-seo.js failed:', err);
+  process.exit(1);
+});
