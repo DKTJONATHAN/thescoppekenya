@@ -1,182 +1,121 @@
 {
-  "Celestine Nzioka": {
-    "name": "Celestine Nzioka",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Mutheu Ann": {
-    "name": "Mutheu Ann",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
   "Za Ndani": {
     "name": "Za Ndani",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
+    "role": "Newsroom Desk",
+    "bio": "The Za Ndani newsroom desk publishes verified breaking news, entertainment and national stories from Nairobi for readers across Kenya.",
+    "avatar": "",
+    "location": "Nairobi, Kenya",
     "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Martin Mutwiri": {
-    "name": "Martin Mutwiri",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Timothy Muli": {
-    "name": "Timothy Muli",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Amara Ndlovu": {
-    "name": "Amara Ndlovu",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Elizabeth Muthoni": {
-    "name": "Elizabeth Muthoni",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Grace Mkamburi": {
-    "name": "Grace Mkamburi",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
+      "twitter": "https://twitter.com/zandani_ke",
+      "email": "contact@zandani.co.ke"
     }
   },
   "Jonathan Mwaniki": {
     "name": "Jonathan Mwaniki",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
+    "role": "Editor & Publisher",
+    "bio": "Founder and publisher of Za Ndani. Covers national affairs, media and the stories shaping Kenya from inside the newsroom.",
+    "avatar": "",
+    "location": "Nairobi, Kenya",
     "socials": {
       "twitter": "",
       "linkedin": "",
-      "email": ""
+      "email": "contact@zandani.co.ke"
     }
   },
-  "The Scoop KE": {
-    "name": "The Scoop KE",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
+  "Celestine Nzioka": {
+    "name": "Celestine Nzioka",
+    "role": "News Correspondent",
+    "bio": "Reports breaking and national news for Za Ndani, focusing on politics, public institutions and stories that matter to Kenyans daily.",
+    "avatar": "",
     "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
   },
-  "The Scoop Kenya": {
-    "name": "The Scoop Kenya",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
+  "Mutheu Ann": {
+    "name": "Mutheu Ann",
+    "role": "Entertainment Writer",
+    "bio": "Covers Kenyan entertainment, music and celebrity culture for Za Ndani with a focus on industry moves and exclusive showbiz stories.",
+    "avatar": "",
+    "location": "Nairobi, Kenya",
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
+  },
+  "Martin Mutwiri": {
+    "name": "Martin Mutwiri",
+    "role": "Showbiz Reporter",
+    "bio": "Follows celebrity news, events and entertainment headlines across Kenya for the Za Ndani audience.",
+    "avatar": "",
     "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
+  },
+  "Timothy Muli": {
+    "name": "Timothy Muli",
+    "role": "Agriculture & Rural Affairs",
+    "bio": "Writes on agriculture, rural livelihoods and environment policy affecting farmers and communities across Kenya.",
+    "avatar": "",
+    "location": "Kenya",
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
+  },
+  "Amara Ndlovu": {
+    "name": "Amara Ndlovu",
+    "role": "Pan-Africa Entertainment",
+    "bio": "Covers African entertainment trends, music and culture beyond Kenya for Za Ndani readers.",
+    "avatar": "",
+    "location": "East Africa",
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
+  },
+  "Elizabeth Muthoni": {
+    "name": "Elizabeth Muthoni",
+    "role": "Technology Writer",
+    "bio": "Reports on technology, digital policy and innovation stories relevant to Kenya and the region.",
+    "avatar": "",
+    "location": "Nairobi, Kenya",
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
+  },
+  "Grace Mkamburi": {
+    "name": "Grace Mkamburi",
+    "role": "Business Correspondent",
+    "bio": "Covers business, economy and market developments for Za Ndani, from startups to national economic policy.",
+    "avatar": "",
+    "location": "Nairobi, Kenya",
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
   },
   "Ann Mwende": {
     "name": "Ann Mwende",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
+    "role": "Lifestyle Writer",
+    "bio": "Writes lifestyle, culture and living stories that reflect everyday Kenya for Za Ndani readers.",
+    "avatar": "",
     "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Jonathan Mwaniki ": {
-    "name": "Jonathan Mwaniki ",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
-  },
-  "Okwonko Ben": {
-    "name": "Okwonko Ben",
-    "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
-    "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
   },
   "Kendi Kawira": {
     "name": "Kendi Kawira",
     "role": "Contributing Writer",
-    "bio": "Contributing writer for Za Ndani bringing you the latest stories.",
-    "avatar": "/api/placeholder/150/150",
+    "bio": "Contributing writer for Za Ndani covering news and features from across Kenya.",
+    "avatar": "",
     "location": "Kenya",
-    "socials": {
-      "twitter": "",
-      "linkedin": "",
-      "email": ""
-    }
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
+  },
+  "Okwonko Ben": {
+    "name": "Okwonko Ben",
+    "role": "Contributing Writer",
+    "bio": "Contributing writer for Za Ndani bringing reporting and analysis on national and entertainment stories.",
+    "avatar": "",
+    "location": "Kenya",
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
+  },
+  "The Scoop KE": {
+    "name": "The Scoop KE",
+    "role": "Desk Byline",
+    "bio": "Desk byline used for collaborative and wire-style entertainment updates published on Za Ndani.",
+    "avatar": "",
+    "location": "Nairobi, Kenya",
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
+  },
+  "The Scoop Kenya": {
+    "name": "The Scoop Kenya",
+    "role": "Desk Byline",
+    "bio": "Desk byline for entertainment and showbiz updates carried on Za Ndani.",
+    "avatar": "",
+    "location": "Nairobi, Kenya",
+    "socials": { "twitter": "", "linkedin": "", "email": "" }
   }
 }
