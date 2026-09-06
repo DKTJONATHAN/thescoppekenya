@@ -7,13 +7,12 @@ author: "Za Ndani"
 image: "https://i.ibb.co/pBHRJKQQ/741be1cb7b42.jpg"
 category: "Entertainment"
 tags: ["university", "harassment", "campus", "students", "academic", "abuse", "discrimination", "bullying"]
-canonical: "https://zandani.co.ke/article/university-harassment"
 date: "2026-03-07T20:39:07Z"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Beyond the Lecture Hall Understanding the Many Forms of Univ"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/university-harassment"
 ---
-
 Beyond the Lecture Hall Understanding the Many Forms of Univ is central to this update for Kenyan readers.
 
 The hallowed halls of academia, often painted as havens of learning and self-discovery, harbor a darker truth many refuse to acknowledge: widespread university harassment. This isn't just about a few bad apples; it's a systemic rot affecting thousands of students, quietly eroding their futures while institutions often turn a blind eye or offer token gestures.
