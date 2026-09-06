@@ -7,32 +7,57 @@ export default function FactCheckPage() {
     <Layout>
       <Helmet>
         <title>Fact-Checking Policy | Za Ndani</title>
-        <meta name="description" content="How we verify stories and ensure the news you read on Za Ndani is based on facts." />
+        <meta name="description" content="How we verify stories and ensure the news you read on Za Ndani is based on facts. Primary sources, cross-verification, and transparency." />
+        <link rel="canonical" href="https://zandani.co.ke/fact-check" />
+        <meta property="og:title" content="Fact-Checking Policy | Za Ndani" />
+        <meta property="og:description" content="How we verify stories and ensure the news you read on Za Ndani is based on facts." />
+        <meta property="og:url" content="https://zandani.co.ke/fact-check" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Za Ndani" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Fact-Checking Policy | Za Ndani" />
+        <meta name="twitter:description" content="How we verify stories and ensure the news you read is based on facts." />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Fact-Checking Policy",
+          "url": "https://zandani.co.ke/fact-check",
+          "description": "Za Ndani fact-checking standards: primary sourcing, cross-verification, and transparent labeling.",
+          "isPartOf": { "@type": "WebSite", "name": "Za Ndani", "url": "https://zandani.co.ke" },
+          "publisher": { "@type": "Organization", "name": "Za Ndani", "url": "https://zandani.co.ke" }
+        })}</script>
       </Helmet>
-      
-      <div className="container max-w-4xl mx-auto px-4 py-16 md:py-24">
-        <h1 className="text-4xl md:text-6xl font-serif font-bold mb-8">Fact-Checking Policy</h1>
-        
-        <div className="prose prose-lg dark:prose-invert max-w-none">
-          <p className="lead text-xl text-muted-foreground mb-12">
-            In the fast-moving world of Kenyan entertainment and politics, rumors spread quickly. 
-            At Za Ndani, our job is to separate the "tea" from the truth.
-          </p>
 
-          <div className="grid md:grid-cols-2 gap-8 my-16">
+      <section className="bg-zinc-950 border-b border-zinc-800 py-14">
+        <div className="container max-w-4xl mx-auto px-4 text-center">
+          <span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.25em] uppercase text-white px-3 py-1.5 bg-primary mb-5">
+            <Search className="w-3 h-3" /> Verification
+          </span>
+          <h1 className="text-4xl md:text-5xl font-serif font-black text-white leading-tight mb-4">
+            Fact-Checking Policy
+          </h1>
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+            In the fast-moving world of Kenyan entertainment and politics, rumors spread quickly. Our job is to separate the tea from the truth.
+          </p>
+        </div>
+      </section>
+
+      <div className="container max-w-4xl mx-auto px-4 py-16 md:py-20">
+        <div className="prose prose-lg dark:prose-invert max-w-none">
+          <div className="grid md:grid-cols-2 gap-8 my-8 not-prose">
             <div className="p-6 border border-divider rounded-2xl bg-surface">
               <Search className="w-10 h-10 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">Primary Sourcing</h3>
+              <h3 className="text-xl font-bold mb-2 text-headline">Primary Sourcing</h3>
               <p className="text-sm text-muted-foreground">
-                We prioritize first-hand accounts, official documents, and direct 
+                We prioritize first-hand accounts, official documents, and direct
                 quotes over second-hand rumors.
               </p>
             </div>
             <div className="p-6 border border-divider rounded-2xl bg-surface">
               <Fingerprint className="w-10 h-10 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">Cross-Verification</h3>
+              <h3 className="text-xl font-bold mb-2 text-headline">Cross-Verification</h3>
               <p className="text-sm text-muted-foreground">
-                Sensitive claims require verification from at least two independent 
+                Sensitive claims require verification from at least two independent
                 sources before publication.
               </p>
             </div>
@@ -40,10 +65,10 @@ export default function FactCheckPage() {
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-headline">Our Verification Standard</h2>
           <p>
-            Every article undergoes a rigorous checks-and-balances process. Our editors 
+            Every article undergoes a rigorous checks-and-balances process. Our editors
             evaluate every story based on the following criteria:
           </p>
-          <ul className="space-y-4 my-8">
+          <ul className="space-y-4 my-8 not-prose list-none p-0">
             <li className="flex gap-4">
               <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
               <div>
@@ -66,19 +91,19 @@ export default function FactCheckPage() {
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-headline">Social Media & Viral Content</h2>
           <p>
-            We do not treat social media trending topics as fact. When a story breaks 
-            on X (Twitter), TikTok, or Instagram, we investigate the metadata and 
+            We do not treat social media trending topics as fact. When a story breaks
+            on X (Twitter), TikTok, or Instagram, we investigate the metadata and
             origins of the posts before reporting them as verified news.
           </p>
 
-          <div className="mt-16 p-8 bg-zinc-900 text-white rounded-3xl border border-white/10">
+          <div className="mt-16 p-8 bg-zinc-900 text-white rounded-3xl border border-white/10 not-prose">
             <div className="flex items-center gap-3 mb-4">
               <FileText className="w-6 h-6 text-primary" />
               <h3 className="text-xl font-bold">The "Red" File</h3>
             </div>
             <p className="text-zinc-400">
-              When we cannot 100% verify a story but believe the report is in the public interest, 
-              we explicitly label it as "Developing," "Rumor," or "Allegation" to maintain 
+              When we cannot 100% verify a story but believe the report is in the public interest,
+              we explicitly label it as "Developing," "Rumor," or "Allegation" to maintain
               total transparency with our readers.
             </p>
           </div>
