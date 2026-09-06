@@ -1,14 +1,16 @@
 ---
 title: "Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks"
 slug: "tyre-sidewall-bulges-causes-blowout-risks"
-description: "Learn why tyre sidewall bulges pose severe blowout risks. Discover common causes like potholes and underinflation, plus crucial safety replacement tips."
+description: "Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks: Learn why tyre sidewall bulges pose severe blowout risks. Discover common causes like potholes and"
+excerpt: "Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks On Monday, September 7, 2026, automotive safety experts in Nairobi issued a public wa"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/ymbMKyq9/4b091c53e0f0.webp"
 category: "News"
 tags: ["tyre sidewall bulges", "car tyre safety", "pothole damage", "blowout risk", "vehicle maintenance", "underinflated tyres"]
+canonical: "https://zandani.co.ke/article/tyre-sidewall-bulges-causes-blowout-risks"
 date: "2026-09-06T22:20:10Z"
 dateModified: "2026-09-06T22:20:10Z"
+focusKeyword: "Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks"
 schema: "NewsArticle"
 ---
 
