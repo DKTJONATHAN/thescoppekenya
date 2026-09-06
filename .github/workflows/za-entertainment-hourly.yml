@@ -1,0 +1,29 @@
+name: Entertainment hourly trigger
+
+on:
+  schedule:
+    # Hourly 06:25–23:25 EAT (03:25–20:25 UTC)
+    - cron: "25 3-20 * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  kick:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch Mutheu Ann - Entertainment Scraper
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          echo "Firing za Entertainment.yml on main"
+          curl -sS -X POST \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/za%20Entertainment.yml/dispatches" \
+            -d '{"ref":"main"}'
+          echo "Dispatch sent"
