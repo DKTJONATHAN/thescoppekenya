@@ -1,18 +1,20 @@
 ---
 title: "NEMA Seeks Public Input on Used Oil Recycling Plant in Kwale"
 slug: "nema-seeks-public-feedback-for-kwale-used-oil-recycling-plant"
-description: "NEMA is inviting public comments on a proposed used oil recycling facility in Kwale County capable of processing 20,000 litres of oil per batch."
+description: "NEMA Seeks Public Input on Used Oil Recycling Plant in Kwale: NEMA is inviting public comments on a proposed used oil recycling facility in Kwale County"
+excerpt: "Kwale Residents Face Crucial Environmental Choice The National Environment Management Authority has opened a mandatory thirty day public par"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/Pss52XL1/79d15d51c45e.webp"
 category: "News"
 tags: ["kwale county", "nema", "waste management", "kenya environment", "epra", "recycling"]
+canonical: "https://zandani.co.ke/article/nema-seeks-public-feedback-for-kwale-used-oil-recycling-plant"
 date: "2026-09-06T10:49:02Z"
 dateModified: "2026-09-06T10:49:02Z"
+focusKeyword: "NEMA Seeks Public Input on Used Oil Recycling Plant in Kwale"
 schema: "NewsArticle"
 ---
 
-## Kwale Residents Face Crucial Environmental Choice
+## Kwale Residents Face Crucial Environmental Choice NEMA Seeks Public Input on Used Oil Recycling Plant in Kwale is the central subject of the update.
 
 The National Environment Management Authority has opened a mandatory thirty-day public participation window for residents of Kwale County to voice concerns or support regarding a proposed industrial-scale used oil recycling facility situated in the Samburu area.
 
