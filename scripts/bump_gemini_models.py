@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Replace retired Gemini model IDs across writer scripts and workflows."""
+"""Replace retired / pre-3.0 Gemini model IDs across writer scripts and workflows.
+
+Policy: Gemini 3.0+ only. No 2.x or 1.x models.
+"""
 from __future__ import annotations
 
 import pathlib
@@ -8,29 +11,39 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
+# Gemini 3.x only (ordered: newest flash workhorses → lite → pro preview)
 NEW_LIST = [
     "gemini-3.8-flash",
     "gemini-3.7-flash",
     "gemini-3.6-flash",
     "gemini-3.5-flash",
-    "gemini-3.1-pro-preview",
     "gemini-3.5-flash-lite",
+    "gemini-3.1-pro-preview",
+    "gemini-3.1-flash-lite",
     "gemini-3-flash-preview",
-    "gemini-2.5-flash",
-    "gemini-2.5-pro",
 ]
 NEW_INLINE = "[" + ", ".join(f'\"{m}\"' for m in NEW_LIST) + "]"
 
+# Map any older ID → a 3.x replacement
 REPLACEMENTS = [
     ("gemini-1.5-pro", "gemini-3.1-pro-preview"),
     ("gemini-1.5-flash", "gemini-3.5-flash-lite"),
+    ("gemini-1.5-flash-latest", "gemini-3.5-flash-lite"),
     ("gemini-2.0-flash-lite", "gemini-3.5-flash-lite"),
+    ("gemini-2.0-flash-lite-001", "gemini-3.5-flash-lite"),
     ("gemini-2.0-flash", "gemini-3.6-flash"),
-    ("gemini-2.5-pro", "gemini-2.5-pro"),
-    ("gemini-2.5-flash", "gemini-2.5-flash"),
+    ("gemini-2.0-flash-001", "gemini-3.6-flash"),
+    ("gemini-2.5-pro", "gemini-3.1-pro-preview"),
+    ("gemini-2.5-pro-preview", "gemini-3.1-pro-preview"),
+    ("gemini-2.5-flash", "gemini-3.8-flash"),
+    ("gemini-2.5-flash-lite", "gemini-3.5-flash-lite"),
+    ("gemini-2.5-flash-preview", "gemini-3.6-flash"),
     ("gemini-3-pro-preview", "gemini-3.1-pro-preview"),
-    ("gemini-3.1-flash-lite-preview", "gemini-3.5-flash-lite"),
+    ("gemini-3.1-flash-lite-preview", "gemini-3.1-flash-lite"),
+    ("gemini-3.1-flash-lite-preview", "gemini-3.1-flash-lite"),
     ("google/gemini-3-flash-preview", "google/gemini-3.8-flash"),
+    ("google/gemini-2.5-flash", "google/gemini-3.8-flash"),
+    ("google/gemini-2.0-flash", "google/gemini-3.6-flash"),
 ]
 
 TARGETS = [
@@ -63,8 +76,7 @@ def rewrite(text: str) -> str:
     original = text
     text = LIST_RE.sub(lambda m: m.group(1) + NEW_INLINE, text)
     for old, new in REPLACEMENTS:
-        if old != new:
-            text = text.replace(old, new)
+        text = text.replace(old, new)
     return text if text != original else original
 
 

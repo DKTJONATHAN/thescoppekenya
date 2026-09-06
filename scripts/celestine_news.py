@@ -19,17 +19,16 @@ MAX_CANDIDATES = 12
 MAX_SCRAPE_TRIES = 5
 FRESH_HOURS = 18
 
-# Current models first, stable 2.5 fallbacks last (still available in 2026).
+# Gemini 3.x ONLY — nothing below 3.0
 MODELS_TO_TRY = [
     "gemini-3.8-flash",
     "gemini-3.7-flash",
     "gemini-3.6-flash",
     "gemini-3.5-flash",
-    "gemini-3.1-pro-preview",
     "gemini-3.5-flash-lite",
+    "gemini-3.1-pro-preview",
+    "gemini-3.1-flash-lite",
     "gemini-3-flash-preview",
-    "gemini-2.5-flash",
-    "gemini-2.5-pro",
 ]
 
 BANNED_PHRASES = [
