@@ -299,10 +299,10 @@
     "de7933efe0be093ca194335cd95e1c00",
     "b5ddf961c0cb90580ab08cc7d3b5487e",
     "d089924cded6f691b7739d05a8f260ac",
-    "e18629b39d3a93516fe1390a5f9ba15c"
+    "e18629b39d3a93516fe1390a5f9ba15c",
+    "e7e3e300d15b8d6e0ec8e54b9d82dd16"
   ],
   "style_history": [
-    "Tactical Take",
     "Stat Story",
     "Player Profile Beat",
     "Match Report",
@@ -331,10 +331,10 @@
     "Player Profile Beat",
     "Cynical Pundit",
     "Stat Story",
-    "Match Report"
+    "Match Report",
+    "Tactical Take"
   ],
   "angle_history": [
-    "accountability|World Cup|Match Report",
     "winners_losers|football|Player Profile Beat",
     "timeline_shift|England football|Cynical Pundit",
     "myth_vs_fact|World Cup 2026|Tactical Take",
@@ -413,6 +413,7 @@
     "story_progression|football|Player Profile Beat",
     "accountability|Premier League|Cynical Pundit",
     "money_follow|Premier League|Stat Story",
-    "accountability|Premier League|Match Report"
+    "accountability|Premier League|Match Report",
+    "money_follow|Premier League|Tactical Take"
   ]
 }
