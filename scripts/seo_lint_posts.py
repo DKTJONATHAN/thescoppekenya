@@ -16,15 +16,20 @@ MIN_WORDS = 350
 ERRORS = []
 WARNS = []
 
-BANNED = [
-    "in today's digital age",
-    "delve into",
-    "it's worth noting",
-    "navigating the landscape",
-    "what this means for kenyans",
-    "search-ready summary",
+BANNED_ERROR = [
     "is central to this update for kenyan readers",
     "is the central subject of the update",
+    "what this means for kenyans",
+    "search-ready summary",
+    "in today's digital age",
+    "delve into",
+    "navigating the landscape",
+]
+
+BANNED_WARN = [
+    "it's worth noting",
+    "game-changer",
+    "tapestry",
 ]
 
 SPAM_LEAD_RE = re.compile(r"is central to this update for Kenyan readers", re.I)
@@ -57,7 +62,7 @@ def has_high_repetition(body: str) -> bool:
         phrases = [" ".join(words[i : i + n]) for i in range(len(words) - n)]
         counts = Counter(phrases)
         most = counts.most_common(1)
-        if most and most[0][1] >= 8:
+        if most and most[0][1] >= 6:
             return True
     return False
 
@@ -94,7 +99,6 @@ def lint(path: pathlib.Path):
     if words < MIN_WORDS:
         ERRORS.append(f"{name}: thin content ({words} words)")
 
-    # Hard spam signals -> ERROR (fail the gate)
     if SPAM_LEAD_RE.search(body):
         ERRORS.append(f"{name}: spam lead 'is central to this update...'")
     if SPAM_SUBJECT_RE.search(body):
@@ -104,12 +108,15 @@ def lint(path: pathlib.Path):
 
     if not re.search(r"^##\s+", body, re.M):
         WARNS.append(f"{name}: no H2 heading")
-    if not data.get("focusKeyword"):
-        WARNS.append(f"{name}: missing focusKeyword")
+
     low = body.lower()
-    for phrase in BANNED:
+    for phrase in BANNED_ERROR:
         if phrase in low:
-            WARNS.append(f"{name}: banned phrase '{phrase}'")
+            ERRORS.append(f"{name}: banned spam phrase '{phrase}'")
+            break
+    for phrase in BANNED_WARN:
+        if phrase in low:
+            WARNS.append(f"{name}: weak phrase '{phrase}'")
             break
     if title and body.lstrip().lower().startswith(title.lower()[:24]):
         WARNS.append(f"{name}: lede repeats title")
