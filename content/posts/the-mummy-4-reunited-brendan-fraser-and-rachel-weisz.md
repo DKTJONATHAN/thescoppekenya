@@ -7,12 +7,13 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/DPdJKwmn/771aa0fec49b.jpg"
 category: "Entertainment"
 tags: ["The Mummy 4", "Brendan Fraser", "Rachel Weisz", "Radio Silence", "Hollywood reunion", "entertainment news", "millennial culture", "bisexual awakening"]
+canonical: "https://zandani.co.ke/article/the-mummy-4-reunited-brendan-fraser-and-rachel-weisz"
 date: "2026-03-03"
 dateModified: "2026-08-31T17:03:56Z"
 focusKeyword: "The Mummy 4 How the Reunion of Brendan Fraser and Rachel Wei"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/the-mummy-4-reunited-brendan-fraser-and-rachel-weisz"
 ---
+
 The Mummy 4 How the Reunion of Brendan Fraser and Rachel Wei is central to this update for Kenyan readers.
 
 ## The Mummy 4: The Unforgettable Reunion of Brendan Fraser and Rachel Weisz Universal Pictures is set to resurrect its beloved swashbuckling horror-comedy franchise, "The Mummy," with a fourth installment that sees the iconic duo, Brendan Fraser and Rachel Weisz, reuniting on screen. This highly anticipated film is directed by Radio Silence and is slated for release on May 19, 2028.
