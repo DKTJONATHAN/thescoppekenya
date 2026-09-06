@@ -1,0 +1,33 @@
+name: Bump Gemini models
+
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - scripts/bump_gemini_models.py
+      - .github/workflows/bump-gemini-models.yml
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Rewrite retired Gemini model IDs
+        run: python scripts/bump_gemini_models.py
+
+      - name: Commit if files changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "fix(gemini): migrate all workflows and scripts to Gemini 3.x fallbacks"
+          file_pattern: ".github/**/*.yml .github/**/*.yaml scripts/**/*.py scripts/**/*.ps1 *.py supabase/**/*.ts"
