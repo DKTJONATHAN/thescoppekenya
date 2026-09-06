@@ -1,18 +1,20 @@
 ---
 title: "Huduma Kenya Explains Birth Certificate County Rules"
 slug: "huduma-kenya-birth-certificate-county-application-rules"
-description: "Huduma Kenya explains why birth certificate applications remain restricted to the child's county of birth, detailing the required documents and Ksh250 fee."
+description: "Huduma Kenya Explains Birth Certificate County Rules: Huduma Kenya explains why birth certificate applications remain restricted to the child's county of"
+excerpt: "Huduma Kenya Clarifies County Jurisdiction Rules for Birth Certificates Huduma Kenya clarified on Sunday, September 6, 2026, that parents mu"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/C3GXkVX1/9a5d513ad73e.webp"
 category: "News"
 tags: ["Huduma Kenya", "Birth Certificates", "Civil Registration Department", "Kenya Government Services", "Civil Registration"]
+canonical: "https://zandani.co.ke/article/huduma-kenya-birth-certificate-county-application-rules"
 date: "2026-09-06T19:52:46Z"
 dateModified: "2026-09-06T19:52:46Z"
+focusKeyword: "Huduma Kenya Explains Birth Certificate County Rules"
 schema: "NewsArticle"
 ---
 
-## Huduma Kenya Clarifies County Jurisdiction Rules for Birth Certificates
+## Huduma Kenya Clarifies County Jurisdiction Rules for Birth Certificates Huduma Kenya Explains Birth Certificate County Rules is the central subject of the update.
 
 Huduma Kenya clarified on Sunday, September 6, 2026, that parents must submit birth certificate applications within the county where their child was born because primary physical records remain domiciled exclusively in local civil registries.
 
