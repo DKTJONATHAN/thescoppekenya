@@ -305,10 +305,10 @@
     "3f27ffe3b3d9dbd863eac1cfb5071840",
     "0d8f7da3d13b091f27346f1e13baa974",
     "b0a43917c91af6445deeeff92ad5a1f0",
-    "c121aa07d06f483d6c56339e99e23af3"
+    "c121aa07d06f483d6c56339e99e23af3",
+    "86f8e355b27d221a1db4f2faed1d25d8"
   ],
   "style_history": [
-    "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
     "Trend Take",
@@ -337,10 +337,10 @@
     "Receipts Piece",
     "Reaction Round-up",
     "Hard News Lead",
-    "Profile Beat"
+    "Profile Beat",
+    "Trend Take"
   ],
   "angle_history": [
-    "next_48_hours|Kenya Power|Reaction Round-up",
     "story_progression|Daddy Owen|Profile Beat",
     "timeline_shift|Boniface Mwangi|Hard News Lead",
     "money_follow|Kenya Power|Receipts Piece",
@@ -419,6 +419,7 @@
     "myth_vs_fact|fertiliser subsidy|Receipts Piece",
     "accountability|Nairobi|Reaction Round-up",
     "story_progression|Triza Njeri|Hard News Lead",
-    "story_progression|Oburu Oginga|Profile Beat"
+    "story_progression|Oburu Oginga|Profile Beat",
+    "policy_gap|Soda Ash|Trend Take"
   ]
 }
