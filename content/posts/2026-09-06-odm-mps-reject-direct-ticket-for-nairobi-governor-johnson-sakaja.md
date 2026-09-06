@@ -1,18 +1,20 @@
 ---
 title: "ODM MPs reject direct ticket for Nairobi Governor Johnson Sakaja"
 slug: "odm-mps-reject-direct-ticket-for-nairobi-governor-johnson-sakaja"
-description: "ODM legislators in Nairobi have declared that Governor Johnson Sakaja must participate in party primaries if he intends to seek an ODM nomination."
+description: "ODM MPs reject direct ticket for Nairobi Governor Johnson Sakaja: ODM legislators in Nairobi have declared that Governor Johnson Sakaja must participate in"
+excerpt: "The Primary Firewall: Nairobi MPs Block the Golden Ticket Nairobi ODM legislators convened in Kamkunji this Sunday to draw a firm line again"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/q36Ytzn2/ca1b3d9b16a5.webp"
 category: "News"
 tags: ["kenya politics", "odm", "johnson sakaja", "nairobi politics", "uda", "elections"]
+canonical: "https://zandani.co.ke/article/odm-mps-reject-direct-ticket-for-nairobi-governor-johnson-sakaja"
 date: "2026-09-06T14:09:27Z"
 dateModified: "2026-09-06T14:09:27Z"
+focusKeyword: "ODM MPs reject direct ticket for Nairobi Governor Johnson Sakaja"
 schema: "NewsArticle"
 ---
 
-## The Primary Firewall: Nairobi MPs Block the Golden Ticket
+## The Primary Firewall: Nairobi MPs Block the Golden Ticket ODM MPs reject direct ticket for Nairobi Governor Johnson Sakaja is the central subject of the update.
 
 Nairobi ODM legislators convened in Kamkunji this Sunday to draw a firm line against the prospect of a direct nomination for Governor Johnson Sakaja. The gathering serves as a stark reminder that even as elite-level political realignments take root in air-conditioned suites, the foundational mechanisms of party nomination remain a fiercely protected asset for those who have spent years building local grassroots networks.
 
