@@ -7,12 +7,13 @@ author: "Mutheu Ann"
 image: "https://i.ibb.co/xt5n6SBD/971bde9d9655.jpg"
 category: "Entertainment"
 tags: ["Viola Davis", "Michael B. Jordan", "2026 Actor Awards", "Timothée Chalamet", "Sinners", "Mary Supreme", "Hollywood", "entertainment news"]
+canonical: "https://zandani.co.ke/article/viola-davis-shocked-michael-b-jordan-upsets-2026-actor-awards"
 date: "2026-03-02"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Viola Davis Shocked as Michael B Jordan Upsets at 2026 Actor"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/viola-davis-shocked-michael-b-jordan-upsets-2026-actor-awards"
 ---
+
 Viola Davis Shocked as Michael B Jordan Upsets at 2026 Actor is central to this update for Kenyan readers.
 
 ## Viola Davis Shocked as Michael B. Jordan Upsets at 2026 Actor Awards Michael B. Jordan unexpectedly triumphed at the 2026 Actor Awards, winning Outstanding Performance by a Male Actor in a Leading Role for his dual role in "Sinners", much to the surprise of presenter Viola Davis and many industry observers. This victory defied widespread predictions that Timothée Chalamet would take the prize for his performance in "Mary Supreme".

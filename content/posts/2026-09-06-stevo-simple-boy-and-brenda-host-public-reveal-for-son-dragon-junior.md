@@ -1,18 +1,20 @@
 ---
 title: "Stevo Simple Boy and Brenda host public reveal for son Dragon Junior"
 slug: "stevo-simple-boy-and-brenda-host-public-reveal-for-son-dragon-junior"
-description: "Musician Stevo Simple Boy and his partner Brenda introduced their son Dragon Junior at a public event held at Imperial Chambers Garden."
+description: "Stevo Simple Boy and Brenda host public reveal for son Dragon Jun: Musician Stevo Simple Boy and his partner Brenda introduced their son Dragon Junior at a"
+excerpt: "Stevo Simple Boy Debuts Son at Ticketed Public Reveal Musician Stevo Simple Boy and his partner, Brenda, introduced their son, Dragon Junior"
 author: "Martin Kihara"
-authorUrl: "https://zandani.co.ke/author/martin-kihara"
 image: "https://i.ibb.co/1GkmV6HZ/eb2719c9a64f.webp"
 category: "Gossip"
 tags: ["stevo simple boy", "brenda", "kenyan entertainment", "dragon junior", "kenyan celebrities", "cyberbullying"]
+canonical: "https://zandani.co.ke/article/stevo-simple-boy-and-brenda-host-public-reveal-for-son-dragon-junior"
 date: "2026-09-06T12:11:14Z"
 dateModified: "2026-09-06T12:11:14Z"
+focusKeyword: "Stevo Simple Boy and Brenda host public reveal for son Dragon Jun"
 schema: "NewsArticle"
 ---
 
-## Stevo Simple Boy Debuts Son at Ticketed Public Reveal
+## Stevo Simple Boy Debuts Son at Ticketed Public Reveal Stevo Simple Boy and Brenda host public reveal for son Dragon Jun is the central subject of the update.
 
 Musician Stevo Simple Boy and his partner, Brenda, introduced their son, Dragon Junior, to the public during a private gathering at Imperial Chambers Garden this afternoon. The event marked a departure from the conventional social media unveiling, requiring attendees to purchase entry tickets to view the infant.
 
