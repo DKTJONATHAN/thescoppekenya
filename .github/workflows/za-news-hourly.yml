@@ -1,8 +1,9 @@
-name: Celestine hourly trigger
+name: Celestine hourly trigger (disabled)
+
+# Disabled: za-news.yml now runs hourly 06:00–23:00 EAT directly.
+# Keep this file only for emergency manual dispatch.
 
 on:
-  schedule:
-    - cron: "7 * * * *"
   workflow_dispatch:
 
 permissions:
