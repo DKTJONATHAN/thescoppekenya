@@ -29,7 +29,6 @@ const BusinessPage = lazy(() => import("./pages/BusinessPage"));
 const LifestylePage = lazy(() => import("./pages/LifestylePage"));
 const LiveScoresPage = lazy(() => import("./pages/LiveScoresPage"));
 const LiveWirePage = lazy(() => import("./pages/LiveWirePage"));
-const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 const SitemapHtmlPage = lazy(() => import("./pages/SitemapHtmlPage"));
 const AuthorsPage = lazy(() => import("./pages/AuthorsPage"));
 const PodcastPage = lazy(() => import("./pages/PodcastPage"));
@@ -148,7 +147,7 @@ const App = () => (
                 <Route path="/business" element={<BusinessPage />} />
                 <Route path="/lifestyle" element={<LifestylePage />} />
                 <Route path="/sports/live" element={<LiveScoresPage />} />
-                <Route path="/sitemap.xml" element={<SitemapPage />} />
+                {/* /sitemap.xml is served as a static file from generate-seo.js — do not route through React */}
                 <Route path="/sitemap" element={<SitemapHtmlPage />} />
                 <Route path="/authors" element={<AuthorsPage />} />
                 <Route path="/podcast" element={<PodcastPage />} />
