@@ -1,6 +1,5 @@
 {
   "published_hashes": [
-    "2d2dc7c3d015526130a7096013446bd4",
     "4faad757a3cf1a342bc405a60ec6b859",
     "330a86261f7d5fc6780b07d5451d0a77",
     "87884405f156308305245d4078e18f1f",
@@ -499,10 +498,10 @@
     "545034288f13ed2ea808089e88fc2c73",
     "9843f3b45aca99e459ffdd11fc3e2f98",
     "a7f3fe1f5d6cf4bbe7cc5235ed42cf6d",
-    "74d791bc7ab7933657d7fdca57e0128b"
+    "74d791bc7ab7933657d7fdca57e0128b",
+    "ba21d762723bacb59ccb51f5e7895d86"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -531,10 +530,10 @@
     "Reaction & Voices",
     "Explainer",
     "Power Accountability",
-    "Context Backgrounder"
+    "Context Backgrounder",
+    "Reaction & Voices"
   ],
   "angle_history": [
-    "winners_losers|Kenya|Hard News Lead",
     "accountability|Judicial Service Commission|Reaction & Voices",
     "policy_gap|Kenya|Power Accountability",
     "story_progression|Kenya politics|Context Backgrounder",
@@ -613,6 +612,7 @@
     "myth_vs_fact|Najib Balala|Reaction & Voices",
     "money_follow|Kenya|Explainer",
     "money_follow|KRA|Power Accountability",
-    "policy_gap|Kenyan Embassy|Context Backgrounder"
+    "policy_gap|Kenyan Embassy|Context Backgrounder",
+    "winners_losers|Land Acquisition|Reaction & Voices"
   ]
 }
