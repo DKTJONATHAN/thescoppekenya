@@ -236,10 +236,10 @@
     "61959426a3740888cc5bbe1ca4d64f0a",
     "1ee8c04486a462d6b904d3e41f98a21d",
     "ef2abcd7f923157dbc62159ec1324b6e",
-    "858bc284bdd7b99d888bb1fac4550576"
+    "858bc284bdd7b99d888bb1fac4550576",
+    "e3a1eb6f3194583f0b069d8c5a9b4ea8"
   ],
   "style_history": [
-    "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
     "Letter Form",
@@ -268,10 +268,10 @@
     "Sharp Column",
     "Personal Reflection",
     "Counterpoint",
-    "Historical Lens"
+    "Historical Lens",
+    "Letter Form"
   ],
   "angle_history": [
-    "myth_vs_fact|Finance Bill|Counterpoint",
     "winners_losers|Father's Day|Sharp Column",
     "story_progression|sovereignty|Historical Lens",
     "policy_gap|agribusiness|Personal Reflection",
@@ -350,6 +350,7 @@
     "policy_gap|KICP|Sharp Column",
     "policy_gap|Universal Health Coverage|Personal Reflection",
     "myth_vs_fact|Sahel|Counterpoint",
-    "timeline_shift|soda ash|Historical Lens"
+    "timeline_shift|soda ash|Historical Lens",
+    "accountability|IUU fishing|Letter Form"
   ]
 }
