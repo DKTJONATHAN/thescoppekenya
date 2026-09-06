@@ -7,12 +7,13 @@ author: "Za Ndani"
 image: "https://www.fisu.net/app/uploads/2023/10/organiser-2.jpg"
 category: "Global News"
 tags: ["FISU", "university sports", "baseball", "softball", "World University Games", "student-athletes", "North Carolina 2029"]
+canonical: "https://zandani.co.ke/article/university-baseball-softball-fisu-home-run"
 date: "2026-02-24"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "University Baseball Softball A Proper Home Run for FISU"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/university-baseball-softball-fisu-home-run"
 ---
+
 University Baseball Softball A Proper Home Run for FISU is central to this update for Kenyan readers.
 
 ## Advancing Baseball and Softball in the University Sports Movement Right, so the International University Sports Federation (FISU) has just dropped a rather significant bit of news, confirming that both baseball and softball are officially stepping up to the plate at the North Carolina 2029 FISU World University Games. This move is set to give these diamond sports a proper boost within the global university movement, encouraging a whole new generation of student-athletes to get involved.
