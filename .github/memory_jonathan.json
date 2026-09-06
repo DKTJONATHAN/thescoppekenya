@@ -235,10 +235,10 @@
     "519206be74d38f7d8e9fc3fd27af263b",
     "61959426a3740888cc5bbe1ca4d64f0a",
     "1ee8c04486a462d6b904d3e41f98a21d",
-    "ef2abcd7f923157dbc62159ec1324b6e"
+    "ef2abcd7f923157dbc62159ec1324b6e",
+    "858bc284bdd7b99d888bb1fac4550576"
   ],
   "style_history": [
-    "Letter Form",
     "Personal Reflection",
     "Sharp Column",
     "Historical Lens",
@@ -267,10 +267,10 @@
     "Historical Lens",
     "Sharp Column",
     "Personal Reflection",
-    "Counterpoint"
+    "Counterpoint",
+    "Historical Lens"
   ],
   "angle_history": [
-    "next_48_hours|fatherhood|Letter Form",
     "myth_vs_fact|Finance Bill|Counterpoint",
     "winners_losers|Father's Day|Sharp Column",
     "story_progression|sovereignty|Historical Lens",
@@ -349,6 +349,7 @@
     "winners_losers|Kenyan politics|Historical Lens",
     "policy_gap|KICP|Sharp Column",
     "policy_gap|Universal Health Coverage|Personal Reflection",
-    "myth_vs_fact|Sahel|Counterpoint"
+    "myth_vs_fact|Sahel|Counterpoint",
+    "timeline_shift|soda ash|Historical Lens"
   ]
 }
