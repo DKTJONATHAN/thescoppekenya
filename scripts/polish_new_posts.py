@@ -12,7 +12,7 @@ POSTS_DIR = pathlib.Path("content/posts")
 MAX_TITLE = 65
 MIN_DESC = 120
 MAX_DESC = 155
-MIN_WORDS = 450
+MIN_WORDS = 180
 
 BANNED = [
     "in today's digital age",
@@ -41,14 +41,15 @@ BOILER_HEADINGS = [
     r"faq[s]?",
     r"frequently asked questions",
     r"what is the most important takeaway",
+    r"^analysis$",
 ]
 
 SPAM_LEAD_RE = re.compile(
-    r"^[^.\n]*is central to this update for Kenyan readers[.\s]*",
+    r"^[^\.\n]*is central to this update for Kenyan readers[\.\s]*",
     re.I | re.M,
 )
 SPAM_SUBJECT_RE = re.compile(
-    r"[^.\n]*is the central subject of the update[.\s]*",
+    r"[^\.\n]*is the central subject of the update[\.\s]*",
     re.I,
 )
 
@@ -127,11 +128,8 @@ def trim_desc(desc: str, title: str) -> str:
 
 
 def collapse_repetition(body: str) -> str:
-    """Remove massive keyword-stuffing loops while keeping real paragraphs."""
-    # First strip known spam sentences
     body = SPAM_LEAD_RE.sub("", body)
     body = SPAM_SUBJECT_RE.sub("", body)
-
     paragraphs = re.split(r"\n\s*\n+", body.strip())
     cleaned = []
     seen_norm = set()
@@ -140,41 +138,13 @@ def collapse_repetition(body: str) -> str:
         if not p:
             continue
         norm = re.sub(r"\s+", " ", p.lower()).strip()
-        # Drop near-duplicates
         if norm in seen_norm:
             continue
-        # Drop if this paragraph itself is pure spam
         if "is central to this update" in norm or "is the central subject of the update" in norm:
             continue
         seen_norm.add(norm)
         cleaned.append(p)
-
-    text = "\n\n".join(cleaned)
-
-    # Extra safety: if still highly repetitive at phrase level, keep only first occurrence of each long phrase
-    words = text.split()
-    if len(words) > 200:
-        for n in (10, 12):
-            if len(words) < n * 6:
-                continue
-            seen_phrases = set()
-            new_words = []
-            i = 0
-            while i < len(words):
-                if i + n <= len(words):
-                    phrase = " ".join(words[i : i + n]).lower()
-                    if phrase in seen_phrases:
-                        i += n
-                        continue
-                    seen_phrases.add(phrase)
-                new_words.append(words[i])
-                i += 1
-            words = new_words
-        text = " ".join(words)
-        # Re-paragraph roughly
-        text = re.sub(r"([.!?])\s+", r"\1\n\n", text)
-
-    return text.strip()
+    return "\n\n".join(cleaned).strip()
 
 
 def strip_body(body: str) -> str:

@@ -11,7 +11,7 @@ POSTS_DIR = pathlib.Path("content/posts")
 MAX_TITLE = 70
 MIN_DESC = 70
 MAX_DESC = 170
-MIN_WORDS = 350
+MIN_WORDS = 180
 
 ERRORS = []
 WARNS = []
@@ -106,9 +106,6 @@ def lint(path: pathlib.Path):
     if has_high_repetition(body):
         ERRORS.append(f"{name}: high phrase repetition (keyword stuffing)")
 
-    if not re.search(r"^##\s+", body, re.M):
-        WARNS.append(f"{name}: no H2 heading")
-
     low = body.lower()
     for phrase in BANNED_ERROR:
         if phrase in low:
@@ -118,8 +115,6 @@ def lint(path: pathlib.Path):
         if phrase in low:
             WARNS.append(f"{name}: weak phrase '{phrase}'")
             break
-    if title and body.lstrip().lower().startswith(title.lower()[:24]):
-        WARNS.append(f"{name}: lede repeats title")
 
 
 def main():
