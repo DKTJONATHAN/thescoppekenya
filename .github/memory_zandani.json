@@ -374,10 +374,10 @@
     "2f882e0b576628028af36645d7d32a1e",
     "1f206f15ec873ba32cb260f8a357a489",
     "388ff301a0c4fccdb7459b29491fe46e",
-    "12df3c15476d5346a20a0f161ebb5aee"
+    "12df3c15476d5346a20a0f161ebb5aee",
+    "8dbbf528e76c3cc949a72f0ab1d1e4b3"
   ],
   "style_history": [
-    "Receipts Piece",
     "Reaction Round-up",
     "Profile Beat",
     "Hard News Lead",
@@ -406,10 +406,10 @@
     "Receipts Piece",
     "Hard News Lead",
     "Reaction Round-up",
-    "Trend Take"
+    "Trend Take",
+    "Receipts Piece"
   ],
   "angle_history": [
-    "money_follow|celebrity boxing|Receipts Piece",
     "timeline_shift|social-media|Profile Beat",
     "story_progression|celebrity boxing|Hard News Lead",
     "myth_vs_fact|Mulamwah|Reaction Round-up",
@@ -488,6 +488,7 @@
     "myth_vs_fact|TCL|Receipts Piece",
     "money_follow|Stevo Simple Boy|Hard News Lead",
     "policy_gap|Amber Ray|Reaction Round-up",
-    "next_48_hours|Kenya|Trend Take"
+    "next_48_hours|Kenya|Trend Take",
+    "policy_gap|Esther Passaris|Receipts Piece"
   ]
 }
