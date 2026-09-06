@@ -30,6 +30,8 @@ BANNED_PHRASES = [
     "moreover", "furthermore", "in conclusion", "it's worth noting",
     "a testament to", "navigating the landscape", "in today's digital age",
     "tapestry", "game-changer", "stay tuned", "unpack", "breaking news",
+    "is central to this update for kenyan readers",
+    "is the central subject of the update",
 ]
 
 BRANDS_TO_SCRUB = [
@@ -234,12 +236,17 @@ def scrub_source_leaks(text):
 LEGACY_BOILERPLATE = [
     "what this means for kenyans", "key facts", "search-ready summary", "faq",
     "what is the most important takeaway", "the key takeaway is",
+    "is central to this update for kenyan readers",
+    "is the central subject of the update",
 ]
 
 
 def strip_article_boilerplate(text):
     if not text:
         return text
+    # Kill known spam leads first
+    text = re.sub(r"[^.\n]*is central to this update for Kenyan readers[.\s]*", "", text, flags=re.I)
+    text = re.sub(r"[^.\n]*is the central subject of the update[.\s]*", "", text, flags=re.I)
     blocks = re.split(r"\n\s*\n+", text.strip())
     cleaned, seen = [], set()
     for block in blocks:
@@ -321,14 +328,46 @@ def stage_seo(brief):
 
 def stage_write(brief, seo, style, internal_links):
     prompt = (
-        f"You are {AUTHOR_NAME}, Kenyan news journalist for Za Ndani. Today is {full_date_str} EAT.\n"
-        f"STYLE: {style['name']} / {style['tone']} / {style['structure']}\n"
-        f"TITLE: {seo.get('title','')}\nBRIEF:\n{json.dumps(brief, ensure_ascii=False)}\n{internal_links}\n"
-        "Write 550-750 words of Markdown. H2 hook, standfirst, 2-3 H3s. No HTML, no byline, no em-dashes, "
-        "no source brand names, no FAQ or 'what this means for Kenyans'. "
-        f"Banned: {', '.join(BANNED_PHRASES)}."
+        f"You are {AUTHOR_NAME}, a Kenyan news journalist for Za Ndani. Today is {full_date_str} (East Africa Time).\n\n"
+        f"STYLE PRESET: {style['name']}\n"
+        f"- Lead style: {style['lead_style']}\n"
+        f"- Tone: {style['tone']}\n"
+        f"- Structure: {style['structure']}\n\n"
+        f"WORKING TITLE: {seo.get('title','')}\n"
+        f"BRIEF:\n{json.dumps(brief, ensure_ascii=False)}\n\n"
+        f"{internal_links}\n\n"
+        "WRITE THE ARTICLE IN PURE MARKDOWN with this exact order:\n"
+        "1) HARD NEWS LEAD (mandatory, 1-2 sentences only): Who + what + when + where + why/how. "
+        "Name the main actor and the action first. No opinion in the lead.\n"
+        "2) FACTUAL BODY (3-6 short paragraphs): evidence, numbers, official statements, who is affected.\n"
+        "3) ANALYSIS section under an H2 heading 'Analysis': openly labelled commentary/opinion only here.\n\n"
+        "Hard rules:\n"
+        "- 550 to 750 words.\n"
+        "- Start with an H2 heading, then the hard news lead paragraph.\n"
+        "- Use 2 or 3 H3 subheadings in the body.\n"
+        "- No HTML. No frontmatter. No author byline.\n"
+        "- No em-dashes or en-dashes. Use single hyphens only.\n"
+        "- Do NOT mention the original source brand.\n"
+        "- NEVER open with or include: 'is central to this update for Kenyan readers' "
+        "or 'is the central subject of the update' or any keyword-stuffing loop.\n"
+        "- Never repeat the same sentence or near-sentence.\n"
+        f"- Banned phrases: {', '.join(BANNED_PHRASES)}.\n"
     )
     return gemini_call(prompt, "write")
+
+
+def is_spam(text):
+    if not text:
+        return True
+    low = text.lower()
+    if "is central to this update for kenyan readers" in low:
+        return True
+    if "is the central subject of the update" in low:
+        return True
+    words = re.findall(r"\w+", text)
+    if len(words) < 350:
+        return True
+    return False
 
 
 def main():
@@ -375,6 +414,10 @@ def main():
     article_md = re.sub(r"^```(?:markdown)?\n?", "", article_md).rstrip("`").strip()
     article_md = article_md.replace("\u2014", "-").replace("\u2013", "-")
     article_md = strip_article_boilerplate(scrub_source_leaks(article_md))
+
+    if is_spam(article_md):
+        print("Generated article failed quality gate (spam/thin) — not publishing")
+        return 1
 
     final_image = upload_to_imgbb(chosen_img) if chosen_img else get_unsplash_image("kenya nairobi news")
     slug = (seo.get("slug") or re.sub(r"[^a-z0-9]+", "-", seo["title"].lower()).strip("-"))[:70]
