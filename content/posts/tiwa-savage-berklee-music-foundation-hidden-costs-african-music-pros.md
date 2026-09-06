@@ -7,12 +7,13 @@ author: "Okwonko Ben"
 image: "https://www.musicinafrica.net/sites/default/files/images/article/202602/tiwasavagefounderofthetiwasavagemusicfoundation1.png"
 category: "Entertainment"
 tags: ["Tiwa Savage", "Berklee College", "Music Foundation", "African Music", "Afrobeats", "Music Education", "Nigeria", "Entertainment Gossip"]
+canonical: "https://zandani.co.ke/article/tiwa-savage-berklee-music-foundation-hidden-costs-african-music-pros"
 date: "2026-02-26"
 dateModified: "2026-08-31T17:05:05Z"
 focusKeyword: "Tiwa Savages Berklee Music Foundation The Hidden Costs for A"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/tiwa-savage-berklee-music-foundation-hidden-costs-african-music-pros"
 ---
+
 Tiwa Savages Berklee Music Foundation The Hidden Costs for A is central to this update for Kenyan readers.
 
 ## Tiwa Savage's Music Foundation and Berklee College: Unpacking the Hype for African Music Pros Tiwa Savage's new music foundation, in partnership with Berklee College of Music, aims to boost African music professionals by providing crucial industry training. This initiative, called the Tiwa Savage Intensive Music Program, seeks to address the limited access to world-class music education across Africa by training 100 participants in Nigeria from 23 to 26 April 2026. Right, so Afrobeats queen Tiwa Savage has only gone and launched her very own music foundation, hasn't she? And with none other than the super-posh Berklee College of Music, too! Honestly, it sounds absolutely brilliant on paper, a real beacon of hope for all those talented, struggling African music professionals desperate for a leg up. But, like with most things that sparkle, you've got to wonder, haven't you? What's the real story here? Is this truly a game-changer, or are there a few little details that might just dampen the spirits of those dreaming big?
