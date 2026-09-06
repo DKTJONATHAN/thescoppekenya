@@ -503,10 +503,10 @@
     "73e143685da15c96cb8c92d8d74e4176",
     "11ef9c0d39e857d943130984028faa12",
     "0d1d83ff71217efe6f27e730740e5066",
-    "5474ba2dbcd84a0a56b89264c0a32dcd"
+    "5474ba2dbcd84a0a56b89264c0a32dcd",
+    "9c1ab94bf6421fa2492cfc7580294f67"
   ],
   "style_history": [
-    "Hard News Lead",
     "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
@@ -535,7 +535,8 @@
     "Hard News Lead",
     "Power Accountability",
     "Context Backgrounder",
-    "Explainer"
+    "Explainer",
+    "Hard News Lead"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -623,19 +624,23 @@
     "https://kenyans.co.ke/news/tracker",
     "https://kenyans.co.ke/news/118692-top-100-kenyans-2025-full-list",
     "https://kenyans.co.ke/news/126839-huduma-kenya-explains-why-birth-certificates-must-be-applied-county-birth",
-    "https://kenyans.co.ke/news/126841-explained-what-sidewall-bulges-car-tyres-mean-and-why-they-are-dangerous"
+    "https://kenyans.co.ke/news/126841-explained-what-sidewall-bulges-car-tyres-mean-and-why-they-are-dangerous",
+    "https://kenyans.co.ke/news/126837-explained-why-all-cars-airport-are-painted-yellow-top"
   ],
   "published_slugs": [
-    "tyre-sidewall-bulges-causes-blowout-risks"
+    "tyre-sidewall-bulges-causes-blowout-risks",
+    "why-airport-vehicles-are-painted-yellow"
   ],
   "published_titles": [
     "news tracker",
     "huduma explains birth certificates must applied county birth",
-    "tyre sidewall bulges hidden dangers blowout risks"
+    "tyre sidewall bulges hidden dangers blowout risks",
+    "airport ground vehicles are painted yellow"
   ],
   "topic_keys": [
     "news tracker",
     "applied birth certificates county explains huduma must",
-    "blowout bulges dangers hidden risks sidewall tyre"
+    "blowout bulges dangers hidden risks sidewall tyre",
+    "airport are ground painted vehicles yellow"
   ]
 }
