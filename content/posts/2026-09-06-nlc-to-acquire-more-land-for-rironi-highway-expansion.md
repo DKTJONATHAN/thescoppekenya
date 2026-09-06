@@ -1,18 +1,20 @@
 ---
 title: "NLC to acquire 13 more land parcels for Rironi highway expansion"
 slug: "nlc-to-acquire-more-land-for-rironi-highway-expansion"
-description: "The National Land Commission has scheduled a public inquiry for October 30 regarding the acquisition of 13 land parcels for the A8 highway expansion project."
+description: "NLC to acquire 13 more land parcels for Rironi highway expansion: The National Land Commission has scheduled a public inquiry for October 30 regarding the"
+excerpt: "Compensation Fatigue Hits Kiambu as New Land Acquisition Notices Drop The latest gazette notice from the National Land Commission has been m"
 author: "Celestine Nzioka"
-authorUrl: "https://zandani.co.ke/author/celestine-nzioka"
 image: "https://i.ibb.co/DHT2rh0M/915399f1e36e.webp"
 category: "News"
 tags: ["kiambu county", "kenha", "nlc", "infrastructure", "land acquisition", "kenya news"]
+canonical: "https://zandani.co.ke/article/nlc-to-acquire-more-land-for-rironi-highway-expansion"
 date: "2026-09-06T07:49:41Z"
 dateModified: "2026-09-06T07:49:41Z"
+focusKeyword: "NLC to acquire 13 more land parcels for Rironi highway expansion"
 schema: "NewsArticle"
 ---
 
-## Compensation Fatigue Hits Kiambu as New Land Acquisition Notices Drop
+## Compensation Fatigue Hits Kiambu as New Land Acquisition Notices Drop NLC to acquire 13 more land parcels for Rironi highway expansion is the central subject of the update.
 
 The latest gazette notice from the National Land Commission has been met with weary sighs rather than surprise, as residents along the James Gichuru-Rironi corridor face yet another round of uncertainty regarding their property rights and the stalled highway expansion project.
 
