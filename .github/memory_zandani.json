@@ -371,10 +371,10 @@
     "0cac65c902f57349018c137727d3e9c2",
     "036fef1c8078156515f56ef43899387e",
     "4f1f481c3109e2099c1222d5a651ab1f",
-    "2f882e0b576628028af36645d7d32a1e"
+    "2f882e0b576628028af36645d7d32a1e",
+    "1f206f15ec873ba32cb260f8a357a489"
   ],
   "style_history": [
-    "Trend Take",
     "Profile Beat",
     "Hard News Lead",
     "Receipts Piece",
@@ -403,10 +403,10 @@
     "Hard News Lead",
     "Reaction Round-up",
     "Profile Beat",
-    "Receipts Piece"
+    "Receipts Piece",
+    "Hard News Lead"
   ],
   "angle_history": [
-    "next_48_hours|Johnnie Walker|Reaction Round-up",
     "myth_vs_fact|Milly Wa Jesus|Hard News Lead",
     "accountability|Marya Prude|Trend Take",
     "money_follow|celebrity boxing|Receipts Piece",
@@ -485,6 +485,7 @@
     "myth_vs_fact|postpartum|Hard News Lead",
     "myth_vs_fact|Kendi Kiremi|Reaction Round-up",
     "money_follow|Fally Ipupa|Profile Beat",
-    "myth_vs_fact|TCL|Receipts Piece"
+    "myth_vs_fact|TCL|Receipts Piece",
+    "money_follow|Stevo Simple Boy|Hard News Lead"
   ]
 }
