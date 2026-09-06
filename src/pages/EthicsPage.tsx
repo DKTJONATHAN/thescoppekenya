@@ -1,5 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
-import { ShieldCheck, Scale, Users, HeartHandshake } from "lucide-react";
+import { ShieldCheck, Scale, HeartHandshake } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 export default function EthicsPage() {
@@ -7,32 +7,58 @@ export default function EthicsPage() {
     <Layout>
       <Helmet>
         <title>Editorial Ethics & Standards | Za Ndani</title>
-        <meta name="description" content="Our commitment to journalistic integrity, editorial independence, and ethical reporting at Za Ndani." />
+        <meta name="description" content="Our commitment to journalistic integrity, editorial independence, accuracy, and ethical reporting at Za Ndani — Kenya's digital newsroom." />
+        <link rel="canonical" href="https://zandani.co.ke/ethics" />
+        <meta property="og:title" content="Editorial Ethics & Standards | Za Ndani" />
+        <meta property="og:description" content="Our commitment to journalistic integrity, editorial independence, and ethical reporting at Za Ndani." />
+        <meta property="og:url" content="https://zandani.co.ke/ethics" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Za Ndani" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Editorial Ethics & Standards | Za Ndani" />
+        <meta name="twitter:description" content="Our commitment to journalistic integrity, editorial independence, and ethical reporting." />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Editorial Ethics & Standards",
+          "url": "https://zandani.co.ke/ethics",
+          "description": "Za Ndani editorial ethics and standards for accuracy, independence, and fairness.",
+          "isPartOf": { "@type": "WebSite", "name": "Za Ndani", "url": "https://zandani.co.ke" },
+          "publisher": { "@type": "Organization", "name": "Za Ndani", "url": "https://zandani.co.ke" }
+        })}</script>
       </Helmet>
-      
-      <div className="container max-w-4xl mx-auto px-4 py-16 md:py-24">
-        <h1 className="text-4xl md:text-6xl font-serif font-bold mb-8">Editorial Ethics & Standards</h1>
-        
-        <div className="prose prose-lg dark:prose-invert max-w-none">
-          <p className="lead text-xl text-muted-foreground mb-12">
-            At Za Ndani, we believe that the trust of our readers is our most valuable asset. 
-            We are committed to delivering news and entertainment with integrity, accuracy, and fairness.
-          </p>
 
-          <div className="grid md:grid-cols-2 gap-8 my-16">
+      {/* Hero — matches Authors / About theme */}
+      <section className="bg-zinc-950 border-b border-zinc-800 py-14">
+        <div className="container max-w-4xl mx-auto px-4 text-center">
+          <span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.25em] uppercase text-white px-3 py-1.5 bg-primary mb-5">
+            <ShieldCheck className="w-3 h-3" /> Trust
+          </span>
+          <h1 className="text-4xl md:text-5xl font-serif font-black text-white leading-tight mb-4">
+            Editorial Ethics & Standards
+          </h1>
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+            The trust of our readers is our most valuable asset. We deliver news and entertainment with integrity, accuracy, and fairness.
+          </p>
+        </div>
+      </section>
+
+      <div className="container max-w-4xl mx-auto px-4 py-16 md:py-20">
+        <div className="prose prose-lg dark:prose-invert max-w-none">
+          <div className="grid md:grid-cols-2 gap-8 my-8 not-prose">
             <div className="p-6 border border-divider rounded-2xl bg-surface">
               <Scale className="w-10 h-10 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">Editorial Independence</h3>
+              <h3 className="text-xl font-bold mb-2 text-headline">Editorial Independence</h3>
               <p className="text-sm text-muted-foreground">
-                Our editorial decisions are made independently. We do not allow advertisers, 
+                Our editorial decisions are made independently. We do not allow advertisers,
                 political interests, or corporate partners to influence our coverage.
               </p>
             </div>
             <div className="p-6 border border-divider rounded-2xl bg-surface">
               <ShieldCheck className="w-10 h-10 text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">Verification</h3>
+              <h3 className="text-xl font-bold mb-2 text-headline">Verification</h3>
               <p className="text-sm text-muted-foreground">
-                We strive for 100% accuracy. Every scoop is verified through multiple 
+                We strive for accuracy. Every scoop is verified through multiple
                 sources before it hits the site.
               </p>
             </div>
@@ -40,30 +66,40 @@ export default function EthicsPage() {
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-headline">1. Accuracy & Attribution</h2>
           <p>
-            We aim to report the truth as we know it. When using information from other sources, 
+            We aim to report the truth as we know it. When using information from other sources,
             we provide clear attribution. We do not knowingly publish false or misleading information.
           </p>
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-headline">2. Fairness & Respect</h2>
           <p>
-            We treat our subjects with respect. While we report on scandals and gossip, 
-            we avoid malicious intent and provide a right of reply whenever a serious 
+            We treat our subjects with respect. While we report on scandals and gossip,
+            we avoid malicious intent and provide a right of reply whenever a serious
             allegation is made.
           </p>
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-headline">3. Source Protection</h2>
           <p>
-            Anonymity is granted only when a source is at risk and the information provided is 
-            in the public interest. We stand by our sources and protect their identity 
+            Anonymity is granted only when a source is at risk and the information provided is
+            in the public interest. We stand by our sources and protect their identity
             to the full extent of the law.
           </p>
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-headline">4. Conflicts of Interest</h2>
           <p>
-            Our journalists are required to disclose any personal or financial interests 
-            that might conflict with their reporting. We do not accept gifts or payments 
+            Our journalists are required to disclose any personal or financial interests
+            that might conflict with their reporting. We do not accept gifts or payments
             in exchange for favorable coverage.
           </p>
+
+          <div className="mt-16 p-6 border-l-4 border-primary bg-primary/5 not-prose">
+            <p className="flex items-center gap-2 font-bold mb-2 text-headline">
+              <HeartHandshake className="w-5 h-5 text-primary" /> Reader trust
+            </p>
+            <p className="text-muted-foreground text-sm">
+              Questions about our standards? Write to <a href="mailto:contact@zandani.co.ke" className="text-primary hover:underline">contact@zandani.co.ke</a>
+              or see our <a href="/corrections" className="text-primary hover:underline">Corrections Policy</a>.
+            </p>
+          </div>
         </div>
       </div>
     </Layout>
