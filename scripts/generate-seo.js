@@ -7,14 +7,21 @@ const SITE_URL = 'https://zandani.co.ke';
 const PUBLICATION_NAME = 'Za Ndani';
 const PUBLICATION_LANGUAGE = 'en';
 
+// Build entity strings without embedding literal &entity; sequences that get stripped by APIs
+const AMP = String.fromCharCode(38) + 'amp;';
+const LT = String.fromCharCode(38) + 'lt;';
+const GT = String.fromCharCode(38) + 'gt;';
+const QUOT = String.fromCharCode(38) + 'quot;';
+const APOS = String.fromCharCode(38) + 'apos;';
+
 function escapeXml(str) {
   if (!str) return '';
   return String(str)
-    .replace(/&/g, '&')
-    .replace(/</g, '<')
-    .replace(/>/g, '>')
-    .replace(/"/g, '"')
-    .replace(/'/g, ''');
+    .replace(/&/g, AMP)
+    .replace(/</g, LT)
+    .replace(/>/g, GT)
+    .replace(/"/g, QUOT)
+    .replace(/'/g, APOS);
 }
 
 function toW3CDate(dateStr) {
