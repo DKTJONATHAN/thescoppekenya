@@ -6,6 +6,7 @@ import datetime as dt
 import pathlib
 import re
 import sys
+from collections import Counter
 
 POSTS_DIR = pathlib.Path("content/posts")
 MAX_TITLE = 65
@@ -29,6 +30,8 @@ BANNED = [
     "what this means for kenyans",
     "search-ready summary",
     "key takeaway",
+    "is central to this update for kenyan readers",
+    "is the central subject of the update",
 ]
 
 BOILER_HEADINGS = [
@@ -39,6 +42,15 @@ BOILER_HEADINGS = [
     r"frequently asked questions",
     r"what is the most important takeaway",
 ]
+
+SPAM_LEAD_RE = re.compile(
+    r"^[^.\n]*is central to this update for Kenyan readers[.\s]*",
+    re.I | re.M,
+)
+SPAM_SUBJECT_RE = re.compile(
+    r"[^.\n]*is the central subject of the update[.\s]*",
+    re.I,
+)
 
 
 def split_fm(text: str):
@@ -114,7 +126,59 @@ def trim_desc(desc: str, title: str) -> str:
     return desc
 
 
+def collapse_repetition(body: str) -> str:
+    """Remove massive keyword-stuffing loops while keeping real paragraphs."""
+    # First strip known spam sentences
+    body = SPAM_LEAD_RE.sub("", body)
+    body = SPAM_SUBJECT_RE.sub("", body)
+
+    paragraphs = re.split(r"\n\s*\n+", body.strip())
+    cleaned = []
+    seen_norm = set()
+    for p in paragraphs:
+        p = p.strip()
+        if not p:
+            continue
+        norm = re.sub(r"\s+", " ", p.lower()).strip()
+        # Drop near-duplicates
+        if norm in seen_norm:
+            continue
+        # Drop if this paragraph itself is pure spam
+        if "is central to this update" in norm or "is the central subject of the update" in norm:
+            continue
+        seen_norm.add(norm)
+        cleaned.append(p)
+
+    text = "\n\n".join(cleaned)
+
+    # Extra safety: if still highly repetitive at phrase level, keep only first occurrence of each long phrase
+    words = text.split()
+    if len(words) > 200:
+        for n in (10, 12):
+            if len(words) < n * 6:
+                continue
+            seen_phrases = set()
+            new_words = []
+            i = 0
+            while i < len(words):
+                if i + n <= len(words):
+                    phrase = " ".join(words[i : i + n]).lower()
+                    if phrase in seen_phrases:
+                        i += n
+                        continue
+                    seen_phrases.add(phrase)
+                new_words.append(words[i])
+                i += 1
+            words = new_words
+        text = " ".join(words)
+        # Re-paragraph roughly
+        text = re.sub(r"([.!?])\s+", r"\1\n\n", text)
+
+    return text.strip()
+
+
 def strip_body(body: str) -> str:
+    body = collapse_repetition(body)
     blocks = re.split(r"\n\s*\n+", body.strip())
     kept = []
     skip = False
@@ -172,7 +236,7 @@ def main():
         print("no posts dir")
         return 0
     changed = 0
-    files = sorted(POSTS_DIR.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True)[:40]
+    files = sorted(POSTS_DIR.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True)[:60]
     for path in files:
         if polish_file(path):
             changed += 1
