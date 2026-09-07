@@ -2,7 +2,8 @@ name: Showbiz | Martin Kihara - mpasho.co.ke
 
 on:
   schedule:
-    - cron: '15 8 * * *'
+    # 4x daily Kenya daytime — 07:45, 11:45, 15:45, 19:45 EAT (UTC+3)
+    - cron: '45 4,8,12,16 * * *'
   workflow_dispatch: {}
 
 concurrency:
