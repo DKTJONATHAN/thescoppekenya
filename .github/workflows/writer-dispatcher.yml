@@ -50,14 +50,12 @@ jobs:
           echo "Now EAT: $EAT_NOW (dow=$EAT_DOW)"
 
           # Window: match if target minute is within ±7 of current minute
-          # (covers 15-min cron ticks and slight runner delay)
           within() {
             local target_h=$1 target_m=$2
             local cur_h=$((10#$EAT_H)) cur_m=$((10#$EAT_M))
             local t=$((target_h * 60 + target_m))
             local c=$((cur_h * 60 + cur_m))
             local d=$(( t > c ? t - c : c - t ))
-            # also wrap midnight
             local d2=$(( 1440 - d ))
             [ "$d" -le 7 ] || [ "$d2" -le 7 ]
           }
@@ -68,50 +66,59 @@ jobs:
             TO_FIRE+=("$FORCE")
             echo "Force mode: $FORCE"
           else
-            # ── Celestine news: every hour 06:00–23:00 EAT at :00–:07 window ──
+            # Celestine news: every hour 06:00–23:00 EAT (fires on :00 tick)
             H=$((10#$EAT_H))
             M=$((10#$EAT_M))
             if [ "$H" -ge 6 ] && [ "$H" -le 23 ] && [ "$M" -le 7 ]; then
               TO_FIRE+=("za-news.yml")
             fi
 
-            # ── Ghafla 4× 07:00 11:00 15:00 19:00 ──
+            # Ghafla 4× 07:00 11:00 15:00 19:00
             for hm in "7:0" "11:0" "15:0" "19:0"; do
               IFS=: read -r th tm <<<"$hm"
               if within "$th" "$tm"; then TO_FIRE+=("za-ghafla.yml"); break; fi
             done
 
-            # ── Mpasho 4× 07:45 11:45 15:45 19:45 ──
+            # Mpasho 4× 07:45 11:45 15:45 19:45
             for hm in "7:45" "11:45" "15:45" "19:45"; do
               IFS=: read -r th tm <<<"$hm"
               if within "$th" "$tm"; then TO_FIRE+=("za-mpasho.yml"); break; fi
             done
 
-            # ── Mutheu Entertainment 4× 08:30 12:30 16:30 20:30 ──
+            # Mutheu Entertainment 4× 08:30 12:30 16:30 20:30
             for hm in "8:30" "12:30" "16:30" "20:30"; do
               IFS=: read -r th tm <<<"$hm"
               if within "$th" "$tm"; then TO_FIRE+=("za Entertainment.yml"); break; fi
             done
 
-            # ── Daily single slots (EAT) ──
-            # africa 06:08 | agriculture 07:09 | business 08:10 | lifestyle 10:14
-            # opinions 12:17 | sports 13:19 | technology 14:20 | diano 15:11
-            declare -A DAILY=(
-              ["za africa.yml"]="6:8"
-              ["za agriculture.yml"]="7:9"
-              ["za business.yml"]="8:10"
-              ["za lifestyle.yml"]="10:14"
-              ["za opinions.yml"]="12:17"
-              ["za sports.yml"]="13:19"
-              ["za technology.yml"]="14:20"
-              ["za diano.yml"]="15:11"
+            # Daily single slots (EAT)
+            # Use parallel arrays (portable; avoid sparse assoc-array key issues)
+            DAILY_WF=(
+              "za africa.yml"
+              "za agriculture.yml"
+              "za business.yml"
+              "za lifestyle.yml"
+              "za opinions.yml"
+              "za sports.yml"
+              "za technology.yml"
+              "za diano.yml"
             )
-            for wf in "${[!DAILY[@]}"; do
-              IFS=: read -r th tm <<<"${DAILY[$wf]}"
-              if within "$th" "$tm"; then TO_FIRE+=("$wf"); fi
+            DAILY_HM=(
+              "6:8"
+              "7:9"
+              "8:10"
+              "10:14"
+              "12:17"
+              "13:19"
+              "14:20"
+              "15:11"
+            )
+            for i in "${!DAILY_WF[@]}"; do
+              IFS=: read -r th tm <<<"${DAILY_HM[$i]}"
+              if within "$th" "$tm"; then TO_FIRE+=("${DAILY_WF[$i]}"); fi
             done
 
-            # ── Jaj column: Mon + Thu 11:13 EAT ──
+            # Jaj column: Mon + Thu 11:13 EAT
             if { [ "$EAT_DOW" = "1" ] || [ "$EAT_DOW" = "4" ]; } && within 11 13; then
               TO_FIRE+=("za jaj.yml")
             fi
@@ -134,10 +141,7 @@ jobs:
           else
             echo "Due: ${UNIQUE[*]}"
             echo "count=${#UNIQUE[@]}" >> "$GITHUB_OUTPUT"
-            # newline-separated for the trigger step
-            {
-              printf '%s\n' "${UNIQUE[@]}"
-            } > /tmp/due_workflows.txt
+            printf '%s\n' "${UNIQUE[@]}" > /tmp/due_workflows.txt
             echo "list<<EOF" >> "$GITHUB_OUTPUT"
             cat /tmp/due_workflows.txt >> "$GITHUB_OUTPUT"
             echo "EOF" >> "$GITHUB_OUTPUT"
@@ -170,12 +174,10 @@ jobs:
               continue
             fi
             echo "Dispatching: $wf"
-            # workflow_dispatch on main; file names may contain spaces
             if gh workflow run "$wf" --ref main; then
               echo "  OK: $wf"
             else
               echo "  FAILED: $wf (check workflow_dispatch is enabled and name matches)"
             fi
-            # small stagger to avoid API burst
             sleep 2
           done < /tmp/due_workflows.txt
