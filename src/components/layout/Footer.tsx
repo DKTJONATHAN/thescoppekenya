@@ -11,28 +11,27 @@ export function Footer() {
 
   const handleLinkClick = (path: string) => {
     navigate(path);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <footer className="bg-card text-card-foreground border-t border-border" data-nosnippet>
-      {/* Newsletter Section */}
+    <footer className="bg-card text-card-foreground border-t border-border mt-auto" data-nosnippet>
       <div className="border-b border-border">
-        <div className="container py-12">
-          <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-serif font-bold mb-3 text-foreground">
+        <div className="container py-8 md:py-10">
+          <div className="max-w-xl mx-auto text-center">
+            <h3 className="text-xl md:text-2xl font-serif font-bold mb-2 text-foreground">
               Don't Miss Any Story
             </h3>
-            <p className="text-muted-foreground mb-6">
-              Get insider news and entertainment updates straight to your inbox.
+            <p className="text-muted-foreground text-sm mb-5">
+              Kenya news, gossip and showbiz — straight to your inbox.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
+            <form className="flex flex-col sm:flex-row gap-2.5 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-muted border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                className="flex-1 px-4 py-3 bg-muted border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
               />
-              <Button className="gradient-primary text-primary-foreground hover:opacity-90 px-6">
+              <Button className="gradient-primary text-primary-foreground hover:opacity-90 px-5 h-12">
                 Subscribe
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
@@ -41,18 +40,16 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Main Footer */}
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand & Socials */}
-          <div className="lg:col-span-1">
-            <button onClick={() => handleLinkClick("/")} className="mb-4 block">
-              <img src={logoImg} alt="Za Ndani" className="h-12 w-auto" />
+      <div className="container py-8 md:py-10">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="col-span-2 lg:col-span-1">
+            <button onClick={() => handleLinkClick("/")} className="mb-3 block">
+              <img src={logoImg} alt="Za Ndani" className="h-10 w-auto" />
             </button>
-            <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
-              Kenya's boldest news and entertainment website. Breaking news, entertainment, and trending stories — bold, unbiased updates daily.
+            <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+              Kenya's boldest news and entertainment desk. Local first — gossip, showbiz, sports and politics.
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               {[
                 { icon: <Facebook className="w-4 h-4" />, href: "https://facebook.com/zandanike", label: "Facebook" },
                 { icon: <XIcon className="w-4 h-4" />, href: "https://x.com/zandani_ke", label: "X" },
@@ -64,7 +61,7 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-foreground"
+                  className="w-9 h-9 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all text-foreground"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -73,24 +70,23 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Categories */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-4 text-foreground border-l-4 border-primary pl-3">
+            <h4 className="font-serif font-bold text-sm mb-3 text-foreground border-l-4 border-primary pl-2.5">
               Categories
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5">
               {categories.map((category) => (
                 <li key={category.slug}>
                   <button
                     onClick={() => handleLinkClick(
-                      category.slug === 'sports' ? '/sports' :
-                      category.slug === 'entertainment' ? '/entertainment' :
-                      category.slug === 'news' ? '/news' :
-                      category.slug === 'business' ? '/business' :
-                      category.slug === 'lifestyle' ? '/lifestyle' :
+                      category.slug === "sports" ? "/sports" :
+                      category.slug === "entertainment" ? "/entertainment" :
+                      category.slug === "news" ? "/news" :
+                      category.slug === "business" ? "/business" :
+                      category.slug === "lifestyle" ? "/lifestyle" :
                       `/category/${category.slug}`
                     )}
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm text-left"
+                    className="text-muted-foreground hover:text-primary transition-colors text-sm text-left py-0.5"
                   >
                     {category.name}
                   </button>
@@ -99,30 +95,23 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Quick Links */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-4 text-foreground border-l-4 border-primary pl-3">
+            <h4 className="font-serif font-bold text-sm mb-3 text-foreground border-l-4 border-primary pl-2.5">
               Quick Links
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-1.5 text-sm">
               {[
-                { name: "About Us", path: "/about" },
+                { name: "About", path: "/about" },
                 { name: "Contact", path: "/contact" },
-                { name: "Podcast", path: "/podcast" },
-                { name: "Editorial Ethics", path: "/ethics" },
-                { name: "Corrections Policy", path: "/corrections" },
-                { name: "Fact-Checking", path: "/fact-check" },
-                { name: "Advertise With Us", path: "/advertise" },
-                { name: "Careers", path: "/careers" },
-                { name: "Privacy Policy", path: "/privacy-policy" },
-                { name: "Sitemap", path: "/sitemap" },
-                { name: "Terms of Service", path: "/terms" },
+                { name: "Ethics", path: "/ethics" },
+                { name: "Corrections", path: "/corrections" },
+                { name: "Fact-Check", path: "/fact-check" },
+                { name: "Advertise", path: "/advertise" },
+                { name: "Privacy", path: "/privacy-policy" },
+                { name: "Terms", path: "/terms" },
               ].map((link) => (
                 <li key={link.path}>
-                  <button 
-                    onClick={() => handleLinkClick(link.path)} 
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
+                  <button onClick={() => handleLinkClick(link.path)} className="text-muted-foreground hover:text-primary transition-colors py-0.5">
                     {link.name}
                   </button>
                 </li>
@@ -130,83 +119,32 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact Section - FIXED */}
-          <div>
-            <h4 className="font-serif font-bold text-lg mb-4 text-foreground border-l-4 border-primary pl-3">
-              Contact Us
+          <div className="col-span-2 lg:col-span-1">
+            <h4 className="font-serif font-bold text-sm mb-3 text-foreground border-l-4 border-primary pl-2.5">
+              Contact
             </h4>
-            <div className="space-y-6 text-sm">
-              {/* Phone */}
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0">
-                  <Phone className="w-4 h-4 text-primary" />
-                </div>
-                <a href="tel:+254706396305" className="text-muted-foreground hover:text-primary transition-colors">
-                  0706 396 305
-                </a>
-              </div>
-
-              {/* General Inquiries */}
-              <div className="space-y-2">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-4 h-4 text-primary" />
-                  </div>
-                  <span className="font-semibold text-foreground">Inquiries</span>
-                </div>
-                <div className="pl-11 flex flex-col gap-1.5">
-                  <a href="mailto:contact@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors break-all">
-                    contact@zandani.co.ke
-                  </a>
-                  <a href="mailto:info@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors break-all">
-                    info@zandani.co.ke
-                  </a>
-                </div>
-              </div>
-
-              {/* Management */}
-              <div className="space-y-2">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0">
-                    <Globe className="w-4 h-4 text-primary" />
-                  </div>
-                  <span className="font-semibold text-foreground">Site Management</span>
-                </div>
-                <div className="pl-11">
-                  <a 
-                    href="https://www.jonathanmwaniki.co.ke" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-xs text-primary font-medium hover:underline"
-                  >
-                    Engineered by Jonathan Mwaniki →
-                  </a>
-                </div>
-              </div>
+            <div className="space-y-3 text-sm">
+              <a href="tel:+254706396305" className="flex items-center gap-2.5 text-muted-foreground hover:text-primary">
+                <Phone className="w-4 h-4 text-primary shrink-0" />
+                0706 396 305
+              </a>
+              <a href="mailto:contact@zandani.co.ke" className="flex items-center gap-2.5 text-muted-foreground hover:text-primary break-all">
+                <Mail className="w-4 h-4 text-primary shrink-0" />
+                contact@zandani.co.ke
+              </a>
+              <a href="https://www.jonathanmwaniki.co.ke" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-xs text-primary font-medium hover:underline">
+                <Globe className="w-4 h-4 shrink-0" />
+                Engineered by Jonathan Mwaniki
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-border">
-        <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+        <div className="container py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Za Ndani. All rights reserved.</p>
-          <p className="flex items-center gap-1">
-            <span>Powered by</span>
-            <a 
-              href="https://jonathanmwaniki.co.ke/about" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-primary font-medium hover:underline"
-            >
-              Jonathan Mwaniki
-            </a>
-          </p>
-          <button
-            onClick={() => handleLinkClick(staticSitePages.find((page) => page.path === "/podcast")?.path || "/podcast")}
-            className="text-primary hover:underline"
-          >
+          <button onClick={() => handleLinkClick("/podcast")} className="text-primary hover:underline">
             Podcast
           </button>
         </div>
