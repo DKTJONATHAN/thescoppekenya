@@ -1,4 +1,4 @@
-name: Mutheu Ann - Entertainment Scraper
+name: Entertainment | Mutheu Ann ← pulselive.co.ke
 
 on:
   schedule:
@@ -61,8 +61,7 @@ jobs:
           if [ -f scripts/mutheu_entertainment.py ]; then
             python scripts/mutheu_entertainment.py
           else
-            echo "scripts/mutheu_entertainment.py missing - use embedded fallback"
-            python -c "print('TODO: restore full pipeline if script missing')"
+            echo "scripts/mutheu_entertainment.py missing - skipping"
             exit 0
           fi
 
