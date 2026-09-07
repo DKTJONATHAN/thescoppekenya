@@ -506,10 +506,10 @@
     "5474ba2dbcd84a0a56b89264c0a32dcd",
     "9c1ab94bf6421fa2492cfc7580294f67",
     "a412fe6b8bbe7c390c829ecfdfa7bf30",
-    "b76271de24a7afe4a013e0b3f590c8d2"
+    "b76271de24a7afe4a013e0b3f590c8d2",
+    "ad2fca761b1cd6ded13be99c0578b7bd"
   ],
   "style_history": [
-    "Power Accountability",
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -538,7 +538,8 @@
     "Explainer",
     "Hard News Lead",
     "Hard News Lead",
-    "Statement Report"
+    "Statement Report",
+    "Event Report"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -629,7 +630,8 @@
     "https://kenyans.co.ke/news/126841-explained-what-sidewall-bulges-car-tyres-mean-and-why-they-are-dangerous",
     "https://kenyans.co.ke/news/126837-explained-why-all-cars-airport-are-painted-yellow-top",
     "https://kenyans.co.ke/news/126847-eric-omondi-arrested-while-collecting-signatures-reduce-counties-47-8",
-    "https://kenyans.co.ke/news/126856-tanzanias-first-gentleman-hafidh-ameir-hassan-dies"
+    "https://kenyans.co.ke/news/126856-tanzanias-first-gentleman-hafidh-ameir-hassan-dies",
+    "https://kenyans.co.ke/news/126854-moja-expressway-announces-maintenance-westlands-exit-september-8"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -642,7 +644,8 @@
     "tyre sidewall bulges hidden dangers blowout risks",
     "airport ground vehicles are painted yellow",
     "eric omondi arrested nairobi county referendum",
-    "tanzania first gentleman hafidh ameir hassan dies zanzibar"
+    "tanzania first gentleman hafidh ameir hassan dies zanzibar",
+    "moja expressway closes section westlands exit overpass scheduled maintenance"
   ],
   "topic_keys": [
     "news tracker",
