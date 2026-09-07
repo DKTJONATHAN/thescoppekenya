@@ -1,11 +1,7 @@
 name: Celestine Nzioka - News Scraper
 
 on:
-  schedule:
-    # Hourly News 06:00–23:00 EAT (03:00–20:00 UTC) at :05
-    - cron: '5 3-20 * * *'
-    # Extra daily safety fire at 07:20 EAT in case hourly slots were skipped
-    - cron: '20 4 * * *'
+  # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — hourly 06:00–23:00 EAT
   workflow_dispatch: {}
 
 concurrency:
