@@ -1,21 +1,20 @@
 ---
-title: "Kenneth Branagh Recalls Star-Studded Dune Audition List
+title: "'Kenneth Branagh Recalls Star-Studded Dune Audition List"
 slug: "kenneth-branagh-dune-audition-oldman-day-lewis-firth"
-description: "Kenneth Branagh recalled a legendary Dune audition queue featuring Gary Oldman, Daniel Day-Lewis, Colin Firth, and Tim Roth. Discover who landed the iconic Paul Atreides role."
+description: "'Kenneth Branagh Recalls Star-Studded Dune Audition List: Kenneth Branagh recalled a legendary Dune audition queue featuring Gary Oldman, Daniel Day-Lewis,"
+excerpt: "The Unseen Audition Lineup for 1984's Dune Frank Herbert's sprawling 'Dune' universe has captivated generations, making its journey to the s"
 author: "Mutheu Ann"
-authorUrl: "https://zandani.co.ke/author/mutheu-ann"
 image: "https://i.ibb.co/d4jWwdKF/1bb44699915d.jpg"
-og_title: "Branagh Reveals Star-Studded Dune Audition Queue"
-og_description: "Kenneth Branagh recounts his 1984 Dune audition, revealing Gary Oldman, Daniel Day-Lewis, Colin Firth, and Tim Roth also vied for Paul Atreides. Kyle MacLachlan ultimately landed the role."
-focus_keyword: "Kenneth Branagh Dune audition"
 category: "Entertainment"
 tags: ["entertainment", "film history", "kenneth branagh", "dune 1984", "david lynch", "kyle maclachlan", "paul atreides"]
+canonical: "https://zandani.co.ke/article/kenneth-branagh-dune-audition-oldman-day-lewis-firth"
 date: "2026-09-07T00:19:20Z"
 dateModified: "2026-09-07T00:19:20Z"
+focusKeyword: "'Kenneth Branagh Recalls Star-Studded Dune Audition List"
 schema: "NewsArticle"
 ---
 
-## The Unseen Audition Lineup for 1984's Dune
+## The Unseen Audition Lineup for 1984's Dune "Kenneth Branagh Recalls Star-Studded Dune Audition List is the central subject of the update.
 
 Frank Herbert's sprawling "Dune" universe has captivated generations, making its journey to the screen a frequent subject of fascination. For the 1984 film adaptation, the pivotal role of Paul Atreides ultimately went to a newcomer. Yet, a recent anecdote has illuminated a remarkable "what if" scenario, revealing that several future acting titans were considered, forever reshaping their paths and Hollywood history itself.
 
