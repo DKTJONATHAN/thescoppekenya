@@ -1,19 +1,20 @@
-import os, sys, json, re, time, random, hashlib, base64, itertools, datetime, urllib.parse
-import requests
+#!/usr/bin/env python3
+"""Grace Wambui — straight business reporter. No commentary."""
+import os, sys, json, re, time, random, hashlib, itertools, datetime, urllib.parse
 from dateutil import parser as date_parser
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 from google import genai
 from google.genai import types
 
-AUTHOR_NAME    = "Grace Wambui"
-AUTHOR_SLUG    = "grace-wambui"
-CATEGORY       = "Business"
-SITE_BASE_URL  = "https://zandani.co.ke"
-SOURCE_URL     = "https://www.businessdailyafrica.com/"
-SOURCE_DOMAIN  = "businessdailyafrica.com"
-POSTS_DIR      = os.environ.get("POSTS_DIR", "content/posts")
-MEMORY_FILE    = os.environ.get("MEMORY_FILE", ".github/memory_grace.json")
+AUTHOR_NAME = "Grace Wambui"
+AUTHOR_SLUG = "grace-wambui"
+CATEGORY = "Business"
+SITE_BASE_URL = "https://zandani.co.ke"
+SOURCE_URL = "https://www.businessdailyafrica.com/"
+SOURCE_DOMAIN = "businessdailyafrica.com"
+POSTS_DIR = os.environ.get("POSTS_DIR", "content/posts")
+MEMORY_FILE = os.environ.get("MEMORY_FILE", ".github/memory_grace.json")
 
 MODELS_TO_TRY = [
     "gemini-3.1-pro-preview",
@@ -28,6 +29,35 @@ BANNED_PHRASES = [
     "buckle up", "breaking news", "dive in", "delve into", "moreover", "furthermore",
     "in conclusion", "it's worth noting", "a testament to", "navigating the landscape",
     "in today's digital age", "tapestry", "game-changer", "stay tuned", "unpack",
+    "is central to this update for kenyan readers",
+    "is the central subject of the update", "central subject of the update",
+    "central to this update", "what this means for kenyans", "what this means for kenya",
+    "key takeaway", "search-ready summary", "in a significant development",
+    "sparking debate", "raising questions", "underscores the need",
+    "only time will tell", "the bigger picture", "it remains to be seen",
+    "this development comes as", "a wake-up call", "food for thought",
+    "what this means right now", "how this changes the picture",
+]
+
+STYLE_PRESETS = [
+    {
+        "name": "Hard News Lead",
+        "lead_style": "Who did what, where, when.",
+        "tone": "Neutral wire-service. No opinion.",
+        "structure": "Lead, facts by importance, quotes, numbers, status",
+    },
+    {
+        "name": "Market Report",
+        "lead_style": "Open with the figure, company or market move.",
+        "tone": "Factual, clipped.",
+        "structure": "Lead, sequence, confirmation, numbers",
+    },
+    {
+        "name": "Statement Report",
+        "lead_style": "Official action or statement first.",
+        "tone": "Neutral, attribution-heavy.",
+        "structure": "Lead, quote/order, background, response",
+    },
 ]
 
 BRANDS_TO_SCRUB = [
@@ -36,30 +66,26 @@ BRANDS_TO_SCRUB = [
     "BBC", "CNN", "Reuters", "Al Jazeera", "Business Daily",
 ]
 
-STYLE_PRESETS = [
-    {"name": "Market Report", "format": "News report", "lead_style": "Lead with the key fact", "tone": "Authoritative, factual", "angle": "What this means right now", "structure": "Lead, three context paragraphs, reaction, outlook", "sentence_mix": "Short and medium", "closing": "Clear takeaway"},
-    {"name": "Policy Brief", "format": "Brief", "lead_style": "Open with the move and who it hits", "tone": "Clear, slightly urgent", "angle": "How this changes the picture", "structure": "Announcement, three impacts, next steps", "sentence_mix": "Medium", "closing": "A pointed question"},
-    {"name": "Backgrounder", "format": "Backgrounder", "lead_style": "Place this inside a longer pattern", "tone": "Measured, knowledgeable", "angle": "How we got here", "structure": "Today, three beats, pattern, outlook", "sentence_mix": "Medium with one short closer", "closing": "Pattern recognition closer"},
-    {"name": "Human Angle", "format": "Human angle", "lead_style": "Lead with how this hits ordinary Kenyans", "tone": "Grounded, practical", "angle": "What this changes for the average reader", "structure": "Hook, three impacts, practical action", "sentence_mix": "Conversational, concrete", "closing": "Action oriented closer"},
-]
-
 now_utc = datetime.datetime.utcnow()
 now_eat = now_utc + datetime.timedelta(hours=3)
 publish_ts = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
 today_str = now_eat.strftime("%Y-%m-%d")
+full_date_str = now_eat.strftime("%A, %B %d, %Y")
+
 
 def load_memory():
+    empty = {"published_hashes": [], "style_history": []}
     if not os.path.exists(MEMORY_FILE):
-        return {"published_hashes": [], "style_history": [], "angle_history": []}
+        return empty
     try:
         with open(MEMORY_FILE, "r", encoding="utf-8") as f:
             raw = json.load(f)
         if isinstance(raw, list):
-            return {"published_hashes": raw[-500:], "style_history": [], "angle_history": []}
+            empty["published_hashes"] = raw[-500:]
+            return empty
         if isinstance(raw, dict):
             raw.setdefault("published_hashes", [])
             raw.setdefault("style_history", [])
-            raw.setdefault("angle_history", [])
             raw["style_history"] = [
                 (h.get("stylePreset") or h.get("name") or "") if isinstance(h, dict) else str(h)
                 for h in raw["style_history"]
@@ -68,36 +94,68 @@ def load_memory():
             return raw
     except Exception as e:
         print(f"Memory load error: {e}")
-    return {"published_hashes": [], "style_history": [], "angle_history": []}
+    return empty
+
 
 def save_memory(mem):
     os.makedirs(os.path.dirname(MEMORY_FILE) or ".", exist_ok=True)
     mem["published_hashes"] = mem.get("published_hashes", [])[-500:]
     mem["style_history"] = mem.get("style_history", [])[-30:]
-    mem["angle_history"] = mem.get("angle_history", [])[-80:]
     with open(MEMORY_FILE, "w", encoding="utf-8") as f:
         json.dump(mem, f, indent=2)
 
-memory = load_memory()
 
 def pick_style(history):
-    recent = set(history[-3:])
+    recent = set(list(history)[-2:])
     candidates = [s for s in STYLE_PRESETS if s["name"] not in recent] or STYLE_PRESETS
     return random.choice(candidates)
+
 
 def content_hash(title, body):
     raw = (title + "|" + body[:800]).lower()
     raw = re.sub(r"\s+", " ", raw)
     return hashlib.sha256(raw.encode()).hexdigest()[:24]
 
+
 def scrub_brands(text):
     for b in BRANDS_TO_SCRUB:
         text = re.sub(re.escape(b), "", text, flags=re.I)
     return text
 
-def has_banned(text):
+
+def strip_spam(text):
+    if not text:
+        return text
+    text = re.sub(r"[^.\n]*is central to this update for Kenyan readers[.\s]*", "", text, flags=re.I)
+    text = re.sub(r"[^.\n]*is the central subject of the update[.\s]*", "", text, flags=re.I)
+    text = re.sub(r"[^.\n]*central subject of the update[.\s]*", "", text, flags=re.I)
+    text = re.sub(r"[^.\n]*central to this update[.\s]*", "", text, flags=re.I)
+    return text.strip()
+
+
+def is_spam(text):
+    if not text:
+        return True
     low = text.lower()
-    return any(p in low for p in BANNED_PHRASES)
+    markers = [
+        "is the central subject of the update",
+        "central subject of the update",
+        "central to this update",
+        "what this means for kenyans",
+        "search-ready summary",
+        "key takeaway",
+        "it remains to be seen",
+    ]
+    if any(m in low for m in markers):
+        return True
+    if re.search(r"##\s*analysis\b", text, re.I):
+        return True
+    if any(p in low for p in BANNED_PHRASES):
+        return True
+    if len(re.findall(r"\w+", text)) < 300:
+        return True
+    return False
+
 
 def scrape_source():
     stories = []
@@ -134,6 +192,7 @@ def scrape_source():
         print(f"Scrape error: {e}")
         return []
 
+
 def fetch_article(url):
     try:
         with sync_playwright() as p:
@@ -146,15 +205,20 @@ def fetch_article(url):
         soup = BeautifulSoup(html, "html.parser")
         for tag in soup(["script", "style", "nav", "footer", "aside"]):
             tag.decompose()
-        paragraphs = [p.get_text(" ", strip=True) for p in soup.select("p") if len(p.get_text(strip=True)) > 40]
+        paragraphs = [
+            p.get_text(" ", strip=True)
+            for p in soup.select("p")
+            if len(p.get_text(strip=True)) > 40
+        ]
         body = "\n\n".join(paragraphs[:18])
         return scrub_brands(body)[:6000]
     except Exception as e:
         print(f"Fetch article error: {e}")
         return ""
 
+
 def call_gemini(prompt):
-    api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_WRITE_KEY")
     if not api_key:
         raise RuntimeError("No GEMINI_API_KEY")
     client = genai.Client(api_key=api_key)
@@ -164,7 +228,7 @@ def call_gemini(prompt):
             resp = client.models.generate_content(
                 model=model,
                 contents=prompt,
-                config=types.GenerateContentConfig(temperature=0.85, max_output_tokens=4096),
+                config=types.GenerateContentConfig(temperature=0.4, max_output_tokens=4096),
             )
             text = (resp.text or "").strip()
             if text:
@@ -175,51 +239,54 @@ def call_gemini(prompt):
             time.sleep(1)
     raise RuntimeError(f"All models failed: {last_err}")
 
-def build_prompt(story, source_body, style):
-    return f"""You are {AUTHOR_NAME}, business correspondent for Zandani (Kenya).
-Write an original article in English for Kenyan business and SME readers.
 
-SOURCE STORY TITLE: {story['title']}
+def build_prompt(story, source_body, style):
+    return f"""You are {AUTHOR_NAME}, a straight business-news reporter for Za Ndani (Kenya).
+Today is {full_date_str} EAT.
+This is a NEWS website, not commentary. Write ONLY facts. Who, what, where, when, how. No opinion.
+
+SOURCE TITLE: {story['title']}
 SOURCE URL: {story['url']}
-SOURCE BODY (use for facts only, rewrite completely):
+SOURCE (facts only, rewrite completely):
 {source_body[:4500]}
 
-STYLE PRESET: {style['name']}
-Format: {style['format']}
-Lead style: {style['lead_style']}
-Tone: {style['tone']}
-Angle: {style['angle']}
-Structure: {style['structure']}
-Sentence mix: {style['sentence_mix']}
-Closing: {style['closing']}
+STYLE: {style['name']}. Lead: {style['lead_style']}. Tone: {style['tone']}. Structure: {style['structure']}.
 
-RULES:
-- 650-950 words
-- Original rewrite. No copying sentences.
-- No banned phrases
-- Scrub any competing media brand names
-- Kenya / East Africa focus
-- Output ONLY the article body in markdown (## subheads allowed). No title line. No meta.
+MARKDOWN OUTPUT:
+1) H2 factual headline, then hard-news lead (1-2 sentences): who + what + where + when.
+2) Body 4-7 short paragraphs: next facts, attributed statements, numbers, places.
+3) Optional one-line status closer only if a next step is already scheduled. No moral. No prediction.
+
+RULES: 500-800 words. NO Analysis section. NO commentary. NO what this means.
+NEVER write 'is the central subject of the update' or any keyword-stuffing line.
+Do not repeat the title as a stuffed sentence. No competing media brands. No em-dashes.
+Banned: {', '.join(BANNED_PHRASES[:18])}...
+Output ONLY the article body in markdown. No meta.
 """
+
 
 def slugify(title):
     s = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
     return s[:80]
 
+
 def write_post(title, body_md, style_name, source_url):
+    body_md = strip_spam(body_md)
     slug = f"{today_str}-{slugify(title)}"
     path = os.path.join(POSTS_DIR, f"{slug}.md")
     os.makedirs(POSTS_DIR, exist_ok=True)
+    excerpt = body_md[:160].replace(chr(10), " ").replace('"', "'").strip()
     fm = f"""---
 title: "{title.replace('"', "'")}"
 date: {publish_ts}
 author: "{AUTHOR_NAME}"
 category: "{CATEGORY}"
 image: ""
-excerpt: "{body_md[:160].replace(chr(10), ' ').replace('"', "'").strip()}..."
+excerpt: "{excerpt}..."
 readTime: {max(3, len(body_md.split()) // 180)}
 source: "{source_url}"
 stylePreset: "{style_name}"
+schema: "NewsArticle"
 ---
 
 {body_md}
@@ -229,12 +296,14 @@ stylePreset: "{style_name}"
     print(f"Wrote {path}")
     return slug
 
+
 def main():
-    print(f"[{AUTHOR_NAME}] starting {CATEGORY} run @ {publish_ts}")
+    memory = load_memory()
+    print(f"[{AUTHOR_NAME}] hard-news run @ {publish_ts}")
     stories = scrape_source()
     if not stories:
         print("No stories found")
-        return
+        return 0
     style = pick_style(memory.get("style_history", []))
     print(f"Style: {style['name']}")
     for story in stories:
@@ -244,11 +313,13 @@ def main():
         prompt = build_prompt(story, body, style)
         try:
             article, model_used = call_gemini(prompt)
+            print(f"Used model {model_used}")
         except Exception as e:
             print(f"Generation failed: {e}")
             continue
-        if has_banned(article) or len(article) < 400:
-            print("Rejected: banned or too short")
+        article = strip_spam(scrub_brands(article))
+        if is_spam(article):
+            print("Rejected: spam or too short")
             continue
         h = content_hash(story["title"], article)
         if h in memory.get("published_hashes", []):
@@ -259,18 +330,15 @@ def main():
             first = article.split("\n", 1)[0]
             title = re.sub(r"^#+\s*", "", first).strip() or title
             article = article.split("\n", 1)[-1].strip()
-        angle_signature = style["name"] + "|" + title[:40]
-        if angle_signature in memory.get("angle_history", []):
-            print("Angle repeat, skip")
-            continue
         write_post(title, article, style["name"], story["url"])
         memory.setdefault("published_hashes", []).append(h)
         memory.setdefault("style_history", []).append(style["name"])
-        memory.setdefault("angle_history", []).append(angle_signature)
         save_memory(memory)
         print("Memory updated")
-        return
+        return 0
     print("No suitable story published this run")
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
