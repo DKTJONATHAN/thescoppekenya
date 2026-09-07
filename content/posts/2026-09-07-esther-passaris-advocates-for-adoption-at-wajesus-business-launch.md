@@ -7,12 +7,13 @@ author: "Martin Kihara"
 image: "https://i.ibb.co/Tqh79KV4/1cf04bd742ee.webp"
 category: "Gossip"
 tags: ["esther passaris", "wajesus family", "kenyan news", "adoption", "nairobi business", "celebrity news"]
+canonical: "https://zandani.co.ke/article/esther-passaris-advocates-for-adoption-at-wajesus-business-launch"
 date: "2026-09-06T22:30:40Z"
 dateModified: "2026-09-06T22:30:40Z"
 focusKeyword: "esther passaris advocates for adoption wajesus"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/esther-passaris-advocates-for-adoption-at-wajesus-business-launch"
 ---
+
 Esther Passaris took the stage at the ESMANDA Baby Shop opening to pivot away from the typical influencer family planning narrative. By championing adoption, she highlighted the jarring disconnect between the glamorous aesthetic of parenting and the grueling reality of Kenyan bureaucratic procedures.### The Legislative Hurdle versus the Instagram Aesthetic
 
 ### What we know
