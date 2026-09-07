@@ -1,9 +1,7 @@
 name: Entertainment | Mutheu Ann ← pulselive.co.ke
 
 on:
-  schedule:
-    # 4x daily Kenya daytime — 08:30, 12:30, 16:30, 20:30 EAT (UTC+3)
-    - cron: '30 5,9,13,17 * * *'
+  # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 08:30, 12:30, 16:30, 20:30 EAT
   workflow_dispatch: {}
 
 concurrency:
