@@ -1,6 +1,7 @@
 name: Amara Ndlovu - Pan-Africa Entertainment Scraper
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi)
   workflow_dispatch: {}
 

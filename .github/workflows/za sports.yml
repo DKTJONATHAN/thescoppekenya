@@ -1,6 +1,7 @@
 name: Jona Munyi - Sports Scraper
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 13:19 EAT
   workflow_dispatch: {}
 

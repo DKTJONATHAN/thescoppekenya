@@ -1,6 +1,7 @@
 name: Grace Mkamburi - Business Scraper
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 08:10 EAT
   workflow_dispatch: {}
 

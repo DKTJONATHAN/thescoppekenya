@@ -1,6 +1,7 @@
 name: Zed Mogaka - George Diano Stories
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi)
   workflow_dispatch: {}
 

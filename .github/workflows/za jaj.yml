@@ -1,6 +1,7 @@
 name: Opinionated Columnist
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — Mon+Thu 11:13 EAT
   workflow_dispatch:
     inputs:

@@ -1,6 +1,7 @@
 name: Jona Munyi - Lifestyle Scraper
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 10:14 EAT
   workflow_dispatch: {}
 

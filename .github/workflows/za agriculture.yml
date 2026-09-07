@@ -1,6 +1,7 @@
 name: Timothy Muli - Agriculture Scraper
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 07:09 EAT
   workflow_dispatch: {}
 

@@ -1,6 +1,7 @@
 name: Elizabeth Muthoni - Technology Scraper
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 14:20 EAT
   workflow_dispatch: {}
 

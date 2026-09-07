@@ -1,6 +1,7 @@
 name: Jonathan Mwaniki - Opinions Scraper
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 12:17 EAT
   workflow_dispatch: {}
 
