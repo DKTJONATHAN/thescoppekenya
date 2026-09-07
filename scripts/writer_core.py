@@ -1,11 +1,23 @@
 """Shared scrape + rewrite pipeline for Zandani category writers.
-Hard-news by default: who/what/where/when/how. No commentary spam.
+Kenya-first hard news. Voice, GEO and skip rules live in voice_guard.
 """
 import os, json, re, time, random, hashlib, datetime, urllib.parse
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 from google import genai
 from google.genai import types
+from voice_guard import (
+    BANNED_PHRASES,
+    inject_know_if_missing,
+    is_spam,
+    kenya_score,
+    model_skipped,
+    news_prompt,
+    polish_body,
+    seo_fields,
+    should_skip_story,
+    strip_banned,
+)
 
 MODELS_TO_TRY = [
     "gemini-3.1-pro-preview",
@@ -15,21 +27,6 @@ MODELS_TO_TRY = [
     "gemini-2.5-flash",
 ]
 
-BANNED_PHRASES = [
-    "sasa basi", "melting the pot", "spill the tea", "tea is hot", "grab your popcorn",
-    "buckle up", "breaking news", "dive in", "delve into", "moreover", "furthermore",
-    "in conclusion", "it's worth noting", "a testament to", "navigating the landscape",
-    "in today's digital age", "tapestry", "game-changer", "stay tuned", "unpack",
-    "is central to this update for kenyan readers",
-    "is the central subject of the update", "central subject of the update",
-    "central to this update", "what this means for kenyans", "what this means for kenya",
-    "key takeaway", "search-ready summary", "in a significant development",
-    "sparking debate", "raising questions", "underscores the need",
-    "only time will tell", "the bigger picture", "it remains to be seen",
-    "this development comes as", "a wake-up call", "food for thought",
-    "what this means right now", "how this changes the picture",
-]
-
 BRANDS_TO_SCRUB = [
     "Kenyans.co.ke", "Daily Nation", "Nation.Africa", "The Standard", "Standard Media",
     "Citizen Digital", "Tuko", "Pulse Live", "Capital FM", "K24", "NTV Kenya", "KTN News",
@@ -37,7 +34,6 @@ BRANDS_TO_SCRUB = [
     "Techweez", "OkayAfrica", "Africanews",
 ]
 
-# Hard-news only — no Analysis / Human Angle commentary defaults
 DEFAULT_STYLES = [
     {
         "name": "Hard News Lead",
@@ -73,37 +69,7 @@ DEFAULT_STYLES = [
 
 
 def strip_spam(text):
-    if not text:
-        return text
-    text = re.sub(r"[^.\n]*is central to this update for Kenyan readers[.\s]*", "", text, flags=re.I)
-    text = re.sub(r"[^.\n]*is the central subject of the update[.\s]*", "", text, flags=re.I)
-    text = re.sub(r"[^.\n]*central subject of the update[.\s]*", "", text, flags=re.I)
-    text = re.sub(r"[^.\n]*central to this update[.\s]*", "", text, flags=re.I)
-    return text.strip()
-
-
-def is_spam(text):
-    if not text:
-        return True
-    low = text.lower()
-    markers = [
-        "is the central subject of the update",
-        "central subject of the update",
-        "central to this update",
-        "what this means for kenyans",
-        "search-ready summary",
-        "key takeaway",
-        "it remains to be seen",
-    ]
-    if any(m in low for m in markers):
-        return True
-    if re.search(r"##\s*analysis\b", text, re.I):
-        return True
-    if any(p in low for p in BANNED_PHRASES):
-        return True
-    if len(re.findall(r"\w+", text)) < 280:
-        return True
-    return False
+    return strip_banned(text)
 
 
 def run_writer(cfg):
@@ -115,7 +81,6 @@ def run_writer(cfg):
     memory_file = os.environ.get("MEMORY_FILE", cfg["memory_file"])
     styles = cfg.get("styles") or DEFAULT_STYLES
     role = cfg.get("role", f"{category.lower()} correspondent")
-    audience = cfg.get("audience", "Kenyan readers")
     extra_path_hints = cfg.get("path_hints", ["article", "news", "story", "post", "/20"])
     opinion_mode = bool(cfg.get("opinion_mode"))
 
@@ -176,7 +141,7 @@ def run_writer(cfg):
         stories = []
         try:
             with sync_playwright() as p:
-                browser = p.chromium.launch(headless=True)
+                browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage"])
                 page = browser.new_page()
                 page.goto(source_url, wait_until="domcontentloaded", timeout=45000)
                 page.wait_for_timeout(2500)
@@ -202,6 +167,7 @@ def run_writer(cfg):
                     continue
                 seen.add(s["url"])
                 uniq.append(s)
+            uniq.sort(key=lambda s: kenya_score(s["title"]), reverse=True)
             return uniq[:12]
         except Exception as e:
             print(f"Scrape error: {e}")
@@ -210,25 +176,29 @@ def run_writer(cfg):
     def fetch_article(url):
         try:
             with sync_playwright() as p:
-                browser = p.chromium.launch(headless=True)
+                browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-dev-shm-usage"])
                 page = browser.new_page()
                 page.goto(url, wait_until="domcontentloaded", timeout=40000)
                 page.wait_for_timeout(1500)
                 html = page.content()
                 browser.close()
             soup = BeautifulSoup(html, "html.parser")
-            for tag in soup(["script", "style", "nav", "footer", "aside"]):
-                tag.decompose()
+            og = ""
+            tag = soup.find("meta", property="og:image") or soup.find("meta", attrs={"name": "og:image"})
+            if tag and tag.get("content"):
+                og = tag["content"]
+            for t in soup(["script", "style", "nav", "footer", "aside"]):
+                t.decompose()
             paragraphs = [
                 p.get_text(" ", strip=True)
                 for p in soup.select("p")
                 if len(p.get_text(strip=True)) > 40
             ]
             body = "\n\n".join(paragraphs[:18])
-            return scrub_brands(body)[:6000]
+            return scrub_brands(body)[:6000], og
         except Exception as e:
             print(f"Fetch article error: {e}")
-            return ""
+            return "", ""
 
     def call_gemini(prompt):
         api_key = (
@@ -259,67 +229,27 @@ def run_writer(cfg):
                 time.sleep(1)
         raise RuntimeError(f"All models failed: {last_err}")
 
-    def build_prompt(story, source_body, style):
-        if opinion_mode:
-            return f"""You are {author}, opinion columnist for Za Ndani (Kenya).
-Today is {full_date_str} EAT.
-Write a clear opinion piece for {audience}. Still ban keyword spam.
-
-SOURCE TITLE: {story['title']}
-SOURCE (facts only for grounding):
-{source_body[:4500]}
-
-STYLE: {style['name']}. Lead: {style.get('lead_style')}. Tone: {style.get('tone')}.
-Structure: {style.get('structure')}.
-
-RULES:
-- 650-900 words. Original prose.
-- NEVER write 'is the central subject of the update' or any keyword-stuffing line.
-- No competing media brands. No em-dashes.
-- Output ONLY the article body in markdown. No meta.
-Banned: {', '.join(BANNED_PHRASES[:12])}...
-"""
-
-        return f"""You are {author}, a straight-news {role} for Za Ndani (Kenya).
-Today is {full_date_str} EAT.
-This is a NEWS website, not commentary. Write ONLY facts. Who, what, where, when, how. No opinion.
-
-SOURCE TITLE: {story['title']}
-SOURCE URL: {story['url']}
-SOURCE (facts only, rewrite completely):
-{source_body[:4500]}
-
-STYLE: {style['name']}. Lead: {style.get('lead_style')}. Tone: {style.get('tone')}. Structure: {style.get('structure')}.
-
-MARKDOWN OUTPUT:
-1) H2 factual headline, then hard-news lead (1-2 sentences): who + what + where + when.
-2) Body 4-7 short paragraphs: next facts, attributed statements, numbers, places.
-3) Optional one-line status closer only if a next step is already scheduled. No moral. No prediction.
-
-RULES: 500-800 words. NO Analysis section. NO commentary. NO what this means.
-NEVER write 'is the central subject of the update' or any keyword-stuffing line.
-Do not repeat the title as a stuffed sentence. No competing media brands. No em-dashes.
-Banned: {', '.join(BANNED_PHRASES[:18])}...
-Output ONLY the article body in markdown. No meta.
-"""
-
     def slugify(title):
         s = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
         return s[:80]
 
-    def write_post(title, body_md, style_name, source):
-        body_md = strip_spam(body_md)
-        slug = f"{today_str}-{slugify(title)}"
+    def write_post(title, body_md, style_name, source, image=""):
+        body_md = polish_body(body_md)
+        seo = seo_fields(title, body_md, category, author)
+        slug = f"{today_str}-{slugify(seo['title'])}"
         path = os.path.join(posts_dir, f"{slug}.md")
         os.makedirs(posts_dir, exist_ok=True)
-        excerpt = body_md[:160].replace(chr(10), " ").replace('"', "'").strip()
         fm = f"""---
-title: "{title.replace('"', "'")}"
+title: "{seo['title']}"
+slug: "{slugify(seo['title'])}"
+description: "{seo['description']}"
+excerpt: "{seo['excerpt']}"
 date: {publish_ts}
+dateModified: {publish_ts}
 author: "{author}"
 category: "{category}"
-image: ""
-excerpt: "{excerpt}..."
+county: "{seo['county']}"
+image: "{image or ''}"
 readTime: {max(3, len(body_md.split()) // 180)}
 source: "{source}"
 stylePreset: "{style_name}"
@@ -330,10 +260,10 @@ schema: "NewsArticle"
 """
         with open(path, "w", encoding="utf-8") as f:
             f.write(fm)
-        print(f"Wrote {path}")
+        print(f"Wrote {path} kenya_score={kenya_score(seo['title'] + ' ' + body_md)}")
         return slug
 
-    print(f"[{author}] hard-news run {category} @ {publish_ts}")
+    print(f"[{author}] Kenya-first run {category} @ {publish_ts}")
     stories = scrape_source()
     if not stories:
         print("No stories found")
@@ -341,17 +271,29 @@ schema: "NewsArticle"
     style = pick_style(memory.get("style_history", []))
     print(f"Style: {style['name']}")
     for story in stories:
-        body = fetch_article(story["url"])
+        if should_skip_story(story["title"], category):
+            print(f"Skip (not Kenya-first): {story['title'][:80]}")
+            continue
+        body, image = fetch_article(story["url"])
         if len(body) < 200:
             continue
-        prompt = build_prompt(story, body, style)
+        if should_skip_story(story["title"] + " " + body, category):
+            print(f"Skip body (not Kenya-first): {story['title'][:80]}")
+            continue
+        prompt = news_prompt(
+            author, full_date_str, style, story["title"], body,
+            role=role, opinion=opinion_mode, desk=category,
+        )
         try:
             article, model_used = call_gemini(prompt)
             print(f"Used {model_used}")
         except Exception as e:
             print(f"Generation failed: {e}")
             continue
-        article = strip_spam(scrub_brands(article))
+        if model_skipped(article):
+            print("Model skipped foreign story")
+            continue
+        article = polish_body(scrub_brands(article))
         if is_spam(article):
             print("Rejected: spam or too short")
             continue
@@ -364,10 +306,10 @@ schema: "NewsArticle"
             first = article.split("\n", 1)[0]
             title = re.sub(r"^#+\s*", "", first).strip() or title
             article = article.split("\n", 1)[-1].strip()
-        write_post(title, article, style["name"], story["url"])
+        write_post(title, article, style["name"], story["url"], image)
         memory.setdefault("published_hashes", []).append(h)
         memory.setdefault("style_history", []).append(style["name"])
         save_memory(memory)
         print("Memory updated")
         return
-    print("No suitable story published this run")
+    print("No suitable Kenya-first story published this run")

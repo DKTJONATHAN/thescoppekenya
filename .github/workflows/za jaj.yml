@@ -16,7 +16,7 @@ on:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -63,8 +63,13 @@ jobs:
             python scripts/jaj_columnist.py
           else
             echo "scripts/jaj_columnist.py missing — skipping this run"
-            exit 0
+            exit 1
           fi
+
+
+      - name: Kenya-first polish gate
+        run: |
+          python scripts/finish_desk.py
 
       - name: Commit history and new posts
         run: |

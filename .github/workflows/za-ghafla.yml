@@ -61,8 +61,13 @@ jobs:
             python scripts/wanjiku_ghafla.py
           else
             echo "scripts/wanjiku_ghafla.py missing - skipping generation this run"
-            exit 0
+            exit 1
           fi
+
+
+      - name: Kenya-first polish gate
+        run: |
+          python scripts/finish_desk.py
 
       - name: Commit history and new posts
         run: |

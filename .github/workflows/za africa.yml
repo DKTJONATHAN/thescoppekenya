@@ -1,4 +1,4 @@
-name: Amara Ndlovu - Pan-Africa Entertainment Scraper
+name: Amara Ndlovu - East Africa Scraper
 
 on:
   workflow_call:
@@ -62,8 +62,13 @@ jobs:
           else
             echo "scripts/amara_africa.py missing — pipeline still embedded in older runs; skipping this run"
             echo "TODO: extract embedded pipeline to scripts/amara_africa.py"
-            exit 0
+            exit 1
           fi
+
+
+      - name: Kenya-first polish gate
+        run: |
+          python scripts/finish_desk.py
 
       - name: Commit history and new posts
         run: |

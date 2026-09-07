@@ -2,6 +2,14 @@ import os, sys, json, re, time, random, hashlib, datetime, glob
 from google import genai
 from google.genai import types
 
+try:
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+except ImportError:
+    import sys, os
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+
+
 AUTHOR_NAME   = "Jaj"
 AUTHOR_SLUG   = "jaj"
 CATEGORY      = "Opinions"
@@ -39,6 +47,7 @@ now_utc = datetime.datetime.utcnow()
 now_eat = now_utc + datetime.timedelta(hours=3)
 publish_ts = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
 today_str = now_eat.strftime("%Y-%m-%d")
+full_date_str = now_eat.strftime("%A, %B %d, %Y")
 
 def load_memory():
     if not os.path.exists(MEMORY_FILE):
@@ -147,46 +156,43 @@ def call_gemini(prompt):
     raise RuntimeError(f"All models failed: {last_err}")
 
 def build_prompt(src, style):
-    return f"""You are {AUTHOR_NAME}, opinion columnist for Za Ndani (Kenya).
-Write an ORIGINAL opinion column inspired by — but not summarizing — the source story.
+    return news_prompt(
+        AUTHOR_NAME,
+        full_date_str,
+        style,
+        src.get("title",""),
+        src.get("body","")[:3000],
+        role="opinion columnist",
+        opinion=True,
+        desk="Opinions",
+    )
 
-SOURCE TITLE: {src['title']}
-SOURCE CATEGORY: {src['category']}
-SOURCE EXCERPT (facts only; do not copy):
-{src['body'][:3000]}
-
-STYLE: {style['name']}
-Tone: {style['tone']}
-Structure: {style['structure']}
-
-RULES:
-- 700-1000 words
-- Strong point of view. No fence-sitting.
-- Kenyan voice. Concrete, not abstract.
-- NEVER write 'is the central subject of the update' or any keyword-stuffing line.
-- No banned AI phrases.
-- Output ONLY the column body in markdown. First line may be a ## subhead. No meta title.
-"""
 
 def slugify(title):
     s = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
     return s[:80]
 
 def write_post(title, body_md, style_name, source_slug):
-    body_md = strip_spam(body_md)
-    slug = f"{today_str}-opinion-{slugify(title)}"
+    body_md = polish_body(body_md)
+    seo = seo_fields(title, body_md, CATEGORY, AUTHOR_NAME)
+    slug = f"{today_str}-opinion-{slugify(seo['title'])}"
     path = os.path.join(POSTS_DIR, f"{slug}.md")
     os.makedirs(POSTS_DIR, exist_ok=True)
     fm = f"""---
-title: "{title.replace('"', "'")}"
+title: "{seo['title']}"
+slug: "{slugify(seo['title'])}"
+description: "{seo['description']}"
+excerpt: "{seo['excerpt']}"
 date: {publish_ts}
+dateModified: {publish_ts}
 author: "{AUTHOR_NAME}"
 category: "{CATEGORY}"
+county: "{seo['county']}"
 image: ""
-excerpt: "{body_md[:160].replace(chr(10), ' ').replace('"', "'").strip()}..."
 readTime: {max(3, len(body_md.split()) // 180)}
 source: "internal:{source_slug}"
 stylePreset: "{style_name}"
+schema: "NewsArticle"
 ---
 
 {body_md}
@@ -213,7 +219,10 @@ def main():
         except Exception as e:
             print(f"Generation failed: {e}")
             continue
-        article = strip_spam(article)
+        if model_skipped(article):
+            print("Model skipped foreign story")
+            continue
+        article = polish_body(article)
         if has_banned(article) or len(article) < 400:
             print("Rejected: banned or too short")
             continue

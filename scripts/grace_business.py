@@ -7,6 +7,14 @@ from playwright.sync_api import sync_playwright
 from google import genai
 from google.genai import types
 
+try:
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+except ImportError:
+    import sys, os
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+
+
 AUTHOR_NAME = "Grace Wambui"
 AUTHOR_SLUG = "grace-wambui"
 CATEGORY = "Business"
@@ -241,28 +249,7 @@ def call_gemini(prompt):
 
 
 def build_prompt(story, source_body, style):
-    return f"""You are {AUTHOR_NAME}, a straight business-news reporter for Za Ndani (Kenya).
-Today is {full_date_str} EAT.
-This is a NEWS website, not commentary. Write ONLY facts. Who, what, where, when, how. No opinion.
-
-SOURCE TITLE: {story['title']}
-SOURCE URL: {story['url']}
-SOURCE (facts only, rewrite completely):
-{source_body[:4500]}
-
-STYLE: {style['name']}. Lead: {style['lead_style']}. Tone: {style['tone']}. Structure: {style['structure']}.
-
-MARKDOWN OUTPUT:
-1) H2 factual headline, then hard-news lead (1-2 sentences): who + what + where + when.
-2) Body 4-7 short paragraphs: next facts, attributed statements, numbers, places.
-3) Optional one-line status closer only if a next step is already scheduled. No moral. No prediction.
-
-RULES: 500-800 words. NO Analysis section. NO commentary. NO what this means.
-NEVER write 'is the central subject of the update' or any keyword-stuffing line.
-Do not repeat the title as a stuffed sentence. No competing media brands. No em-dashes.
-Banned: {', '.join(BANNED_PHRASES[:18])}...
-Output ONLY the article body in markdown. No meta.
-"""
+    return news_prompt(AUTHOR_NAME, full_date_str, style, story.get("title",""), source_body, role="correspondent", desk=CATEGORY)
 
 
 def slugify(title):
@@ -271,18 +258,22 @@ def slugify(title):
 
 
 def write_post(title, body_md, style_name, source_url):
-    body_md = strip_spam(body_md)
-    slug = f"{today_str}-{slugify(title)}"
+    body_md = polish_body(body_md)
+    seo = seo_fields(title, body_md, CATEGORY, AUTHOR_NAME)
+    slug = f"{today_str}-{slugify(seo['title'])}"
     path = os.path.join(POSTS_DIR, f"{slug}.md")
     os.makedirs(POSTS_DIR, exist_ok=True)
-    excerpt = body_md[:160].replace(chr(10), " ").replace('"', "'").strip()
     fm = f"""---
-title: "{title.replace('"', "'")}"
+title: "{seo['title']}"
+slug: "{slugify(seo['title'])}"
+description: "{seo['description']}"
+excerpt: "{seo['excerpt']}"
 date: {publish_ts}
+dateModified: {publish_ts}
 author: "{AUTHOR_NAME}"
 category: "{CATEGORY}"
+county: "{seo['county']}"
 image: ""
-excerpt: "{excerpt}..."
 readTime: {max(3, len(body_md.split()) // 180)}
 source: "{source_url}"
 stylePreset: "{style_name}"
@@ -307,8 +298,15 @@ def main():
     style = pick_style(memory.get("style_history", []))
     print(f"Style: {style['name']}")
     for story in stories:
+        blob = story.get("title", "")
+        if should_skip_story(blob, CATEGORY):
+            print(f"Skip (not Kenya-first): {blob[:80]}")
+            continue
         body = fetch_article(story["url"])
         if len(body) < 200:
+            continue
+        if should_skip_story(blob + " " + body, CATEGORY):
+            print(f"Skip body (not Kenya-first): {blob[:80]}")
             continue
         prompt = build_prompt(story, body, style)
         try:
@@ -317,7 +315,10 @@ def main():
         except Exception as e:
             print(f"Generation failed: {e}")
             continue
-        article = strip_spam(scrub_brands(article))
+        if model_skipped(article):
+            print("Model skipped foreign story")
+            continue
+        article = polish_body(scrub_brands(article))
         if is_spam(article):
             print("Rejected: spam or too short")
             continue

@@ -8,12 +8,24 @@ from playwright.sync_api import sync_playwright
 from google import genai
 from google.genai import types
 
+try:
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+except ImportError:
+    import sys, os
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+
+
 AUTHOR_NAME = "Mutheu Ann"
 AUTHOR_SLUG = "mutheu-ann"
 CATEGORY = "Entertainment"
 SITE_BASE_URL = "https://zandani.co.ke"
-SOURCE_URL = "https://www.pulselive.co.ke/articles/entertainment"
-SOURCE_DOMAIN = "pulselive.co.ke"
+SOURCE_URL = "https://nation.africa/kenya/life-style/entertainment"
+SOURCE_DOMAIN = "nation.africa"
+SOURCE_URLS = [
+    "https://nation.africa/kenya/life-style/entertainment",
+    "https://www.pulselive.co.ke/articles/entertainment",
+]
 POSTS_DIR = os.environ.get("POSTS_DIR", "content/posts")
 MEMORY_FILE = os.environ.get("MEMORY_FILE", ".github/memory_mutheu.json")
 MAX_CANDIDATES = 25
@@ -159,41 +171,50 @@ def get_unsplash_image(query):
 
 def get_target_urls():
     urls = []
-    print(f"Scanning {SOURCE_URL}")
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(
-                headless=True, args=["--no-sandbox", "--disable-dev-shm-usage"]
-            )
-            ctx = browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-            )
-            page = ctx.new_page()
-            page.goto(SOURCE_URL, timeout=90000, wait_until="domcontentloaded")
-            page.wait_for_timeout(3500)
-            for _ in range(3):
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                page.wait_for_timeout(2000)
-            soup = BeautifulSoup(page.content(), "html.parser")
-            base = SOURCE_URL.split("/")[0] + "//" + SOURCE_URL.split("/")[2]
-            for a in soup.select("a[href]"):
-                href = a.get("href", "")
-                if not href or href.startswith("#"):
-                    continue
-                if href.startswith("/"):
-                    href = base + href
-                if not href.startswith("http") or SOURCE_DOMAIN not in href:
-                    continue
-                if any(x in href for x in ["?page=", "/category/", "/tag/", "/author/"]):
-                    continue
-                if len(href) < 40:
-                    continue
-                if href not in urls:
-                    urls.append(href)
-            browser.close()
-    except Exception as e:
-        print(f"List scrape error: {e}")
-    print(f"Found {len(urls)} candidates")
+    pages = SOURCE_URLS if "SOURCE_URLS" in globals() else [SOURCE_URL]
+    for src in pages:
+        domain = src.split("/")[2].replace("www.", "")
+        print(f"Scanning {src}")
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.launch(
+                    headless=True, args=["--no-sandbox", "--disable-dev-shm-usage"]
+                )
+                ctx = browser.new_context(
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                )
+                page = ctx.new_page()
+                page.goto(src, timeout=90000, wait_until="domcontentloaded")
+                page.wait_for_timeout(3500)
+                for _ in range(3):
+                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    page.wait_for_timeout(2000)
+                soup = BeautifulSoup(page.content(), "html.parser")
+                base = src.split("/")[0] + "//" + src.split("/")[2]
+                for a in soup.select("a[href]"):
+                    href = a.get("href", "")
+                    title = a.get_text(" ", strip=True)
+                    if not href or href.startswith("#"):
+                        continue
+                    if href.startswith("/"):
+                        href = base + href
+                    if not href.startswith("http"):
+                        continue
+                    if domain not in href.replace("www.", ""):
+                        continue
+                    if any(x in href for x in ["?page=", "/category/", "/tag/", "/author/"]):
+                        continue
+                    if len(href) < 40:
+                        continue
+                    blob = title + " " + href
+                    if should_skip_story(blob, CATEGORY):
+                        continue
+                    if href not in urls:
+                        urls.append(href)
+                browser.close()
+        except Exception as e:
+            print(f"List scrape error ({src}): {e}")
+    print(f"Found {len(urls)} Kenya-first candidates")
     return urls[:MAX_CANDIDATES]
 
 
@@ -346,26 +367,15 @@ def gemini_call(prompt, label=""):
 
 
 def stage_write(raw_title, raw_text, style):
-    prompt = (
-        f"You are {AUTHOR_NAME}, a straight entertainment-news reporter for Za Ndani (Kenya). "
-        f"Today is {full_date_str} EAT.\n"
-        "This is a NEWS website, not commentary. Write ONLY facts. "
-        "Who, what, where, when, how. No opinion. No fan-reaction essays.\n\n"
-        f"STYLE: {style['name']}. Lead: {style['lead_style']}. "
-        f"Tone: {style['tone']}. Structure: {style['structure']}.\n\n"
-        f"SOURCE TITLE: {raw_title}\n"
-        f"SOURCE (facts only, rewrite completely):\n{raw_text[:5000]}\n\n"
-        "MARKDOWN OUTPUT:\n"
-        "1) H2 factual headline, then hard-news lead (1-2 sentences): who + what + where + when.\n"
-        "2) Body 4-7 short paragraphs: next facts, attributed statements, places, dates.\n"
-        "3) Optional one-line status closer only if a next step is already scheduled. "
-        "No moral. No prediction. No 'what fans think'.\n\n"
-        "RULES: 450-700 words. NO Analysis section. NO commentary. NO what this means.\n"
-        "NEVER write 'is the central subject of the update' or any keyword-stuffing line.\n"
-        "Do not repeat the title as a stuffed sentence. No competing media brands. No em-dashes.\n"
-        f"Banned: {', '.join(BANNED_PHRASES[:18])}...\n"
-    )
-    return gemini_call(prompt, "write")
+    if should_skip_story((raw_title or "") + " " + (raw_text or ""), CATEGORY):
+        print("Skip (not Kenya-first): " + (raw_title or "")[:80])
+        return None
+    prompt = news_prompt(AUTHOR_NAME, full_date_str, style, raw_title, raw_text, role="correspondent", desk=CATEGORY)
+    out = gemini_call(prompt, "write")
+    if model_skipped(out):
+        print("Model skipped foreign story")
+        return None
+    return polish_body(out or "")
 
 
 def slugify(title):
@@ -404,7 +414,7 @@ def main():
             print("Write failed")
             continue
         article = re.sub(r"^```(?:markdown)?\n?", "", article).rstrip("`").strip()
-        article = scrub_source_leaks(strip_spam(article))
+        article = polish_body(scrub_source_leaks(article))
         if is_spam(article):
             print("Rejected spam or empty")
             continue
@@ -419,22 +429,22 @@ def main():
         if not final_image:
             final_image = get_unsplash_image("kenya entertainment")
 
-        slug = f"{today_str}-{slugify(out_title)}"
-        title_safe = out_title.replace('"', "'")
-        excerpt = re.sub(r"\s+", " ", article[:160].replace('"', "'")).strip()
-
+        seo = seo_fields(out_title, article, CATEGORY, AUTHOR_NAME)
+        slug = f"{today_str}-{slugify(seo['title'])}"
         frontmatter = (
             "---\n"
-            f'title: "{title_safe}"\n'
-            f'slug: "{slug}"\n'
+            f'title: "{seo["title"]}"\n'
+            f'slug: "{slugify(seo["title"])}"\n'
+            f'description: "{seo["description"]}"\n'
+            f'excerpt: "{seo["excerpt"]}"\n'
             f'author: "{AUTHOR_NAME}"\n'
             f'authorUrl: "{SITE_BASE_URL}/author/{AUTHOR_SLUG}"\n'
             f'image: "{final_image}"\n'
             f'category: "{CATEGORY}"\n'
+            f'county: "{seo["county"]}"\n'
             f'tags: ["entertainment", "showbiz", "kenya"]\n'
             f'date: "{publish_ts}"\n'
             f'dateModified: "{publish_ts}"\n'
-            f'excerpt: "{excerpt}..."\n'
             f'schema: "NewsArticle"\n'
             f'stylePreset: "{style["name"]}"\n'
             "---\n\n"

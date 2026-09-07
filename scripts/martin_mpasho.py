@@ -8,6 +8,14 @@ from playwright.sync_api import sync_playwright
 from google import genai
 from google.genai import types
 
+try:
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+except ImportError:
+    import sys, os
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+
+
 AUTHOR_NAME = "Martin Kihara"
 AUTHOR_SLUG = "martin-kihara"
 CATEGORY = "Showbiz"
@@ -368,26 +376,15 @@ def gemini_call(prompt, label=""):
 
 
 def stage_write(raw_title, raw_text, style):
-    prompt = (
-        f"You are {AUTHOR_NAME}, a straight showbiz-news reporter for Za Ndani (Kenya). "
-        f"Today is {full_date_str} EAT.\n"
-        "This is a NEWS website, not commentary. Write ONLY facts. "
-        "Who, what, where, when, how. No opinion. No fan-reaction essays.\n\n"
-        f"STYLE: {style['name']}. Lead: {style['lead_style']}. "
-        f"Tone: {style['tone']}. Structure: {style['structure']}.\n\n"
-        f"SOURCE TITLE: {raw_title}\n"
-        f"SOURCE (facts only, rewrite completely):\n{raw_text[:5000]}\n\n"
-        "MARKDOWN OUTPUT:\n"
-        "1) H2 factual headline, then hard-news lead (1-2 sentences): who + what + where + when.\n"
-        "2) Body 4-7 short paragraphs: next facts, attributed statements, places, dates.\n"
-        "3) Optional one-line status closer only if a next step is already scheduled. "
-        "No moral. No prediction. No 'what fans think'.\n\n"
-        "RULES: 450-700 words. NO Analysis section. NO commentary. NO what this means.\n"
-        "NEVER write 'is the central subject of the update' or any keyword-stuffing line.\n"
-        "Do not repeat the title as a stuffed sentence. No competing media brands. No em-dashes.\n"
-        f"Banned: {', '.join(BANNED_PHRASES[:18])}...\n"
-    )
-    return gemini_call(prompt, "write")
+    if should_skip_story((raw_title or "") + " " + (raw_text or ""), CATEGORY):
+        print("Skip (not Kenya-first): " + (raw_title or "")[:80])
+        return None
+    prompt = news_prompt(AUTHOR_NAME, full_date_str, style, raw_title, raw_text, role="correspondent", desk=CATEGORY)
+    out = gemini_call(prompt, "write")
+    if model_skipped(out):
+        print("Model skipped foreign story")
+        return None
+    return polish_body(out or "")
 
 
 def slugify(title):
@@ -427,7 +424,7 @@ def main():
         if not article:
             print("Write failed")
             continue
-        article = scrub_source_leaks(strip_spam(article))
+        article = polish_body(scrub_source_leaks(article))
         if is_spam(article):
             print("Rejected spam or empty")
             continue
@@ -441,22 +438,22 @@ def main():
         final_image = (
             upload_to_imgbb(img) if img else get_unsplash_image("kenya celebrity showbiz")
         )
-        slug = f"{today_str}-{slugify(out_title)}"
-        title_safe = out_title.replace('"', "'")
-        excerpt = re.sub(r"\s+", " ", article[:160].replace('"', "'")).strip()
-
+        seo = seo_fields(out_title, article, CATEGORY, AUTHOR_NAME)
+        slug = f"{today_str}-{slugify(seo['title'])}"
         frontmatter = (
             "---\n"
-            f'title: "{title_safe}"\n'
-            f'slug: "{slug}"\n'
+            f'title: "{seo["title"]}"\n'
+            f'slug: "{slugify(seo["title"])}"\n'
+            f'description: "{seo["description"]}"\n'
+            f'excerpt: "{seo["excerpt"]}"\n'
             f'author: "{AUTHOR_NAME}"\n'
             f'authorUrl: "{SITE_BASE_URL}/author/{AUTHOR_SLUG}"\n'
             f'image: "{final_image}"\n'
             f'category: "{CATEGORY}"\n'
+            f'county: "{seo["county"]}"\n'
             f'tags: ["showbiz", "entertainment", "kenya"]\n'
             f'date: "{publish_ts}"\n'
             f'dateModified: "{publish_ts}"\n'
-            f'excerpt: "{excerpt}..."\n'
             f'schema: "NewsArticle"\n'
             f'stylePreset: "{style["name"]}"\n'
             "---\n\n"

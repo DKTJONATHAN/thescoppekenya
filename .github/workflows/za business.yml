@@ -61,8 +61,13 @@ jobs:
             python scripts/grace_business.py
           else
             echo "scripts/grace_business.py missing — skipping this run"
-            exit 0
+            exit 1
           fi
+
+
+      - name: Kenya-first polish gate
+        run: |
+          python scripts/finish_desk.py
 
       - name: Commit history and new posts
         run: |

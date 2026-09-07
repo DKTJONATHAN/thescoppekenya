@@ -5,11 +5,11 @@ from writer_core import run_writer
 if __name__ == "__main__":
     run_writer({
         "author_name": "Amara Ndlovu",
-        "category": "Entertainment",
-        "source_url": "https://www.okayafrica.com/",
-        "source_domain": "okayafrica.com",
+        "category": "Africa",
+        "source_url": "https://www.theeastafrican.co.ke/",
+        "source_domain": "theeastafrican.co.ke",
         "memory_file": ".github/memory_amara.json",
-        "role": "pan-African entertainment correspondent",
-        "audience": "Kenyan and East African readers following continental culture and entertainment",
-        "path_hints": ["article", "news", "story", "post", "/20", "culture"],
+        "role": "East Africa correspondent",
+        "audience": "Kenyan and East African readers following regional news",
+        "path_hints": ["article", "news", "story", "post", "/20", "east-africa", "tanzania", "uganda", "rwanda"],
     })

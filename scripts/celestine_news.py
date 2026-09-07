@@ -7,6 +7,14 @@ from playwright.sync_api import sync_playwright
 from google import genai
 from google.genai import types
 
+try:
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+except ImportError:
+    import sys, os
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+
+
 AUTHOR_NAME = "Celestine Nzioka"
 CATEGORY = "News"
 SOURCE_URL = "https://www.kenyans.co.ke/news"
@@ -219,43 +227,42 @@ def gemini_call(prompt, label=""):
     return None
 
 def stage_write(raw_title, raw_text, style):
-    prompt = (
-        f"You are {AUTHOR_NAME}, a straight-news reporter for Za Ndani (Kenya). Today is {full_date_str} EAT.\n"
-        "This is a NEWS website, not commentary. Write ONLY facts. Who, what, where, when, how. No opinion.\n\n"
-        f"STYLE: {style['name']}. Lead: {style['lead_style']}. Tone: {style['tone']}. Structure: {style['structure']}.\n\n"
-        f"SOURCE TITLE: {raw_title}\nSOURCE (facts only, rewrite completely):\n{raw_text[:5000]}\n\n"
-        "MARKDOWN OUTPUT:\n"
-        "1) H2 factual headline, then hard-news lead (1-2 sentences): who + what + where + when.\n"
-        "2) Body 4-7 short paragraphs: next facts, attributed statements, numbers, places.\n"
-        "3) Optional one-line status closer only if a next step is already scheduled. No moral. No prediction.\n\n"
-        "RULES: 500-700 words. NO Analysis section. NO commentary. NO what this means.\n"
-        "NEVER write is the central subject of the update or any keyword-stuffing line.\n"
-        "Do not repeat the title as a stuffed sentence. No competing media brands. No em-dashes.\n"
-        f"Banned: {', '.join(BANNED_PHRASES[:15])}...\n"
-    )
-    return gemini_call(prompt, "write")
+    if should_skip_story((raw_title or "") + " " + (raw_text or ""), CATEGORY):
+        print("Skip (not Kenya-first): " + (raw_title or "")[:80])
+        return None
+    prompt = news_prompt(AUTHOR_NAME, full_date_str, style, raw_title, raw_text, role="correspondent", desk=CATEGORY)
+    out = gemini_call(prompt, "write")
+    if model_skipped(out):
+        print("Model skipped foreign story")
+        return None
+    return polish_body(out or "")
+
 
 def slugify(title):
     return re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:80]
 
 def write_post(title, body_md, style_name, source_url, image=""):
-    body_md = strip_spam(body_md)
-    slug = f"{today_str}-{slugify(title)}"
+    body_md = polish_body(body_md)
+    seo = seo_fields(title, body_md, CATEGORY, AUTHOR_NAME)
+    slug = f"{today_str}-{slugify(seo['title'])}"
     path = os.path.join(POSTS_DIR, f"{slug}.md")
     os.makedirs(POSTS_DIR, exist_ok=True)
-    excerpt = re.sub(r"\s+", " ", body_md[:160].replace(chr(34), chr(39))).strip()
-    title_safe = title.replace(chr(34), chr(39))
     lines = [
         "---",
-        f'title: "{title_safe}"',
+        f'title: "{seo["title"]}"',
+        f'slug: "{slugify(seo["title"])}"',
+        f'description: "{seo["description"]}"',
+        f'excerpt: "{seo["excerpt"]}"',
         f"date: {publish_ts}",
+        f"dateModified: {publish_ts}",
         f'author: "{AUTHOR_NAME}"',
         f'category: "{CATEGORY}"',
+        f'county: "{seo["county"]}"',
         f'image: "{image}"',
-        f'excerpt: "{excerpt}..."',
         f"readTime: {max(3, len(body_md.split()) // 180)}",
         f'source: "{source_url}"',
         f'stylePreset: "{style_name}"',
+        'schema: "NewsArticle"',
         "---",
         "",
         body_md,
