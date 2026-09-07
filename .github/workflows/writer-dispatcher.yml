@@ -92,6 +92,34 @@ jobs:
 
           mkdir -p "$(dirname "$LEDGER")"
           [ -f "$LEDGER" ] || touch "$LEDGER"
+          # Map historic filename slots onto desk keys so already-fired hours do not rerun.
+          if [ -s "$LEDGER" ]; then
+            sed -i \
+              -e 's/:za-news.yml$/:news/' \
+              -e 's/:za-ghafla.yml$/:ghafla/' \
+              -e 's/:za-mpasho.yml$/:mpasho/' \
+              -e 's/:za-entertainment.yml$/:entertainment/' \
+              -e 's/:za Entertainment.yml$/:entertainment/' \
+              -e 's/:za-africa.yml$/:africa/' \
+              -e 's/:za africa.yml$/:africa/' \
+              -e 's/:za-agriculture.yml$/:agriculture/' \
+              -e 's/:za agriculture.yml$/:agriculture/' \
+              -e 's/:za-business.yml$/:business/' \
+              -e 's/:za business.yml$/:business/' \
+              -e 's/:za-lifestyle.yml$/:lifestyle/' \
+              -e 's/:za lifestyle.yml$/:lifestyle/' \
+              -e 's/:za-opinions.yml$/:opinions/' \
+              -e 's/:za opinions.yml$/:opinions/' \
+              -e 's/:za-sports.yml$/:sports/' \
+              -e 's/:za sports.yml$/:sports/' \
+              -e 's/:za-technology.yml$/:technology/' \
+              -e 's/:za technology.yml$/:technology/' \
+              -e 's/:za-diano.yml$/:diano/' \
+              -e 's/:za diano.yml$/:diano/' \
+              -e 's/:za-jaj.yml$/:jaj/' \
+              -e 's/:za jaj.yml$/:jaj/' \
+              "$LEDGER"
+          fi
 
           due() {
             local t=$((10#$1 * 60 + 10#$2))
