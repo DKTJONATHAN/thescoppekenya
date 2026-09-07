@@ -10,15 +10,8 @@ import { Helmet } from "react-helmet-async";
 import { Badge } from "@/components/ui/badge";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics"))      return "bg-blue-700";
-  if (c.includes("news"))          return "bg-amber-600";
-
-  if (c.includes("sports"))        return "bg-green-700";
-  if (c.includes("tech"))          return "bg-cyan-700";
-  return "bg-zinc-600";
+function catColor(_cat: string): string {
+  return "bg-primary text-primary-foreground";
 }
 
 function proxyImg(url: string, w = 600): string {
@@ -38,12 +31,12 @@ function timeAgo(dateStr: string): string {
 }
 
 const AUTHOR_COLORS: Record<string, string> = {
-  "za ndani":         "bg-rose-600",
+  "za ndani":         "bg-primary",
   "mutheu ann":       "bg-purple-600",
   "celestine nzioka": "bg-blue-700",
 };
-function authorColor(name: string): string {
-  return AUTHOR_COLORS[name.toLowerCase()] || "bg-zinc-600";
+function authorColor(_name: string): string {
+  return "bg-primary text-primary-foreground";
 }
 function authorInitials(name: string): string {
   return name.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();

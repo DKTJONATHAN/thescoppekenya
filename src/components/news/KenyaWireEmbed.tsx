@@ -159,7 +159,7 @@ export function KenyaWireStrip() {
       <div className="container max-w-7xl mx-auto px-3 sm:px-4">
         <div className="flex items-center justify-between gap-3 mb-4">
           <div className="flex items-center gap-2 text-white">
-            <Radio className="w-4 h-4 text-red-400" />
+            <Radio className="w-4 h-4 text-primary" />
             <h2 className="text-sm font-black uppercase tracking-wide">Kenya Wire</h2>
           </div>
           <Link to="/live" className="text-xs font-bold text-sky-400 uppercase tracking-wider hover:underline">

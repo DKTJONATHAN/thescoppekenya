@@ -10,30 +10,12 @@ import AdUnit from "@/components/AdUnit";
 import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics"))      return "bg-blue-700";
-  if (c.includes("news"))          return "bg-amber-600";
-
-  if (c.includes("sports"))        return "bg-green-700";
-  if (c.includes("tech"))          return "bg-cyan-700";
-  if (c.includes("business"))      return "bg-cyan-700";
-  if (c.includes("lifestyle"))     return "bg-purple-600";
-  return "bg-zinc-600";
+function catColor(_cat: string): string {
+  return "bg-primary text-primary-foreground";
 }
 
-function catAccent(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "border-rose-600";
-  if (c.includes("politics"))      return "border-blue-700";
-  if (c.includes("news"))          return "border-amber-600";
-
-  if (c.includes("sports"))        return "border-green-700";
-  if (c.includes("tech"))          return "border-cyan-700";
-  if (c.includes("business"))      return "border-cyan-700";
-  if (c.includes("lifestyle"))     return "border-purple-600";
-  return "border-zinc-600";
+function catAccent(_cat: string): string {
+  return "border-primary";
 }
 
 function proxyImg(url: string, w = 600): string {
@@ -208,7 +190,7 @@ export default function CategoryPage() {
 
       {/* ── Category header ── */}
       <section className="bg-zinc-950 border-b border-zinc-800">
-        <div className={`h-1.5 w-full ${colorClass}`} />
+        <div className="h-[3px] w-full bg-primary" />
         <div className="container max-w-7xl mx-auto px-4 py-10">
           <CategoryBar />
           <div className="mt-8 flex flex-col md:flex-row md:items-end md:justify-between gap-4">

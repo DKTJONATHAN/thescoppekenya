@@ -4,6 +4,7 @@ import { Mail, Phone, MapPin, Send, Facebook, Instagram, Youtube } from "lucide-
 import { XIcon } from "@/components/XIcon";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { PageHero } from "@/components/layout/PageHero";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -34,144 +35,109 @@ export default function ContactPage() {
         <meta name="twitter:title" content="Contact Us | Za Ndani" />
         <meta name="twitter:description" content="Get in touch with Za Ndani. Have a story tip or want to collaborate?" />
       </Helmet>
-      <div className="container max-w-6xl mx-auto px-4 py-12 md:py-20">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-headline mb-4">
-            Get in <span className="text-primary">Touch</span>
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have a story tip, insider info, or want to collaborate? We'd love to hear from you.
-          </p>
-        </div>
 
+      <PageHero
+        kicker="Newsroom"
+        title={<>Get in <span className="text-primary italic">touch</span></>}
+        dek="Story tip, correction, partnership, or a row we got wrong. Nairobi first. EAT hours."
+      />
+
+      <div className="container max-w-6xl mx-auto px-4 py-12 md:py-16">
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Contact Info */}
-          <div className="space-y-6">
-            <div className="bg-surface rounded-2xl p-6 border border-divider">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-headline mb-1">Phone</h3>
-                  <a href="tel:+254706396305" className="text-muted-foreground hover:text-primary transition-colors">
-                    0706 396 305
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-surface rounded-2xl p-6 border border-divider">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-headline mb-1">Email</h3>
-                  <a href="mailto:info@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors block">
-                    info@zandani.co.ke
-                  </a>
-                  <a href="mailto:contact@zandani.co.ke" className="text-muted-foreground hover:text-primary transition-colors block">
-                    contact@zandani.co.ke
-                  </a>
+          <div className="space-y-4">
+            {[
+              { icon: Phone, label: "Phone", body: <a href="tel:+254706396305" className="hover:text-primary">0706 396 305</a> },
+              { icon: Mail, label: "Email", body: (
+                <>
+                  <a href="mailto:info@zandani.co.ke" className="hover:text-primary block">info@zandani.co.ke</a>
+                  <a href="mailto:contact@zandani.co.ke" className="hover:text-primary block">contact@zandani.co.ke</a>
+                </>
+              ) },
+              { icon: MapPin, label: "Location", body: <p>Nairobi, Kenya</p> },
+            ].map((item) => (
+              <div key={item.label} className="bg-surface p-5 border border-divider">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-primary text-primary-foreground flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif font-bold mb-1">{item.label}</h3>
+                    <div className="text-muted-foreground text-sm">{item.body}</div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
 
-            <div className="bg-surface rounded-2xl p-6 border border-divider">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-headline mb-1">Location</h3>
-                  <p className="text-muted-foreground">
-                    Nairobi, Kenya
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Social Links */}
-            <div className="bg-surface rounded-2xl p-6 border border-divider">
-              <h3 className="font-serif font-bold text-headline mb-4">Follow Us</h3>
-              <div className="flex gap-3">
-                <a href="https://facebook.com/zandanike" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a href="https://x.com/zandani_ke" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
-                  <XIcon className="w-5 h-5" />
-                </a>
-                <a href="https://instagram.com/zandani_ke" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a href="https://youtube.com/@zandanike" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
-                  <Youtube className="w-5 h-5" />
-                </a>
+            <div className="bg-surface p-5 border border-divider">
+              <h3 className="font-serif font-bold mb-4">Follow</h3>
+              <div className="flex gap-2">
+                {[
+                  { href: "https://facebook.com/zandanike", icon: Facebook, label: "Facebook" },
+                  { href: "https://x.com/zandani_ke", icon: XIcon, label: "X" },
+                  { href: "https://instagram.com/zandani_ke", icon: Instagram, label: "Instagram" },
+                  { href: "https://youtube.com/@zandanike", icon: Youtube, label: "YouTube" },
+                ].map((s) => (
+                  <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-divider flex items-center justify-center hover:border-primary hover:text-primary transition-colors" aria-label={s.label}>
+                    <s.icon className="w-5 h-5" />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-surface rounded-2xl p-8 border border-divider">
-              <h2 className="text-2xl font-serif font-bold text-headline mb-6">Send us a Message</h2>
-              
-              <div className="grid sm:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Your Name</label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="John Doe"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Email Address</label>
-                  <input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="john@example.com"
-                  />
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <label className="block text-sm font-medium text-foreground mb-2">Subject</label>
+          <form onSubmit={handleSubmit} className="lg:col-span-2 bg-surface p-8 border border-divider">
+            <h2 className="text-2xl font-serif font-bold mb-6">Send the newsroom a note</h2>
+            <div className="grid sm:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label className="block text-sm font-medium mb-2">Your name</label>
                 <input
                   type="text"
                   required
-                  value={formData.subject}
-                  onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="How can we help?"
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="w-full px-4 py-3 border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Wanjiku"
                 />
               </div>
-
-              <div className="mb-6">
-                <label className="block text-sm font-medium text-foreground mb-2">Message</label>
-                <textarea
+              <div>
+                <label className="block text-sm font-medium mb-2">Email</label>
+                <input
+                  type="email"
                   required
-                  rows={6}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                  placeholder="Tell us more..."
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="w-full px-4 py-3 border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="you@example.com"
                 />
               </div>
-
-              <Button type="submit" className="w-full gradient-primary text-primary-foreground py-6 text-lg font-bold">
-                <Send className="w-5 h-5 mr-2" />
-                Send Message
-              </Button>
-            </form>
-          </div>
+            </div>
+            <div className="mb-6">
+              <label className="block text-sm font-medium mb-2">Subject</label>
+              <input
+                type="text"
+                required
+                value={formData.subject}
+                onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                className="w-full px-4 py-3 border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="Story tip / correction / partnership"
+              />
+            </div>
+            <div className="mb-6">
+              <label className="block text-sm font-medium mb-2">Message</label>
+              <textarea
+                required
+                rows={6}
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                className="w-full px-4 py-3 border border-divider bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                placeholder="What happened, where, who saw it."
+              />
+            </div>
+            <Button type="submit" className="w-full bg-primary text-primary-foreground py-6 text-lg font-bold">
+              <Send className="w-5 h-5 mr-2" />
+              Send message
+            </Button>
+          </form>
         </div>
       </div>
     </Layout>

@@ -42,7 +42,7 @@ export function LiveScoresWidget() {
       {/* Live Matches */}
       {liveMatches.length > 0 && (
         <div className="p-4 bg-rose-950/20 rounded-2xl border border-rose-900/30 mb-6">
-          <h3 className="text-[10px] font-black text-rose-500 mb-4 flex items-center gap-2 uppercase tracking-[0.2em]">
+          <h3 className="text-[10px] font-black text-primary mb-4 flex items-center gap-2 uppercase tracking-[0.2em]">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
@@ -114,7 +114,7 @@ function LiveMatchRow({ match }: LiveMatchRowProps) {
   return (
     <div className={cn(
       "flex items-center gap-3 p-3 rounded-xl transition-all border border-transparent",
-      isLive ? "bg-rose-600/10 border-rose-500/20" : "bg-zinc-800/30 hover:border-zinc-700"
+      isLive ? "bg-primary/10 border-rose-500/20" : "bg-zinc-800/30 hover:border-zinc-700"
     )}>
       {/* Home Team */}
       <div className="flex items-center gap-2 flex-1 min-w-0">
@@ -129,7 +129,7 @@ function LiveMatchRow({ match }: LiveMatchRowProps) {
       {/* Score */}
       <div className={cn(
         "flex items-center gap-2 font-black text-sm px-3 py-1 rounded-lg bg-zinc-950/50 border border-zinc-800/50 min-w-[70px] justify-center",
-        isLive ? "text-rose-500" : "text-zinc-400"
+        isLive ? "text-primary" : "text-zinc-400"
       )}>
         <span>{match.score.fullTime?.home ?? '-'}</span>
         <span className="text-zinc-700">:</span>
@@ -149,7 +149,7 @@ function LiveMatchRow({ match }: LiveMatchRowProps) {
       {/* Status Badge */}
       <span className={cn(
         "text-[8px] font-black uppercase tracking-tighter px-2 py-0.5 rounded-full text-white ml-2 shrink-0 shadow-sm",
-        color === 'bg-red-500' ? 'bg-rose-600' : 'bg-zinc-700'
+        color === 'bg-primary' ? 'bg-primary' : 'bg-zinc-700'
       )}>
         {label}
       </span>

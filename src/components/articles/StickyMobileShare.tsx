@@ -32,7 +32,7 @@ export function StickyMobileShare({
             href={`https://wa.me/?text=${text}%20${encoded}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="touch-target inline-flex items-center justify-center rounded-full bg-emerald-600/15 text-emerald-600 px-3"
+            className="touch-target inline-flex items-center justify-center border border-divider hover:border-primary hover:text-primary px-3"
             aria-label="Share on WhatsApp"
           >
             <MessageCircle className="w-4 h-4" />

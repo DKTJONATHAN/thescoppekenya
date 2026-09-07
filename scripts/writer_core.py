@@ -248,7 +248,7 @@ def run_writer(cfg):
         return s[:80]
 
     def write_post(title, body_md, style_name, source, image=""):
-        body_md = polish_body(body_md)
+        body_md = polish_body(body_md, category, title)
         seo = seo_fields(title, body_md, category, author)
         slug = f"{today_str}-{slugify(seo['title'])}"
         path = os.path.join(posts_dir, f"{slug}.md")
@@ -308,7 +308,7 @@ schema: "NewsArticle"
         if model_skipped(article):
             print("Model skipped foreign story")
             continue
-        article = polish_body(scrub_brands(article))
+        article = polish_body(scrub_brands(article), category, story["title"])
         if is_spam(article):
             print("Rejected: spam or too short")
             continue

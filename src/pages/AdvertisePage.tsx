@@ -40,7 +40,7 @@ export default function AdvertisePage() {
             { label: "Avg. Engagement", value: "4.2%", icon: MousePointerClick },
             { label: "Mobile First", value: "82%", icon: Zap },
           ].map((stat, i) => (
-            <div key={i} className="bg-surface rounded-3xl p-8 border border-divider flex flex-col items-center text-center shadow-sm">
+            <div key={i} className="bg-surface p-8 border border-divider flex flex-col items-center text-center shadow-sm">
               <stat.icon className="w-6 h-6 text-primary mb-4 opacity-70" />
               <p className="text-4xl font-black text-headline mb-1">{stat.value}</p>
               <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest">{stat.label}</p>
@@ -98,7 +98,7 @@ export default function AdvertisePage() {
           <h2 className="text-3xl font-serif font-bold text-headline text-center mb-12">Ad Solutions</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Standard */}
-            <div className="bg-surface rounded-3xl p-8 border border-divider flex flex-col">
+            <div className="bg-surface p-8 border border-divider flex flex-col">
               <h3 className="text-xl font-bold text-headline mb-2">Display Network</h3>
               <p className="text-sm text-muted-foreground mb-6">High-impact banner placements across our most visited articles.</p>
               <div className="mt-auto pt-6 border-t border-divider">
@@ -108,7 +108,7 @@ export default function AdvertisePage() {
             </div>
 
             {/* Featured */}
-            <div className="bg-headline text-white rounded-3xl p-8 shadow-2xl scale-105 relative z-10 flex flex-col border-2 border-primary">
+            <div className="bg-headline text-white p-8 shadow-2xl scale-105 relative z-10 flex flex-col border-2 border-primary">
               <div className="absolute -top-4 right-8 bg-primary text-primary-foreground text-[10px] font-black px-4 py-1 rounded-full tracking-[0.2em] uppercase">
                 Premium
               </div>
@@ -121,7 +121,7 @@ export default function AdvertisePage() {
             </div>
 
             {/* Custom */}
-            <div className="bg-surface rounded-3xl p-8 border border-divider flex flex-col">
+            <div className="bg-surface p-8 border border-divider flex flex-col">
               <h3 className="text-xl font-bold text-headline mb-2">Social & Pulse</h3>
               <p className="text-sm text-muted-foreground mb-6">Collaborative social media campaigns and newsletter takeovers.</p>
               <div className="mt-auto pt-6 border-t border-divider">

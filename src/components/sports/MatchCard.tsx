@@ -29,7 +29,7 @@ export function MatchCard({ match, onClick }: MatchCardProps) {
         </span>
         <Badge variant="outline" className={cn(
           "text-[8px] font-black uppercase tracking-tighter border-0 text-white shadow-sm",
-          color === 'bg-red-500' ? 'bg-rose-600' : 'bg-zinc-800'
+          color === 'bg-primary' ? 'bg-primary' : 'bg-zinc-800'
         )}>
           {label}
         </Badge>
@@ -53,14 +53,14 @@ export function MatchCard({ match, onClick }: MatchCardProps) {
               "font-bold text-zinc-100 truncate",
               isFinished && match.score.fullTime?.home !== null && 
               match.score.fullTime?.away !== null &&
-              match.score.fullTime.home > match.score.fullTime.away && "text-rose-500"
+              match.score.fullTime.home > match.score.fullTime.away && "text-primary"
             )}>
               {match.homeTeam.shortName || match.homeTeam.name}
             </span>
           </div>
           <span className={cn(
             "text-2xl font-black w-10 text-center tracking-tighter",
-            isLive ? "text-rose-500" : "text-zinc-300"
+            isLive ? "text-primary" : "text-zinc-300"
           )}>
             {match.score.fullTime?.home ?? '-'}
           </span>
@@ -82,14 +82,14 @@ export function MatchCard({ match, onClick }: MatchCardProps) {
               "font-bold text-zinc-100 truncate",
               isFinished && match.score.fullTime?.home !== null && 
               match.score.fullTime?.away !== null &&
-              match.score.fullTime.away > match.score.fullTime.home && "text-rose-500"
+              match.score.fullTime.away > match.score.fullTime.home && "text-primary"
             )}>
               {match.awayTeam.shortName || match.awayTeam.name}
             </span>
           </div>
           <span className={cn(
             "text-2xl font-black w-10 text-center tracking-tighter",
-            isLive ? "text-rose-500" : "text-zinc-300"
+            isLive ? "text-primary" : "text-zinc-300"
           )}>
             {match.score.fullTime?.away ?? '-'}
           </span>
@@ -99,7 +99,7 @@ export function MatchCard({ match, onClick }: MatchCardProps) {
       {/* Match Time/Date */}
       <div className="mt-6 pt-4 border-t border-zinc-800/50 text-center flex items-center justify-center gap-2">
         {isLive ? (
-          <span className="text-[10px] text-rose-500 font-black uppercase tracking-widest flex items-center gap-2">
+          <span className="text-[10px] text-primary font-black uppercase tracking-widest flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse" />
             In Progress
           </span>

@@ -1,32 +1,40 @@
-import { Layout } from "@/components/layout/Layout";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
+import { Clock } from "lucide-react";
+import { Layout } from "@/components/layout/Layout";
+import { PageHero } from "@/components/layout/PageHero";
 import { getAllPosts } from "@/lib/markdown";
+import { proxyImg, timeAgo } from "@/lib/utils";
 
-const HUBS: Record<string, { title: string; intro: string; keywords: string[] }> = {
+const HUBS: Record<string, { title: string; intro: string; kicker: string; keywords: string[] }> = {
   energy: {
     title: "Kenya energy news",
-    intro: "Kenya energy news is moving fast, and this page tracks the stories that affect households and businesses every day. From EPRA announcements and fuel price reviews to electricity tariffs, blackouts, and policy shifts, we compile key developments in one place. You will also find coverage of taxation changes, distribution updates, and market reactions that shape what Kenyans pay at the pump and on monthly power bills. Our goal is to make energy reporting practical and easy to follow by highlighting what changed, why it matters, and what people should watch next. If you are monitoring fuel trends, power reliability, or government energy decisions, this hub gives you a reliable overview built from recent reports and ongoing updates.",
+    kicker: "EPRA · fuel · power",
+    intro: "Fuel reviews, KPLC blackouts, tariffs and the policy that shows up on your bill. What changed, what it costs, what to watch next.",
     keywords: ["epra", "fuel", "electricity", "power", "token", "petrol", "diesel", "kplc"]
   },
   education: {
     title: "Kenya education news",
-    intro: "Kenya education news often changes quickly during application windows, exam periods, and placement cycles. This hub brings together stories on KUCCPS admissions, university updates, TSC announcements, cluster points, funding, and student policy changes. We focus on practical guidance for learners, parents, and teachers by summarizing key deadlines, eligibility rules, and official statements in clear language. You will also see coverage of campus decisions, program cut-off trends, and teacher-service developments that affect schools nationwide. Whether you are preparing for university placement, following teacher recruitment, or tracking ministry policy changes, this page offers a useful single destination for current education reporting and context that helps readers make informed decisions.",
+    kicker: "KUCCPS · TSC · exams",
+    intro: "Placement windows, TSC circulars, cluster points and campus decisions — written so a parent in Nyeri can act on it.",
     keywords: ["kuccps", "university", "tsc", "cluster points", "kcse", "placement", "admission"]
   },
   finance: {
     title: "Kenya finance news",
-    intro: "Kenya finance news impacts savings, borrowing, jobs, and business confidence across the country. This hub compiles major updates on KCB and other banks, forex trends, bond performance, lending rates, and policy signals from regulators. We also track shifts in digital payments, capital markets, and corporate moves that shape consumer and investor decisions. Instead of fragmented updates, readers can follow a structured stream of stories that explains what happened and what it may mean for households and enterprises. If you are watching exchange-rate pressure, debt-market sentiment, bank announcements, or personal-finance implications of economic policy, this page provides consistent reporting to help you stay informed and act early.",
+    kicker: "Banks · CBK · NSE",
+    intro: "Lending rates, forex, bonds and the bank notices that move household money. One board for the week’s market.",
     keywords: ["kcb", "bank", "forex", "bonds", "economy", "cbk", "loan", "interest"]
   },
   sports: {
     title: "Kenya sports news",
-    intro: "Kenya sports news covers both local passion and global competitions that fans follow every week. This hub brings together football updates, Premier League headlines, Harambee Stars coverage, and other Kenyan sports stories in one feed. We include match-impact analysis, player updates, coaching decisions, and competition narratives that explain why each story matters beyond the final score. You will also find coverage of athletics and domestic sports moments that shape national conversation. The goal is to give supporters a clear, current snapshot of key developments without jumping across multiple pages. If you track fixtures, team form, transfer talk, and Kenyan performance at home and abroad, this page is built to keep you up to speed.",
+    kicker: "Harambee · KPL · track",
+    intro: "Harambee Stars, Gor Mahia, AFC Leopards and the athletes Kenya actually argues about. Scores, then the read.",
     keywords: ["football", "premier league", "harambee", "sports", "athletics", "match", "league"]
   },
   entertainment: {
     title: "Kenya entertainment news",
-    intro: "Kenya entertainment news evolves by the hour, from celebrity updates and music drops to social-media controversies and industry moves. This hub gathers trending gossip, artist news, relationship stories, and pop-culture developments in one place so readers can follow the full conversation. We prioritize timely context around what happened, who is involved, and how audiences are reacting online and offline. You will also find stories on concerts, collaborations, awards, and creator economy moments shaping youth culture in Kenya. For readers who want a fast but grounded way to keep up with celebrity, gossip, and music headlines, this page offers a clear stream of recent entertainment coverage curated for daily follow-through.",
+    kicker: "Showbiz · music · juice",
+    intro: "The Nairobi circuit: drops, beefs, gigs and the receipts. Fast, specific, never cruel about children.",
     keywords: ["celebrity", "gossip", "music", "artist", "entertainment", "viral", "showbiz"]
   }
 };
@@ -42,24 +50,60 @@ export default function HubPage() {
       })
     : [];
 
-  if (!config) return <Layout><div className="container py-20"><h1 className="text-3xl font-bold">Hub not found</h1></div></Layout>;
+  if (!config) {
+    return (
+      <Layout>
+        <PageHero kicker="404" title="Hub not found" dek="That desk does not exist on Za Ndani." />
+      </Layout>
+    );
+  }
 
+  const lead = filtered[0];
+  const rest = filtered.slice(1, 24);
   const canonical = `https://zandani.co.ke/${hub}`;
+
   return (
     <Layout>
       <Helmet>
-        <title>{config.title} | Zandani</title>
+        <title>{config.title} | Za Ndani</title>
         <meta name="description" content={config.intro.slice(0, 155)} />
         <link rel="canonical" href={canonical} />
       </Helmet>
-      <div className="container max-w-6xl mx-auto px-4 py-10">
-        <h1 className="text-4xl font-serif font-black mb-4 capitalize">{hub}</h1>
-        <p className="text-muted-foreground leading-8 mb-8">{config.intro}</p>
-        <div className="grid md:grid-cols-2 gap-5">
-          {filtered.map((p) => (
-            <Link key={p.slug} to={`/article/${p.slug}`} className="border border-divider p-4 hover:border-primary transition-colors">
-              <h2 className="font-bold">{p.title}</h2>
-              <p className="text-sm text-muted-foreground mt-2">{p.excerpt}</p>
+      <PageHero
+        kicker={config.kicker}
+        title={config.title}
+        dek={config.intro}
+        meta={<p className="text-sm text-muted-foreground"><span className="font-black text-foreground">{filtered.length}</span> stories on this desk</p>}
+      />
+      <div className="container max-w-7xl mx-auto px-4 py-10 md:py-14">
+        {lead ? (
+          <Link to={`/article/${lead.slug}`} className="group grid lg:grid-cols-2 gap-6 mb-12 border border-divider hover:border-primary/50 transition-colors">
+            <div className="aspect-[16/10] overflow-hidden bg-muted">
+              <img src={proxyImg(lead.image, 1000)} alt={lead.title} className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" />
+            </div>
+            <div className="flex flex-col justify-center p-5 lg:p-8">
+              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-3">{lead.category}</p>
+              <h2 className="font-serif font-black text-3xl md:text-4xl leading-tight group-hover:text-primary">{lead.title}</h2>
+              <p className="text-muted-foreground mt-3 line-clamp-3">{lead.excerpt}</p>
+              <p className="text-xs text-muted-foreground mt-4 inline-flex items-center gap-1.5">
+                <Clock className="w-3.5 h-3.5" /> {timeAgo(lead.date)} · {lead.author}
+              </p>
+            </div>
+          </Link>
+        ) : (
+          <p className="text-muted-foreground">No stories on this desk yet.</p>
+        )}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {rest.map((p) => (
+            <Link key={p.slug} to={`/article/${p.slug}`} className="group border border-divider hover:border-primary/50 transition-colors overflow-hidden">
+              <div className="aspect-[16/10] overflow-hidden bg-muted">
+                <img src={proxyImg(p.image, 480)} alt={p.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-4">
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-primary mb-2">{p.category}</p>
+                <h3 className="font-serif font-bold leading-snug group-hover:text-primary">{p.title}</h3>
+                <p className="text-xs text-muted-foreground mt-2">{timeAgo(p.date)}</p>
+              </div>
             </Link>
           ))}
         </div>

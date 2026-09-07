@@ -33,14 +33,8 @@ function isWithinHours(dateStr: string, hours: number): boolean {
   return (Date.now() - new Date(dateStr).getTime()) < hours * 3600000;
 }
 
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics") || c.includes("news")) return "bg-blue-700";
-
-  if (c.includes("sports")) return "bg-green-700";
-  if (c.includes("tech") || c.includes("business")) return "bg-cyan-700";
-  return "bg-zinc-600";
+function catColor(_cat: string): string {
+  return "bg-primary text-primary-foreground";
 }
 
 type Post = ReturnType<typeof getAllPosts>[0];

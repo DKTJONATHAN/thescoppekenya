@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-"""Post-write gate: polish SEO, inject What we know, drop Hollywood."""
+"""Post-write gate: polish SEO, inject What we know on hard news only, drop Hollywood."""
 from __future__ import annotations
 
 import pathlib
@@ -7,7 +6,7 @@ import subprocess
 import sys
 import time
 
-from voice_guard import inject_know_if_missing, is_spam, polish_body, should_skip_story, strip_banned
+from voice_guard import is_spam, polish_body, should_skip_story
 
 POSTS = pathlib.Path("content/posts")
 MAX_AGE_SEC = 40 * 60
@@ -60,7 +59,7 @@ def main() -> int:
             path.unlink()
             dropped += 1
             continue
-        cleaned = polish_body(body)
+        cleaned = polish_body(body, cat, title)
         if is_spam(cleaned, min_words=180) and cat.lower() not in {"opinions"}:
             print(f"DROP spam/thin: {path.name}")
             path.unlink()

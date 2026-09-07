@@ -7,17 +7,8 @@ import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics"))      return "bg-blue-700";
-  if (c.includes("news"))          return "bg-amber-600";
-
-  if (c.includes("sports"))        return "bg-green-700";
-  if (c.includes("tech"))          return "bg-cyan-700";
-  if (c.includes("business"))      return "bg-cyan-700";
-  if (c.includes("lifestyle"))     return "bg-purple-600";
-  return "bg-zinc-600";
+function catColor(_cat: string): string {
+  return "bg-primary text-primary-foreground";
 }
 
 function proxyImg(url: string, w = 600): string {
@@ -96,11 +87,11 @@ const Trending = () => {
 
       {/* ── Page hero ── */}
       <section className="bg-zinc-950 border-b border-zinc-800">
-        <div className="h-1.5 w-full bg-rose-600" />
+        <div className="h-[3px] w-full bg-primary" />
         <div className="container max-w-7xl mx-auto px-4 py-10">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <div>
-              <span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.2em] uppercase text-white px-3 py-1.5 bg-rose-600 mb-3">
+              <span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.2em] uppercase text-white px-3 py-1.5 bg-primary mb-3">
                 <Flame className="w-3 h-3" /> Live Rankings
               </span>
               <h1 className="text-4xl md:text-5xl font-serif font-black text-white leading-tight">
@@ -156,7 +147,7 @@ const Trending = () => {
                           <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
 
                           {/* Rank badge */}
-                          <div className="absolute top-4 left-4 z-10 w-10 h-10 bg-rose-600 flex items-center justify-center text-white font-black text-lg shadow-xl">
+                          <div className="absolute top-4 left-4 z-10 w-10 h-10 bg-primary flex items-center justify-center text-white font-black text-lg shadow-xl">
                             1
                           </div>
                           <div className="absolute top-4 right-4 z-10 flex items-center gap-1 text-[11px] text-white bg-black/60 px-2 py-1">
@@ -304,10 +295,10 @@ const Trending = () => {
 
                   {/* Quick stats */}
                   <div className="border border-divider bg-surface">
-                    <div className="h-1 w-full bg-rose-600" />
+                    <div className="h-1 w-full bg-primary" />
                     <div className="p-5 space-y-4">
                       <h3 className="text-sm font-black uppercase tracking-wider flex items-center gap-2">
-                        <Flame className="w-4 h-4 text-rose-500" /> Live Stats
+                        <Flame className="w-4 h-4 text-primary" /> Live Stats
                       </h3>
                       <div className="grid grid-cols-2 gap-3">
                         <div className="border border-divider p-3 text-center">

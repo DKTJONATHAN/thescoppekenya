@@ -1,21 +1,14 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { getLatestPosts, PostMetadata } from "@/lib/markdown";
-import { Eye, BookOpen, TrendingUp, ChevronRight, Flame, Loader2, Clock } from "lucide-react";
+import { Eye, BookOpen, TrendingUp, ChevronRight, Loader2, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 
 // ─── CATEGORY COLOR MAP ──────────────────────────────────────────────────────
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics")) return "bg-blue-700";
-  if (c.includes("news")) return "bg-amber-600";
-
-  if (c.includes("sports")) return "bg-green-700";
-  if (c.includes("tech")) return "bg-cyan-700";
-  return "bg-zinc-600";
+function catColor(_cat: string): string {
+  return "bg-primary text-primary-foreground";
 }
 
 // ─── IMAGE PROXY ─────────────────────────────────────────────────────────────
@@ -38,12 +31,12 @@ function timeAgo(dateStr: string): string {
 
 // ─── AUTHOR COLORS & INITIALS ─────────────────────────────────────────────────
 const AUTHOR_COLORS: Record<string, string> = {
-  "za ndani":        "bg-rose-600",
+  "za ndani":        "bg-primary",
   "mutheu ann":      "bg-purple-600",
   "celestine nzioka":"bg-blue-700",
 };
-function authorColor(name: string): string {
-  return AUTHOR_COLORS[name.toLowerCase()] || "bg-zinc-600";
+function authorColor(_name: string): string {
+  return "bg-primary text-primary-foreground";
 }
 function authorInitials(name: string): string {
   return name.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
@@ -133,17 +126,15 @@ export default function AuthorsPage() {
         <meta property="og:site_name" content="Za Ndani" />
       </Helmet>
 
-      {/* ── Page hero ── */}
-      <section className="bg-zinc-950 border-b border-zinc-800 py-14">
-        <div className="container max-w-6xl mx-auto px-4 text-center">
-          <span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.25em] uppercase text-white px-3 py-1.5 bg-rose-600 mb-5">
-            <Flame className="w-3 h-3" /> The Team
-          </span>
-          <h1 className="text-4xl md:text-5xl font-serif font-black text-white leading-tight mb-4">
-            Meet Our Writers
+      <section className="border-b border-divider bg-background">
+        <div className="h-[3px] w-full bg-primary" />
+        <div className="container max-w-6xl mx-auto px-4 py-12 md:py-14">
+          <p className="text-[10px] font-black tracking-[0.28em] uppercase text-primary mb-4">The desk</p>
+          <h1 className="text-4xl md:text-6xl font-serif font-black leading-[0.95] mb-4">
+            Meet the writers
           </h1>
-          <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-            The journalists and pop culture experts bringing you the freshest, most unfiltered stories in Kenya.
+          <p className="text-muted-foreground text-lg max-w-xl">
+            The journalists and pop-culture desks bringing Kenya the stories that will not wait for a press conference.
           </p>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Helmet } from "react-helmet-async";
+import { PageHero } from "@/components/layout/PageHero";
 
 export default function PrivacyPage() {
   return (
@@ -14,14 +15,12 @@ export default function PrivacyPage() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Za Ndani" />
       </Helmet>
-      <div className="container max-w-4xl mx-auto px-4 py-12 md:py-20">
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-headline mb-6">
-          Privacy <span className="text-primary">Policy</span>
-        </h1>
-        
-        <p className="text-muted-foreground mb-8">
-          Last updated: {new Date().toLocaleDateString('en-KE', { year: 'numeric', month: 'long', day: 'numeric' })}
-        </p>
+      <PageHero
+        kicker="Legal"
+        title="Privacy policy"
+        dek={`Last updated ${new Date().toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })}. How Za Ndani collects, uses, and protects reader data.`}
+      />
+      <div className="container max-w-4xl mx-auto px-4 py-12 md:py-16">
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-8">

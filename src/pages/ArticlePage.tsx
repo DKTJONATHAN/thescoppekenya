@@ -3,7 +3,6 @@ import { Layout } from "@/components/layout/Layout";
 import { getPostBySlug, getLatestPosts, type Post } from "@/lib/markdown";
 import { Clock, Calendar, Share2, Facebook, ArrowUp, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { useEffect, useState, useMemo, useCallback, useRef } from "react";
 import { XIcon } from "@/components/XIcon";
 import { NewsletterForm } from "@/components/NewsletterForm";
@@ -12,29 +11,12 @@ import AdUnit from "@/components/AdUnit";
 import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 import { ArticleBreadcrumbs } from "@/components/articles/ArticleBreadcrumbs";
 import { StickyMobileShare } from "@/components/articles/StickyMobileShare";
+import { WhatWeKnow } from "@/components/articles/WhatWeKnow";
+import { shouldShowWhatWeKnow, splitLedeHtml } from "@/lib/what-we-know";
+import { authorColor, catColor, proxyImg } from "@/lib/utils";
 
 const SITE_URL = "https://zandani.co.ke";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/default-og.jpg`;
-
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("gossip")) return "bg-fuchsia-600";
-  if (c.includes("showbiz")) return "bg-violet-600";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics")) return "bg-blue-700";
-  if (c.includes("news")) return "bg-amber-600";
-  if (c.includes("sports")) return "bg-green-700";
-  if (c.includes("tech")) return "bg-cyan-700";
-  if (c.includes("business")) return "bg-emerald-700";
-  if (c.includes("opinion")) return "bg-orange-700";
-  return "bg-zinc-600";
-}
-
-function proxyImg(url: string, w = 1200): string {
-  if (!url) return "/images/placeholder.jpg";
-  if (url.endsWith(".svg") || url.startsWith("/")) return url;
-  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=85&we`;
-}
 
 function ogImg(url: string): string {
   if (!url) return DEFAULT_OG_IMAGE;
@@ -48,14 +30,7 @@ const AUTHOR_BIOS: Record<string, string> = {
   "celestine nzioka": "Authoritative and unflinching. Celestine cuts through political spin.",
   "wanjiku kuria": "Nairobi gossip desk. Receipts first, noise second.",
   "martin kihara": "Showbiz beat for Kenyan stars.",
-};
-
-const AUTHOR_COLORS: Record<string, string> = {
-  "za ndani": "bg-rose-600",
-  "mutheu ann": "bg-purple-600",
-  "celestine nzioka": "bg-blue-700",
-  "wanjiku kuria": "bg-fuchsia-600",
-  "martin kihara": "bg-violet-600",
+  jaj: "Opinion desk. Arguments first, then the evidence from the street.",
 };
 
 export default function ArticlePage() {
@@ -75,9 +50,13 @@ export default function ArticlePage() {
   }, [slug]);
 
   const relatedPosts = useMemo(() => {
-    const latest = getLatestPosts(6);
+    const latest = getLatestPosts(24);
     if (!post) return latest.filter((p) => p.slug !== slug).slice(0, 3);
-    return latest.filter((p) => p.slug !== slug).slice(0, 3);
+    const sameDesk = latest.filter(
+      (p) => p.slug !== slug && p.category.toLowerCase() === post.category.toLowerCase()
+    );
+    const pool = sameDesk.length >= 3 ? sameDesk : latest.filter((p) => p.slug !== slug);
+    return pool.slice(0, 3);
   }, [slug, post]);
 
   useEffect(() => {
@@ -131,8 +110,9 @@ export default function ArticlePage() {
     return (
       <Layout>
         <div className="container max-w-2xl mx-auto px-4 py-20 text-center">
-          <h1 className="text-2xl font-bold mb-4">Article not found</h1>
-          <p className="text-muted-foreground mb-6">This story may have been moved or removed.</p>
+          <p className="text-[10px] font-black tracking-[0.28em] uppercase text-primary mb-4">404</p>
+          <h1 className="font-serif text-4xl font-black mb-4">Story not found</h1>
+          <p className="text-muted-foreground mb-6">This piece may have been moved, updated, or pulled.</p>
           <Button asChild>
             <Link to="/">Back home</Link>
           </Button>
@@ -143,7 +123,7 @@ export default function ArticlePage() {
 
   const authorKey = (post.author || "Za Ndani").toLowerCase();
   const authorBio = AUTHOR_BIOS[authorKey] || "Za Ndani journalist covering the stories that matter in Kenya.";
-  const authorColor = AUTHOR_COLORS[authorKey] || "bg-zinc-600";
+  const authorTint = authorColor(post.author);
   const authorInitials = (post.author || "ZN")
     .split(" ")
     .map((w) => w[0])
@@ -156,14 +136,19 @@ export default function ArticlePage() {
   const dateObj = new Date(post.date);
   const formattedDate = isNaN(dateObj.getTime())
     ? post.date
-    : `${dateObj.toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })} at ${dateObj.toLocaleTimeString("en-KE", { hour: "2-digit", minute: "2-digit", hour12: true })}`;
+    : `${dateObj.toLocaleDateString("en-KE", { year: "numeric", month: "long", day: "numeric" })} at ${dateObj.toLocaleTimeString("en-KE", { hour: "2-digit", minute: "2-digit", hour12: true })} EAT`;
 
-  const articleHtml = post.htmlContent || "";
+  const showKnow = shouldShowWhatWeKnow({
+    category: post.category,
+    title: post.title,
+    facts: post.knowFacts || [],
+  });
+  const { lede, rest } = splitLedeHtml(post.htmlContent || "");
 
   return (
     <Layout>
       <Helmet>
-        <title>{post.title} | Zandani</title>
+        <title>{post.title} | Za Ndani</title>
         <meta name="description" content={metaDescription} />
         <meta name="author" content={post.author} />
         <link rel="canonical" href={canonicalUrl} />
@@ -185,27 +170,29 @@ export default function ArticlePage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
           <article className="lg:col-span-9 min-w-0">
-            <Badge className={`${catColor(post.category)} text-white border-0 mb-3`}>{post.category}</Badge>
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-[2.5rem] leading-tight font-bold text-foreground mb-4">
+            <span className={`inline-block text-[10px] font-black tracking-[0.2em] uppercase px-2 py-1 mb-4 ${catColor(post.category)}`}>
+              {post.category}
+            </span>
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.12] font-black text-foreground mb-5">
               {post.title}
             </h1>
 
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mb-6">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mb-6 pb-6 border-b border-divider">
               <Link
                 to={`/author/${(post.author || "za-ndani").toLowerCase().replace(/\s+/g, "-")}`}
                 className="inline-flex items-center gap-2 hover:text-primary"
               >
-                <span className={`w-7 h-7 rounded-full flex items-center justify-center text-white text-[10px] font-black ${authorColor}`}>
+                <span className={`w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-black ${authorTint}`}>
                   {authorInitials}
                 </span>
-                <span className="font-medium text-foreground">{post.author}</span>
+                <span className="font-semibold text-foreground">{post.author}</span>
               </Link>
-              <span className="inline-flex items-center gap-1">
+              <span className="inline-flex items-center gap-1.5">
                 <Calendar className="w-3.5 h-3.5" />
                 {formattedDate}
               </span>
               {post.readTime ? (
-                <span className="inline-flex items-center gap-1">
+                <span className="inline-flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5" />
                   {post.readTime} min read
                 </span>
@@ -213,7 +200,7 @@ export default function ArticlePage() {
             </div>
 
             {post.image ? (
-              <figure className="mb-8 -mx-4 sm:mx-0 overflow-hidden rounded-none sm:rounded-lg">
+              <figure className="mb-8 -mx-4 sm:mx-0 overflow-hidden">
                 <img
                   src={proxyImg(post.image, 1200)}
                   alt={post.imageAlt || post.title}
@@ -224,12 +211,12 @@ export default function ArticlePage() {
             ) : null}
 
             <div className="flex items-center gap-2 mb-8 flex-wrap">
-              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground mr-1">Share</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.18em] text-muted-foreground mr-1">Share</span>
               <a
                 href={`https://wa.me/?text=${encodeURIComponent(post.title + " " + shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-emerald-600/15 text-emerald-600"
+                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-4 h-4" />
@@ -238,7 +225,7 @@ export default function ArticlePage() {
                 href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-muted"
+                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors"
                 aria-label="X"
               >
                 <XIcon className="w-4 h-4" />
@@ -247,7 +234,7 @@ export default function ArticlePage() {
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-blue-600/15 text-blue-600"
+                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
@@ -255,30 +242,32 @@ export default function ArticlePage() {
               <button
                 type="button"
                 onClick={handleCopy}
-                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary/15 text-primary"
+                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors"
                 aria-label="Copy link"
               >
                 <Share2 className="w-4 h-4" />
               </button>
-              {copied ? <span className="text-xs text-muted-foreground">Copied</span> : null}
+              {copied ? <span className="text-xs text-primary">Copied</span> : null}
             </div>
 
-            <div
-              className="prose prose-lg dark:prose-invert measure max-w-[65ch] mx-auto prose-headings:font-serif prose-a:text-primary"
-              dangerouslySetInnerHTML={{ __html: articleHtml }}
-            />
+            <div className="prose prose-lg dark:prose-invert measure max-w-[65ch] mx-auto prose-headings:font-serif prose-a:text-primary">
+              {lede ? <div dangerouslySetInnerHTML={{ __html: lede }} /> : null}
+              {showKnow ? <WhatWeKnow facts={post.knowFacts} /> : null}
+              {rest ? <div dangerouslySetInnerHTML={{ __html: rest }} /> : null}
+            </div>
 
             <div className="my-10 flex justify-center border-y border-divider py-4">
               <AdUnit type="horizontal" />
             </div>
 
-            <div className="border border-divider rounded-lg p-5 mt-10">
+            <div className="border border-divider p-5 mt-10">
               <div className="flex gap-4 items-start">
-                <div className={`w-14 h-14 rounded-full flex items-center justify-center text-white font-black text-lg shrink-0 ${authorColor}`}>
+                <div className={`w-14 h-14 rounded-full flex items-center justify-center font-black text-lg shrink-0 ${authorTint}`}>
                   {authorInitials}
                 </div>
                 <div>
-                  <h3 className="font-bold text-base">
+                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-1">The writer</p>
+                  <h3 className="font-serif font-bold text-lg">
                     <Link
                       to={`/author/${(post.author || "za-ndani").toLowerCase().replace(/\s+/g, "-")}`}
                       className="hover:text-primary"
@@ -293,12 +282,24 @@ export default function ArticlePage() {
 
             {relatedPosts.length > 0 ? (
               <section className="mt-12">
-                <h2 className="text-lg font-bold mb-4">Related stories</h2>
+                <div className="flex items-center gap-4 mb-5">
+                  <h2 className="text-lg font-black uppercase tracking-tight">More in {post.category}</h2>
+                  <div className="h-px flex-1 bg-divider" />
+                </div>
                 <div className="grid sm:grid-cols-3 gap-4">
                   {relatedPosts.map((rp) => (
-                    <Link key={rp.slug} to={`/article/${rp.slug}`} className="group block border border-divider overflow-hidden hover:border-primary/40 transition-colors">
+                    <Link
+                      key={rp.slug}
+                      to={`/article/${rp.slug}`}
+                      className="group block border border-divider overflow-hidden hover:border-primary/50 transition-colors"
+                    >
                       <div className="aspect-[16/10] overflow-hidden bg-muted">
-                        <img src={proxyImg(rp.image, 400)} alt={rp.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <img
+                          src={proxyImg(rp.image, 400)}
+                          alt={rp.title}
+                          loading="lazy"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
                       </div>
                       <div className="p-3">
                         <h3 className="text-sm font-bold leading-snug line-clamp-2 group-hover:text-primary">{rp.title}</h3>
@@ -328,7 +329,7 @@ export default function ArticlePage() {
       {showScrollTop ? (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-24 right-5 lg:bottom-6 lg:right-6 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center shadow-xl z-40"
+          className="fixed bottom-24 right-5 lg:bottom-6 lg:right-6 w-10 h-10 bg-primary text-primary-foreground flex items-center justify-center shadow-xl z-40"
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-4 h-4" />

@@ -46,7 +46,8 @@ export function CategoryShell({
         })}</script>
       </Helmet>
 
-      <div className="border-b border-divider bg-surface">
+      <div className="border-b border-divider bg-background">
+        <div className="h-[3px] w-full bg-primary" />
         <div className="container max-w-7xl mx-auto px-4 py-3">
           <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-muted-foreground">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>

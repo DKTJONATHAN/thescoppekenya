@@ -263,10 +263,18 @@ def news_prompt(
     avoid: str = "",
 ) -> str:
     heading = style.get("commentary_heading") or pick_commentary_heading(title + date_eat)
-    know = (
-        "After the lede, add a short 'What we know' list of 3-5 bullets. "
-        "Each bullet is one fact with a name, place, time or number. No filler."
-    )
+    know_ok = should_have_know(desk, title)
+    if opinion or not know_ok:
+        know = (
+            "Do NOT include a 'What we know' list. This is not a hard-news brief. "
+            "Write the piece without a fact box."
+        )
+    else:
+        know = (
+            "After the lede, add a short 'What we know' list of 3-5 bullets. "
+            "Each bullet is one fact with a name, place, time or number. No filler. "
+            "Never nest headings inside the list. Do not start a bullet with '###'."
+        )
     voice = (
         "VOICE: Nairobi newsroom. Mix straight reporting with a human take. "
         "Facts first, then a point of view. Short sentences. Concrete nouns. "
@@ -359,27 +367,98 @@ def seo_fields(title: str, body: str, category: str, author: str) -> dict:
     }
 
 
-def inject_know_if_missing(body: str) -> str:
-    if re.search(r"what we know", body, re.I):
+def should_have_know(category: str = "", title: str = "") -> bool:
+    cat = (category or "").strip().lower()
+    if cat in {"opinion", "opinions", "lifestyle", "gossip", "entertainment", "showbiz", "celebrity", "sports"}:
+        return False
+    if cat not in {"news", "politics", "business"}:
+        return False
+    if re.match(r"^(why|how|opinion)\b", (title or "").strip(), re.I):
+        return False
+    return True
+
+
+def strip_know_block(body: str) -> str:
+    if not re.search(r"what we know", body or "", re.I):
         return body
-    paras = [p.strip() for p in re.split(r"\n\s*\n", body.strip()) if p.strip()]
+    lines = (body or "").splitlines()
+    out: list[str] = []
+    skipping = False
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if re.match(r"^#{2,3}\s*What we know:?\s*$", stripped, re.I):
+            skipping = True
+            continue
+        if skipping:
+            if not stripped or stripped.startswith(("-", "*", "+")):
+                continue
+            if re.match(r"^#{2,3}\s+", stripped):
+                skipping = False
+                out.append(line)
+                continue
+            skipping = False
+            out.append(line)
+            continue
+        out.append(line)
+    return "\n".join(out).strip() + "\n"
+
+
+def _clean_know_bullets(body: str) -> str:
+    """Drop heading-as-bullet junk inside an existing What we know list."""
+    m = re.search(r"(?im)^(#{2,3}\s*What we know:?\s*)$", body)
+    if not m:
+        return body
+    start = m.end()
+    lines = body[start:].splitlines(True)
+    kept: list[str] = []
+    consumed = 0
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            kept.append(line)
+            consumed += len(line)
+            peek = "".join(lines[len(kept):]).lstrip()
+            if peek.startswith("#"):
+                break
+            continue
+        if re.match(r"^#{2,3}\s+", stripped) and not re.match(r"^#{2,3}\s*What we know", stripped, re.I):
+            break
+        if stripped.startswith(("-", "*", "+")):
+            fact = re.sub(r"^[-*+]\s+", "", stripped)
+            fact = re.sub(r"^#{1,6}\s+", "", fact).strip()
+            if len(fact) >= 22 and (re.search(r"[.!?]$", fact) or re.search(r"\d", fact) or len(fact) >= 80):
+                kept.append(f"- {fact}\n")
+            consumed += len(line)
+            continue
+        break
+    return body[:start] + "\n" + "".join(kept).rstrip() + "\n\n" + body[start + consumed:].lstrip()
+
+
+def inject_know_if_missing(body: str, category: str = "News", title: str = "") -> str:
+    if not should_have_know(category, title):
+        return strip_know_block(body or "")
+    text = body or ""
+    if re.search(r"what we know", text, re.I):
+        return _clean_know_bullets(text)
+    paras = [p.strip() for p in re.split(r"\n\s*\n", text.strip()) if p.strip()]
     if len(paras) < 2:
-        return body
+        return text
     lede = paras[0]
     rest = paras[1:]
     facts = []
     for p in rest[:4]:
         sent = re.split(r"(?<=[.!?])\s+", p)
         if sent:
-            facts.append(sent[0].strip())
+            fact = re.sub(r"^#{1,6}\s+", "", sent[0].strip())
+            if len(fact) >= 18:
+                facts.append(fact)
         if len(facts) >= 4:
             break
     if len(facts) < 3:
-        return body
+        return text
     bullets = "\n".join(f"- {f}" for f in facts)
-    block = f"{lede}\n\n### What we know\n\n{bullets}\n\n" + "\n\n".join(rest)
-    return block
+    return f"{lede}\n\n### What we know\n\n{bullets}\n\n" + "\n\n".join(rest)
 
 
-def polish_body(body: str) -> str:
-    return inject_know_if_missing(strip_banned(body or ""))
+def polish_body(body: str, category: str = "News", title: str = "") -> str:
+    return inject_know_if_missing(strip_banned(body or ""), category, title)

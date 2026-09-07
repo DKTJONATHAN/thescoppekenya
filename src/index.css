@@ -402,3 +402,92 @@ html {
   height: 3px;
   background: hsl(var(--primary));
 }
+
+/* What we know — editorial brief, not a generic callout */
+.what-we-know {
+  margin: 2.25rem 0 2.5rem;
+  border-left: 3px solid hsl(var(--primary));
+  border-top: 1px solid hsl(var(--divider));
+  border-right: 1px solid hsl(var(--divider));
+  border-bottom: 1px solid hsl(var(--divider));
+  background: hsl(0 0% 5%);
+  padding: 1.25rem 1.25rem 1.1rem 1.15rem;
+}
+
+.what-we-know__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid hsl(var(--divider));
+}
+
+.what-we-know__kicker {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+  margin: 0;
+}
+
+.what-we-know__mark {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+  margin: 0;
+}
+
+.what-we-know__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+
+.what-we-know__item {
+  display: grid;
+  grid-template-columns: 2.25rem 1fr;
+  gap: 0.75rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid hsl(var(--divider) / 0.7);
+  margin: 0;
+}
+
+.what-we-know__item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0.15rem;
+}
+
+.what-we-know__num {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: hsl(var(--primary));
+  padding-top: 0.15rem;
+}
+
+.what-we-know__item p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: hsl(var(--foreground));
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+@media (max-width: 640px) {
+  .what-we-know {
+    margin-left: -0.25rem;
+    padding: 1rem 0.9rem 0.85rem 0.85rem;
+  }
+  .what-we-know__item {
+    grid-template-columns: 1.85rem 1fr;
+    gap: 0.5rem;
+  }
+}

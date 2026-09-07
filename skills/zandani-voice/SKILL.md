@@ -51,7 +51,7 @@ Bad: Shocking milk crisis ignites debate as Kenya navigates food security landsc
 ## Body rules
 
 1. First paragraph answers who / what / where / when in Kenya time.
-2. Then a "What we know" list of 3-5 facts.
+2. On **hard news only** (News, Politics, Business breaking), a "What we know" list of 3-5 facts. Skip it for opinion, lifestyle, gossip, showbiz, sports match reports, and "why/how" explainers.
 3. Report the next facts, attributed.
 4. Then a commentary beat under a rotating heading (Why it matters / The Nairobi read / What it costs you / The take / Between the lines). Do not skip the take. Do not write only a column with no facts.
 5. Attribute claims. Counties and institutions get official names on first mention.

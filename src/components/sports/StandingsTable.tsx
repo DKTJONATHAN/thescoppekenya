@@ -49,7 +49,7 @@ export function StandingsTable({ competition }: StandingsTableProps) {
             <TableHead className="text-center w-10 text-[10px] font-black uppercase text-zinc-500 tracking-widest">D</TableHead>
             <TableHead className="text-center w-10 text-[10px] font-black uppercase text-zinc-500 tracking-widest">L</TableHead>
             <TableHead className="text-center w-14 hidden sm:table-cell text-[10px] font-black uppercase text-zinc-500 tracking-widest">GD</TableHead>
-            <TableHead className="text-center w-12 font-black text-rose-500 uppercase tracking-widest text-[10px]">Pts</TableHead>
+            <TableHead className="text-center w-12 font-black text-primary uppercase tracking-widest text-[10px]">Pts</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody className="[&_tr]:border-zinc-800/50">
@@ -82,12 +82,12 @@ export function StandingsTable({ competition }: StandingsTableProps) {
                 </div>
               </TableCell>
               <TableCell className="text-center text-zinc-400 font-medium text-xs">{row.playedGames}</TableCell>
-              <TableCell className="text-center text-rose-500/80 font-bold text-xs">{row.won}</TableCell>
+              <TableCell className="text-center text-primary/80 font-bold text-xs">{row.won}</TableCell>
               <TableCell className="text-center text-zinc-600 text-xs">{row.draw}</TableCell>
               <TableCell className="text-center text-zinc-500 text-xs">{row.lost}</TableCell>
               <TableCell className={cn(
                 "text-center hidden sm:table-cell text-xs font-medium",
-                row.goalDifference > 0 ? "text-rose-600/60" : "text-zinc-600"
+                row.goalDifference > 0 ? "text-primary/60" : "text-zinc-600"
               )}>
                 {row.goalDifference > 0 ? '+' : ''}{row.goalDifference}
               </TableCell>
@@ -100,7 +100,7 @@ export function StandingsTable({ competition }: StandingsTableProps) {
       {/* Legend */}
       <div className="flex gap-6 mt-8 text-[10px] font-black uppercase tracking-widest text-zinc-600 px-2">
         <div className="flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-rose-600"></span>
+          <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
           <span>Qualification</span>
         </div>
         <div className="flex items-center gap-2">

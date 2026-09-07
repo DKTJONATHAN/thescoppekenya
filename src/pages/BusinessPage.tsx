@@ -146,7 +146,7 @@ export default function BusinessPage() {
 
       {/* ══ MARKET WATCH TICKER ══ */}
       {hotPosts.length > 0 && (
-        <div className="bg-cyan-700 text-white overflow-hidden">
+        <div className="bg-primary text-white overflow-hidden">
           <div className="container max-w-7xl mx-auto px-4 flex items-center gap-3 py-2">
             <span className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest flex-shrink-0 bg-white/20 px-2 py-1">
               <Briefcase className="w-3 h-3" /> Market Watch
@@ -177,11 +177,11 @@ export default function BusinessPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                 <div className="relative flex flex-col justify-end h-full p-5 sm:p-8 z-10" style={{ minHeight: 380 }}>
                   {isWithinHours(heroPost.date, 6) && (
-                    <span className="inline-flex items-center gap-1 text-[9px] font-black uppercase tracking-widest text-white bg-cyan-700 px-2 py-1 mb-2 w-fit animate-pulse">
+                    <span className="inline-flex items-center gap-1 text-[9px] font-black uppercase tracking-widest text-white bg-primary px-2 py-1 mb-2 w-fit animate-pulse">
                       <Briefcase className="w-3 h-3" /> New
                     </span>
                   )}
-                  <span className="text-[9px] font-black uppercase tracking-widest text-white px-1.5 py-0.5 mb-2 w-fit bg-cyan-700">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-white px-1.5 py-0.5 mb-2 w-fit bg-primary">
                     Business
                   </span>
                   <h1 className="text-white font-serif font-black text-2xl sm:text-3xl lg:text-4xl leading-tight mb-2 group-hover:text-cyan-400 transition-colors">
@@ -253,12 +253,12 @@ export default function BusinessPage() {
                           <img src={proxyImg(post.image, 320)} alt={post.title} loading="lazy" width={320} height={240}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                           {isWithinHours(post.date, 3) && (
-                            <span className="absolute top-1 left-1 text-[7px] font-black uppercase bg-cyan-700 text-white px-1 py-0.5">New</span>
+                            <span className="absolute top-1 left-1 text-[7px] font-black uppercase bg-primary text-white px-1 py-0.5">New</span>
                           )}
                         </div>
                       </Link>
                       <div className="flex flex-col justify-center min-w-0">
-                        <span className="inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1.5 w-fit bg-cyan-700">
+                        <span className="inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1.5 w-fit bg-primary">
                           {post.category}
                         </span>
                         <Link to={`/article/${post.slug}`}>
@@ -293,7 +293,7 @@ export default function BusinessPage() {
               {hasMore && (
                 <div ref={loaderRef} className="flex justify-center py-8">
                   <button onClick={() => setVisibleCount(prev => prev + LOAD_MORE)}
-                    className="flex items-center gap-2 px-6 py-3 bg-cyan-700 hover:bg-cyan-800 text-white text-sm font-bold transition-colors">
+                    className="flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-colors">
                     <ChevronDown className="w-4 h-4" /> Load More Business
                   </button>
                 </div>
@@ -303,7 +303,7 @@ export default function BusinessPage() {
             <aside className="hidden lg:block lg:col-span-4">
               <div className="sticky top-28 space-y-8">
                 <div className="border border-divider">
-                  <div className="bg-cyan-700 h-1" />
+                  <div className="bg-primary h-1" />
                   <div className="px-4 py-3 border-b border-divider flex items-center gap-2">
                     <TrendingUp className="w-4 h-4 text-cyan-500" />
                     <h3 className="text-xs font-black uppercase tracking-widest">Trending Business</h3>

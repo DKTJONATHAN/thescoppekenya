@@ -38,11 +38,11 @@ export function LeagueSelector({ selected, onSelect }: LeagueSelectorProps) {
           className={cn(
             "flex-shrink-0 flex items-center gap-2 px-6 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest transition-all border shrink-0",
             selected === league.code
-              ? "bg-rose-600 text-white border-rose-500 shadow-xl shadow-rose-900/40"
+              ? "bg-primary text-white border-rose-500 shadow-xl shadow-rose-900/40"
               : "bg-zinc-900 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200"
           )}
         >
-          <span className={cn(selected === league.code ? "text-white" : "text-rose-500")}>
+          <span className={cn(selected === league.code ? "text-white" : "text-primary")}>
             {leagueIcons[league.code]}
           </span>
           {league.isEditorial && (

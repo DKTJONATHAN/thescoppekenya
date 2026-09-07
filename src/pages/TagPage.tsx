@@ -6,17 +6,8 @@ import { Helmet } from "react-helmet-async";
 import { useState, useEffect, useMemo } from "react";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics"))      return "bg-blue-700";
-  if (c.includes("news"))          return "bg-amber-600";
-
-  if (c.includes("sports"))        return "bg-green-700";
-  if (c.includes("tech"))          return "bg-cyan-700";
-  if (c.includes("business"))      return "bg-cyan-700";
-  if (c.includes("lifestyle"))     return "bg-purple-600";
-  return "bg-zinc-600";
+function catColor(_cat: string): string {
+  return "bg-primary text-primary-foreground";
 }
 
 function proxyImg(url: string, w = 500): string {
@@ -102,7 +93,7 @@ export default function TagPage() {
 
       {/* ── Header ── */}
       <section className="bg-zinc-950 border-b border-zinc-800">
-        <div className="h-1.5 w-full bg-primary" />
+        <div className="h-[3px] w-full bg-primary" />
         <div className="container max-w-7xl mx-auto px-4 py-8">
           <div className="flex items-center gap-2 text-xs text-zinc-600 mb-6">
             <Link to="/" className="flex items-center gap-1 hover:text-zinc-400 transition-colors">

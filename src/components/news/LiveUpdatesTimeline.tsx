@@ -36,13 +36,8 @@ function safeTimeLabel(dateStr: string): string {
   return d.toLocaleTimeString("en-KE", { hour: "2-digit", minute: "2-digit" });
 }
 
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics") || c.includes("news")) return "bg-blue-700";
-  if (c.includes("sports")) return "bg-green-700";
-  if (c.includes("tech") || c.includes("business")) return "bg-cyan-700";
-  return "bg-zinc-600";
+function catColor(_cat: string): string {
+  return "bg-primary text-primary-foreground";
 }
 
 interface LiveUpdatesTimelineProps {

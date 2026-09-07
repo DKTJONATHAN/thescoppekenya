@@ -28,16 +28,15 @@ export default function FactCheckPage() {
         })}</script>
       </Helmet>
 
-      <section className="bg-zinc-950 border-b border-zinc-800 py-14">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.25em] uppercase text-white px-3 py-1.5 bg-primary mb-5">
-            <Search className="w-3 h-3" /> Verification
-          </span>
-          <h1 className="text-4xl md:text-5xl font-serif font-black text-white leading-tight mb-4">
-            Fact-Checking Policy
+      <section className="border-b border-divider bg-background">
+        <div className="h-[3px] w-full bg-primary" />
+        <div className="container max-w-4xl mx-auto px-4 py-12 md:py-14">
+          <p className="text-[10px] font-black tracking-[0.28em] uppercase text-primary mb-4">Verification</p>
+          <h1 className="text-4xl md:text-6xl font-serif font-black leading-[0.95] mb-4">
+            Fact-checking policy
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            In the fast-moving world of Kenyan entertainment and politics, rumors spread quickly. Our job is to separate the tea from the truth.
+          <p className="text-muted-foreground text-lg max-w-2xl">
+            In Kenyan politics and entertainment, rumours move faster than affidavits. The job is to separate the tea from the truth.
           </p>
         </div>
       </section>
@@ -96,7 +95,7 @@ export default function FactCheckPage() {
             origins of the posts before reporting them as verified news.
           </p>
 
-          <div className="mt-16 p-8 bg-zinc-900 text-white rounded-3xl border border-white/10 not-prose">
+          <div className="mt-16 p-8 bg-zinc-900 text-white border border-white/10 not-prose">
             <div className="flex items-center gap-3 mb-4">
               <FileText className="w-6 h-6 text-primary" />
               <h3 className="text-xl font-bold">The "Red" File</h3>

@@ -6,7 +6,7 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from voice_guard import kenya_score, model_skipped, should_skip_story, strip_banned, is_spam, news_prompt
+from voice_guard import kenya_score, model_skipped, should_skip_story, strip_banned, is_spam, news_prompt, should_have_know, inject_know_if_missing
 
 
 def check(cond, msg):
@@ -94,6 +94,27 @@ def main() -> int:
     )
     fails += check("Report, then comment" in prompt, "prompt mixes reporting and commentary")
     fails += check("NO commentary essays" not in prompt, "prompt no longer bans commentary")
+    fails += check(should_have_know("News", "Eric Omondi arrested in Nairobi"), "news arrest gets a brief")
+    fails += check(not should_have_know("Opinions", "Why The Bubble That Breaks the Journey"), "opinion skips brief")
+    fails += check(not should_have_know("News", "Why Airport Vehicles Are Painted Yellow"), "explainer skips brief")
+    fails += check(not should_have_know("Entertainment", "Marion introduces husband"), "showbiz skips brief")
+    opinion_body = (
+        "There is a specific kind of silence on a Nairobi highway.\n\n"
+        "### What we know\n\n"
+        "- We are a nation of commuters.\n"
+        "- I spent Tuesday morning at a jua kali shop.\n\n"
+        "We load them with bags of maize."
+    )
+    stripped = inject_know_if_missing(opinion_body, "Opinions", "Why The Bubble")
+    fails += check("What we know" not in stripped, "strip know box from opinion")
+    news_body = (
+        "Police arrested Eric Omondi outside the Nairobi National Archives on Monday morning.\n\n"
+        "Officers seized petition sheets along Moi Avenue.\n\n"
+        "The drive sought an Article 257 referendum to cut counties from 47 to eight.\n\n"
+        "Witnesses said the collection had been peaceful until plainclothes officers arrived."
+    )
+    injected = inject_know_if_missing(news_body, "News", "Eric Omondi arrested in Nairobi")
+    fails += check("What we know" in injected, "inject know box on hard news")
     if fails:
         print(f"{fails} check(s) failed")
         return 1

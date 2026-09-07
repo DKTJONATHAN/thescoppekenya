@@ -31,14 +31,14 @@ export function SportsNewsFeed() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent" />
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-rose-500 bg-zinc-950/80 px-3 py-1 rounded-full backdrop-blur-md">
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-primary bg-zinc-950/80 px-3 py-1 rounded-full backdrop-blur-md">
                       Report
                     </span>
                   </div>
                 </div>
               )}
               <div className="p-8 flex flex-col flex-1">
-                <h3 className="text-2xl font-serif font-black text-white group-hover:text-rose-500 transition-colors mb-4 leading-tight line-clamp-2">
+                <h3 className="text-2xl font-serif font-black text-white group-hover:text-primary transition-colors mb-4 leading-tight line-clamp-2">
                   {post.title}
                 </h3>
                 <p className="text-zinc-400 text-sm font-light mb-6 line-clamp-2 leading-relaxed">
@@ -47,7 +47,7 @@ export function SportsNewsFeed() {
                 <div className="mt-auto flex items-center justify-between">
                   <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-zinc-600">
                     <span className="flex items-center gap-2">
-                      <Calendar className="w-3 h-3 text-rose-500" />
+                      <Calendar className="w-3 h-3 text-primary" />
                       {format(new Date(post.date), "MMM d")}
                     </span>
                     <span className="flex items-center gap-2">
@@ -55,7 +55,7 @@ export function SportsNewsFeed() {
                       {post.readTime}
                     </span>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-rose-600 -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                  <ArrowRight className="w-5 h-5 text-primary -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
                 </div>
               </div>
             </CardContent>

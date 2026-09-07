@@ -1,5 +1,5 @@
 import { marked } from 'marked';
-import { staticSitePages } from './site-links';
+import { extractWhatWeKnow } from './what-we-know';
 
 function parseFrontmatter(content: string): { data: Record<string, unknown>; content: string } {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
@@ -59,6 +59,7 @@ export interface Post extends PostMetadata {
   content: string;
   htmlContent: string;
   imageAlt: string;
+  knowFacts: string[];
 }
 
 import manifestPosts from '../../public/posts-manifest.json';
@@ -86,6 +87,8 @@ function normalizeCategory(rawCategory: string): string {
     'fashion': 'Lifestyle',
     'health': 'Lifestyle',
     'travel': 'Lifestyle',
+    'opinions': 'Opinions',
+    'opinion': 'Opinions',
   };
   return categoryMap[lower] || rawCategory;
 }
@@ -116,11 +119,13 @@ export async function getPostBySlug(slug: string): Promise<Post | undefined> {
     }
     const rawContent = await res.text();
     const { content } = parseFrontmatter(rawContent);
+    const { facts, body } = extractWhatWeKnow(content);
 
     return {
       ...metadata,
       content,
-      htmlContent: marked(content) as string,
+      htmlContent: marked(body) as string,
+      knowFacts: facts,
       imageAlt: metadata.title,
     };
   } catch (error) {

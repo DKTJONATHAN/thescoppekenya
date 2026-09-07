@@ -79,7 +79,7 @@ export default function CareersPage() {
               icon: Coffee 
             },
           ].map((perk, i) => (
-            <div key={i} className="p-8 rounded-3xl bg-surface border border-divider hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div key={i} className="p-8 bg-surface border border-divider hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <perk.icon className="w-8 h-8 text-primary mb-6" />
               <h3 className="text-lg font-bold text-headline mb-2">{perk.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{perk.desc}</p>

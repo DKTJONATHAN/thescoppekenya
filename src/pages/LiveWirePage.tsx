@@ -47,13 +47,14 @@ export default function LiveWirePage() {
         <link rel="canonical" href={`${SITE_URL}/live`} />
       </Helmet>
 
-      <div className="bg-zinc-950 text-white min-h-screen">
-        <section className="border-b border-zinc-800">
+      <div className="bg-background text-foreground min-h-screen">
+        <section className="border-b border-divider">
+          <div className="h-[3px] w-full bg-primary" />
           <div className="container max-w-7xl mx-auto px-3 sm:px-4 py-10 md:py-12">
-            <div className="flex items-center gap-2 text-red-400 text-[11px] font-black uppercase tracking-[0.25em] mb-3">
+            <div className="flex items-center gap-2 text-primary text-[11px] font-black uppercase tracking-[0.25em] mb-3">
               <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500" />
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
               </span>
               Live desk
             </div>
@@ -73,9 +74,9 @@ export default function LiveWirePage() {
                 key={item}
                 type="button"
                 onClick={() => setFilter(item)}
-                className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-black uppercase tracking-wide border ${
+                className={`flex-shrink-0 px-3 py-1.5 text-xs font-black uppercase tracking-wide border ${
                   filter === item
-                    ? "bg-red-500 border-red-500 text-black"
+                    ? "bg-primary border-primary text-black"
                     : "border-zinc-700 text-zinc-300 hover:border-zinc-500"
                 }`}
               >
@@ -89,13 +90,13 @@ export default function LiveWirePage() {
               <img
                 src={proxyImg(lead.image, 900)}
                 alt={lead.title}
-                className="w-full h-64 md:h-80 object-cover rounded-2xl bg-zinc-900"
+                className="w-full h-64 md:h-80 object-cover  bg-zinc-900"
               />
               <div className="flex flex-col justify-center">
-                <p className="text-[11px] font-black uppercase tracking-widest text-red-400 mb-2">
+                <p className="text-[11px] font-black uppercase tracking-widest text-primary mb-2">
                   {lead.category} · {timeLabel(lead.date)}
                 </p>
-                <h2 className="font-serif font-black text-3xl md:text-4xl leading-tight group-hover:text-red-300">
+                <h2 className="font-serif font-black text-3xl md:text-4xl leading-tight group-hover:text-primary">
                   {lead.title}
                 </h2>
                 <p className="text-zinc-400 mt-3 line-clamp-3">{lead.excerpt}</p>
@@ -114,7 +115,7 @@ export default function LiveWirePage() {
                       <p className="text-[10px] uppercase tracking-widest text-zinc-500 font-bold">
                         {post.category} · {timeLabel(post.date)}
                       </p>
-                      <h3 className="font-bold leading-snug group-hover:text-red-300 line-clamp-2">{post.title}</h3>
+                      <h3 className="font-bold leading-snug group-hover:text-primary line-clamp-2">{post.title}</h3>
                     </div>
                   </Link>
                 </li>
@@ -122,9 +123,9 @@ export default function LiveWirePage() {
             </ol>
 
             <aside className="space-y-6">
-              <div className="rounded-2xl border border-zinc-800 p-4">
+              <div className=" border border-zinc-800 p-4">
                 <div className="flex items-center gap-2 mb-3">
-                  <Radio className="w-4 h-4 text-red-400" />
+                  <Radio className="w-4 h-4 text-primary" />
                   <h2 className="text-sm font-black uppercase tracking-wide">Kenya newsrooms</h2>
                 </div>
                 <p className="text-xs text-zinc-500 mb-3">Official sites. We do not scrape or embed their feeds.</p>
@@ -148,7 +149,7 @@ export default function LiveWirePage() {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-zinc-800 p-4 text-zinc-400 text-sm">
+              <div className=" border border-zinc-800 p-4 text-zinc-400 text-sm">
                 <Clock className="w-4 h-4 mb-2 text-zinc-500" />
                 This desk updates when we publish. Open any story for the full report.
                 <Link to="/news" className="mt-3 flex items-center gap-1 text-sky-400 font-bold">

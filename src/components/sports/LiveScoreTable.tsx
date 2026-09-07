@@ -63,15 +63,15 @@ export function LiveScoreTable() {
     <div className="bg-zinc-900/40 backdrop-blur-xl rounded-[2.5rem] border border-zinc-800/50 overflow-hidden shadow-2xl">
       <div className="p-8 border-b border-zinc-800/50 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 bg-rose-600/10 rounded-2xl flex items-center justify-center">
-            <Radio className="w-6 h-6 text-rose-500 animate-pulse" />
+          <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+            <Radio className="w-6 h-6 text-primary animate-pulse" />
           </div>
           <div>
-            <h2 className="text-2xl font-serif font-black text-white tracking-tight">Match <span className="text-rose-600">Center</span></h2>
+            <h2 className="text-2xl font-serif font-black text-white tracking-tight">Match <span className="text-primary">Center</span></h2>
             <p className="text-[10px] text-zinc-500 font-black uppercase tracking-[0.2em]">All Global Competitions</p>
           </div>
         </div>
-        <Badge variant="outline" className="border-rose-500/30 text-rose-500 text-[10px] font-black uppercase tracking-widest px-4 py-1">
+        <Badge variant="outline" className="border-rose-500/30 text-primary text-[10px] font-black uppercase tracking-widest px-4 py-1">
           {liveMatches.length} Live Now
         </Badge>
       </div>
@@ -111,13 +111,13 @@ function MatchRow({ match }: { match: Match }) {
   return (
     <TableRow className={cn(
       "border-zinc-800/50 transition-colors group",
-      isLive ? "bg-rose-600/5 hover:bg-rose-600/10" : "hover:bg-zinc-800/30"
+      isLive ? "bg-primary/5 hover:bg-primary/10" : "hover:bg-zinc-800/30"
     )}>
       <TableCell className="pl-8">
         <div className="flex items-center gap-3">
           <span className={cn(
             "text-[9px] font-black px-2 py-1 rounded-md uppercase tracking-tighter shadow-sm",
-            isLive ? "bg-rose-600 text-white" : "bg-zinc-800 text-zinc-400"
+            isLive ? "bg-primary text-white" : "bg-zinc-800 text-zinc-400"
           )}>
             {label}
           </span>
@@ -155,14 +155,14 @@ function MatchRow({ match }: { match: Match }) {
         <div className="inline-flex flex-col gap-1 bg-zinc-950/50 rounded-xl px-4 py-2 border border-zinc-800/50 min-w-[60px]">
           <span className={cn(
             "text-lg font-black tracking-tighter",
-            isLive ? "text-rose-500" : "text-zinc-400"
+            isLive ? "text-primary" : "text-zinc-400"
           )}>
             {match.score.fullTime?.home ?? '-'}
           </span>
           <div className="h-px bg-zinc-800 w-full" />
           <span className={cn(
             "text-lg font-black tracking-tighter",
-            isLive ? "text-rose-500" : "text-zinc-400"
+            isLive ? "text-primary" : "text-zinc-400"
           )}>
             {match.score.fullTime?.away ?? '-'}
           </span>
@@ -181,7 +181,7 @@ function MatchRow({ match }: { match: Match }) {
       </TableCell>
 
       <TableCell className="pr-8 text-right">
-        <button className="w-8 h-8 rounded-full border border-zinc-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-rose-600 hover:border-rose-500">
+        <button className="w-8 h-8 rounded-full border border-zinc-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-primary hover:border-rose-500">
           <Activity className="w-3 h-3 text-white" />
         </button>
       </TableCell>

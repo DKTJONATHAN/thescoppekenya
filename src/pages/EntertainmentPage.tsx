@@ -148,7 +148,7 @@ export default function EntertainmentPage() {
 
       {/* ══ HOT ENTERTAINMENT TICKER ══ */}
       {hotPosts.length > 0 && (
-        <div className="bg-rose-600 text-white overflow-hidden">
+        <div className="bg-primary text-white overflow-hidden">
           <div className="container max-w-7xl mx-auto px-4 flex items-center gap-3 py-2">
             <span className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest flex-shrink-0 bg-white/20 px-2 py-1">
               <Sparkles className="w-3 h-3" /> Hot Now
@@ -180,14 +180,14 @@ export default function EntertainmentPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                 <div className="relative flex flex-col justify-end h-full p-5 sm:p-8 z-10" style={{ minHeight: 380 }}>
                   {isWithinHours(heroPost.date, 6) && (
-                    <span className="inline-flex items-center gap-1 text-[9px] font-black uppercase tracking-widest text-white bg-rose-600 px-2 py-1 mb-2 w-fit animate-pulse">
+                    <span className="inline-flex items-center gap-1 text-[9px] font-black uppercase tracking-widest text-white bg-primary px-2 py-1 mb-2 w-fit animate-pulse">
                       <Sparkles className="w-3 h-3" /> Hot
                     </span>
                   )}
-                  <span className="text-[9px] font-black uppercase tracking-widest text-white px-1.5 py-0.5 mb-2 w-fit bg-rose-600">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-white px-1.5 py-0.5 mb-2 w-fit bg-primary">
                     Entertainment
                   </span>
-                  <h1 className="text-white font-serif font-black text-2xl sm:text-3xl lg:text-4xl leading-tight mb-2 group-hover:text-rose-400 transition-colors">
+                  <h1 className="text-white font-serif font-black text-2xl sm:text-3xl lg:text-4xl leading-tight mb-2 group-hover:text-primary transition-colors">
                     {heroPost.title}
                   </h1>
                   <p className="text-zinc-300 text-sm line-clamp-2 mb-3 max-w-2xl">{heroPost.excerpt}</p>
@@ -212,7 +212,7 @@ export default function EntertainmentPage() {
                       {isWithinHours(post.date, 3) && (
                         <span className="text-[8px] font-black uppercase tracking-widest text-rose-400 mb-1">● HOT</span>
                       )}
-                      <h2 className="text-white font-bold text-sm leading-snug line-clamp-2 group-hover:text-rose-400 transition-colors">
+                      <h2 className="text-white font-bold text-sm leading-snug line-clamp-2 group-hover:text-primary transition-colors">
                         {post.title}
                       </h2>
                       <time dateTime={new Date(post.date).toISOString()} className="text-[10px] text-zinc-500 mt-1 flex items-center gap-1">
@@ -239,7 +239,7 @@ export default function EntertainmentPage() {
             <main className="lg:col-span-8 space-y-8">
               <div className="flex items-center gap-4">
                 <h2 className="text-xl font-black uppercase tracking-tight flex items-center gap-2">
-                  All Entertainment <Flame className="w-5 h-5 text-rose-500" />
+                  All Entertainment <Flame className="w-5 h-5 text-primary" />
                 </h2>
                 <div className="h-px flex-1 bg-divider" />
                 <span className="text-xs text-muted-foreground">{allPosts.length} stories</span>
@@ -258,12 +258,12 @@ export default function EntertainmentPage() {
                           <img src={proxyImg(post.image, 320)} alt={post.title} loading="lazy" width={320} height={240}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                           {isWithinHours(post.date, 3) && (
-                            <span className="absolute top-1 left-1 text-[7px] font-black uppercase bg-rose-600 text-white px-1 py-0.5">Hot</span>
+                            <span className="absolute top-1 left-1 text-[7px] font-black uppercase bg-primary text-white px-1 py-0.5">Hot</span>
                           )}
                         </div>
                       </Link>
                       <div className="flex flex-col justify-center min-w-0">
-                        <span className="inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1.5 w-fit bg-rose-600">
+                        <span className="inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1.5 w-fit bg-primary">
                           {post.category}
                         </span>
                         <Link to={`/article/${post.slug}`}>
@@ -279,7 +279,7 @@ export default function EntertainmentPage() {
                           <span>·</span>
                           <span>{post.readTime} min</span>
                           <span>·</span>
-                          <span className="flex items-center gap-1 text-rose-500 font-semibold">
+                          <span className="flex items-center gap-1 text-primary font-semibold">
                             <Eye className="w-2.5 h-2.5" />{getViews(post.slug)}
                           </span>
                         </div>
@@ -298,7 +298,7 @@ export default function EntertainmentPage() {
               {hasMore && (
                 <div ref={loaderRef} className="flex justify-center py-8">
                   <button onClick={() => setVisibleCount(prev => prev + LOAD_MORE)}
-                    className="flex items-center gap-2 px-6 py-3 bg-rose-600 hover:bg-rose-700 text-white text-sm font-bold transition-colors">
+                    className="flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-colors">
                     <ChevronDown className="w-4 h-4" /> Load More Entertainment
                   </button>
                 </div>
@@ -310,19 +310,19 @@ export default function EntertainmentPage() {
               <div className="sticky top-28 space-y-8">
                 {/* Trending */}
                 <div className="border border-divider">
-                  <div className="bg-rose-600 h-1" />
+                  <div className="bg-primary h-1" />
                   <div className="px-4 py-3 border-b border-divider flex items-center gap-2">
-                    <TrendingUp className="w-4 h-4 text-rose-500" />
+                    <TrendingUp className="w-4 h-4 text-primary" />
                     <h3 className="text-xs font-black uppercase tracking-widest">Trending Entertainment</h3>
                   </div>
                   <div className="divide-y divide-divider">
                     {trendingPosts.map((post, i) => (
                       <Link key={post.slug} to={`/article/${post.slug}`} className="group flex gap-3 p-3 hover:bg-muted/20 transition-colors">
-                        <span className="text-2xl font-black text-muted-foreground/20 group-hover:text-rose-500 transition-colors leading-none mt-0.5 tabular-nums">
+                        <span className="text-2xl font-black text-muted-foreground/20 group-hover:text-primary transition-colors leading-none mt-0.5 tabular-nums">
                           {String(i + 1).padStart(2, "0")}
                         </span>
                         <div className="min-w-0">
-                          <h4 className="text-xs font-bold leading-snug line-clamp-2 group-hover:text-rose-500 transition-colors">
+                          <h4 className="text-xs font-bold leading-snug line-clamp-2 group-hover:text-primary transition-colors">
                             {post.title}
                           </h4>
                           <div className="flex items-center gap-2 mt-1 text-[10px] text-muted-foreground">

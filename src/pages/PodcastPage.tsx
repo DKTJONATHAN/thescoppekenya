@@ -58,7 +58,7 @@ const PodcastPage = () => {
 
           {/* Hero Section for Latest Episode */}
           {latestEpisode ? (
-            <div className="relative group rounded-3xl overflow-hidden bg-card/80 border border-primary/20 shadow-2xl backdrop-blur-xl mb-24 transition-all duration-500 hover:border-primary/40">
+            <div className="relative group overflow-hidden bg-card/80 border border-primary/20 shadow-2xl backdrop-blur-xl mb-24 transition-all duration-500 hover:border-primary/40">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
               <div className="grid md:grid-cols-2 gap-8 p-8 md:p-12 items-center">
                 <div className="space-y-6">
@@ -117,7 +117,7 @@ const PodcastPage = () => {
               </div>
             </div>
           ) : (
-            <div className="text-center py-24 bg-card/50 rounded-3xl border border-dashed border-border mb-16 shadow-inner">
+            <div className="text-center py-24 bg-card/50 border border-dashed border-border mb-16 shadow-inner">
               <Headphones className="w-16 h-16 text-muted-foreground/30 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-2">No Episodes Yet</h3>
               <p className="text-muted-foreground">The premier episode of Za Ndani Audio drops this Sunday at 08:00 UTC. Stay tuned!</p>

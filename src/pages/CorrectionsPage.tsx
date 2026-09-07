@@ -28,16 +28,15 @@ export default function CorrectionsPage() {
         })}</script>
       </Helmet>
 
-      <section className="bg-zinc-950 border-b border-zinc-800 py-14">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.25em] uppercase text-white px-3 py-1.5 bg-primary mb-5">
-            <RefreshCcw className="w-3 h-3" /> Accountability
-          </span>
-          <h1 className="text-4xl md:text-5xl font-serif font-black text-white leading-tight mb-4">
-            Corrections Policy
+      <section className="border-b border-divider bg-background">
+        <div className="h-[3px] w-full bg-primary" />
+        <div className="container max-w-4xl mx-auto px-4 py-12 md:py-14">
+          <p className="text-[10px] font-black tracking-[0.28em] uppercase text-primary mb-4">Accountability</p>
+          <h1 className="text-4xl md:text-6xl font-serif font-black leading-[0.95] mb-4">
+            Corrections policy
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Accuracy is at the heart of our journalism. When we make a mistake, we admit it, fix it, and ensure readers are informed.
+          <p className="text-muted-foreground text-lg max-w-2xl">
+            Accuracy is the job. When we get it wrong, we admit it, fix it, and tell the reader.
           </p>
         </div>
       </section>

@@ -20,15 +20,8 @@ import { generateSlug } from "@/admin/utils/helpers";
 import { ConfirmDialog } from "@/admin/components/ConfirmDialog";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics"))      return "bg-blue-700";
-  if (c.includes("news"))          return "bg-amber-600";
-
-  if (c.includes("sports"))        return "bg-green-700";
-  if (c.includes("tech"))          return "bg-cyan-700";
-  return "bg-zinc-600";
+function catColor(_cat: string): string {
+  return "bg-primary text-primary-foreground";
 }
 
 function proxyImg(url: string, w = 300): string {
@@ -277,7 +270,7 @@ export default function AdminPage() {
                   className="w-full px-4 py-4 bg-zinc-800 border border-zinc-700 text-white text-center text-3xl font-mono tracking-[0.5em] focus:border-primary outline-none transition-colors"
                   maxLength={4} autoFocus />
               </div>
-              {pinError && <p className="text-red-400 text-xs text-center font-bold">{pinError}</p>}
+              {pinError && <p className="text-primary text-xs text-center font-bold">{pinError}</p>}
               <button type="submit"
                 className="w-full py-4 bg-primary text-white font-black uppercase tracking-wider text-sm hover:opacity-90 transition-opacity">
                 Unlock Dashboard
@@ -504,7 +497,7 @@ export default function AdminPage() {
                   {/* Dead posts — no traction */}
                   <div className="border border-zinc-800 bg-zinc-900">
                     <div className="flex items-center gap-2 px-5 py-4 border-b border-zinc-800">
-                      <ArrowDown className="w-4 h-4 text-rose-500" />
+                      <ArrowDown className="w-4 h-4 text-primary" />
                       <h2 className="text-sm font-black uppercase tracking-wider text-white">Zero Traction Posts</h2>
                       <span className="text-[10px] text-zinc-600 ml-auto">Consider updating or deleting</span>
                     </div>
@@ -530,7 +523,7 @@ export default function AdminPage() {
                                 <Pencil className="w-3.5 h-3.5" />
                               </button>
                               <button onClick={() => setShowDeleteConfirm(post.slug)}
-                                className="p-1.5 text-zinc-600 hover:text-rose-400 transition-colors">
+                                className="p-1.5 text-zinc-600 hover:text-primary transition-colors">
                                 <Trash2 className="w-3.5 h-3.5" />
                               </button>
                             </div>
@@ -745,7 +738,7 @@ export default function AdminPage() {
                             <Pencil className="w-3 h-3" /> Edit
                           </button>
                           <button onClick={() => setShowDeleteConfirm(post.slug)}
-                            className="flex-1 py-2 border border-zinc-700 text-zinc-400 hover:text-rose-400 hover:border-rose-800 text-xs font-black uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5">
+                            className="flex-1 py-2 border border-zinc-700 text-zinc-400 hover:text-primary hover:border-rose-800 text-xs font-black uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5">
                             <Trash2 className="w-3 h-3" /> Delete
                           </button>
                         </div>

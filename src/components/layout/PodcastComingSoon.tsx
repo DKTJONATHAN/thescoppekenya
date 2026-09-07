@@ -15,7 +15,7 @@ export function PodcastComingSoon() {
         </div>
         <div className="min-w-0">
           <p className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.22em] text-primary">
-            <span className="h-1.5 w-1.5 rounded-full bg-red-500 animate-pulse"></span>
+            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span>
             Live Now
           </p>
           <p className="truncate text-sm font-medium text-foreground">

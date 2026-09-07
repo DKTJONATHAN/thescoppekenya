@@ -28,17 +28,15 @@ export default function EthicsPage() {
         })}</script>
       </Helmet>
 
-      {/* Hero — matches Authors / About theme */}
-      <section className="bg-zinc-950 border-b border-zinc-800 py-14">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <span className="inline-flex items-center gap-1.5 text-[10px] font-black tracking-[0.25em] uppercase text-white px-3 py-1.5 bg-primary mb-5">
-            <ShieldCheck className="w-3 h-3" /> Trust
-          </span>
-          <h1 className="text-4xl md:text-5xl font-serif font-black text-white leading-tight mb-4">
-            Editorial Ethics & Standards
+      <section className="border-b border-divider bg-background">
+        <div className="h-[3px] w-full bg-primary" />
+        <div className="container max-w-4xl mx-auto px-4 py-12 md:py-14">
+          <p className="text-[10px] font-black tracking-[0.28em] uppercase text-primary mb-4">Trust</p>
+          <h1 className="text-4xl md:text-6xl font-serif font-black leading-[0.95] mb-4">
+            Editorial ethics & standards
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            The trust of our readers is our most valuable asset. We deliver news and entertainment with integrity, accuracy, and fairness.
+          <p className="text-muted-foreground text-lg max-w-2xl">
+            The trust of our readers is the newsroom’s most valuable asset. We deliver news and entertainment with integrity, accuracy, and fairness.
           </p>
         </div>
       </section>
