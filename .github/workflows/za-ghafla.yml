@@ -73,7 +73,7 @@ jobs:
         run: |
           git config user.name  "Za Ndani"
           git config user.email "bot@zandani.co.ke"
-          git add "${MEMORY_FILE}" content/posts/*.md || true
+          git add -A "${MEMORY_FILE}" content/posts || true
           if git diff --cached --quiet; then
             echo "No article or memory changes to commit"
             exit 0
