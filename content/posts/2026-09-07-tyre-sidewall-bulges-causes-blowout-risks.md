@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://i.ibb.co/ymbMKyq9/4b091c53e0f0.webp"
 category: "News"
 tags: ["tyre sidewall bulges", "car tyre safety", "pothole damage", "blowout risk", "vehicle maintenance", "underinflated tyres"]
-canonical: "https://zandani.co.ke/article/tyre-sidewall-bulges-causes-blowout-risks"
 date: "2026-09-06T22:20:10Z"
 dateModified: "2026-09-06T22:20:10Z"
 focusKeyword: "Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/tyre-sidewall-bulges-causes-blowout-risks"
 ---
-
 ## Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks
 
 On Monday, September 7, 2026, automotive safety experts in Nairobi issued a public warning advising Kenyan motorists to inspect their vehicle tyres for sidewall bulges caused by deep potholes and poor road surfaces. The specialists cautioned that these small bubbles indicate severe internal structural damage that significantly increases the risk of sudden, high-speed blowouts.
