@@ -1,20 +1,26 @@
 ---
 title: "Tanzania's First Gentleman Hafidh Ameir Hassan Dies in Zanzibar"
 slug: "tanzania-s-first-gentleman-hafidh-ameir-hassan-dies-in-zanzibar"
-description: "Tanzania's First Gentleman Hafidh Ameir Hassan Dies in Zanzibar: Tanzania’s Vice President Deogratius Ndejembi announced on Monday, September 7, 2026, that the"
+description: "Tanzania's First Gentleman Hafidh Ameir Hassan Dies in Zanzibar: Tanzania’s Vice President Deogratius Ndejembi announced on Monday, September 7, 2026, that."
 excerpt: "Tanzania’s Vice President Deogratius Ndejembi announced on Monday, September 7, 2026, that the country’s First Gentleman, Hafidh Ameir Hassan, the husband of Pr..."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/samia%20suluhu%20sad.jpg.webp?itok=6Uanv-s5"
 category: "News"
 tags: ["tanzania s first gentleman hafidh ameir hassan dies in zanzibar", "news", "kenya news"]
-canonical: "https://zandani.co.ke/article/tanzania-s-first-gentleman-hafidh-ameir-hassan-dies-in-zanzibar"
 date: "2026-09-07T09:35:44Z"
 dateModified: "2026-09-07T09:35:44Z"
 focusKeyword: "Tanzania's First Gentleman Hafidh Ameir Hassan Dies in Zanzibar"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/tanzania-s-first-gentleman-hafidh-ameir-hassan-dies-in-zanzibar"
 ---
-
 Tanzania’s Vice President Deogratius Ndejembi announced on Monday, September 7, 2026, that the country’s First Gentleman, Hafidh Ameir Hassan, the husband of President Samia Suluhu Hassan, has died while receiving medical care in Zanzibar.
+
+### What we know
+
+- According to the official government statement, Hassan passed away at around 8:00 am on Monday morning.
+- Vice President Ndejembi delivered the formal announcement through public broadcast channels, detailing the circumstances of the passing and conveying the government's official notification to the country.
+- "Fellow citizens, it is with great sadness that I inform you of the death of Honourable Hafidh Ameir Hassan, husband of the President of the United Republic of Tanzania, Honourable Dr Samia Suluhu Hassan," Ndejembi stated.
+- The Vice President extended condolences on behalf of the state to President Samia Suluhu Hassan, her family, relatives, and all citizens of Tanzania.
 
 According to the official government statement, Hassan passed away at around 8:00 am on Monday morning. Vice President Ndejembi confirmed that the First Gentleman was admitted to Emilio Mzena Memorial Hospital in Zanzibar, where medical personnel had been treating him for heart complications prior to his death.
 

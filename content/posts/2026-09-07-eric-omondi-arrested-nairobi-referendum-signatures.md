@@ -1,22 +1,26 @@
 ---
 title: "Eric Omondi Arrested in Nairobi Over 8-County Referendum"
 slug: "eric-omondi-arrested-nairobi-referendum-signatures"
-description: "Eric Omondi Arrested in Nairobi Over 8-County Referendum: Activist Eric Omondi has been arrested in Nairobi CBD while collecting signatures for a referendum to"
+description: "Eric Omondi Arrested in Nairobi Over 8-County Referendum: Activist Eric Omondi has been arrested in Nairobi CBD while collecting signatures for a."
 excerpt: "Eric Omondi Arrested in Nairobi Over 8 County Referendum Signature Drive Comedian turned activist Eric Omondi was arrested by plainclothes p"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/5WBW06PT/5b49823b4fe9.webp"
 category: "News"
 tags: ["Eric Omondi", "Kenya Referendum", "Nairobi CBD", "Police Arrest", "Devolution Kenya"]
-canonical: "https://zandani.co.ke/article/eric-omondi-arrested-nairobi-referendum-signatures"
 date: "2026-09-07T06:57:06Z"
 dateModified: "2026-09-07T06:57:06Z"
 focusKeyword: "Eric Omondi Arrested in Nairobi Over 8-County Referendum"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/eric-omondi-arrested-nairobi-referendum-signatures"
 ---
-
-## Eric Omondi Arrested in Nairobi Over 8-County Referendum Signature Drive Eric Omondi Arrested in Nairobi Over 8-County Referendum is the central subject of the update.
-
 Comedian-turned-activist Eric Omondi was arrested by plainclothes police officers outside the Nairobi National Archives on Monday morning while collecting citizen signatures for a constitutional referendum petition aimed at downsizing Kenya's 47 counties to eight.
+
+### What we know
+
+- ### Signature Drive Interrupted at City Center
+- Plainclothes officers approached Omondi alongside his mobilization team as members of the public lined up to sign petition forms in the Nairobi Central Business District.
+- The public drive aimed at triggering a popular initiative under Article 257 of the Constitution to petition the Independent Electoral and Boundaries Commission (IEBC).
+- Under the proposed reform bill, the initiative also seeks to eliminate the Senate, abolish all 47 County Woman Representative posts, remove nominated slots for Members of County Assembly (MCAs), and reduce the total number of elective parliamentary seats.
 
 ### Signature Drive Interrupted at City Center
 

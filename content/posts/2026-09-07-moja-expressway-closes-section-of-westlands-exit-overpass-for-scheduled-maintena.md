@@ -1,16 +1,27 @@
 ---
-title: "Moja Expressway Closes Section of Westlands Exit Overpass for Scheduled Maintenance"
-date: 2026-09-07T10:14:33Z
-author: "Celestine Nzioka"
-category: "News"
-image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/the-westlands-toll-station-of-the-nairobi-expressway.jpg.webp?itok=e-fa_YEC"
+title: "Moja Expressway Closes Section of Westlands Exit Overpass for"
+slug: "moja-expressway-closes-section-of-westlands-exit-overpass-for"
+description: "Moja Expressway Company has announced a 12-day partial closure of the Nairobi Expressway at the Westlands Exit beginning Tuesday, September 8, 2026, to."
 excerpt: "Moja Expressway Company has announced a 12-day partial closure of the Nairobi Expressway at the Westlands Exit beginning Tuesday, September 8, 2026, to conduct..."
-readTime: 3
+author: "Celestine Nzioka"
+image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/the-westlands-toll-station-of-the-nairobi-expressway.jpg.webp?itok=e-fa_YEC"
+category: "News"
+date: "2026-09-07T10:14:33Z"
+dateModified: "2026-09-07T10:14:33Z"
+focusKeyword: "moja expressway closes section westlands exit"
+schema: "NewsArticle"
+readTime: "3"
 source: "https://kenyans.co.ke/news/126854-moja-expressway-announces-maintenance-westlands-exit-september-8"
 stylePreset: "Event Report"
 ---
-
 Moja Expressway Company has announced a 12-day partial closure of the Nairobi Expressway at the Westlands Exit beginning Tuesday, September 8, 2026, to conduct structural maintenance and civil works along the elevated overpass deck.
+
+### What we know
+
+- The infrastructure maintenance will affect the section of the elevated deck situated immediately after the Westlands exit ramp.
+- Under the temporary traffic management plan, vehicles leaving the toll route through the Westlands Exit will be diverted directly onto the lower transit corridor.
+- "Motorists using the Nairobi Expressway are informed of maintenance and construction works along the elevated overpass deck after the Nairobi Westlands Exit from 8 pm, September 8 2026 to 5 pm, September 20 2026," Moja Expressway stated in its official notice.
+- Moja Expressway confirmed that traffic marshals will be stationed along the affected approach ramps and the lower A8 connection point to guide vehicles.
 
 The infrastructure maintenance will affect the section of the elevated deck situated immediately after the Westlands exit ramp. According to a formal notice issued by the toll-road operator on Monday, September 7, 2026, the repair and engineering works will commence at 8:00 pm on Tuesday, September 8, and are scheduled to end at 5:00 pm on Sunday, September 20, 2026.
 
