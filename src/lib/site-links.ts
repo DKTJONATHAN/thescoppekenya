@@ -4,14 +4,14 @@ export type NavLink = {
   featured?: boolean;
 };
 
+/** Primary nav — keep short for desktop + mobile drawer */
 export const primaryNavLinks: NavLink[] = [
   { label: "Trending", path: "/trending", featured: true },
   { label: "News", path: "/news" },
   { label: "Sports", path: "/sports" },
   { label: "Live", path: "/live" },
   { label: "TV", path: "/tv" },
-  { label: "Podcast", path: "/podcast" },
-  { label: "Entertainment", path: "/entertainment" },
+  { label: "Showbiz", path: "/entertainment" },
 ];
 
 export const staticSitePages = [
