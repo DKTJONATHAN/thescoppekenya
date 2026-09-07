@@ -1,6 +1,7 @@
 name: Gossip | Wanjiku Kuria - ghafla.co.ke
 
 on:
+  workflow_call:
   # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 07:00, 11:00, 15:00, 19:00 EAT
   workflow_dispatch: {}
 
