@@ -1,20 +1,19 @@
 ---
 title: "Mombasa Halts Links Road Cycling Project to Ease Gridlock"
 slug: "mombasa-halts-links-road-cycling-project-to-ease-gridlock"
-description: "Mombasa Governor Abdulswamad Nassir on Monday morning, September 07, 2026, suspended the construction of cycling lanes along Links Road in Nyali to ease."
-excerpt: "Mombasa Governor Abdulswamad Nassir on Monday morning, September 07, 2026, suspended the construction of cycling lanes along Links Road in Nyali to ease severe "
+description: "mombasa halts links road cycling project: Mombasa Governor Abdulswamad Nassir on Monday morning, September 07, 2026, suspended the construction of cycling"
+excerpt: "Mombasa Governor Abdulswamad Nassir on Monday morning, September 07, 2026, suspended the construction of cycling lanes along Links Road in Nyali to ease severe"
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/mombasa-2.jpeg.webp?itok=VDthJWB8"
 category: "News"
+tags: ["mombasa halts links road cycling project to ease gridlock", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/mombasa-halts-links-road-cycling-project-to-ease-gridlock"
 date: "2026-09-07T16:24:43Z"
 dateModified: "2026-09-07T16:24:43Z"
 focusKeyword: "mombasa halts links road cycling project"
 schema: "NewsArticle"
-county: "Mombasa"
-readTime: "3"
-source: "https://kenyans.co.ke/news/126866-mombasa-suspends-links-road-cycling-works-over-traffic-congestion"
-stylePreset: "Hard News Lead"
 ---
+
 Mombasa Governor Abdulswamad Nassir on Monday morning, September 07, 2026, suspended the construction of cycling lanes along Links Road in Nyali to ease severe traffic congestion caused by ongoing diversions from the Mombasa-Malindi Highway works at Bombolulu.
 
 ### What we know:
