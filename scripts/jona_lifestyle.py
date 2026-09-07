@@ -1,1 +1,15 @@
-PLACEHOLDER
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from writer_core import run_writer
+
+if __name__ == "__main__":
+    run_writer({
+        "author_name": "Jona Munyi",
+        "category": "Lifestyle",
+        "source_url": "https://www.pulselive.co.ke/lifestyle",
+        "source_domain": "pulselive.co.ke",
+        "memory_file": ".github/memory_jona_lifestyle.json",
+        "role": "lifestyle correspondent",
+        "audience": "Kenyan lifestyle and culture readers",
+        "path_hints": ["lifestyle", "article", "news", "story", "/20"],
+    })
