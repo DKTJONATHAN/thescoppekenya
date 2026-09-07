@@ -508,10 +508,10 @@
     "a412fe6b8bbe7c390c829ecfdfa7bf30",
     "b76271de24a7afe4a013e0b3f590c8d2",
     "ad2fca761b1cd6ded13be99c0578b7bd",
-    "49579cb2de0746d15adc2266abaa6d48"
+    "49579cb2de0746d15adc2266abaa6d48",
+    "ee01967fe898f0b93c6244e44d5b7d9e"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
@@ -540,7 +540,8 @@
     "Hard News Lead",
     "Statement Report",
     "Event Report",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Statement Report"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -633,7 +634,8 @@
     "https://kenyans.co.ke/news/126847-eric-omondi-arrested-while-collecting-signatures-reduce-counties-47-8",
     "https://kenyans.co.ke/news/126856-tanzanias-first-gentleman-hafidh-ameir-hassan-dies",
     "https://kenyans.co.ke/news/126854-moja-expressway-announces-maintenance-westlands-exit-september-8",
-    "https://kenyans.co.ke/news/126866-mombasa-suspends-links-road-cycling-works-over-traffic-congestion"
+    "https://kenyans.co.ke/news/126866-mombasa-suspends-links-road-cycling-works-over-traffic-congestion",
+    "https://kenyans.co.ke/news/126867-govt-spokesperson-threatens-action-against-harassment-targeting-foreign-nationals"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -648,7 +650,8 @@
     "eric omondi arrested nairobi county referendum",
     "tanzania first gentleman hafidh ameir hassan dies zanzibar",
     "moja expressway closes section westlands exit overpass scheduled maintenance",
-    "mombasa halts links road cycling project ease gridlock"
+    "mombasa halts links road cycling project ease gridlock",
+    "state warns against xenophobic attacks foreign traders"
   ],
   "topic_keys": [
     "news tracker",
