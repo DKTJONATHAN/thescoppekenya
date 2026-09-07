@@ -418,10 +418,10 @@
     "9c04c445a41ccc84ce25f88928327a27",
     "d06e3996940c6b2379ffed19175b4f35",
     "3066a172127fe98dbba23f54fd672138",
-    "7b126d1b1dcf1fabd22153976b113bfc"
+    "7b126d1b1dcf1fabd22153976b113bfc",
+    "b20e853b6f8d04759647348286b6790f"
   ],
   "style_history": [
-    "Hard News Lead",
     "Profile Beat",
     "Trend Take",
     "Explainer",
@@ -450,10 +450,10 @@
     "Profile Beat",
     "Trend Take",
     "Hard News Lead",
-    "Reaction Round-up"
+    "Reaction Round-up",
+    "Explainer"
   ],
   "angle_history": [
-    "myth_vs_fact|Television careers|Reaction Round-up",
     "policy_gap|na|Hard News Lead",
     "timeline_shift|The Varnell Hill Show|Trend Take",
     "story_progression|na|Explainer",
@@ -532,6 +532,7 @@
     "winners_losers|Kenan Thompson|Profile Beat",
     "timeline_shift|na|Trend Take",
     "story_progression|Heated Rivalry|Hard News Lead",
-    "winners_losers|Adria Arjona|Reaction Round-up"
+    "winners_losers|Adria Arjona|Reaction Round-up",
+    "winners_losers|Dune (1984 film)|Explainer"
   ]
 }
