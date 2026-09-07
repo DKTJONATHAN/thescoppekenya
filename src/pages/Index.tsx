@@ -34,32 +34,12 @@ function timeAgo(dateStr: string): string {
   return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
 }
 
-function catColor(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("gossip")) return "bg-fuchsia-700";
-  if (c.includes("showbiz")) return "bg-violet-700";
-  if (c.includes("entertainment")) return "bg-rose-600";
-  if (c.includes("politics")) return "bg-blue-800";
-  if (c.includes("news") || c.includes("breaking")) return "bg-amber-600";
-  if (c.includes("sports")) return "bg-green-700";
-  if (c.includes("tech") || c.includes("business")) return "bg-cyan-700";
-  if (c.includes("opinion")) return "bg-orange-700";
-  if (c.includes("agric")) return "bg-lime-700";
-  return "bg-zinc-600";
+function catColor(_cat: string): string {
+  return "bg-primary text-primary-foreground";
 }
 
-function catBorder(cat: string): string {
-  const c = cat?.toLowerCase() || "";
-  if (c.includes("gossip")) return "border-fuchsia-700";
-  if (c.includes("showbiz")) return "border-violet-700";
-  if (c.includes("entertainment")) return "border-rose-600";
-  if (c.includes("politics")) return "border-blue-800";
-  if (c.includes("news") || c.includes("breaking")) return "border-amber-600";
-  if (c.includes("sports")) return "border-green-700";
-  if (c.includes("tech") || c.includes("business")) return "border-cyan-700";
-  if (c.includes("opinion")) return "border-orange-700";
-  if (c.includes("agric")) return "border-lime-700";
-  return "border-zinc-600";
+function catBorder(_cat: string): string {
+  return "border-primary";
 }
 
 type Post = ReturnType<typeof getAllPosts>[0];
@@ -85,14 +65,14 @@ const MobileTopCard = React.memo(({ post, views }: { post: Post; views: number }
   <Link to={`/article/${post.slug}`} className="group block">
     <article>
       <div className={`relative aspect-[4/3] overflow-hidden bg-muted border-t-[3px] ${catBorder(post.category)}`}>
-        <div className="absolute top-2 right-2 z-10 flex items-center gap-1 text-[10px] text-white bg-black/60 px-1.5 py-0.5">
+        <div className="absolute top-2 right-2 z-10 flex items-center gap-1 text-[10px] text-foreground bg-background/70 px-1.5 py-0.5">
           <Eye className="w-3 h-3" />
           {views > 999 ? `${(views / 1000).toFixed(1)}k` : views}
         </div>
         <img src={img(post.image, 360)} alt={post.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
       </div>
       <div className="pt-2">
-        <span className={`inline-block text-[8px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1 ${catColor(post.category)}`}>{post.category}</span>
+        <span className={`inline-block text-[8px] font-black tracking-widest uppercase px-1.5 py-0.5 mb-1 ${catColor(post.category)}`}>{post.category}</span>
         <h3 className="font-serif font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 text-[13px] leading-snug">{post.title}</h3>
         <span className="text-[10px] text-muted-foreground flex items-center gap-1 mt-1"><Clock className="w-2.5 h-2.5" />{timeAgo(post.date)}</span>
       </div>
@@ -129,7 +109,7 @@ const FeedCard = React.memo(({ post, views }: { post: Post; views: number }) => 
       </div>
     </Link>
     <div className="flex flex-col justify-center min-w-0">
-      <span className={`inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1.5 w-fit ${catColor(post.category)}`}>{post.category}</span>
+      <span className={`inline-block text-[9px] font-black tracking-widest uppercase px-1.5 py-0.5 mb-1.5 w-fit ${catColor(post.category)}`}>{post.category}</span>
       <Link to={`/article/${post.slug}`}>
         <h3 className="font-serif font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 text-sm md:text-base mb-1 leading-snug">{post.title}</h3>
       </Link>
@@ -280,61 +260,60 @@ const Index = () => {
       </Helmet>
 
       {heroLead && (
-        <section className="bg-zinc-950 border-b border-zinc-800">
-          <div className="container max-w-7xl mx-auto px-3 sm:px-4 py-3">
-            <div className="lg:hidden space-y-1.5">
-              <Link to={`/article/${heroLead.slug}`} className="group relative overflow-hidden block aspect-[16/9]">
-                <img src={optimizedHeroImage} alt={heroLead.title} fetchPriority="high" loading="eager" decoding="async" className="w-full h-full object-cover opacity-80" width={600} height={338} />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
-                  <span className={`text-[9px] font-black tracking-[0.18em] uppercase text-white px-2 py-0.5 ${catColor(heroLead.category)}`}>{heroLead.category}</span>
-                  <h1 className="text-[19px] font-serif font-black text-white leading-tight mt-1.5 line-clamp-3">{heroLead.title}</h1>
-                  <div className="flex items-center gap-3 text-[11px] text-zinc-400 mt-1.5">
-                    <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(heroLead.date)}</span>
-                    <span className="font-semibold truncate">{heroLead.author}</span>
-                  </div>
+        <section className="bg-background border-b border-border">
+          <div className="container max-w-7xl mx-auto px-3 sm:px-4 py-6 lg:py-10">
+            <div className="lg:hidden space-y-4">
+              <Link to={`/article/${heroLead.slug}`} className="group block">
+                <div className="overflow-hidden rounded-md">
+                  <img src={optimizedHeroImage} alt={heroLead.title} fetchPriority="high" loading="eager" decoding="async" className="w-full aspect-video object-cover" width={600} height={338} />
+                </div>
+                <span className="mt-3 inline-block text-xs font-semibold uppercase tracking-widest text-primary">{heroLead.category}</span>
+                <h1 className="mt-2 font-serif text-2xl font-bold leading-tight text-headline">{heroLead.title}</h1>
+                <div className="mt-2 flex items-center gap-3 text-xs text-muted-foreground">
+                  <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(heroLead.date)}</span>
+                  <span className="font-semibold truncate">{heroLead.author}</span>
                 </div>
               </Link>
-              <div className="grid grid-cols-2 gap-1.5">
-                {heroSecondary.map(post => (
-                  <Link key={post.slug} to={`/article/${post.slug}`} className="group relative overflow-hidden block aspect-[4/3]">
-                    <img src={img(post.image, 400)} alt={post.title} loading="lazy" className="w-full h-full object-cover opacity-70" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-2 z-10">
-                      <span className={`text-[8px] font-black uppercase text-white px-1 py-0.5 ${catColor(post.category)}`}>{post.category}</span>
-                      <h2 className="text-[12px] font-serif font-bold text-white leading-snug mt-1 line-clamp-2">{post.title}</h2>
+              <div className="border-t border-border">
+                {heroSecondary.slice(0, 2).map(post => (
+                  <Link key={post.slug} to={`/article/${post.slug}`} className="group flex gap-3 border-b border-border py-4">
+                    <div className="min-w-0 flex-1">
+                      <span className="text-xs font-semibold uppercase tracking-widest text-primary">{post.category}</span>
+                      <h2 className="mt-1 font-serif text-base font-bold leading-snug group-hover:text-primary">{post.title}</h2>
                     </div>
+                    <img src={img(post.image, 400)} alt={post.title} loading="lazy" className="h-20 w-28 shrink-0 rounded-sm object-cover" />
                   </Link>
                 ))}
               </div>
             </div>
 
-            <div className="hidden lg:grid lg:grid-cols-12 gap-1">
-              <Link to={`/article/${heroLead.slug}`} className="lg:col-span-7 group relative overflow-hidden block aspect-[16/10]">
-                <img src={optimizedHeroImage} srcSet={heroImageSrcSet} sizes={heroImageSizes} alt={heroLead.title} fetchPriority="high" loading="eager" decoding="async" width={840} height={525} className="w-full h-full object-cover opacity-75 group-hover:opacity-90 transition-opacity duration-500 absolute inset-0" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-10">
-                  <span className={`text-[10px] font-black tracking-[0.2em] uppercase text-white px-2 py-1 ${catColor(heroLead.category)}`}>{heroLead.category}</span>
-                  <h1 className="text-3xl lg:text-4xl font-serif font-black text-white leading-tight mt-3 line-clamp-3">{heroLead.title}</h1>
-                  <p className="text-zinc-300 text-sm line-clamp-2 mt-2 max-w-md">{heroLead.excerpt}</p>
-                  <div className="flex items-center gap-4 text-xs text-zinc-500 mt-3">
-                    <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(heroLead.date)}</span>
-                    <span className="font-bold text-zinc-400">{heroLead.author}</span>
-                  </div>
-                </div>
+            <div className="hidden lg:grid lg:grid-cols-2 lg:items-center lg:gap-10">
+              <Link to={`/article/${heroLead.slug}`} className="group overflow-hidden rounded-md">
+                <img src={optimizedHeroImage} srcSet={heroImageSrcSet} sizes={heroImageSizes} alt={heroLead.title} fetchPriority="high" loading="eager" decoding="async" width={840} height={525} className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </Link>
-              <div className="lg:col-span-5 flex flex-col gap-1">
-                {heroSecondary.slice(0, 2).map(post => (
-                  <Link key={post.slug} to={`/article/${post.slug}`} className="group relative overflow-hidden block flex-1 min-h-[140px]">
-                    <img src={img(post.image, 600)} alt={post.title} loading="lazy" width={560} height={235} className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500 absolute inset-0" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
-                      <span className={`text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-2 inline-block ${catColor(post.category)}`}>{post.category}</span>
-                      <h2 className="text-lg font-serif font-bold text-white leading-snug line-clamp-2">{post.title}</h2>
-                    </div>
-                  </Link>
-                ))}
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-widest text-primary">{heroLead.category}</span>
+                <Link to={`/article/${heroLead.slug}`}>
+                  <h1 className="mt-3 font-serif text-5xl font-bold leading-tight tracking-tight text-headline hover:text-primary">{heroLead.title}</h1>
+                </Link>
+                <p className="mt-4 max-w-md text-muted-foreground">{heroLead.excerpt}</p>
+                <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
+                  <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(heroLead.date)}</span>
+                  <span className="font-semibold text-foreground">{heroLead.author}</span>
+                </div>
               </div>
+            </div>
+            <div className="mt-8 hidden border-t border-border lg:grid lg:grid-cols-2 lg:gap-10">
+              {heroSecondary.slice(0, 2).map(post => (
+                <Link key={post.slug} to={`/article/${post.slug}`} className="group flex gap-4 border-b border-border py-5">
+                  <div className="min-w-0 flex-1">
+                    <span className="text-xs font-semibold uppercase tracking-widest text-primary">{post.category}</span>
+                    <h2 className="mt-1 font-serif text-xl font-bold leading-snug group-hover:text-primary">{post.title}</h2>
+                    <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{post.excerpt}</p>
+                  </div>
+                  <img src={img(post.image, 400)} alt={post.title} loading="lazy" width={200} height={140} className="h-28 w-36 shrink-0 rounded-sm object-cover" />
+                </Link>
+              ))}
             </div>
           </div>
         </section>

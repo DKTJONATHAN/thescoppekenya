@@ -18,20 +18,20 @@ export function Footer() {
     <footer className="bg-card text-card-foreground border-t border-border mt-auto" data-nosnippet>
       <div className="border-b border-border">
         <div className="container py-6 md:py-8">
-          <div className="max-w-xl mx-auto text-center">
-            <h3 className="text-lg md:text-xl font-serif font-bold mb-1.5 text-foreground">
+          <div className="max-w-xl mx-auto text-center rounded-lg bg-primary px-6 py-8 text-primary-foreground">
+            <h3 className="text-lg md:text-2xl font-serif font-bold mb-1.5 text-primary-foreground">
               Don&apos;t Miss Any Story
             </h3>
-            <p className="text-muted-foreground text-sm mb-4">
-              Kenya news, gossip and showbiz — straight to your inbox.
+            <p className="text-sm mb-4 opacity-80">
+              Kenya news, gossip and showbiz — one email, Nairobi time.
             </p>
             <form className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-2.5 bg-muted border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                className="flex-1 px-4 py-2.5 bg-background border-0 rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-background text-sm"
               />
-              <Button className="gradient-primary text-primary-foreground hover:opacity-90 px-5 h-11">
+              <Button className="bg-background text-foreground hover:opacity-90 px-5 h-11">
                 Subscribe
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
