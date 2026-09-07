@@ -504,10 +504,10 @@
     "11ef9c0d39e857d943130984028faa12",
     "0d1d83ff71217efe6f27e730740e5066",
     "5474ba2dbcd84a0a56b89264c0a32dcd",
-    "9c1ab94bf6421fa2492cfc7580294f67"
+    "9c1ab94bf6421fa2492cfc7580294f67",
+    "a412fe6b8bbe7c390c829ecfdfa7bf30"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Power Accountability",
     "Explainer",
@@ -536,6 +536,7 @@
     "Power Accountability",
     "Context Backgrounder",
     "Explainer",
+    "Hard News Lead",
     "Hard News Lead"
   ],
   "angle_history": [
@@ -625,22 +626,26 @@
     "https://kenyans.co.ke/news/118692-top-100-kenyans-2025-full-list",
     "https://kenyans.co.ke/news/126839-huduma-kenya-explains-why-birth-certificates-must-be-applied-county-birth",
     "https://kenyans.co.ke/news/126841-explained-what-sidewall-bulges-car-tyres-mean-and-why-they-are-dangerous",
-    "https://kenyans.co.ke/news/126837-explained-why-all-cars-airport-are-painted-yellow-top"
+    "https://kenyans.co.ke/news/126837-explained-why-all-cars-airport-are-painted-yellow-top",
+    "https://kenyans.co.ke/news/126847-eric-omondi-arrested-while-collecting-signatures-reduce-counties-47-8"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
-    "why-airport-vehicles-are-painted-yellow"
+    "why-airport-vehicles-are-painted-yellow",
+    "eric-omondi-arrested-nairobi-referendum-signatures"
   ],
   "published_titles": [
     "news tracker",
     "huduma explains birth certificates must applied county birth",
     "tyre sidewall bulges hidden dangers blowout risks",
-    "airport ground vehicles are painted yellow"
+    "airport ground vehicles are painted yellow",
+    "eric omondi arrested nairobi county referendum"
   ],
   "topic_keys": [
     "news tracker",
     "applied birth certificates county explains huduma must",
     "blowout bulges dangers hidden risks sidewall tyre",
-    "airport are ground painted vehicles yellow"
+    "airport are ground painted vehicles yellow",
+    "arrested county eric nairobi omondi referendum"
   ]
 }
