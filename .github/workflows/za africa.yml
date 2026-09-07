@@ -1,1 +1,78 @@
-PLACEHOLDER_WILL_REPLACE
+name: Amara Ndlovu - Pan-Africa Entertainment Scraper
+
+on:
+  # Timing owned by writer-dispatcher.yml (Africa/Nairobi)
+  workflow_dispatch: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  DEFAULT_BRANCH: main
+  POSTS_DIR: content/posts
+  MEMORY_FILE: .github/memory_amara.json
+  TZ: Africa/Nairobi
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-chromium
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
+          playwright install chromium --with-deps
+
+      - name: Run Amara Ndlovu pipeline
+        env:
+          GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY1: ${{ secrets.GEMINI_API_KEY1 }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+          POSTS_DIR: ${{ env.POSTS_DIR }}
+          MEMORY_FILE: ${{ env.MEMORY_FILE }}
+        run: |
+          if [ -f scripts/amara_africa.py ]; then
+            python scripts/amara_africa.py
+          else
+            echo "scripts/amara_africa.py missing — pipeline still embedded in older runs; skipping this run"
+            echo "TODO: extract embedded pipeline to scripts/amara_africa.py"
+            exit 0
+          fi
+
+      - name: Commit history and new posts
+        run: |
+          git config user.name  "Za Ndani"
+          git config user.email "bot@zandani.co.ke"
+          git add "${MEMORY_FILE}" content/posts/*.md || true
+          if git diff --cached --quiet; then
+            echo "No article or memory changes to commit"
+            exit 0
+          fi
+          git commit -m "content: Amara Ndlovu Africa entertainment report"
+          git pull --rebase origin "${DEFAULT_BRANCH}" || git pull origin "${DEFAULT_BRANCH}" --no-rebase || true
+          git push origin HEAD:"${DEFAULT_BRANCH}"
