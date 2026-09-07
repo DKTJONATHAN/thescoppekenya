@@ -20,4 +20,5 @@ if __name__ == "__main__":
         "audience": "Kenyan readers who follow public debate",
         "styles": OPINION_STYLES,
         "path_hints": ["blogs-opinion", "opinion", "article", "/20"],
+        "opinion_mode": True,
     })
