@@ -1,7 +1,7 @@
 name: Zed Mogaka - George Diano Stories
 
 on:
-  # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 15:11 EAT
+  # Timing owned by writer-dispatcher.yml (Africa/Nairobi)
   workflow_dispatch: {}
 
 concurrency:
@@ -34,10 +34,17 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install Python packages
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-chromium
+
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-genai beautifulsoup4 lxml python-dateutil Pillow
+          pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil Pillow
+          playwright install chromium --with-deps
 
       - name: Scrape Diano and publish
         env:
