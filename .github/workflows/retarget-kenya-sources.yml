@@ -26,9 +26,14 @@ jobs:
 
           root = Path(".github/workflows")
           # Keep Ghafla + Mpasho as first-class Kenyan entertainment sources.
-          # Only retarget true international leftovers.
+          PROTECTED = {
+              "za-ghafla.yml",
+              "za-mpasho.yml",
+              "za ghafla.yml",
+              "za mpasho.yml",
+              "retarget-kenya-sources.yml",
+          }
           replacements = [
-              # Mutheu Ann: drop EW.com international entertainment
               ("https://ew.com/", "https://www.pulselive.co.ke/articles/entertainment"),
               ("https://ew.com", "https://www.pulselive.co.ke/articles/entertainment"),
               ("'ew.com'", "'pulselive.co.ke'"),
@@ -36,11 +41,9 @@ jobs:
               ("SOURCE_DOMAIN  = 'ew.com'", "SOURCE_DOMAIN  = 'pulselive.co.ke'"),
               ("Entertainment Weekly", "Pulse Live"),
               ("EW.com", "Pulse Live"),
-              # Sports: BBC world football -> Nation Kenya sports
               ("https://www.bbc.com/sport/football", "https://nation.africa/kenya/sports"),
               ("SOURCE_DOMAIN  = 'bbc.com'", "SOURCE_DOMAIN  = 'nation.africa'"),
               ("BBC Sport", "Nation Sport"),
-              # Football365 British gossip -> Kenya sports
               ("https://www.football365.com/all-the-news", "https://nation.africa/kenya/sports"),
               ("https://www.football365.com", "https://nation.africa"),
               ("Football365", "Nation Sport"),
@@ -50,7 +53,7 @@ jobs:
 
           changed = []
           for path in sorted(root.glob("*.yml")):
-              if path.name in ("za ghafla.yml", "za mpasho.yml"):
+              if path.name in PROTECTED:
                   print(f"skip protected {path}")
                   continue
               text = path.read_text(encoding="utf-8", errors="replace")
