@@ -1,7 +1,8 @@
 name: Celestine Nzioka - News Scraper
 
 on:
-  # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — hourly 24/7 EAT
+  workflow_call:
+  # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — hourly 06:00–23:00 EAT
   workflow_dispatch: {}
 
 concurrency:
