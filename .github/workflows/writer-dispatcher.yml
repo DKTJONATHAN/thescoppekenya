@@ -92,7 +92,6 @@ jobs:
             done
 
             # Daily single slots (EAT)
-            # Use parallel arrays (portable; avoid sparse assoc-array key issues)
             DAILY_WF=(
               "za africa.yml"
               "za agriculture.yml"
@@ -162,10 +161,14 @@ jobs:
         if: steps.plan.outputs.count != '0'
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
           DRY: ${{ inputs.dry_run }}
           LIST: ${{ steps.plan.outputs.list }}
         run: |
           set -euo pipefail
+
+          # gh needs an explicit repo — this job does not checkout the workspace,
+          # so without --repo it fails with: fatal: not a git repository
           echo "$LIST" > /tmp/due_workflows.txt
           while IFS= read -r wf; do
             [ -z "$wf" ] && continue
@@ -174,10 +177,12 @@ jobs:
               continue
             fi
             echo "Dispatching: $wf"
-            if gh workflow run "$wf" --ref main; then
+            if gh workflow run "$wf" --repo "$GH_REPO" --ref main; then
               echo "  OK: $wf"
             else
-              echo "  FAILED: $wf (check workflow_dispatch is enabled and name matches)"
+              echo "  FAILED: $wf (check workflow_dispatch is enabled and filename matches Actions)"
+              # list matching workflows to help debug name/path issues
+              gh workflow list --repo "$GH_REPO" | head -40 || true
             fi
             sleep 2
           done < /tmp/due_workflows.txt
