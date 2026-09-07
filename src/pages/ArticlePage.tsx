@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { getPostBySlug, getLatestPosts, type Post } from "@/lib/markdown";
-import { Clock, Calendar, Share2, Facebook, ArrowUp, Eye, MessageCircle } from "lucide-react";
+import { Clock, Calendar, Share2, Facebook, ArrowUp, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState, useMemo, useCallback, useRef } from "react";
