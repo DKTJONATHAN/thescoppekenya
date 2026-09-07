@@ -226,79 +226,66 @@ jobs:
     if: needs.plan.outputs.news == '1'
     uses: ./.github/workflows/za-news.yml
     secrets: inherit
-    continue-on-error: true
   ghafla:
     needs: plan
     if: needs.plan.outputs.ghafla == '1'
     uses: ./.github/workflows/za-ghafla.yml
     secrets: inherit
-    continue-on-error: true
   mpasho:
     needs: plan
     if: needs.plan.outputs.mpasho == '1'
     uses: ./.github/workflows/za-mpasho.yml
     secrets: inherit
-    continue-on-error: true
   entertainment:
     needs: plan
     if: needs.plan.outputs.entertainment == '1'
     uses: ./.github/workflows/za-entertainment.yml
     secrets: inherit
-    continue-on-error: true
   africa:
     needs: plan
     if: needs.plan.outputs.africa == '1'
     uses: ./.github/workflows/za-africa.yml
     secrets: inherit
-    continue-on-error: true
   agriculture:
     needs: plan
     if: needs.plan.outputs.agriculture == '1'
     uses: ./.github/workflows/za-agriculture.yml
     secrets: inherit
-    continue-on-error: true
   business:
     needs: plan
     if: needs.plan.outputs.business == '1'
     uses: ./.github/workflows/za-business.yml
     secrets: inherit
-    continue-on-error: true
   lifestyle:
     needs: plan
     if: needs.plan.outputs.lifestyle == '1'
     uses: ./.github/workflows/za-lifestyle.yml
     secrets: inherit
-    continue-on-error: true
   opinions:
     needs: plan
     if: needs.plan.outputs.opinions == '1'
     uses: ./.github/workflows/za-opinions.yml
     secrets: inherit
-    continue-on-error: true
   sports:
     needs: plan
     if: needs.plan.outputs.sports == '1'
     uses: ./.github/workflows/za-sports.yml
     secrets: inherit
-    continue-on-error: true
   technology:
     needs: plan
     if: needs.plan.outputs.technology == '1'
     uses: ./.github/workflows/za-technology.yml
     secrets: inherit
-    continue-on-error: true
   diano:
     needs: plan
     if: needs.plan.outputs.diano == '1'
     uses: ./.github/workflows/za-diano.yml
     secrets: inherit
-    continue-on-error: true
   jaj:
     needs: plan
     if: needs.plan.outputs.jaj == '1'
     uses: ./.github/workflows/za-jaj.yml
     secrets: inherit
-    continue-on-error: true
 
   record:
     needs:
