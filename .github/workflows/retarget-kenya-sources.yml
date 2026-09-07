@@ -25,6 +25,8 @@ jobs:
           from pathlib import Path
 
           root = Path(".github/workflows")
+          # Keep Ghafla + Mpasho as first-class Kenyan entertainment sources.
+          # Only retarget true international leftovers.
           replacements = [
               # Mutheu Ann: drop EW.com international entertainment
               ("https://ew.com/", "https://www.pulselive.co.ke/articles/entertainment"),
@@ -34,14 +36,6 @@ jobs:
               ("SOURCE_DOMAIN  = 'ew.com'", "SOURCE_DOMAIN  = 'pulselive.co.ke'"),
               ("Entertainment Weekly", "Pulse Live"),
               ("EW.com", "Pulse Live"),
-              # Martin Kihara: drop Mpasho
-              ("https://www.mpasho.co.ke/", "https://www.standardmedia.co.ke/entertainment"),
-              ("https://www.mpasho.co.ke", "https://www.standardmedia.co.ke/entertainment"),
-              ("'mpasho.co.ke'", "'standardmedia.co.ke'"),
-              ('"mpasho.co.ke"', '"standardmedia.co.ke"'),
-              ("SOURCE_DOMAIN  = 'mpasho.co.ke'", "SOURCE_DOMAIN  = 'standardmedia.co.ke'"),
-              ("Mpasho Kenya", "The Standard"),
-              ("Mpasho", "The Standard"),
               # Sports: BBC world football -> Nation Kenya sports
               ("https://www.bbc.com/sport/football", "https://nation.africa/kenya/sports"),
               ("SOURCE_DOMAIN  = 'bbc.com'", "SOURCE_DOMAIN  = 'nation.africa'"),
@@ -56,6 +50,9 @@ jobs:
 
           changed = []
           for path in sorted(root.glob("*.yml")):
+              if path.name in ("za ghafla.yml", "za mpasho.yml"):
+                  print(f"skip protected {path}")
+                  continue
               text = path.read_text(encoding="utf-8", errors="replace")
               orig = text
               for a, b in replacements:
@@ -70,6 +67,6 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_author: "Za Ndani <bot@zandani.co.ke>"
-          commit_message: "content: retarget Mutheu, Martin, sports and Football365 to Kenya/EA/Africa sources"
+          commit_message: "content: retarget international leftovers only; keep Ghafla + Mpasho"
           branch: main
           file_pattern: ".github/workflows/*.yml"
