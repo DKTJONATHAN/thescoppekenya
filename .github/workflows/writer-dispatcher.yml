@@ -1,19 +1,27 @@
 name: Writer Dispatcher (Kenya time)
 
 # Single source of truth for content-writer schedules in Africa/Nairobi.
-# Runs every 15 minutes (UTC), converts to EAT, and workflow_dispatch-es
+# Runs every 10 minutes (UTC), converts to EAT, and workflow_dispatch-es
 # each writer that is due. Writers keep workflow_dispatch only (no schedule).
+#
+# za-news.yml  → every hour, 24 hours (EAT)
+# entertainment desks → 4× daytime EAT
+# daily desks → staggered morning–afternoon EAT
 
 on:
   schedule:
-    # Every 15 minutes — fine enough for :00/:15/:30/:45 and near-miss slots
-    - cron: '0,15,30,45 * * * *'
+    # Every 10 minutes — absorbs GitHub cron delay better than :15-only
+    - cron: '0,10,20,30,40,50 * * * *'
   workflow_dispatch:
     inputs:
       force_workflow:
-        description: "Optional: force one workflow file (e.g. za-news.yml). Leave empty for normal schedule match."
+        description: "Force one workflow file (e.g. za-news.yml). Empty = normal schedule."
         required: false
         default: ""
+      force_all:
+        description: "If true, dispatch ALL content writers once (ignore schedule)"
+        required: false
+        default: "false"
       dry_run:
         description: "If true, only print what would fire (no triggers)"
         required: false
@@ -38,18 +46,18 @@ jobs:
         id: plan
         env:
           FORCE: ${{ inputs.force_workflow }}
+          FORCE_ALL: ${{ inputs.force_all }}
           DRY: ${{ inputs.dry_run }}
         run: |
           set -euo pipefail
 
-          # Kenya time (Africa/Nairobi, UTC+3, no DST)
           EAT_H=$(TZ=Africa/Nairobi date +%H)
           EAT_M=$(TZ=Africa/Nairobi date +%M)
           EAT_DOW=$(TZ=Africa/Nairobi date +%u)   # 1=Mon … 7=Sun
           EAT_NOW=$(TZ=Africa/Nairobi date '+%Y-%m-%d %H:%M %Z')
           echo "Now EAT: $EAT_NOW (dow=$EAT_DOW)"
 
-          # Window: match if target minute is within ±7 of current minute
+          # Match if current time is within ±12 minutes of target (handles GH cron lag)
           within() {
             local target_h=$1 target_m=$2
             local cur_h=$((10#$EAT_H)) cur_m=$((10#$EAT_M))
@@ -57,73 +65,94 @@ jobs:
             local c=$((cur_h * 60 + cur_m))
             local d=$(( t > c ? t - c : c - t ))
             local d2=$(( 1440 - d ))
-            [ "$d" -le 7 ] || [ "$d2" -le 7 ]
+            [ "$d" -le 12 ] || [ "$d2" -le 12 ]
           }
 
           TO_FIRE=()
 
-          if [ -n "${FORCE:-}" ]; then
+          ALL_WRITERS=(
+            "za-news.yml"
+            "za-ghafla.yml"
+            "za-mpasho.yml"
+            "za Entertainment.yml"
+            "za africa.yml"
+            "za agriculture.yml"
+            "za business.yml"
+            "za lifestyle.yml"
+            "za opinions.yml"
+            "za sports.yml"
+            "za technology.yml"
+            "za diano.yml"
+            "za jaj.yml"
+          )
+
+          if [ "${FORCE_ALL:-false}" = "true" ]; then
+            TO_FIRE=("${ALL_WRITERS[@]}")
+            echo "Force-all mode: ${#TO_FIRE[@]} writers"
+          elif [ -n "${FORCE:-}" ]; then
             TO_FIRE+=("$FORCE")
             echo "Force mode: $FORCE"
           else
-            # Celestine news: every hour 06:00–23:00 EAT (fires on :00 tick)
             H=$((10#$EAT_H))
             M=$((10#$EAT_M))
-            if [ "$H" -ge 6 ] && [ "$H" -le 23 ] && [ "$M" -le 7 ]; then
+
+            # ── Celestine news: EVERY hour, 24/7 ──
+            # Fire in the first 14 minutes of each hour (covers :00 and delayed :10)
+            if [ "$M" -le 14 ]; then
               TO_FIRE+=("za-news.yml")
+              echo "News due (hourly 24/7) hour=$H"
             fi
 
-            # Ghafla 4× 07:00 11:00 15:00 19:00
+            # ── Ghafla 4× EAT: 07:00 11:00 15:00 19:00 ──
             for hm in "7:0" "11:0" "15:0" "19:0"; do
               IFS=: read -r th tm <<<"$hm"
               if within "$th" "$tm"; then TO_FIRE+=("za-ghafla.yml"); break; fi
             done
 
-            # Mpasho 4× 07:45 11:45 15:45 19:45
-            for hm in "7:45" "11:45" "15:45" "19:45"; do
+            # ── Mpasho 4× EAT: 07:30 11:30 15:30 19:30 ──
+            for hm in "7:30" "11:30" "15:30" "19:30"; do
               IFS=: read -r th tm <<<"$hm"
               if within "$th" "$tm"; then TO_FIRE+=("za-mpasho.yml"); break; fi
             done
 
-            # Mutheu Entertainment 4× 08:30 12:30 16:30 20:30
-            for hm in "8:30" "12:30" "16:30" "20:30"; do
+            # ── Mutheu Entertainment 4× EAT: 08:00 12:00 16:00 20:00 ──
+            for hm in "8:0" "12:0" "16:0" "20:0"; do
               IFS=: read -r th tm <<<"$hm"
               if within "$th" "$tm"; then TO_FIRE+=("za Entertainment.yml"); break; fi
             done
 
-            # Daily single slots (EAT)
-            DAILY_WF=(
-              "za africa.yml"
-              "za agriculture.yml"
-              "za business.yml"
-              "za lifestyle.yml"
-              "za opinions.yml"
-              "za sports.yml"
-              "za technology.yml"
-              "za diano.yml"
+            # ── Daily desks (staggered EAT) ──
+            # Twice daily where sensible so the site stays active
+            # Format: workflow|h:m|h:m (second slot optional via extra rows)
+            DAILY_ROWS=(
+              "za africa.yml|6:15|18:15"
+              "za agriculture.yml|7:15|17:15"
+              "za business.yml|8:15|16:15"
+              "za lifestyle.yml|9:15|15:15"
+              "za opinions.yml|10:15|14:15"
+              "za sports.yml|11:15|19:15"
+              "za technology.yml|12:15|18:45"
+              "za diano.yml|13:15|20:15"
             )
-            DAILY_HM=(
-              "6:8"
-              "7:9"
-              "8:10"
-              "10:14"
-              "12:17"
-              "13:19"
-              "14:20"
-              "15:11"
-            )
-            for i in "${!DAILY_WF[@]}"; do
-              IFS=: read -r th tm <<<"${DAILY_HM[$i]}"
-              if within "$th" "$tm"; then TO_FIRE+=("${DAILY_WF[$i]}"); fi
+            for row in "${DAILY_ROWS[@]}"; do
+              IFS='|' read -r wf hm1 hm2 <<<"$row"
+              IFS=: read -r th tm <<<"$hm1"
+              if within "$th" "$tm"; then TO_FIRE+=("$wf"); continue; fi
+              if [ -n "${hm2:-}" ]; then
+                IFS=: read -r th tm <<<"$hm2"
+                if within "$th" "$tm"; then TO_FIRE+=("$wf"); fi
+              fi
             done
 
-            # Jaj column: Mon + Thu 11:13 EAT
-            if { [ "$EAT_DOW" = "1" ] || [ "$EAT_DOW" = "4" ]; } && within 11 13; then
-              TO_FIRE+=("za jaj.yml")
+            # ── Jaj column: Mon + Thu 11:20 and 17:20 EAT ──
+            if [ "$EAT_DOW" = "1" ] || [ "$EAT_DOW" = "4" ]; then
+              if within 11 20 || within 17 20; then
+                TO_FIRE+=("za jaj.yml")
+              fi
             fi
           fi
 
-          # Dedupe
+          # Dedupe preserve order
           UNIQUE=()
           seen="|"
           for w in "${TO_FIRE[@]+"${TO_FIRE[@]}"}"; do
@@ -152,7 +181,7 @@ jobs:
             if [ "${#UNIQUE[@]}" -eq 0 ]; then
               echo "No workflows due."
             else
-              echo "Triggering:"
+              echo "Triggering **${#UNIQUE[@]}** workflow(s):"
               for w in "${UNIQUE[@]}"; do echo "- \`$w\`"; done
             fi
           } >> "$GITHUB_STEP_SUMMARY"
@@ -167,9 +196,9 @@ jobs:
         run: |
           set -euo pipefail
 
-          # gh needs an explicit repo — this job does not checkout the workspace,
-          # so without --repo it fails with: fatal: not a git repository
           echo "$LIST" > /tmp/due_workflows.txt
+          ok=0
+          fail=0
           while IFS= read -r wf; do
             [ -z "$wf" ] && continue
             if [ "${DRY:-false}" = "true" ]; then
@@ -179,10 +208,13 @@ jobs:
             echo "Dispatching: $wf"
             if gh workflow run "$wf" --repo "$GH_REPO" --ref main; then
               echo "  OK: $wf"
+              ok=$((ok+1))
             else
-              echo "  FAILED: $wf (check workflow_dispatch is enabled and filename matches Actions)"
-              # list matching workflows to help debug name/path issues
-              gh workflow list --repo "$GH_REPO" | head -40 || true
+              echo "  FAILED: $wf"
+              fail=$((fail+1))
+              gh workflow list --repo "$GH_REPO" 2>/dev/null | head -50 || true
             fi
-            sleep 2
+            sleep 3
           done < /tmp/due_workflows.txt
+          echo "Done. ok=$ok fail=$fail"
+          echo "ok=$ok fail=$fail" >> "$GITHUB_STEP_SUMMARY"
