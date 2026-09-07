@@ -2,7 +2,6 @@ import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Search, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { SearchOverlay } from "@/components/SearchOverlay";
 import { getAllPosts } from "@/lib/markdown";
 import { primaryNavLinks } from "@/lib/site-links";
@@ -20,10 +19,10 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-divider">
-        <div className="bg-foreground text-background py-1.5 overflow-hidden">
+        <div className="bg-zinc-950 text-zinc-100 py-1.5 overflow-hidden border-b border-divider">
           <div className="container flex items-center justify-between text-xs">
             <div className="flex items-center gap-3 overflow-hidden flex-1">
-              <span className="flex items-center gap-1 shrink-0 z-10 bg-foreground pr-2">
+              <span className="flex items-center gap-1 shrink-0 z-10 bg-zinc-950 pr-2">
                 <Flame className="w-3 h-3 text-primary" />
                 <span className="font-bold text-primary uppercase tracking-wider">Trending:</span>
               </span>
@@ -32,7 +31,7 @@ export function Header() {
                   {[...trendingPosts, ...trendingPosts].map((post, i) => (
                     <span key={`${post.slug}-${i}`} className="flex items-center gap-2 shrink-0">
                       <span className="text-primary/40">•</span>
-                      <Link to={`/article/${post.slug}`} className="hover:text-primary transition-colors whitespace-nowrap font-medium">
+                      <Link to={`/article/${post.slug}`} className="hover:text-primary transition-colors whitespace-nowrap font-medium text-zinc-100">
                         {post.title}
                       </Link>
                     </span>
@@ -40,8 +39,8 @@ export function Header() {
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex items-center gap-4 shrink-0 pl-4 bg-foreground z-10">
-              <span className="text-background/70">{new Date().toLocaleDateString('en-KE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
+            <div className="hidden md:flex items-center gap-4 shrink-0 pl-4 bg-zinc-950 z-10">
+              <span className="text-zinc-400">{new Date().toLocaleDateString('en-KE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
             </div>
           </div>
         </div>
@@ -92,17 +91,16 @@ export function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search..."
-                  className="bg-transparent outline-none text-sm w-36"
+                  className="bg-transparent outline-none text-sm w-36 text-foreground placeholder:text-muted-foreground"
                 />
               </form>
-              <ThemeToggle />
-              <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="touch-target hover:bg-primary/10 hover:text-primary" aria-label="Search">
+              <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="touch-target hover:bg-primary/10 hover:text-primary text-foreground" aria-label="Search">
                 <Search className="w-5 h-5" />
               </Button>
               <Button
                 variant="ghost"
                 size="icon"
-                className="lg:hidden touch-target hover:bg-primary/10 hover:text-primary"
+                className="lg:hidden touch-target hover:bg-primary/10 hover:text-primary text-foreground"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label="Toggle menu"
                 aria-expanded={isMenuOpen}
