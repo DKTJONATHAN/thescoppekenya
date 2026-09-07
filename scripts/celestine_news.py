@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Celestine Nzioka — straight hard-news reporter for Za Ndani. No commentary."""
+"""Celestine Nzioka — Kenya news reporter for Za Ndani. Report, then take."""
 import os, sys, json, re, time, random, hashlib, itertools, datetime, urllib.parse
 from dateutil import parser as date_parser
 from bs4 import BeautifulSoup
@@ -8,11 +8,11 @@ from google import genai
 from google.genai import types
 
 try:
-    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped, is_spam as vg_is_spam
 except ImportError:
     import sys, os
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped
+    from voice_guard import news_prompt, should_skip_story, strip_banned, inject_know_if_missing, seo_fields, polish_body, model_skipped, is_spam as vg_is_spam
 
 
 AUTHOR_NAME = "Celestine Nzioka"
@@ -46,11 +46,17 @@ BANNED_PHRASES = [
 
 STYLE_PRESETS = [
     {"name": "Hard News Lead", "lead_style": "Who did what, where, when.",
-     "tone": "Neutral wire-service. No opinion.", "structure": "Lead, facts by importance, quotes, status"},
+     "tone": "Reported fact, then a pointed close.", "structure": "Lead, facts, quotes, commentary",
+     "commentary_heading": "Why it matters"},
     {"name": "Event Report", "lead_style": "Open with the event and principal actor.",
-     "tone": "Factual, clipped.", "structure": "Lead, sequence, confirmation, numbers"},
+     "tone": "Factual, then street-level reading.", "structure": "Lead, sequence, numbers, commentary",
+     "commentary_heading": "The Nairobi read"},
     {"name": "Statement Report", "lead_style": "Official action or statement first.",
-     "tone": "Neutral, attribution-heavy.", "structure": "Lead, quote/order, background, response"},
+     "tone": "Attribution first, then who benefits.", "structure": "Lead, quote, background, commentary",
+     "commentary_heading": "What it costs you"},
+    {"name": "Desk Take", "lead_style": "Consequence first, then the actor.",
+     "tone": "Curious, specific.", "structure": "Lead, evidence, names, commentary",
+     "commentary_heading": "The take"},
 ]
 
 STOPWORDS = {
@@ -189,9 +195,7 @@ def is_spam(text):
     ]
     if any(m in low for m in markers):
         return True
-    if re.search(r"##\s*analysis\b", text, re.I):
-        return True
-    if len(re.findall(r"\w+", text)) < 300:
+    if len(re.findall(r"\w+", text)) < 180:
         return True
     return False
 
@@ -292,7 +296,7 @@ def main():
         if not text or len(text) < 500:
             continue
         article = stage_write(ttl or "", text, style)
-        if not article or is_spam(article):
+        if not article or vg_is_spam(article) or is_spam(article):
             print("Rejected spam or empty")
             continue
         title = ttl or "Kenya news update"

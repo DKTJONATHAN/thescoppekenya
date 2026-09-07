@@ -1,8 +1,9 @@
-name: Showbiz | Martin Kihara - mpasho.co.ke
+name: Martin Kihara — Mpasho
 
+# Called by writer-dispatcher.yml on the Nairobi clock.
+# Manual "Run workflow" still works. Do not add cron here.
 on:
   workflow_call:
-  # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 07:45, 11:45, 15:45, 19:45 EAT
   workflow_dispatch: {}
 
 concurrency:
@@ -33,7 +34,7 @@ jobs:
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Cache Playwright browsers
         uses: actions/cache@v4
@@ -47,7 +48,7 @@ jobs:
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium --with-deps
 
-      - name: Run Martin Kihara Mpasho pipeline
+      - name: Run Martin Mpasho pipeline
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -60,14 +61,12 @@ jobs:
           if [ -f scripts/martin_mpasho.py ]; then
             python scripts/martin_mpasho.py
           else
-            echo "scripts/martin_mpasho.py missing - skipping generation this run"
+            echo "scripts/martin_mpasho.py missing"
             exit 1
           fi
 
-
-      - name: Kenya-first polish gate
-        run: |
-          python scripts/finish_desk.py
+      - name: Voice, SEO and Kenya-first gate
+        run: python scripts/finish_desk.py
 
       - name: Commit history and new posts
         run: |
@@ -78,6 +77,6 @@ jobs:
             echo "No article or memory changes to commit"
             exit 0
           fi
-          git commit -m "content: Martin Kihara Mpasho showbiz report"
+          git commit -m "content: Martin Kihara Mpasho"
           git pull --rebase origin "${DEFAULT_BRANCH}" || git pull origin "${DEFAULT_BRANCH}" --no-rebase || true
           git push origin HEAD:"${DEFAULT_BRANCH}"

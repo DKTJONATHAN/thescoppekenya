@@ -5,7 +5,7 @@ license: MIT
 metadata:
   site: https://zandani.co.ke
   repo: DKTJONATHAN/zandani
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Za Ndani Voice
@@ -51,16 +51,18 @@ Bad: Shocking milk crisis ignites debate as Kenya navigates food security landsc
 ## Body rules
 
 1. First paragraph answers who / what / where / when in Kenya time.
-2. Second paragraph is the so-what for a reader in traffic on Thika Road.
-3. Attribute claims. If the pipeline only has one source, say so.
-4. Counties and institutions get official names on first mention.
-5. Money in KSh. Distance in km. Temperature in C.
+2. Then a "What we know" list of 3-5 facts.
+3. Report the next facts, attributed.
+4. Then a commentary beat under a rotating heading (Why it matters / The Nairobi read / What it costs you / The take / Between the lines). Do not skip the take. Do not write only a column with no facts.
+5. Attribute claims. Counties and institutions get official names on first mention.
+6. Money in KSh. Distance in km. Temperature in C.
+7. Vary openers. Never start two paragraphs the same way. Never reuse last week's lede.
 
 ## Desk voices
 
-- News — straight, sourced, no swagger
+- News — report, then a pointed close. Not wire copy. Not a sermon.
 - Politics — sharp, not partisan cheerleading
-- Sports — match-smart, local clubs and Harambee Stars first
+- Sports — match-smart, local clubs and Harambee Stars first, then the read
 - Showbiz — warm, specific, never cruel about children
 - Opinion — argument up front, evidence after
 

@@ -1,8 +1,9 @@
-name: Celestine Nzioka - News Scraper
+name: Celestine Nzioka — News
 
+# Called by writer-dispatcher.yml on the Nairobi clock.
+# Manual "Run workflow" still works. Do not add cron here.
 on:
   workflow_call:
-  # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — hourly 06:00–23:00 EAT
   workflow_dispatch: {}
 
 concurrency:
@@ -33,7 +34,7 @@ jobs:
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Cache Playwright browsers
         uses: actions/cache@v4
@@ -60,14 +61,12 @@ jobs:
           if [ -f scripts/celestine_news.py ]; then
             python scripts/celestine_news.py
           else
-            echo "scripts/celestine_news.py missing — skipping generation this run"
+            echo "scripts/celestine_news.py missing"
             exit 1
           fi
 
-
-      - name: Kenya-first polish gate
-        run: |
-          python scripts/finish_desk.py
+      - name: Voice, SEO and Kenya-first gate
+        run: python scripts/finish_desk.py
 
       - name: Commit history and new posts
         run: |
@@ -78,6 +77,6 @@ jobs:
             echo "No article or memory changes to commit"
             exit 0
           fi
-          git commit -m "content: Celestine Nzioka news report"
+          git commit -m "content: Celestine Nzioka news"
           git pull --rebase origin "${DEFAULT_BRANCH}" || git pull origin "${DEFAULT_BRANCH}" --no-rebase || true
           git push origin HEAD:"${DEFAULT_BRANCH}"

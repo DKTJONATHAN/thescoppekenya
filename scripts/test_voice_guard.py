@@ -6,7 +6,7 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from voice_guard import kenya_score, model_skipped, should_skip_story, strip_banned
+from voice_guard import kenya_score, model_skipped, should_skip_story, strip_banned, is_spam, news_prompt
 
 
 def check(cond, msg):
@@ -63,6 +63,37 @@ def main() -> int:
     fails += check(not model_skipped("# Westlands crash kills two"), "real article is not SKIP")
     cleaned = strip_banned("This ignited a nuanced conversation about Nairobi.")
     fails += check("ignited a nuanced conversation" not in cleaned.lower(), "strip banned phrase")
+
+    body = (
+        "# KURA shuts Westlands Exit overnight\n\n"
+        "Kenya Urban Roads Authority closed Westlands Exit after a tanker spill on Sunday night.\n\n"
+        "### What we know\n\n"
+        "- Closure began at 11pm EAT.\n"
+        "- Diversion via Waiyaki Way and Riverside Drive.\n"
+        "- Two lanes are due to reopen Monday morning.\n\n"
+        "Traffic backed up past Chiromo. Matatus used the old Waiyaki service lane.\n\n"
+        "Police said the tanker driver was unhurt. KURA crews were still on site at midnight.\n\n"
+        "County officers in Westlands asked office blocks to stagger reporting time.\n\n"
+        "### Why it matters\n\n"
+        "This is the third night closure on that interchange in a month. Parklands office workers already lose forty minutes. "
+        "If KURA keeps treating the exit as a weekend workshop, morning fares will climb before month end. "
+        "The story is not the spill. It is a road that cannot take a repair without stalling half of Nairobi. "
+        "Commuters from Kangemi already budget an extra hour. School vans from Parklands leave at dawn to beat the jam. "
+        "Traders at Westlands roundabout lose the breakfast rush when the exit is dark. "
+        "KURA has not published a repair calendar. Drivers find out from WhatsApp groups at 10pm. "
+        "A city that cannot say when a junction will open is a city that treats time as cheap. "
+        "Westlands is not a side road. It is how half of Nairobi goes to work."
+    )
+    fails += check(not is_spam(body), "commentary piece is not spam")
+    prompt = news_prompt(
+        "Celestine Nzioka",
+        "Monday, September 07, 2026",
+        {"name": "Desk Take", "lead_style": "x", "tone": "y", "structure": "z", "commentary_heading": "The take"},
+        "Westlands Exit shut",
+        "source",
+    )
+    fails += check("Report, then comment" in prompt, "prompt mixes reporting and commentary")
+    fails += check("NO commentary essays" not in prompt, "prompt no longer bans commentary")
     if fails:
         print(f"{fails} check(s) failed")
         return 1

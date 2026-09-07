@@ -1,37 +1,35 @@
-name: Writer Dispatcher (Kenya time)
+name: Writer Dispatcher
 
-# Single source of truth for content-writer schedules in Africa/Nairobi.
+# Nairobi newsroom clock. This is the ONLY workflow with a content cron.
 #
-# Why the old dispatcher only worked on "Run workflow":
-# 1. GitHub delays/drops crons at :00/:15/:30/:45 (high load). The old
-#    ±12 minute window + "news only if minute <= 14" missed delayed ticks,
-#    so scheduled runs completed with "No writers due".
-# 2. Child workflows are workflow_dispatch-only. gh workflow run with
-#    unencoded spaces in filenames ("za Entertainment.yml") fails on cron
-#    more often than on a human-typed manual force.
-# 3. schedule events do not populate `inputs.*` the same way as
-#    workflow_dispatch; treating a literal "null" as a force filename
-#    dispatched a bogus workflow.
+# Why the old dispatcher only ran when someone pressed "Run workflow":
+# 1. GitHub delays or drops crons at :00/:15/:30/:45. A tight ±12 minute
+#    window then finished with "No writers due".
+# 2. Children were fired with REST workflow_dispatch. GITHUB_TOKEN cannot
+#    start those runs; filenames with spaces ("za Entertainment.yml") 404.
+# 3. A new schedule can take up to an hour to register, and GitHub
+#    disables inactive public-repo schedules until they are re-enabled.
 #
-# Fix: catch-up window (44 min) + slot ledger + odd-minute cron + REST
-# dispatch with URL-encoded workflow file IDs + reusable workflow_call.
+# Fix: reusable workflow_call (no extra token, no filename encoding),
+# 59-minute catch-up, slot ledger, cron split onto four odd minutes,
+# disable+enable after each push so GitHub re-registers the timers.
 
 on:
   schedule:
-    # 03:08–20:53 UTC = 06:08–23:53 EAT. Offset from :00/:15/:30/:45.
-    - cron: "8,23,38,53 3-20 * * *"
+    # UTC 03:07–20:52 = EAT 06:07–23:52. Four entries so GitHub registers
+    # each tick separately and we stay off the :00/:15/:30/:45 crush.
+    - cron: "7 3-20 * * *"
+    - cron: "22 3-20 * * *"
+    - cron: "37 3-20 * * *"
+    - cron: "52 3-20 * * *"
   workflow_dispatch:
     inputs:
-      force_workflow:
-        description: "Force one workflow file (e.g. za-news.yml). Empty = normal schedule."
+      force_desk:
+        description: "Force one desk: news, ghafla, mpasho, entertainment, africa, agriculture, business, lifestyle, opinions, sports, technology, diano, jaj. Empty = Nairobi clock."
         required: false
         default: ""
       force_all:
-        description: "If true, dispatch ALL content writers once (ignore schedule)"
-        required: false
-        default: "false"
-      dry_run:
-        description: "If true, only print what would fire (no triggers)"
+        description: "Run every desk once"
         required: false
         default: "false"
 
@@ -40,8 +38,8 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  actions: write
   contents: write
+  actions: read
 
 env:
   TZ: Africa/Nairobi
@@ -49,251 +47,255 @@ env:
   LEDGER: .github/dispatcher_slots.txt
 
 jobs:
-  dispatch:
+  plan:
     runs-on: ubuntu-22.04
+    outputs:
+      news: ${{ steps.p.outputs.news }}
+      ghafla: ${{ steps.p.outputs.ghafla }}
+      mpasho: ${{ steps.p.outputs.mpasho }}
+      entertainment: ${{ steps.p.outputs.entertainment }}
+      africa: ${{ steps.p.outputs.africa }}
+      agriculture: ${{ steps.p.outputs.agriculture }}
+      business: ${{ steps.p.outputs.business }}
+      lifestyle: ${{ steps.p.outputs.lifestyle }}
+      opinions: ${{ steps.p.outputs.opinions }}
+      sports: ${{ steps.p.outputs.sports }}
+      technology: ${{ steps.p.outputs.technology }}
+      diano: ${{ steps.p.outputs.diano }}
+      jaj: ${{ steps.p.outputs.jaj }}
+      count: ${{ steps.p.outputs.count }}
     steps:
-      - name: Checkout (ledger)
+      - name: Checkout ledger
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
           ref: ${{ env.DEFAULT_BRANCH }}
-          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-          persist-credentials: true
 
-      - name: Decide which writers to fire (EAT catch-up)
-        id: plan
+      - name: Decide desks (Africa/Nairobi)
+        id: p
         env:
-          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force_workflow || '' }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force_desk || '' }}
           FORCE_ALL: ${{ github.event_name == 'workflow_dispatch' && inputs.force_all || 'false' }}
-          DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
         run: |
           set -euo pipefail
-
           EAT_H=$(TZ=Africa/Nairobi date +%H)
           EAT_M=$(TZ=Africa/Nairobi date +%M)
           EAT_DOW=$(TZ=Africa/Nairobi date +%u)
           EAT_DAY=$(TZ=Africa/Nairobi date +%F)
           EAT_NOW=$(TZ=Africa/Nairobi date '+%Y-%m-%d %H:%M %Z')
-          echo "Now EAT: $EAT_NOW (dow=$EAT_DOW)"
+          echo "Now EAT: $EAT_NOW (dow=$EAT_DOW event=${GITHUB_EVENT_NAME})"
 
           H=$((10#$EAT_H))
           M=$((10#$EAT_M))
           NOW_MIN=$((H * 60 + M))
-          LOOKBACK=44
+          LOOKBACK=59
 
           mkdir -p "$(dirname "$LEDGER")"
           [ -f "$LEDGER" ] || touch "$LEDGER"
 
           due() {
-            local target_h=$1 target_m=$2
-            local t=$((10#$target_h * 60 + 10#$target_m))
+            local t=$((10#$1 * 60 + 10#$2))
             local d=$((NOW_MIN - t))
             if [ "$d" -lt 0 ]; then d=$((d + 1440)); fi
             [ "$d" -ge 0 ] && [ "$d" -le "$LOOKBACK" ]
           }
 
-          slot_id() {
-            echo "${EAT_DAY}T$(printf '%02d:%02d' "$1" "$2"):$3"
+          slot_id() { printf '%sT%02d:%02d:%s\n' "$EAT_DAY" "$1" "$2" "$3"; }
+          already() { grep -qxF "$1" "$LEDGER" 2>/dev/null; }
+
+          DESKS="news ghafla mpasho entertainment africa agriculture business lifestyle opinions sports technology diano jaj"
+          for d in $DESKS; do echo "$d=0" >> "$GITHUB_OUTPUT"; done
+          : > /tmp/new_slots.txt
+          COUNT=0
+
+          fire() {
+            local desk=$1 th=$2 tm=$3
+            local sid
+            sid=$(slot_id "$th" "$tm" "$desk")
+            if already "$sid"; then
+              echo "Already fired $sid"
+              return
+            fi
+            echo "$desk=1" >> "$GITHUB_OUTPUT"
+            echo "$sid" >> /tmp/new_slots.txt
+            COUNT=$((COUNT + 1))
+            echo "Due $desk at ${th}:$(printf '%02d' "$tm")"
           }
 
-          already() {
-            grep -qxF "$1" "$LEDGER" 2>/dev/null
+          fire_named() {
+            echo "$1=1" >> "$GITHUB_OUTPUT"
+            COUNT=$((COUNT + 1))
+            echo "Force $1"
           }
-
-          TO_FIRE=()
-          SLOT_LINES=()
-
-          ALL_WRITERS=(
-            "za-news.yml"
-            "za-ghafla.yml"
-            "za-mpasho.yml"
-            "za-entertainment-hourly.yml"
-            "za africa.yml"
-            "za agriculture.yml"
-            "za business.yml"
-            "za lifestyle.yml"
-            "za opinions.yml"
-            "za sports.yml"
-            "za technology.yml"
-            "za diano.yml"
-            "za jaj.yml"
-          )
-
-          # Prefer hyphenated entertainment file if present; fall back to spaced name.
-          if [ -f ".github/workflows/za Entertainment.yml" ] && [ ! -f ".github/workflows/za-entertainment-hourly.yml" ]; then
-            ALL_WRITERS[3]="za Entertainment.yml"
-          fi
-          if [ -f ".github/workflows/za Entertainment.yml" ]; then
-            # Mutheu lives in "za Entertainment.yml" on this repo
-            ALL_WRITERS[3]="za Entertainment.yml"
-          fi
 
           if [ "${FORCE_ALL:-false}" = "true" ]; then
-            TO_FIRE=("${ALL_WRITERS[@]}")
-            echo "Force-all mode: ${#TO_FIRE[@]} writers"
+            for d in $DESKS; do fire_named "$d"; done
           elif [ -n "${FORCE:-}" ] && [ "${FORCE}" != "null" ]; then
-            TO_FIRE+=("$FORCE")
-            echo "Force mode: $FORCE"
+            desk=$(echo "$FORCE" | tr '[:upper:]' '[:lower:]' | sed 's/\.yml$//; s/^za-//; s/^za //')
+            case "$desk" in
+              news|ghafla|mpasho|entertainment|africa|agriculture|business|lifestyle|opinions|sports|technology|diano|jaj)
+                fire_named "$desk" ;;
+              *) echo "Unknown desk: $FORCE" >&2; exit 1 ;;
+            esac
           else
             if [ "$H" -lt 6 ]; then
-              echo "Before Kenya active window (06:00 EAT). Skipping."
-              echo "count=0" >> "$GITHUB_OUTPUT"
-              echo "list=" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
-
-            # News: every hour 06–23 EAT, slot at HH:00
-            if [ "$H" -ge 6 ] && [ "$H" -le 23 ]; then
-              if due "$H" 0; then
-                sid=$(slot_id "$H" 0 "za-news.yml")
-                if ! already "$sid"; then
-                  TO_FIRE+=("za-news.yml")
-                  SLOT_LINES+=("$sid")
-                  echo "News due hour=$H"
-                fi
+              echo "Before 06:00 EAT. Skipping."
+            else
+              if due "$H" 0; then fire news "$H" 0; fi
+              for hm in "7:0" "11:0" "15:0" "19:0"; do
+                IFS=: read -r th tm <<<"$hm"
+                due "$th" "$tm" && fire ghafla "$th" "$tm"
+              done
+              for hm in "7:30" "11:30" "15:30" "19:30"; do
+                IFS=: read -r th tm <<<"$hm"
+                due "$th" "$tm" && fire mpasho "$th" "$tm"
+              done
+              for hm in "8:0" "12:0" "16:0" "20:0"; do
+                IFS=: read -r th tm <<<"$hm"
+                due "$th" "$tm" && fire entertainment "$th" "$tm"
+              done
+              due 6 15 && fire africa 6 15
+              due 18 15 && fire africa 18 15
+              due 7 15 && fire agriculture 7 15
+              due 17 15 && fire agriculture 17 15
+              due 8 15 && fire business 8 15
+              due 16 15 && fire business 16 15
+              due 9 15 && fire lifestyle 9 15
+              due 15 15 && fire lifestyle 15 15
+              due 10 15 && fire opinions 10 15
+              due 14 15 && fire opinions 14 15
+              due 11 15 && fire sports 11 15
+              due 19 15 && fire sports 19 15
+              due 12 15 && fire technology 12 15
+              due 18 45 && fire technology 18 45
+              due 13 15 && fire diano 13 15
+              due 20 15 && fire diano 20 15
+              if [ "$EAT_DOW" = "1" ] || [ "$EAT_DOW" = "4" ]; then
+                due 11 20 && fire jaj 11 20
+                due 17 20 && fire jaj 17 20
               fi
-            fi
-
-            try_slot() {
-              local wf=$1 th=$2 tm=$3
-              if due "$th" "$tm"; then
-                local sid
-                sid=$(slot_id "$th" "$tm" "$wf")
-                if ! already "$sid"; then
-                  TO_FIRE+=("$wf")
-                  SLOT_LINES+=("$sid")
-                  echo "Due $wf at ${th}:$(printf '%02d' "$tm")"
-                fi
-              fi
-            }
-
-            for hm in "7:0" "11:0" "15:0" "19:0"; do
-              IFS=: read -r th tm <<<"$hm"
-              try_slot "za-ghafla.yml" "$th" "$tm"
-            done
-
-            for hm in "7:30" "11:30" "15:30" "19:30"; do
-              IFS=: read -r th tm <<<"$hm"
-              try_slot "za-mpasho.yml" "$th" "$tm"
-            done
-
-            ENT="${ALL_WRITERS[3]}"
-            for hm in "8:0" "12:0" "16:0" "20:0"; do
-              IFS=: read -r th tm <<<"$hm"
-              try_slot "$ENT" "$th" "$tm"
-            done
-
-            try_slot "za africa.yml" 6 15
-            try_slot "za africa.yml" 18 15
-            try_slot "za agriculture.yml" 7 15
-            try_slot "za agriculture.yml" 17 15
-            try_slot "za business.yml" 8 15
-            try_slot "za business.yml" 16 15
-            try_slot "za lifestyle.yml" 9 15
-            try_slot "za lifestyle.yml" 15 15
-            try_slot "za opinions.yml" 10 15
-            try_slot "za opinions.yml" 14 15
-            try_slot "za sports.yml" 11 15
-            try_slot "za sports.yml" 19 15
-            try_slot "za technology.yml" 12 15
-            try_slot "za technology.yml" 18 45
-            try_slot "za diano.yml" 13 15
-            try_slot "za diano.yml" 20 15
-
-            if [ "$EAT_DOW" = "1" ] || [ "$EAT_DOW" = "4" ]; then
-              try_slot "za jaj.yml" 11 20
-              try_slot "za jaj.yml" 17 20
             fi
           fi
 
-          UNIQUE=()
-          seen="|"
-          for w in "${TO_FIRE[@]+"${TO_FIRE[@]}"}"; do
-            case "$seen" in
-              *"|$w|"*) ;;
-              *) UNIQUE+=("$w"); seen="${seen}${w}|" ;;
-            esac
-          done
-
-          printf '%s\n' "${SLOT_LINES[@]+"${SLOT_LINES[@]}"}" > /tmp/new_slots.txt
-
-          if [ "${#UNIQUE[@]}" -eq 0 ]; then
-            echo "No writers due at this EAT slot."
-            echo "count=0" >> "$GITHUB_OUTPUT"
-            echo "list=" >> "$GITHUB_OUTPUT"
-          else
-            echo "Due: ${UNIQUE[*]}"
-            echo "count=${#UNIQUE[@]}" >> "$GITHUB_OUTPUT"
-            printf '%s\n' "${UNIQUE[@]}" > /tmp/due_workflows.txt
-            echo "list<<EOF" >> "$GITHUB_OUTPUT"
-            cat /tmp/due_workflows.txt >> "$GITHUB_OUTPUT"
-            echo "EOF" >> "$GITHUB_OUTPUT"
-          fi
-
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          cp /tmp/new_slots.txt /tmp/slots_artifact.txt
           {
             echo "## Writer Dispatcher"
             echo "**EAT now:** $EAT_NOW"
             echo "**Event:** ${GITHUB_EVENT_NAME}"
-            if [ "${#UNIQUE[@]}" -eq 0 ]; then
-              echo "No workflows due (catch-up window ${LOOKBACK}m)."
-            else
-              echo "Triggering **${#UNIQUE[@]}** workflow(s):"
-              for w in "${UNIQUE[@]}"; do echo "- \`$w\`"; done
-            fi
+            echo "**Desks due:** $COUNT"
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Trigger due workflows (REST, URL-encoded)
-        if: steps.plan.outputs.count != '0'
-        env:
-          GH_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
-          LIST: ${{ steps.plan.outputs.list }}
-        run: |
-          set -euo pipefail
-          echo "$LIST" > /tmp/due_workflows.txt
-          ok=0
-          fail=0
-          while IFS= read -r wf; do
-            [ -z "$wf" ] && continue
-            if [ "${DRY:-false}" = "true" ]; then
-              echo "DRY RUN — would trigger: $wf"
-              continue
-            fi
-            echo "Dispatching: $wf"
-            ENCODED=$(python3 -c "import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1], safe=''))" "$wf")
-            HTTP=$(curl -sS -o /tmp/dispatch_body.txt -w "%{http_code}" -X POST \
-              -H "Authorization: Bearer ${GH_TOKEN}" \
-              -H "Accept: application/vnd.github+json" \
-              -H "X-GitHub-Api-Version: 2022-11-28" \
-              "https://api.github.com/repos/${GH_REPO}/actions/workflows/${ENCODED}/dispatches" \
-              -d '{"ref":"main"}' || true)
-            echo "  HTTP $HTTP"
-            cat /tmp/dispatch_body.txt || true
-            if [ "$HTTP" = "204" ]; then
-              echo "  OK: $wf"
-              ok=$((ok+1))
-            else
-              echo "  FAILED: $wf"
-              fail=$((fail+1))
-              gh workflow list --repo "$GH_REPO" 2>/dev/null | head -60 || true
-            fi
-            sleep 2
-          done < /tmp/due_workflows.txt
-          echo "Done. ok=$ok fail=$fail"
-          echo "ok=$ok fail=$fail" >> "$GITHUB_STEP_SUMMARY"
-          if [ "$fail" -gt 0 ]; then
-            echo "One or more dispatches failed" >&2
-            exit 1
-          fi
+      - name: Upload slots to record later
+        uses: actions/upload-artifact@v4
+        with:
+          name: new-slots
+          path: /tmp/slots_artifact.txt
+          if-no-files-found: ignore
 
-      - name: Record fired slots
-        if: steps.plan.outputs.count != '0' && (github.event_name != 'workflow_dispatch' || (inputs.dry_run != 'true' && inputs.force_all != 'true' && inputs.force_workflow == ''))
+  news:
+    needs: plan
+    if: needs.plan.outputs.news == '1'
+    uses: ./.github/workflows/za-news.yml
+    secrets: inherit
+  ghafla:
+    needs: plan
+    if: needs.plan.outputs.ghafla == '1'
+    uses: ./.github/workflows/za-ghafla.yml
+    secrets: inherit
+  mpasho:
+    needs: plan
+    if: needs.plan.outputs.mpasho == '1'
+    uses: ./.github/workflows/za-mpasho.yml
+    secrets: inherit
+  entertainment:
+    needs: plan
+    if: needs.plan.outputs.entertainment == '1'
+    uses: ./.github/workflows/za-entertainment.yml
+    secrets: inherit
+  africa:
+    needs: plan
+    if: needs.plan.outputs.africa == '1'
+    uses: ./.github/workflows/za-africa.yml
+    secrets: inherit
+  agriculture:
+    needs: plan
+    if: needs.plan.outputs.agriculture == '1'
+    uses: ./.github/workflows/za-agriculture.yml
+    secrets: inherit
+  business:
+    needs: plan
+    if: needs.plan.outputs.business == '1'
+    uses: ./.github/workflows/za-business.yml
+    secrets: inherit
+  lifestyle:
+    needs: plan
+    if: needs.plan.outputs.lifestyle == '1'
+    uses: ./.github/workflows/za-lifestyle.yml
+    secrets: inherit
+  opinions:
+    needs: plan
+    if: needs.plan.outputs.opinions == '1'
+    uses: ./.github/workflows/za-opinions.yml
+    secrets: inherit
+  sports:
+    needs: plan
+    if: needs.plan.outputs.sports == '1'
+    uses: ./.github/workflows/za-sports.yml
+    secrets: inherit
+  technology:
+    needs: plan
+    if: needs.plan.outputs.technology == '1'
+    uses: ./.github/workflows/za-technology.yml
+    secrets: inherit
+  diano:
+    needs: plan
+    if: needs.plan.outputs.diano == '1'
+    uses: ./.github/workflows/za-diano.yml
+    secrets: inherit
+  jaj:
+    needs: plan
+    if: needs.plan.outputs.jaj == '1'
+    uses: ./.github/workflows/za-jaj.yml
+    secrets: inherit
+
+  record:
+    needs:
+      - plan
+      - news
+      - ghafla
+      - mpasho
+      - entertainment
+      - africa
+      - agriculture
+      - business
+      - lifestyle
+      - opinions
+      - sports
+      - technology
+      - diano
+      - jaj
+    if: always() && needs.plan.result == 'success' && needs.plan.outputs.count != '0'
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: new-slots
+          path: /tmp/slots
+      - name: Append fired slots
         run: |
           set -euo pipefail
-          [ -f /tmp/new_slots.txt ] || exit 0
-          if [ ! -s /tmp/new_slots.txt ]; then exit 0; fi
-          cat /tmp/new_slots.txt >> "$LEDGER"
+          SLOTFILE=$(find /tmp/slots -type f | head -1 || true)
+          [ -n "$SLOTFILE" ] && [ -s "$SLOTFILE" ] || { echo "No slots"; exit 0; }
+          mkdir -p "$(dirname "$LEDGER")"
+          [ -f "$LEDGER" ] || touch "$LEDGER"
+          cat "$SLOTFILE" >> "$LEDGER"
           tail -n 400 "$LEDGER" > /tmp/ledger_trim.txt
           mv /tmp/ledger_trim.txt "$LEDGER"
           git config user.name  "github-actions[bot]"

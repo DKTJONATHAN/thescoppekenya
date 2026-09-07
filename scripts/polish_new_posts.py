@@ -41,7 +41,7 @@ BOILER_HEADINGS = [
     r"faq[s]?",
     r"frequently asked questions",
     r"what is the most important takeaway",
-    r"^analysis$",
+    r"key takeaway",
 ]
 
 SPAM_LEAD_RE = re.compile(

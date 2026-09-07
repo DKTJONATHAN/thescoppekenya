@@ -1,8 +1,9 @@
-name: Elizabeth Muthoni - Technology Scraper
+name: Timothy Muli — Agriculture
 
+# Called by writer-dispatcher.yml on the Nairobi clock.
+# Manual "Run workflow" still works. Do not add cron here.
 on:
   workflow_call:
-  # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 14:20 EAT
   workflow_dispatch: {}
 
 concurrency:
@@ -15,7 +16,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
-  MEMORY_FILE: .github/memory_elizabeth.json
+  MEMORY_FILE: .github/memory_timothy.json
   TZ: Africa/Nairobi
 
 jobs:
@@ -33,7 +34,7 @@ jobs:
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Cache Playwright browsers
         uses: actions/cache@v4
@@ -47,7 +48,7 @@ jobs:
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium --with-deps
 
-      - name: Run Elizabeth Muthoni pipeline
+      - name: Run Timothy Muli pipeline
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -57,17 +58,15 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          if [ -f scripts/elizabeth_technology.py ]; then
-            python scripts/elizabeth_technology.py
+          if [ -f scripts/timothy_agriculture.py ]; then
+            python scripts/timothy_agriculture.py
           else
-            echo "scripts/elizabeth_technology.py missing — skipping this run"
+            echo "scripts/timothy_agriculture.py missing"
             exit 1
           fi
 
-
-      - name: Kenya-first polish gate
-        run: |
-          python scripts/finish_desk.py
+      - name: Voice, SEO and Kenya-first gate
+        run: python scripts/finish_desk.py
 
       - name: Commit history and new posts
         run: |
@@ -78,6 +77,6 @@ jobs:
             echo "No article or memory changes to commit"
             exit 0
           fi
-          git commit -m "content: Elizabeth Muthoni technology report"
+          git commit -m "content: Timothy Muli agriculture"
           git pull --rebase origin "${DEFAULT_BRANCH}" || git pull origin "${DEFAULT_BRANCH}" --no-rebase || true
           git push origin HEAD:"${DEFAULT_BRANCH}"

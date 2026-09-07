@@ -1,8 +1,0 @@
-# DISABLED: replaced by scripts/generate-seo.js which produces sitemap.xml + news-sitemap.xml.
-name: Rebuild Sitemap (disabled)
-on: workflow_dispatch
-jobs:
-  noop:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Disabled. SEO artifacts are generated at build time by scripts/generate-seo.js"

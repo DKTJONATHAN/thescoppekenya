@@ -89,6 +89,12 @@ BANNED_PHRASES = [
     "what this means right now", "how this changes the picture",
     "a poignant", "bittersweetness", "curated public image",
     "ignited a fiery online debate", "sparked a debate across",
+    "in a shocking turn of events", "netizens took to", "kenyans on twitter",
+    "the nation is gripped", "as earlier reported", "at the time of going to press",
+    "this comes amid", "this comes hard on the heels", "without mincing words",
+    "make no mistake", "let that sink in", "needless to say", "at the end of the day",
+    "the rest is history", "time will tell", "one thing is certain",
+    "a storm is brewing", "all hell broke loose", "went viral overnight",
 ]
 
 COUNTIES = [
@@ -185,16 +191,32 @@ def strip_banned(text: str) -> str:
     return out.strip()
 
 
-def is_spam(text: str, min_words: int = 220) -> bool:
+def is_spam(text: str, min_words: int = 180) -> bool:
     if not text:
         return True
     low = text.lower()
-    if any(m in low for m in BANNED_PHRASES):
+    stuffing = [
+        "is the central subject of the update",
+        "central to this update for kenyan readers",
+        "search-ready summary",
+        "key takeaway",
+        "what this means for kenyans",
+    ]
+    if any(m in low for m in stuffing):
         return True
-    if re.search(r"##\s*analysis\b", text, re.I):
+    words = re.findall(r"\w+", text)
+    if len(words) < min_words:
         return True
-    if len(re.findall(r"\w+", text)) < min_words:
+    paras = [re.sub(r"\s+", " ", p.strip().lower()) for p in re.split(r"\n\s*\n", text) if p.strip()]
+    if len(paras) >= 2 and len(set(paras)) < len(paras) * 0.6:
         return True
+    # Same 8-word window repeated
+    grams = [" ".join(words[i:i + 8]).lower() for i in range(0, max(0, len(words) - 7), 4)]
+    if grams:
+        from collections import Counter
+        top = Counter(grams).most_common(1)[0]
+        if top[1] >= 3 and len(top[0]) > 20:
+            return True
     return False
 
 
@@ -213,6 +235,22 @@ def guess_county(blob: str) -> str:
     return "Nairobi"
 
 
+COMMENTARY_HEADINGS = [
+    "Why it matters",
+    "The Nairobi read",
+    "What it costs you",
+    "The take",
+    "Between the lines",
+]
+
+
+def pick_commentary_heading(seed: str) -> str:
+    if not seed:
+        return COMMENTARY_HEADINGS[0]
+    idx = sum(ord(c) for c in seed) % len(COMMENTARY_HEADINGS)
+    return COMMENTARY_HEADINGS[idx]
+
+
 def news_prompt(
     author: str,
     date_eat: str,
@@ -222,17 +260,27 @@ def news_prompt(
     role: str = "correspondent",
     opinion: bool = False,
     desk: str = "News",
+    avoid: str = "",
 ) -> str:
+    heading = style.get("commentary_heading") or pick_commentary_heading(title + date_eat)
     know = (
         "After the lede, add a short 'What we know' list of 3-5 bullets. "
         "Each bullet is one fact with a name, place, time or number. No filler."
     )
     voice = (
-        "VOICE: Nairobi newsroom. Short sentences. Concrete nouns. Names, counties, "
-        "shillings, EAT times. Kenyan English is allowed. Do not fake Sheng. "
-        "Never write like a US morning show or a press release. "
-        "Prefer Westlands Exit, Waiyaki Way, Kasarani over 'a major highway'."
+        "VOICE: Nairobi newsroom. Mix straight reporting with a human take. "
+        "Facts first, then a point of view. Short sentences. Concrete nouns. "
+        "Names, counties, shillings, EAT times. Kenyan English is allowed. "
+        "Do not fake Sheng. Never write like a US morning show, a press release, "
+        "or a recycled wire dump. Prefer Westlands Exit, Waiyaki Way, Kasarani "
+        "over 'a major highway'."
     )
+    avoid_block = ""
+    if avoid:
+        avoid_block = (
+            "\nDO NOT repeat these recent openings, stock phrases or angles:\n"
+            f"{avoid[:1200]}\n"
+        )
     if opinion:
         return f"""You are {author}, opinion columnist for Za Ndani (Kenya).
 Today is {date_eat} EAT.
@@ -244,11 +292,13 @@ SOURCE (facts only for grounding):
 
 STYLE: {style.get('name')}. Lead: {style.get('lead_style')}. Tone: {style.get('tone')}.
 Structure: {style.get('structure')}.
-
+{avoid_block}
 RULES:
 - 650-900 words. Original prose. Argument in the first line.
 - Kenya first. If the source is foreign, say what it costs a reader in Nairobi.
 - {know}
+- Commentary is the job: take a side, name who benefits, who pays.
+- Vary sentence length. Do not reuse the same opener twice.
 - NEVER write 'is the central subject of the update' or keyword stuffing.
 - No competing media brands. No em-dashes.
 - Output ONLY the article body in markdown. No meta.
@@ -258,23 +308,26 @@ Banned: {', '.join(BANNED_PHRASES[:14])}...
     return f"""You are {author}, a {role} for Za Ndani (Kenya).
 Today is {date_eat} EAT. Desk: {desk}.
 {voice}
-This is a NEWS website. Who, what, where, when, how. No American morning. No hype.
+Do not write wire-copy with no brain, and do not write a column with no facts.
+Report, then comment.
 
 SOURCE TITLE: {title}
 SOURCE (facts only, rewrite completely):
 {source_body[:4500]}
 
 STYLE: {style.get('name')}. Lead: {style.get('lead_style')}. Tone: {style.get('tone')}. Structure: {style.get('structure')}.
-
+Commentary heading for THIS piece (use exactly): {heading}
+{avoid_block}
 MARKDOWN OUTPUT:
-1) H2 factual headline (max ~65 characters), then a 40-60 word lede that stands alone: who + what + where + when in EAT.
+1) H2 factual headline (max ~65 characters), then a 40-60 word lede: who + what + where + when in EAT.
 2) {know}
-3) Body 4-7 short paragraphs: next facts, attributed statements, numbers, places.
-4) Optional one-line status closer only if a next step is already scheduled. No moral. No prediction.
+3) Body 3-5 short paragraphs of reported fact, attributed statements, numbers, places.
+4) COMMENTARY under an H3 heading exactly '{heading}'. 110-180 words. A real take: who gains, who is left standing, what a reader in traffic on Thika Road should notice. Do not restate the lede. No moral. No 'only time will tell'.
 
-RULES: 500-800 words. NO Analysis section. NO commentary essays. NO what this means.
+RULES: 520-850 words. Reporting AND commentary — both required. Do not skip the take.
 If the source is Hollywood, US awards, Premier League, NBA or other foreign showbiz with no Kenyan stake, DO NOT write it — stop and output SKIP.
 Kenya or East Africa must be in the story. Money in KSh. Distance in km.
+Vary verbs and openers. Never start two paragraphs the same way.
 NEVER write 'is the central subject of the update' or any keyword-stuffing line.
 Do not repeat the title as a stuffed sentence. No competing media brands. No em-dashes.
 Banned: {', '.join(BANNED_PHRASES[:18])}...

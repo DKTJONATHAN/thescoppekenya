@@ -5,7 +5,7 @@ name: Scheduled Posts Publisher
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "9 * * * *"
   workflow_dispatch:
     inputs:
       reason:

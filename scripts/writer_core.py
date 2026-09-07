@@ -39,31 +39,45 @@ DEFAULT_STYLES = [
         "name": "Hard News Lead",
         "format": "News report",
         "lead_style": "Who did what, where, when.",
-        "tone": "Neutral wire-service. No opinion.",
+        "tone": "Reported fact, then a pointed close.",
         "angle": "What happened",
-        "structure": "Lead, facts by importance, quotes, status",
+        "structure": "Lead, facts, quotes, commentary heading",
         "sentence_mix": "Short and medium",
-        "closing": "Status only if already scheduled",
+        "closing": "A take, not a prediction",
+        "commentary_heading": "Why it matters",
     },
     {
         "name": "Event Report",
         "format": "Event report",
         "lead_style": "Open with the event and principal actor.",
-        "tone": "Factual, clipped.",
+        "tone": "Factual, then street-level reading.",
         "angle": "Sequence of events",
-        "structure": "Lead, sequence, confirmation, numbers",
+        "structure": "Lead, sequence, numbers, commentary heading",
         "sentence_mix": "Short",
-        "closing": "Status",
+        "closing": "Who is left standing",
+        "commentary_heading": "The Nairobi read",
     },
     {
         "name": "Statement Report",
         "format": "Statement report",
         "lead_style": "Official action or statement first.",
-        "tone": "Neutral, attribution-heavy.",
+        "tone": "Attribution first, then who benefits.",
         "angle": "What was said or ordered",
-        "structure": "Lead, quote/order, background, response",
+        "structure": "Lead, quote/order, background, commentary heading",
         "sentence_mix": "Medium",
-        "closing": "Response or next step if known",
+        "closing": "Cost to the reader",
+        "commentary_heading": "What it costs you",
+    },
+    {
+        "name": "Desk Take",
+        "format": "Reported feature",
+        "lead_style": "Scene or consequence first, then the actor.",
+        "tone": "Curious, specific, not snarky.",
+        "angle": "Why a Kenyan should care",
+        "structure": "Lead, evidence, names, commentary heading",
+        "sentence_mix": "Short then one long",
+        "closing": "One clean judgment",
+        "commentary_heading": "The take",
     },
 ]
 
@@ -216,7 +230,7 @@ def run_writer(cfg):
                     model=model,
                     contents=prompt,
                     config=types.GenerateContentConfig(
-                        temperature=0.4 if not opinion_mode else 0.7,
+                        temperature=0.62 if not opinion_mode else 0.82,
                         max_output_tokens=4096,
                     ),
                 )
@@ -280,9 +294,10 @@ schema: "NewsArticle"
         if should_skip_story(story["title"] + " " + body, category):
             print(f"Skip body (not Kenya-first): {story['title'][:80]}")
             continue
+        avoid = " | ".join((memory.get("angle_history") or [])[-8:])
         prompt = news_prompt(
             author, full_date_str, style, story["title"], body,
-            role=role, opinion=opinion_mode, desk=category,
+            role=role, opinion=opinion_mode, desk=category, avoid=avoid,
         )
         try:
             article, model_used = call_gemini(prompt)
@@ -309,6 +324,8 @@ schema: "NewsArticle"
         write_post(title, article, style["name"], story["url"], image)
         memory.setdefault("published_hashes", []).append(h)
         memory.setdefault("style_history", []).append(style["name"])
+        lede = " ".join(article.split()[:12])
+        memory.setdefault("angle_history", []).append(lede)
         save_memory(memory)
         print("Memory updated")
         return

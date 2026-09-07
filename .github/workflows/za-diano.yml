@@ -1,8 +1,9 @@
-name: Grace Mkamburi - Business Scraper
+name: Zed Mogaka — George Diano
 
+# Called by writer-dispatcher.yml on the Nairobi clock.
+# Manual "Run workflow" still works. Do not add cron here.
 on:
   workflow_call:
-  # Timing owned by writer-dispatcher.yml (Africa/Nairobi) — 08:10 EAT
   workflow_dispatch: {}
 
 concurrency:
@@ -15,7 +16,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
-  MEMORY_FILE: .github/memory_grace.json
+  MEMORY_FILE: .github/memory_georgediano.json
   TZ: Africa/Nairobi
 
 jobs:
@@ -33,7 +34,7 @@ jobs:
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Cache Playwright browsers
         uses: actions/cache@v4
@@ -47,7 +48,7 @@ jobs:
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium --with-deps
 
-      - name: Run Grace Mkamburi pipeline
+      - name: Run Zed Mogaka Diano pipeline
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -57,17 +58,15 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          if [ -f scripts/grace_business.py ]; then
-            python scripts/grace_business.py
+          if [ -f scripts/zed_diano.py ]; then
+            python scripts/zed_diano.py
           else
-            echo "scripts/grace_business.py missing — skipping this run"
+            echo "scripts/zed_diano.py missing"
             exit 1
           fi
 
-
-      - name: Kenya-first polish gate
-        run: |
-          python scripts/finish_desk.py
+      - name: Voice, SEO and Kenya-first gate
+        run: python scripts/finish_desk.py
 
       - name: Commit history and new posts
         run: |
@@ -78,6 +77,6 @@ jobs:
             echo "No article or memory changes to commit"
             exit 0
           fi
-          git commit -m "content: Grace Mkamburi business report"
+          git commit -m "content: Zed Mogaka George Diano"
           git pull --rebase origin "${DEFAULT_BRANCH}" || git pull origin "${DEFAULT_BRANCH}" --no-rebase || true
           git push origin HEAD:"${DEFAULT_BRANCH}"
