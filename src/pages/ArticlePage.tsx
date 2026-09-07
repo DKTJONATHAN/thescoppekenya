@@ -4,7 +4,7 @@ import { getPostBySlug, getLatestPosts, type Post } from "@/lib/markdown";
 import { Clock, Calendar, Share2, Facebook, ArrowUp, Eye, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useEffect, useState, useMemo, useCallback, useRef, type ReactNode } from "react";
+import { useEffect, useState, useMemo, useCallback, useRef } from "react";
 import { XIcon } from "@/components/XIcon";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { Helmet } from "react-helmet-async";
