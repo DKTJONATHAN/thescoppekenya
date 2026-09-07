@@ -62,21 +62,25 @@ def clamp_description(desc: str, focus_keyword: str) -> str:
         d,
         flags=re.I,
     )
+    d = re.sub(r"\bis the central subject of the update\b", "", d, flags=re.I)
+    d = re.sub(r"\s+", " ", d).strip(" :.-")
     if len(d) < 105:
-        d = f"{d} Latest verified update with the key context readers need.".strip()
+        d = f"{d} Latest verified update from Kenya.".strip()
     if len(d) > 160:
         d = d[:160].rsplit(" ", 1)[0].strip()
     return d
 
 
 def ensure_body_sections(body: str, focus_keyword: str) -> str:
+    """Clean body only. Never inject SEO stuffing phrases into the article."""
     body = remove_generic_padding(body)
-    text100 = first_words(body, 100).lower()
-    if focus_keyword and focus_keyword.lower() not in text100:
-        paragraphs = body.split("\n\n", 1)
-        if len(paragraphs) == 2:
-            paragraphs[0] = f"{paragraphs[0]} {focus_keyword} is the central subject of the update."
-            body = "\n\n".join(paragraphs)
+    body = re.sub(
+        r"[^.\n]*\bis(?: the)? central (?:subject of|to) this update(?: for Kenyan readers)?[.\s]*",
+        "",
+        body,
+        flags=re.I,
+    )
+    body = re.sub(r"\n{3,}", "\n\n", body)
     return body.rstrip() + "\n"
 
 
@@ -85,6 +89,7 @@ def remove_generic_padding(body: str) -> str:
         r"\n## What this means for Kenyans\n(?:.*\n?){1,4}",
         r"\n## Key facts\n(?:- .*\n?){1,6}",
         r"\n## FAQ\n[\s\S]*?(?=\n## |\Z)",
+        r"\n## Analysis\n[\s\S]*?(?=\n## |\Z)",
     ]
     cleaned = body
     for pattern in patterns:
@@ -214,4 +219,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
