@@ -419,10 +419,10 @@
     "d06e3996940c6b2379ffed19175b4f35",
     "3066a172127fe98dbba23f54fd672138",
     "7b126d1b1dcf1fabd22153976b113bfc",
-    "b20e853b6f8d04759647348286b6790f"
+    "b20e853b6f8d04759647348286b6790f",
+    "b336a663f7423bedf25e22726ea9e635"
   ],
   "style_history": [
-    "Profile Beat",
     "Trend Take",
     "Explainer",
     "Hard News Lead",
@@ -451,10 +451,10 @@
     "Trend Take",
     "Hard News Lead",
     "Reaction Round-up",
-    "Explainer"
+    "Explainer",
+    "Trend Take"
   ],
   "angle_history": [
-    "policy_gap|na|Hard News Lead",
     "timeline_shift|The Varnell Hill Show|Trend Take",
     "story_progression|na|Explainer",
     "story_progression|Britney Spears|Profile Beat",
@@ -533,6 +533,7 @@
     "timeline_shift|na|Trend Take",
     "story_progression|Heated Rivalry|Hard News Lead",
     "winners_losers|Adria Arjona|Reaction Round-up",
-    "winners_losers|Dune (1984 film)|Explainer"
+    "winners_losers|Dune (1984 film)|Explainer",
+    "story_progression|na|Trend Take"
   ]
 }
