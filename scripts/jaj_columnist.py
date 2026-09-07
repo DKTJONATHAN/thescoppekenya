@@ -24,6 +24,8 @@ BANNED_PHRASES = [
     "buckle up", "breaking news", "dive in", "delve into", "moreover", "furthermore",
     "in conclusion", "it's worth noting", "a testament to", "navigating the landscape",
     "in today's digital age", "tapestry", "game-changer", "stay tuned", "unpack",
+    "is the central subject of the update", "central subject of the update",
+    "central to this update", "search-ready summary", "key takeaway",
 ]
 
 STYLE_PRESETS = [
@@ -110,6 +112,14 @@ def content_hash(title, body):
     raw = re.sub(r"\s+", " ", raw)
     return hashlib.sha256(raw.encode()).hexdigest()[:24]
 
+def strip_spam(text):
+    if not text:
+        return text
+    text = re.sub(r"[^\.\n]*is the central subject of the update[\.\s]*", "", text, flags=re.I)
+    text = re.sub(r"[^\.\n]*central subject of the update[\.\s]*", "", text, flags=re.I)
+    text = re.sub(r"[^\.\n]*central to this update[\.\s]*", "", text, flags=re.I)
+    return text.strip()
+
 def has_banned(text):
     low = text.lower()
     return any(p in low for p in BANNED_PHRASES)
@@ -137,7 +147,7 @@ def call_gemini(prompt):
     raise RuntimeError(f"All models failed: {last_err}")
 
 def build_prompt(src, style):
-    return f"""You are {AUTHOR_NAME}, opinion columnist for Zandani (Kenya).
+    return f"""You are {AUTHOR_NAME}, opinion columnist for Za Ndani (Kenya).
 Write an ORIGINAL opinion column inspired by — but not summarizing — the source story.
 
 SOURCE TITLE: {src['title']}
@@ -153,6 +163,7 @@ RULES:
 - 700-1000 words
 - Strong point of view. No fence-sitting.
 - Kenyan voice. Concrete, not abstract.
+- NEVER write 'is the central subject of the update' or any keyword-stuffing line.
 - No banned AI phrases.
 - Output ONLY the column body in markdown. First line may be a ## subhead. No meta title.
 """
@@ -162,6 +173,7 @@ def slugify(title):
     return s[:80]
 
 def write_post(title, body_md, style_name, source_slug):
+    body_md = strip_spam(body_md)
     slug = f"{today_str}-opinion-{slugify(title)}"
     path = os.path.join(POSTS_DIR, f"{slug}.md")
     os.makedirs(POSTS_DIR, exist_ok=True)
@@ -201,6 +213,7 @@ def main():
         except Exception as e:
             print(f"Generation failed: {e}")
             continue
+        article = strip_spam(article)
         if has_banned(article) or len(article) < 400:
             print("Rejected: banned or too short")
             continue
