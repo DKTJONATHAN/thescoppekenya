@@ -1,1 +1,399 @@
-see-file
+import React, { useEffect, useState, useMemo, useCallback, useRef } from "react";
+import { Layout } from "@/components/layout/Layout";
+import { getAllPosts, type PostMetadata } from "@/lib/markdown";
+import { Link } from "react-router-dom";
+import { ArrowRight, TrendingUp, Flame, Clock, Eye, Radio } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+import AdUnit from "@/components/AdUnit";
+import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
+
+const INITIAL_LOAD = 12;
+const LOAD_MORE_COUNT = 12;
+const SITE_URL = "https://zandani.co.ke";
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/default-og.jpg`;
+
+function img(url: string, w = 800): string {
+  if (!url) return "/images/placeholder.jpg";
+  if (url.endsWith(".svg") || url.startsWith("/")) return url;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=75&we`;
+}
+
+function ogImg(url: string): string {
+  if (!url) return DEFAULT_OG_IMAGE;
+  if (url.startsWith("/")) return `${SITE_URL}${url}`;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=1200&h=630&fit=cover&output=webp&q=85`;
+}
+
+function timeAgo(dateStr: string): string {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const h = Math.floor(diff / 3600000);
+  const d = Math.floor(h / 24);
+  if (h < 1) return "Just now";
+  if (h < 24) return `${h}h ago`;
+  if (d < 7) return `${d}d ago`;
+  return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
+}
+
+function catColor(cat: string): string {
+  const c = cat?.toLowerCase() || "";
+  if (c.includes("gossip")) return "bg-fuchsia-700";
+  if (c.includes("showbiz")) return "bg-violet-700";
+  if (c.includes("entertainment")) return "bg-rose-600";
+  if (c.includes("politics")) return "bg-blue-800";
+  if (c.includes("news") || c.includes("breaking")) return "bg-amber-600";
+  if (c.includes("sports")) return "bg-green-700";
+  if (c.includes("tech") || c.includes("business")) return "bg-cyan-700";
+  if (c.includes("opinion")) return "bg-orange-700";
+  if (c.includes("agric")) return "bg-lime-700";
+  return "bg-zinc-600";
+}
+
+function catBorder(cat: string): string {
+  const c = cat?.toLowerCase() || "";
+  if (c.includes("gossip")) return "border-fuchsia-700";
+  if (c.includes("showbiz")) return "border-violet-700";
+  if (c.includes("entertainment")) return "border-rose-600";
+  if (c.includes("politics")) return "border-blue-800";
+  if (c.includes("news") || c.includes("breaking")) return "border-amber-600";
+  if (c.includes("sports")) return "border-green-700";
+  if (c.includes("tech") || c.includes("business")) return "border-cyan-700";
+  if (c.includes("opinion")) return "border-orange-700";
+  if (c.includes("agric")) return "border-lime-700";
+  return "border-zinc-600";
+}
+
+type Post = ReturnType<typeof getAllPosts>[0];
+
+/** Prefer Kenyan / East African stories for hero and top slots */
+function kenyaScore(post: Post): number {
+  const blob = `${post.title || ""} ${post.excerpt || ""} ${post.category || ""} ${post.author || ""} ${(post.tags || []).join(" ")}`.toLowerCase();
+  let score = 0;
+  if (/\b(kenya|kenyan|nairobi|mombasa|kisumu|nakuru|eldoret|thika|kiambu|kakamega)\b/.test(blob)) score += 12;
+  if (/\b(ruto|gachagua|raila|safaricom|m-?pesa|kplc|epra|harambee|gor mahia|afc leopards)\b/.test(blob)) score += 8;
+  if (/\b(east africa|uganda|tanzania|rwanda|ethiopia)\b/.test(blob)) score += 5;
+  if (/\b(wanjiku|celestine|mutheu|martin kihara|za ndani)\b/.test(blob)) score += 4;
+  const cat = (post.category || "").toLowerCase();
+  if (["news", "politics", "breaking", "gossip", "showbiz", "sports", "business"].some((c) => cat.includes(c))) score += 3;
+  const western = ["oscar", "grammy", "netflix", "marvel", "disney", "branagh", "oldman", "celebrity", "hollywood"];
+  if (western.some((w) => blob.includes(w))) score -= 5;
+  return score;
+}
+
+const RAW_POSTS = getAllPosts().slice(0, 60);
+
+const MobileTopCard = React.memo(({ post, views }: { post: Post; views: number }) => (
+  <Link to={`/article/${post.slug}`} className="group block">
+    <article>
+      <div className={`relative aspect-[4/3] overflow-hidden bg-muted border-t-[3px] ${catBorder(post.category)}`}>
+        <div className="absolute top-2 right-2 z-10 flex items-center gap-1 text-[10px] text-white bg-black/60 px-1.5 py-0.5">
+          <Eye className="w-3 h-3" />
+          {views > 999 ? `${(views / 1000).toFixed(1)}k` : views}
+        </div>
+        <img src={img(post.image, 360)} alt={post.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      </div>
+      <div className="pt-2">
+        <span className={`inline-block text-[8px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1 ${catColor(post.category)}`}>{post.category}</span>
+        <h3 className="font-serif font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 text-[13px] leading-snug">{post.title}</h3>
+        <span className="text-[10px] text-muted-foreground flex items-center gap-1 mt-1"><Clock className="w-2.5 h-2.5" />{timeAgo(post.date)}</span>
+      </div>
+    </article>
+  </Link>
+));
+
+const MostReadMobile = React.memo(({ posts }: { posts: Post[] }) => (
+  <div className="border border-border bg-card px-4 py-4">
+    <div className="flex items-center gap-2 mb-3">
+      <TrendingUp className="w-4 h-4 text-primary" />
+      <h3 className="text-xs font-black uppercase tracking-widest">Most Read</h3>
+      <div className="h-px flex-1 bg-border" />
+    </div>
+    <div className="space-y-3">
+      {posts.map((post, i) => (
+        <Link key={post.slug} to={`/article/${post.slug}`} className="group flex gap-3 items-start">
+          <span className="text-xl font-black text-muted-foreground/30 group-hover:text-primary transition-colors leading-none mt-0.5 tabular-nums">0{i + 1}</span>
+          <div>
+            <h4 className="text-xs font-bold leading-snug line-clamp-2 group-hover:underline">{post.title}</h4>
+            <span className="text-[10px] text-muted-foreground uppercase tracking-wide">{post.category}</span>
+          </div>
+        </Link>
+      ))}
+    </div>
+  </div>
+));
+
+const FeedCard = React.memo(({ post, views }: { post: Post; views: number }) => (
+  <article className="group flex gap-3 sm:gap-4 border-b border-border py-4">
+    <Link to={`/article/${post.slug}`} className="flex-shrink-0 w-24 sm:w-32 md:w-40">
+      <div className={`relative aspect-[4/3] overflow-hidden bg-muted border-t-[3px] ${catBorder(post.category)}`}>
+        <img src={img(post.image, 320)} alt={post.title} loading="lazy" decoding="async" width={320} height={240} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      </div>
+    </Link>
+    <div className="flex flex-col justify-center min-w-0">
+      <span className={`inline-block text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-1.5 w-fit ${catColor(post.category)}`}>{post.category}</span>
+      <Link to={`/article/${post.slug}`}>
+        <h3 className="font-serif font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 text-sm md:text-base mb-1 leading-snug">{post.title}</h3>
+      </Link>
+      <p className="text-muted-foreground text-xs line-clamp-1 mb-1.5 hidden md:block">{post.excerpt}</p>
+      <div className="flex items-center gap-2 text-[10px] text-muted-foreground">
+        <span className="flex items-center gap-1"><Clock className="w-2.5 h-2.5" />{timeAgo(post.date)}</span>
+        <span className="flex items-center gap-1 text-primary font-semibold"><Eye className="w-2.5 h-2.5" />{views > 999 ? `${(views / 1000).toFixed(1)}k` : views}</span>
+        <span>{post.readTime} min</span>
+      </div>
+    </div>
+  </article>
+));
+
+const Index = () => {
+  const [visibleCount, setVisibleCount] = useState(INITIAL_LOAD);
+  const [activeCategory, setActiveCategory] = useState("all");
+  const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
+  const [adsReady, setAdsReady] = useState(false);
+  const loaderRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    fetch("/api/get-views").then(r => r.ok ? r.json() : {}).then(setViewCounts).catch(() => {});
+  }, []);
+
+  const getViews = useCallback((slug: string) => {
+    const clean = slug.replace(/^\//, "").replace(/\.md$/, "");
+    return viewCounts[`/article/${clean}`] || viewCounts[`/article/${clean}/`] || 0;
+  }, [viewCounts]);
+
+  useEffect(() => {
+    const t = setTimeout(() => setAdsReady(true), 4000);
+    return () => clearTimeout(t);
+  }, []);
+
+  const rankedPosts = useMemo(() => {
+    return [...RAW_POSTS].sort((a, b) => {
+      const diff = kenyaScore(b) - kenyaScore(a);
+      if (diff !== 0) return diff;
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
+  }, []);
+  const heroLead = rankedPosts[0];
+  const heroSecondary = rankedPosts.slice(1, 5);
+
+  const categories = useMemo(() => {
+    const cats = Array.from(new Set(RAW_POSTS.map(p => p.category?.toLowerCase()).filter(Boolean)));
+    return ["all", ...cats];
+  }, []);
+
+  const feedSource = useMemo(() => {
+    const base = rankedPosts.slice(5);
+    if (activeCategory === "all") return base;
+    return base.filter(p => p.category?.toLowerCase() === activeCategory);
+  }, [activeCategory, rankedPosts]);
+
+  const displayedPosts = feedSource.slice(0, visibleCount);
+  const hasMore = visibleCount < feedSource.length;
+
+  useEffect(() => {
+    if (!loaderRef.current || !hasMore) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setVisibleCount(prev => prev + LOAD_MORE_COUNT); },
+      { rootMargin: "400px" }
+    );
+    obs.observe(loaderRef.current);
+    return () => obs.disconnect();
+  }, [hasMore]);
+
+  const mostRead = useMemo(() => {
+    const withViews = RAW_POSTS.filter(p => getViews(p.slug) > 0);
+    if (withViews.length === 0) return rankedPosts.slice(0, 5);
+    return [...withViews].sort((a, b) => getViews(b.slug) - getViews(a.slug)).slice(0, 5);
+  }, [viewCounts, getViews, rankedPosts]);
+
+  const handleCategoryChange = useCallback((cat: string) => {
+    setActiveCategory(cat);
+    setVisibleCount(INITIAL_LOAD);
+  }, []);
+
+  const heroImageSrcSet = heroLead
+    ? `${img(heroLead.image, 600)} 600w, ${img(heroLead.image, 900)} 900w, ${img(heroLead.image, 1200)} 1200w`
+    : "";
+  const heroImageSizes = "(max-width: 600px) 100vw, (max-width: 900px) 100vw, 1200px";
+  const optimizedHeroImage = heroLead ? img(heroLead.image, 1200) : "/images/placeholder.jpg";
+  const homeOgImage = heroLead ? ogImg(heroLead.image) : DEFAULT_OG_IMAGE;
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Za Ndani",
+    "url": SITE_URL,
+    "description": "Kenya news, gossip, showbiz, sports and politics — bold, local, first.",
+    "inLanguage": "en-KE",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": `${SITE_URL}/search?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Zandani",
+    "url": SITE_URL,
+    "logo": `${SITE_URL}/logo.png`,
+    "sameAs": ["https://x.com/zandani_ke", "https://facebook.com/zandanike", "https://instagram.com/zandani_ke"]
+  };
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Latest Stories",
+    "url": SITE_URL,
+    "itemListElement": rankedPosts.slice(0, 10).map((post, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "url": `${SITE_URL}/article/${post.slug}`,
+      "name": post.title,
+    })),
+  };
+
+  return (
+    <Layout>
+      <Helmet>
+        <title>Zandani | Kenya Breaking News, Politics, Sports & Entertainment</title>
+        <meta name="description" content="Kenya-first news, gossip and showbiz from Nairobi. Breaking local stories, sports, politics and entertainment — bold and unbiased." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <link rel="canonical" href={SITE_URL} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={SITE_URL} />
+        <meta property="og:site_name" content="Za Ndani" />
+        <meta property="og:locale" content="en_KE" />
+        <meta property="og:title" content="Za Ndani | Kenya News, Gossip & Entertainment" />
+        <meta property="og:description" content="Kenya-first news, gossip and showbiz from Nairobi. Breaking local stories, sports, politics and entertainment." />
+        <meta property="og:image" content={homeOgImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@zandanikenya" />
+        <meta name="twitter:title" content="Za Ndani | Kenya News, Gossip & Entertainment" />
+        <meta name="twitter:description" content="Kenya-first news, gossip and showbiz from Nairobi." />
+        <meta name="twitter:image" content={homeOgImage} />
+        {heroLead && <link rel="preload" as="image" href={optimizedHeroImage} imageSrcSet={heroImageSrcSet} imageSizes={heroImageSizes} fetchPriority="high" />}
+        <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
+      </Helmet>
+
+      {heroLead && (
+        <section className="bg-zinc-950 border-b border-zinc-800">
+          <div className="container max-w-7xl mx-auto px-3 sm:px-4 py-3">
+            <div className="lg:hidden space-y-1.5">
+              <Link to={`/article/${heroLead.slug}`} className="group relative overflow-hidden block aspect-[16/9]">
+                <img src={optimizedHeroImage} alt={heroLead.title} fetchPriority="high" loading="eager" decoding="async" className="w-full h-full object-cover opacity-80" width={600} height={338} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
+                  <span className={`text-[9px] font-black tracking-[0.18em] uppercase text-white px-2 py-0.5 ${catColor(heroLead.category)}`}>{heroLead.category}</span>
+                  <h1 className="text-[19px] font-serif font-black text-white leading-tight mt-1.5 line-clamp-3">{heroLead.title}</h1>
+                  <div className="flex items-center gap-3 text-[11px] text-zinc-400 mt-1.5">
+                    <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(heroLead.date)}</span>
+                    <span className="font-semibold truncate">{heroLead.author}</span>
+                  </div>
+                </div>
+              </Link>
+              <div className="grid grid-cols-2 gap-1.5">
+                {heroSecondary.map(post => (
+                  <Link key={post.slug} to={`/article/${post.slug}`} className="group relative overflow-hidden block aspect-[4/3]">
+                    <img src={img(post.image, 400)} alt={post.title} loading="lazy" className="w-full h-full object-cover opacity-70" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-2 z-10">
+                      <span className={`text-[8px] font-black uppercase text-white px-1 py-0.5 ${catColor(post.category)}`}>{post.category}</span>
+                      <h2 className="text-[12px] font-serif font-bold text-white leading-snug mt-1 line-clamp-2">{post.title}</h2>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="hidden lg:grid lg:grid-cols-12 gap-1">
+              <Link to={`/article/${heroLead.slug}`} className="lg:col-span-7 group relative overflow-hidden block aspect-[16/10]">
+                <img src={optimizedHeroImage} srcSet={heroImageSrcSet} sizes={heroImageSizes} alt={heroLead.title} fetchPriority="high" loading="eager" decoding="async" width={840} height={525} className="w-full h-full object-cover opacity-75 group-hover:opacity-90 transition-opacity duration-500 absolute inset-0" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-10">
+                  <span className={`text-[10px] font-black tracking-[0.2em] uppercase text-white px-2 py-1 ${catColor(heroLead.category)}`}>{heroLead.category}</span>
+                  <h1 className="text-3xl lg:text-4xl font-serif font-black text-white leading-tight mt-3 line-clamp-3">{heroLead.title}</h1>
+                  <p className="text-zinc-300 text-sm line-clamp-2 mt-2 max-w-md">{heroLead.excerpt}</p>
+                  <div className="flex items-center gap-4 text-xs text-zinc-500 mt-3">
+                    <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{timeAgo(heroLead.date)}</span>
+                    <span className="font-bold text-zinc-400">{heroLead.author}</span>
+                  </div>
+                </div>
+              </Link>
+              <div className="lg:col-span-5 flex flex-col gap-1">
+                {heroSecondary.slice(0, 2).map(post => (
+                  <Link key={post.slug} to={`/article/${post.slug}`} className="group relative overflow-hidden block flex-1 min-h-[140px]">
+                    <img src={img(post.image, 600)} alt={post.title} loading="lazy" width={560} height={235} className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500 absolute inset-0" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
+                      <span className={`text-[9px] font-black tracking-widest uppercase text-white px-1.5 py-0.5 mb-2 inline-block ${catColor(post.category)}`}>{post.category}</span>
+                      <h2 className="text-lg font-serif font-bold text-white leading-snug line-clamp-2">{post.title}</h2>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      <div className="container max-w-7xl mx-auto px-3 sm:px-4 py-4">
+        <Link to="/tv" className="flex items-center justify-between gap-3 border border-primary/30 bg-primary/5 px-4 py-3 rounded-lg hover:bg-primary/10 transition-colors">
+          <span className="flex items-center gap-2 text-sm font-bold text-primary"><Radio className="w-4 h-4" /> WATCH LIVE KENYAN TV</span>
+          <span className="text-xs font-bold text-primary uppercase tracking-wider">Open TV</span>
+        </Link>
+      </div>
+
+      <section className="container max-w-7xl mx-auto px-3 sm:px-4 pb-6">
+        <LiveUpdatesTimeline maxItems={8} />
+      </section>
+
+      <section className="container max-w-7xl mx-auto px-3 sm:px-4 pb-12">
+        <div className="flex flex-wrap items-center gap-2 mb-4 overflow-x-auto">
+          {categories.map(cat => (
+            <button
+              key={cat}
+              onClick={() => handleCategoryChange(cat)}
+              className={`px-3 py-1.5 text-xs font-bold uppercase tracking-wider rounded-full border transition-colors ${activeCategory === cat ? "bg-primary text-primary-foreground border-primary" : "border-border text-muted-foreground hover:border-primary/50"}`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid lg:grid-cols-12 gap-8">
+          <div className="lg:col-span-8">
+            <div className="flex items-center gap-2 mb-2">
+              <Flame className="w-4 h-4 text-primary" />
+              <h2 className="text-sm font-black uppercase tracking-widest">Latest from Kenya</h2>
+              <div className="h-px flex-1 bg-border" />
+            </div>
+            {displayedPosts.map(post => (
+              <FeedCard key={post.slug} post={post} views={getViews(post.slug)} />
+            ))}
+            <div ref={loaderRef} className="h-8" />
+            {!hasMore && <p className="text-center text-sm text-muted-foreground py-6">You are caught up.</p>}
+          </div>
+
+          <aside className="lg:col-span-4 space-y-6">
+            <MostReadMobile posts={mostRead} />
+            {adsReady && <div className="flex justify-center"><AdUnit type="sidebar" /></div>}
+            <div className="border border-border bg-card p-4">
+              <h3 className="text-xs font-black uppercase tracking-widest mb-3">Sections</h3>
+              <div className="flex flex-wrap gap-2">
+                {["/news", "/entertainment", "/sports", "/business", "/lifestyle"].map(path => (
+                  <Link key={path} to={path} className="text-xs font-semibold px-2.5 py-1 border border-border rounded hover:border-primary hover:text-primary transition-colors">{path.slice(1)}</Link>
+                ))}
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default Index;
