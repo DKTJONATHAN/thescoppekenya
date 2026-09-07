@@ -1,7 +1,7 @@
 ---
 title: "China Increases Fisheries Oversight Amid Global Conservation"
 slug: "china-increases-fisheries-oversight-amid-global-conservation-efforts"
-description: "China Increases Fisheries Oversight Amid Global Conservation Effo: China joins international maritime agreements to curb illegal fishing, strengthening."
+description: "China Increases Fisheries Oversight Amid Global Conservation Effo: China joins international maritime agreements to curb illegal fishing, strengthening"
 excerpt: "The Maritime Divide in the Indian Ocean The waters surrounding the Kenyan coastline represent far more than a simple commercial artery. Toda"
 author: "Jonathan Mwaniki"
 image: "https://i.ibb.co/cS9tHK6q/9941956c88a4.webp"

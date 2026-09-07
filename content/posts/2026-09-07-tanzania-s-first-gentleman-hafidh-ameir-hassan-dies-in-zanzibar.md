@@ -1,13 +1,17 @@
 ---
 title: "Tanzania's First Gentleman Hafidh Ameir Hassan Dies in Zanzibar"
-date: 2026-09-07T09:35:44Z
-author: "Celestine Nzioka"
-category: "News"
-image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/samia%20suluhu%20sad.jpg.webp?itok=6Uanv-s5"
+slug: "tanzania-s-first-gentleman-hafidh-ameir-hassan-dies-in-zanzibar"
+description: "Tanzania's First Gentleman Hafidh Ameir Hassan Dies in Zanzibar: Tanzania’s Vice President Deogratius Ndejembi announced on Monday, September 7, 2026, that the"
 excerpt: "Tanzania’s Vice President Deogratius Ndejembi announced on Monday, September 7, 2026, that the country’s First Gentleman, Hafidh Ameir Hassan, the husband of Pr..."
-readTime: 3
-source: "https://kenyans.co.ke/news/126856-tanzanias-first-gentleman-hafidh-ameir-hassan-dies"
-stylePreset: "Statement Report"
+author: "Celestine Nzioka"
+image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/samia%20suluhu%20sad.jpg.webp?itok=6Uanv-s5"
+category: "News"
+tags: ["tanzania s first gentleman hafidh ameir hassan dies in zanzibar", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/tanzania-s-first-gentleman-hafidh-ameir-hassan-dies-in-zanzibar"
+date: "2026-09-07T09:35:44Z"
+dateModified: "2026-09-07T09:35:44Z"
+focusKeyword: "Tanzania's First Gentleman Hafidh Ameir Hassan Dies in Zanzibar"
+schema: "NewsArticle"
 ---
 
 Tanzania’s Vice President Deogratius Ndejembi announced on Monday, September 7, 2026, that the country’s First Gentleman, Hafidh Ameir Hassan, the husband of President Samia Suluhu Hassan, has died while receiving medical care in Zanzibar.

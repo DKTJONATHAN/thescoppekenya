@@ -1,7 +1,7 @@
 ---
 title: "Why Airport Ground Vehicles Are Painted Yellow"
 slug: "why-airport-vehicles-are-painted-yellow"
-description: "Why Airport Ground Vehicles Are Painted Yellow: Discover why airport vehicles in Kenya and globally are painted yellow and fitted with beacon lights to."
+description: "Why Airport Ground Vehicles Are Painted Yellow: Discover why airport vehicles in Kenya and globally are painted yellow and fitted with beacon lights to"
 excerpt: "Airport Operators and Regulators Standardise Yellow Fleet Colouring to Prevent Apron Collisions Aviation authorities and aerodrome operators"
 author: "Celestine Nzioka"
 image: "https://i.ibb.co/ynhZFt2b/0ba1a7f01554.webp"

@@ -1,13 +1,17 @@
 ---
 title: "Why The Bubble That Breaks the Journey"
-date: 2026-09-07T08:14:36Z
-author: "Jaj"
-category: "Opinions"
-image: ""
+slug: "why-the-bubble-that-breaks-the-journey"
+description: "Why The Bubble That Breaks the Journey: There is a specific kind of silence that falls over a Nairobi highway when the rubber finally gives up. It isn’t the"
 excerpt: "There is a specific kind of silence that falls over a Nairobi highway when the rubber finally gives up. It isn’t the polite hiss of a slow leak; it is a violent..."
-readTime: 5
-source: "internal:2026-09-07-tyre-sidewall-bulges-causes-blowout-risks"
-stylePreset: "Culture Read"
+author: "Jaj"
+image: "/images/placeholder.jpg"
+category: "Opinions"
+tags: ["why the bubble that breaks the journey", "opinions", "kenya news"]
+canonical: "https://zandani.co.ke/article/why-the-bubble-that-breaks-the-journey"
+date: "2026-09-07T08:14:36Z"
+dateModified: "2026-09-07T08:14:36Z"
+focusKeyword: "Why The Bubble That Breaks the Journey"
+schema: "NewsArticle"
 ---
 
 There is a specific kind of silence that falls over a Nairobi highway when the rubber finally gives up. It isn’t the polite hiss of a slow leak; it is a violent, percussive *thwack* that sounds like a gunshot, followed by the frantic flapping of shredded rubber against tarmac. By then, it is too late. The car is dancing a jagged rhythm, the steering wheel is fighting you for control, and you are suddenly part of the roadside scenery you spent the last hour trying to ignore.
