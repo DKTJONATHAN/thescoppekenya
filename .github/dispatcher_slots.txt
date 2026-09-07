@@ -2,3 +2,8 @@
 2026-09-07T19:00:za-ghafla.yml
 2026-09-07T19:30:za-mpasho.yml
 2026-09-07T19:15:za sports.yml
+2026-09-07T19:00:news
+2026-09-07T19:00:ghafla
+2026-09-07T19:30:mpasho
+2026-09-07T19:15:sports
+2026-09-07T18:45:technology
