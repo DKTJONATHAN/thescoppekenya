@@ -1,8 +1,8 @@
-name: Gossip | Wanjiku Kuria - ghafla.co.ke
+name: Showbiz | Martin Kihara - mpasho.co.ke
 
 on:
   schedule:
-    - cron: '12 6 * * *'
+    - cron: '15 8 * * *'
   workflow_dispatch: {}
 
 concurrency:
@@ -15,7 +15,7 @@ permissions:
 env:
   DEFAULT_BRANCH: main
   POSTS_DIR: content/posts
-  MEMORY_FILE: .github/memory_wanjiku_ghafla.json
+  MEMORY_FILE: .github/memory_martin_mpasho.json
   TZ: Africa/Nairobi
 
 jobs:
@@ -47,7 +47,7 @@ jobs:
           pip install requests google-genai beautifulsoup4 lxml playwright python-dateutil
           playwright install chromium --with-deps
 
-      - name: Run Wanjiku Kuria Ghafla pipeline
+      - name: Run Martin Kihara Mpasho pipeline
         env:
           GEMINI_WRITE_KEY: ${{ secrets.GEMINI_WRITE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -57,10 +57,10 @@ jobs:
           POSTS_DIR: ${{ env.POSTS_DIR }}
           MEMORY_FILE: ${{ env.MEMORY_FILE }}
         run: |
-          if [ -f scripts/wanjiku_ghafla.py ]; then
-            python scripts/wanjiku_ghafla.py
+          if [ -f scripts/martin_mpasho.py ]; then
+            python scripts/martin_mpasho.py
           else
-            echo "scripts/wanjiku_ghafla.py missing - skipping generation this run"
+            echo "scripts/martin_mpasho.py missing - skipping generation this run"
             exit 0
           fi
 
@@ -73,6 +73,6 @@ jobs:
             echo "No article or memory changes to commit"
             exit 0
           fi
-          git commit -m "content: Wanjiku Kuria Ghafla gossip report"
+          git commit -m "content: Martin Kihara Mpasho showbiz report"
           git pull --rebase origin "${DEFAULT_BRANCH}" || git pull origin "${DEFAULT_BRANCH}" --no-rebase || true
           git push origin HEAD:"${DEFAULT_BRANCH}"
