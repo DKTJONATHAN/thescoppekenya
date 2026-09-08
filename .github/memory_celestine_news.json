@@ -509,10 +509,10 @@
     "b76271de24a7afe4a013e0b3f590c8d2",
     "ad2fca761b1cd6ded13be99c0578b7bd",
     "49579cb2de0746d15adc2266abaa6d48",
-    "ee01967fe898f0b93c6244e44d5b7d9e"
+    "ee01967fe898f0b93c6244e44d5b7d9e",
+    "b8e6c8669b963f08dee34d7ef993348c"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Power Accountability",
     "Hard News Lead",
     "Explainer",
@@ -541,7 +541,8 @@
     "Statement Report",
     "Event Report",
     "Hard News Lead",
-    "Statement Report"
+    "Statement Report",
+    "Event Report"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -635,7 +636,8 @@
     "https://kenyans.co.ke/news/126856-tanzanias-first-gentleman-hafidh-ameir-hassan-dies",
     "https://kenyans.co.ke/news/126854-moja-expressway-announces-maintenance-westlands-exit-september-8",
     "https://kenyans.co.ke/news/126866-mombasa-suspends-links-road-cycling-works-over-traffic-congestion",
-    "https://kenyans.co.ke/news/126867-govt-spokesperson-threatens-action-against-harassment-targeting-foreign-nationals"
+    "https://kenyans.co.ke/news/126867-govt-spokesperson-threatens-action-against-harassment-targeting-foreign-nationals",
+    "https://kenyans.co.ke/news/126873-france-appoints-wadid-benaabou-new-ambassador-kenya"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -651,7 +653,8 @@
     "tanzania first gentleman hafidh ameir hassan dies zanzibar",
     "moja expressway closes section westlands exit overpass scheduled maintenance",
     "mombasa halts links road cycling project ease gridlock",
-    "state warns against xenophobic attacks foreign traders"
+    "state warns against xenophobic attacks foreign traders",
+    "france names wadid benaabou ambassador"
   ],
   "topic_keys": [
     "news tracker",
