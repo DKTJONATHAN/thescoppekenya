@@ -214,7 +214,7 @@ def welcome_html() -> str:
 
 
 def api_key() -> str:
-    key = os.environ.get("RESEND_API_KEY") or ""
+    key = (os.environ.get("RESEND_API_KEY") or "").strip()
     if not key:
         raise SystemExit("RESEND_API_KEY is missing")
     return key
@@ -229,6 +229,9 @@ def resend(method: str, path: str, payload: dict | None = None) -> dict:
         headers={
             "Authorization": f"Bearer {api_key()}",
             "Content-Type": "application/json",
+            # Resend requires a User-Agent; bare urllib defaults can trip CF 1010.
+            "User-Agent": "zandani-evening-brief/1.0 (+https://zandani.co.ke)",
+            "Accept": "application/json",
         },
     )
     try:
@@ -241,7 +244,7 @@ def resend(method: str, path: str, payload: dict | None = None) -> dict:
 
 
 def from_addr() -> str:
-    return os.environ.get("RESEND_FROM") or FROM_DEFAULT
+    return (os.environ.get("RESEND_FROM") or "").strip() or FROM_DEFAULT
 
 
 def list_contacts() -> list[str]:
@@ -282,6 +285,7 @@ def cmd_digest() -> int:
     posts = load_today_posts(3)
     people = list_contacts()
     print(f"digest posts={len(posts)} subscribers={len(people)}")
+    print(f"from={from_addr()}")
     for p in posts:
         print(f"  - {p['category']}: {p['title']}")
     if not people:
