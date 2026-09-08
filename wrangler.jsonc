@@ -11,7 +11,9 @@
     "run_worker_first": [
       "/google4a7d26b466f41330.html",
       "/google4a7d26b466f41330",
-      "/968a6d115d3240a3acbc3448c398978d.txt"
+      "/968a6d115d3240a3acbc3448c398978d.txt",
+      "/api/subscribe",
+      "/api/unsubscribe"
     ]
   }
 }
