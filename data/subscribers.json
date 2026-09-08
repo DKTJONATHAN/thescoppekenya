@@ -1,10 +1,11 @@
 {
-  "updated": "2026-09-08T09:47:58.791Z",
+  "updated": "2026-09-08T10:53:03.241Z",
   "subscribers": [
     {
       "email": "trebilcom@gmail.com",
       "subscribed_at": "2026-09-08T09:47:58.791Z",
-      "active": true
+      "active": false,
+      "unsubscribed_at": "2026-09-08T10:53:03.241Z"
     }
   ]
 }
