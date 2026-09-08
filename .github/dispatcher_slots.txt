@@ -15,3 +15,6 @@
 2026-09-08T06:15:africa
 2026-09-08T07:15:agriculture
 2026-09-08T08:15:business
+2026-09-08T10:00:news
+2026-09-08T09:15:lifestyle
+2026-09-08T10:15:opinions
