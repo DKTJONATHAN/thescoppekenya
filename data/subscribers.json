@@ -1,11 +1,16 @@
 {
-  "updated": "2026-09-08T10:53:03.241Z",
+  "updated": "2026-09-08T11:27:35.850Z",
   "subscribers": [
     {
       "email": "trebilcom@gmail.com",
       "subscribed_at": "2026-09-08T09:47:58.791Z",
       "active": false,
       "unsubscribed_at": "2026-09-08T10:53:03.241Z"
+    },
+    {
+      "email": "jonathanmwaniki07@gmail.com",
+      "subscribed_at": "2026-09-08T11:27:35.850Z",
+      "active": true
     }
   ]
 }
