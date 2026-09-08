@@ -1,33 +1,158 @@
 name: Newsroom heartbeat
 
-# GitHub often delays or drops `schedule` for hours (that is why the Run
-# button still works when cron does not). This pokes writer-dispatcher
-# every ~15 minutes during the Kenya day using PERSONAL_GITHUB_TOKEN —
-# GITHUB_TOKEN is not allowed to start other workflows.
+# GitHub `schedule` is often delayed or skipped for hours (manual Run
+# still works). This job is the reliability layer: every 10 minutes in
+# the Kenya day it uses PERSONAL_GITHUB_TOKEN to start the desks that
+# are due — GITHUB_TOKEN cannot start other workflows.
+#
+# Each desk still has its own cron in za-*.yml. Heartbeat is backup +
+# catch-up, not a single global content runner.
+#
+# Required secret: PERSONAL_GITHUB_TOKEN
+#   classic: repo + workflow
+#   fine-grained: Contents R/W, Actions R/W, Metadata R
 
 on:
   schedule:
-    - cron: "3,18,33,48 3-20 * * *"
+    # UTC 03:00–20:59 ≈ EAT 06:00–23:59. Every 10 minutes.
+    - cron: "0,10,20,30,40,50 3-20 * * *"
   workflow_dispatch:
 
 concurrency:
   group: newsroom-heartbeat
   cancel-in-progress: true
 
+permissions:
+  actions: write
+  contents: read
+
 jobs:
   poke:
     runs-on: ubuntu-22.04
     steps:
-      - name: Dispatch writer-dispatcher (EAT clock)
+      - name: Poke due workflows (Africa/Nairobi clock)
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
-          NOW=$(TZ=Africa/Nairobi date '+%Y-%m-%d %H:%M %Z')
-          echo "Heartbeat EAT: $NOW"
+
           if [ -z "${GH_TOKEN:-}" ]; then
-            echo "PERSONAL_GITHUB_TOKEN is missing — cannot poke dispatcher"
+            echo "::error::PERSONAL_GITHUB_TOKEN missing — cannot start other workflows"
             exit 1
           fi
-          gh workflow run writer-dispatcher.yml --repo "${GITHUB_REPOSITORY}"
-          echo "Poked writer-dispatcher.yml"
+
+          EAT_H=$(TZ=Africa/Nairobi date +%H)
+          EAT_M=$(TZ=Africa/Nairobi date +%M)
+          EAT_DOW=$(TZ=Africa/Nairobi date +%u)   # 1=Mon … 7=Sun
+          EAT_NOW=$(TZ=Africa/Nairobi date '+%Y-%m-%d %H:%M %Z')
+          H=$((10#$EAT_H))
+          M=$((10#$EAT_M))
+          NOW_MIN=$((H * 60 + M))
+          echo "Heartbeat EAT: $EAT_NOW (dow=$EAT_DOW)"
+
+          # Due if target is within the last LOOKBACK minutes (catch late ticks).
+          LOOKBACK=25
+          due() {
+            local th=$((10#$1)) tm=$((10#$2))
+            local t=$((th * 60 + tm))
+            local d=$((NOW_MIN - t))
+            if [ "$d" -lt 0 ]; then d=$((d + 1440)); fi
+            [ "$d" -ge 0 ] && [ "$d" -le "$LOOKBACK" ]
+          }
+
+          run_wf() {
+            local wf=$1
+            echo "→ gh workflow run $wf"
+            if gh workflow run "$wf" --repo "$GH_REPO"; then
+              echo "  started $wf"
+            else
+              echo "::warning::failed to start $wf"
+            fi
+          }
+
+          # --- Publisher (hourly, :09 UTC ≈ :09 or :09+1h local depending) ---
+          # Fire around each hour mark in EAT so scheduled posts go live.
+          if [ "$M" -lt 12 ]; then
+            run_wf "scheduler.yml"
+          fi
+
+          # --- Evening brief: 19:07 EAT ---
+          if due 19 7; then
+            run_wf "evening-brief.yml"
+          fi
+
+          # --- Sitemap submit roughly every 6h EAT ---
+          if due 6 20 || due 12 20 || due 18 20 || due 0 20; then
+            run_wf "submit-sitemaps.yml"
+          fi
+
+          # Night quiet hours: still allow publisher/brief above; skip desks before 06:00
+          if [ "$H" -lt 6 ]; then
+            echo "Before 06:00 EAT — desks skipped"
+            exit 0
+          fi
+
+          # --- Desks (own schedules mirrored here for reliability) ---
+          # News: every hour on the hour 06–23 EAT
+          if [ "$M" -le 20 ]; then
+            run_wf "za-news.yml"
+          fi
+
+          # Ghafla: 07:08 11:08 15:08 19:08
+          for hm in "7:8" "11:8" "15:8" "19:8"; do
+            IFS=: read -r th tm <<<"$hm"
+            due "$th" "$tm" && run_wf "za-ghafla.yml"
+          done
+
+          # Mpasho: 07:38 11:38 15:38 19:38
+          for hm in "7:38" "11:38" "15:38" "19:38"; do
+            IFS=: read -r th tm <<<"$hm"
+            due "$th" "$tm" && run_wf "za-mpasho.yml"
+          done
+
+          # Entertainment: 08:08 12:08 16:08 20:08
+          for hm in "8:8" "12:8" "16:8" "20:8"; do
+            IFS=: read -r th tm <<<"$hm"
+            due "$th" "$tm" && run_wf "za-entertainment.yml"
+          done
+
+          # Africa: 06:18 18:18
+          due 6 18 && run_wf "za-africa.yml"
+          due 18 18 && run_wf "za-africa.yml"
+
+          # Agriculture: 07:18 17:18
+          due 7 18 && run_wf "za-agriculture.yml"
+          due 17 18 && run_wf "za-agriculture.yml"
+
+          # Business: 08:18 16:18
+          due 8 18 && run_wf "za-business.yml"
+          due 16 18 && run_wf "za-business.yml"
+
+          # Lifestyle: 09:18 15:18
+          due 9 18 && run_wf "za-lifestyle.yml"
+          due 15 18 && run_wf "za-lifestyle.yml"
+
+          # Opinions: 10:18 14:18
+          due 10 18 && run_wf "za-opinions.yml"
+          due 14 18 && run_wf "za-opinions.yml"
+
+          # Sports: 11:18 19:18
+          due 11 18 && run_wf "za-sports.yml"
+          due 19 18 && run_wf "za-sports.yml"
+
+          # Technology: 12:18 18:48
+          due 12 18 && run_wf "za-technology.yml"
+          due 18 48 && run_wf "za-technology.yml"
+
+          # Diano: 13:18 20:18
+          due 13 18 && run_wf "za-diano.yml"
+          due 20 18 && run_wf "za-diano.yml"
+
+          # Jaj: Mon+Thu 11:25 17:25
+          if [ "$EAT_DOW" = "1" ] || [ "$EAT_DOW" = "4" ]; then
+            due 11 25 && run_wf "za-jaj.yml"
+            due 17 25 && run_wf "za-jaj.yml"
+          fi
+
+          echo "Heartbeat done at $EAT_NOW"

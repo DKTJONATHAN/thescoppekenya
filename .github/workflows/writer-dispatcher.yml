@@ -1,20 +1,17 @@
 name: Writer Dispatcher
 
-# Nairobi newsroom clock. Desks ALSO have their own crons — do not
-# strip those. GitHub schedule is UTC and is often delayed or dropped;
-# workflow_dispatch (the Run button) is the only 100% reliable trigger.
-# Catch-up window is 180 minutes so a late morning tick still fires 06:00.
+# Optional coordinator. Each desk (za-*.yml) has its OWN schedule and can
+# also be started by newsroom-heartbeat. Keep this for manual "force desk"
+# and as a secondary path — do not rely on it as the only clock.
 #
-# PERSONAL_GITHUB_TOKEN is used by newsroom-heartbeat.yml to poke this
-# workflow. GITHUB_TOKEN cannot start other workflows.
+# GitHub schedule is UTC and is often delayed or dropped;
+# workflow_dispatch (Run button) and heartbeat pokes are more reliable.
 
 on:
   schedule:
-    # UTC 03:07–20:52 = EAT 06:07–23:52. Off the :00/:15/:30/:45 crush.
-    - cron: "7 3-20 * * *"
-    - cron: "22 3-20 * * *"
-    - cron: "37 3-20 * * *"
-    - cron: "52 3-20 * * *"
+    # Sparse backup ticks (desks + heartbeat carry the real load).
+    - cron: "17 3-20 * * *"
+    - cron: "47 3-20 * * *"
   repository_dispatch:
     types: [newsroom-tick]
   workflow_dispatch:
@@ -87,7 +84,6 @@ jobs:
 
           mkdir -p "$(dirname "$LEDGER")"
           [ -f "$LEDGER" ] || touch "$LEDGER"
-          # Map historic filename slots onto desk keys so already-fired hours do not rerun.
           if [ -s "$LEDGER" ]; then
             sed -i \
               -e 's/:za-news.yml$/:news/' \
