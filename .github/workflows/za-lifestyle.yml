@@ -1,8 +1,10 @@
 name: Jona Munyi — Lifestyle
 
-# Called by writer-dispatcher.yml on the Nairobi clock.
-# Manual "Run workflow" still works. Do not add cron here.
+# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
+# Manual "Run workflow" still works.
 on:
+  schedule:
+    - cron: "18 6,12 * * *"  # 09:18 / 15:18 EAT
   workflow_call:
   workflow_dispatch: {}
 

@@ -1,27 +1,22 @@
 name: Writer Dispatcher
 
-# Nairobi newsroom clock. This is the ONLY workflow with a content cron.
+# Nairobi newsroom clock. Desks ALSO have their own crons — do not
+# strip those. GitHub schedule is UTC and is often delayed or dropped;
+# workflow_dispatch (the Run button) is the only 100% reliable trigger.
+# Catch-up window is 180 minutes so a late morning tick still fires 06:00.
 #
-# Why the old dispatcher only ran when someone pressed "Run workflow":
-# 1. GitHub delays or drops crons at :00/:15/:30/:45. A tight ±12 minute
-#    window then finished with "No writers due".
-# 2. Children were fired with REST workflow_dispatch. GITHUB_TOKEN cannot
-#    start those runs; filenames with spaces ("za Entertainment.yml") 404.
-# 3. A new schedule can take up to an hour to register, and GitHub
-#    disables inactive public-repo schedules until they are re-enabled.
-#
-# Fix: reusable workflow_call (no extra token, no filename encoding),
-# 59-minute catch-up, slot ledger, cron split onto four odd minutes,
-# disable+enable after each push so GitHub re-registers the timers.
+# PERSONAL_GITHUB_TOKEN is used by newsroom-heartbeat.yml to poke this
+# workflow. GITHUB_TOKEN cannot start other workflows.
 
 on:
   schedule:
-    # UTC 03:07–20:52 = EAT 06:07–23:52. Four entries so GitHub registers
-    # each tick separately and we stay off the :00/:15/:30/:45 crush.
+    # UTC 03:07–20:52 = EAT 06:07–23:52. Off the :00/:15/:30/:45 crush.
     - cron: "7 3-20 * * *"
     - cron: "22 3-20 * * *"
     - cron: "37 3-20 * * *"
     - cron: "52 3-20 * * *"
+  repository_dispatch:
+    types: [newsroom-tick]
   workflow_dispatch:
     inputs:
       force_desk:
@@ -88,7 +83,7 @@ jobs:
           H=$((10#$EAT_H))
           M=$((10#$EAT_M))
           NOW_MIN=$((H * 60 + M))
-          LOOKBACK=59
+          LOOKBACK=180
 
           mkdir -p "$(dirname "$LEDGER")"
           [ -f "$LEDGER" ] || touch "$LEDGER"

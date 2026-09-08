@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
-import { Facebook, Instagram, Youtube, Mail, ArrowRight, Phone, Globe } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Facebook, Instagram, Youtube, Mail, Phone, Globe } from "lucide-react";
+import { NewsletterForm } from "@/components/NewsletterForm";
 import { categories } from "@/lib/markdown";
 import { staticSitePages } from "@/lib/site-links";
 import { XIcon } from "@/components/XIcon";
@@ -25,17 +25,7 @@ export function Footer() {
             <p className="text-sm mb-4 opacity-80">
               Kenya news, gossip and showbiz — one email, Nairobi time.
             </p>
-            <form className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-2.5 bg-background border-0 rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-background text-sm"
-              />
-              <Button className="bg-background text-foreground hover:opacity-90 px-5 h-11">
-                Subscribe
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </form>
+            <NewsletterForm className="max-w-md mx-auto" tone="onAccent" />
           </div>
         </div>
       </div>

@@ -1,8 +1,10 @@
 name: Martin Kihara — Mpasho
 
-# Called by writer-dispatcher.yml on the Nairobi clock.
-# Manual "Run workflow" still works. Do not add cron here.
+# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
+# Manual "Run workflow" still works.
 on:
+  schedule:
+    - cron: "38 4,8,12,16 * * *"  # 07:38 / 11:38 / 15:38 / 19:38 EAT
   workflow_call:
   workflow_dispatch: {}
 

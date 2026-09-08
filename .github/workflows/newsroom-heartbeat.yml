@@ -1,0 +1,33 @@
+name: Newsroom heartbeat
+
+# GitHub often delays or drops `schedule` for hours (that is why the Run
+# button still works when cron does not). This pokes writer-dispatcher
+# every ~15 minutes during the Kenya day using PERSONAL_GITHUB_TOKEN —
+# GITHUB_TOKEN is not allowed to start other workflows.
+
+on:
+  schedule:
+    - cron: "3,18,33,48 3-20 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: newsroom-heartbeat
+  cancel-in-progress: true
+
+jobs:
+  poke:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Dispatch writer-dispatcher (EAT clock)
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          NOW=$(TZ=Africa/Nairobi date '+%Y-%m-%d %H:%M %Z')
+          echo "Heartbeat EAT: $NOW"
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "PERSONAL_GITHUB_TOKEN is missing — cannot poke dispatcher"
+            exit 1
+          fi
+          gh workflow run writer-dispatcher.yml --repo "${GITHUB_REPOSITORY}"
+          echo "Poked writer-dispatcher.yml"

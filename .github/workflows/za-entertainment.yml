@@ -1,8 +1,10 @@
 name: Mutheu Ann — Entertainment
 
-# Called by writer-dispatcher.yml on the Nairobi clock.
-# Manual "Run workflow" still works. Do not add cron here.
+# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
+# Manual "Run workflow" still works.
 on:
+  schedule:
+    - cron: "8 5,9,13,17 * * *"  # 08:08 / 12:08 / 16:08 / 20:08 EAT
   workflow_call:
   workflow_dispatch: {}
 

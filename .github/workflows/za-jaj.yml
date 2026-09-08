@@ -1,7 +1,9 @@
 name: Jaj — Opinion column
 
-# Called by writer-dispatcher.yml (Mon + Thu). Manual run still works.
+# Mon + Thu Nairobi clock. Dispatcher can still call this.
 on:
+  schedule:
+    - cron: "25 8,14 * * 1,4"  # 11:25 / 17:25 EAT Mon+Thu
   workflow_call:
     inputs:
       max_articles:

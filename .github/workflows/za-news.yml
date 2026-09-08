@@ -1,8 +1,10 @@
 name: Celestine Nzioka — News
 
-# Called by writer-dispatcher.yml on the Nairobi clock.
-# Manual "Run workflow" still works. Do not add cron here.
+# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
+# Manual "Run workflow" still works.
 on:
+  schedule:
+    - cron: "11 3-20 * * *"  # 06:11–23:11 EAT, hourly
   workflow_call:
   workflow_dispatch: {}
 

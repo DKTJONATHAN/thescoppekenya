@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2, CheckCircle } from "lucide-react";
 
 interface NewsletterFormProps {
   className?: string;
+  tone?: "default" | "onAccent";
 }
 
-export function NewsletterForm({ className = "" }: NewsletterFormProps) {
+export function NewsletterForm({ className = "", tone = "default" }: NewsletterFormProps) {
+  const inputId = useId();
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -16,38 +17,29 @@ export function NewsletterForm({ className = "" }: NewsletterFormProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!email) return;
-
     setIsLoading(true);
-
     try {
-      const { error } = await supabase
-        .from('newsletter_subscribers')
-        .insert({ email: email.toLowerCase().trim() });
-
-      if (error) {
-        if (error.code === '23505') {
-          toast({
-            title: "Already subscribed",
-            description: "This email is already subscribed to our newsletter.",
-          });
-        } else {
-          throw error;
-        }
-      } else {
-        setIsSuccess(true);
-        setEmail("");
-        toast({
-          title: "Subscribed!",
-          description: "You've been added to our newsletter.",
-        });
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.toLowerCase().trim() }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(data.error || "Failed to subscribe");
       }
+      setIsSuccess(true);
+      setEmail("");
+      toast({
+        title: data.already ? "Already subscribed" : "Subscribed",
+        description: data.message || "The evening brief lands at 19:00 EAT.",
+      });
     } catch (error) {
       console.error("Newsletter subscription error:", error);
       toast({
-        title: "Error",
-        description: "Failed to subscribe. Please try again.",
+        title: "Could not subscribe",
+        description: error instanceof Error ? error.message : "Try again in a moment.",
         variant: "destructive",
       });
     } finally {
@@ -57,33 +49,39 @@ export function NewsletterForm({ className = "" }: NewsletterFormProps) {
 
   if (isSuccess) {
     return (
-      <div className={`flex items-center gap-2 text-primary ${className}`}>
+      <div className={`flex items-center justify-center gap-2 ${className}`}>
         <CheckCircle className="w-5 h-5" />
-        <span className="font-medium">Thanks for subscribing!</span>
+        <span className="font-medium">You're on the evening brief.</span>
       </div>
     );
   }
 
+  const buttonClass =
+    tone === "onAccent"
+      ? "bg-background text-foreground hover:opacity-90 px-5 h-11"
+      : "gradient-primary text-primary-foreground";
+
   return (
-    <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row gap-3 ${className}`}>
-      <input 
-        type="email" 
+    <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row gap-2 ${className}`}>
+      <label htmlFor={inputId} className="sr-only">
+        Email
+      </label>
+      <input
+        id={inputId}
+        type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="Enter your email" 
-        className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+        placeholder="you@example.com"
+        autoComplete="email"
+        className="flex-1 px-4 py-2.5 rounded-md border-0 bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-background text-sm"
         required
         disabled={isLoading}
       />
-      <Button 
-        type="submit" 
-        className="gradient-primary text-primary-foreground"
-        disabled={isLoading}
-      >
+      <Button type="submit" className={buttonClass} disabled={isLoading}>
         {isLoading ? (
           <>
             <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-            Subscribing...
+            Subscribing…
           </>
         ) : (
           "Subscribe"

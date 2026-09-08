@@ -77,7 +77,7 @@
       "destination": "/category/:slug/index.html"
     },
     {
-      "source": "/:path((?!article/|category/).*)",
+      "source": "/:path((?!api/|article/|category/).*)",
       "destination": "/index"
     }
   ],

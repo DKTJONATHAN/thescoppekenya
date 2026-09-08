@@ -1,8 +1,10 @@
 name: Wanjiku Kuria — Ghafla
 
-# Called by writer-dispatcher.yml on the Nairobi clock.
-# Manual "Run workflow" still works. Do not add cron here.
+# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
+# Manual "Run workflow" still works.
 on:
+  schedule:
+    - cron: "8 4,8,12,16 * * *"  # 07:08 / 11:08 / 15:08 / 19:08 EAT
   workflow_call:
   workflow_dispatch: {}
 
