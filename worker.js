@@ -33,11 +33,23 @@ function json(data, status = 200) {
 }
 
 function toBase64(str) {
-  return btoa(unescape(encodeURIComponent(str)));
+  const bytes = new TextEncoder().encode(str);
+  let binary = "";
+  for (let i = 0; i < bytes.length; i += 1) binary += String.fromCharCode(bytes[i]);
+  return btoa(binary);
+}
+
+function fromBase64(b64) {
+  const binary = atob(String(b64 || "").replace(/\s/g, ""));
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
 }
 
 function ghHeaders(env) {
-  const token = env.PERSONAL_GITHUB_TOKEN;
+  let token = String(env.PERSONAL_GITHUB_TOKEN || "").trim();
+  // Allow accidental "Bearer xxx" paste
+  if (/^bearer\s+/i.test(token)) token = token.replace(/^bearer\s+/i, "").trim();
   if (!token) {
     const err = new Error("PERSONAL_GITHUB_TOKEN is not configured");
     err.status = 503;
@@ -56,7 +68,11 @@ async function githubJson(url, init) {
   const res = await fetch(url, init);
   const body = await res.json().catch(() => ({}));
   if (!res.ok) {
-    const err = new Error(body.message || `GitHub ${res.status}`);
+    const detail =
+      body.message ||
+      (Array.isArray(body.errors) && body.errors.map((e) => e.message).join("; ")) ||
+      `GitHub ${res.status}`;
+    const err = new Error(detail);
     err.status = res.status;
     err.body = body;
     throw err;
@@ -68,7 +84,7 @@ async function readSubscribers(env) {
   const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${SUBS_PATH}?ref=${GITHUB_BRANCH}`;
   try {
     const data = await githubJson(url, { headers: ghHeaders(env) });
-    const decoded = atob(String(data.content || "").replace(/\n/g, ""));
+    const decoded = fromBase64(data.content);
     const parsed = JSON.parse(decoded);
     const list = Array.isArray(parsed.subscribers) ? parsed.subscribers : [];
     return { sha: data.sha, subscribers: list };
@@ -139,9 +155,9 @@ function welcomeHtml() {
 }
 
 async function sendWelcome(env, email) {
-  const key = env.RESEND_API_KEY;
+  const key = String(env.RESEND_API_KEY || "").trim();
   if (!key) return { skipped: true };
-  const from = env.RESEND_FROM || FROM_DEFAULT;
+  const from = String(env.RESEND_FROM || "").trim() || FROM_DEFAULT;
   const res = await fetch(`${RESEND}/emails`, {
     method: "POST",
     headers: {
@@ -244,16 +260,21 @@ async function handleSubscribe(request, env) {
     });
   } catch (error) {
     console.error("subscribe", error);
-    const status = error.status === 503 ? 503 : 500;
-    return json(
-      {
-        error:
-          status === 503
-            ? "Newsletter is not live yet. Add PERSONAL_GITHUB_TOKEN as a Worker secret."
-            : "Could not subscribe. Try again.",
-      },
-      status
-    );
+    const status = error.status === 503 ? 503 : error.status === 401 || error.status === 403 ? 403 : 500;
+    const msg = String(error.message || "Could not subscribe. Try again.");
+    // Safe hints — never echo the token
+    let hint = msg;
+    if (status === 503) {
+      hint = "Add PERSONAL_GITHUB_TOKEN as a Worker secret on the zandani Worker.";
+    } else if (error.status === 401) {
+      hint = "GitHub token rejected (401). Recreate the PAT and set Worker secret PERSONAL_GITHUB_TOKEN again.";
+    } else if (error.status === 403) {
+      hint =
+        "GitHub token forbidden (403). Token needs Contents: Read and write on DKTJONATHAN/zandani (fine-grained) or repo scope (classic).";
+    } else if (error.status === 404) {
+      hint = "GitHub path not found. Check repo access for data/subscribers.json.";
+    }
+    return json({ error: hint, github_status: error.status || null }, status === 503 ? 503 : status === 403 ? 403 : 500);
   }
 }
 
@@ -263,7 +284,7 @@ async function deactivate(env, email) {
   if (getRes.status === 404) return;
   const data = await getRes.json();
   if (!getRes.ok) throw new Error(data.message || "GitHub read failed");
-  const parsed = JSON.parse(atob(String(data.content || "").replace(/\n/g, "")));
+  const parsed = JSON.parse(fromBase64(data.content));
   const list = Array.isArray(parsed.subscribers) ? parsed.subscribers : [];
   let changed = false;
   const next = list.map((row) => {
