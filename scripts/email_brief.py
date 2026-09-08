@@ -3,6 +3,9 @@
 
 Subscribers live in data/subscribers.json. Send layer is Resend
 (RESEND_API_KEY). Do not print full addresses in logs.
+
+HTTP uses curl (available on GitHub Actions runners). Python urllib
+from GHA has been seen to hit Cloudflare error 1010 on api.resend.com.
 """
 from __future__ import annotations
 
@@ -10,11 +13,10 @@ import json
 import os
 import pathlib
 import re
+import subprocess
 import sys
 import time
-import urllib.error
 import urllib.parse
-import urllib.request
 from datetime import datetime, timedelta, timezone
 from email.utils import parseaddr
 from html import escape
@@ -143,7 +145,7 @@ def brief_html(posts: list[dict], email: str = "") -> str:
     unsub = ""
     if email:
         unsub = f'<a href="{escape(unsub_url(email))}" style="color:#6a655c;">Unsubscribe</a> · '
-    lead = escape(posts[0]["title"]) if posts else "Tonight from Nairobi"
+    lead = escape(posts[0]["title"] if posts else "Tonight from Nairobi")
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -221,26 +223,59 @@ def api_key() -> str:
 
 
 def resend(method: str, path: str, payload: dict | None = None) -> dict:
-    data = None if payload is None else json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(
-        RESEND + path,
-        data=data,
-        method=method,
-        headers={
-            "Authorization": f"Bearer {api_key()}",
-            "Content-Type": "application/json",
-            # Resend requires a User-Agent; bare urllib defaults can trip CF 1010.
-            "User-Agent": "zandani-evening-brief/1.0 (+https://zandani.co.ke)",
-            "Accept": "application/json",
-        },
-    )
+    """Call Resend via curl to avoid Cloudflare 1010 on Python urllib from GHA."""
+    if method.upper() != "POST" or payload is None:
+        raise RuntimeError(f"unsupported Resend call {method} {path}")
+
+    body = json.dumps(payload)
+    cmd = [
+        "curl", "-sS", "-X", "POST",
+        f"{RESEND}{path}",
+        "-H", f"Authorization: Bearer {api_key()}",
+        "-H", "Content-Type: application/json",
+        "-H", "Accept: application/json",
+        "-H", "User-Agent: zandani-evening-brief/1.0 (+https://zandani.co.ke)",
+        "-d", body,
+        "-w", "\n%{http_code}",
+    ]
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            raw = resp.read().decode("utf-8")
-            return json.loads(raw) if raw else {}
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"Resend {method} {path} -> {e.code}: {body}") from e
+        completed = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=45,
+            check=False,
+        )
+    except FileNotFoundError as e:
+        raise RuntimeError("curl is required to call Resend") from e
+
+    out = (completed.stdout or "").rstrip("\n")
+    err = (completed.stderr or "").strip()
+    if not out:
+        raise RuntimeError(f"Resend empty response stderr={err!r}")
+
+    # Last line is HTTP status from -w
+    if "\n" in out:
+        raw_body, status_s = out.rsplit("\n", 1)
+    else:
+        raw_body, status_s = "", out
+    try:
+        status = int(status_s)
+    except ValueError:
+        raw_body, status = out, 0
+
+    parsed: dict = {}
+    if raw_body.strip():
+        try:
+            parsed = json.loads(raw_body)
+        except json.JSONDecodeError:
+            parsed = {"raw": raw_body[:500]}
+
+    if status < 200 or status >= 300:
+        msg = parsed.get("message") or parsed.get("raw") or raw_body[:500] or err
+        raise RuntimeError(f"Resend {method} {path} -> {status}: {msg}")
+
+    return parsed if isinstance(parsed, dict) else {}
 
 
 def from_addr() -> str:
