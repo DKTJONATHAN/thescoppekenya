@@ -18,7 +18,6 @@ Mombasa Governor Abdulswamad Nassir on Monday morning, September 07, 2026, suspe
 
 ### What we know:
 
-
 - Governor Abdulswamad Nassir halted cycling track works along Links Road on Monday, September 07, 2026.
 - Traffic diversions at the Bombolulu section of the Mombasa-Malindi Road pushed heavy vehicle volumes onto secondary routes across Nyali.
 - The Bombolulu corridor serves as a transit link for coastal trade and regional freight between Kenya and Tanzania.
