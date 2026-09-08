@@ -511,10 +511,10 @@
     "49579cb2de0746d15adc2266abaa6d48",
     "ee01967fe898f0b93c6244e44d5b7d9e",
     "b8e6c8669b963f08dee34d7ef993348c",
-    "d558f0306075c02acb41e4a2f9f006df"
+    "d558f0306075c02acb41e4a2f9f006df",
+    "5ffc3d7bc3f657a1d090dfc93bd37aa0"
   ],
   "style_history": [
-    "Hard News Lead",
     "Explainer",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -543,7 +543,8 @@
     "Hard News Lead",
     "Statement Report",
     "Event Report",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Statement Report"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -639,7 +640,8 @@
     "https://kenyans.co.ke/news/126866-mombasa-suspends-links-road-cycling-works-over-traffic-congestion",
     "https://kenyans.co.ke/news/126867-govt-spokesperson-threatens-action-against-harassment-targeting-foreign-nationals",
     "https://kenyans.co.ke/news/126873-france-appoints-wadid-benaabou-new-ambassador-kenya",
-    "https://kenyans.co.ke/news/126874-kenyans-burundi-assured-safety-amid-ruto-directive-foreign-traders"
+    "https://kenyans.co.ke/news/126874-kenyans-burundi-assured-safety-amid-ruto-directive-foreign-traders",
+    "https://kenyans.co.ke/news/126877-ca-unveils-new-rules-allocation-mobile-short-codes-kenya"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -657,7 +659,8 @@
     "mombasa halts links road cycling project ease gridlock",
     "state warns against xenophobic attacks foreign traders",
     "france names wadid benaabou ambassador",
-    "assures citizens burundi safety ruto crackdown"
+    "assures citizens burundi safety ruto crackdown",
+    "changes mobile short code rules telcos"
   ],
   "topic_keys": [
     "news tracker",
