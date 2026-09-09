@@ -518,10 +518,10 @@
     "331a132a5186a0ad6c7e1db8dd5767f9",
     "c75aca011a9eb31851e14da83199c1dd",
     "53e85b28f07a81819a3fcaee3d8b1081",
-    "25633c026ac438af40f4765ae3fb2992"
+    "25633c026ac438af40f4765ae3fb2992",
+    "c4ef09e73e8465822c4d4ce038a4ed53"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
     "Explainer",
@@ -550,7 +550,8 @@
     "Statement Report",
     "Hard News Lead",
     "Event Report",
-    "Statement Report"
+    "Statement Report",
+    "Desk Take"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -653,7 +654,8 @@
     "https://kenyans.co.ke/news/126906-health-ministry-rolls-out-el-nino-plan-18-high-risk-counties",
     "https://kenyans.co.ke/news/126918-nurses-end-43-day-strike-after-agreement-governors",
     "https://kenyans.co.ke/news/126927-kuccps-pressed-reveal-universities-owing-ksh500-million-placement-fees",
-    "https://kenyans.co.ke/news/126929-kaa-introduces-new-baggage-rules-passengers-flying-nairobi"
+    "https://kenyans.co.ke/news/126929-kaa-introduces-new-baggage-rules-passengers-flying-nairobi",
+    "https://kenyans.co.ke/news/126928-kenya-among-countries-expected-jpmorgans-new-frontier-debt-index"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -678,7 +680,8 @@
     "health ministry prepares high risk counties",
     "nurses call off day strike cog pay deal",
     "mps order kuccps list universities owing ksh500 million",
-    "kaa bans bundled baggage jkia curb tax evasion"
+    "kaa bans bundled baggage jkia curb tax evasion",
+    "jpmorgan include frontier debt index"
   ],
   "topic_keys": [
     "news tracker",
