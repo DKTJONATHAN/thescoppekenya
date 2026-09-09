@@ -17,6 +17,7 @@ Tanzania’s Vice President Deogratius Ndejembi announced on Monday, September 7
 
 ### What we know
 
+
 - According to the official government statement, Hassan passed away at around 8:00 am on Monday morning.
 - Vice President Ndejembi delivered the formal announcement through public broadcast channels, detailing the circumstances of the passing and conveying the government's official notification to the country.
 - "Fellow citizens, it is with great sadness that I inform you of the death of Honourable Hafidh Ameir Hassan, husband of the President of the United Republic of Tanzania, Honourable Dr Samia Suluhu Hassan," Ndejembi stated.
