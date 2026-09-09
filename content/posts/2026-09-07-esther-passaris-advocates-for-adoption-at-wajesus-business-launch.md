@@ -2,7 +2,7 @@
 title: "Esther Passaris Advocates For Adoption At WaJesus Business Launch"
 slug: "esther-passaris-advocates-for-adoption-at-wajesus-business-launch"
 description: "esther passaris advocates for adoption wajesus: Esther Passaris encouraged Kabi and Milly WaJesus to consider adoption during the opening of a baby shop on"
-excerpt: "Beyond the Influence: Adoption as Policy and Practice Esther Passaris took the stage at the ESMANDA Baby Shop opening "
+excerpt: "Beyond the Influence: Adoption as Policy and Practice Esther Passaris took the stage at the ESMANDA Baby Shop opening"
 author: "Martin Kihara"
 image: "https://i.ibb.co/Tqh79KV4/1cf04bd742ee.webp"
 category: "Gossip"
