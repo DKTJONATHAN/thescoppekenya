@@ -17,7 +17,6 @@ Comedian-turned-activist Eric Omondi was arrested by plainclothes police officer
 
 ### What we know
 
-
 - Plainclothes officers approached Omondi alongside his mobilization team as members of the public lined up to sign petition forms in the Nairobi Central Business District.
 - The public drive aimed at triggering a popular initiative under Article 257 of the Constitution to petition the Independent Electoral and Boundaries Commission (IEBC).
 - Under the proposed reform bill, the initiative also seeks to eliminate the Senate, abolish all 47 County Woman Representative posts, remove nominated slots for Members of County Assembly (MCAs), and reduce the total number of elective parliamentary seats.
