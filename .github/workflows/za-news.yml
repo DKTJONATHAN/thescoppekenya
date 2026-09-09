@@ -1,9 +1,11 @@
 name: Celestine Nzioka — News
 
-# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
+# August-style: this desk owns its own schedule. No universal dispatcher cron.
+# Manual "Run workflow" still works.
 on:
   schedule:
-    - cron: "11 3-20 * * *"  # 06:11–23:11 EAT, hourly
+    # Hourly 06:11–23:11 EAT (UTC+3). Minute 11 avoids :00 GitHub queue pile-up.
+    - cron: "11 3-20 * * *"
   workflow_call:
   workflow_dispatch: {}
 
