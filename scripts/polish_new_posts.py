@@ -53,6 +53,29 @@ SPAM_SUBJECT_RE = re.compile(
     re.I,
 )
 
+DATE_LEDE_RE = re.compile(
+    r"^(?:On\s+)?(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+"
+    r"(?:morning|afternoon|evening|night)?\s*,?\s*"
+    r"(?:January|February|March|April|May|June|July|August|September|October|November|December)?\s*"
+    r"\d{0,2}(?:st|nd|rd|th)?(?:,)?\s*\d{0,4}\s*[,:]?\s*",
+    re.I,
+)
+
+
+def strip_date_clock_lede(body: str) -> str:
+    paras = re.split(r"\n\s*\n+", body.strip())
+    if not paras:
+        return body
+    first = paras[0].strip()
+    if first.startswith("#"):
+        return body
+    new = DATE_LEDE_RE.sub("", first, count=1).strip()
+    if new and new[0].islower():
+        new = new[0].upper() + new[1:]
+    if new != first and len(new) > 20:
+        paras[0] = new
+    return "\n\n".join(paras).strip()
+
 
 def split_fm(text: str):
     if not text.startswith("---"):
@@ -148,7 +171,7 @@ def collapse_repetition(body: str) -> str:
 
 
 def strip_body(body: str) -> str:
-    body = collapse_repetition(body)
+    body = strip_date_clock_lede(collapse_repetition(body))
     blocks = re.split(r"\n\s*\n+", body.strip())
     kept = []
     skip = False
