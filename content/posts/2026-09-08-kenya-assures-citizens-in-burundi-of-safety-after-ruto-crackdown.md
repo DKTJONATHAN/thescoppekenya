@@ -15,7 +15,6 @@ canonical: "https://zandani.co.ke/article/kenya-assures-citizens-in-burundi-of-s
 ---
 ### What we know
 
-
 - Kenya’s Ambassador to Burundi, Henry Wambuma, issued a statement on Monday, September 7, 2026, in Bujumbura, assuring Kenyan expats of their safety. - * President William Ruto on September 2 ordered all unlicensed foreign retail traders and street vendors in Kenya to close their shops by September 7. - The diplomatic scramble began after President Ruto's September 2 decree. - This hardline stance triggered immediate panic in Bujumbura, where a large community of Kenyan professionals and traders live.
 
 Kenya’s Ambassador to Burundi, Henry Wambuma, issued a statement on Monday, September 7, 2026, in Bujumbura, assuring Kenyan expats of their safety. The assurance follows fears of retaliation after President William Ruto ordered undocumented foreign petty traders to shut down their Kenyan businesses by yesterday's deadline.
