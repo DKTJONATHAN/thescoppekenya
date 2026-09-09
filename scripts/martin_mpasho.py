@@ -78,6 +78,14 @@ BRANDS_TO_SCRUB = [
     "BBC", "CNN", "Reuters", "Al Jazeera", "Mpasho", "Mpasho Kenya", "Mpasho.co.ke",
 ]
 
+# Reject site chrome / brand assets masquerading as article photos
+LOGO_URL_RE = re.compile(
+    r"logo|favicon|icon|sprite|brand|header[-_]?img|site[-_]?mark|"
+    r"mpasho[-_]?logo|wordmark|badge|avatar|placeholder|default[-_]?image|"
+    r"wp-content/uploads/.*/logo|/logos?/|/icons?/",
+    re.I,
+)
+
 now_utc = datetime.datetime.utcnow()
 now_eat = now_utc + datetime.timedelta(hours=3)
 publish_ts = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -156,6 +164,127 @@ def get_unsplash_image(query):
     except Exception as e:
         print(f"unsplash error: {e}")
     return fallback
+
+
+def _abs_url(src, page_url):
+    if not src:
+        return ""
+    src = src.strip()
+    if src.startswith("//"):
+        return "https:" + src
+    if src.startswith("http"):
+        return src
+    if src.startswith("/"):
+        base = page_url.split("/")[0] + "//" + page_url.split("/")[2]
+        return base + src
+    return urllib.parse.urljoin(page_url, src)
+
+
+def _is_logo_url(url):
+    if not url:
+        return True
+    if LOGO_URL_RE.search(url):
+        return True
+    # Tiny / tracking / data URIs are never article photos
+    if url.startswith("data:"):
+        return True
+    low = url.lower()
+    if any(ext in low for ext in (".svg", ".ico", ".gif")) and "logo" in low:
+        return True
+    return False
+
+
+def _score_image_url(url, source="meta"):
+    """Higher = better article hero candidate. Logos score -1."""
+    if not url or _is_logo_url(url):
+        return -1
+    score = 0
+    low = url.lower()
+    # Prefer real photo formats and upload paths
+    if any(ext in low for ext in (".jpg", ".jpeg", ".webp", ".png")):
+        score += 3
+    if "/uploads/" in low or "/wp-content/" in low or "/media/" in low:
+        score += 4
+    if any(k in low for k in ("featured", "hero", "cover", "thumbnail", "post-", "article")):
+        score += 5
+    # Meta tags are good signals but still can be logos — already filtered
+    if source == "og":
+        score += 6
+    elif source == "twitter":
+        score += 4
+    elif source == "article":
+        score += 8  # in-article content image is preferred
+    elif source == "featured":
+        score += 10
+    # Penalize very small dimension hints in the URL
+    m = re.search(r"[-_](\d{2,4})x(\d{2,4})", low)
+    if m:
+        w, h = int(m.group(1)), int(m.group(2))
+        if w < 200 or h < 150:
+            score -= 10
+        elif w >= 600 and h >= 350:
+            score += 4
+    return score
+
+
+def pick_article_image(soup, page_url):
+    """Prefer real article photo; never return a logo."""
+    candidates = []  # (score, url)
+
+    def add(url, source):
+        abs_u = _abs_url(url, page_url)
+        if not abs_u:
+            return
+        sc = _score_image_url(abs_u, source)
+        if sc >= 0:
+            candidates.append((sc, abs_u))
+
+    # 1) Explicit featured / post thumbnail selectors (highest priority)
+    for sel in [
+        "img.wp-post-image",
+        "img.attachment-post-thumbnail",
+        ".post-thumbnail img",
+        ".featured-image img",
+        ".entry-thumbnail img",
+        "figure.wp-block-image img",
+        ".article-image img",
+        ".post-image img",
+        "article .entry-content img",
+        "article img",
+        ".post-content img",
+        ".entry-content img",
+    ]:
+        for img in soup.select(sel):
+            src = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
+            # srcset: take the largest candidate
+            srcset = img.get("srcset") or img.get("data-srcset") or ""
+            if srcset:
+                parts = [p.strip().split()[0] for p in srcset.split(",") if p.strip()]
+                if parts:
+                    src = parts[-1]  # usually largest
+            add(src, "featured" if "thumbnail" in sel or "featured" in sel else "article")
+
+    # 2) Open Graph / Twitter — only if not a logo
+    for prop, source in (("og:image", "og"), ("twitter:image", "twitter"), ("twitter:image:src", "twitter")):
+        for m in soup.find_all("meta", property=prop) + soup.find_all("meta", attrs={"name": prop}):
+            add(m.get("content", ""), source)
+
+    # 3) Any remaining large-looking <img> in main content
+    main = soup.select_one("article") or soup.select_one("main") or soup
+    for img in main.find_all("img"):
+        src = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
+        add(src, "article")
+
+    if not candidates:
+        return ""
+
+    candidates.sort(key=lambda x: x[0], reverse=True)
+    best_score, best_url = candidates[0]
+    if best_score < 0:
+        return ""
+    # Deduplicate near-identical paths, keep highest score
+    print(f"Image pick score={best_score}: {best_url[:120]}")
+    return best_url
 
 
 def get_target_urls():
@@ -269,13 +398,7 @@ def scrape_article(url):
             if len(p.get_text(strip=True)) > 30
         )
 
-    img = ""
-    for m in soup.find_all("meta"):
-        prop = m.get("property") or m.get("name") or ""
-        if prop in ("og:image", "twitter:image"):
-            img = m.get("content", "")
-            if img:
-                break
+    img = pick_article_image(soup, url)
     return text, img, title
 
 
@@ -435,9 +558,12 @@ def main():
             out_title = re.sub(r"^#+\s*", "", first).strip() or out_title
             article = article.split("\n", 1)[-1].strip()
 
-        final_image = (
-            upload_to_imgbb(img) if img else get_unsplash_image("kenya celebrity showbiz")
-        )
+        # Only use a real article image; never fall back to a logo path
+        if img and not _is_logo_url(img):
+            final_image = upload_to_imgbb(img)
+        else:
+            print("No usable article image — Unsplash fallback")
+            final_image = get_unsplash_image("kenya celebrity showbiz")
         seo = seo_fields(out_title, article, CATEGORY, AUTHOR_NAME)
         slug = f"{today_str}-{slugify(seo['title'])}"
         frontmatter = (
