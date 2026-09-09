@@ -16,6 +16,7 @@ schema: "NewsArticle"
 
 ### What we know
 
+
 - Public Health Principal Secretary Mary Muthoni has announced a nationwide El Niño response plan targeting 18 high-risk counties across Kenya. - * Public Health PS Mary Muthoni confirmed 18 counties face imminent flood and health risks. - Addressing health partners during planning for the Kenya Public Health International Conference, PS Muthoni explained that the ministry is coordinating with donor agencies to stock temporary medical structures, water purification systems, and basic drugs. - Data from the Interior Ministry singles out urban estates in Nairobi along clogged riverways, alongside coastal zones in Kwale, Kilifi, Lamu, Tana River, and Mombasa.
 
 Public Health Principal Secretary Mary Muthoni has announced a nationwide El Niño response plan targeting 18 high-risk counties across Kenya. The intervention aims to shield over four million citizens in flood hotspots like Nairobi, Mombasa, and Kisumu from cholera, malaria outbreaks, and severe infrastructure damage caused by predicted torrential downpours.
