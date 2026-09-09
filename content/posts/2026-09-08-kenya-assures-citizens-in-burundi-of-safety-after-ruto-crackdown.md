@@ -7,12 +7,13 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/burndians.jpg.webp?itok=hR3Mcdob"
 category: "News"
 tags: ["kenya assures citizens in burundi of safety after ruto crackdown", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/kenya-assures-citizens-in-burundi-of-safety-after-ruto-crackdown"
 date: "2026-09-08T06:17:14Z"
 dateModified: "2026-09-08T06:17:14Z"
 focusKeyword: "kenya assures citizens burundi safety after"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/kenya-assures-citizens-in-burundi-of-safety-after-ruto-crackdown"
 ---
+
 ### What we know
 
 - Kenya’s Ambassador to Burundi, Henry Wambuma, issued a statement on Monday, September 7, 2026, in Bujumbura, assuring Kenyan expats of their safety.
