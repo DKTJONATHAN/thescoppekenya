@@ -1,17 +1,9 @@
 name: Writer Dispatcher
 
-# Optional coordinator. Each desk (za-*.yml) has its OWN schedule and can
-# also be started by newsroom-heartbeat. Keep this for manual "force desk"
-# and as a secondary path — do not rely on it as the only clock.
-#
-# GitHub schedule is UTC and is often delayed or dropped;
-# workflow_dispatch (Run button) and heartbeat pokes are more reliable.
+# Manual / secondary path only. Primary clock is each desk's own simple
+# schedule (August style). Keep this for "force desk" and emergency catch-up.
 
 on:
-  schedule:
-    # Sparse backup ticks (desks + heartbeat carry the real load).
-    - cron: "17 3-20 * * *"
-    - cron: "47 3-20 * * *"
   repository_dispatch:
     types: [newsroom-tick]
   workflow_dispatch:

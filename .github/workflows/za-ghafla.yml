@@ -1,7 +1,6 @@
 name: Wanjiku Kuria — Ghafla
 
-# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
-# Manual "Run workflow" still works.
+# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
 on:
   schedule:
     - cron: "8 4,8,12,16 * * *"  # 07:08 / 11:08 / 15:08 / 19:08 EAT

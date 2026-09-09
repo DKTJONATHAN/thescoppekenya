@@ -1,7 +1,6 @@
 name: Celestine Nzioka — News
 
-# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
-# Manual "Run workflow" still works.
+# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
 on:
   schedule:
     - cron: "11 3-20 * * *"  # 06:11–23:11 EAT, hourly

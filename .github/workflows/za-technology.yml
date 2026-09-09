@@ -1,7 +1,6 @@
 name: Elizabeth Muthoni — Technology
 
-# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
-# Manual "Run workflow" still works.
+# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
 on:
   schedule:
     - cron: "18 9 * * *"  # 12:18 EAT

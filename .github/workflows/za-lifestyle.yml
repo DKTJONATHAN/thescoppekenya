@@ -1,7 +1,6 @@
 name: Jona Munyi — Lifestyle
 
-# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
-# Manual "Run workflow" still works.
+# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
 on:
   schedule:
     - cron: "18 6,12 * * *"  # 09:18 / 15:18 EAT

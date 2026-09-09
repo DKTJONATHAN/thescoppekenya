@@ -1,7 +1,6 @@
 name: Amara Ndlovu — East Africa
 
-# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
-# Manual "Run workflow" still works.
+# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
 on:
   schedule:
     - cron: "18 3,15 * * *"  # 06:18 / 18:18 EAT

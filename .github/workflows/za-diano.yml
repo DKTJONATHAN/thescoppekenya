@@ -1,7 +1,6 @@
 name: Zed Mogaka — George Diano
 
-# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
-# Manual "Run workflow" still works.
+# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
 on:
   schedule:
     - cron: "18 10,17 * * *"  # 13:18 / 20:18 EAT

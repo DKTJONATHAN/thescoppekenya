@@ -1,6 +1,6 @@
 name: Jaj — Opinion column
 
-# Mon + Thu Nairobi clock. Dispatcher can still call this.
+# Simple Nairobi-time cron (UTC). Mon + Thu only. Manual "Run workflow" still works.
 on:
   schedule:
     - cron: "25 8,14 * * 1,4"  # 11:25 / 17:25 EAT Mon+Thu

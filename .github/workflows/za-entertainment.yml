@@ -1,7 +1,6 @@
 name: Mutheu Ann — Entertainment
 
-# Own Nairobi-time cron (UTC below). Dispatcher can still call this.
-# Manual "Run workflow" still works.
+# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
 on:
   schedule:
     - cron: "8 5,9,13,17 * * *"  # 08:08 / 12:08 / 16:08 / 20:08 EAT
