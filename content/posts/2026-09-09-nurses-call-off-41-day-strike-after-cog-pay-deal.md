@@ -17,7 +17,6 @@ Nurses across Kenya have called off their 41-day strike after union leaders sign
 
 ### What we know
 
-
 - KNUNM Secretary General Seth Panyako directed all nurses to report back to work within 24 hours.
 - The Council of Governors agreed to raise the monthly risk allowance by Ksh 8,000 and uniform allowance by Ksh 5,000.
 - The total monetary increase in monthly allowances now stands at Ksh 13,000 per nurse across all counties.
