@@ -1,10 +1,10 @@
 name: Elizabeth Muthoni — Technology
 
-# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
+# August-style: this desk owns its own schedule. No universal dispatcher cron.
 on:
   schedule:
-    - cron: "18 9 * * *"  # 12:18 EAT
-    - cron: "48 15 * * *"  # 18:48 EAT
+    # Hourly 06:45–23:45 EAT (UTC+3)
+    - cron: "45 3-20 * * *"
   workflow_call:
   workflow_dispatch: {}
 

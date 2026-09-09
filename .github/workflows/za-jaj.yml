@@ -1,9 +1,11 @@
 name: Jaj — Opinion column
 
-# Simple Nairobi-time cron (UTC). Mon + Thu only. Manual "Run workflow" still works.
+# August-style: this desk owns its own schedule. No universal dispatcher cron.
+# Column cadence: Mon + Thu only, several slots those days.
 on:
   schedule:
-    - cron: "25 8,14 * * 1,4"  # 11:25 / 17:25 EAT Mon+Thu
+    # 08:52 / 11:52 / 14:52 / 17:52 / 20:52 EAT on Mon+Thu (UTC+3)
+    - cron: "52 5,8,11,14,17 * * 1,4"
   workflow_call:
     inputs:
       max_articles:

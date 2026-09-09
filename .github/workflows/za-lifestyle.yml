@@ -1,9 +1,10 @@
 name: Jona Munyi — Lifestyle
 
-# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
+# August-style: this desk owns its own schedule. No universal dispatcher cron.
 on:
   schedule:
-    - cron: "18 6,12 * * *"  # 09:18 / 15:18 EAT
+    # Hourly 06:32–23:32 EAT (UTC+3)
+    - cron: "32 3-20 * * *"
   workflow_call:
   workflow_dispatch: {}
 

@@ -1,9 +1,10 @@
 name: Zed Mogaka — George Diano
 
-# Simple Nairobi-time cron (UTC). Manual "Run workflow" still works.
+# August-style: this desk owns its own schedule. No universal dispatcher cron.
 on:
   schedule:
-    - cron: "18 10,17 * * *"  # 13:18 / 20:18 EAT
+    # Hourly 06:48–23:48 EAT (UTC+3)
+    - cron: "48 3-20 * * *"
   workflow_call:
   workflow_dispatch: {}
 
