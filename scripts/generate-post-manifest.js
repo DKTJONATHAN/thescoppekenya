@@ -54,6 +54,33 @@ function stripMarkdown(text) {
     .trim();
 }
 
+function stripWhatWeKnow(body) {
+  if (!body || !/what we know/i.test(body)) return body || '';
+  const lines = body.split('\n');
+  const out = [];
+  let skipping = false;
+  for (const line of lines) {
+    const stripped = line.trim();
+    if (/^#{2,3}\s*What we know:?\s*$/i.test(stripped)) {
+      skipping = true;
+      continue;
+    }
+    if (skipping) {
+      if (!stripped || /^[-*+]\s+/.test(stripped)) continue;
+      if (/^#{2,3}\s+/.test(stripped)) {
+        skipping = false;
+        out.push(line);
+        continue;
+      }
+      skipping = false;
+      out.push(line);
+      continue;
+    }
+    out.push(line);
+  }
+  return out.join('\n');
+}
+
 function truncateSnippet(text, maxLength = 155) {
   const cleaned = stripMarkdown(text);
   if (!cleaned) return '';
@@ -74,16 +101,17 @@ function truncateSnippet(text, maxLength = 155) {
 
 function buildSnippet(data, bodyContent) {
   const explicit = [data.description, data.excerpt].find(
-    value => typeof value === 'string' && value.trim()
+    value => typeof value === 'string' && value.trim() && !/what we know/i.test(value)
   );
   if (explicit) return truncateSnippet(explicit);
 
-  const paragraphs = (bodyContent || '')
+  const cleanedBody = stripWhatWeKnow(bodyContent || '');
+  const paragraphs = cleanedBody
     .split(/\n\s*\n/)
     .map(p => stripMarkdown(p))
-    .filter(p => p && !p.startsWith('##'));
+    .filter(p => p && !p.startsWith('##') && !/^what we know/i.test(p) && p.length > 40);
 
-  return truncateSnippet(paragraphs[0] || bodyContent || '');
+  return truncateSnippet(paragraphs[0] || cleanedBody || '');
 }
 
 function getSafeTime(dateStr) {
@@ -115,6 +143,11 @@ const manifest = files.map(file => {
   fs.copyFileSync(src, path.join(RAW_POSTS_DIR, file));
   const { data, bodyContent } = extractFrontmatter(content);
 
+  let image = data.image || '/images/placeholder.jpg';
+  if (typeof image === 'string' && (!image.startsWith('http') || /placeholder/i.test(image))) {
+    image = '/images/placeholder.jpg';
+  }
+
   return {
     title: data.title || 'Untitled',
     slug: data.slug || file.replace('.md', ''),
@@ -125,7 +158,7 @@ const manifest = files.map(file => {
     authorImage: data.authorImage || data.author_image || '',
     excerpt: buildSnippet(data, bodyContent),
     description: buildSnippet(data, bodyContent),
-    image: data.image || '/placeholder.svg',
+    image,
     tags: Array.isArray(data.tags) ? data.tags : (data.tags ? [data.tags] : []),
     readTime: calculateReadTime(bodyContent),
     featured: data.featured === true || data.featured === 'true',

@@ -1,4 +1,4 @@
-import os, sys, json, re, time, random, hashlib, datetime, glob
+import os, sys, json, re, time, random, hashlib, datetime, glob, urllib.parse, urllib.request
 from google import genai
 from google.genai import types
 
@@ -88,6 +88,35 @@ def parse_frontmatter(text):
             meta[k.strip()] = v.strip().strip('"').strip("'")
     return meta, parts[2].strip()
 
+def is_good_image(url: str) -> bool:
+    if not url or not isinstance(url, str):
+        return False
+    u = url.strip()
+    if not u.startswith("http"):
+        return False
+    low = u.lower()
+    if any(x in low for x in ("placeholder", "default-og", "logo.png", "1x1", "pixel", "spacer")):
+        return False
+    return True
+
+def unsplash_fallback(query: str) -> str:
+    key = os.environ.get("UNSPLASH_ACCESS_KEY", "").strip()
+    if not key:
+        return ""
+    try:
+        q = urllib.parse.quote((query or "kenya nairobi")[:80])
+        req = urllib.request.Request(
+            f"https://api.unsplash.com/photos/random?query={q}&orientation=landscape",
+            headers={"Authorization": f"Client-ID {key}", "Accept-Version": "v1"},
+        )
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        url = (data.get("urls") or {}).get("regular") or (data.get("urls") or {}).get("full") or ""
+        return url if is_good_image(url) else ""
+    except Exception as e:
+        print(f"Unsplash fallback failed: {e}")
+        return ""
+
 def list_source_posts():
     posts = []
     for path in sorted(glob.glob(os.path.join(POSTS_DIR, "*.md")), reverse=True)[:80]:
@@ -108,7 +137,14 @@ def list_source_posts():
         title = meta.get("title") or slug
         if len(body) < 300:
             continue
-        posts.append({"slug": slug, "title": title, "category": meta.get("category", ""), "body": body[:3500]})
+        image = meta.get("image") or ""
+        posts.append({
+            "slug": slug,
+            "title": title,
+            "category": meta.get("category", ""),
+            "body": body[:3500],
+            "image": image if is_good_image(image) else "",
+        })
     return posts
 
 def pick_style(history):
@@ -172,12 +208,15 @@ def slugify(title):
     s = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
     return s[:80]
 
-def write_post(title, body_md, style_name, source_slug):
-    body_md = polish_body(body_md)
+def write_post(title, body_md, style_name, source_slug, image=""):
+    body_md = polish_body(body_md, CATEGORY, title)
     seo = seo_fields(title, body_md, CATEGORY, AUTHOR_NAME)
+    if not is_good_image(image):
+        image = unsplash_fallback(seo.get("title") or title) or ""
     slug = f"{today_str}-opinion-{slugify(seo['title'])}"
     path = os.path.join(POSTS_DIR, f"{slug}.md")
     os.makedirs(POSTS_DIR, exist_ok=True)
+    img_line = image if is_good_image(image) else ""
     fm = f"""---
 title: "{seo['title']}"
 slug: "{slugify(seo['title'])}"
@@ -188,7 +227,7 @@ dateModified: {publish_ts}
 author: "{AUTHOR_NAME}"
 category: "{CATEGORY}"
 county: "{seo['county']}"
-image: ""
+image: "{img_line}"
 readTime: {max(3, len(body_md.split()) // 180)}
 source: "internal:{source_slug}"
 stylePreset: "{style_name}"
@@ -199,7 +238,7 @@ schema: "NewsArticle"
 """
     with open(path, "w", encoding="utf-8") as f:
         f.write(fm)
-    print(f"Wrote {path}")
+    print(f"Wrote {path} image={'yes' if img_line else 'none'}")
     return slug
 
 def main():
@@ -222,7 +261,7 @@ def main():
         if model_skipped(article):
             print("Model skipped foreign story")
             continue
-        article = polish_body(article)
+        article = polish_body(article, CATEGORY, src["title"])
         if has_banned(article) or len(article) < 400:
             print("Rejected: banned or too short")
             continue
@@ -237,7 +276,7 @@ def main():
         if h in memory.get("published_hashes", []):
             print("Duplicate hash, skip")
             continue
-        write_post(title, article, style["name"], src["slug"])
+        write_post(title, article, style["name"], src["slug"], src.get("image") or "")
         memory.setdefault("used_slugs", []).append(src["slug"])
         memory.setdefault("style_history", []).append(style["name"])
         memory.setdefault("published_hashes", []).append(h)
