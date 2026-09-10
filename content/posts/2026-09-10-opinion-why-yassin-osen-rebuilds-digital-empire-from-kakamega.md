@@ -1,20 +1,19 @@
 ---
 title: "Why Yassin Osen Rebuilds Digital Empire from Kakamega"
 slug: "why-yassin-osen-rebuilds-digital-empire-from-kakamega"
-description: "Digital immortality is a lie sold to us by Silicon Valley, and Yassin Osen is the latest man to find out just how fragile his kingdom truly is. What we."
+description: "why yassin osen rebuilds digital empire: Digital immortality is a lie sold to us by Silicon Valley, and Yassin Osen is the latest man to find out just how"
 excerpt: "Digital immortality is a lie sold to us by Silicon Valley, and Yassin Osen is the latest man to find out just how fragile his kingdom truly is. What we know - O"
 author: "Jaj"
+image: "/images/placeholder.jpg"
 category: "Opinions"
+tags: ["why yassin osen rebuilds digital empire from kakamega", "opinions", "kenya news"]
+canonical: "https://zandani.co.ke/article/why-yassin-osen-rebuilds-digital-empire-from-kakamega"
 date: "2026-09-10T10:04:35Z"
 dateModified: "2026-09-10T10:04:35Z"
 focusKeyword: "why yassin osen rebuilds digital empire"
 schema: "NewsArticle"
-county: "Nairobi"
-image: ""
-readTime: "5"
-source: "internal:2026-09-10-yassin-osen-rebuilds-digital-empire-from-kakamega"
-stylePreset: "Hot Take"
 ---
+
 Digital immortality is a lie sold to us by Silicon Valley, and Yassin Osen is the latest man to find out just how fragile his kingdom truly is.
 
 Osen, the man behind the Mr Handsome Official Live brand, recently watched a million followers vanish into the digital ether. Most people would have packed their bags and found a desk job in Kakamega. Instead, he clawed his way back. He now sits at 250,000 followers on a fresh account. It is a comeback story that sounds heroic until you realize he is essentially rebuilding a house on land he does not own.
