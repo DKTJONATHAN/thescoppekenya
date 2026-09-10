@@ -7,16 +7,16 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/people-lining-for-water.jpg.webp?itok=1LSGarzo"
 category: "News"
 tags: ["dry taps ahead for nairobi and kisumu in massive water cut", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/dry-taps-ahead-for-nairobi-and-kisumu-in-massive-water-cut"
 date: "2026-09-10T10:39:55Z"
 dateModified: "2026-09-10T10:39:55Z"
 focusKeyword: "dry taps ahead for nairobi and"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/dry-taps-ahead-for-nairobi-and-kisumu-in-massive-water-cut"
 ---
+
 Nairobi City Water and Sewerage Company and Kisumu Water and Sanitation Company have issued notices warning millions of residents across both cities of major water supply disruptions starting Friday. Engineers will shut main treatment plants and distribution lines to carry out emergency pipe repairs and install new meters.
 
 ### What we know
-
 
 - Nairobi Water will shut down the Sasumua Water Treatment Plant for 26 hours, from Friday 6:00 AM to Saturday 8:00 AM.
 - Affected Nairobi areas include Westlands, Lavington, Kileleshwa, Kilimani, Upper Hill, Kawangware, and Kenyatta National Hospital.
