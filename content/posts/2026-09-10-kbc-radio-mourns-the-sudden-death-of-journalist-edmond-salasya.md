@@ -7,12 +7,13 @@ author: "Martin Kihara"
 image: "https://i.ibb.co/1GdXf6Jb/126bc6795368.webp"
 category: "Showbiz"
 tags: ["showbiz", "entertainment", "kenya"]
+canonical: "https://zandani.co.ke/article/kbc-radio-mourns-the-sudden-death-of-journalist-edmond-salasya"
 date: "2026-09-10T17:09:15Z"
 dateModified: "2026-09-10T17:09:15Z"
 focusKeyword: "kbc radio mourns the sudden death"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/kbc-radio-mourns-the-sudden-death-of-journalist-edmond-salasya"
 ---
+
 NAIROBI - Veteran KBC Radio Taifa broadcaster Edmond Salasya died early Thursday morning following a sudden lung collapse, hours after completing his final live radio shift at the state broadcaster.
 
 **What we know:**
