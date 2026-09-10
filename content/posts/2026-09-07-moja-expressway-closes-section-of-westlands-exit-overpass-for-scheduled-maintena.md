@@ -17,6 +17,7 @@ Moja Expressway Company has announced a 12-day partial closure of the Nairobi Ex
 
 ### What we know
 
+
 - The infrastructure maintenance will affect the section of the elevated deck situated immediately after the Westlands exit ramp.
 - Under the temporary traffic management plan, vehicles leaving the toll route through the Westlands Exit will be diverted directly onto the lower transit corridor.
 - "Motorists using the Nairobi Expressway are informed of maintenance and construction works along the elevated overpass deck after the Nairobi Westlands Exit from 8 pm, September 8 2026 to 5 pm, September 20 2026," Moja Expressway stated in its official notice.
