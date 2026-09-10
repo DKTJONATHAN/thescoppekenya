@@ -521,10 +521,10 @@
     "25633c026ac438af40f4765ae3fb2992",
     "c4ef09e73e8465822c4d4ce038a4ed53",
     "68dd289e08c7b0721c563c36319277b8",
-    "673047964c3b31f2852b13fb69c6ab24"
+    "673047964c3b31f2852b13fb69c6ab24",
+    "c0a3df88f5ed719645d366b921eb1639"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -553,7 +553,8 @@
     "Statement Report",
     "Desk Take",
     "Event Report",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Desk Take"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -659,7 +660,8 @@
     "https://kenyans.co.ke/news/126929-kaa-introduces-new-baggage-rules-passengers-flying-nairobi",
     "https://kenyans.co.ke/news/126928-kenya-among-countries-expected-jpmorgans-new-frontier-debt-index",
     "https://kenyans.co.ke/news/126926-uganda-urges-citizens-kenya-regularise-stay-after-rutos-90-day-ultimatum",
-    "https://kenyans.co.ke/news/126944-nairobi-kisumu-residents-warned-water-disruption-starting-friday"
+    "https://kenyans.co.ke/news/126944-nairobi-kisumu-residents-warned-water-disruption-starting-friday",
+    "https://kenyans.co.ke/news/126949-dpp-begins-extradition-kenyan-fugitive-wanted-us-over-fatal-drunk-driving-conviction"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -687,7 +689,8 @@
     "kaa bans bundled baggage jkia curb tax evasion",
     "jpmorgan include frontier debt index",
     "uganda asks citizens comply day order",
-    "dry taps ahead nairobi kisumu massive water cut"
+    "dry taps ahead nairobi kisumu massive water cut",
+    "fugitive cornered runda fatal drunk driving case"
   ],
   "topic_keys": [
     "news tracker",
