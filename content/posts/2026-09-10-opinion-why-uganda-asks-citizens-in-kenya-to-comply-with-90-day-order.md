@@ -2,9 +2,9 @@
 title: "Why Uganda Asks Citizens in Kenya to Comply With 90-Day Order"
 slug: "why-uganda-asks-citizens-in-kenya-to-comply-with-90-day-order"
 description: "why uganda asks citizens kenya comply: State House is asking the impossible of the street vendor, and the result will not be more tax revenue, but more"
-excerpt: "State House is asking the impossible of the street vendor, and the result will not be more tax revenue, but more hungry families on the streets of Nairobi. What"
+excerpt: "State House is asking the impossible of the street vendor, and the result will not be more tax revenue, but more hungry families on the streets of Nairobi."
 author: "Jaj"
-image: "/images/placeholder.jpg"
+image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/museveni_ruto_2023.jpg.webp?itok=ek9Ro37p"
 category: "Opinions"
 tags: ["why uganda asks citizens in kenya to comply with 90 day order", "opinions", "kenya news"]
 canonical: "https://zandani.co.ke/article/why-uganda-asks-citizens-in-kenya-to-comply-with-90-day-order"
