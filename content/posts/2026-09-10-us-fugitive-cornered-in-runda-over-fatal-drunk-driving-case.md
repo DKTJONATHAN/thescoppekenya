@@ -1,20 +1,19 @@
 ---
 title: "US Fugitive Cornered in Runda Over Fatal Drunk-Driving Case"
 slug: "us-fugitive-cornered-in-runda-over-fatal-drunk-driving-case"
-description: "Thirteen years on the run ended in a quiet Runda driveway when detectives handcuffed a Kenyan man convicted of killing a person in a California."
+description: "fugitive cornered runda over fatal drunk: Thirteen years on the run ended in a quiet Runda driveway when detectives handcuffed a Kenyan man convicted of"
 excerpt: "Thirteen years on the run ended in a quiet Runda driveway when detectives handcuffed a Kenyan man convicted of killing a person in a California drink-driving cr"
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/arrest_latest_0_0.jpeg.webp?itok=q6NaZT4V"
 category: "News"
+tags: ["us fugitive cornered in runda over fatal drunk driving case", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/us-fugitive-cornered-in-runda-over-fatal-drunk-driving-case"
 date: "2026-09-10T12:55:23Z"
 dateModified: "2026-09-10T12:55:23Z"
 focusKeyword: "fugitive cornered runda over fatal drunk"
 schema: "NewsArticle"
-county: "Nairobi"
-readTime: "3"
-source: "https://kenyans.co.ke/news/126949-dpp-begins-extradition-kenyan-fugitive-wanted-us-over-fatal-drunk-driving-conviction"
-stylePreset: "Desk Take"
 ---
+
 Thirteen years on the run ended in a quiet Runda driveway when detectives handcuffed a Kenyan man convicted of killing a person in a California drink-driving crash. The Office of the Director of Public Prosecutions is now pushing to put him on a plane back to the United States to face his delayed sentence.
 
 **What we know**
