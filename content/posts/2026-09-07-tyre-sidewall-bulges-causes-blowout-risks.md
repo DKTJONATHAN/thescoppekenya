@@ -18,6 +18,7 @@ schema: "NewsArticle"
 
 ### What we know
 
+
 - On Monday, September 7, 2026, automotive safety experts in Nairobi issued a public warning advising Kenyan motorists to inspect their vehicle tyres for sidewall bulges caused by deep potholes and poor road surfaces. - What causes a tyre sidewall bulge to form? - A tyre sidewall bulge occurs when the internal fabric layers woven inside the rubber casing rupture. - When these internal polyester or steel cords break, high pressure air escapes from the inner liner and pushes outward against the flexible outer layer of rubber.
 
 On Monday, September 7, 2026, automotive safety experts in Nairobi issued a public warning advising Kenyan motorists to inspect their vehicle tyres for sidewall bulges caused by deep potholes and poor road surfaces. The specialists cautioned that these small bubbles indicate severe internal structural damage that significantly increases the risk of sudden, high-speed blowouts.
