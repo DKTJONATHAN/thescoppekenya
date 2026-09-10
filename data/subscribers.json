@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10T05:47:46.365Z",
+  "updated": "2026-09-10T05:48:05.058Z",
   "subscribers": [
     {
       "email": "trebilcom@gmail.com",
@@ -35,6 +35,11 @@
     {
       "email": "beatricekambunicholus@yahoo.com",
       "subscribed_at": "2026-09-10T05:47:46.365Z",
+      "active": true
+    },
+    {
+      "email": "petermachiuk@gmail.com",
+      "subscribed_at": "2026-09-10T05:48:05.058Z",
       "active": true
     }
   ]
