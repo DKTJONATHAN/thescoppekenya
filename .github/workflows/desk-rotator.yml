@@ -1,13 +1,16 @@
 name: Desk Rotator
 
-# Independent dispatcher. Does not depend on any other workflow's schedule.
-# - Every hour: fire za-news, za-ghafla, za-mpasho
-# - Every 2 hours: fire one random desk from the rotation pool, never repeating
-#   until the full pool has been used, then reset and cycle again.
+# Independent dispatcher. All timing decisions use East Africa Time (EAT).
+# GitHub cron is UTC-only; logic below converts to Africa/Nairobi before acting.
+#
+# EAT schedule:
+# - Every hour 06:00–23:00 EAT → fire za-news, za-ghafla, za-mpasho
+# - Every even EAT hour 06:00–22:00 → fire one random desk from the pool
+#   (no repeats until the pool is exhausted, then reset and cycle again)
 
 on:
   schedule:
-    # Hourly, minute 17 EAT-friendly offset (UTC). Covers both hourly + 2h logic.
+    # Minute 17 every UTC hour → minute 17 every EAT hour (UTC+3).
     - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
@@ -45,20 +48,47 @@ jobs:
           token: ${{ secrets.ACTIONS_GITHUB_TOKEN || secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true
 
-      - name: Decide and fire workflows
+      - name: Decide and fire workflows (EAT clock)
         env:
+          TZ: Africa/Nairobi
           GH_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN || secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'both' }}
           FORCE_DESK: ${{ github.event_name == 'workflow_dispatch' && inputs.force_desk || '' }}
         run: |
           set -euo pipefail
 
-          EAT_H=$(TZ=Africa/Nairobi date +%H)
-          EAT_NOW=$(TZ=Africa/Nairobi date '+%Y-%m-%d %H:%M %Z')
+          # Force EAT for every date(1) call in this job
+          export TZ=Africa/Nairobi
+
+          EAT_H=$(date +%H)
+          EAT_M=$(date +%M)
+          EAT_DAY=$(date +%F)
+          EAT_NOW=$(date '+%Y-%m-%d %H:%M %Z')
           H=$((10#$EAT_H))
+          M=$((10#$EAT_M))
+
           echo "Desk Rotator | EAT $EAT_NOW | mode=${MODE}"
 
-          # Full desk pool the rotator cycles through (excludes news/ghafla/mpasho — those are hourly).
+          # Desk hours in EAT (same window as other za-* desks)
+          # Outside this window, scheduled runs no-op (manual dispatch still works).
+          IN_DESK_HOURS=0
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            IN_DESK_HOURS=1
+          elif [ "$H" -ge 6 ] && [ "$H" -le 23 ]; then
+            IN_DESK_HOURS=1
+          fi
+
+          if [ "$IN_DESK_HOURS" -ne 1 ]; then
+            echo "Outside EAT desk hours (06:00–23:59). Skipping."
+            {
+              echo "## Desk Rotator"
+              echo "**EAT:** $EAT_NOW"
+              echo "Outside desk hours — no workflows fired."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          # Rotation pool (excludes news/g: news / ghafla / mpasho)
           POOL=(
             entertainment
             africa
@@ -99,7 +129,7 @@ jobs:
               echo "Unknown desk: $desk" >&2
               return 1
             fi
-            echo "→ Triggering $wf ($desk)"
+            echo "→ Triggering $wf ($desk) [EAT $EAT_NOW]"
             gh workflow run "$wf" --ref "$DEFAULT_BRANCH" \
               && echo "  fired $wf" \
               || echo "  WARN: failed to fire $wf" >&2
@@ -111,7 +141,7 @@ jobs:
           FIRED_HOURLY=()
           FIRED_ROTATE=""
 
-          # --- Hourly: news + ghafla + mpasho ---
+          # --- Every EAT hour: news + ghafla + mpasho ---
           if [ "$MODE" = "hourly" ] || [ "$MODE" = "both" ]; then
             for d in news ghafla mpasho; do
               fire_workflow "$d"
@@ -119,8 +149,8 @@ jobs:
             done
           fi
 
-          # --- Every 2 hours (even EAT hour): one random unused desk from pool ---
-          # On odd hours skip rotation unless force_desk / mode=rotate.
+          # --- Every 2 EAT hours (even hour): one random unused desk ---
+          # Even EAT hours: 06, 08, 10, 12, 14, 16, 18, 20, 22
           DO_ROTATE=0
           if [ "$MODE" = "rotate" ]; then
             DO_ROTATE=1
@@ -129,7 +159,6 @@ jobs:
           fi
 
           if [ "$DO_ROTATE" -eq 1 ]; then
-            # Remaining = pool minus ledger lines
             REMAINING=()
             for d in "${POOL[@]}"; do
               if ! grep -qxF "$d" "$ROTATION_LEDGER" 2>/dev/null; then
@@ -137,9 +166,8 @@ jobs:
               fi
             done
 
-            # Cycle complete → reset and start again
             if [ "${#REMAINING[@]}" -eq 0 ]; then
-              echo "Rotation cycle complete — resetting ledger"
+              echo "Rotation cycle complete at EAT $EAT_NOW — resetting ledger"
               : > "$ROTATION_LEDGER"
               REMAINING=("${POOL[@]}")
             fi
@@ -147,15 +175,12 @@ jobs:
             PICK=""
             if [ -n "${FORCE_DESK:-}" ] && [ "$FORCE_DESK" != "null" ]; then
               desk=$(echo "$FORCE_DESK" | tr '[:upper:]' '[:lower:]' | sed 's/\.yml$//; s/^za-//; s/^za //')
-              # Accept forced desk even if already in ledger this cycle
               PICK="$desk"
             else
-              # Random pick from remaining
               IDX=$((RANDOM % ${#REMAINING[@]}))
               PICK="${REMAINING[$IDX]}"
             fi
 
-            # Validate pick is a known rotation desk
             VALID=0
             for d in "${POOL[@]}"; do
               [ "$d" = "$PICK" ] && VALID=1 && break
@@ -168,28 +193,27 @@ jobs:
             fire_workflow "$PICK"
             FIRED_ROTATE="$PICK"
 
-            # Record in ledger (avoid duplicate lines)
             if ! grep -qxF "$PICK" "$ROTATION_LEDGER" 2>/dev/null; then
               echo "$PICK" >> "$ROTATION_LEDGER"
             fi
 
-            # Commit ledger so the next run (possibly on another runner) sees progress
             git config user.name  "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add "$ROTATION_LEDGER"
             if ! git diff --staged --quiet; then
-              git commit -m "chore: desk rotation ledger (+$PICK)"
+              git commit -m "chore: desk rotation ledger (+$PICK) EAT $EAT_DAY ${EAT_H}:${EAT_M}"
               git pull --rebase origin "$DEFAULT_BRANCH" || true
               git push origin HEAD:"$DEFAULT_BRANCH" || true
             fi
           else
-            echo "Skip rotation this hour (EAT H=$H is odd; next even hour)"
+            echo "Skip rotation (EAT hour $H is odd — next even EAT hour)"
           fi
 
           {
-            echo "## Desk Rotator"
-            echo "**EAT:** $EAT_NOW"
+            echo "## Desk Rotator (EAT)"
+            echo "**EAT now:** $EAT_NOW"
             echo "**Mode:** $MODE"
+            echo "**EAT hour:** $H (even = rotation slot)"
             if [ "${#FIRED_HOURLY[@]}" -gt 0 ]; then
               echo "**Hourly fired:** ${FIRED_HOURLY[*]}"
             else
