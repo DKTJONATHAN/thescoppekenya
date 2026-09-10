@@ -2,9 +2,9 @@
 title: "Why Yassin Osen Rebuilds Digital Empire from Kakamega"
 slug: "why-yassin-osen-rebuilds-digital-empire-from-kakamega"
 description: "why yassin osen rebuilds digital empire: Digital immortality is a lie sold to us by Silicon Valley, and Yassin Osen is the latest man to find out just how"
-excerpt: "Digital immortality is a lie sold to us by Silicon Valley, and Yassin Osen is the latest man to find out just how fragile his kingdom truly is. What we know - O"
+excerpt: "Digital immortality is a lie sold to us by Silicon Valley, and Yassin Osen is the latest man to find out just how fragile his kingdom truly is."
 author: "Jaj"
-image: "/images/placeholder.jpg"
+image: "https://i.ibb.co/4wDDrys2/76df093d1d2b.webp"
 category: "Opinions"
 tags: ["why yassin osen rebuilds digital empire from kakamega", "opinions", "kenya news"]
 canonical: "https://zandani.co.ke/article/why-yassin-osen-rebuilds-digital-empire-from-kakamega"
