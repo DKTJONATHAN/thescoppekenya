@@ -7,18 +7,17 @@ author: "Jaj"
 image: "https://i.ibb.co/ymbMKyq9/4b091c53e0f0.webp"
 category: "Opinions"
 tags: ["why the bubble that breaks the journey", "opinions", "kenya news"]
-canonical: "https://zandani.co.ke/article/why-the-bubble-that-breaks-the-journey"
 date: "2026-09-07T08:14:36Z"
 dateModified: "2026-09-07T08:14:36Z"
 focusKeyword: "Why The Bubble That Breaks the Journey"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/why-the-bubble-that-breaks-the-journey"
 ---
-
 There is a specific kind of silence that falls over a Nairobi highway when the rubber finally gives up. It isn’t the polite hiss of a slow leak; it is a violent, percussive thwack that sounds like a gunshot, followed by the frantic flapping of shredded rubber against tarmac. By then, it is too late. The car is dancing a jagged rhythm, the steering wheel is fighting you for control, and you are suddenly part of the roadside scenery you spent the last hour trying to ignore.
 
 We are a nation of commuters who treat our vehicles like indestructible beasts of burden. We load them with bags of maize, sacks of charcoal, and the collective hopes of our extended families heading upcountry. We navigate the craters of our urban roads with a sort of resigned expertise, dodging one pothole only to settle into the embrace of the next. But lately, I have been watching the way we treat our tyres, and it is clear that we are losing the war against our own negligence.
 
-I spent Tuesday morning at a jua kali tyre shop off Jogoo Road. The air was thick with the scent of hot asphalt and cheap tobacco. A matatu driver pulled in, his front left tyre sporting a protrusion the size of a mango—a sidewall bulge that looked ready to burst under the weight of the morning’s commute. The driver shrugged it off, asking the mechanic if he could just "smooth it out" or perhaps patch it from the inside.
+I spent Tuesday morning at a jua kali tyre shop off Jogoo Road. The air was thick with the scent of hot asphalt and cheap tobacco. A matatu driver pulled in, his front left tyre sporting a protrusion the size of a mango-a sidewall bulge that looked ready to burst under the weight of the morning’s commute. The driver shrugged it off, asking the mechanic if he could just "smooth it out" or perhaps patch it from the inside.
 
 The mechanic, a man whose hands told the story of a thousand engine blocks, barely looked up. He told him the truth that most of us refuse to hear: that bulge isn’t a surface scratch. It is a scream for help from the very soul of the tyre.
 
