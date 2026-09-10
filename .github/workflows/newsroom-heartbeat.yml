@@ -1,14 +1,16 @@
 name: Newsroom heartbeat
 
-# Manual / backup only. Primary clock is now each desk's own schedule
-# (August-style simple crons). Use this workflow_dispatch when you need
-# to force-poke desks, publisher, evening-brief or sitemaps.
+# Backup clock. Dispatcher owns the Nairobi desk schedule; this pokes it
+# every 15 minutes so dropped GitHub crons still catch up. Also pokes
+# scheduler, evening-brief and sitemaps when those slots are due.
 #
 # Required secret: ACTIONS_GITHUB_TOKEN (preferred) or PERSONAL_GITHUB_TOKEN
 #   classic: repo + workflow
 #   fine-grained: Contents R/W, Actions R/W, Metadata R
 
 on:
+  schedule:
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 concurrency:
@@ -23,7 +25,7 @@ jobs:
   poke:
     runs-on: ubuntu-22.04
     steps:
-      - name: Poke due workflows (Africa/Nairobi clock)
+      - name: Poke dispatcher and due support workflows (Africa/Nairobi clock)
         env:
           GH_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN || secrets.PERSONAL_GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
@@ -80,45 +82,8 @@ jobs:
             exit 0
           fi
 
-          if [ "$M" -le 20 ]; then
-            run_wf "za-news.yml"
-          fi
-
-          for hm in "7:8" "11:8" "15:8" "19:8"; do
-            IFS=: read -r th tm <<<"$hm"
-            due "$th" "$tm" && run_wf "za-ghafla.yml"
-          done
-
-          for hm in "7:38" "11:38" "15:38" "19:38"; do
-            IFS=: read -r th tm <<<"$hm"
-            due "$th" "$tm" && run_wf "za-mpasho.yml"
-          done
-
-          for hm in "8:8" "12:8" "16:8" "20:8"; do
-            IFS=: read -r th tm <<<"$hm"
-            due "$th" "$tm" && run_wf "za-entertainment.yml"
-          done
-
-          due 6 18 && run_wf "za-africa.yml"
-          due 18 18 && run_wf "za-africa.yml"
-          due 7 18 && run_wf "za-agriculture.yml"
-          due 17 18 && run_wf "za-agriculture.yml"
-          due 8 18 && run_wf "za-business.yml"
-          due 16 18 && run_wf "za-business.yml"
-          due 9 18 && run_wf "za-lifestyle.yml"
-          due 15 18 && run_wf "za-lifestyle.yml"
-          due 10 18 && run_wf "za-opinions.yml"
-          due 14 18 && run_wf "za-opinions.yml"
-          due 11 18 && run_wf "za-sports.yml"
-          due 19 18 && run_wf "za-sports.yml"
-          due 12 18 && run_wf "za-technology.yml"
-          due 18 48 && run_wf "za-technology.yml"
-          due 13 18 && run_wf "za-diano.yml"
-          due 20 18 && run_wf "za-diano.yml"
-
-          if [ "$EAT_DOW" = "1" ] || [ "$EAT_DOW" = "4" ]; then
-            due 11 25 && run_wf "za-jaj.yml"
-            due 17 25 && run_wf "za-jaj.yml"
-          fi
+          # Dispatcher is the Nairobi clock. Poke it every heartbeat so
+          # dropped GitHub crons still catch up (12h lookback + slot ledger).
+          run_wf "writer-dispatcher.yml"
 
           echo "Heartbeat done at $EAT_NOW"
