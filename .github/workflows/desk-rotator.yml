@@ -1,0 +1,207 @@
+name: Desk Rotator
+
+# Independent dispatcher. Does not depend on any other workflow's schedule.
+# - Every hour: fire za-news, za-ghafla, za-mpasho
+# - Every 2 hours: fire one random desk from the rotation pool, never repeating
+#   until the full pool has been used, then reset and cycle again.
+
+on:
+  schedule:
+    # Hourly, minute 17 EAT-friendly offset (UTC). Covers both hourly + 2h logic.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "hourly = news/ghafla/mpasho only | rotate = one random desk | both = default"
+        required: false
+        default: "both"
+      force_desk:
+        description: "Optional: force one rotation desk (e.g. entertainment, sports). Empty = random."
+        required: false
+        default: ""
+
+concurrency:
+  group: desk-rotator
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+env:
+  TZ: Africa/Nairobi
+  DEFAULT_BRANCH: main
+  ROTATION_LEDGER: .github/desk_rotation_ledger.txt
+
+jobs:
+  rotate:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          ref: ${{ env.DEFAULT_BRANCH }}
+          token: ${{ secrets.ACTIONS_GITHUB_TOKEN || secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Decide and fire workflows
+        env:
+          GH_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN || secrets.PERSONAL_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'both' }}
+          FORCE_DESK: ${{ github.event_name == 'workflow_dispatch' && inputs.force_desk || '' }}
+        run: |
+          set -euo pipefail
+
+          EAT_H=$(TZ=Africa/Nairobi date +%H)
+          EAT_NOW=$(TZ=Africa/Nairobi date '+%Y-%m-%d %H:%M %Z')
+          H=$((10#$EAT_H))
+          echo "Desk Rotator | EAT $EAT_NOW | mode=${MODE}"
+
+          # Full desk pool the rotator cycles through (excludes news/ghafla/mpasho — those are hourly).
+          POOL=(
+            entertainment
+            africa
+            agriculture
+            business
+            lifestyle
+            opinions
+            sports
+            technology
+            diano
+            jaj
+          )
+
+          desk_to_workflow() {
+            case "$1" in
+              news) echo "za-news.yml" ;;
+              ghafla) echo "za-ghafla.yml" ;;
+              mpasho) echo "za-mpasho.yml" ;;
+              entertainment) echo "za-entertainment.yml" ;;
+              africa) echo "za-africa.yml" ;;
+              agriculture) echo "za-agriculture.yml" ;;
+              business) echo "za-business.yml" ;;
+              lifestyle) echo "za-lifestyle.yml" ;;
+              opinions) echo "za-opinions.yml" ;;
+              sports) echo "za-sports.yml" ;;
+              technology) echo "za-technology.yml" ;;
+              diano) echo "za-diano.yml" ;;
+              jaj) echo "za-jaj.yml" ;;
+              *) echo "" ;;
+            esac
+          }
+
+          fire_workflow() {
+            local desk="$1"
+            local wf
+            wf=$(desk_to_workflow "$desk")
+            if [ -z "$wf" ]; then
+              echo "Unknown desk: $desk" >&2
+              return 1
+            fi
+            echo "→ Triggering $wf ($desk)"
+            gh workflow run "$wf" --ref "$DEFAULT_BRANCH" \
+              && echo "  fired $wf" \
+              || echo "  WARN: failed to fire $wf" >&2
+          }
+
+          mkdir -p "$(dirname "$ROTATION_LEDGER")"
+          [ -f "$ROTATION_LEDGER" ] || touch "$ROTATION_LEDGER"
+
+          FIRED_HOURLY=()
+          FIRED_ROTATE=""
+
+          # --- Hourly: news + ghafla + mpasho ---
+          if [ "$MODE" = "hourly" ] || [ "$MODE" = "both" ]; then
+            for d in news ghafla mpasho; do
+              fire_workflow "$d"
+              FIRED_HOURLY+=("$d")
+            done
+          fi
+
+          # --- Every 2 hours (even EAT hour): one random unused desk from pool ---
+          # On odd hours skip rotation unless force_desk / mode=rotate.
+          DO_ROTATE=0
+          if [ "$MODE" = "rotate" ]; then
+            DO_ROTATE=1
+          elif [ "$MODE" = "both" ] && [ $((H % 2)) -eq 0 ]; then
+            DO_ROTATE=1
+          fi
+
+          if [ "$DO_ROTATE" -eq 1 ]; then
+            # Remaining = pool minus ledger lines
+            REMAINING=()
+            for d in "${POOL[@]}"; do
+              if ! grep -qxF "$d" "$ROTATION_LEDGER" 2>/dev/null; then
+                REMAINING+=("$d")
+              fi
+            done
+
+            # Cycle complete → reset and start again
+            if [ "${#REMAINING[@]}" -eq 0 ]; then
+              echo "Rotation cycle complete — resetting ledger"
+              : > "$ROTATION_LEDGER"
+              REMAINING=("${POOL[@]}")
+            fi
+
+            PICK=""
+            if [ -n "${FORCE_DESK:-}" ] && [ "$FORCE_DESK" != "null" ]; then
+              desk=$(echo "$FORCE_DESK" | tr '[:upper:]' '[:lower:]' | sed 's/\.yml$//; s/^za-//; s/^za //')
+              # Accept forced desk even if already in ledger this cycle
+              PICK="$desk"
+            else
+              # Random pick from remaining
+              IDX=$((RANDOM % ${#REMAINING[@]}))
+              PICK="${REMAINING[$IDX]}"
+            fi
+
+            # Validate pick is a known rotation desk
+            VALID=0
+            for d in "${POOL[@]}"; do
+              [ "$d" = "$PICK" ] && VALID=1 && break
+            done
+            if [ "$VALID" -ne 1 ]; then
+              echo "Invalid rotation desk: $PICK" >&2
+              exit 1
+            fi
+
+            fire_workflow "$PICK"
+            FIRED_ROTATE="$PICK"
+
+            # Record in ledger (avoid duplicate lines)
+            if ! grep -qxF "$PICK" "$ROTATION_LEDGER" 2>/dev/null; then
+              echo "$PICK" >> "$ROTATION_LEDGER"
+            fi
+
+            # Commit ledger so the next run (possibly on another runner) sees progress
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add "$ROTATION_LEDGER"
+            if ! git diff --staged --quiet; then
+              git commit -m "chore: desk rotation ledger (+$PICK)"
+              git pull --rebase origin "$DEFAULT_BRANCH" || true
+              git push origin HEAD:"$DEFAULT_BRANCH" || true
+            fi
+          else
+            echo "Skip rotation this hour (EAT H=$H is odd; next even hour)"
+          fi
+
+          {
+            echo "## Desk Rotator"
+            echo "**EAT:** $EAT_NOW"
+            echo "**Mode:** $MODE"
+            if [ "${#FIRED_HOURLY[@]}" -gt 0 ]; then
+              echo "**Hourly fired:** ${FIRED_HOURLY[*]}"
+            else
+              echo "**Hourly fired:** (none this run)"
+            fi
+            if [ -n "$FIRED_ROTATE" ]; then
+              echo "**Rotation fired:** $FIRED_ROTATE"
+              echo "**Ledger:**"
+              echo '```'
+              cat "$ROTATION_LEDGER" || true
+              echo '```'
+            else
+              echo "**Rotation fired:** (skipped)"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
