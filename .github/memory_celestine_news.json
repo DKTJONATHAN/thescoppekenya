@@ -523,10 +523,10 @@
     "68dd289e08c7b0721c563c36319277b8",
     "673047964c3b31f2852b13fb69c6ab24",
     "c0a3df88f5ed719645d366b921eb1639",
-    "cc41e6392cddcdc99acedc263b9b6b22"
+    "cc41e6392cddcdc99acedc263b9b6b22",
+    "4f79fc26aba9bb664368bdc1677f2af1"
   ],
   "style_history": [
-    "Context Backgrounder",
     "Reaction & Voices",
     "Explainer",
     "Power Accountability",
@@ -555,7 +555,8 @@
     "Event Report",
     "Hard News Lead",
     "Desk Take",
-    "Event Report"
+    "Event Report",
+    "Hard News Lead"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -663,7 +664,8 @@
     "https://kenyans.co.ke/news/126926-uganda-urges-citizens-kenya-regularise-stay-after-rutos-90-day-ultimatum",
     "https://kenyans.co.ke/news/126944-nairobi-kisumu-residents-warned-water-disruption-starting-friday",
     "https://kenyans.co.ke/news/126949-dpp-begins-extradition-kenyan-fugitive-wanted-us-over-fatal-drunk-driving-conviction",
-    "https://kenyans.co.ke/news/126960-eacc-arrests-2-dci-officers-over-alleged-ksh500000-murder-case-bribe"
+    "https://kenyans.co.ke/news/126960-eacc-arrests-2-dci-officers-over-alleged-ksh500000-murder-case-bribe",
+    "https://kenyans.co.ke/news/126959-world-bank-verge-disbursing-ksh51-billion-emergency-loan-kenya"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -693,7 +695,8 @@
     "uganda asks citizens comply day order",
     "dry taps ahead nairobi kisumu massive water cut",
     "fugitive cornered runda fatal drunk driving case",
-    "eacc arrests dci officers alleged ksh500 000 murder case bribe"
+    "eacc arrests dci officers alleged ksh500 000 murder case bribe",
+    "world bank verge disbursing ksh51 billion emergency loan"
   ],
   "topic_keys": [
     "news tracker",
