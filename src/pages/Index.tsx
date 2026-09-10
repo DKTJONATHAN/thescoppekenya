@@ -44,22 +44,22 @@ function catBorder(_cat: string): string {
 
 type Post = ReturnType<typeof getAllPosts>[0];
 
-/** Prefer Kenyan / East African stories for hero and top slots */
+/** Light local preference used only as a same-day tiebreaker */
 function kenyaScore(post: Post): number {
   const blob = `${post.title || ""} ${post.excerpt || ""} ${post.category || ""} ${post.author || ""} ${(post.tags || []).join(" ")}`.toLowerCase();
   let score = 0;
-  if (/\b(kenya|kenyan|nairobi|mombasa|kisumu|nakuru|eldoret|thika|kiambu|kakamega)\b/.test(blob)) score += 12;
-  if (/\b(ruto|gachagua|raila|safaricom|m-?pesa|kplc|epra|harambee|gor mahia|afc leopards)\b/.test(blob)) score += 8;
-  if (/\b(east africa|uganda|tanzania|rwanda|ethiopia)\b/.test(blob)) score += 5;
-  if (/\b(wanjiku|celestine|mutheu|martin kihara|za ndani)\b/.test(blob)) score += 4;
-  const cat = (post.category || "").toLowerCase();
-  if (["news", "politics", "breaking", "gossip", "showbiz", "sports", "business"].some((c) => cat.includes(c))) score += 3;
-  const western = ["oscar", "grammy", "netflix", "marvel", "disney", "branagh", "oldman", "celebrity", "hollywood"];
-  if (western.some((w) => blob.includes(w))) score -= 5;
+  if (/\b(kenya|kenyan|nairobi|mombasa|kisumu|nakuru|eldoret|thika|kiambu|kakamega)\b/.test(blob)) score += 3;
+  if (/\b(ruto|gachagua|raila|safaricom|m-?pesa|kplc|epra|harambee|gor mahia|afc leopards)\b/.test(blob)) score += 2;
+  if (/\b(east africa|uganda|tanzania|rwanda|ethiopia)\b/.test(blob)) score += 1;
   return score;
 }
 
-const RAW_POSTS = getAllPosts().slice(0, 60);
+function postTime(post: Post): number {
+  const t = new Date(post.date).getTime();
+  return isNaN(t) ? 0 : t;
+}
+
+const RAW_POSTS = getAllPosts().slice(0, 80);
 
 const MobileTopCard = React.memo(({ post, views }: { post: Post; views: number }) => (
   <Link to={`/article/${post.slug}`} className="group block">
@@ -144,11 +144,12 @@ const Index = () => {
     return () => clearTimeout(t);
   }, []);
 
+  // Rank primarily by recency (newest first). Kenya preference is only a same-day tiebreaker.
   const rankedPosts = useMemo(() => {
     return [...RAW_POSTS].sort((a, b) => {
-      const diff = kenyaScore(b) - kenyaScore(a);
-      if (diff !== 0) return diff;
-      return new Date(b.date).getTime() - new Date(a.date).getTime();
+      const timeDiff = postTime(b) - postTime(a);
+      if (timeDiff !== 0) return timeDiff;
+      return kenyaScore(b) - kenyaScore(a);
     });
   }, []);
   const heroLead = rankedPosts[0];
@@ -359,15 +360,7 @@ const Index = () => {
 
           <aside className="lg:col-span-4 space-y-6">
             <MostReadMobile posts={mostRead} />
-            {adsReady && <div className="flex justify-center"><AdUnit type="sidebar" /></div>}
-            <div className="border border-border bg-card p-4">
-              <h3 className="text-xs font-black uppercase tracking-widest mb-3">Sections</h3>
-              <div className="flex flex-wrap gap-2">
-                {["/news", "/entertainment", "/sports", "/business", "/lifestyle"].map(path => (
-                  <Link key={path} to={path} className="text-xs font-semibold px-2.5 py-1 border border-border rounded hover:border-primary hover:text-primary transition-colors">{path.slice(1)}</Link>
-                ))}
-              </div>
-            </div>
+            {adsReady && <AdUnit slot="home-sidebar" />}
           </aside>
         </div>
       </section>

@@ -64,10 +64,13 @@ export interface Post extends PostMetadata {
 
 import manifestPosts from '../../public/posts-manifest.json';
 
-const ALL_POSTS: PostMetadata[] = (manifestPosts as unknown as PostMetadata[]).map(p => ({
-  ...p,
-  category: normalizeCategory(p.category)
-}));
+function getSafeTime(dateStr: string): number {
+  if (!dateStr) return 0;
+  let time = new Date(dateStr).getTime();
+  if (!isNaN(time)) return time;
+  time = new Date(dateStr.replace(/-/g, '/').replace('T', ' ')).getTime();
+  return isNaN(time) ? 0 : time;
+}
 
 function normalizeCategory(rawCategory: string): string {
   const lower = rawCategory.toLowerCase().trim();
@@ -93,13 +96,12 @@ function normalizeCategory(rawCategory: string): string {
   return categoryMap[lower] || rawCategory;
 }
 
-function getSafeTime(dateStr: string): number {
-  if (!dateStr) return 0;
-  let time = new Date(dateStr).getTime();
-  if (!isNaN(time)) return time;
-  time = new Date(dateStr.replace(/-/g, '/').replace('T', ' ')).getTime();
-  return isNaN(time) ? 0 : time;
-}
+const ALL_POSTS: PostMetadata[] = (manifestPosts as unknown as PostMetadata[])
+  .map(p => ({
+    ...p,
+    category: normalizeCategory(p.category)
+  }))
+  .sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
 
 export function getAllPosts(): PostMetadata[] {
   return ALL_POSTS;
@@ -191,7 +193,7 @@ export function getTodaysTopStory(): PostMetadata | undefined {
     postDate.setHours(0, 0, 0, 0);
     return postDate.getTime() === today.getTime();
   });
-  return todaysPosts.length > 0 ? todaysPosts[todaysPosts.length - 1] : posts[0];
+  return todaysPosts.length > 0 ? todaysPosts[0] : posts[0];
 }
 
 export function getSecondaryPosts(excludeSlug: string | undefined, limit = 4): PostMetadata[] {
