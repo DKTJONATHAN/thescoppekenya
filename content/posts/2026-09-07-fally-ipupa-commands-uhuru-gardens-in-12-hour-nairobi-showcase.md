@@ -7,11 +7,11 @@ author: "Martin Kihara"
 image: "https://i.ibb.co/Z6G8764T/07629e551ee8.webp"
 category: "Showbiz"
 tags: ["showbiz", "entertainment", "kenya"]
+canonical: "https://zandani.co.ke/article/fally-ipupa-commands-uhuru-gardens-in-12-hour-nairobi-showcase"
 date: "2026-09-07T16:44:41Z"
 dateModified: "2026-09-07T16:44:41Z"
 focusKeyword: "fally ipupa commands uhuru gardens hour"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/fally-ipupa-commands-uhuru-gardens-in-12-hour-nairobi-showcase"
 ---
 
 Congolese superstar Fally Ipupa headlined a marathon 12-hour concert at Uhuru Gardens this past weekend, blending Congolese rhumba with regional Amapiano and Kenyan sounds. The event ran from 3:00 PM on Saturday to 3:00 AM on Sunday, drawing thousands of fans to the Langata venue despite current economic constraints.
