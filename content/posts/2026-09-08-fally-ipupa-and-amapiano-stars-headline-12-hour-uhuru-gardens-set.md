@@ -13,7 +13,6 @@ dateModified: "2026-09-08T06:14:30Z"
 focusKeyword: "fally ipupa and amapiano stars headline"
 schema: "NewsArticle"
 ---
-
 Congolese rumba icon Fally Ipupa led a 12-hour musical showcase at Uhuru Gardens this past weekend, drawing thousands to the Langata venue. The event featured a cross-genre lineup, including South African amapiano stars Kamo Mphela and Nomfundo Khumalo, alongside local performers. DJ Joe Mfalme managed the decks throughout the evening, while the Kodong Klan opened the stage with a 100-minute set.
 
 The Congolese star arrived at Jomo Kenyatta International Airport on Thursday evening. Traditional Maasai dancers greeted him on the tarmac before his transit to the city center. Ipupa spoke to the media upon his arrival, noting his long-standing connection to his Kenyan fanbase and promising a performance defined by high energy and technical precision.
