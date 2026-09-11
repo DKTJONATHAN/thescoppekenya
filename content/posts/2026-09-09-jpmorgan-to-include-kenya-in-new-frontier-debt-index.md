@@ -7,11 +7,11 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/mbadi-ruto.jpg.webp?itok=OfsdkMpG"
 category: "News"
 tags: ["jpmorgan to include kenya in new frontier debt index", "news", "kenya news"]
-canonical: "https://zandani.co.ke/article/jpmorgan-to-include-kenya-in-new-frontier-debt-index"
 date: "2026-09-09T19:47:37Z"
 dateModified: "2026-09-09T19:47:37Z"
 focusKeyword: "jpmorgan include kenya new frontier debt"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/jpmorgan-to-include-kenya-in-new-frontier-debt-index"
 ---
 
 ### What we know

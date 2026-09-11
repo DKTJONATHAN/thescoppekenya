@@ -7,11 +7,11 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/rains_1.jpg.webp?itok=JrFXound"
 category: "News"
 tags: ["health ministry prepares 18 high risk counties for el ni o", "news", "kenya news"]
-canonical: "https://zandani.co.ke/article/health-ministry-prepares-18-high-risk-counties-for-el-ni-o"
 date: "2026-09-09T09:27:48Z"
 dateModified: "2026-09-09T09:27:48Z"
 focusKeyword: "health ministry prepares high risk counties"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/health-ministry-prepares-18-high-risk-counties-for-el-ni-o"
 ---
 
 ### What we know
