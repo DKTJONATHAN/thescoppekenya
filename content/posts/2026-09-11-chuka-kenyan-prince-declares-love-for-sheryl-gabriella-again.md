@@ -1,7 +1,7 @@
 ---
 title: "Chuka Kenyan Prince declares love for Sheryl Gabriella again"
 slug: "chuka-kenyan-prince-declares-love-for-sheryl-gabriella-again"
-description: "chuka kenyan prince declares love for: Content creator Chuka Kenyan Prince has reignited public discourse surrounding his romantic intentions after posting."
+description: "chuka kenyan prince declares love for: Content creator Chuka Kenyan Prince has reignited public discourse surrounding his romantic intentions after."
 excerpt: "Content creator Chuka Kenyan Prince has reignited public discourse surrounding his romantic intentions after posting a fresh declaration of affection for."
 author: "Wanjiku Kuria"
 image: "https://i.ibb.co/4ZgWMzvS/92aedf8ed564.png"
