@@ -526,10 +526,10 @@
     "cc41e6392cddcdc99acedc263b9b6b22",
     "4f79fc26aba9bb664368bdc1677f2af1",
     "bee7399edac3123c1225bb61a260969d",
-    "cbe1932b81ecfd6ab7f8ccdd6daa03b4"
+    "cbe1932b81ecfd6ab7f8ccdd6daa03b4",
+    "f69e90bf930e0f760cfb139ff871533f"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
     "Hard News Lead",
@@ -558,7 +558,8 @@
     "Event Report",
     "Hard News Lead",
     "Statement Report",
-    "Desk Take"
+    "Desk Take",
+    "Hard News Lead"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -669,7 +670,8 @@
     "https://kenyans.co.ke/news/126960-eacc-arrests-2-dci-officers-over-alleged-ksh500000-murder-case-bribe",
     "https://kenyans.co.ke/news/126959-world-bank-verge-disbursing-ksh51-billion-emergency-loan-kenya",
     "https://kenyans.co.ke/news/126965-city-lawyer-threatens-jump-8th-floor-during-dci-arrest",
-    "https://kenyans.co.ke/news/126969-kenya-targets-new-chinese-financing-new-expressway-jkia-expansion"
+    "https://kenyans.co.ke/news/126969-kenya-targets-new-chinese-financing-new-expressway-jkia-expansion",
+    "https://kenyans.co.ke/news/126971-nyota-warns-kenyans-against-fake-websites-seeking-personal-information"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -702,7 +704,8 @@
     "eacc arrests dci officers alleged ksh500 000 murder case bribe",
     "world bank verge disbursing ksh51 billion emergency loan",
     "city lawyer threatens jump 8th floor during dci arrest",
-    "targets chinese financing expressway jkia expansion"
+    "targets chinese financing expressway jkia expansion",
+    "nyota warns against fake websites seeking personal information"
   ],
   "topic_keys": [
     "news tracker",
