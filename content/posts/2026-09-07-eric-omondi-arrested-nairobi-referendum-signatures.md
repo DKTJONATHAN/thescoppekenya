@@ -13,7 +13,6 @@ dateModified: "2026-09-07T06:57:06Z"
 focusKeyword: "Eric Omondi Arrested in Nairobi Over 8-County Referendum"
 schema: "NewsArticle"
 ---
-
 Comedian-turned-activist Eric Omondi was arrested by plainclothes police officers outside the Nairobi National Archives on Monday morning while collecting citizen signatures for a constitutional referendum petition aimed at downsizing Kenya's 47 counties to eight.
 
 ### What we know

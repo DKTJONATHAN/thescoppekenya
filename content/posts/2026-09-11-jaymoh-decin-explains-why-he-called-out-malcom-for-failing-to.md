@@ -7,13 +7,12 @@ author: "Martin Kihara"
 image: "https://i.ibb.co/kC0wdFv/e54d300009cd.webp"
 category: "Showbiz"
 tags: ["showbiz", "entertainment", "kenya"]
-canonical: "https://zandani.co.ke/article/jaymoh-decin-explains-why-he-called-out-malcom-for-failing-to"
 date: "2026-09-11T13:00:39Z"
 dateModified: "2026-09-11T13:00:39Z"
 focusKeyword: "jaymoh decin explains why called out"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/jaymoh-decin-explains-why-he-called-out-malcom-for-failing-to"
 ---
-
 **NAIROBI, September 11, 2026** - Comedian Jaymoh Decin has publicly criticized US-based content creator Malcom for failing to promote his upcoming live show, "Sudhee Experience," following a recurring pattern of influencers ignoring local projects while prioritizing death-related content.
 
 **What we know:**
