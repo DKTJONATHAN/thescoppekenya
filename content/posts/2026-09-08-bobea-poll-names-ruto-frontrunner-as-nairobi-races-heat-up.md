@@ -7,11 +7,11 @@ author: "Wanjiku Kuria"
 image: "https://i.ibb.co/FbdMwXKM/ec5ebe0e6a09.jpg"
 category: "Gossip"
 tags: ["gossip", "showbiz", "kenya"]
-canonical: "https://zandani.co.ke/article/bobea-poll-names-ruto-frontrunner-as-nairobi-races-heat-up"
 date: "2026-09-08T08:12:04Z"
 dateModified: "2026-09-08T08:12:04Z"
 focusKeyword: "bobea poll names ruto frontrunner nairobi"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/bobea-poll-names-ruto-frontrunner-as-nairobi-races-heat-up"
 ---
 President William Ruto holds a 16.1 percent lead over his closest challenger as the 2027 General Election cycle kicks into gear. Data released this Tuesday morning, September 8, 2026, by the Bobea Report, places the Head of State at 35.2 percent support. Field researchers conducted the survey across Kenya between August 26 and September 2, collecting views from markets and estates to gauge the mood ahead of the vote.
 
