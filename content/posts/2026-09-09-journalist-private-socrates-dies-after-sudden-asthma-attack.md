@@ -7,11 +7,11 @@ author: "Martin Kihara"
 image: "https://i.ibb.co/PsP6T7Dw/00fbcacb163a.webp"
 category: "Showbiz"
 tags: ["showbiz", "entertainment", "kenya"]
-canonical: "https://zandani.co.ke/article/journalist-private-socrates-dies-after-sudden-asthma-attack"
 date: "2026-09-09T09:09:41Z"
 dateModified: "2026-09-09T09:09:41Z"
 focusKeyword: "journalist private socrates dies after sudden"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/journalist-private-socrates-dies-after-sudden-asthma-attack"
 ---
 The media fraternity in Kenya is mourning the death of journalist and public relations strategist Private Socrates, who collapsed and died following an asthma attack on September 8, 2026. A known voice across television and digital platforms, his passing has triggered an outpouring of tributes from across the country’s political and media circles.
 
