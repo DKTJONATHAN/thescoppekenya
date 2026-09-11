@@ -528,10 +528,10 @@
     "bee7399edac3123c1225bb61a260969d",
     "cbe1932b81ecfd6ab7f8ccdd6daa03b4",
     "f69e90bf930e0f760cfb139ff871533f",
-    "acfc1268849fd3ff503a5e1719115f2d"
+    "acfc1268849fd3ff503a5e1719115f2d",
+    "8b6048553df7fb78f2b2d064eff0128e"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Hard News Lead",
     "Power Accountability",
     "Context Backgrounder",
@@ -560,7 +560,8 @@
     "Statement Report",
     "Desk Take",
     "Hard News Lead",
-    "Event Report"
+    "Event Report",
+    "Desk Take"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -673,7 +674,8 @@
     "https://kenyans.co.ke/news/126965-city-lawyer-threatens-jump-8th-floor-during-dci-arrest",
     "https://kenyans.co.ke/news/126969-kenya-targets-new-chinese-financing-new-expressway-jkia-expansion",
     "https://kenyans.co.ke/news/126971-nyota-warns-kenyans-against-fake-websites-seeking-personal-information",
-    "https://kenyans.co.ke/news/126975-eacc-officers-arrest-narok-county-surveyor-over-ksh100000-bribe"
+    "https://kenyans.co.ke/news/126975-eacc-officers-arrest-narok-county-surveyor-over-ksh100000-bribe",
+    "https://kenyans.co.ke/news/126982-cs-wandayi-responds-anthropic-report-ai-generated-campaign-praising-him"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -708,7 +710,8 @@
     "city lawyer threatens jump 8th floor during dci arrest",
     "targets chinese financing expressway jkia expansion",
     "nyota warns against fake websites seeking personal information",
-    "eacc detectives arrest narok county surveyor ksh100 000 bribe"
+    "eacc detectives arrest narok county surveyor ksh100 000 bribe",
+    "wandayi responds anthropic report generated campaign praising him"
   ],
   "topic_keys": [
     "news tracker",
