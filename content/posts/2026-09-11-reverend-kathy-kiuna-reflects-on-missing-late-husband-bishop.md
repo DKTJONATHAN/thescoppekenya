@@ -7,12 +7,13 @@ author: "Martin Kihara"
 image: "https://i.ibb.co/DPqCVCcH/38b27271c9ef.webp"
 category: "Showbiz"
 tags: ["showbiz", "entertainment", "kenya"]
+canonical: "https://zandani.co.ke/article/reverend-kathy-kiuna-reflects-on-missing-late-husband-bishop"
 date: "2026-09-11T09:42:02Z"
 dateModified: "2026-09-11T09:42:02Z"
 focusKeyword: "reverend kathy kiuna reflects missing late"
 schema: "NewsArticle"
-canonical: "https://zandani.co.ke/article/reverend-kathy-kiuna-reflects-on-missing-late-husband-bishop"
 ---
+
 NAIROBI - Reverend Kathy Kiuna, co-founder of Jubilee Christian Church (JCC), has publicly addressed her ongoing process of grieving her late husband, Bishop Allan Kiuna, while contrasting the spiritual foundation of their three-decade marriage with contemporary relationship trends.
 
 **What we know:**
