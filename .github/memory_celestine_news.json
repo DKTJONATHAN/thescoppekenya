@@ -525,10 +525,10 @@
     "c0a3df88f5ed719645d366b921eb1639",
     "cc41e6392cddcdc99acedc263b9b6b22",
     "4f79fc26aba9bb664368bdc1677f2af1",
-    "bee7399edac3123c1225bb61a260969d"
+    "bee7399edac3123c1225bb61a260969d",
+    "cbe1932b81ecfd6ab7f8ccdd6daa03b4"
   ],
   "style_history": [
-    "Explainer",
     "Power Accountability",
     "Context Backgrounder",
     "Reaction & Voices",
@@ -557,7 +557,8 @@
     "Desk Take",
     "Event Report",
     "Hard News Lead",
-    "Statement Report"
+    "Statement Report",
+    "Desk Take"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -667,7 +668,8 @@
     "https://kenyans.co.ke/news/126949-dpp-begins-extradition-kenyan-fugitive-wanted-us-over-fatal-drunk-driving-conviction",
     "https://kenyans.co.ke/news/126960-eacc-arrests-2-dci-officers-over-alleged-ksh500000-murder-case-bribe",
     "https://kenyans.co.ke/news/126959-world-bank-verge-disbursing-ksh51-billion-emergency-loan-kenya",
-    "https://kenyans.co.ke/news/126965-city-lawyer-threatens-jump-8th-floor-during-dci-arrest"
+    "https://kenyans.co.ke/news/126965-city-lawyer-threatens-jump-8th-floor-during-dci-arrest",
+    "https://kenyans.co.ke/news/126969-kenya-targets-new-chinese-financing-new-expressway-jkia-expansion"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -699,7 +701,8 @@
     "fugitive cornered runda fatal drunk driving case",
     "eacc arrests dci officers alleged ksh500 000 murder case bribe",
     "world bank verge disbursing ksh51 billion emergency loan",
-    "city lawyer threatens jump 8th floor during dci arrest"
+    "city lawyer threatens jump 8th floor during dci arrest",
+    "targets chinese financing expressway jkia expansion"
   ],
   "topic_keys": [
     "news tracker",
