@@ -1,20 +1,19 @@
 ---
 title: "CS Wandayi Responds to Anthropic Report on AI-Generated Campaign"
 slug: "cs-wandayi-responds-to-anthropic-report-on-ai-generated-campaign"
-description: "When an artificial intelligence laboratory in San Francisco flagged a synthetic echo chamber singing praises for Energy Cabinet Secretary Opiyo Wandayi."
+description: "wandayi responds anthropic report generated campaign: When an artificial intelligence laboratory in San Francisco flagged a synthetic echo chamber singing"
 excerpt: "When an artificial intelligence laboratory in San Francisco flagged a synthetic echo chamber singing praises for Energy Cabinet Secretary Opiyo Wandayi."
 author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/cs-opiyo-wandayi-claude-ai.jpg.webp?itok=0eLWLE2B"
 category: "News"
+tags: ["cs wandayi responds to anthropic report on ai generated campaign", "news", "kenya news"]
+canonical: "https://zandani.co.ke/article/cs-wandayi-responds-to-anthropic-report-on-ai-generated-campaign"
 date: "2026-09-11T17:02:48Z"
 dateModified: "2026-09-11T17:02:48Z"
 focusKeyword: "wandayi responds anthropic report generated campaign"
 schema: "NewsArticle"
-county: "Nairobi"
-readTime: "3"
-source: "https://kenyans.co.ke/news/126982-cs-wandayi-responds-anthropic-report-ai-generated-campaign-praising-him"
-stylePreset: "Desk Take"
 ---
+
 When an artificial intelligence laboratory in San Francisco flagged a synthetic echo chamber singing praises for Energy Cabinet Secretary Opiyo Wandayi, the official response was a classic Nairobi brush-off-delivered, curiously, with the exact same campaign hashtag the bots were trained to push.
 
 ### What we know
