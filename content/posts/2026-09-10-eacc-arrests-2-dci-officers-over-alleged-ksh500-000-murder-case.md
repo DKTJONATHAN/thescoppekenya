@@ -7,13 +7,12 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/dci-gate-1_0.jpeg.webp?itok=QDgDpXO2"
 category: "News"
 tags: ["eacc arrests 2 dci officers over alleged ksh500 000 murder case", "news", "kenya news"]
-canonical: "https://zandani.co.ke/article/eacc-arrests-2-dci-officers-over-alleged-ksh500-000-murder-case"
 date: "2026-09-10T17:00:18Z"
 dateModified: "2026-09-10T17:00:18Z"
 focusKeyword: "eacc arrests dci officers over alleged"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/eacc-arrests-2-dci-officers-over-alleged-ksh500-000-murder-case"
 ---
-
 Detectives from the Ethics and Anti-Corruption Commission (EACC) have arrested two Directorate of Criminal Investigations (DCI) officers attached to Kipkelion Sub-County after they were caught red-handed receiving a bribe to terminate an active murder investigation.
 
 ### What we know
