@@ -7,11 +7,11 @@ author: "Jonathan Mwaniki"
 image: "https://i.ibb.co/cS9tHK6q/9941956c88a4.webp"
 category: "Opinions"
 tags: ["kenya news", "maritime security", "china fishing", "marine conservation", "iuu fishing", "indian ocean"]
-canonical: "https://zandani.co.ke/article/china-increases-fisheries-oversight-amid-global-conservation-efforts"
 date: "2026-09-06T22:30:09Z"
 dateModified: "2026-09-06T22:30:09Z"
 focusKeyword: "China Increases Fisheries Oversight Amid Global Conservation Effo"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/china-increases-fisheries-oversight-amid-global-conservation-efforts"
 ---
 The waters surrounding the Kenyan coastline represent far more than a simple commercial artery. Today, these seas serve as a critical landscape for the protection of national sovereignty and ecological health. While stakeholders recently convened in Mombasa to commit to a framework for shared maritime stewardship, the absence of an official endorsement from Beijing has created a significant disconnect. This letter serves as an appeal to policymakers in China to align their global maritime posture with the urgent needs of the Indian Ocean region.To the policymakers in Beijing,
 
