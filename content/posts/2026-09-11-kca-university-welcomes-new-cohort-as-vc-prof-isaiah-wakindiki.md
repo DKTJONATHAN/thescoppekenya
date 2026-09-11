@@ -7,13 +7,12 @@ author: "Martin Kihara"
 image: "https://i.ibb.co/tTzyS7b4/6fade81b3050.webp"
 category: "Showbiz"
 tags: ["showbiz", "entertainment", "kenya"]
-canonical: "https://zandani.co.ke/article/kca-university-welcomes-new-cohort-as-vc-prof-isaiah-wakindiki"
 date: "2026-09-11T20:00:49Z"
 dateModified: "2026-09-11T20:00:49Z"
 focusKeyword: "kca university welcomes new cohort prof"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/kca-university-welcomes-new-cohort-as-vc-prof-isaiah-wakindiki"
 ---
-
 **RUARAKA, NAIROBI** - KCA University formally inducted its latest cohort of students on Friday, September 11, 2026, during a matriculation ceremony held at the institution’s Ruaraka main campus.
 
 **What we know:**

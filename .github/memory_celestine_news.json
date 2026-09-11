@@ -530,10 +530,10 @@
     "f69e90bf930e0f760cfb139ff871533f",
     "acfc1268849fd3ff503a5e1719115f2d",
     "8b6048553df7fb78f2b2d064eff0128e",
-    "b045df7520be63e6dec2c4b6aa6bf47d"
+    "b045df7520be63e6dec2c4b6aa6bf47d",
+    "a13aa57d83de0ecca8ddf3fe25f46a1d"
   ],
   "style_history": [
-    "Power Accountability",
     "Context Backgrounder",
     "Explainer",
     "Hard News Lead",
@@ -562,7 +562,8 @@
     "Hard News Lead",
     "Event Report",
     "Desk Take",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Statement Report"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -677,7 +678,8 @@
     "https://kenyans.co.ke/news/126971-nyota-warns-kenyans-against-fake-websites-seeking-personal-information",
     "https://kenyans.co.ke/news/126975-eacc-officers-arrest-narok-county-surveyor-over-ksh100000-bribe",
     "https://kenyans.co.ke/news/126982-cs-wandayi-responds-anthropic-report-ai-generated-campaign-praising-him",
-    "https://kenyans.co.ke/news/126981-kra-replace-its-cargo-tracking-seals-new-vendor-system-october-26"
+    "https://kenyans.co.ke/news/126981-kra-replace-its-cargo-tracking-seals-new-vendor-system-october-26",
+    "https://kenyans.co.ke/news/126980-ppdt-nullifies-moitalel-ole-kentas-appointment-jubilee-secretary-general"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -714,7 +716,8 @@
     "nyota warns against fake websites seeking personal information",
     "eacc detectives arrest narok county surveyor ksh100 000 bribe",
     "wandayi responds anthropic report generated campaign praising him",
-    "kra replace cargo tracking seals vendor system october"
+    "kra replace cargo tracking seals vendor system october",
+    "ppdt nullifies moitalel ole kenta appointment jubilee secretary general"
   ],
   "topic_keys": [
     "news tracker",
