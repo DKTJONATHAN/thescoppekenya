@@ -7,13 +7,12 @@ author: "Wanjiku Kuria"
 image: "https://i.ibb.co/hxcppqNp/38ad512ec6fc.jpg"
 category: "Gossip"
 tags: ["gossip", "showbiz", "kenya"]
-canonical: "https://zandani.co.ke/article/i-moved-on-morara-kebaso-s-estranged-wife-mercy-makini-speaks"
 date: "2026-09-10T19:37:21Z"
 dateModified: "2026-09-10T19:37:21Z"
 focusKeyword: "moved on' morara kebaso estranged wife"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/i-moved-on-morara-kebaso-s-estranged-wife-mercy-makini-speaks"
 ---
-
 NAIROBI - Mercy Makini has formally severed public ties with businessman Morara Kebaso, refuting his recent assertions regarding their domestic status and the nature of their ongoing legal separation.
 
 The fallout follows Kebaso’s public admission of a polygamous lifestyle, which included the distribution of digital media featuring a new partner. Makini, addressing the narrative for the first time, confirmed she exited the union on March 2, 2026. She characterized Kebaso’s recent public framing of their history as a calculated attempt to position himself as a victim, citing this as the primary catalyst for her decision to speak out.
