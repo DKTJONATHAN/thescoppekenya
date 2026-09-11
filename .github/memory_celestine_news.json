@@ -524,10 +524,10 @@
     "673047964c3b31f2852b13fb69c6ab24",
     "c0a3df88f5ed719645d366b921eb1639",
     "cc41e6392cddcdc99acedc263b9b6b22",
-    "4f79fc26aba9bb664368bdc1677f2af1"
+    "4f79fc26aba9bb664368bdc1677f2af1",
+    "bee7399edac3123c1225bb61a260969d"
   ],
   "style_history": [
-    "Reaction & Voices",
     "Explainer",
     "Power Accountability",
     "Context Backgrounder",
@@ -556,7 +556,8 @@
     "Hard News Lead",
     "Desk Take",
     "Event Report",
-    "Hard News Lead"
+    "Hard News Lead",
+    "Statement Report"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -665,7 +666,8 @@
     "https://kenyans.co.ke/news/126944-nairobi-kisumu-residents-warned-water-disruption-starting-friday",
     "https://kenyans.co.ke/news/126949-dpp-begins-extradition-kenyan-fugitive-wanted-us-over-fatal-drunk-driving-conviction",
     "https://kenyans.co.ke/news/126960-eacc-arrests-2-dci-officers-over-alleged-ksh500000-murder-case-bribe",
-    "https://kenyans.co.ke/news/126959-world-bank-verge-disbursing-ksh51-billion-emergency-loan-kenya"
+    "https://kenyans.co.ke/news/126959-world-bank-verge-disbursing-ksh51-billion-emergency-loan-kenya",
+    "https://kenyans.co.ke/news/126965-city-lawyer-threatens-jump-8th-floor-during-dci-arrest"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -696,7 +698,8 @@
     "dry taps ahead nairobi kisumu massive water cut",
     "fugitive cornered runda fatal drunk driving case",
     "eacc arrests dci officers alleged ksh500 000 murder case bribe",
-    "world bank verge disbursing ksh51 billion emergency loan"
+    "world bank verge disbursing ksh51 billion emergency loan",
+    "city lawyer threatens jump 8th floor during dci arrest"
   ],
   "topic_keys": [
     "news tracker",
