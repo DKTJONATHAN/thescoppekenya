@@ -13,7 +13,6 @@ dateModified: "2026-09-07T09:35:44Z"
 focusKeyword: "Tanzania's First Gentleman Hafidh Ameir Hassan Dies in Zanzibar"
 schema: "NewsArticle"
 ---
-
 Tanzania’s Vice President Deogratius Ndejembi announced on Monday, September 7, 2026, that the country’s First Gentleman, Hafidh Ameir Hassan, the husband of President Samia Suluhu Hassan, has died while receiving medical care in Zanzibar.
 
 ### What we know
