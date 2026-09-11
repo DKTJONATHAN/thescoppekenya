@@ -7,11 +7,11 @@ author: "Wanjiku Kuria"
 image: "https://i.ibb.co/8LFRcHP5/0b9465fd5236.jpg"
 category: "Gossip"
 tags: ["gossip", "showbiz", "kenya"]
-canonical: "https://zandani.co.ke/article/kenya-power-schedules-major-maintenance-across-eight-counties"
 date: "2026-09-08T06:14:18Z"
 dateModified: "2026-09-08T06:14:18Z"
 focusKeyword: "kenya power schedules major maintenance across"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/kenya-power-schedules-major-maintenance-across-eight-counties"
 ---
 
 Kenya Power has scheduled extensive network maintenance for Tuesday, September 8, 2026, forcing power outages across Nairobi, Uasin Gishu, Migori, Kisii, Homa Bay, Nyeri, Tharaka Nithi, and the Coast region. Residents and business owners in affected areas must prepare for service interruptions lasting up to eight hours as crews conduct infrastructure upgrades.
