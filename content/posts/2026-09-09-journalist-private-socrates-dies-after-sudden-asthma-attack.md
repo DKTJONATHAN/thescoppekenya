@@ -13,7 +13,6 @@ dateModified: "2026-09-09T09:09:41Z"
 focusKeyword: "journalist private socrates dies after sudden"
 schema: "NewsArticle"
 ---
-
 The media fraternity in Kenya is mourning the death of journalist and public relations strategist Private Socrates, who collapsed and died following an asthma attack on September 8, 2026. A known voice across television and digital platforms, his passing has triggered an outpouring of tributes from across the country’s political and media circles.
 
 Socrates first made his mark in journalism as a student leader at Moi University. He served as the editor-in-chief of the Moi University Students Organisation and managed the campus publication, *The 3rd Eye*. His tenure at the Kesses-based institution is credited with shaping his analytical approach to storytelling.

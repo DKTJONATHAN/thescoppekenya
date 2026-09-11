@@ -13,7 +13,6 @@ dateModified: "2026-09-09T17:10:22Z"
 focusKeyword: "kaa bans bundled baggage jkia curb"
 schema: "NewsArticle"
 ---
-
 The Kenya Airports Authority has outlawed the practice of bundling multiple passengers' luggage together on inbound flights to Jomo Kenyatta International Airport. Travellers caught arriving with tied-together bags will have their luggage separated and returned at their own expense, following a directive aimed at halting commercial cargo smuggling masquerading as personal baggage.
 
 **What we know**

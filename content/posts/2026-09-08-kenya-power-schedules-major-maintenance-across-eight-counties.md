@@ -13,7 +13,6 @@ focusKeyword: "kenya power schedules major maintenance across"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/kenya-power-schedules-major-maintenance-across-eight-counties"
 ---
-
 Kenya Power has scheduled extensive network maintenance for Tuesday, September 8, 2026, forcing power outages across Nairobi, Uasin Gishu, Migori, Kisii, Homa Bay, Nyeri, Tharaka Nithi, and the Coast region. Residents and business owners in affected areas must prepare for service interruptions lasting up to eight hours as crews conduct infrastructure upgrades.
 
 Nairobi bears the brunt of the maintenance today. Loresho, specifically around the University Farm and Mandela Hostels, loses power from 9:00 a.m. until 5:00 p.m. Waithaka residents face a similar blackout affecting Naivasha Road, Ndwaru Road, and Dagoretti High School. Across the city in Donholm, commerce stalls for establishments near Mima Centre, Equity Bank, and Savannah Road, with supply expected to return at 5:00 p.m.

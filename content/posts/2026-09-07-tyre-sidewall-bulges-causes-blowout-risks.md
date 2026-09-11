@@ -13,7 +13,6 @@ focusKeyword: "Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks"
 schema: "NewsArticle"
 canonical: "https://zandani.co.ke/article/tyre-sidewall-bulges-causes-blowout-risks"
 ---
-
 ## Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks
 
 ### What we know
