@@ -11,15 +11,43 @@ const DEFAULT_OPTIONS: PollOption[] = [
 
 const CHOICE_KEY = (slug: string) => `zn-poll-choice:${slug}`;
 
+/** Lightweight story-aware poll prompt (no external AI call at runtime). */
+export function buildPollQuestion(title?: string, category?: string): string {
+  const t = (title || "").trim();
+  const cat = (category || "").toLowerCase();
+  if (/ruto|gachagua|raila|election|2027|mps?\b|senate|governor/i.test(t)) {
+    return "Do you agree with how this political story is unfolding?";
+  }
+  if (/safaricom|m-?pesa|economy|inflation|tax|budget|business/i.test(t) || cat.includes("business")) {
+    return "Does this story change how you see the Kenyan economy?";
+  }
+  if (/football|gor mahia|afc|haramee|athletics|premier/i.test(t) || cat.includes("sport")) {
+    return "Are you happy with this result for Kenyan sports fans?";
+  }
+  if (/showbiz|celebrity|music|actress|actor|comedian|gossip/i.test(t) || cat.includes("entertain")) {
+    return "Is this the right move for the star involved?";
+  }
+  if (t.length > 12) {
+    const short = t.length > 72 ? t.slice(0, 69).replace(/\s+\S*$/, "") + "…" : t;
+    return `What’s your take — is this story fair coverage of “${short}”?`;
+  }
+  return "Did this story help you understand the issue?";
+}
+
 export function ArticlePoll({
   slug,
-  question = "Did this story help you understand the issue?",
+  title,
+  category,
+  question,
   options = DEFAULT_OPTIONS,
 }: {
   slug: string;
+  title?: string;
+  category?: string;
   question?: string;
   options?: PollOption[];
 }) {
+  const resolvedQuestion = question || buildPollQuestion(title, category);
   const [votes, setVotes] = useState<Record<string, number>>({});
   const [choice, setChoice] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -75,7 +103,6 @@ export function ArticlePoll({
 
   const vote = async (id: string) => {
     if (choice || voting) return;
-
     const sb = getSupabase();
     if (!sb) return;
 
@@ -89,7 +116,6 @@ export function ArticlePoll({
     });
 
     if (error) {
-      // Unique violation = already voted from this device key
       if (error.code === "23505") {
         try {
           localStorage.setItem(CHOICE_KEY(slug), id);
@@ -118,7 +144,7 @@ export function ArticlePoll({
   return (
     <section className="mt-8 border border-divider p-5 bg-muted/20" aria-label="Reader poll">
       <p className="text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-2">Poll</p>
-      <h3 className="font-serif font-bold text-lg mb-4 text-foreground">{question}</h3>
+      <h3 className="font-serif font-bold text-lg mb-4 text-foreground">{resolvedQuestion}</h3>
 
       {loading ? (
         <p className="text-sm text-muted-foreground" role="status">
