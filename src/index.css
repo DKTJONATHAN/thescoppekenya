@@ -121,66 +121,255 @@ html {
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
-    color: hsl(var(--headline));
-    letter-spacing: -0.02em;
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply text-headline font-bold tracking-tight;
+    text-wrap: balance;
   }
 
-  .font-serif {
-    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  h1 { font-size: var(--text-h1); line-height: 1.15; }
+  h2 { font-size: var(--text-h2); line-height: 1.2; }
+  h3 { font-size: var(--text-h3); line-height: 1.25; }
+
+  /* Accessible focus rings — keyboard only */
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Selection */
+  ::selection {
+    background: hsl(var(--primary) / 0.25);
+    color: hsl(var(--foreground));
+  }
+
+  /* Images never overflow */
+  img, video, svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  input, textarea, select {
+    color-scheme: dark;
   }
 }
 
 @layer utilities {
-  .text-headline { color: hsl(var(--headline)); }
-  .text-subtext { color: hsl(var(--subtext)); }
-  .bg-surface { background-color: hsl(var(--surface)); }
-  .bg-surface-elevated { background-color: hsl(var(--surface-elevated)); }
-  .border-divider { border-color: hsl(var(--divider)); }
-  .gradient-primary { background-image: var(--gradient-primary); }
-  .measure { max-width: var(--measure); }
-  .touch-target { min-height: 44px; min-width: 44px; }
-  .transition-smooth { transition: all 0.2s ease; }
+  .text-headline {
+    color: hsl(var(--headline));
+  }
+
+  .text-subtext {
+    color: hsl(var(--subtext));
+  }
+
+  .bg-surface {
+    background-color: hsl(var(--surface));
+  }
+
+  .bg-surface-elevated {
+    background-color: hsl(var(--surface-elevated));
+  }
+
+  .border-divider {
+    border-color: hsl(var(--divider));
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-dark {
+    background: var(--gradient-dark);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-sm);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-prominent {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  /* Optimal reading measure for long-form */
+  .measure {
+    max-width: var(--measure);
+  }
+
+  /* Touch targets ≥ 44px on interactive chrome */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Screen-reader only (WCAG) */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Skip link — visible on keyboard focus */
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -100%;
+    z-index: 100;
+    padding: 0.75rem 1.25rem;
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: top 0.15s ease;
+  }
+  .skip-link:focus,
+  .skip-link:focus-visible {
+    top: 1rem;
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+
+  /* Article content styling */
+  .prose-article {
+    @apply text-foreground;
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+    max-width: var(--measure);
+  }
+
+  .prose-article p {
+    @apply mb-6;
+    line-height: var(--leading-body);
+  }
+
+  .prose-article h2 {
+    @apply mt-10 mb-5 font-bold;
+    font-size: var(--text-h2);
+  }
+
+  .prose-article h3 {
+    @apply mt-8 mb-4 font-semibold;
+    font-size: var(--text-h3);
+  }
+
+  .prose-article ul, .prose-article ol {
+    @apply ml-6 mb-6 space-y-2;
+  }
+
+  .prose-article li {
+    @apply mb-2;
+    line-height: var(--leading-body);
+  }
+
+  .prose-article blockquote {
+    @apply border-l-4 border-primary pl-6 italic my-8 text-muted-foreground py-2;
+  }
+
+  .prose-article a {
+    @apply text-primary font-medium underline-offset-2 hover:underline;
+  }
+
+  .prose-article img {
+    @apply rounded-xl my-8;
+  }
+
+  .prose-article strong {
+    @apply font-bold text-foreground;
+  }
+
+  .prose-article em {
+    @apply italic;
+  }
 }
 
-/* Brand accent bar */
-.brand-bar {
-  height: 3px;
-  background: hsl(var(--primary));
+/* Enhanced prose styles for article pages */
+.prose a {
+  color: hsl(var(--primary)) !important;
+  font-weight: 500;
 }
 
-/* Live pulse */
-.live-dot {
-  width: 0.45rem;
-  height: 0.45rem;
-  border-radius: 999px;
-  background: hsl(var(--primary));
-  box-shadow: 0 0 0 0 hsl(var(--primary) / 0.55);
-  animation: livePulse 1.6s ease-out infinite;
-}
-@keyframes livePulse {
-  0% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0.55); }
-  70% { box-shadow: 0 0 0 8px hsl(var(--primary) / 0); }
-  100% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0); }
+.prose a:hover {
+  text-decoration: underline;
 }
 
-/* Skip link */
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: 0;
-  z-index: 100;
-  padding: 0.75rem 1rem;
-  background: hsl(var(--primary));
-  color: hsl(var(--primary-foreground));
+.prose strong {
+  color: hsl(var(--foreground)) !important;
   font-weight: 700;
-  border-radius: 0 0 0.5rem 0;
-}
-.skip-link:focus {
-  left: 0;
 }
 
-/* Fade-in for mobile menu */
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: var(--leading-body);
+  font-size: var(--text-body);
+}
+
+.prose h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.prose blockquote {
+  border-left-color: hsl(var(--primary));
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Breaking news marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-4px); }
   to { opacity: 1; transform: translateY(0); }
@@ -189,7 +378,75 @@ html {
   animation: fadeIn 0.18s ease-out;
 }
 
-/* What we know — legacy selectors (component now uses Tailwind; kept for safety) */
+/* Reading progress bar (article pages) */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  z-index: 60;
+  background: var(--gradient-primary);
+  width: 0%;
+  transition: width 0.05s linear;
+  pointer-events: none;
+}
+
+/* Sticky share bar safe area on mobile */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Scrollbar for live updates */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 2px;
+}
+
+/* Card hover lift — subtle, news-appropriate */
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Section label used across category / hub pages */
+.section-kicker {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+}
+
+.live-dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: hsl(0 84% 56%);
+  animation: pulse-live 1.6s ease-in-out infinite;
+}
+@keyframes pulse-live {
+  50% { opacity: 0.4; }
+}
+
+.brand-bar {
+  height: 3px;
+  background: hsl(var(--primary));
+}
+
+/* What we know — editorial brief, not a generic callout */
 .what-we-know {
   margin: 2.25rem 0 2.5rem;
   border-left: 3px solid hsl(var(--primary));
@@ -278,7 +535,7 @@ html {
   }
 }
 
-/* ─── Mobile app shell (desktop unchanged via lg:) ─── */
+/* ─── Mobile app shell (desktop unchanged via lg: / max-width) ─── */
 .pb-mobile-nav {
   padding-bottom: 0;
 }
