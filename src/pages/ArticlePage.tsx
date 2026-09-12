@@ -12,8 +12,12 @@ import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 import { ArticleBreadcrumbs } from "@/components/articles/ArticleBreadcrumbs";
 import { StickyMobileShare } from "@/components/articles/StickyMobileShare";
 import { WhatWeKnow } from "@/components/articles/WhatWeKnow";
+import { ArticleReactions } from "@/components/articles/ArticleReactions";
+import { ArticlePoll } from "@/components/articles/ArticlePoll";
+import { ArticleComments } from "@/components/articles/ArticleComments";
 import { shouldShowWhatWeKnow, splitLedeHtml } from "@/lib/what-we-know";
 import { authorColor, catColor, proxyImg } from "@/lib/utils";
+import { trackCategoryView } from "@/hooks/usePreferences";
 
 const SITE_URL = "https://zandani.co.ke";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/default-og.jpg`;
@@ -78,6 +82,9 @@ export default function ArticlePage() {
     getPostBySlug(slug || "").then((p) => {
       setPost(p || null);
       setLoading(false);
+      if (p) {
+        trackCategoryView(p.category || "News", p.slug);
+      }
     });
   }, [slug]);
 
@@ -131,8 +138,9 @@ export default function ArticlePage() {
   if (loading) {
     return (
       <Layout>
-        <div className="min-h-[50vh] flex items-center justify-center">
-          <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-primary" />
+        <div className="min-h-[50vh] flex items-center justify-center" role="status" aria-live="polite">
+          <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-primary" aria-hidden />
+          <span className="sr-only">Loading article</span>
         </div>
       </Layout>
     );
@@ -195,7 +203,15 @@ export default function ArticlePage() {
         <meta name="twitter:image" content={postOgImage} />
       </Helmet>
 
-      <div ref={progressRef} className="fixed top-0 left-0 h-0.5 bg-primary z-50 transition-[width] duration-100" style={{ width: 0 }} />
+      <div
+        ref={progressRef}
+        className="fixed top-0 left-0 h-0.5 bg-primary z-50 transition-[width] duration-100"
+        style={{ width: 0 }}
+        role="progressbar"
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label="Reading progress"
+      />
 
       <div className="container max-w-6xl mx-auto px-4 pt-6 pb-24 lg:pb-12">
         <ArticleBreadcrumbs category={post.category} title={post.title} />
@@ -214,18 +230,18 @@ export default function ArticlePage() {
                 to={`/author/${(post.author || "za-ndani").toLowerCase().replace(/\s+/g, "-")}`}
                 className="inline-flex items-center gap-2 hover:text-primary"
               >
-                <span className={`w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-black ${authorTint}`}>
+                <span className={`w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-black ${authorTint}`} aria-hidden>
                   {authorInitials}
                 </span>
                 <span className="font-semibold text-foreground">{post.author}</span>
               </Link>
               <span className="inline-flex items-center gap-1.5">
-                <Calendar className="w-3.5 h-3.5" />
-                {formattedDate}
+                <Calendar className="w-3.5 h-3.5" aria-hidden />
+                <time dateTime={post.date}>{formattedDate}</time>
               </span>
               {post.readTime ? (
                 <span className="inline-flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5" />
+                  <Clock className="w-3.5 h-3.5" aria-hidden />
                   {post.readTime} min read
                 </span>
               ) : null}
@@ -237,49 +253,56 @@ export default function ArticlePage() {
                   src={proxyImg(post.image, 1200)}
                   alt={post.imageAlt || post.title}
                   className="w-full max-h-[28rem] object-cover"
+                  width={1200}
+                  height={675}
                   fetchPriority="high"
+                  decoding="async"
                 />
               </figure>
             ) : null}
 
-            <div className="flex items-center gap-2 mb-8 flex-wrap">
+            <div className="flex items-center gap-2 mb-8 flex-wrap" role="group" aria-label="Share this story">
               <span className="text-[10px] font-black uppercase tracking-[0.18em] text-muted-foreground mr-1">Share</span>
               <a
                 href={`https://wa.me/?text=${encodeURIComponent(post.title + " " + shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors"
-                aria-label="WhatsApp"
+                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                aria-label="Share on WhatsApp"
               >
-                <MessageCircle className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4" aria-hidden />
               </a>
               <a
                 href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors"
-                aria-label="X"
+                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                aria-label="Share on X"
               >
-                <XIcon className="w-4 h-4" />
+                <XIcon className="w-4 h-4" aria-hidden />
               </a>
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors"
-                aria-label="Facebook"
+                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                aria-label="Share on Facebook"
               >
-                <Facebook className="w-4 h-4" />
+                <Facebook className="w-4 h-4" aria-hidden />
               </a>
               <button
                 type="button"
                 onClick={handleCopy}
-                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors"
+                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 aria-label="Copy link"
               >
-                <Share2 className="w-4 h-4" />
+                <Share2 className="w-4 h-4" aria-hidden />
               </button>
-              {copied ? <span className="text-xs text-primary">Copied</span> : null}
+              {copied ? (
+                <span className="text-xs text-primary" role="status">
+                  Copied
+                </span>
+              ) : null}
             </div>
 
             <div className="prose prose-lg dark:prose-invert measure max-w-[65ch] mx-auto prose-headings:font-serif prose-a:text-primary">
@@ -292,9 +315,12 @@ export default function ArticlePage() {
               <AdUnit type="horizontal" />
             </div>
 
+            <ArticleReactions slug={post.slug} />
+            <ArticlePoll slug={post.slug} />
+
             <div className="border border-divider p-5 mt-10">
               <div className="flex gap-4 items-start">
-                <div className={`w-14 h-14 rounded-full flex items-center justify-center font-black text-lg shrink-0 ${authorTint}`}>
+                <div className={`w-14 h-14 rounded-full flex items-center justify-center font-black text-lg shrink-0 ${authorTint}`} aria-hidden>
                   {authorInitials}
                 </div>
                 <div>
@@ -312,24 +338,31 @@ export default function ArticlePage() {
               </div>
             </div>
 
+            <ArticleComments slug={post.slug} />
+
             {relatedPosts.length > 0 ? (
-              <section className="mt-12">
+              <section className="mt-12" aria-labelledby="related-heading">
                 <div className="flex items-center gap-4 mb-5">
-                  <h2 className="text-lg font-black uppercase tracking-tight">More in {post.category}</h2>
-                  <div className="h-px flex-1 bg-divider" />
+                  <h2 id="related-heading" className="text-lg font-black uppercase tracking-tight">
+                    More in {post.category}
+                  </h2>
+                  <div className="h-px flex-1 bg-divider" aria-hidden />
                 </div>
                 <div className="grid sm:grid-cols-3 gap-4">
                   {relatedPosts.map((rp) => (
                     <Link
                       key={rp.slug}
                       to={`/article/${rp.slug}`}
-                      className="group block border border-divider overflow-hidden hover:border-primary/50 transition-colors"
+                      className="group block border border-divider overflow-hidden hover:border-primary/50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                     >
                       <div className="aspect-[16/10] overflow-hidden bg-muted">
                         <img
                           src={proxyImg(rp.image, 400)}
-                          alt={rp.title}
+                          alt=""
+                          width={400}
+                          height={250}
                           loading="lazy"
+                          decoding="async"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       </div>
@@ -347,7 +380,7 @@ export default function ArticlePage() {
             </div>
           </article>
 
-          <aside className="hidden lg:block lg:col-span-3">
+          <aside className="hidden lg:block lg:col-span-3" aria-label="Sidebar">
             <div className="sticky top-28 space-y-8">
               <div className="border border-divider bg-muted/10 p-3 flex justify-center">
                 <AdUnit type="rectangle" />
@@ -360,11 +393,12 @@ export default function ArticlePage() {
 
       {showScrollTop ? (
         <button
+          type="button"
           onClick={scrollToTop}
-          className="fixed bottom-24 right-5 lg:bottom-6 lg:right-6 w-10 h-10 bg-primary text-primary-foreground flex items-center justify-center shadow-xl z-40"
+          className="fixed bottom-24 right-5 lg:bottom-6 lg:right-6 w-10 h-10 bg-primary text-primary-foreground flex items-center justify-center shadow-xl z-40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           aria-label="Scroll to top"
         >
-          <ArrowUp className="w-4 h-4" />
+          <ArrowUp className="w-4 h-4" aria-hidden />
         </button>
       ) : null}
 
