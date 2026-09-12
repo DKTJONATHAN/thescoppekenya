@@ -6,6 +6,7 @@ import { SearchOverlay } from "@/components/SearchOverlay";
 import { getAllPosts } from "@/lib/markdown";
 import { primaryNavLinks } from "@/lib/site-links";
 import logoImg from "@/assets/logo.png";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const allPostsFromMarkdown = getAllPosts();
 
@@ -60,12 +61,12 @@ export function Header() {
               </div>
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-0.5">
+            <nav className="hidden lg:flex items-center gap-0.5" aria-label="Primary">
               {primaryNavLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="px-2.5 py-2 text-sm font-semibold text-muted-foreground hover:text-primary rounded-md transition-colors"
+                  className="px-2.5 py-2 text-sm font-semibold text-muted-foreground hover:text-primary rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   {link.label}
                 </Link>
@@ -80,16 +81,19 @@ export function Header() {
                   if (!searchQuery.trim()) return;
                   window.location.href = `/tag/${encodeURIComponent(searchQuery.trim())}`;
                 }}
+                role="search"
               >
-                <Search className="w-4 h-4 text-muted-foreground mr-2" />
+                <Search className="w-4 h-4 text-muted-foreground mr-2" aria-hidden />
                 <input
                   type="search"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search..."
+                  aria-label="Search articles"
                   className="bg-transparent outline-none text-sm w-36 text-foreground placeholder:text-muted-foreground"
                 />
               </form>
+              <ThemeToggle />
               <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="touch-target hover:bg-primary/10 hover:text-primary text-foreground" aria-label="Search">
                 <Search className="w-5 h-5" />
               </Button>
@@ -104,7 +108,7 @@ export function Header() {
                 {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </Button>
               <Link to="/tv" className="hidden sm:flex items-center gap-2 bg-primary text-primary-foreground hover:opacity-90 text-[11px] font-bold uppercase tracking-wider px-4 h-9 rounded-full">
-                <Radio className="w-3.5 h-3.5" />
+                <Radio className="w-3.5 h-3.5" aria-hidden />
                 Live TV
               </Link>
             </div>
@@ -112,7 +116,7 @@ export function Header() {
         </div>
 
         {isMenuOpen && (
-          <nav className="lg:hidden border-t border-divider bg-background animate-fade-in max-h-[70vh] overflow-y-auto">
+          <nav className="lg:hidden border-t border-divider bg-background animate-fade-in max-h-[70vh] overflow-y-auto" aria-label="Mobile">
             <div className="container py-3 space-y-0.5">
               {primaryNavLinks.map((link) => (
                 <Link
@@ -128,7 +132,7 @@ export function Header() {
                 <Link to="/about" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary">About</Link>
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary">Contact</Link>
                 <Link to="/tv" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground font-bold uppercase tracking-wider h-12 rounded-xl">
-                  <Radio className="w-4 h-4" /> Live TV
+                  <Radio className="w-4 h-4" aria-hidden /> Live TV
                 </Link>
               </div>
             </div>
@@ -147,6 +151,9 @@ export function Header() {
           display: flex;
           width: max-content;
           animation: headerMarquee 40s linear infinite;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animate-header-marquee { animation: none; }
         }
         .animate-header-marquee:hover {
           animation-play-state: paused;
