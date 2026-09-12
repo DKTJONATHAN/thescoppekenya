@@ -1,14 +1,20 @@
 import { useId, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Loader2, CheckCircle } from "lucide-react";
+import { Loader2, CheckCircle2, Mail, ArrowRight } from "lucide-react";
 
 interface NewsletterFormProps {
   className?: string;
   tone?: "default" | "onAccent";
+  /** Compact layout for tight spaces */
+  compact?: boolean;
 }
 
-export function NewsletterForm({ className = "", tone = "default" }: NewsletterFormProps) {
+export function NewsletterForm({
+  className = "",
+  tone = "default",
+  compact = false,
+}: NewsletterFormProps) {
   const inputId = useId();
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -32,14 +38,17 @@ export function NewsletterForm({ className = "", tone = "default" }: NewsletterF
       setIsSuccess(true);
       setEmail("");
       toast({
-        title: data.already ? "Already subscribed" : "Subscribed",
-        description: data.message || "The evening brief lands at 19:00 EAT.",
+        title: data.already ? "You're already in" : "You're in",
+        description:
+          data.message ||
+          "Stories from Za Ndani will land in your inbox. Welcome aboard.",
       });
     } catch (error) {
       console.error("Newsletter subscription error:", error);
       toast({
         title: "Could not subscribe",
-        description: error instanceof Error ? error.message : "Try again in a moment.",
+        description:
+          error instanceof Error ? error.message : "Try again in a moment.",
         variant: "destructive",
       });
     } finally {
@@ -49,44 +58,91 @@ export function NewsletterForm({ className = "", tone = "default" }: NewsletterF
 
   if (isSuccess) {
     return (
-      <div className={`flex items-center justify-center gap-2 ${className}`}>
-        <CheckCircle className="w-5 h-5" />
-        <span className="font-medium">You're on the evening brief.</span>
+      <div
+        className={`flex items-center justify-center gap-2.5 rounded-xl border border-primary/30 bg-primary/10 px-4 py-3 ${className}`}
+        role="status"
+      >
+        <CheckCircle2 className="h-5 w-5 shrink-0 text-primary" aria-hidden />
+        <span className="text-sm font-medium leading-snug">
+          You're on the list. Fresh stories are on the way.
+        </span>
       </div>
     );
   }
 
-  const buttonClass =
-    tone === "onAccent"
-      ? "bg-background text-foreground hover:opacity-90 px-5 h-11"
-      : "gradient-primary text-primary-foreground";
+  const isOnAccent = tone === "onAccent";
 
   return (
-    <form onSubmit={handleSubmit} className={`flex flex-col sm:flex-row gap-2 ${className}`}>
-      <label htmlFor={inputId} className="sr-only">
-        Email
-      </label>
-      <input
-        id={inputId}
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="you@example.com"
-        autoComplete="email"
-        className="flex-1 px-4 py-2.5 rounded-md border-0 bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-background text-sm"
-        required
-        disabled={isLoading}
-      />
-      <Button type="submit" className={buttonClass} disabled={isLoading}>
-        {isLoading ? (
-          <>
-            <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-            Subscribing…
-          </>
-        ) : (
-          "Subscribe"
-        )}
-      </Button>
+    <form
+      onSubmit={handleSubmit}
+      className={`w-full ${className}`}
+      noValidate
+    >
+      <div
+        className={
+          compact
+            ? "flex flex-col gap-2 sm:flex-row sm:items-stretch"
+            : "flex flex-col gap-2.5 sm:flex-row sm:items-stretch"
+        }
+      >
+        <label htmlFor={inputId} className="sr-only">
+          Email address
+        </label>
+        <div className="relative min-w-0 flex-1">
+          <Mail
+            className={`pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 ${
+              isOnAccent ? "text-background/50" : "text-muted-foreground"
+            }`}
+            aria-hidden
+          />
+          <input
+            id={inputId}
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="you@email.com"
+            autoComplete="email"
+            inputMode="email"
+            required
+            disabled={isLoading}
+            className={
+              isOnAccent
+                ? "h-12 w-full rounded-xl border-0 bg-background/95 pl-10 pr-4 text-sm text-foreground shadow-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-background/80 disabled:opacity-60"
+                : "h-12 w-full rounded-xl border border-border bg-background pl-10 pr-4 text-sm text-foreground shadow-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 disabled:opacity-60"
+            }
+          />
+        </div>
+        <Button
+          type="submit"
+          disabled={isLoading}
+          className={
+            isOnAccent
+              ? "h-12 shrink-0 rounded-xl bg-background px-6 text-sm font-semibold text-foreground shadow-sm hover:bg-background/90"
+              : "h-12 shrink-0 rounded-xl px-6 text-sm font-semibold gradient-primary text-primary-foreground"
+          }
+        >
+          {isLoading ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" aria-hidden />
+              Joining…
+            </>
+          ) : (
+            <>
+              Join free
+              <ArrowRight className="ml-1.5 h-4 w-4" aria-hidden />
+            </>
+          )}
+        </Button>
+      </div>
+      {!compact && (
+        <p
+          className={`mt-2.5 text-center text-[11px] leading-relaxed ${
+            isOnAccent ? "text-primary-foreground/70" : "text-muted-foreground"
+          }`}
+        >
+          Free · No spam · Unsubscribe anytime
+        </p>
+      )}
     </form>
   );
 }
