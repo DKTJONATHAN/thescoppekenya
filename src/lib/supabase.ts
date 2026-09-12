@@ -24,6 +24,7 @@ export type ArticleCommentRow = {
   name: string;
   body: string;
   created_at: string;
+  parent_id: string | null;
 };
 
 export type ArticlePollVoteRow = {
