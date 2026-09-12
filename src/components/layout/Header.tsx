@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Menu, X, Search, Radio } from "lucide-react";
+import { Menu, X, Search, Radio, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SearchOverlay } from "@/components/SearchOverlay";
 import { getAllPosts } from "@/lib/markdown";
@@ -42,7 +42,7 @@ export function Header() {
               </div>
             </div>
             <div className="hidden md:flex items-center gap-4 shrink-0 pl-4 bg-background z-10">
-              <span className="text-muted-foreground tabular-nums">{new Date().toLocaleDateString('en-KE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
+              <span className="text-muted-foreground tabular-nums">{new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ export function Header() {
                   Za Ndani
                 </span>
                 <span className="mt-1 text-[10px] uppercase tracking-[0.18em] text-muted-foreground font-medium">
-                  Nairobi · EAT
+                  News · Culture
                 </span>
               </div>
             </Link>
@@ -73,7 +73,8 @@ export function Header() {
               ))}
             </nav>
 
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1.5">
+              {/* Desktop search */}
               <form
                 className="hidden xl:flex items-center border border-divider px-2 py-1 rounded-md"
                 onSubmit={(e) => {
@@ -97,9 +98,20 @@ export function Header() {
                   className="bg-transparent outline-none text-sm w-36 text-foreground placeholder:text-muted-foreground"
                 />
               </form>
+
               <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="touch-target hover:bg-primary/10 hover:text-primary text-foreground" aria-label="Search">
                 <Search className="w-5 h-5" />
               </Button>
+
+              {/* Newsletter — desktop pill */}
+              <Link
+                to="/newsletter"
+                className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3.5 h-9 text-[11px] font-bold uppercase tracking-wider text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+              >
+                <Mail className="w-3.5 h-3.5" aria-hidden />
+                Newsletter
+              </Link>
+
               <Button
                 variant="ghost"
                 size="icon"
@@ -110,6 +122,7 @@ export function Header() {
               >
                 {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </Button>
+
               <Link to="/tv" className="hidden sm:flex items-center gap-2 bg-primary text-primary-foreground hover:opacity-90 text-[11px] font-bold uppercase tracking-wider px-4 h-9 rounded-full">
                 <Radio className="w-3.5 h-3.5" aria-hidden />
                 Live TV
@@ -132,6 +145,14 @@ export function Header() {
                 </Link>
               ))}
               <div className="pt-3 border-t border-divider mt-2 space-y-2">
+                <Link
+                  to="/newsletter"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center gap-2 px-4 py-3.5 rounded-xl border border-primary/30 bg-primary/10 text-primary font-semibold"
+                >
+                  <Mail className="w-4 h-4" aria-hidden />
+                  Newsletter
+                </Link>
                 <Link to="/about" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary">About</Link>
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary">Contact</Link>
                 <Link to="/tv" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground font-bold uppercase tracking-wider h-12 rounded-xl">
