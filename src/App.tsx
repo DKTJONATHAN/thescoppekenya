@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/hooks/useTheme";
 import { Button } from "@/components/ui/button";
+import { reportError } from "@/lib/errors";
 
 import Index from "./pages/Index";
 const ArticlePage = lazy(() => import("./pages/ArticlePage"));
@@ -35,6 +36,7 @@ const PodcastPage = lazy(() => import("./pages/PodcastPage"));
 const TvPage = lazy(() => import("./pages/TvPage"));
 const AuthorProfilePage = lazy(() => import("./pages/AuthorProfilePage"));
 const HubPage = lazy(() => import("./pages/HubPage"));
+const SearchPage = lazy(() => import("./pages/SearchPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient({
@@ -85,6 +87,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     console.error("Page error:", error, errorInfo);
+    reportError(error, { source: "ErrorBoundary", componentStack: errorInfo.componentStack });
   }
 
   handleRetry = () => {
@@ -104,6 +107,7 @@ const GlobalErrorHandler = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const handleUnhandledRejection = (event: PromiseRejectionEvent) => {
       console.error("Unhandled promise rejection:", event.reason);
+      reportError(event.reason, { source: "unhandledrejection" });
       if (event.reason?.message?.includes("Failed to fetch dynamically imported module")) {
         window.location.reload();
       }
@@ -126,6 +130,7 @@ const App = () => (
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/article/:slug" element={<ArticlePage />} />
+                <Route path="/search" element={<SearchPage />} />
                 <Route path="/category/:slug" element={<CategoryPage />} />
                 <Route path="/trending" element={<Trending />} />
                 <Route path="/live" element={<LiveWirePage />} />
@@ -147,7 +152,6 @@ const App = () => (
                 <Route path="/business" element={<BusinessPage />} />
                 <Route path="/lifestyle" element={<LifestylePage />} />
                 <Route path="/sports/live" element={<LiveScoresPage />} />
-                {/* /sitemap.xml is served as a static file from generate-seo.js — do not route through React */}
                 <Route path="/sitemap" element={<SitemapHtmlPage />} />
                 <Route path="/authors" element={<AuthorsPage />} />
                 <Route path="/podcast" element={<PodcastPage />} />
