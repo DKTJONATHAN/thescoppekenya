@@ -194,97 +194,69 @@ def _is_logo_url(url):
     return False
 
 
-def _score_image_url(url, source="meta"):
-    """Higher = better article hero candidate. Logos score -1."""
-    if not url or _is_logo_url(url):
-        return -1
-    score = 0
-    low = url.lower()
-    # Prefer real photo formats and upload paths
-    if any(ext in low for ext in (".jpg", ".jpeg", ".webp", ".png")):
-        score += 3
-    if "/uploads/" in low or "/wp-content/" in low or "/media/" in low:
-        score += 4
-    if any(k in low for k in ("featured", "hero", "cover", "thumbnail", "post-", "article")):
-        score += 5
-    # Meta tags are good signals but still can be logos — already filtered
-    if source == "og":
-        score += 6
-    elif source == "twitter":
-        score += 4
-    elif source == "article":
-        score += 8  # in-article content image is preferred
-    elif source == "featured":
-        score += 10
-    # Penalize very small dimension hints in the URL
-    m = re.search(r"[-_](\d{2,4})x(\d{2,4})", low)
-    if m:
-        w, h = int(m.group(1)), int(m.group(2))
-        if w < 200 or h < 150:
-            score -= 10
-        elif w >= 600 and h >= 350:
-            score += 4
-    return score
-
-
 def pick_article_image(soup, page_url):
-    """Prefer real article photo; never return a logo."""
-    candidates = []  # (score, url)
-
-    def add(url, source):
-        abs_u = _abs_url(url, page_url)
-        if not abs_u:
-            return
-        sc = _score_image_url(abs_u, source)
-        if sc >= 0:
-            candidates.append((sc, abs_u))
-
-    # 1) Explicit featured / post thumbnail selectors (highest priority)
+    """
+    Use the FIRST image that appears in the story body on the original page.
+    Do NOT prefer OG/Twitter meta images. Skip logos, icons, and tiny assets.
+    """
+    # Prefer the main article/content container so we get story images, not site chrome
+    containers = []
     for sel in [
-        "img.wp-post-image",
-        "img.attachment-post-thumbnail",
-        ".post-thumbnail img",
-        ".featured-image img",
-        ".entry-thumbnail img",
-        "figure.wp-block-image img",
-        ".article-image img",
-        ".post-image img",
-        "article .entry-content img",
-        "article img",
-        ".post-content img",
-        ".entry-content img",
+        "article .entry-content",
+        "article .post-content",
+        "article .article-body",
+        "article .node__content",
+        ".entry-content",
+        ".post-content",
+        ".article-body",
+        "article",
+        "main",
     ]:
-        for img in soup.select(sel):
-            src = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
-            # srcset: take the largest candidate
-            srcset = img.get("srcset") or img.get("data-srcset") or ""
-            if srcset:
-                parts = [p.strip().split()[0] for p in srcset.split(",") if p.strip()]
-                if parts:
-                    src = parts[-1]  # usually largest
-            add(src, "featured" if "thumbnail" in sel or "featured" in sel else "article")
+        c = soup.select_one(sel)
+        if c and c not in containers:
+            containers.append(c)
+    if not containers:
+        containers = [soup]
 
-    # 2) Open Graph / Twitter — only if not a logo
-    for prop, source in (("og:image", "og"), ("twitter:image", "twitter"), ("twitter:image:src", "twitter")):
-        for m in soup.find_all("meta", property=prop) + soup.find_all("meta", attrs={"name": prop}):
-            add(m.get("content", ""), source)
+    def extract_src(img):
+        src = (
+            img.get("data-src")
+            or img.get("data-lazy-src")
+            or img.get("data-original")
+            or img.get("src")
+            or ""
+        )
+        # Prefer largest from srcset when present
+        srcset = img.get("srcset") or img.get("data-srcset") or ""
+        if srcset:
+            parts = [p.strip().split()[0] for p in srcset.split(",") if p.strip()]
+            if parts:
+                src = parts[-1]
+        return src.strip()
 
-    # 3) Any remaining large-looking <img> in main content
-    main = soup.select_one("article") or soup.select_one("main") or soup
-    for img in main.find_all("img"):
-        src = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
-        add(src, "article")
+    for container in containers:
+        for img in container.find_all("img"):
+            src = extract_src(img)
+            abs_u = _abs_url(src, page_url)
+            if not abs_u:
+                continue
+            if _is_logo_url(abs_u):
+                continue
+            # Skip obvious non-story assets
+            low = abs_u.lower()
+            if any(x in low for x in (".svg", ".ico", "sprite", "icon-", "logo", "avatar", "placeholder", "default-image")):
+                continue
+            # Skip tiny dimension hints in URL
+            m = re.search(r"[-_](\d{2,4})x(\d{2,4})", low)
+            if m:
+                w, h = int(m.group(1)), int(m.group(2))
+                if w < 200 or h < 150:
+                    continue
+            print(f"First story image: {abs_u[:140]}")
+            return abs_u
 
-    if not candidates:
-        return ""
-
-    candidates.sort(key=lambda x: x[0], reverse=True)
-    best_score, best_url = candidates[0]
-    if best_score < 0:
-        return ""
-    # Deduplicate near-identical paths, keep highest score
-    print(f"Image pick score={best_score}: {best_url[:120]}")
-    return best_url
+    print("No usable first story image found")
+    return ""
 
 
 def get_target_urls():
@@ -510,6 +482,43 @@ def stage_write(raw_title, raw_text, style):
     return polish_body(out or "")
 
 
+def generate_suitable_title(scraped_title, article_body, source_snippet):
+    """
+    Ask Gemini for a complete, suitable headline.
+    Return the exact generated title with NO truncation/chopping.
+    """
+    prompt = (
+        "You are a Kenyan entertainment / showbiz headline writer for Za Ndani.\n"
+        "SCRAPED SOURCE TITLE: " + (scraped_title or "") + "\n"
+        "SOURCE SNIPPET:\n" + (source_snippet or "")[:1400] + "\n"
+        "ARTICLE BODY (for context):\n" + (article_body or "")[:1800] + "\n\n"
+        "TASK: Generate ONE complete, suitable, high-quality headline for this story.\n"
+        "RULES:\n"
+        "- The title MUST be a full, natural, complete headline (not a fragment).\n"
+        "- Capture the main news angle clearly. Prefer concrete names, places, and the key fact.\n"
+        "- Kenyan showbiz tone: sharp, readable, SEO-friendly but never clickbait or hype.\n"
+        "- Do NOT copy the scraped title verbatim unless it is already perfect and complete.\n"
+        "- Do NOT end with ellipsis (...), a dash, or a cut-off phrase.\n"
+        "- Do NOT add site names (Mpasho, Za Ndani, etc.).\n"
+        "- Output ONLY the title text. No quotes, no JSON, no explanation, no trailing punctuation beyond normal headline style.\n"
+    )
+    result = gemini_call(prompt, "title")
+    if not result:
+        return (scraped_title or "").strip()
+    # Clean only formatting wrappers — never chop length
+    clean = result.strip()
+    clean = re.sub(r"^```(?:json|text)?\s*", "", clean)
+    clean = re.sub(r"\s*```$", "", clean)
+    clean = re.sub(r'^["\'`]+|["\'`]+$', "", clean).strip()
+    clean = re.sub(r"\s+", " ", clean)
+    # Remove accidental prefixes the model sometimes adds
+    clean = re.sub(r"^(Title|Headline|Final title)\s*[:\-–—]\s*", "", clean, flags=re.I).strip()
+    if len(clean) < 12:
+        return (scraped_title or "").strip()
+    print(f"Generated full title ({len(clean)} chars): {clean}")
+    return clean
+
+
 def slugify(title):
     return re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:80]
 
@@ -552,24 +561,36 @@ def main():
             print("Rejected spam or empty")
             continue
 
-        out_title = title
+        # Strip any accidental H1 the model may have emitted
         if article.startswith("#"):
-            first = article.split("\n", 1)[0]
-            out_title = re.sub(r"^#+\s*", "", first).strip() or out_title
             article = article.split("\n", 1)[-1].strip()
 
-        # Only use a real article image; never fall back to a logo path
+        # Generate a complete, suitable title via Gemini and use it EXACTLY (no chopping)
+        out_title = generate_suitable_title(title, article, text)
+        # Final safety: never leave a truncated-looking title
+        out_title = re.sub(r"\s*[|:\-–—…]+
+\s*$", "", out_title).strip()
+        if not out_title:
+            out_title = title
+
+        # Use the FIRST image that appears in the story body (already selected by pick_article_image)
         if img and not _is_logo_url(img):
             final_image = upload_to_imgbb(img)
         else:
             print("No usable article image — Unsplash fallback")
             final_image = get_unsplash_image("kenya celebrity showbiz")
+
+        # Still use seo_fields for description/excerpt/county, but OVERRIDE the title
+        # so the 65-char chop inside seo_fields is never applied to the published title.
         seo = seo_fields(out_title, article, CATEGORY, AUTHOR_NAME)
-        slug = f"{today_str}-{slugify(seo['title'])}"
+        final_title = out_title  # exact Gemini title — do not use seo["title"]
+        slug = f"{today_str}-{slugify(final_title)}"
+        # Escape quotes for YAML safety
+        safe_title = final_title.replace('"', '\\"')
         frontmatter = (
             "---\n"
-            f'title: "{seo["title"]}"\n'
-            f'slug: "{slugify(seo["title"])}"\n'
+            f'title: "{safe_title}"\n'
+            f'slug: "{slugify(final_title)}"\n'
             f'description: "{seo["description"]}"\n'
             f'excerpt: "{seo["excerpt"]}"\n'
             f'author: "{AUTHOR_NAME}"\n'
