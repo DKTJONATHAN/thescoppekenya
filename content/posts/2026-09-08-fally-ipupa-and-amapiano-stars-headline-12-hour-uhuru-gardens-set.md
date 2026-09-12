@@ -7,11 +7,11 @@ author: "Martin Kihara"
 image: "https://i.ibb.co/0j0bydVL/9dbf9f442294.webp"
 category: "Showbiz"
 tags: ["showbiz", "entertainment", "kenya"]
-canonical: "https://zandani.co.ke/article/fally-ipupa-and-amapiano-stars-headline-12-hour-uhuru-gardens-set"
 date: "2026-09-08T06:14:30Z"
 dateModified: "2026-09-08T06:14:30Z"
 focusKeyword: "fally ipupa and amapiano stars headline"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/fally-ipupa-and-amapiano-stars-headline-12-hour-uhuru-gardens-set"
 ---
 Congolese rumba icon Fally Ipupa led a 12-hour musical showcase at Uhuru Gardens this past weekend, drawing thousands to the Langata venue. The event featured a cross-genre lineup, including South African amapiano stars Kamo Mphela and Nomfundo Khumalo, alongside local performers. DJ Joe Mfalme managed the decks throughout the evening, while the Kodong Klan opened the stage with a 100-minute set.
 

@@ -7,11 +7,11 @@ author: "Celestine Nzioka"
 image: "https://www.kenyans.co.ke/files/styles/article_style/public/images/media/ruto-macron-222.jpg.webp?h=4ed29443&itok=H44iUQvr"
 category: "News"
 tags: ["france names wadid benaabou as new ambassador to kenya", "news", "kenya news"]
-canonical: "https://zandani.co.ke/article/france-names-wadid-benaabou-as-new-ambassador-to-kenya"
 date: "2026-09-08T06:14:22Z"
 dateModified: "2026-09-08T06:14:22Z"
 focusKeyword: "france names wadid benaabou new ambassador"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/france-names-wadid-benaabou-as-new-ambassador-to-kenya"
 ---
 ### What we know
 
