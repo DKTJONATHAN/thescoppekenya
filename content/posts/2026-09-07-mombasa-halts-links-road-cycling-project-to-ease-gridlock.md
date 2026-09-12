@@ -13,6 +13,7 @@ dateModified: "2026-09-07T16:24:43Z"
 focusKeyword: "mombasa halts links road cycling project"
 schema: "NewsArticle"
 ---
+
 Mombasa Governor Abdulswamad Nassir on Monday morning, September 07, 2026, suspended the construction of cycling lanes along Links Road in Nyali to ease severe traffic congestion caused by ongoing diversions from the Mombasa-Malindi Highway works at Bombolulu.
 
 ### What we know:

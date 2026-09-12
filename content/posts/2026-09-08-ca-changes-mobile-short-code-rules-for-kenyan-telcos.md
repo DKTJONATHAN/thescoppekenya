@@ -13,6 +13,7 @@ dateModified: "2026-09-08T08:12:13Z"
 focusKeyword: "changes mobile short code rules for"
 schema: "NewsArticle"
 ---
+
 The Communications Authority of Kenya issued a fresh regulatory directive in Nairobi on Tuesday, September 8, 2026, at 9:00 AM EAT. The regulator changed how telecommunications short codes are allocated across the country. Mobile numbers for special services will now depend on the service offered rather than the mobile network operator hosting them.
 
 What we know:
