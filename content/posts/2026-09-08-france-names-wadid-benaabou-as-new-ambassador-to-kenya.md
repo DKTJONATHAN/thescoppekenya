@@ -13,6 +13,7 @@ dateModified: "2026-09-08T06:14:22Z"
 focusKeyword: "france names wadid benaabou new ambassador"
 schema: "NewsArticle"
 ---
+
 ### What we know
 
 - Paris has appointed Wadid Benaabou as France’s new Ambassador-designate to Kenya, replacing Arnaud Suquet who ends a four-year tour in Nairobi this Tuesday morning, September 08, 2026 EAT. - * Wadid Benaabou, previously a senior adviser at the French Court of Auditors, succeeds Arnaud Suquet as France's envoy to Kenya. - Benaabou announced his posting on Tuesday, addressing Kenyans directly in Swahili and French. - Outgoing ambassador Arnaud Suquet, who also served as France’s Permanent Representative to the United Nations Office in Nairobi at Gigiri, leaves for the Quai d'Orsay to manage African affairs.

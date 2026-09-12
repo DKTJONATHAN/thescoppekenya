@@ -13,6 +13,7 @@ dateModified: "2026-09-06T22:20:10Z"
 focusKeyword: "Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks"
 schema: "NewsArticle"
 ---
+
 ## Tyre Sidewall Bulges: Hidden Dangers and Blowout Risks
 
 ### What we know
