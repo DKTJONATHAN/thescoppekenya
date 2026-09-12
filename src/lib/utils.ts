@@ -42,16 +42,44 @@ export function cleanExcerpt(raw: string, fallbackTitle = ""): string {
   return d;
 }
 
+function ordinal(n: number): string {
+  const v = n % 100;
+  if (v >= 11 && v <= 13) return `${n}th`;
+  switch (n % 10) {
+    case 1:
+      return `${n}st`;
+    case 2:
+      return `${n}nd`;
+    case 3:
+      return `${n}rd`;
+    default:
+      return `${n}th`;
+  }
+}
+
+/** Absolute calendar date for cards older than 24h, e.g. Tue, 13th Jan 2026 */
+export function formatPublishDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  if (Number.isNaN(d.getTime())) return "";
+  const weekday = d.toLocaleDateString("en-GB", { weekday: "short" });
+  const month = d.toLocaleDateString("en-GB", { month: "short" });
+  const day = ordinal(d.getDate());
+  const year = d.getFullYear();
+  return `${weekday}, ${day} ${month} ${year}`;
+}
+
+/**
+ * Relative time under 24h (Just now / 5m ago / 3h ago).
+ * From 24h onward: absolute date — Tue, 13th Jan 2026.
+ */
 export function timeAgo(dateStr: string): string {
   const dateObj = new Date(dateStr);
   if (Number.isNaN(dateObj.getTime())) return "Recently";
   const diff = Date.now() - dateObj.getTime();
   const mins = Math.floor(diff / 60000);
   const h = Math.floor(diff / 3600000);
-  const d = Math.floor(h / 24);
   if (mins < 5) return "Just now";
   if (mins < 60) return `${mins}m ago`;
   if (h < 24) return `${h}h ago`;
-  if (d < 7) return `${d}d ago`;
-  return dateObj.toLocaleDateString("en-KE", { day: "numeric", month: "short" });
+  return formatPublishDate(dateStr);
 }
