@@ -144,7 +144,6 @@ def trim_title(title: str) -> str:
 
 def trim_desc(desc: str, title: str) -> str:
     desc = re.sub(r"\s+", " ", desc or "").strip()
-    # Strip keyword-stuff prefixes like "nairobi among counties receive rains over: "
     desc = re.sub(
         r"^([a-z0-9][a-z0-9\s\-]{8,80}?):\s+",
         "",
@@ -158,7 +157,7 @@ def trim_desc(desc: str, title: str) -> str:
         desc = f"{title}. Latest reporting from Kenya on Za Ndani."
     if len(desc) > MAX_DESC:
         cut = desc[: MAX_DESC + 1]
-        desc = cut.rsplit(" ", 1)[0].rstrip(".,;:") + "."
+        desc = cut.rsplit(" ", 1)[0].rstrip(".,:;") + "."
     if len(desc) < MIN_DESC:
         pad = " Coverage from Nairobi and across Kenya."
         desc = (desc.rstrip(".") + pad)[:MAX_DESC]
@@ -212,13 +211,48 @@ def focus_keyword(title: str) -> str:
     return " ".join(words).lower()
 
 
+def rewrite_excerpt(body: str, title: str, existing: str = "") -> str:
+    """Build a clean meta excerpt from the first real body paragraph."""
+    existing = re.sub(r"\s+", " ", (existing or "").strip())
+    bad = (
+        not existing
+        or len(existing) < 60
+        or re.match(r"^[a-z0-9][a-z0-9\s\-]{8,80}:\s+", existing, re.I)
+        or existing.lower().startswith(title.lower()[:20])
+        and len(existing) < 100
+    )
+    paras = re.split(r"\n\s*\n+", (body or "").strip())
+    lede = ""
+    for p in paras:
+        p = re.sub(r"^#+\s*", "", p).strip()
+        p = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", p)
+        p = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", p)
+        p = re.sub(r"[*_`]+", "", p)
+        p = re.sub(r"\s+", " ", p).strip()
+        if len(p) < 40:
+            continue
+        if p.lower().startswith(("photo:", "image:", "credit:", "source:")):
+            continue
+        lede = p
+        break
+    source = lede if (bad and lede) else (existing or lede or title)
+    return trim_desc(source, title)
+
+
 def polish_file(path: pathlib.Path) -> bool:
     original = path.read_text(encoding="utf-8", errors="ignore")
     data, body = split_fm(original)
     if not data.get("title"):
         return False
     data["title"] = trim_title(data["title"])
-    data["description"] = trim_desc(data.get("description") or data.get("excerpt", ""), data["title"])
+    body = strip_body(body)
+    rewritten = rewrite_excerpt(
+        body,
+        data["title"],
+        data.get("excerpt") or data.get("description") or "",
+    )
+    data["excerpt"] = rewritten
+    data["description"] = rewritten
     if not data.get("slug"):
         data["slug"] = slugify(data["title"])
     data["slug"] = slugify(data["slug"])
@@ -227,7 +261,6 @@ def polish_file(path: pathlib.Path) -> bool:
     data["dateModified"] = data.get("dateModified") or data["date"]
     data["focusKeyword"] = data.get("focusKeyword") or data.get("focus_keyword") or focus_keyword(data["title"])
     data["schema"] = data.get("schema") or "NewsArticle"
-    body = strip_body(body)
     words = re.findall(r"\w+", body)
     if len(words) < MIN_WORDS:
         print(f"WARN thin: {path.name} ({len(words)} words)")
@@ -239,18 +272,17 @@ def polish_file(path: pathlib.Path) -> bool:
     return False
 
 
-def main():
-    if not POSTS_DIR.exists():
-        print("no posts dir")
-        return 0
+def main() -> int:
+    paths = list(POSTS_DIR.glob("*.md")) if POSTS_DIR.exists() else []
+    if len(sys.argv) > 1:
+        paths = [pathlib.Path(a) for a in sys.argv[1:]]
     changed = 0
-    files = sorted(POSTS_DIR.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True)[:60]
-    for path in files:
-        if polish_file(path):
+    for path in paths:
+        if path.is_file() and polish_file(path):
             changed += 1
-    print(f"polished {changed} files")
+    print(f"polish done: {changed}/{len(paths)} files")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    raise SystemExit(main())
