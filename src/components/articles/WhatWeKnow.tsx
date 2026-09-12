@@ -7,18 +7,42 @@ export function WhatWeKnow({ facts }: WhatWeKnowProps) {
   if (items.length < 2) return null;
 
   return (
-    <aside className="what-we-know not-prose" aria-label="What we know">
-      <div className="what-we-know__head">
-        <p className="what-we-know__kicker">What we know</p>
-        <p className="what-we-know__mark">The brief</p>
+    <aside
+      className="my-8 sm:my-10 rounded-xl border border-border bg-card/80 overflow-hidden shadow-sm"
+      aria-label="What we know"
+    >
+      <div className="flex items-center justify-between gap-3 border-b border-border bg-primary/10 px-4 py-3 sm:px-5">
+        <div className="min-w-0">
+          <p className="text-[10px] font-black uppercase tracking-[0.2em] text-primary m-0">
+            What we know
+          </p>
+          <p className="mt-0.5 text-xs text-muted-foreground m-0 leading-snug">
+            Desk commentary — the short version
+          </p>
+        </div>
+        <span
+          className="shrink-0 rounded-full border border-primary/30 bg-background/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-primary"
+          aria-hidden
+        >
+          Brief
+        </span>
       </div>
-      <ol className="what-we-know__list">
+
+      <ol className="m-0 list-none p-0 divide-y divide-border/80">
         {items.map((fact, i) => (
-          <li key={`${i}-${fact.slice(0, 24)}`} className="what-we-know__item">
-            <span className="what-we-know__num" aria-hidden="true">
-              {String(i + 1).padStart(2, "0")}
+          <li
+            key={`${i}-${fact.slice(0, 24)}`}
+            className="flex gap-3 px-4 py-3.5 sm:px-5 sm:py-4"
+          >
+            <span
+              className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/15 text-[10px] font-black tabular-nums text-primary"
+              aria-hidden
+            >
+              {i + 1}
             </span>
-            <p>{fact}</p>
+            <p className="m-0 text-[0.92rem] sm:text-[0.95rem] leading-relaxed text-foreground">
+              {fact}
+            </p>
           </li>
         ))}
       </ol>
