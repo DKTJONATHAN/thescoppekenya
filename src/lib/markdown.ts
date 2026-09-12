@@ -1,5 +1,6 @@
 import { marked } from 'marked';
 import { extractWhatWeKnow } from './what-we-know';
+import { cleanExcerpt } from './utils';
 
 function parseFrontmatter(content: string): { data: Record<string, unknown>; content: string } {
   const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
@@ -92,6 +93,7 @@ function normalizeCategory(rawCategory: string): string {
     'travel': 'Lifestyle',
     'opinions': 'Opinions',
     'opinion': 'Opinions',
+    'showbiz': 'Entertainment',
   };
   return categoryMap[lower] || rawCategory;
 }
@@ -99,7 +101,9 @@ function normalizeCategory(rawCategory: string): string {
 const ALL_POSTS: PostMetadata[] = (manifestPosts as unknown as PostMetadata[])
   .map(p => ({
     ...p,
-    category: normalizeCategory(p.category)
+    category: normalizeCategory(p.category),
+    excerpt: cleanExcerpt(p.excerpt || '', p.title),
+    tags: Array.isArray(p.tags) ? p.tags : [],
   }))
   .sort((a, b) => getSafeTime(b.date) - getSafeTime(a.date));
 
@@ -204,15 +208,73 @@ export function getPostsByCategory(category: string): PostMetadata[] {
   return getAllPosts().filter(post => post.category.toLowerCase() === category.toLowerCase());
 }
 
-export function searchPosts(query: string): PostMetadata[] {
-  const searchTerm = query.toLowerCase().trim();
-  if (!searchTerm) return [];
-  return getAllPosts().filter(post =>
-    post.title.toLowerCase().includes(searchTerm) ||
-    post.excerpt.toLowerCase().includes(searchTerm) ||
-    post.tags.some(tag => tag.toLowerCase().includes(searchTerm)) ||
-    post.author.toLowerCase().includes(searchTerm)
+/** Scored full-text search across title, excerpt, tags, author, category. */
+export function searchPosts(query: string, limit = 40): PostMetadata[] {
+  const raw = query.toLowerCase().trim();
+  if (!raw || raw.length < 2) return [];
+  const terms = raw.split(/\s+/).filter(Boolean);
+
+  const scored = getAllPosts()
+    .map((post) => {
+      const title = (post.title || '').toLowerCase();
+      const excerpt = (post.excerpt || '').toLowerCase();
+      const tags = (post.tags || []).join(' ').toLowerCase();
+      const author = (post.author || '').toLowerCase();
+      const cat = (post.category || '').toLowerCase();
+      let score = 0;
+      for (const t of terms) {
+        if (title.includes(t)) score += title.startsWith(t) ? 12 : 8;
+        if (tags.includes(t)) score += 5;
+        if (cat.includes(t)) score += 3;
+        if (author.includes(t)) score += 2;
+        if (excerpt.includes(t)) score += 2;
+      }
+      // Phrase bonus
+      if (title.includes(raw)) score += 15;
+      if (excerpt.includes(raw)) score += 4;
+      return { post, score };
+    })
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score || getSafeTime(b.post.date) - getSafeTime(a.post.date));
+
+  return scored.slice(0, limit).map((x) => x.post);
+}
+
+/** Related stories: shared tags > same category > recency. */
+export function getRelatedPosts(
+  post: Pick<PostMetadata, 'slug' | 'category' | 'tags' | 'title'>,
+  limit = 6
+): PostMetadata[] {
+  const tagSet = new Set((post.tags || []).map((t) => t.toLowerCase()));
+  const titleWords = new Set(
+    (post.title || '')
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter((w) => w.length > 3)
   );
+
+  return getAllPosts()
+    .filter((p) => p.slug !== post.slug)
+    .map((p) => {
+      let score = 0;
+      if (p.category?.toLowerCase() === post.category?.toLowerCase()) score += 4;
+      for (const t of p.tags || []) {
+        if (tagSet.has(t.toLowerCase())) score += 5;
+      }
+      const words = (p.title || '').toLowerCase().split(/[^a-z0-9]+/);
+      for (const w of words) {
+        if (titleWords.has(w)) score += 1;
+      }
+      // mild recency
+      const ageDays = (Date.now() - getSafeTime(p.date)) / 86400000;
+      if (ageDays < 2) score += 2;
+      else if (ageDays < 7) score += 1;
+      return { p, score };
+    })
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score || getSafeTime(b.p.date) - getSafeTime(a.p.date))
+    .slice(0, limit)
+    .map((x) => x.p);
 }
 
 export function getPostsByTag(tag: string): PostMetadata[] {
