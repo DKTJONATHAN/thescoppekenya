@@ -13,6 +13,7 @@ dateModified: "2026-09-07T20:20:40Z"
 focusKeyword: "state warns against xenophobic attacks foreign"
 schema: "NewsArticle"
 ---
+
 Government Spokesperson Charles Owino ordered security agencies on Monday morning, September 07, 2026, at 10:00 AM EAT in Nairobi, to arrest individuals harassing foreign informal traders. The directive followed violent incidents across Nairobi County after a state ban on foreign hawkers took effect today.
 
 **What we know**

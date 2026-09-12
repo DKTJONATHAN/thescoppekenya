@@ -13,6 +13,7 @@ dateModified: "2026-09-09T19:47:37Z"
 focusKeyword: "jpmorgan include kenya new frontier debt"
 schema: "NewsArticle"
 ---
+
 ### What we know
 
 - Cheaper global cash could soon flow into Kenya's domestic bond market because Wall Street giant JPMorgan is listing the country in a new frontier-market local-currency debt index. - * JPMorgan is structuring a new local-currency frontier debt index to give foreign funds a standard benchmark for investing in domestic government bonds. - The plan by the New York-based investment bank aims to solve a long-standing headache for fund managers. - Data reveals Kenya is a massive player in this space compared to its regional peers.

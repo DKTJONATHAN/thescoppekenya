@@ -13,6 +13,7 @@ dateModified: "2026-09-09T18:51:18Z"
 focusKeyword: "state crackdown foreign traders triggers anxiety"
 schema: "NewsArticle"
 ---
+
 President William Ruto ordered the closure of small-scale businesses operated by foreign nationals on September 2, sparking a nationwide scramble. The directive restricts informal retail and unskilled labor to Kenyan citizens. Following the announcement, hundreds of Burundian, Ugandan, and Rwandan traders began shuttering their kiosks and stalls, fearing immediate deportation.
 
 Tension peaked on Monday outside the Burundian embassy in Nairobi. Young men clutching suitcases formed long queues to seek clarity on their status. According to U.N. data, approximately 16,000 Burundian refugees reside in Kenya, with many operating coffee carts or second-hand clothing businesses in city estates. Munezero Farnke, an 18-year-old trader, expressed his confusion while waiting for travel documentation. He stated that he had lived in the country for three years and lacked the resources for an immediate return to Burundi.
