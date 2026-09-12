@@ -13,7 +13,6 @@ dateModified: "2026-09-10T10:40:00Z"
 focusKeyword: "bien aime baraza claims global stage"
 schema: "NewsArticle"
 ---
-
 Bien Aime Baraza performed at the Afro+ Fest in Maryland on September 5, marking a significant entry for a Kenyan artist into the global festival circuit. Sharing the Fan Up Unity Stage with international heavyweights like Tems and Sarkodie, the former Sauti Sol frontman moved beyond the traditional East African touring circuit. The festival, which ran from September 4 to 6, draws thousands of fans of Afrobeats, hip-hop, and amapiano.
 
 His set arrived amidst a broader strategy to solidify his solo career following the hiatus of his former band. By aligning his performance with global names like Davido and Wizkid, Bien is positioning his catalogue in front of diverse audiences who have historically focused on Nigerian or South African exports.
