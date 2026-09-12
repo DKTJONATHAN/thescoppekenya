@@ -6,6 +6,7 @@ import { ArrowRight, TrendingUp, Flame, Clock, Eye, Radio } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
 import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
+import { ForYouRail } from "@/components/articles/ForYouRail";
 
 const INITIAL_LOAD = 12;
 const LOAD_MORE_COUNT = 12;
@@ -312,7 +313,7 @@ const Index = () => {
                     <h2 className="mt-1 font-serif text-xl font-bold leading-snug group-hover:text-primary">{post.title}</h2>
                     <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{post.excerpt}</p>
                   </div>
-                  <img src={img(post.image, 400)} alt={post.title} loading="lazy" width={200} height={140} className="h-28 w-36 shrink-0 rounded-sm object-cover" />
+                  <img src={img(post.image, 400 400)} alt={post.title} loading="lazy" width={200} height={140} className="h-28 w-36 shrink-0 rounded-sm object-cover" />
                 </Link>
               ))}
             </div>
@@ -329,6 +330,10 @@ const Index = () => {
 
       <section className="container max-w-7xl mx-auto px-3 sm:px-4 pb-6">
         <LiveUpdatesTimeline maxItems={8} />
+      </section>
+
+      <section className="container max-w-7xl mx-auto px-3 sm:px-4 pb-2">
+        <ForYouRail limit={6} />
       </section>
 
       <section className="container max-w-7xl mx-auto px-3 sm:px-4 pb-12">
