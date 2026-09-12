@@ -3,21 +3,12 @@ import { Link } from "react-router-dom";
 import { Sparkles, Clock } from "lucide-react";
 import { getAllPosts, type PostMetadata } from "@/lib/markdown";
 import { topCategories } from "@/hooks/usePreferences";
+import { timeAgo } from "@/lib/utils";
 
 function img(url: string, w = 400): string {
   if (!url) return "/images/placeholder.jpg";
   if (url.endsWith(".svg") || url.startsWith("/")) return url;
   return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=75&we`;
-}
-
-function timeAgo(dateStr: string): string {
-  const diff = Date.now() - new Date(dateStr).getTime();
-  const h = Math.floor(diff / 3600000);
-  const d = Math.floor(h / 24);
-  if (h < 1) return "Just now";
-  if (h < 24) return `${h}h ago`;
-  if (d < 7) return `${d}d ago`;
-  return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
 }
 
 function postTime(p: PostMetadata): number {
