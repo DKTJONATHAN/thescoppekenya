@@ -1,67 +1,71 @@
-/** Lightweight error reporter — posts to /api when available, always logs. */
+/**
+ * Lightweight client-side error monitoring.
+ * Logs to console and optionally posts to a beacon endpoint if configured.
+ */
 
-type ErrorPayload = {
+const BEACON =
+  (typeof import.meta !== "undefined" &&
+    (import.meta as { env?: { VITE_ERROR_BEACON?: string } }).env?.VITE_ERROR_BEACON) ||
+  "";
+
+export type ErrorReport = {
   message: string;
   stack?: string;
+  source?: string;
   url?: string;
   userAgent?: string;
+  ts: number;
   extra?: Record<string, unknown>;
-  ts: string;
 };
 
-const QUEUE_KEY = "zn-error-queue";
-
-function enqueue(payload: ErrorPayload) {
-  try {
-    const raw = localStorage.getItem(QUEUE_KEY);
-    const list: ErrorPayload[] = raw ? JSON.parse(raw) : [];
-    list.push(payload);
-    localStorage.setItem(QUEUE_KEY, JSON.stringify(list.slice(-30)));
-  } catch {
-    /* ignore */
-  }
-}
-
-export function reportError(error: unknown, extra?: Record<string, unknown>) {
-  const err = error instanceof Error ? error : new Error(String(error));
-  const payload: ErrorPayload = {
-    message: err.message,
-    stack: err.stack,
+function buildReport(
+  err: unknown,
+  source = "unknown",
+  extra?: Record<string, unknown>
+): ErrorReport {
+  const e = err instanceof Error ? err : new Error(String(err));
+  return {
+    message: e.message || String(err),
+    stack: e.stack,
+    source,
     url: typeof window !== "undefined" ? window.location.href : undefined,
     userAgent: typeof navigator !== "undefined" ? navigator.userAgent : undefined,
+    ts: Date.now(),
     extra,
-    ts: new Date().toISOString(),
   };
+}
 
-  console.error("[zn-monitor]", payload);
-  enqueue(payload);
-
-  // Best-effort beacon (no-op if endpoint missing)
+export function reportError(
+  err: unknown,
+  source = "app",
+  extra?: Record<string, unknown>
+): void {
+  const report = buildReport(err, source, extra);
   try {
-    if (typeof navigator !== "undefined" && navigator.sendBeacon) {
-      navigator.sendBeacon(
-        "/api/client-error",
-        new Blob([JSON.stringify(payload)], { type: "application/json" })
-      );
-    } else if (typeof fetch !== "undefined") {
-      void fetch("/api/client-error", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-        keepalive: true,
-      }).catch(() => {});
-    }
+    console.error(`[zn-error:${source}]`, report.message, report);
   } catch {
     /* ignore */
   }
+  if (BEACON && typeof navigator !== "undefined" && navigator.sendBeacon) {
+    try {
+      const blob = new Blob([JSON.stringify(report)], { type: "application/json" });
+      navigator.sendBeacon(BEACON, blob);
+    } catch {
+      /* ignore */
+    }
+  }
 }
 
-export function installGlobalErrorHandlers() {
+export function installGlobalErrorHandlers(): void {
   if (typeof window === "undefined") return;
-  window.addEventListener("error", (e) => {
-    reportError(e.error || e.message, { source: "window.error" });
+  window.addEventListener("error", (event) => {
+    reportError(event.error || event.message, "window.onerror", {
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    });
   });
-  window.addEventListener("unhandledrejection", (e) => {
-    reportError(e.reason, { source: "unhandledrejection" });
+  window.addEventListener("unhandledrejection", (event) => {
+    reportError(event.reason, "unhandledrejection");
   });
 }

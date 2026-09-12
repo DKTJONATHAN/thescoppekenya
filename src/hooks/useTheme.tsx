@@ -1,6 +1,9 @@
-import { createContext, useContext, useEffect, useState, ReactNode, useCallback } from "react";
+import { createContext, useContext, useEffect, ReactNode } from "react";
 
-type Theme = "dark" | "light";
+/**
+ * Dark-only theme. Light mode is intentionally disabled per product decision.
+ */
+type Theme = "dark";
 
 interface ThemeContextType {
   theme: Theme;
@@ -10,52 +13,35 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-function resolveInitial(): Theme {
-  try {
-    const stored = localStorage.getItem("theme");
-    if (stored === "light" || stored === "dark") return stored;
-  } catch {
-    /* ignore */
-  }
-  if (typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: light)").matches) {
-    return "light";
-  }
-  return "dark";
-}
-
-function applyTheme(theme: Theme) {
+function applyDark() {
   const root = document.documentElement;
-  root.classList.remove("light", "dark");
-  root.classList.add(theme);
-  root.style.colorScheme = theme;
+  root.classList.remove("light");
+  root.classList.add("dark");
+  root.style.colorScheme = "dark";
   try {
-    localStorage.setItem("theme", theme);
+    localStorage.setItem("theme", "dark");
   } catch {
     /* ignore */
   }
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>(() =>
-    typeof document !== "undefined" ? resolveInitial() : "dark"
-  );
-
   useEffect(() => {
-    applyTheme(theme);
-  }, [theme]);
-
-  const setTheme = useCallback((next: Theme) => {
-    setThemeState(next);
+    applyDark();
   }, []);
 
-  const toggleTheme = useCallback(() => {
-    setThemeState((t) => (t === "dark" ? "light" : "dark"));
-  }, []);
+  const value: ThemeContextType = {
+    theme: "dark",
+    toggleTheme: () => {
+      /* no-op: dark only */
+    },
+    setTheme: () => {
+      /* no-op: dark only */
+    },
+  };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
-      {children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );
 }
 
