@@ -22,7 +22,7 @@ KENYA_HINTS = re.compile(
 )
 
 FOREIGN_HINTS = re.compile(
-    r"\b(trump|biden|white house|westminster|premier league only|hollywood|"
+    r"\b(trump|biden|white house|westminster|premier league only|tokyo|"
     r"los angeles|new york times|tokyo stock exchange)\b",
     re.I,
 )
@@ -182,7 +182,7 @@ def seo_fields(title: str, body: str, category: str, author: str) -> dict:
         lede = lede[0].upper() + lede[1:]
     desc = lede[:155]
     if len(lede) > 155:
-        desc = desc.rsplit(" ", 1)[0].rstrip(".,;:") + "."
+        desc = desc.rsplit(" ", 1)[0].rstrip(".,:;") + "."
     if len(desc) < 90:
         desc = (desc.rstrip(".") + " Coverage from Nairobi, Kenya.")[:155]
     excerpt = desc.replace('"', "'")
@@ -260,10 +260,13 @@ def inject_know_if_missing(body: str, category: str = "News", title: str = "") -
 
 
 def strip_date_lede(body: str) -> str:
+    """Strip clock/date ledes like 'On Monday morning, 12 September 2026. '."""
     if not body:
         return body or ""
+    # Use single-quoted raw string so [^.] is valid (double-quote form broke parsing).
     return re.sub(
-        r"^(On\s+(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)[^"]{0,80}\.\s*)",
+        r'^(On\s+(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)'
+        r'[^\n.]{0,80}\.\s*)',
         "",
         body.strip(),
         count=1,
