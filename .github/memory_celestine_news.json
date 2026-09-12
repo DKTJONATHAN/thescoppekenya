@@ -537,10 +537,10 @@
     "907bbb19e5bc2df6f73f8a05cdc2d9d5",
     "ab27d239e01f32229232a2a0d0d7e14d",
     "e437434f36ab09f50f41023ee9d6ce5b",
-    "d18ee3e507d84ac35ff246875aa03b6e"
+    "d18ee3e507d84ac35ff246875aa03b6e",
+    "95c485055775aae1e2d966bc97a6e473"
   ],
   "style_history": [
-    "Hard News Lead",
     "Statement Report",
     "Event Report",
     "Hard News Lead",
@@ -569,7 +569,8 @@
     "Statement Report",
     "Event Report",
     "Hard News Lead",
-    "Statement Report"
+    "Statement Report",
+    "Event Report"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -691,7 +692,8 @@
     "https://kenyans.co.ke/news/126993-fertiliser-worked-unga-did-not-why-two-promises-took-different-paths",
     "https://kenyans.co.ke/news/127005-mass-layoff-registrar-companies-dissolves-176-firms-targets-155-more",
     "https://kenyans.co.ke/news/127009-nlc-issues-new-land-acquisition-notice-naivasha-kisumu-malaba-sgr",
-    "https://kenyans.co.ke/news/127007-css-cj-koome-make-new-appointments-lorna-ogolla-joins-nca"
+    "https://kenyans.co.ke/news/127007-css-cj-koome-make-new-appointments-lorna-ogolla-joins-nca",
+    "https://kenyans.co.ke/news/127006-kindiki-directs-embu-uda-leaders-assess-damage-after-deadly-clashes"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -735,7 +737,8 @@
     "ruto fertiliser prices fall unga stays above target",
     "mass layoff registrar companies dissolves 176 firms targets 155 more",
     "nlc issues land acquisition notice naivasha kisumu malaba sgr",
-    "css koome make appointments lorna ogolla joins nca"
+    "css koome make appointments lorna ogolla joins nca",
+    "kindiki directs embu uda leaders assess damage deadly clashes"
   ],
   "topic_keys": [
     "news tracker",
