@@ -83,10 +83,20 @@ def news_prompt(
     structure = style.get("structure", "") if isinstance(style, dict) else ""
     mode = "opinion column" if opinion else "news report"
     avoid_line = f"Avoid repeating these recent angles: {avoid}" if avoid else ""
+    # Commentary-style "What we know" — original synthesis, not body copy
     know = (
-        "Do NOT include a 'What we know' list. This is not a hard-news brief."
+        "Do NOT include a 'What we know' section. This is not a hard-news brief."
         if opinion or (desk or "").lower() in {"opinions", "opinion", "lifestyle", "entertainment", "gossip"}
-        else "After the lede, add a short 'What we know' list of 3-5 bullets with concrete facts only."
+        else (
+            "After the lede, add a '### What we know' section with 3-5 short bullets.\n"
+            "Each bullet must be an ORIGINAL editorial commentary line that synthesises "
+            "context for a busy reader (who / what shifted / why it matters).\n"
+            "Rules for the bullets:\n"
+            "- Do NOT copy or lightly rephrase sentences from the article body.\n"
+            "- Write like a desk editor briefing a colleague — crisp, confident, conversational.\n"
+            "- One idea per bullet, 12–28 words, end with a period.\n"
+            "- No first person, no clickbait, no 'What this means for Kenyans' clichés."
+        )
     )
     return f"""You are {author}, {role} for Za Ndani ({desk}).
 Date: {date_str}
@@ -120,9 +130,7 @@ def seo_fields(title: str, body: str, category: str, author: str) -> dict:
     """
     clean = re.sub(r"^#+\s*", "", title or "").strip()
     clean = re.sub(r"\s+", " ", clean)
-    # Strip trailing cut markers / ellipsis that signal an incomplete title
     clean = re.sub(r"\s*[|:\-–—…]+\s*$", "", clean).strip()
-    # Soft length only — prefer complete headline over SEO char count
     if len(clean) > 100:
         cut = clean[:101]
         m = list(re.finditer(r"\b(?:after|amid|over|as|for|from|with|on|in|at|and|to)\b", cut, flags=re.I))
@@ -131,7 +139,6 @@ def seo_fields(title: str, body: str, category: str, author: str) -> dict:
         else:
             clean = cut.rsplit(" ", 1)[0].strip(" .,:;!-")
     source = body or ""
-    # Drop "What we know" so homepage teasers are real ledes
     if re.search(r"what we know", source, re.I):
         lines = source.splitlines()
         out = []
@@ -156,7 +163,6 @@ def seo_fields(title: str, body: str, category: str, author: str) -> dict:
     source = re.sub(r"(?im)^\s*what we know\b[:\-–—]?\s*", "", source)
     plain = re.sub(r"[#*_>`]", "", source)
     plain = re.sub(r"\s+", " ", plain).strip()
-    # Kill keyword-stuff prefixes like "nairobi among counties receive rains over: "
     plain = re.sub(
         r"^([a-z0-9][a-z0-9\s\-]{8,80}?):\s+",
         "",
@@ -234,36 +240,20 @@ def strip_know_block(body: str) -> str:
 
 
 def inject_know_if_missing(body: str, category: str = "News", title: str = "") -> str:
+    """No longer lifts body sentences into a fake brief.
+
+    'What we know' must come from the model as original commentary.
+    If the model omitted it, leave the body alone (or strip for non-news desks).
+    """
     if not should_have_know(category, title):
         return strip_know_block(body or "")
-    text = body or ""
-    if re.search(r"what we know", text, re.I):
-        return text
-    paras = [p.strip() for p in re.split(r"\n\s*\n", text.strip()) if p.strip()]
-    if len(paras) < 2:
-        return text
-    lede = paras[0]
-    rest = paras[1:]
-    facts = []
-    for p in rest[:4]:
-        sent = re.split(r"(?<=[.!?])\s+", p)
-        if sent:
-            fact = re.sub(r"^#{1,6}\s+", "", sent[0].strip())
-            if len(fact) >= 18:
-                facts.append(fact)
-        if len(facts) >= 4:
-            break
-    if len(facts) < 3:
-        return text
-    bullets = "\n".join(f"- {f}" for f in facts)
-    return f"{lede}\n\n### What we know\n\n{bullets}\n\n" + "\n\n".join(rest)
+    return body or ""
 
 
 def strip_date_lede(body: str) -> str:
     """Strip clock/date ledes like 'On Monday morning, 12 September 2026. '."""
     if not body:
         return body or ""
-    # Use single-quoted raw string so [^.] is valid (double-quote form broke parsing).
     return re.sub(
         r'^(On\s+(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)'
         r'[^\n.]{0,80}\.\s*)',
