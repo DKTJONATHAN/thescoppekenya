@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Za Ndani evening brief via Resend.
+"""Za Ndani story brief via Resend.
 
 Subscribers live in data/subscribers.json. Send layer is Resend
 (RESEND_API_KEY). Do not print full addresses in logs.
@@ -28,6 +28,15 @@ POSTS = pathlib.Path("content/posts")
 SUBS_FILE = pathlib.Path("data/subscribers.json")
 RESEND = "https://api.resend.com"
 FROM_DEFAULT = "Za Ndani <onboarding@resend.dev>"
+
+# Brand palette (inline-only — email clients strip <style>)
+BG = "#0a0a0a"
+CARD = "#141414"
+BORDER = "#262626"
+TEXT = "#f5f0e8"
+MUTED = "#9a9388"
+DIM = "#6a655c"
+ACCENT = "#e85d04"
 
 
 def eat_now() -> datetime:
@@ -66,7 +75,7 @@ def kenya_score(blob: str) -> int:
     ):
         if w in t:
             score += 4
-    if any(w in t for w in ("hollywood", "netflix", "marvel", "oscar", "grammy", "emmy")):
+    if any(w in t for w in ("tokyo", "netflix", "marvel", "oscar", "grammy", "emmy")):
         score -= 6
     return score
 
@@ -117,18 +126,31 @@ def story_card(post: dict, index: int) -> str:
     cat = escape(post["category"].upper())
     url = escape(post["url"])
     n = f"{index:02d}"
+    # Card with image, category pill, title, lede, CTA
     return f"""
       <tr>
-        <td style="padding:0 0 28px 0;">
-          <a href="{url}" style="text-decoration:none;color:#f3ece2;">
-            <img src="{img}" alt="" width="536" style="display:block;width:100%;max-width:536px;height:220px;object-fit:cover;border:0;background:#111;">
-          </a>
-          <p style="margin:14px 0 6px;font-size:11px;letter-spacing:0.22em;font-weight:800;color:#e85d04;font-family:Arial,Helvetica,sans-serif;">{n} · {cat}</p>
-          <h2 style="margin:0 0 8px;font-size:22px;line-height:1.25;font-family:Georgia,'Times New Roman',serif;font-weight:700;color:#f3ece2;">
-            <a href="{url}" style="color:#f3ece2;text-decoration:none;">{title}</a>
-          </h2>
-          <p style="margin:0 0 14px;font-size:14px;line-height:1.6;color:#9a9388;font-family:Arial,Helvetica,sans-serif;">{excerpt}</p>
-          <a href="{url}" style="display:inline-block;border:1px solid #e85d04;color:#e85d04;text-decoration:none;padding:8px 14px;font-size:11px;letter-spacing:0.16em;font-weight:800;font-family:Arial,Helvetica,sans-serif;">READ THE STORY</a>
+        <td style="padding:0 0 20px 0;">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:{CARD};border:1px solid {BORDER};border-radius:12px;overflow:hidden;">
+            <tr>
+              <td style="padding:0;line-height:0;font-size:0;">
+                <a href="{url}" style="text-decoration:none;">
+                  <img src="{img}" alt="" width="536" style="display:block;width:100%;max-width:536px;height:200px;object-fit:cover;border:0;background:#111;">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px 22px 22px;">
+                <p style="margin:0 0 10px;font-size:11px;letter-spacing:0.14em;font-weight:700;color:{ACCENT};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">
+                  {n}&nbsp;&nbsp;·&nbsp;&nbsp;{cat}
+                </p>
+                <h2 style="margin:0 0 10px;font-size:20px;line-height:1.3;font-family:Georgia,'Times New Roman',serif;font-weight:700;color:{TEXT};">
+                  <a href="{url}" style="color:{TEXT};text-decoration:none;">{title}</a>
+                </h2>
+                <p style="margin:0 0 16px;font-size:14px;line-height:1.65;color:{MUTED};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">{excerpt}</p>
+                <a href="{url}" style="display:inline-block;background:{ACCENT};color:#0a0a0a;text-decoration:none;padding:10px 16px;font-size:12px;letter-spacing:0.06em;font-weight:700;border-radius:8px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">Read the story →</a>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>"""
 
@@ -139,46 +161,86 @@ def unsub_url(email: str) -> str:
 
 def brief_html(posts: list[dict], email: str = "") -> str:
     day = eat_now().strftime("%A, %-d %B %Y")
-    cards = "\n".join(story_card(p, i + 1) for i, p in enumerate(posts)) or """
-      <tr><td style="color:#9a9388;font-family:Arial,Helvetica,sans-serif;font-size:14px;padding-bottom:24px;">The desk is quiet tonight. We'll be back tomorrow.</td></tr>
+    cards = "\n".join(story_card(p, i + 1) for i, p in enumerate(posts)) or f"""
+      <tr><td style="color:{MUTED};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;font-size:14px;padding:24px 0;">No new stories in this brief. We'll be back soon.</td></tr>
     """
     unsub = ""
     if email:
-        unsub = f'<a href="{escape(unsub_url(email))}" style="color:#6a655c;">Unsubscribe</a> · '
-    lead = escape(posts[0]["title"] if posts else "Tonight from Nairobi")
+        unsub = (
+            f'<a href="{escape(unsub_url(email))}" '
+            f'style="color:{DIM};text-decoration:underline;">Unsubscribe</a>'
+            f'&nbsp;&nbsp;·&nbsp;&nbsp;'
+        )
+    lead = escape(posts[0]["title"] if posts else "Today from Za Ndani")
+    count = len(posts)
+    subhead = (
+        f"{count} stories worth your attention"
+        if count
+        else "Your Za Ndani brief"
+    )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Za Ndani evening brief</title>
+  <meta name="color-scheme" content="dark">
+  <meta name="supported-color-schemes" content="dark">
+  <title>Za Ndani · Daily brief</title>
 </head>
-<body style="margin:0;padding:0;background:#050505;color:#f3ece2;">
-  <div style="display:none;max-height:0;overflow:hidden;opacity:0;">{lead} — three stories Kenya should not sleep on.</div>
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#050505;">
+<body style="margin:0;padding:0;background:{BG};color:{TEXT};-webkit-text-size-adjust:100%;">
+  <!-- Preheader (inbox preview text) -->
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;mso-hide:all;">
+    {lead} — {escape(subhead)}.
+  </div>
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:{BG};">
     <tr>
-      <td align="center" style="padding:24px 12px;">
-        <table role="presentation" width="560" cellspacing="0" cellpadding="0" style="width:100%;max-width:560px;background:#050505;">
-          <tr><td style="height:3px;background:#e85d04;font-size:0;line-height:0;">&nbsp;</td></tr>
+      <td align="center" style="padding:28px 14px 40px;">
+        <table role="presentation" width="560" cellspacing="0" cellpadding="0" style="width:100%;max-width:560px;">
+
+          <!-- Header -->
           <tr>
-            <td style="padding:28px 12px 18px;text-align:left;">
-              <img src="{LOGO}" alt="Za Ndani" width="56" height="56" style="display:block;border:0;width:56px;height:56px;border-radius:4px;">
-              <p style="margin:16px 0 4px;font-size:11px;letter-spacing:0.28em;font-weight:800;color:#e85d04;font-family:Arial,Helvetica,sans-serif;">EVENING BRIEF · EAT</p>
-              <h1 style="margin:0;font-size:32px;line-height:1.05;font-family:Georgia,'Times New Roman',serif;color:#f3ece2;">Three stories Kenya should not sleep on.</h1>
-              <p style="margin:12px 0 0;font-size:13px;color:#6a655c;font-family:Arial,Helvetica,sans-serif;">{escape(day)} · Nairobi</p>
+            <td style="padding:0 4px 28px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td valign="middle" style="text-align:left;">
+                    <a href="{SITE}" style="text-decoration:none;">
+                      <img src="{LOGO}" alt="Za Ndani" width="48" height="48" style="display:block;border:0;width:48px;height:48px;border-radius:8px;">
+                    </a>
+                  </td>
+                  <td valign="middle" style="text-align:right;">
+                    <a href="{SITE}" style="font-size:12px;font-weight:600;color:{MUTED};text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">zandani.co.ke</a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin:22px 0 6px;font-size:11px;letter-spacing:0.2em;font-weight:700;color:{ACCENT};text-transform:uppercase;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">Daily brief</p>
+              <h1 style="margin:0;font-size:28px;line-height:1.15;font-family:Georgia,'Times New Roman',serif;font-weight:700;color:{TEXT};">{escape(subhead)}</h1>
+              <p style="margin:10px 0 0;font-size:13px;color:{DIM};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">{escape(day)}</p>
             </td>
           </tr>
+
+          <!-- Stories -->
           {cards}
+
+          <!-- Footer -->
           <tr>
-            <td style="padding:8px 12px 32px;border-top:1px solid #262626;">
-              <p style="margin:18px 0 8px;font-size:13px;color:#9a9388;font-family:Arial,Helvetica,sans-serif;">
-                Za Ndani — from within. Nairobi newsroom. One brief, 19:00 EAT.
-              </p>
-              <p style="margin:0;font-size:11px;color:#6a655c;font-family:Arial,Helvetica,sans-serif;">
-                {unsub}<a href="{SITE}" style="color:#6a655c;">zandani.co.ke</a>
-              </p>
+            <td style="padding:28px 4px 0;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-top:1px solid {BORDER};">
+                <tr>
+                  <td style="padding:22px 0 0;">
+                    <p style="margin:0 0 8px;font-size:13px;line-height:1.5;color:{MUTED};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">
+                      <strong style="color:{TEXT};">Za Ndani</strong> — Kenya news, culture & showbiz for readers everywhere.
+                    </p>
+                    <p style="margin:0;font-size:12px;line-height:1.5;color:{DIM};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">
+                      {unsub}<a href="{SITE}" style="color:{DIM};text-decoration:underline;">zandani.co.ke</a>
+                      &nbsp;&nbsp;·&nbsp;&nbsp;
+                      <a href="{SITE}" style="color:{DIM};text-decoration:underline;">Read more online</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
+
         </table>
       </td>
     </tr>
@@ -190,24 +252,32 @@ def brief_html(posts: list[dict], email: str = "") -> str:
 def welcome_html() -> str:
     return f"""<!DOCTYPE html>
 <html lang="en">
-<body style="margin:0;padding:0;background:#050505;color:#f3ece2;">
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#050505;">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Welcome to Za Ndani</title>
+</head>
+<body style="margin:0;padding:0;background:{BG};color:{TEXT};">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:{BG};">
     <tr>
-      <td align="center" style="padding:32px 16px;">
-        <table role="presentation" width="480" cellspacing="0" cellpadding="0" style="width:100%;max-width:480px;background:#111111;">
-          <tr><td style="height:3px;background:#e85d04;">&nbsp;</td></tr>
+      <td align="center" style="padding:36px 16px;">
+        <table role="presentation" width="480" cellspacing="0" cellpadding="0" style="width:100%;max-width:480px;background:{CARD};border:1px solid {BORDER};border-radius:16px;overflow:hidden;">
+          <tr><td style="height:4px;background:{ACCENT};font-size:0;line-height:0;">&nbsp;</td></tr>
           <tr>
-            <td style="padding:28px 28px 36px;">
-              <img src="{LOGO}" alt="Za Ndani" width="56" height="56" style="display:block;border:0;border-radius:4px;">
-              <p style="margin:18px 0 6px;font-size:11px;letter-spacing:0.28em;font-weight:800;color:#e85d04;font-family:Arial,Helvetica,sans-serif;">YOU'RE ON THE LIST · EAT</p>
-              <h1 style="margin:0 0 12px;font-size:28px;line-height:1.1;font-family:Georgia,'Times New Roman',serif;">The evening brief, every night at 7.</h1>
-              <p style="margin:0 0 18px;font-size:15px;line-height:1.6;color:#9a9388;font-family:Arial,Helvetica,sans-serif;">
-                Three Kenya-first stories. No Hollywood filler. Sent at 19:00 East Africa Time.
+            <td style="padding:32px 28px 36px;">
+              <img src="{LOGO}" alt="Za Ndani" width="48" height="48" style="display:block;border:0;border-radius:8px;">
+              <p style="margin:20px 0 8px;font-size:11px;letter-spacing:0.2em;font-weight:700;color:{ACCENT};text-transform:uppercase;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">You're in</p>
+              <h1 style="margin:0 0 12px;font-size:26px;line-height:1.2;font-family:Georgia,'Times New Roman',serif;color:{TEXT};">Welcome to Za Ndani</h1>
+              <p style="margin:0 0 22px;font-size:15px;line-height:1.65;color:{MUTED};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">
+                You'll get a short brief of standout stories — Kenya news, culture, and showbiz, written for readers everywhere. No spam. Unsubscribe anytime.
               </p>
-              <a href="{SITE}" style="display:inline-block;background:#e85d04;color:#050505;text-decoration:none;padding:12px 18px;font-weight:800;font-size:12px;letter-spacing:0.14em;font-family:Arial,Helvetica,sans-serif;">OPEN ZA NDANI</a>
+              <a href="{SITE}" style="display:inline-block;background:{ACCENT};color:#0a0a0a;text-decoration:none;padding:12px 20px;font-weight:700;font-size:13px;border-radius:8px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">Open Za Ndani →</a>
             </td>
           </tr>
         </table>
+        <p style="margin:20px 0 0;font-size:12px;color:{DIM};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;">
+          <a href="{SITE}" style="color:{DIM};text-decoration:underline;">zandani.co.ke</a>
+        </p>
       </td>
     </tr>
   </table>
@@ -234,7 +304,7 @@ def resend(method: str, path: str, payload: dict | None = None) -> dict:
         "-H", f"Authorization: Bearer {api_key()}",
         "-H", "Content-Type: application/json",
         "-H", "Accept: application/json",
-        "-H", "User-Agent: zandani-evening-brief/1.0 (+https://zandani.co.ke)",
+        "-H", "User-Agent: zandani-brief/2.0 (+https://zandani.co.ke)",
         "-d", body,
         "-w", "\n%{http_code}",
     ]
@@ -254,7 +324,6 @@ def resend(method: str, path: str, payload: dict | None = None) -> dict:
     if not out:
         raise RuntimeError(f"Resend empty response stderr={err!r}")
 
-    # Last line is HTTP status from -w
     if "\n" in out:
         raw_body, status_s = out.rsplit("\n", 1)
     else:
@@ -311,7 +380,7 @@ def send_one(to: str, subject: str, html: str) -> None:
 
 def cmd_welcome(email: str) -> int:
     email = parseaddr(email)[1].lower().strip()
-    send_one(email, "You're on the Za Ndani evening brief", welcome_html())
+    send_one(email, "Welcome to Za Ndani", welcome_html())
     print(f"welcome sent to {mask(email)}")
     return 0
 
@@ -326,7 +395,13 @@ def cmd_digest() -> int:
     if not people:
         print("No active subscribers yet")
         return 0
-    subject = "Za Ndani evening brief: " + (posts[0]["title"] if posts else eat_now().strftime("%-d %B"))
+    # Clean subject — no "evening brief" / EAT
+    if posts:
+        subject = f"Za Ndani · {posts[0]['title']}"
+        if len(subject) > 90:
+            subject = subject[:87].rsplit(" ", 1)[0] + "…"
+    else:
+        subject = f"Za Ndani · {eat_now().strftime('%-d %B')}"
     sent = 0
     failed = 0
     for em in people:
