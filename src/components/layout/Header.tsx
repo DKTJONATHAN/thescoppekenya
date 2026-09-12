@@ -1,16 +1,16 @@
 import { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Search, Radio } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SearchOverlay } from "@/components/SearchOverlay";
 import { getAllPosts } from "@/lib/markdown";
 import { primaryNavLinks } from "@/lib/site-links";
 import logoImg from "@/assets/logo.png";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 const allPostsFromMarkdown = getAllPosts();
 
 export function Header() {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -78,8 +78,12 @@ export function Header() {
                 className="hidden xl:flex items-center border border-divider px-2 py-1 rounded-md"
                 onSubmit={(e) => {
                   e.preventDefault();
-                  if (!searchQuery.trim()) return;
-                  window.location.href = `/tag/${encodeURIComponent(searchQuery.trim())}`;
+                  const q = searchQuery.trim();
+                  if (!q) {
+                    setIsSearchOpen(true);
+                    return;
+                  }
+                  navigate(`/search?q=${encodeURIComponent(q)}`);
                 }}
                 role="search"
               >
@@ -93,7 +97,6 @@ export function Header() {
                   className="bg-transparent outline-none text-sm w-36 text-foreground placeholder:text-muted-foreground"
                 />
               </form>
-              <ThemeToggle />
               <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="touch-target hover:bg-primary/10 hover:text-primary text-foreground" aria-label="Search">
                 <Search className="w-5 h-5" />
               </Button>
