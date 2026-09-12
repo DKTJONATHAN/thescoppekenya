@@ -1,3 +1,4 @@
 business
 entertainment
 agriculture
+opinions
