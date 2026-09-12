@@ -532,10 +532,10 @@
     "8b6048553df7fb78f2b2d064eff0128e",
     "b045df7520be63e6dec2c4b6aa6bf47d",
     "a13aa57d83de0ecca8ddf3fe25f46a1d",
-    "bf5492e2c0f2eb3f8d7026408ac33b1d"
+    "bf5492e2c0f2eb3f8d7026408ac33b1d",
+    "6bea82fe63bcfa62807e7837d9ff091b"
   ],
   "style_history": [
-    "Explainer",
     "Hard News Lead",
     "Hard News Lead",
     "Statement Report",
@@ -564,7 +564,8 @@
     "Desk Take",
     "Hard News Lead",
     "Statement Report",
-    "Desk Take"
+    "Desk Take",
+    "Hard News Lead"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -681,7 +682,8 @@
     "https://kenyans.co.ke/news/126982-cs-wandayi-responds-anthropic-report-ai-generated-campaign-praising-him",
     "https://kenyans.co.ke/news/126981-kra-replace-its-cargo-tracking-seals-new-vendor-system-october-26",
     "https://kenyans.co.ke/news/126980-ppdt-nullifies-moitalel-ole-kentas-appointment-jubilee-secretary-general",
-    "https://kenyans.co.ke/news/126987-uk-student-visa-applicants-explain-large-bank-deposits-and-education-gaps"
+    "https://kenyans.co.ke/news/126987-uk-student-visa-applicants-explain-large-bank-deposits-and-education-gaps",
+    "https://kenyans.co.ke/news/126989-nairobi-among-counties-listed-receive-rains-over-next-five-days"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -720,7 +722,8 @@
     "wandayi responds anthropic report generated campaign praising him",
     "kra replace cargo tracking seals vendor system october",
     "ppdt nullifies moitalel ole kenta appointment jubilee secretary general",
-    "student visa applicants explain large bank deposits education gaps"
+    "student visa applicants explain large bank deposits education gaps",
+    "nairobi among counties receive rains next five days"
   ],
   "topic_keys": [
     "news tracker",

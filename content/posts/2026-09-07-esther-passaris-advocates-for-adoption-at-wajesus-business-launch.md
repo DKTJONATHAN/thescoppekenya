@@ -13,7 +13,6 @@ dateModified: "2026-09-06T22:30:40Z"
 focusKeyword: "esther passaris advocates for adoption wajesus"
 schema: "NewsArticle"
 ---
-
 Esther Passaris took the stage at the ESMANDA Baby Shop opening to pivot away from the typical influencer family planning narrative. By championing adoption, she highlighted the jarring disconnect between the glamorous aesthetic of parenting and the grueling reality of Kenyan bureaucratic procedures.### The Legislative Hurdle versus the Instagram Aesthetic
 
 The WaJesus family frequently shares their journey of family expansion for an audience that consumes parenthood as a performative aesthetic. During the recent launch on Biashara Street, the conversation shifted from baby products to the mechanics of growing a family. While the public often views adoption through a sentimental lens, the legal framework under the Children Act remains a rigid, complex obstacle course.
