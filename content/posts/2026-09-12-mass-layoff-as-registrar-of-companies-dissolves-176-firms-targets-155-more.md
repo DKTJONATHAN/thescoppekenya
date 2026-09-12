@@ -1,6 +1,6 @@
 ---
 title: "Mass Layoff as Registrar of Companies Dissolves 176 Firms, Targets 155 More"
-slug: "mass-layoff-as-registrar-of-companies-dissolves-176-firms-targets-155-"
+slug: "mass-layoff-as-registrar-of-companies-dissolves-176-firms-targets-155"
 description: "NAIROBI — Kenya's corporate sector faced a sudden shock on Friday after the Registrar of Companies struck 176 firms off the official register with."
 excerpt: "NAIROBI — Kenya's corporate sector faced a sudden shock on Friday after the Registrar of Companies struck 176 firms off the official register with."
 author: "Celestine Nzioka"
