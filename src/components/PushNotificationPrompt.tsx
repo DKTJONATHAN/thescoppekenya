@@ -1,10 +1,17 @@
 import { useState, useEffect } from "react";
 import { Bell, X } from "lucide-react";
 
-/** Public VAPID key — override with VITE_VAPID_PUBLIC_KEY at build time */
+/**
+ * Public VAPID key (safe to ship in the client).
+ * Override with VITE_VAPID_PUBLIC_KEY at build if you rotate keys.
+ * Private key must only live in GitHub Actions secrets.
+ */
+const DEFAULT_VAPID_PUBLIC =
+  "BBnR6tuQ90TWFE4vz3Mwm2R3-gox9VEMVdZCC3U6u5_zpoeeEjjkAKSbc-UcTBGrDpC8XbxJus_0CP9PdNn8Jyc";
+
 const VAPID_PUBLIC_KEY =
   (import.meta as { env?: { VITE_VAPID_PUBLIC_KEY?: string } }).env?.VITE_VAPID_PUBLIC_KEY ||
-  "";
+  DEFAULT_VAPID_PUBLIC;
 
 function urlBase64ToUint8Array(base64String: string): Uint8Array {
   const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
@@ -69,7 +76,6 @@ export function PushNotificationPrompt() {
         if (existing && Notification.permission === "granted") {
           setIsSubscribed(true);
           localStorage.setItem("push_subscribed", "true");
-          // Refresh server copy in background
           void saveSubscription(existing);
         }
       } catch {
@@ -93,11 +99,6 @@ export function PushNotificationPrompt() {
     setLoading(true);
     setError("");
     try {
-      if (!VAPID_PUBLIC_KEY) {
-        setError("Push is not configured yet.");
-        return;
-      }
-
       const result = await Notification.requestPermission();
       setPermission(result);
       if (result !== "granted") {
