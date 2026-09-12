@@ -10,6 +10,7 @@ type Comment = {
   name: string;
   body: string;
   ts: number;
+  parentId: string | null;
 };
 
 const MAX_NAME = 40;
@@ -51,7 +52,19 @@ function rowToComment(row: ArticleCommentRow): Comment {
     name: row.name,
     body: row.body,
     ts: new Date(row.created_at).getTime(),
+    parentId: row.parent_id ?? null,
   };
+}
+
+function validateComment(name: string, body: string): string | null {
+  const n = name.trim();
+  const b = body.trim();
+  if (n.length < 2) return "Please enter a name (at least 2 characters).";
+  if (b.length < MIN_BODY) return `Comment needs at least ${MIN_BODY} characters.`;
+  if (looksSpammy(b) || looksSpammy(n)) {
+    return "That comment looks like spam. Please revise and try again.";
+  }
+  return null;
 }
 
 export function ArticleComments({ slug }: { slug: string }) {
@@ -64,6 +77,13 @@ export function ArticleComments({ slug }: { slug: string }) {
   const [posting, setPosting] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
+  /** Which top-level comment is open for reply */
+  const [replyToId, setReplyToId] = useState<string | null>(null);
+  const [replyName, setReplyName] = useState("");
+  const [replyBody, setReplyBody] = useState("");
+  const [replyError, setReplyError] = useState<string | null>(null);
+  const [replyPosting, setReplyPosting] = useState(false);
+
   const load = useCallback(async () => {
     const sb = getSupabase();
     if (!sb) {
@@ -74,14 +94,14 @@ export function ArticleComments({ slug }: { slug: string }) {
     setLoading(true);
     const { data, error: qErr } = await sb
       .from("article_comments")
-      .select("id, slug, name, body, created_at")
+      .select("id, slug, name, body, created_at, parent_id")
       .eq("slug", slug)
       .order("created_at", { ascending: false })
-      .limit(100);
+      .limit(200);
 
     if (qErr) {
       console.error("comments load", qErr);
-      setError("Could not load comments. Tables may still need to be created.");
+      setError("Could not load comments.");
       setComments([]);
     } else {
       setComments((data as ArticleCommentRow[] | null)?.map(rowToComment) || []);
@@ -96,63 +116,208 @@ export function ArticleComments({ slug }: { slug: string }) {
     setSubmitted(false);
     setExpanded(false);
     setError(null);
+    setReplyToId(null);
+    setReplyName("");
+    setReplyBody("");
+    setReplyError(null);
     void load();
   }, [slug, load]);
 
-  const sorted = useMemo(
-    () => [...comments].sort((a, b) => b.ts - a.ts),
-    [comments]
-  );
+  const { roots, repliesByParent, totalCount } = useMemo(() => {
+    const rootsList = comments
+      .filter((c) => !c.parentId)
+      .sort((a, b) => b.ts - a.ts);
+    const map = new Map<string, Comment[]>();
+    for (const c of comments) {
+      if (!c.parentId) continue;
+      // Flatten: attach reply-to-reply under the same top-level parent if needed
+      const key = c.parentId;
+      const list = map.get(key) || [];
+      list.push(c);
+      map.set(key, list);
+    }
+    for (const [, list] of map) {
+      list.sort((a, b) => a.ts - b.ts);
+    }
+    return {
+      roots: rootsList,
+      repliesByParent: map,
+      totalCount: comments.length,
+    };
+  }, [comments]);
 
-  const visible = expanded ? sorted : sorted.slice(0, INITIAL_VISIBLE);
-  const hiddenCount = Math.max(0, sorted.length - INITIAL_VISIBLE);
+  const visibleRoots = expanded ? roots : roots.slice(0, INITIAL_VISIBLE);
+  const hiddenCount = Math.max(0, roots.length - INITIAL_VISIBLE);
+
+  const postComment = async (
+    nRaw: string,
+    bRaw: string,
+    parentId: string | null
+  ): Promise<{ ok: true; comment: Comment } | { ok: false; message: string }> => {
+    const n = nRaw.trim().slice(0, MAX_NAME);
+    const b = bRaw.trim().slice(0, MAX_BODY);
+    const v = validateComment(n, b);
+    if (v) return { ok: false, message: v };
+
+    const sb = getSupabase();
+    if (!sb) return { ok: false, message: "Comments are temporarily unavailable." };
+
+    // One-level threads: if replying to a reply, attach to the root parent
+    let resolvedParent = parentId;
+    if (parentId) {
+      const parent = comments.find((c) => c.id === parentId);
+      if (parent?.parentId) resolvedParent = parent.parentId;
+    }
+
+    const payload: Record<string, unknown> = {
+      slug,
+      name: n,
+      body: b,
+      parent_id: resolvedParent,
+    };
+
+    const { data, error: insErr } = await sb
+      .from("article_comments")
+      .insert(payload)
+      .select("id, slug, name, body, created_at, parent_id")
+      .single();
+
+    if (insErr || !data) {
+      console.error("comments insert", insErr);
+      return { ok: false, message: "Could not post. Please try again in a moment." };
+    }
+
+    return { ok: true, comment: rowToComment(data as ArticleCommentRow) };
+  };
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError(null);
     setSubmitted(false);
-
-    const n = name.trim().slice(0, MAX_NAME);
-    const b = body.trim().slice(0, MAX_BODY);
-
-    if (n.length < 2) {
-      setError("Please enter a name (at least 2 characters).");
-      return;
-    }
-    if (b.length < MIN_BODY) {
-      setError(`Comment needs at least ${MIN_BODY} characters.`);
-      return;
-    }
-    if (looksSpammy(b) || looksSpammy(n)) {
-      setError("That comment looks like spam. Please revise and try again.");
-      return;
-    }
-
-    const sb = getSupabase();
-    if (!sb) {
-      setError("Comments are temporarily unavailable.");
-      return;
-    }
-
     setPosting(true);
-    const { data, error: insErr } = await sb
-      .from("article_comments")
-      .insert({ slug, name: n, body: b })
-      .select("id, slug, name, body, created_at")
-      .single();
-
+    const result = await postComment(name, body, null);
     setPosting(false);
-
-    if (insErr || !data) {
-      console.error("comments insert", insErr);
-      setError("Could not post. Please try again in a moment.");
+    if (!result.ok) {
+      setError(result.message);
       return;
     }
-
-    const row = data as ArticleCommentRow;
-    setComments((prev) => [rowToComment(row), ...prev]);
+    setComments((prev) => [result.comment, ...prev]);
     setBody("");
     setSubmitted(true);
+  };
+
+  const onReplySubmit = async (e: FormEvent, parentId: string) => {
+    e.preventDefault();
+    setReplyError(null);
+    setReplyPosting(true);
+    const result = await postComment(replyName, replyBody, parentId);
+    setReplyPosting(false);
+    if (!result.ok) {
+      setReplyError(result.message);
+      return;
+    }
+    setComments((prev) => [...prev, result.comment]);
+    setReplyBody("");
+    setReplyToId(null);
+  };
+
+  const openReply = (id: string) => {
+    setReplyToId((cur) => (cur === id ? null : id));
+    setReplyError(null);
+    setReplyBody("");
+    if (!replyName && name) setReplyName(name);
+  };
+
+  const renderComment = (c: Comment, isReply = false) => {
+    const replies = !isReply ? repliesByParent.get(c.id) || [] : [];
+    return (
+      <li
+        key={c.id}
+        className={
+          isReply
+            ? "border-l-2 border-primary/40 pl-3 ml-1"
+            : "border-t border-divider pt-4 first:border-t-0 first:pt-0"
+        }
+      >
+        <div className="flex items-baseline justify-between gap-3 mb-1">
+          <span className="font-semibold text-sm text-foreground">{c.name}</span>
+          <time
+            className="text-[11px] text-muted-foreground tabular-nums shrink-0"
+            dateTime={new Date(c.ts).toISOString()}
+          >
+            {formatRelative(c.ts)}
+          </time>
+        </div>
+        <p className="text-sm text-foreground/90 leading-relaxed whitespace-pre-wrap">
+          {c.body}
+        </p>
+
+        {!isReply ? (
+          <button
+            type="button"
+            onClick={() => openReply(c.id)}
+            className="mt-2 text-xs font-semibold text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            {replyToId === c.id ? "Cancel" : "Reply"}
+          </button>
+        ) : null}
+
+        {replyToId === c.id && !isReply ? (
+          <form
+            onSubmit={(e) => void onReplySubmit(e, c.id)}
+            className="mt-3 space-y-2 border border-divider p-3 bg-muted/10"
+            noValidate
+          >
+            <p className="text-[10px] font-black uppercase tracking-[0.18em] text-muted-foreground">
+              Reply to {c.name}
+            </p>
+            <label htmlFor={`reply-name-${c.id}`} className="sr-only">
+              Your name
+            </label>
+            <input
+              id={`reply-name-${c.id}`}
+              type="text"
+              value={replyName}
+              onChange={(e) => setReplyName(e.target.value)}
+              maxLength={MAX_NAME}
+              placeholder="Your name"
+              autoComplete="nickname"
+              className="w-full px-3 py-2 border border-divider bg-background text-foreground text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              aria-required="true"
+              disabled={replyPosting}
+            />
+            <label htmlFor={`reply-body-${c.id}`} className="sr-only">
+              Your reply
+            </label>
+            <textarea
+              id={`reply-body-${c.id}`}
+              value={replyBody}
+              onChange={(e) => setReplyBody(e.target.value)}
+              maxLength={MAX_BODY}
+              rows={2}
+              placeholder="Write a reply…"
+              className="w-full px-3 py-2 border border-divider bg-background text-foreground text-sm placeholder:text-muted-foreground resize-y focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              aria-required="true"
+              disabled={replyPosting}
+            />
+            {replyError ? (
+              <p role="alert" className="text-sm text-destructive">
+                {replyError}
+              </p>
+            ) : null}
+            <Button type="submit" size="sm" disabled={replyPosting}>
+              {replyPosting ? "Posting…" : "Post reply"}
+            </Button>
+          </form>
+        ) : null}
+
+        {replies.length > 0 ? (
+          <ul className="mt-3 space-y-3" aria-label={`Replies to ${c.name}`}>
+            {replies.map((r) => renderComment(r, true))}
+          </ul>
+        ) : null}
+      </li>
+    );
   };
 
   return (
@@ -168,15 +333,15 @@ export function ArticleComments({ slug }: { slug: string }) {
           Comments
         </h2>
         <span className="text-xs text-muted-foreground tabular-nums">
-          {sorted.length} {sorted.length === 1 ? "comment" : "comments"}
+          {totalCount} {totalCount === 1 ? "comment" : "comments"}
         </span>
       </div>
 
       <p className="text-xs text-muted-foreground mb-4">
-        Shared with all readers. Be civil — no links or spam.
+        Shared with all readers. You can reply to others. Be civil — no links or spam.
       </p>
 
-      <form onSubmit={onSubmit} className="space-y-3 mb-8" noValidate>
+      <form onSubmit={(e) => void onSubmit(e)} className="space-y-3 mb-8" noValidate>
         <div>
           <label htmlFor={`comment-name-${slug}`} className="sr-only">
             Your name
@@ -234,30 +399,12 @@ export function ArticleComments({ slug }: { slug: string }) {
         <p className="text-sm text-muted-foreground" role="status">
           Loading comments…
         </p>
-      ) : sorted.length === 0 ? (
+      ) : roots.length === 0 ? (
         <p className="text-sm text-muted-foreground">No comments yet. Be the first.</p>
       ) : (
         <>
           <ul className="space-y-4" aria-label="Comment list">
-            {visible.map((c) => (
-              <li
-                key={c.id}
-                className="border-t border-divider pt-4 first:border-t-0 first:pt-0"
-              >
-                <div className="flex items-baseline justify-between gap-3 mb-1">
-                  <span className="font-semibold text-sm text-foreground">{c.name}</span>
-                  <time
-                    className="text-[11px] text-muted-foreground tabular-nums shrink-0"
-                    dateTime={new Date(c.ts).toISOString()}
-                  >
-                    {formatRelative(c.ts)}
-                  </time>
-                </div>
-                <p className="text-sm text-foreground/90 leading-relaxed whitespace-pre-wrap">
-                  {c.body}
-                </p>
-              </li>
-            ))}
+            {visibleRoots.map((c) => renderComment(c, false))}
           </ul>
 
           {hiddenCount > 0 && !expanded ? (
@@ -273,7 +420,7 @@ export function ArticleComments({ slug }: { slug: string }) {
             </div>
           ) : null}
 
-          {expanded && sorted.length > INITIAL_VISIBLE ? (
+          {expanded && roots.length > INITIAL_VISIBLE ? (
             <div className="mt-5">
               <Button
                 type="button"
