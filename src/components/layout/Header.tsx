@@ -20,8 +20,9 @@ export function Header() {
   return (
     <>
       <div className="brand-bar" />
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-divider">
-        <div className="bg-background text-foreground py-1.5 overflow-hidden border-b border-divider">
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-divider safe-top">
+        {/* Ticker — desktop/tablet only; cleaner mobile app chrome */}
+        <div className="hidden md:block bg-background text-foreground py-1.5 overflow-hidden border-b border-divider">
           <div className="container flex items-center justify-between text-xs">
             <div className="flex items-center gap-3 overflow-hidden flex-1">
               <span className="flex items-center gap-2 shrink-0 z-10 bg-background pr-2">
@@ -47,15 +48,15 @@ export function Header() {
           </div>
         </div>
 
-        <div className="container py-2.5">
+        <div className="container py-2 md:py-2.5">
           <div className="flex items-center justify-between gap-2">
-            <Link to="/" className="flex items-center gap-2.5 group shrink-0">
-              <img src={logoImg} alt="Za Ndani" className="h-10 sm:h-12 w-auto rounded-sm" loading="eager" width={48} height={48} />
-              <div className="hidden sm:flex flex-col">
-                <span className="text-xl font-serif font-bold leading-none tracking-tight text-foreground">
+            <Link to="/" className="flex items-center gap-2 group shrink-0">
+              <img src={logoImg} alt="Za Ndani" className="h-9 w-9 md:h-12 md:w-auto rounded-lg md:rounded-sm object-cover" loading="eager" width={48} height={48} />
+              <div className="flex flex-col">
+                <span className="text-lg md:text-xl font-serif font-bold leading-none tracking-tight text-foreground">
                   Za Ndani
                 </span>
-                <span className="mt-1 text-[10px] uppercase tracking-[0.18em] text-muted-foreground font-medium">
+                <span className="mt-0.5 text-[9px] md:text-[10px] uppercase tracking-[0.18em] text-muted-foreground font-medium">
                   News · Culture
                 </span>
               </div>
@@ -73,8 +74,7 @@ export function Header() {
               ))}
             </nav>
 
-            <div className="flex items-center gap-1.5">
-              {/* Desktop search */}
+            <div className="flex items-center gap-1">
               <form
                 className="hidden xl:flex items-center border border-divider px-2 py-1 rounded-md"
                 onSubmit={(e) => {
@@ -99,11 +99,16 @@ export function Header() {
                 />
               </form>
 
-              <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="touch-target hover:bg-primary/10 hover:text-primary text-foreground" aria-label="Search">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsSearchOpen(true)}
+                className="h-10 w-10 rounded-full hover:bg-primary/10 hover:text-primary text-foreground"
+                aria-label="Search"
+              >
                 <Search className="w-5 h-5" />
               </Button>
 
-              {/* Newsletter — desktop pill */}
               <Link
                 to="/newsletter"
                 className="hidden md:inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3.5 h-9 text-[11px] font-bold uppercase tracking-wider text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
@@ -115,7 +120,7 @@ export function Header() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="lg:hidden touch-target hover:bg-primary/10 hover:text-primary text-foreground"
+                className="lg:hidden h-10 w-10 rounded-full hover:bg-primary/10 hover:text-primary text-foreground"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label="Toggle menu"
                 aria-expanded={isMenuOpen}
@@ -132,13 +137,13 @@ export function Header() {
         </div>
 
         {isMenuOpen && (
-          <nav className="lg:hidden border-t border-divider bg-background animate-fade-in max-h-[70vh] overflow-y-auto" aria-label="Mobile">
-            <div className="container py-3 space-y-0.5">
+          <nav className="lg:hidden border-t border-divider bg-background/98 backdrop-blur-xl animate-fade-in max-h-[70vh] overflow-y-auto" aria-label="Mobile">
+            <div className="container py-3 space-y-0.5 pb-6">
               {primaryNavLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="flex items-center px-4 py-3.5 text-foreground hover:text-primary hover:bg-primary/5 rounded-xl transition-smooth font-semibold touch-target"
+                  className="flex items-center px-4 py-3.5 text-foreground hover:text-primary hover:bg-primary/5 rounded-2xl transition-smooth font-semibold"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
@@ -148,16 +153,13 @@ export function Header() {
                 <Link
                   to="/newsletter"
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center gap-2 px-4 py-3.5 rounded-xl border border-primary/30 bg-primary/10 text-primary font-semibold"
+                  className="flex items-center gap-2 px-4 py-3.5 rounded-2xl border border-primary/30 bg-primary/10 text-primary font-semibold"
                 >
                   <Mail className="w-4 h-4" aria-hidden />
                   Newsletter
                 </Link>
                 <Link to="/about" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary">About</Link>
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary">Contact</Link>
-                <Link to="/tv" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground font-bold uppercase tracking-wider h-12 rounded-xl">
-                  <Radio className="w-4 h-4" aria-hidden /> Live TV
-                </Link>
               </div>
             </div>
           </nav>
