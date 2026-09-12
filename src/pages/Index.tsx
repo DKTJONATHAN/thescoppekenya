@@ -313,7 +313,7 @@ const Index = () => {
                     <h2 className="mt-1 font-serif text-xl font-bold leading-snug group-hover:text-primary">{post.title}</h2>
                     <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{post.excerpt}</p>
                   </div>
-                  <img src={img(post.image, 400 400)} alt={post.title} loading="lazy" width={200} height={140} className="h-28 w-36 shrink-0 rounded-sm object-cover" />
+                  <img src={img(post.image, 400)} alt={post.title} loading="lazy" width={200} height={140} className="h-28 w-36 shrink-0 rounded-sm object-cover" />
                 </Link>
               ))}
             </div>
