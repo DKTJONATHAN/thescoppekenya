@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Clock } from "lucide-react";
 import { Post } from "@/lib/markdown";
+import { timeAgo } from "@/lib/utils";
 
 interface ArticleCardProps {
   post: Post;
@@ -10,22 +11,12 @@ interface ArticleCardProps {
 
 function getOptimizedImageUrl(url: string, width: number = 800): string {
   if (!url) return "/images/placeholder.jpg";
-  if (url.startsWith('/') || url.endsWith('.svg') || url.includes('data:image')) return url;
+  if (url.startsWith("/") || url.endsWith(".svg") || url.includes("data:image")) return url;
   return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${width}&output=webp&q=80&we`;
 }
 
 function catColor(_cat: string): string {
   return "bg-primary text-primary-foreground";
-}
-
-function timeAgo(dateStr: string): string {
-  const diff = Date.now() - new Date(dateStr).getTime();
-  const h = Math.floor(diff / 3600000);
-  const d = Math.floor(h / 24);
-  if (h < 1) return "Just now";
-  if (h < 24) return `${h}h ago`;
-  if (d < 7) return `${d}d ago`;
-  return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
 }
 
 export function ArticleCard({ post, variant = "default", priority = false }: ArticleCardProps) {
@@ -124,6 +115,8 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
           <div className="flex items-center gap-2 text-xs text-muted-foreground">
             <span>{post.category}</span>
             <span>·</span>
+            <span>{timeAgo(post.date)}</span>
+            <span>·</span>
             <span>{post.readTime} min read</span>
           </div>
         </div>
@@ -131,7 +124,6 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
     );
   }
 
-  // Default Vertical Card — matches Index editorial style
   return (
     <article className="group">
       <Link to={`/article/${post.slug}`} className="block mb-4">
@@ -164,7 +156,7 @@ export function ArticleCard({ post, variant = "default", priority = false }: Art
         <span>{post.author}</span>
         <span className="flex items-center gap-1">
           <Clock className="w-3 h-3" />
-          {post.readTime} min
+          {timeAgo(post.date)}
         </span>
       </div>
     </article>
