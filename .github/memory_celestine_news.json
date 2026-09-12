@@ -535,10 +535,10 @@
     "bf5492e2c0f2eb3f8d7026408ac33b1d",
     "6bea82fe63bcfa62807e7837d9ff091b",
     "907bbb19e5bc2df6f73f8a05cdc2d9d5",
-    "ab27d239e01f32229232a2a0d0d7e14d"
+    "ab27d239e01f32229232a2a0d0d7e14d",
+    "e437434f36ab09f50f41023ee9d6ce5b"
   ],
   "style_history": [
-    "Statement Report",
     "Event Report",
     "Hard News Lead",
     "Statement Report",
@@ -567,7 +567,8 @@
     "Desk Take",
     "Hard News Lead",
     "Statement Report",
-    "Event Report"
+    "Event Report",
+    "Hard News Lead"
   ],
   "angle_history": [
     "story_progression|aviation|Hard News Lead",
@@ -687,7 +688,8 @@
     "https://kenyans.co.ke/news/126987-uk-student-visa-applicants-explain-large-bank-deposits-and-education-gaps",
     "https://kenyans.co.ke/news/126989-nairobi-among-counties-listed-receive-rains-over-next-five-days",
     "https://kenyans.co.ke/news/126993-fertiliser-worked-unga-did-not-why-two-promises-took-different-paths",
-    "https://kenyans.co.ke/news/127005-mass-layoff-registrar-companies-dissolves-176-firms-targets-155-more"
+    "https://kenyans.co.ke/news/127005-mass-layoff-registrar-companies-dissolves-176-firms-targets-155-more",
+    "https://kenyans.co.ke/news/127009-nlc-issues-new-land-acquisition-notice-naivasha-kisumu-malaba-sgr"
   ],
   "published_slugs": [
     "tyre-sidewall-bulges-causes-blowout-risks",
@@ -729,7 +731,8 @@
     "student visa applicants explain large bank deposits education gaps",
     "nairobi among counties receive rains next five days",
     "ruto fertiliser prices fall unga stays above target",
-    "mass layoff registrar companies dissolves 176 firms targets 155 more"
+    "mass layoff registrar companies dissolves 176 firms targets 155 more",
+    "nlc issues land acquisition notice naivasha kisumu malaba sgr"
   ],
   "topic_keys": [
     "news tracker",
