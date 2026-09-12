@@ -7,11 +7,11 @@ author: "Martin Kihara"
 image: "https://i.ibb.co/kL1X5vs/1de75f89b8bf.webp"
 category: "Showbiz"
 tags: ["showbiz", "entertainment", "kenya"]
-canonical: "https://zandani.co.ke/article/state-crackdown-on-foreign-traders-triggers-anxiety"
 date: "2026-09-09T18:51:18Z"
 dateModified: "2026-09-09T18:51:18Z"
 focusKeyword: "state crackdown foreign traders triggers anxiety"
 schema: "NewsArticle"
+canonical: "https://zandani.co.ke/article/state-crackdown-on-foreign-traders-triggers-anxiety"
 ---
 President William Ruto ordered the closure of small-scale businesses operated by foreign nationals on September 2, sparking a nationwide scramble. The directive restricts informal retail and unskilled labor to Kenyan citizens. Following the announcement, hundreds of Burundian, Ugandan, and Rwandan traders began shuttering their kiosks and stalls, fearing immediate deportation.
 
