@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { getPostBySlug, getLatestPosts, type Post } from "@/lib/markdown";
+import { getPostBySlug, getRelatedPosts, type Post } from "@/lib/markdown";
 import { Clock, Calendar, Share2, Facebook, ArrowUp, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState, useMemo, useCallback, useRef } from "react";
@@ -15,7 +15,7 @@ import { ArticleReactions } from "@/components/articles/ArticleReactions";
 import { ArticlePoll } from "@/components/articles/ArticlePoll";
 import { ArticleComments } from "@/components/articles/ArticleComments";
 import { shouldShowWhatWeKnow, splitLedeHtml } from "@/lib/what-we-know";
-import { authorColor, catColor, proxyImg } from "@/lib/utils";
+import { authorColor, catColor, proxyImg, PLACEHOLDER_IMG } from "@/lib/utils";
 import { trackCategoryView } from "@/hooks/usePreferences";
 
 const SITE_URL = "https://zandani.co.ke";
@@ -43,7 +43,6 @@ function ogImg(url: string): string {
   return url;
 }
 
-/** Strip keyword-stuff prefixes from meta descriptions before render. */
 function cleanMetaDescription(raw: string, fallbackTitle: string): string {
   let d = (raw || "").replace(/\s+/g, " ").trim();
   d = d.replace(/^([a-z0-9][a-z0-9\s\-]{8,80}?):\s+/i, "");
@@ -81,21 +80,14 @@ export default function ArticlePage() {
     getPostBySlug(slug || "").then((p) => {
       setPost(p || null);
       setLoading(false);
-      if (p) {
-        trackCategoryView(p.category || "News", p.slug);
-      }
+      if (p) trackCategoryView(p.category || "News", p.slug);
     });
   }, [slug]);
 
   const relatedPosts = useMemo(() => {
-    const latest = getLatestPosts(24);
-    if (!post) return latest.filter((p) => p.slug !== slug).slice(0, 3);
-    const sameDesk = latest.filter(
-      (p) => p.slug !== slug && p.category.toLowerCase() === post.category.toLowerCase()
-    );
-    const pool = sameDesk.length >= 3 ? sameDesk : latest.filter((p) => p.slug !== slug);
-    return pool.slice(0, 3);
-  }, [slug, post]);
+    if (!post) return [];
+    return getRelatedPosts(post, 6);
+  }, [post]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
@@ -256,52 +248,28 @@ export default function ArticlePage() {
                   height={675}
                   fetchPriority="high"
                   decoding="async"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = PLACEHOLDER_IMG;
+                  }}
                 />
               </figure>
             ) : null}
 
             <div className="flex items-center gap-2 mb-8 flex-wrap" role="group" aria-label="Share this story">
               <span className="text-[10px] font-black uppercase tracking-[0.18em] text-muted-foreground mr-1">Share</span>
-              <a
-                href={`https://wa.me/?text=${encodeURIComponent(post.title + " " + shareUrl)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                aria-label="Share on WhatsApp"
-              >
+              <a href={`https://wa.me/?text=${encodeURIComponent(post.title + " " + shareUrl)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" aria-label="Share on WhatsApp">
                 <MessageCircle className="w-4 h-4" aria-hidden />
               </a>
-              <a
-                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                aria-label="Share on X"
-              >
+              <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" aria-label="Share on X">
                 <XIcon className="w-4 h-4" aria-hidden />
               </a>
-              <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                aria-label="Share on Facebook"
-              >
+              <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" aria-label="Share on Facebook">
                 <Facebook className="w-4 h-4" aria-hidden />
               </a>
-              <button
-                type="button"
-                onClick={handleCopy}
-                className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                aria-label="Copy link"
-              >
+              <button type="button" onClick={handleCopy} className="inline-flex items-center justify-center w-9 h-9 border border-divider hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" aria-label="Copy link">
                 <Share2 className="w-4 h-4" aria-hidden />
               </button>
-              {copied ? (
-                <span className="text-xs text-primary" role="status">
-                  Copied
-                </span>
-              ) : null}
+              {copied ? <span className="text-xs text-primary" role="status">Copied</span> : null}
             </div>
 
             <div className="prose prose-lg dark:prose-invert measure max-w-[65ch] mx-auto prose-headings:font-serif prose-a:text-primary">
@@ -315,7 +283,7 @@ export default function ArticlePage() {
             </div>
 
             <ArticleReactions slug={post.slug} />
-            <ArticlePoll slug={post.slug} />
+            <ArticlePoll slug={post.slug} title={post.title} category={post.category} />
 
             <div className="border border-divider p-5 mt-10">
               <div className="flex gap-4 items-start">
@@ -325,10 +293,7 @@ export default function ArticlePage() {
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-1">The writer</p>
                   <h3 className="font-serif font-bold text-lg">
-                    <Link
-                      to={`/author/${(post.author || "za-ndani").toLowerCase().replace(/\s+/g, "-")}`}
-                      className="hover:text-primary"
-                    >
+                    <Link to={`/author/${(post.author || "za-ndani").toLowerCase().replace(/\s+/g, "-")}`} className="hover:text-primary">
                       {post.author}
                     </Link>
                   </h3>
@@ -343,7 +308,7 @@ export default function ArticlePage() {
               <section className="mt-12" aria-labelledby="related-heading">
                 <div className="flex items-center gap-4 mb-5">
                   <h2 id="related-heading" className="text-lg font-black uppercase tracking-tight">
-                    More in {post.category}
+                    Related stories
                   </h2>
                   <div className="h-px flex-1 bg-divider" aria-hidden />
                 </div>
@@ -362,10 +327,14 @@ export default function ArticlePage() {
                           height={250}
                           loading="lazy"
                           decoding="async"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = PLACEHOLDER_IMG;
+                          }}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       </div>
                       <div className="p-3">
+                        <span className="text-[9px] font-black uppercase tracking-wider text-primary">{rp.category}</span>
                         <h3 className="text-sm font-bold leading-snug line-clamp-2 group-hover:text-primary">{rp.title}</h3>
                       </div>
                     </Link>
@@ -387,12 +356,7 @@ export default function ArticlePage() {
       </div>
 
       {showScrollTop ? (
-        <button
-          type="button"
-          onClick={scrollToTop}
-          className="fixed bottom-24 right-5 lg:bottom-6 lg:right-6 w-10 h-10 bg-primary text-primary-foreground flex items-center justify-center shadow-xl z-40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          aria-label="Scroll to top"
-        >
+        <button type="button" onClick={scrollToTop} className="fixed bottom-24 right-5 lg:bottom-6 lg:right-6 w-10 h-10 bg-primary text-primary-foreground flex items-center justify-center shadow-xl z-40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" aria-label="Scroll to top">
           <ArrowUp className="w-4 h-4" aria-hidden />
         </button>
       ) : null}
