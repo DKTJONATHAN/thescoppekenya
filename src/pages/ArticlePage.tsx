@@ -5,7 +5,6 @@ import { Clock, Calendar, Share2, Facebook, ArrowUp, MessageCircle } from "lucid
 import { Button } from "@/components/ui/button";
 import { useEffect, useState, useMemo, useCallback, useRef } from "react";
 import { XIcon } from "@/components/XIcon";
-import { NewsletterForm } from "@/components/NewsletterForm";
 import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
 import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
@@ -374,10 +373,6 @@ export default function ArticlePage() {
                 </div>
               </section>
             ) : null}
-
-            <div className="mt-10">
-              <NewsletterForm />
-            </div>
           </article>
 
           <aside className="hidden lg:block lg:col-span-3" aria-label="Sidebar">
