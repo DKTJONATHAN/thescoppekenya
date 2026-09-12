@@ -1,6 +1,7 @@
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { PodcastComingSoon } from "./PodcastComingSoon";
+import { PushNotificationPrompt } from "@/components/PushNotificationPrompt";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -18,6 +19,7 @@ export function Layout({ children }: LayoutProps) {
       </main>
       <PodcastComingSoon />
       <Footer />
+      <PushNotificationPrompt />
     </div>
   );
 }
