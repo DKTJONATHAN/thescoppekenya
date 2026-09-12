@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet-async";
 import AdUnit from "@/components/AdUnit";
 import { LiveUpdatesTimeline } from "@/components/news/LiveUpdatesTimeline";
 import { ForYouRail } from "@/components/articles/ForYouRail";
+import { timeAgo } from "@/lib/utils";
 
 const INITIAL_LOAD = 12;
 const LOAD_MORE_COUNT = 12;
@@ -23,16 +24,6 @@ function ogImg(url: string): string {
   if (!url) return DEFAULT_OG_IMAGE;
   if (url.startsWith("/")) return `${SITE_URL}${url}`;
   return `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=1200&h=630&fit=cover&output=webp&q=85`;
-}
-
-function timeAgo(dateStr: string): string {
-  const diff = Date.now() - new Date(dateStr).getTime();
-  const h = Math.floor(diff / 3600000);
-  const d = Math.floor(h / 24);
-  if (h < 1) return "Just now";
-  if (h < 24) return `${h}h ago`;
-  if (d < 7) return `${d}d ago`;
-  return new Date(dateStr).toLocaleDateString("en-KE", { day: "numeric", month: "short" });
 }
 
 function catColor(_cat: string): string {
