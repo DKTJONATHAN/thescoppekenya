@@ -1,12 +1,17 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ComponentType } from "react";
+import { Flame, ThumbsUp, Sparkles, Frown, Angry } from "lucide-react";
 
-const REACTIONS = [
-  { id: "fire", emoji: "🔥", label: "Fire" },
-  { id: "clap", emoji: "👏", label: "Clap" },
-  { id: "wow", emoji: "😮", label: "Wow" },
-  { id: "sad", emoji: "😢", label: "Sad" },
-  { id: "angry", emoji: "😡", label: "Angry" },
-] as const;
+const REACTIONS: {
+  id: "fire" | "clap" | "wow" | "sad" | "angry";
+  label: string;
+  Icon: ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
+}[] = [
+  { id: "fire", label: "Fire", Icon: Flame },
+  { id: "clap", label: "Agree", Icon: ThumbsUp },
+  { id: "wow", label: "Wow", Icon: Sparkles },
+  { id: "sad", label: "Sad", Icon: Frown },
+  { id: "angry", label: "Angry", Icon: Angry },
+];
 
 type ReactionId = (typeof REACTIONS)[number]["id"];
 
@@ -94,6 +99,7 @@ export function ArticleReactions({ slug }: { slug: string }) {
       <div className="flex flex-wrap gap-2" role="group">
         {REACTIONS.map((r) => {
           const active = mine === r.id;
+          const Icon = r.Icon;
           return (
             <button
               key={r.id}
@@ -101,15 +107,14 @@ export function ArticleReactions({ slug }: { slug: string }) {
               onClick={() => react(r.id)}
               aria-pressed={active}
               aria-label={`${r.label}${counts[r.id] ? `, ${counts[r.id]}` : ""}`}
+              title={r.label}
               className={`inline-flex items-center gap-1.5 px-3 py-2 border text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
                 active
-                  ? "border-primary bg-primary/10 text-foreground"
+                  ? "border-primary bg-primary/10 text-primary"
                   : "border-divider hover:border-primary/50 text-muted-foreground hover:text-foreground"
               }`}
             >
-              <span aria-hidden className="text-base leading-none">
-                {r.emoji}
-              </span>
+              <Icon className="w-4 h-4 shrink-0" aria-hidden />
               <span className="tabular-nums text-xs font-semibold">{counts[r.id] || 0}</span>
             </button>
           );
