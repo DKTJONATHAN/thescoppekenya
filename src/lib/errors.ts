@@ -35,12 +35,23 @@ function buildReport(
   };
 }
 
+/** Accept either reportError(err, "source") or reportError(err, { source, ...extra }). */
 export function reportError(
   err: unknown,
-  source = "app",
+  sourceOrOpts: string | Record<string, unknown> = "app",
   extra?: Record<string, unknown>
 ): void {
-  const report = buildReport(err, source, extra);
+  let source = "app";
+  let more: Record<string, unknown> | undefined = extra;
+  if (typeof sourceOrOpts === "string") {
+    source = sourceOrOpts;
+  } else if (sourceOrOpts && typeof sourceOrOpts === "object") {
+    const opts = sourceOrOpts as Record<string, unknown>;
+    source = typeof opts.source === "string" ? opts.source : "app";
+    const { source: _s, ...rest } = opts;
+    more = { ...rest, ...extra };
+  }
+  const report = buildReport(err, source, more);
   try {
     console.error(`[zn-error:${source}]`, report.message, report);
   } catch {
